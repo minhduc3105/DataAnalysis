@@ -45,19 +45,31 @@ Các yêu cầu dưới đây được giữ theo bản kế hoạch ban đầu,
 
 ## Bước 1. Chốt phạm vi và câu hỏi phân tích
 
-**Mục đích:** Biết mình cần dữ liệu gì, tránh thu thập nhiều tin nhưng không dùng được.
+**Trạng thái:** Hoàn thành. Phạm vi và năm câu hỏi nghiên cứu dưới đây đã được nhóm thống nhất.
 
-**Cách làm:**
+**Đề tài:** Xây dựng và phân tích mạng lưới hợp tác trong ngành âm nhạc Việt Nam giai đoạn 2016–2026 bằng kỹ thuật xử lý ngôn ngữ tự nhiên.
 
-1. Đọc đề gốc, ghi các yêu cầu bắt buộc và thời hạn.
-2. Chọn 3–5 câu hỏi chính: ai có nhiều cộng sự, có nhóm hợp tác nào, công ty nào phát hành nhiều bài hát trong dữ liệu.
-3. Lập danh sách nghệ sĩ, công ty và chương trình làm điểm bắt đầu. Có thể khai thác Rap Việt, Anh Trai Say Hi, Anh Trai Vượt Ngàn Chông Gai rồi mở rộng sang tác phẩm và cộng sự.
-4. Chốt ngày kết thúc thu thập để các thống kê dùng cùng một mốc.
-5. Xác định phần nâng cao chỉ làm khi còn thời gian: giao diện riêng, huấn luyện mô hình lớn, phân tích biến đổi theo thời gian.
+**Thành viên và thời hạn:** Nhóm gồm 2 thành viên; hạn nộp đồ án là 05/11/2026. Mốc chốt dữ liệu dự kiến là 22/10/2026. Chỉ đưa vào phạm vi các nội dung xuất bản đến mốc này; lưu riêng ngày thu thập thực tế.
 
-**Đầu ra:** Một trang mô tả phạm vi, câu hỏi nghiên cứu, tiêu chí hoàn thành và danh sách đầu mối.
+**Phạm vi dữ liệu:** Toàn ngành âm nhạc Việt Nam trong giai đoạn nghiên cứu, bao phủ sáu nhóm: V-pop/Nhạc trẻ; Rap/Hip-hop; Indie/Alternative; Rock/Band; Dân gian đương đại/Bolero/Trữ tình; EDM/Electronic. Nguồn gồm báo chí, website chính thức và tài khoản mạng xã hội chính thức đã xác minh. Không sử dụng Wikipedia hoặc Wikidata. Khởi tạo khoảng 180 thực thể từ nghệ sĩ, công ty và chương trình, sau đó mở rộng có kiểm soát dựa trên bằng chứng.
 
-**Hoàn thành khi:** Các thành viên thống nhất đối tượng nào được đưa vào mạng và đề tài cần trả lời điều gì.
+**Mục tiêu và tiêu chí:** Tối thiểu 2.000 node (cần đối chiếu đề gốc để xác nhận cách ghi), 5.000 edge có ý nghĩa, ít nhất 10 loại quan hệ thực tế và độ chính xác trên 90% được đánh giá độc lập. Báo cáo tối thiểu 10 trang; bàn giao mã nguồn GitHub, thống kê và phân tích mạng. Mỗi cạnh phải truy được về nguồn chứng cứ. Không tạo quan hệ chỉ vì hai thực thể cùng xuất hiện trong một bài viết; không dùng dữ liệu giả để đạt chỉ tiêu.
+
+**Kiến trúc:** Knowledge Graph lưu nghệ sĩ, bài hát, album, công ty, nhóm nhạc, chương trình, sự kiện và thương hiệu. Artist Collaboration Network được suy ra từ credit tác phẩm chung đã kiểm chứng. Dùng Neo4j để lưu trữ và phân tích graph.
+
+**Câu hỏi nghiên cứu:**
+
+1. RQ1: Có những cộng đồng hợp tác âm nhạc nào tại Việt Nam?
+2. RQ2: Nghệ sĩ, nhạc sĩ hoặc producer nào là cầu nối giữa các cộng đồng?
+3. RQ3: Mạng hợp tác và cấu trúc cộng đồng thay đổi thế nào từ 2016–2026?
+4. RQ4: Các cộng đồng có xu hướng hoạt động và hợp tác đặc trưng gì?
+5. RQ5: Các cộng đồng đóng góp những gì vào hoạt động sản xuất tác phẩm, hợp tác và kết nối trong ngành âm nhạc?
+
+**Phần nâng cao nếu còn thời gian:** Dashboard tương tác, trực quan hóa sự phát triển mạng theo thời gian và so sánh sâu sáu nhóm âm nhạc. Ưu tiên hoàn thành pipeline tái tạo được, dữ liệu có bằng chứng và các phân tích cốt lõi trước.
+
+**Đầu ra:** Phạm vi, thời hạn, nhóm âm nhạc, nguồn dữ liệu, kiến trúc, tiêu chí hoàn thành và năm câu hỏi nghiên cứu đã được chốt.
+
+**Hoàn thành khi:** Đạt được sự thống nhất trên; bước tiếp theo là thiết kế graph schema và cấu trúc dữ liệu thu thập ở Bước 2.
 
 ## Bước 2. Thiết kế dữ liệu trước khi thu thập
 
@@ -106,18 +118,96 @@ Quan hệ hợp tác là quan hệ dẫn xuất từ credit cùng sản phẩm, 
 
 ### 2.3. Chuẩn bị bốn bảng dữ liệu
 
-| Bảng | Mỗi dòng đại diện cho | Thông tin cần lưu |
-|---|---|---|
-| Tài liệu | Một bài báo/bài đăng | ID, URL, nguồn, tiêu đề, ngày đăng, ngày thu thập, nội dung |
-| Thực thể | Một đối tượng chuẩn hóa | ID, loại, tên chuẩn, tên khác, nguồn xác minh |
-| Quan hệ | Một quan hệ giữa hai đối tượng | ID, ID hai đầu, loại, thời gian nếu có, trạng thái duyệt |
-| Bằng chứng | Một đoạn xác nhận quan hệ | ID quan hệ, ID tài liệu, đoạn trích, vị trí câu, phương pháp trích xuất |
+Mỗi bảng lưu một loại thông tin riêng. Các trường **Bắt buộc** cần có cho mỗi dòng; trường **Tùy chọn** chỉ điền khi nguồn cung cấp hoặc nhóm cần dùng. Trường chưa biết để trống, không tự suy đoán.
 
-Hai bài cùng xác nhận một quan hệ không tạo thành hai cạnh; chỉ bổ sung bằng chứng. Với quản lý hoặc đại sứ, lưu giai đoạn nếu nguồn cung cấp. Ngày đăng bài không tự động là ngày bắt đầu quan hệ. Thông tin chưa biết thì để trống.
+#### Bảng Tài liệu (`Document`)
+
+Mỗi dòng đại diện cho một bài báo hoặc bài đăng đã thu thập.
+
+| Trường | Bắt buộc? | Ý nghĩa |
+|---|---|---|
+| `document_id` | Có | ID duy nhất, ví dụ `DOC_0001` |
+| `url` | Có | Đường dẫn tài liệu gốc |
+| `source_name` | Có | Tên báo, website hoặc tài khoản đăng |
+| `source_type` | Có | Báo chí, website tổ chức, mạng xã hội... |
+| `title` | Có | Tiêu đề bài viết hoặc nội dung nhận diện bài đăng |
+| `published_at` | Có nếu nguồn cung cấp | Ngày đăng; để trống nếu không xác định được |
+| `collected_at` | Có | Ngày nhóm thu thập tài liệu |
+| `content` | Có | Nội dung văn bản dùng để phân tích |
+| `collection_method` | Có | RSS, API, lấy thủ công hoặc phương thức được phép khác |
+| `document_status` | Có | Hợp lệ, trùng lặp, loại bỏ hoặc cần kiểm tra |
+| `author` | Tùy chọn | Tác giả bài viết |
+| `account_verified` | Tùy chọn | Có/không/không rõ, áp dụng với tài khoản mạng xã hội |
+| `exclude_reason` | Tùy chọn | Lý do loại tài liệu nếu không sử dụng |
+
+Nếu điều kiện nguồn không cho phép chia sẻ toàn văn, chỉ lưu metadata và đoạn trích cần thiết theo quy định áp dụng.
+
+#### Bảng Thực thể (`Entity`)
+
+Mỗi dòng đại diện cho một đối tượng riêng đã được chuẩn hóa.
+
+| Trường | Bắt buộc? | Ý nghĩa |
+|---|---|---|
+| `entity_id` | Có | ID duy nhất, ví dụ `PER_0001`, `SON_0001` |
+| `entity_type` | Có | Person, Song, Album, Company, Show, Event, Group hoặc Brand |
+| `canonical_name` | Có | Tên chuẩn dùng để hiển thị và tìm kiếm |
+| `aliases` | Có | Tên khác, nghệ danh, tên viết tắt; danh sách rỗng nếu không có |
+| `verification_status` | Có | Đã xác minh, chờ kiểm tra hoặc chưa xác minh |
+| `created_at` | Có | Ngày thêm thực thể vào dữ liệu |
+| `notes` | Tùy chọn | Ghi chú để phân biệt với đối tượng trùng tên |
+| `release_year` | Tùy chọn | Năm phát hành nếu là Song/Album và có nguồn |
+| `season_or_year` | Tùy chọn | Mùa/năm nếu là Show/Event |
+| `official_url` | Tùy chọn | Trang chính thức xác nhận đối tượng |
+
+Nguồn xác minh được nối qua bảng Bằng chứng hoặc bảng dẫn nguồn riêng nếu cần nhiều nguồn cho một thực thể. Tránh nhét nhiều URL vào một ô.
+
+#### Bảng Quan hệ (`Relation`)
+
+Mỗi dòng đại diện cho một quan hệ duy nhất giữa hai thực thể.
+
+| Trường | Bắt buộc? | Ý nghĩa |
+|---|---|---|
+| `relation_id` | Có | ID duy nhất, ví dụ `REL_0001` |
+| `source_entity_id` | Có | ID thực thể đầu quan hệ |
+| `relation_type` | Có | Một loại trong danh sách quan hệ đã thống nhất |
+| `target_entity_id` | Có | ID thực thể cuối quan hệ |
+| `verification_status` | Có | Đã xác minh, chờ kiểm tra hoặc bị loại |
+| `is_derived` | Có | Có/không: quan hệ suy ra từ quan hệ khác hay trích trực tiếp |
+| `valid_from` | Tùy chọn | Ngày bắt đầu quan hệ nếu nguồn nói rõ |
+| `valid_to` | Tùy chọn | Ngày kết thúc quan hệ nếu nguồn nói rõ |
+| `role_detail` | Tùy chọn | Vai trò cụ thể, ví dụ thí sinh, khách mời, huấn luyện viên |
+| `notes` | Tùy chọn | Ghi chú làm rõ quan hệ |
+
+Không lưu URL hoặc đoạn trích trực tiếp trong bảng này vì một quan hệ có thể được nhiều tài liệu xác nhận. Bảng Bằng chứng sẽ nối quan hệ với từng nguồn.
+
+#### Bảng Bằng chứng (`Evidence`)
+
+Mỗi dòng đại diện cho một đoạn thông tin trong một tài liệu giúp xác nhận hoặc bác bỏ một quan hệ.
+
+| Trường | Bắt buộc? | Ý nghĩa |
+|---|---|---|
+| `evidence_id` | Có | ID duy nhất, ví dụ `EVD_0001` |
+| `relation_id` | Có | Quan hệ mà bằng chứng này hỗ trợ |
+| `document_id` | Có | Tài liệu chứa bằng chứng |
+| `quote` | Có | Câu hoặc đoạn trích liên quan |
+| `sentence_location` | Có | Số câu, đoạn hoặc vị trí trong tài liệu |
+| `extraction_method` | Có | Trích tự động, theo quy tắc hoặc nhập thủ công |
+| `review_status` | Có | Đã kiểm tra, chờ kiểm tra hoặc không đủ căn cứ |
+| `review_note` | Tùy chọn | Ghi chú về ngữ cảnh hoặc lý do duyệt/loại |
+| `confidence_score` | Tùy chọn | Điểm dự đoán của hệ thống nếu có; không thay việc kiểm tra |
+
+#### Quy tắc nhập và chống trùng
+
+- Mỗi dòng có ID riêng; không dùng tên làm ID. ID đã gán phải ổn định qua các lần cập nhật.
+- Mỗi `relation_id` đại diện cho một cặp thực thể và một loại quan hệ. Hai nguồn cùng xác nhận thì tạo hai dòng bằng chứng, không tạo hai cạnh.
+- Không tạo quan hệ chỉ vì hai người được nhắc trong cùng bài; phải có câu hoặc thông tin đủ xác nhận.
+- `published_at` là ngày đăng bài. Chỉ điền `valid_from` khi nguồn nêu rõ thời điểm quan hệ bắt đầu.
+- Quan hệ `COLLABORATED_WITH` suy ra từ credit chung cần đặt `is_derived = true` và lưu bằng chứng credit làm căn cứ.
+- Trường chưa biết để trống hoặc đánh dấu chưa xác minh; không tự điền theo suy đoán.
 
 **Đầu ra:** Bảng mô tả dữ liệu, quy tắc ID, định nghĩa quan hệ và cách chống trùng.
 
-**Hoàn thành khi:** Lấy một câu mẫu, cả nhóm thống nhất được phải tạo những nút, cạnh và bằng chứng nào.
+**Hoàn thành khi:** Lấy một câu mẫu, cả nhóm thống nhất được phải tạo những nút, cạnh và bằng chứng nào; các dòng có thể nối với nhau bằng ID và truy ngược về tài liệu gốc.
 
 ## Bước 3. Chọn nguồn và thử khả năng lấy dữ liệu
 
@@ -378,20 +468,28 @@ Mỗi bảng/hình cần nêu: quan sát được gì; tác phẩm hoặc kết 
 
 Viết nhật ký, thống kê và phần báo cáo tương ứng mỗi tuần. Nếu tuần 4 còn sai nhiều, ưu tiên sửa và điều chỉnh tiến độ mở rộng trước khi thêm mô hình nâng cao.
 
-## 4. Phân công tham khảo cho nhóm 2 người
+## 4. Phân công công việc
 
-Bản cũ ghi 4 thành viên nhưng chỉ liệt kê 2 vị trí. Bản này tạm dùng phương án 2 người theo nội dung phân công hiện có, chưa coi đây là số thành viên đã xác nhận.
+### 4.1. Phân công thu thập nguồn dữ liệu
+
+| Thành viên | Nhóm nguồn phụ trách | Nguồn cụ thể | Công việc |
+|---|---|---|---|
+| Huy | Mạng xã hội và nền tảng công khai | Meta (Facebook/Instagram), TikTok, YouTube, Spotify và các nền tảng tương tự | Tìm nội dung công khai liên quan đến nghệ sĩ, tác phẩm, chương trình và hợp tác; kiểm tra tài khoản/kênh chính thức; lưu URL, ngày đăng hoặc ngày phát hành, tên tài khoản/kênh và nội dung/bằng chứng cần thiết. Ưu tiên API hoặc cách truy cập được nền tảng cho phép. |
+| Đức | Báo chí và website | Báo điện tử, website chính thức của nghệ sĩ, công ty, hãng đĩa, chương trình và đơn vị tổ chức | Tìm bài viết và thông tin chính thức; lưu URL, tên nguồn, tiêu đề, ngày đăng, nội dung liên quan và bằng chứng cho các thực thể/quan hệ. |
+
+Cả hai dùng chung quy tắc chọn nguồn, định dạng lưu và cách đặt ID ở Bước 2. Khi một quan hệ được xác nhận bởi nhiều nguồn, chỉ tạo một quan hệ và bổ sung các bằng chứng tương ứng. Mỗi người kiểm tra mẫu dữ liệu của người còn lại trước khi nhập vào bộ dữ liệu chung.
+
+### 4.2. Các công việc còn lại
 
 | Hạng mục | Phụ trách chính | Phối hợp |
 |---|---|---|
-| Phạm vi, thiết kế dữ liệu | Cả hai | Cùng chốt định nghĩa |
-| Nguồn, thu thập, làm sạch | Thành viên 1 | Thành viên 2 kiểm tra mẫu |
-| Bộ đáp án, đánh giá | Thành viên 2 | Thành viên 1 gán nhãn độc lập một phần |
-| Nhận diện, chuẩn hóa, trích xuất | Thành viên 1 | Thành viên 2 hỗ trợ chuẩn hóa và phân tích lỗi |
-| Neo4j và phân tích mạng | Thành viên 2 | Thành viên 1 kiểm tra, diễn giải dữ liệu |
-| Báo cáo và demo | Cả hai | Viết phần phụ trách, đọc chéo |
+| Phạm vi, thiết kế dữ liệu | Huy và Đức | Cùng chốt định nghĩa |
+| Bộ đáp án và đánh giá | Phân công theo tiến độ nhóm | Hai người gán nhãn độc lập một phần |
+| Nhận diện, chuẩn hóa, trích xuất | Phân công theo tiến độ nhóm | Cùng rà soát lỗi và trường hợp chưa rõ |
+| Neo4j và phân tích mạng | Phân công theo tiến độ nhóm | Người còn lại kiểm tra dữ liệu và diễn giải |
+| Báo cáo và demo | Huy và Đức | Viết phần phụ trách, đọc chéo |
 
-Nếu có 4 người, tách thành: thu thập/làm sạch; NLP; Neo4j/phân tích; đánh giá/tích hợp báo cáo. Mọi người đều kiểm tra một phần dữ liệu.
+Nếu nhóm có thêm thành viên, có thể giao riêng NLP, Neo4j/phân tích hoặc đánh giá chất lượng. Mọi thành viên đều tham gia kiểm tra một phần dữ liệu.
 
 ## 5. Công cụ dự kiến
 
