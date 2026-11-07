@@ -1,0 +1,4 @@
+# Mỗi dòng một tên KHÔNG phải nghệ sĩ (kênh truyền thông, tên phần chơi, tên bài lọt vào...).
+# Dòng bắt đầu bằng # là ghi chú. Không phân biệt hoa thường, có dấu hay không dấu.
+VieBuzz
+Đấu Trường Gia Tốc

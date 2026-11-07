@@ -1,0 +1,321 @@
+﻿seed_id,name,entity_type,genre_group,youtube_channel_id,youtube_channel_name,youtube_verified,spotify_artist_id,spotify_name,verification_status,checked_at,notes,layer,source_key,discovered_in,aliases
+SEED_055,RHYDER,Person,V-pop/Nhạc trẻ,UCPjbFSSZXI7ERLRt3O0CGBQ,RHYDER OFFICIAL,có,2AyOlMlafYco5tN7Dn8qAa,Quang Anh Rhyder,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,rhyder,SHOW_001 SHOW_009 SHOW_020 SHOW_023 SHOW_024 SHOW_026 SHOW_027 SHOW_028,Quang Anh Rhyder | RHYDER OFFICIAL | Rhyder
+SEED_095,HIEUTHUHAI,Person,Rap/Hip-hop,UCe8b9jSSD-bNabF4hkNN5PQ,HIEUTHUHAI,có,5HZtdKfC4xU0wvhEyYDWiY,HIEUTHUHAI,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,hieuthuhai,SHOW_001 SHOW_009 SHOW_013 SHOW_020 SHOW_024 SHOW_026 SHOW_027 SHOW_028,
+SEED_089,RHYMASTIC,Person,Rap/Hip-hop,UCgz44a7jO0uOxXUF1MpAxew,Rhymastic Official,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer performer producer,1,rhymastic,SHOW_004 SHOW_005 SHOW_006 SHOW_007 SHOW_008 SHOW_016 SHOW_022,Rhymastic
+ART_0001,Anh Tú,Person,,UC880HMJNGxiZQk029rcWWJQ,Anh Tú Official,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,anh tu,SHOW_001 SHOW_017 SHOW_018 SHOW_019 SHOW_020 SHOW_023,ANH TÚ | Anh TÚ
+SEED_019,Orange,Person,V-pop/Nhạc trẻ,UCpg3O1quTzj7QpDHdhu6pNw,Orange Singer Official,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,orange,SHOW_001 SHOW_002 SHOW_018 SHOW_020 SHOW_022 SHOW_027,ORANGE
+ART_0002,Bùi Công Nam,Person,,UCtlmegSTDZ2xcsyVeBGG1jA,Bùi Công Nam,có,6oqtpFuvCTISMPeGv6P2sj,Bùi Công Nam,đã duyệt,2026-11-06,vai trò tầng 1: composer performer producer,1,bui cong nam,SHOW_004 SHOW_009 SHOW_016 SHOW_017 SHOW_018 SHOW_019,BÙI CÔNG NAM
+SEED_014,Văn Mai Hương,Person,V-pop/Nhạc trẻ,UCKhqOj4gSTegq0kk3hFXw1A,VĂN MAI HƯƠNG OFFICIAL,có,63SNH9m8M034lCGELVC1dm,Văn Mai Hương,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,van mai huong,SHOW_002 SHOW_017 SHOW_018 SHOW_020 SHOW_021 SHOW_023,VĂN MAI HƯƠNG
+SEED_099,B Ray,Person,Rap/Hip-hop,,,,1WvNgEoB66jmHodcj15Zi9,B Ray,đã duyệt,11/5/2026,vai trò tầng 1: coach performer,1,b ray,SHOW_002 SHOW_009 SHOW_010 SHOW_026 SHOW_027 SHOW_028,
+SEED_106,Pháp Kiều,Person,Rap/Hip-hop,UCeTI-7rPW8Q1sDKnk2AzKJw,Pháp Kiều,có,13c4ijEkXNvEFoxGxwp5Su,Pháp Kiều,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,phap kieu,SHOW_001 SHOW_003 SHOW_009 SHOW_020 SHOW_024 SHOW_027,
+SEED_021,HOÀNG DŨNG,Person,V-pop/Nhạc trẻ,UCZzKnnb8ENdw1AFrK8xLDDg,Hoàng Dũng,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer performer producer,1,hoang dung,SHOW_005 SHOW_018 SHOW_019 SHOW_020 SHOW_022 SHOW_028,Hoàng Dũng
+SEED_007,Erik,Person,V-pop/Nhạc trẻ,UCQnw0PycCRlSsT8fQlTDyBA,ERIK Official,có,1L1VfizWn4DkFt602yD80U,ERIK,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,erik,SHOW_001 SHOW_018 SHOW_020 SHOW_024 SHOW_025 SHOW_027,ERIK | ERIK Official
+ART_0003,Dương Domic,Person,,UCXdpVc3f-zBPmqOr4qEJjqw,Dương Domic,có,4KPyQxL1zqEiBcTwW6c9HE,Dương Domic,đã duyệt,2026-11-06,vai trò tầng 1: composer performer,1,duong domic,SHOW_001 SHOW_003 SHOW_020 SHOW_024 SHOW_027 SHOW_028,DƯƠNG DOMIC
+ART_0004,Quang Hùng MasterD,Person,,UCQ4snivOmAYFUR1vdFOwMKw,Quang Hùng MasterD,có,0slOzRzTQb1RBBVJbvRITP,Quang Hùng MasterD,đã duyệt,2026-11-06,vai trò tầng 1: composer performer producer,1,quang hung masterd,SHOW_001 SHOW_003 SHOW_020 SHOW_024 SHOW_027 SHOW_028,QUANG HÙNG MASTERD
+ART_0005,CoolKid,Person,,UCzpmVANLLjh6hyL8eIjlTsw,COOLKID OFFICIAL,có,1Qia4CTwh6x0CZbD0079zi,CoolKid,đã duyệt,2026-11-06,vai trò tầng 1: composer performer,1,coolkid,SHOW_003 SHOW_006 SHOW_010 SHOW_023 SHOW_026 SHOW_027,COOLKID
+SEED_096,Negav,Person,Rap/Hip-hop,UCgZ0ZpHDAdyM25XFPHDCThg,Negav,có,4fg8aMZ23d2bxKz7r2vt9v,Negav,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,negav,SHOW_001 SHOW_002 SHOW_024 SHOW_026 SHOW_027 SHOW_028,NEGAV
+SEED_047,GREY D,Person,V-pop/Nhạc trẻ,UCJ1-hqEyFm0TjHq-RjT-_Mg,GREY D,có,6d0dLenjy5CnR5ZMn2agiV,GREY D,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,grey d,SHOW_001 SHOW_016 SHOW_017 SHOW_018 SHOW_022 SHOW_023,Grey D | Grey-D | Đoàn Thế Lân
+SEED_067,Khắc Hưng,Person,V-pop/Nhạc trẻ,UC48zpi3endnTzWmzd68XKNg,Khắc Hưng,có,2mx5AAdmlMxMcrcd7AQh1j,Khắc Hưng,đã duyệt,11/5/2026,vai trò tầng 1: composer,1,khac hung,SHOW_004 SHOW_006 SHOW_016 SHOW_017 SHOW_018 SHOW_022,KHẮC HƯNG
+SEED_022,Vũ Cát Tường,Person,V-pop/Nhạc trẻ,UCNQ8-stqtL73X53HAj7iEWg,Vu Cat Tuong,có,7yquVKfxBuNFJbG9cy2R8A,Vũ Cát Tường,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,vu cat tuong,SHOW_002 SHOW_004 SHOW_016 SHOW_017 SHOW_018 SHOW_024,VŨ CÁT TƯỜNG
+SEED_069,Hứa Kim Tuyền,Person,V-pop/Nhạc trẻ,UCS2cqd5fmWvAo5l0mWeOJcA,Hứa Kim Tuyền,có,3Ufoo4BPShhahtCSjgpBLP,Hứa Kim Tuyền,đã duyệt,11/5/2026,vai trò tầng 1: composer performer producer,1,hua kim tuyen,SHOW_004 SHOW_005 SHOW_016 SHOW_017 SHOW_018,HỨA KIM TUYỀN
+SEED_037,LyLy,Person,V-pop/Nhạc trẻ,UChsvMNCvMvaL9Pv9w4Nh9CQ,LyLy Official ,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,lyly,SHOW_001 SHOW_004 SHOW_017 SHOW_018 SHOW_020,LYLY | Lyly
+ART_0006,Ali Hoàng Dương,Person,,UCgBoAULW29LsFybsQ8FgIdg,Ali Hoàng Dương Official,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,ali hoang duong,SHOW_001 SHOW_003 SHOW_017 SHOW_018 SHOW_020,ALI HOÀNG DƯƠNG
+ART_0007,HURRYKNG,Person,,UCBl6TrTsG-Sdo0iPipLwXAQ,HURRYKNG,có,5ulyphh5uJrH4Gb1JpSMkV,HURRYKNG,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,hurrykng,SHOW_001 SHOW_003 SHOW_009 SHOW_024 SHOW_027,
+ART_0008,Jsol,Person,,UCtX0nlcMMHiNS0djekXscIw,JSOL,có,6EybZ5zwPNEtEngfrEMevN,JSOL,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,jsol,SHOW_001 SHOW_003 SHOW_020 SHOW_024 SHOW_027,JSOL
+ART_0009,Captain,Person,,UCyHC5u0-njv2elrGp3t5-Vg,CAPTAIN BOY Official,có,7lWVRR89Ifv7WNDHxD4oye,Captain,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,captain,SHOW_001 SHOW_009 SHOW_010 SHOW_013 SHOW_026,CAPTAIN | CAPTAIN BOY
+ART_0010,KRISS NGO,Person,,UCNpbsgJ1A1qOZ7HhmIXUvuQ,Kriss Ngo,có,,,đã duyệt,11/5/2026,vai trò tầng 1: producer,1,kriss ngo,SHOW_004 SHOW_005 SHOW_006 SHOW_016 SHOW_024,KRISS NGÔ
+SEED_185,MEW AMAZING,Person,EDM/Electronic,,,không tìm thấy kênh tick xanh,34nom4Ft3keMWBZPAUB3EI,Mew Amazing,đã duyệt,11/5/2026,vai trò tầng 1: composer performer producer,1,mew amazing,SHOW_005 SHOW_016 SHOW_018 SHOW_022 SHOW_024,Mew Amazing
+SEED_085,Karik,Person,Rap/Hip-hop,UCLa90xY6l4sEY1sC3tlwGGA,KARIK,có,2Bwp23pD4UVsSkchHDZw4F,Karik,đã duyệt,11/5/2026,vai trò tầng 1: coach performer,1,karik,SHOW_002 SHOW_007 SHOW_008 SHOW_009 SHOW_010,
+SEED_088,JustaTee,Person,Rap/Hip-hop,UC_Eqg-tBPUUvA0heBZfdu6Q,"
+JustaTeeMusic",có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,justatee,SHOW_001 SHOW_007 SHOW_010 SHOW_018 SHOW_022,Justatee
+SEED_068,CHÂU ĐĂNG KHOA,Person,V-pop/Nhạc trẻ,,,không tìm thấy kênh tick xanh,7oOFsgF6y3Z9wI7fgJTbFk,Châu Đăng Khoa,đã duyệt,11/5/2026,vai trò tầng 1: composer,1,chau dang khoa,SHOW_004 SHOW_005 SHOW_015 SHOW_016 SHOW_018,Châu Đăng Khoa
+ART_0011,Nicky,Person,,,,,006RBJU7ScwRg9eouP4kJw,NICKY,đã duyệt,2026-11-06,vai trò tầng 1: composer performer,1,nicky,SHOW_001 SHOW_018 SHOW_022 SHOW_024 SHOW_027,NICKY
+SEED_179,SLIMV,Person,EDM/Electronic,UCnO4X-iprhjV9X9u1fsP57g,SlimV,có,2m8Bk9or6quybzoQbM0zQt,SlimV,đã duyệt,2026-11-06,vai trò tầng 1: producer,1,slimv,SHOW_004 SHOW_005 SHOW_006 SHOW_024,SLIM V
+SEED_008,Đức Phúc,Person,V-pop/Nhạc trẻ,UCVIIa6OL-FautUqhHjAoz_A,ĐỨC PHÚC OFFICIAL,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,duc phuc,SHOW_001 SHOW_018 SHOW_020 SHOW_021,
+SEED_046,Hòa Minzy,Person,V-pop/Nhạc trẻ,UCjm_FW7t1gam7qLldSVOclw,Hòa Minzy,có,3BWBxpXDxofgji3RKZPIz8,Hoà Minzy,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,hoa minzy,SHOW_017 SHOW_021 SHOW_023 SHOW_025,HOÀ MINZY | Hoà Minzy
+ART_0012,GRVITY,Person,,,,không tìm thấy kênh tick xanh,,,đã duyệt,11/5/2026,vai trò tầng 1: producer,1,grvity,SHOW_004 SHOW_005 SHOW_006 SHOW_024,
+ART_0013,OgeNus,Person,,UCvK8JBMWEySJty9_pqY-2zQ,OgeNus Official,có,5mPbBOU2KMFfStepNZ027p,OgeNus,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,ogenus,SHOW_002 SHOW_009 SHOW_020 SHOW_027,OGENUS
+ART_0014,JAVIX,Person,,,,không tìm thấy kênh tick xanh,1L2cMZ3FNyeinGbbTDbB5E,Javix,đã duyệt,2026-11-06,vai trò tầng 1: producer,1,javix,SHOW_004 SHOW_005 SHOW_006 SHOW_024,
+ART_0015,WEAN,Person,,UCwYl-SPMWZ8C4X2ZHTjla2A,WEAN,có,30eFAXoU2kTjJPf2cq80B8,WEAN,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,wean,SHOW_001 SHOW_003 SHOW_020 SHOW_027,
+SEED_082,DTAP,Group,V-pop/Nhạc trẻ,UCzEhWhrRUdRgxh_UuFpUuzQ,DTAP,có,5L9ssI4l4DKU1za4ZwvKvG,DTAP,đã duyệt,11/5/2026,vai trò tầng 1: composer performer producer,1,dtap,SHOW_016 SHOW_023 SHOW_024 SHOW_025,
+SEED_110,GILL,Person,Rap/Hip-hop,UCS8nVCGXzHQREU8fx-MwZaA,Gill Official,có,5Hv9MhUFvGlYurce5BDRUh,Gill,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,gill,SHOW_002 SHOW_010 SHOW_027 SHOW_028,Gill
+ART_0017,Song Luân,Person,,UCvUye1AU4hAx3jjLAZ5qvQg,Song Luân Official,có,0iqum9KAHh3LkgDhuqvTxM,Song Luân,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,song luan,SHOW_001 SHOW_003 SHOW_020 SHOW_024,Song Luân Official
+ART_0018,CHENG,Person,,,,không tìm thấy kênh tick xanh,0MNKLsBMKa5KGShgrWgE3B,Cheng,đã duyệt,2026-11-06,vai trò tầng 1: composer performer producer,1,cheng,SHOW_004 SHOW_005 SHOW_006 SHOW_016,
+SEED_070,KAI ĐINH,Person,V-pop/Nhạc trẻ,UCWsBf9OjYMs_fR6C7AzMojg,Kai Dinh Official,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,kai dinh,SHOW_004 SHOW_016 SHOW_018 SHOW_022,Kai Dinh | Kai Dinh Official | Kai Đinh
+ART_0020,MONOTAPE,Person,,UCwrG16AGCyJETbLVZPH7ekQ,Monotape Music,có,,,đã duyệt,11/5/2026,vai trò tầng 1: producer,1,monotape,SHOW_004 SHOW_005 SHOW_006 SHOW_016,Monotape
+ART_0021,Vương Bình,Person,,UCJCeGR6Du9ceYyfta3uk1fw,VƯƠNG BÌNH,có,351mBX7BjjI2plbfozIzqb,VƯƠNG BÌNH,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,vuong binh,SHOW_002 SHOW_003 SHOW_020 SHOW_028,VƯƠNG BÌNH
+SEED_127,Wren Evans,Person,Indie/Alternative,UCtpX-hGGBtH2ZvVX9_5RwFg,Wren Evans Official,có,5M3ffmRiOX9Q8Y4jNeR5wu,Wren Evans,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,wren evans,SHOW_003 SHOW_006 SHOW_022 SHOW_023,WREN EVANS
+ART_0022,Nhật Hoàng,Person,,UCWmsRatuWgbam3P1F8zVqVg,Nhật Hoàng Official,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,nhat hoang,SHOW_009 SHOW_010 SHOW_013 SHOW_027,
+ART_0023,TRANG PHÁP,Person,,UCvFey3ScTDW1UmAepzf1cKw,Trang Pháp Official,có,3Ovt66opVihLuIvPhlceI6,Trang Pháp,đã duyệt,2026-11-06,vai trò tầng 1: composer performer producer,1,trang phap,SHOW_006 SHOW_015 SHOW_016 SHOW_018,Trang Pháp
+SEED_052,Phan Mạnh Quỳnh,Person,V-pop/Nhạc trẻ,UCQ7d2lO-qGUy6wwM4n3KHfw,Phan Mạnh Quỳnh Official,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,phan manh quynh,SHOW_005 SHOW_016 SHOW_017 SHOW_024,PHAN MẠNH QUỲNH
+SEED_057,LYNK LEE,Person,V-pop/Nhạc trẻ,UCDQPLoFmZZFiQOH6QHhNNfw,Lynk Lee,có,7H9jPV9qWyp6V629038aXU,Lynk Lee,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,lynk lee,SHOW_005 SHOW_015 SHOW_016 SHOW_018,Lynk Lee
+ART_0027,Ngô Lan Hương,Person,,UC6wjclMOHQJwOHrvqVRi5Jw,Ngô Lan Hương,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,ngo lan huong,SHOW_016 SHOW_024 SHOW_027 SHOW_028,NGO LAN HUONG
+ART_0028,PHẠM TOÀN THẮNG,Person,,UCnn16JuoyuQNfxI2ySESKlg,Phạm Toàn Thắng Official,có,4Fip6EDZhA4qDiA1vS0Oe5,Phạm Toàn Thắng,đã duyệt,2026-11-06,vai trò tầng 1: composer,1,pham toan thang,SHOW_004 SHOW_016 SHOW_017 SHOW_018,Phạm Toàn Thắng
+ART_0029,Võ Thiện Thanh,Person,,UCtIbAVOOgTYro3VSZb9VSBQ,Võ Thiện Thanh ,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer,1,vo thien thanh,SHOW_016 SHOW_017 SHOW_018 SHOW_022,VÕ THIỆN THANH
+SEED_043,Lâm Bảo Ngọc,Person,V-pop/Nhạc trẻ,UCgOnbQJXEPTGycuy0UnXKNQ,Lâm Bảo Ngọc - Official,có,3E0b68wCGYihuHBtlasfm9,Lâm Bảo Ngọc,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,lam bao ngoc,SHOW_001 SHOW_019 SHOW_020,
+SEED_119,Thái VG,Person,Rap/Hip-hop,UCitmOHL1kpPIwpq_OG8UkAg,Thai VG,có,60866JeWZ2YP0iOF1obsqE,Thai VG,đã duyệt,11/5/2026,vai trò tầng 1: coach composer performer,1,thai vg,SHOW_005 SHOW_009 SHOW_010,THÁI VG | Thai VG
+ART_0030,BigDaddy,Person,,UCA04cVd_BBgQGgOkfU1megA,BIGDADDY x EMILY,có,3Tehj7YghQc7zH0I1faGc6,BigDaddy,đã duyệt,2026-11-06,vai trò tầng 1: coach performer,1,bigdaddy,SHOW_002 SHOW_009 SHOW_010,
+SEED_016,Isaac,Person,V-pop/Nhạc trẻ,UCLgCMwVcSV3H62EoSYt6cSQ,Isaac Official,có,40JnMfFlpwqBnWitkL96g4,Isaac,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,isaac,SHOW_001 SHOW_021 SHOW_027,ISAAC
+ART_0031,THANH DUY,Person,,UC19ghiqAL1Mdt17ebwvhI_A,Thanh Duy Official,có,4sGeCkzfqINvHaWFfeoQJp,Thanh Duy,đã duyệt,2026-11-06,vai trò tầng 1: composer performer,1,thanh duy,SHOW_004 SHOW_005 SHOW_019,Thanh Duy
+ART_0032,Vũ Thảo My,Person,,UCzks6IlGLzSVhWsLNJtrmGA,VŨ THẢO MY,có,42D8BHt57a1V8Mn47afQhj,Vũ Thảo My,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,vu thao my,SHOW_001 SHOW_020 SHOW_027,
+ART_0033,Lương Bích Hữu,Person,,UC2Xum7ZKANfXlz0oN4Ly4zw,Lương Bích Hữu Official,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,luong bich huu,SHOW_010 SHOW_020 SHOW_027,
+SEED_084,BINZ,Person,Rap/Hip-hop,UC0IpGYsi1KVorZ7QVCHfdag,Binz Da Poet,có,2nSO7JYDbJrYbJmP39qUzj,Binz,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,binz,SHOW_004 SHOW_006 SHOW_007,Binz
+ART_0034,DUY KHÁNH,Person,,UCNAny2p6H5iiQN7udvCLbKg,DUY KHÁNH Official,có,36Ltp1cc3ExQQJ8h9GCT4O,Duy Khánh,đã duyệt,2026-11-06,vai trò tầng 1: composer performer,1,duy khanh,SHOW_004 SHOW_005 SHOW_019,Duy Khánh
+ART_0037,Hoàng Hải,Person,,UCfboGcH24RCdGTPtR01S90w,Hoàng Hải Official,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,hoang hai,SHOW_020 SHOW_026 SHOW_027,
+ART_0038,IT'S CHARLES,Person,,UC3whZMBia61xnTLdH5O4HYw,It’s CHARLES.,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer performer producer,1,it s charles,SHOW_004 SHOW_005 SHOW_006,IT’S CHARLES | It's CHARLES
+ART_0039,JUN PHẠM,Person,,UCrr5XJFgi3HNcXFWIDhNF7w,Jun Phạm Official,có,5bJcxnt5lkrDyKfPjtSBxP,Jun Phạm,đã duyệt,2026-11-06,vai trò tầng 1: composer performer,1,jun pham,SHOW_004 SHOW_005 SHOW_006,
+SEED_175,Thanh Lam,Person,Dân gian đương đại/Bolero/Trữ tình,UCK0S216qxtFq2RcM1gf2HnQ,THANH LAM,có,5kG9gxVkkdrskVLhfblCjT,Thanh Lam,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,thanh lam,SHOW_020 SHOW_024 SHOW_027,THANH LAM
+ART_0040,Cody Nam Võ,Person,,UCC-FJHQS4hHx4J9URX0aaSQ,CODYNAMVO OFFICIAL,có,3ewrdkXiilVEtR0XtnDEvg,Cody Nam Võ,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,cody nam vo,SHOW_002 SHOW_003 SHOW_028,CODY NAM VÕ
+SEED_060,HOÀNG TÔN,Person,V-pop/Nhạc trẻ,UC-0vKdec-l_k0MPoOxL4tNw,HOÀNG TÔN,có,6xRZoWlE9twEkMC5NW4Z9f,Hoàng Tôn,đã duyệt,11/5/2026,vai trò tầng 1: composer performer producer,1,hoang ton,SHOW_005 SHOW_009 SHOW_022,Hoàng Tôn | NGUYỄN HOÀNG TÔN
+SEED_174,Mỹ Linh,Person,Dân gian đương đại/Bolero/Trữ tình,UCztbke-gusP0dNu_WEItMEw,"
+Mỹ Linh Official",có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,my linh,SHOW_016 SHOW_019 SHOW_023,MỸ LINH
+ART_0041,KAY TRẦN,Person,,UCziQeY6RkNVKa9PF5UzF4yA,Kay Tran Official,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,kay tran,SHOW_004 SHOW_006 SHOW_024,Kay Trần
+SEED_013,TÓC TIÊN,Person,V-pop/Nhạc trẻ,UCMwN2073L0Nyx0yN1HNhuLQ,Tóc Tiên,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,toc tien,SHOW_016 SHOW_024 SHOW_025,TOC TIEN | Tóc Tiên
+ART_0042,Sơn.K,Person,,UCkwnXbnsROQVkhRv1u7MYOw,Sơn.K,có,4APAeuMjgVjYGMWVDehJrc,Sơn.K,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,son k,SHOW_002 SHOW_003 SHOW_028,
+SEED_114,24k.Right,Person,Rap/Hip-hop,UCKMcwglSCCYardHgZHdDmiw,"
+24kRight",có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,24k right,SHOW_009 SHOW_020 SHOW_026,
+ART_0045,Long Nón Lá,Person,,UCnicUh3j6A3h0XYm4mXa2Qw,Long Nón Lá,có,4XPmkusoYLS1cvgpHgQjiB,Long Nón Lá,đã duyệt,2026-11-06,vai trò tầng 1: composer performer,1,long non la,SHOW_005 SHOW_009 SHOW_010,LONG NÓN LÁ
+ART_0046,NGUYỄN HẢI PHONG,Person,,,,không tìm thấy kênh tick xanh,0NPrS1NOx6rxhDZ4ujNDB7,Nguyễn Hải Phong,đã duyệt,2026-11-06,vai trò tầng 1: composer,1,nguyen hai phong,SHOW_004 SHOW_005 SHOW_018,Nguyễn Hải Phong
+SEED_005,Noo Phước Thịnh,Person,V-pop/Nhạc trẻ,UC7tPk1F9H5e2vGUmTDlz9nQ,Noo Phước Thịnh,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,noo phuoc thinh,SHOW_019 SHOW_023 SHOW_025,NOO PHUOC THINH | NOO PHƯỚC THỊNH
+SEED_091,TLINH,Person,Rap/Hip-hop,UC3O-gNkOsgemkuhuAopEGbA,tlinh,có,3diftVOq7aEIebXKkC34oR,tlinh,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,tlinh,SHOW_007 SHOW_022 SHOW_024,TLinh | Tlinh
+SEED_062,NGUYỄN VĂN CHUNG,Person,V-pop/Nhạc trẻ,UCJir0VguafZLPG4g1fF0EDw,NGUYỄN VĂN CHUNG MUSIC,có,1uXHYAZLyOQY5qaM1crBNK,Nguyen Van Chung,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,nguyen van chung,SHOW_004 SHOW_005 SHOW_025,
+SEED_086,Suboi,Person,Rap/Hip-hop,UCBrDYViUYjWPTJDd3QP0uBQ,Suboi,có,2Fc5cGXai8xzLhGyltp4tT,Suboi,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,suboi,SHOW_007 SHOW_009 SHOW_010,
+ART_0047,TIÊU MINH PHỤNG,Person,,UCsa3-0y_jdNHQgoZnY-VUSg,Tiêu Minh Phụng Official,có,3OqnxNFqPxA4wdByq290TI,Tiêu Minh Phụng,đã duyệt,2026-11-06,vai trò tầng 1: composer performer,1,tieu minh phung,SHOW_005 SHOW_010 SHOW_027,Tiêu Minh Phụng
+ART_0048,2PILLZ,Person,,UCXSOg9I03KEJlE3EXtcjEPA,2pillz,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer producer,1,2pillz,SHOW_003 SHOW_016 SHOW_024,2pillz
+SEED_032,ONLY C,Person,V-pop/Nhạc trẻ,,,không tìm thấy kênh tick xanh,5GBXwBVQufRCmwI1bNRIUo,Only C,đã duyệt,11/5/2026,vai trò tầng 1: composer,1,only c,SHOW_004 SHOW_016 SHOW_018,Only C
+ART_0049,PHƯƠNG UYÊN,Person,,,,không tìm thấy kênh tick xanh,,,đã duyệt,11/5/2026,vai trò tầng 1: composer,1,phuong uyen,SHOW_005 SHOW_015 SHOW_018,Phương Uyên
+SEED_063,TIÊN COOKIE,Person,V-pop/Nhạc trẻ,,,không tìm thấy kênh tick xanh,0UzTVrRT0KTsJDxmlcGfQG,Tiên Cookie,đã duyệt,11/5/2026,vai trò tầng 1: composer,1,tien cookie,SHOW_004 SHOW_016 SHOW_017,Tiên Cookie
+ART_0050,Hồ Hoài Anh,Person,,,,không tìm thấy kênh tick xanh,,,đã duyệt,11/5/2026,vai trò tầng 1: composer producer,1,ho hoai anh,SHOW_004 SHOW_016 SHOW_018,HỒ HOÀI ANH
+ART_0053,Việt Anh,Person,,UCCBdfUHnz4tS3mYGg2Glung,Việt Anh Singer Official,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer,1,viet anh,SHOW_015 SHOW_017 SHOW_018,VIỆT ANH
+SEED_135,Da LAB,Group,Indie/Alternative,UCCCRRUvgvygH82HAugJjDLw,Da LAB Official,có,6zUWZmyi5MLOEynQ5wCI5f,Da LAB,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,da lab,SHOW_005 SHOW_016 SHOW_024,DA LAB
+SEED_064,LƯU THIÊN HƯƠNG,Person,V-pop/Nhạc trẻ,,,không tìm thấy kênh tick xanh,6svW0sYnJFnuQ5nvOhfORW,Lưu Thiên Hương,đã duyệt,11/5/2026,vai trò tầng 1: composer,1,luu thien huong,SHOW_005 SHOW_015 SHOW_016,
+SEED_053,TĂNG DUY TÂN,Person,V-pop/Nhạc trẻ,UCgCrotgA4en50zJ3wjQ7X7w,Tăng Duy Tân,có,1n9JKdEdLxrbgJiqz1WZFJ,Tăng Duy Tân,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,tang duy tan,SHOW_023 SHOW_025 SHOW_027,Tăng Duy Tân
+ART_0059,Ánh Sáng AZA,Person,,UCCinBA-mujBeiREKnTfbb3w,Ánh Sáng AZA Official,có,0agWx6vy0Ss4FGafO8bEYc,Ánh Sáng AZA,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,anh sang aza,SHOW_003 SHOW_025 SHOW_028,ÁNH SÁNG AZA
+SEED_029,Quân A.P,Person,V-pop/Nhạc trẻ,UCXKnIgvBwPV6G-uT7gBXhcA,Quân A.P Official,có,2NRcG7E1j2sSi8vnUzCcpi,Quân A.P,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,quan a p,SHOW_001 SHOW_021,
+SEED_015,Trúc Nhân,Person,V-pop/Nhạc trẻ,UC9c3qUdRWmMic4-5yTjvCNA,Trúc Nhân,có,1dmaHHd1Xbd85cT1egYb4w,Trúc Nhân,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,truc nhan,SHOW_018 SHOW_024,TRÚC NHÂN
+ART_0060,Thu Minh,Person,,UCyMTSaqGtzwEgQ7rQp_ogTQ,Thu Minh,có,4mzMFxVZNS2uCVNdsVFoj5,Thu Minh,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,thu minh,SHOW_018 SHOW_020,
+ART_0062,Phạm Anh Duy,Person,,UC3CtuVov--SjPJTzvdOb8QQ,Phạm Anh Duy,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,pham anh duy,SHOW_001 SHOW_020,
+ART_0064,BB TRẦN,Person,,UCurbK4xlvyNsUPnH8cWCs6g,BB Trần,có,0eM9FVpbKx2ZvUOWDHXbUO,BB Trần,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,bb tran,SHOW_004 SHOW_005,BB Trần
+ART_0065,HÀ AN HUY,Person,,UCc4KSaNBMqZQ3GjxZsqDV9g,Hà An Huy Official,có,6cz81gA7fLpRK4qKeLsGIn,Hà An Huy,đã duyệt,2026-11-06,vai trò tầng 1: composer performer producer,1,ha an huy,SHOW_005 SHOW_014,Hà An Huy
+ART_0066,Mai Tiến Dũng,Person,,UCwRbNdY2ipKp9MU_BpbTjeQ,MAI TIẾN DŨNG [OFFICIAL CHANNEL],có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,mai tien dung,SHOW_020 SHOW_027,
+ART_0067,PHẠM QUỲNH ANH,Person,,UCCQKqUcnREDAxdGCitGmgvQ,Phạm Quỳnh Anh Official,có,033tY0EKEVdDtzoeEMMCJC,Phạm Quỳnh Anh,đã duyệt,2026-11-06,vai trò tầng 1: composer performer,1,pham quynh anh,SHOW_016 SHOW_017,Phạm Quỳnh Anh
+ART_0068,Ái Phương,Person,,UCzHYZy4i6QjWm-71GVK90XA,Ái Phương Official,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,ai phuong,SHOW_016 SHOW_018,ÁI PHƯƠNG
+SEED_004,Đông Nhi,Person,V-pop/Nhạc trẻ,UCa9HAp5QVsCL44qW08Rt-Xg,ĐÔNG NHI,có,6JTiPLdbZD2e0tDsN15U1s,Đông Nhi,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,dong nhi,SHOW_021 SHOW_024,DONG NHI
+SEED_009,MIN,Person,V-pop/Nhạc trẻ,UCLFOZcEUPlwdc02FHkOpqkA,MIN OFFICIAL,có,0IdAjS2LRieBR3gzoazdAw,MIN,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,min,SHOW_018 SHOW_019,Min
+ART_0070,WOKEUP,Person,,UCgdWsKWB2ceB-_YIxJ0aKpw,WOKEUP,có,,,đã duyệt,11/5/2026,vai trò tầng 1: producer,1,wokeup,SHOW_006 SHOW_016,WOKE UP | Wokeup
+ART_0071,OSAD,Person,,UC_a0tYitjq_-cjqndemkxPA,OSAD Official,có,6sJBvMCAi9NuNCxI9RDYDW,Osad,đã duyệt,2026-11-06,vai trò tầng 1: composer performer,1,osad,SHOW_005 SHOW_016,
+SEED_044,DƯƠNG HOÀNG YẾN,Person,V-pop/Nhạc trẻ,UCvFOwWIU2vgppuzQbNFK9kQ,Duong Hoang Yen,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,duong hoang yen,SHOW_009 SHOW_016,Dương Hoàng Yến
+ART_0073,Hùng Huỳnh,Person,,UCGzMqaw3hRu00nTXyshu08Q,Gemini Hùng Huỳnh,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,hung huynh,SHOW_001 SHOW_020,
+SEED_050,SOOBIN,Person,V-pop/Nhạc trẻ,UCpVvunMbMvVj9DgCiOSBdcg,SOOBIN Official,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer performer producer,1,soobin,SHOW_004 SHOW_006,
+ART_0074,NEKO LÊ,Person,,UC-TSfTBp87R0Xiw8nD4PlBg,Neko Land,có,1LizFsdyfdlEJlah6l88PU,Neko Lê,đã duyệt,2026-11-06,vai trò tầng 1: composer performer,1,neko le,SHOW_004 SHOW_005,NEKO LÊ)
+ART_0075,Robber,Person,,UC7REKZZDEuFQj23lWPH5rfg,Hustlang Robber,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,robber,SHOW_010 SHOW_027,HUSTLANG Robber
+ART_0076,THÁI LÊ MINH HIẾU,Person,,UCBwJ0YQG_QDNYBxtAqa_JXw,Thái Lê Minh Hiếu Official,có,06poxdxQLKoN1WqCvk4qcP,Thái Lê Minh Hiếu,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,thai le minh hieu,SHOW_005 SHOW_006,
+SEED_178,TOULIVER,Person,EDM/Electronic,UC97_mZ6eszag42Fg7NFHu6w,Touliver,có,5UNWQJdUbO8Gbg9Qn3r52M,Touliver,đã duyệt,11/5/2026,vai trò tầng 1: producer,1,touliver,SHOW_004 SHOW_024,
+ART_0077,TUIMI,Person,,UCgG4BYVZquDzdZ11lYbH66Q,Tuimi,có,2dP2cG3zK05Y1jtb8Kwdpm,Tuimi,đã duyệt,2026-11-06,vai trò tầng 1: composer performer producer,1,tuimi,SHOW_013 SHOW_016,Tuimi
+SEED_023,BẢO ANH,Person,V-pop/Nhạc trẻ,UCRWrdiC0N2AFnDfbfgy2-7w,Bảo Anh,có,4fCHhderLwLacsIOIKgu3J,Bảo Anh,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,bao anh,SHOW_018 SHOW_028,Bảo Anh
+ART_0078,CONGB,Person,,UCwrOfKbDtcD-oa9ScN6XdKQ,CONGB Official,có,0n5wPsNoNc7w1bElyNzY4Z,CONGB,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,congb,SHOW_002 SHOW_003,
+ART_0079,HINO,Person,,UCb3aBCDrYkU4hL-ieOBtacQ,Hino,có,46eYlws2VfnJJsyPk4cP7o,Hino,đã duyệt,2026-11-06,vai trò tầng 1: producer,1,hino,SHOW_006 SHOW_016,Hino
+ART_0080,HỒ ĐÔNG QUAN,Person,,UCZkjfoVk8-DVe5LdjlQ-M0g,HỒ ĐÔNG QUAN Official,có,29odnaxmCx4mwOKL4mjEFL,Hồ Đông Quan,đã duyệt,2026-11-06,vai trò tầng 1: composer performer,1,ho dong quan,SHOW_005 SHOW_006,Hồ Đông Quan
+ART_0081,Jaysonlei,Person,,UCAuW4uBdEaJJK8LIc71iFLA,jaysonlei,có,5BQgZQPuGImYR5xgbytUKg,Jaysonlei,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,jaysonlei,SHOW_002 SHOW_003,
+SEED_116,Mason Nguyễn,Person,Rap/Hip-hop,UCxUXtyDfc92XV4vq6Rr539A,Mason Nguyễn,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,mason nguyen,SHOW_002 SHOW_010,
+ART_0082,PHAN ĐINH TÙNG,Person,,UCE1Pyr4u_5VhjF1HZ3Db3eA,Phan Đinh Tùng,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,phan dinh tung,SHOW_004 SHOW_024,PHAN ĐÌNH TÙNG
+ART_0084,Saabirose,Person,,UCz5vBeKvm5DdVxwXlSUwMxQ,Saabirose,có,3IMLi0C3EgNuwDiksTxiS5,Saabirose,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,saabirose,SHOW_003 SHOW_010,SAABIROSE
+ART_0085,TUẤN HƯNG,Person,,UCeRu0iIRrZyNpUSEVMaZGow,Tuấn Hưng,có,7l7DZWQaVIS13zFgSf7eb4,Tuấn Hưng,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,tuan hung,SHOW_004 SHOW_024,Tuấn Hưng
+ART_0086,ĐINH TIẾN ĐẠT,Person,,UC5nzIpqJ-UnhQKVJMv-CJLg,Đinh Tiến Đạt Official,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,dinh tien dat,SHOW_004 SHOW_024,Đinh Tiến Đạt
+SEED_051,TRỊNH THĂNG BÌNH,Person,V-pop/Nhạc trẻ,UCVsnRgnAXQb5YErd47-q9Fw,Trịnh Thăng Bình Official,có,4co1OIKlUOsNNVJFSZzO9N,Trịnh Thăng Bình,đã duyệt,11/5/2026,vai trò tầng 1: composer performer producer,1,trinh thang binh,SHOW_005 SHOW_018,Trịnh Thăng Bình
+SEED_118,Tez,Person,Rap/Hip-hop,UCU_cZbP_MSywtdVDBgdqwPw,TEZ OFFICIAL,có,1yWLf9thhwjqScDt6Az4Z9,Tez,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,tez,SHOW_002 SHOW_009,TEZ
+ART_0088,BIKAY,Person,,,,không tìm thấy kênh tick xanh,,,đã duyệt,11/5/2026,vai trò tầng 1: producer,1,bikay,SHOW_005 SHOW_006,
+SEED_102,Double2T,Person,Rap/Hip-hop,UCKTqwVQf-Hn6he3DDWmAtFw,Double2T Official,có,1NM99SQTX93oCkzvNXWJCf,Double2T,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,double2t,SHOW_009 SHOW_023,DOUBLE2T
+ART_0089,Anh Tú Atus,Person,,UClziWHOBs23kOnJdvAjEPbA,Anh Tú Atus,có,62D1qvKkvUCvXEtY1xwRfo,Anh Tú Atus,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,anh tu atus,SHOW_001 SHOW_027,
+ART_0090,QUANIUM,Person,,UCRpqSQsOI3XmejZ5mKalISg,Quanium,có,30GvsO5AiuFZfCuGslptRp,Quanium,đã duyệt,2026-11-06,vai trò tầng 1: producer,1,quanium,SHOW_005 SHOW_006,
+ART_0091,Phạm Đình Thái Ngân,Person,,UCYambOMJO7acghRqxoBK-zg,Phạm Đình Thái Ngân,có,6Ca5ccx9CM1kd0LBz1T83U,Pham Dinh Thai Ngan,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,thai ngan,SHOW_001 SHOW_002,
+SEED_113,NGẮN,Person,Rap/Hip-hop,UCxfPM_eaP7tq_mN5-l3NY-w,NGẮN Official,có,4Xz2dDcMF1DDfwFcr8Xa5P,Ngắn,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,ngan,SHOW_010 SHOW_013,Ngắn
+ART_0092,PHẠM KHÁNH HƯNG,Person,,UCVNbLMi6-JRLENqHGgEYlXQ,PHAM KHANH HUNG OFFICIAL,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,pham khanh hung,SHOW_004 SHOW_024,
+ART_0095,Yuno BigBoi,Person,,UC_vH0QfA-FKyMQmvBVb4Jwg,YUNO BIGBOI,có,1gUH71ZCFzPyLoyrSguJe1,Yuno Bigboi,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,yuno bigboi,SHOW_007 SHOW_009,
+ART_0096,CM1X,Person,,UCU8fwqv4kLYzOsGSfHhypdA,CM1X Official,có,,,đã duyệt,11/5/2026,vai trò tầng 1: producer,1,cm1x,SHOW_004 SHOW_016,
+ART_0097,GIANG HỒNG NGỌC,Person,,UCZ1NMXunt7K45GCoW7Lavdg,Giang Hồng Ngọc,có,1vuXGfUQ15YoFnM2V49rF5,Giang Hong Ngoc,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,giang hong ngoc,SHOW_015 SHOW_016,Giang Hồng Ngọc
+ART_0098,Gin Tuấn Kiệt,Person,,UC4TqyXMCW0c08N7aRfqxq9A,Gin Tuấn Kiệt,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,gin tuan kiet,SHOW_001 SHOW_027,
+ART_0099,Giáng Son,Person,,,,không tìm thấy kênh tick xanh,15YEEmU7WkJL0FYMIBXUbd,Giáng Son,đã duyệt,2026-11-06,vai trò tầng 1: composer,1,giang son,SHOW_017 SHOW_018,
+ART_0100,PHÚC BỒ,Person,,UC_rvc83PeVrzu3WQ8E3NP9g,Phúc Bồ ,có,6zMLeQLwTDt4zoRzKECDqx,Phúc Bồ,đã duyệt,2026-11-06,vai trò tầng 1: composer producer,1,phuc bo,SHOW_004 SHOW_006,
+ART_0101,PIALINH,Person,,UCviVNpESxiqLoRv-kty0pVg,PiaLinh,có,5Xn0cJrrcslCWCzPXNTy54,PiaLinh,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,pialinh,SHOW_014 SHOW_023,PiaLinh
+ART_0102,VŨ ĐINH TRỌNG THẮNG,Person,,UC0BN9N2jPRI_1_SjhXxnQ2g,Thắng,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer,1,vu dinh trong thang,SHOW_005 SHOW_015,
+ART_0103,ĐĂNG KHÔI,Person,,UC4lZwVZNr4_elD_jqHlz4RQ,Đăng Khôi Official,có,38t6Vs6rCEF4cnICHAGKYL,Đăng Khôi,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,dang khoi,SHOW_004 SHOW_024,
+ART_0104,Công Dương,Person,,,,không tìm thấy kênh tick xanh,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,cong duong,SHOW_001 SHOW_027,
+ART_0105,DABLO,Person,,UCsUvE87vTLE13VcprnNURPA,DABLO Anh Dũng,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,dablo,SHOW_010 SHOW_013,Dablo
+SEED_177,Hà Trần,Person,Dân gian đương đại/Bolero/Trữ tình,UCXNbt60KNVkwqJmFiRWzp9Q,Hà Trần Official,có,37cUqDVdpydDd8VtNlCLuk,Hà Trần,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,ha tran,SHOW_024 SHOW_027,HÀ TRẦN
+ART_0107,NGUYỄN HÙNG,Person,,UCOEVfra3D4_90GrpooneSOA,Nguyễn Hùng,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,nguyen hung,SHOW_025 SHOW_028,Nguyễn Hùng
+ART_0108,PHƯƠNG VY,Person,,UCa7tUvS8IISyLIrofi7mkDw,Phuong Vy,có,5A81GkfzRSHiNQrge5m9gv,Phương Vy,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,phuong vy,SHOW_015 SHOW_016,Phương Vy
+ART_0110,THÁI SƠN BEATBOX,Person,,UCN0o4ggd5SfkMvCIHBG6gcQ,THAI SON BEATBOX,có,1N8SoolThBO0E3T8Acdu1K,Thái Sơn Beatbox,đã duyệt,2026-11-06,vai trò tầng 1: producer,1,thai son beatbox,SHOW_005 SHOW_024,
+SEED_026,Thuỳ Chi,Person,V-pop/Nhạc trẻ,UCZ0zEZe8pWhmNpPdzwfxx4A,THÙY CHI OFFICIAL,có,0l3YAI1xmZKCZBzduST5ft,Thùy Chi,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,thuy chi,SHOW_010 SHOW_027,Thùy Chi
+ART_0112,52HZ,Person,,UC6bXz3g1C9H6bdFa-wcZ72Q,52Hz,có,1y28JlO6rDMUB5rkcA4RAh,52Hz,đã duyệt,2026-11-06,vai trò tầng 1: composer performer,1,52hz,SHOW_010 SHOW_024,52Hz
+SEED_012,AMEE,Person,V-pop/Nhạc trẻ,UCCF91sLycgCnTMUN6nNwEGQ,AMEE,có,2aQnC3DbZB9GbauvhAw7ve,AMEE,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,amee,SHOW_002 SHOW_028,
+ART_0113,EMCEE L,Person,,UCqj8LOK7VTk7wOLRhZGWV3A,Emcee L Official,có,6AzFCCi7NOQVXGK1ZzL7Vb,Emcee L,đã duyệt,2026-11-06,vai trò tầng 1: composer,1,emcee l,SHOW_006 SHOW_018,Emcee L
+SEED_018,HAN SARA,Person,V-pop/Nhạc trẻ,UC3EXHF2l4PSAhTEzPDErqng,Han Sara,có,7sI2avJ3MyFstC9oKNM7py,Han Sara,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,han sara,SHOW_025 SHOW_028,Han Sara
+ART_0115,HOÀI AN,Person,,,,không tìm thấy kênh tick xanh,,,đã duyệt,11/5/2026,vai trò tầng 1: composer,1,hoai an,SHOW_016 SHOW_018,Hoài An
+ART_0116,HẢI BỘT,Person,,UC4qBmM_bxyzdiLs80p6bybA,Hải Bột,có,32coxuQAe9zZCQjK2OiRMb,Hải Bột,đã duyệt,2026-11-06,vai trò tầng 1: composer performer,1,hai bot,SHOW_004 SHOW_010,Hải Bột
+SEED_035,JUKY SAN,Person,V-pop/Nhạc trẻ,UC78x4PoknbPpD4KkeoVaKZQ,Juky San,có,51wGpVg4Z3lv1IjuZAQjXn,Juky San,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,juky san,SHOW_025 SHOW_028,Juky San
+SEED_100,LIL'WUYN,Person,Rap/Hip-hop,UCBgsDa_tKVorr19getEqvrw,Lil Wuyn Official,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,lil wuyn,SHOW_004 SHOW_009,Lil' Wuyn
+ART_0119,LYHAN,Person,,UCWBhNrnr35nhNYS3PJBRP4Q,LYHAN ,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,lyhan,SHOW_003 SHOW_028,LyHan
+SEED_054,MONO,Person,V-pop/Nhạc trẻ,UCi_RaMQ4Hhdml1Cff4SCpQA,Mono Official,có,5jTFNkoZebPnX90CbB3F2A,MONO,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,mono,SHOW_023 SHOW_024,
+SEED_031,MR.SIRO,Person,V-pop/Nhạc trẻ,UCh-A27eKaTrPM_gkfIw_-mA,Mr. Siro,có,35HU1GT1q797EwZsP8uduO,Mr. Siro,đã duyệt,11/5/2026,vai trò tầng 1: composer,1,mr siro,SHOW_006 SHOW_018,Mr. Siro
+SEED_153,PHƯƠNG MỸ CHI,Person,Dân gian đương đại/Bolero/Trữ tình,UCGRIV5jOtKyAibhjBdIndZQ,Phương Mỹ Chi,có,1BcjfrXV4Oe3fK0c8dnxFF,Phương Mỹ Chi,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,phuong my chi,SHOW_023 SHOW_024,
+ART_0120,Pháo,Person,,UC3F3hDIob1s0rE66feKjqYg,Pháo Northside,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,phao,SHOW_013 SHOW_016,PHÁO
+ART_0121,THANH HƯNG,Person,,UC6JIOAjCxcSvZnaXYK_gIQA,Thanh Hưng Official,có,14W31zJumZnGDgZuPXclTJ,Thanh Hưng,đã duyệt,2026-11-06,vai trò tầng 1: composer,1,thanh hung,SHOW_004 SHOW_018,Thanh Hưng
+SEED_130,TIÊN TIÊN,Person,Indie/Alternative,UCRqiZt6CftrzEcnvwGVhDfQ,Tiên Tiên,có,5OvCh1Nin8AGw7OkxYinBe,Tiên Tiên,đã duyệt,11/5/2026,vai trò tầng 1: composer,1,tien tien,SHOW_016 SHOW_022,Tiên Tiên
+SEED_161,TÙNG DƯƠNG,Person,Dân gian đương đại/Bolero/Trữ tình,UC9aY7bpZ3490Chfu0g7JKjA,TUNG DUONG OFFICIAL,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,tung duong,SHOW_025 SHOW_027,Tùng Dương
+ART_0123,VÕ HOÀI PHÚC,Person,,,,không tìm thấy kênh tick xanh,6gKXbl85YFCqQhdun3qnnx,Võ Hoài Phúc,đã duyệt,2026-11-06,vai trò tầng 1: composer,1,vo hoai phuc,SHOW_004 SHOW_022,Võ Hoài Phúc
+SEED_093,Wxrdie,Person,Rap/Hip-hop,UCAhfSPCb_HzvHSI54YCZ6GA,Wxrdie,có,1Jmkhzve9TuXHUUWGmpANw,Wxrdie,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,wxrdie,SHOW_009 SHOW_013,
+ART_0124,YEOLAN,Person,,UCaSTWDhtiXzTIjRJ89V1AXQ,Yeolan,có,71jD7mheM5zAPYaHkS4FNo,Yeolan,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,yeolan,SHOW_025 SHOW_028,Yeolan
+ART_0125,Dương Edward,Person,,UCjdN3uCtIKSy_Jco3CYfc9w,Duong Edward Nguyen,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,duong edward,SHOW_020,
+ART_0126,Phan Duy Anh,Person,,UCTdJPyL25MB7hkFH25PXIjA,Phan Duy Anh,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,phan duy anh,SHOW_020,
+ART_0128,KIỀU ANH,Person,,UCur67eR9-4Yx6mrsIjXt00A,Kiều Anh ,có,3hlJ2qli6WvQaJ1FqyTP02,Kiều Anh,đã duyệt,2026-11-06,vai trò tầng 1: performer producer,1,kieu anh,SHOW_016,Kiều Anh
+ART_0129,THẢO TRANG,Person,,,,không tìm thấy kênh tick xanh,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,thao trang,SHOW_016,Thảo Trang
+ART_0130,DANMY,Person,,UCaXqbHgGyuTI9vBTCMN6nng,DANMY ,có,5PmlctqlVDrRrF8WNLSgva,DANMY,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,danmy,SHOW_010,Danmy
+SEED_034,HOÀNG YẾN CHIBI,Person,V-pop/Nhạc trẻ,UCQ28VJsfsd0LZvE7fKuNfEQ,Hoàng Yến Chibi Official,có,1Dd0DajYMxzu1Q6kuXLyJ3,Hoàng Yến Chibi,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,hoang yen chibi,SHOW_016,Hoàng Yến Chibi
+ART_0131,MINH HẰNG,Person,,UCNogKSyKf1OVumk-ztXGHCw,Minh Hằng Official,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,minh hang,SHOW_016,Minh Hằng
+ART_0132,QUỐC THIÊN,Person,,UCTtZe0UfxgkY54YptywceTw,Quốc Thiên Official,có,2xyztcPkhFKucM2ghmSme2,Quốc Thiên,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,quoc thien,SHOW_004,Quốc Thiên
+ART_0133,S.T SƠN THẠCH,Person,,UCWXbyhxOjYLxaRFB71OmiAw,S.T Sơn Thạch Official,có,3YwCEaM1uA75y4Iz6FLgRC,S.T Sơn Thạch,đã duyệt,2026-11-06,vai trò tầng 1: composer performer,1,s t son thach,SHOW_004,
+ART_0134,THIỀU BẢO TRÂM,Person,,UCrjiT1zJFaHHuipCkIYZsfw,Thiều Bảo Trâm Official,có,6RUfMGubOnHT1p3nfeXpBl,Thiều Bảo Trâm,đã duyệt,2026-11-06,vai trò tầng 1: composer performer,1,thieu bao tram,SHOW_016,Thiều Bảo Trâm
+ART_0135,TIẾN LUẬT,Person,,UCOB-fDHxXLaf3vpX_gbTdIg,Tiến Luật Official,có,67iEesKynAK85rx8smKhCZ,Tiến Luật,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,tien luat,SHOW_004,Tiến Luật
+SEED_162,ĐÔNG HÙNG,Person,Dân gian đương đại/Bolero/Trữ tình,UCwwjliPgnJ3dIM1nMPsjZBA,ĐÔNG HÙNG Official,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,dong hung,SHOW_005,
+SEED_131,BÙI LAN HƯƠNG,Person,Indie/Alternative,UCXbZIcKb1tVIR_ICD6TjCuw,BÙI LAN HƯƠNG,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer performer producer,1,bui lan huong,SHOW_016,Bùi Lan Hương
+ART_0138,HOÀNG ROB,Person,,,,không tìm thấy kênh tick xanh,43qZrcVKZleWlmoBVRBPO8,Hoàng Rob,đã duyệt,2026-11-06,vai trò tầng 1: composer performer,1,hoang rob,SHOW_005,
+ART_0139,HUỲNH LẬP,Person,,UC8vQFLQ6RUSh8_G0Gv8lsGg,Huỳnh Lập Official,có,0qLm3SxEV64WhTKTChH9Nb,Huỳnh Lập,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,huynh lap,SHOW_005,
+ART_0141,K.O,Person,,,,không tìm thấy kênh tick xanh,78rBGzdAWnOIoOuZqFaZFi,K.O,đã duyệt,2026-11-06,vai trò tầng 1: composer performer,1,k o,SHOW_005,
+ART_0142,MANBO,Person,,UCGQ-gm1q_qJmOQnSS9KX3RA,MANBO,có,2rKtPYcwYmevNcaqzJOwvf,MANBO,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,manbo,SHOW_010,
+ART_0144,NGỌC PHƯỚC,Person,,,,không tìm thấy kênh tick xanh,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,ngoc phuoc,SHOW_016,Ngọc Phước
+ART_0145,PHƯƠNG THANH,Person,,UC6eJVhgX08jQYKuRpVvT-4g,Phương Thanh Official,có,6fvwPdTHctaY65nhFeodrs,Phương Thanh,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,phuong thanh,SHOW_016,Phương Thanh
+ART_0146,Quang Trung,Person,,UChQtwBNnXXVL6C6snuLyzBg,Quang Trung,có,4cLYlDISnWaErAitB8kRph,Quang Trung,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,quang trung,SHOW_001,
+ART_0147,THƠM,Person,,,,không tìm thấy kênh tick xanh,,,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,thom,SHOW_005,
+ART_0149,WILL,Person,,UCJuJVEr5e-G75Cf1WygbchQ,Will Official,có,3HMWKU43x9GxkGWVP1KjQT,Will,đã duyệt,2026-11-06,vai trò tầng 1: composer performer,1,will,SHOW_005,
+ART_0150,XUÂN NGHI,Person,,UCSNiW8RnhMOZ3IPHu1nW2Mw,Xuân Nghị Official,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,xuan nghi,SHOW_016,Xuân Nghi
+SEED_059,ĐINH MẠNH NINH,Person,V-pop/Nhạc trẻ,UCL8H8swgdAgcyfvxSbbUoRw,Đinh Mạnh Ninh,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,dinh manh ninh,SHOW_005,
+ART_0151,7dnight,Person,,UCMduECJ6WoUqGmnvxoWktmw,7dnight,có,3gucoX521KgXuoUnRbn0Bn,7dnight,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,7dnight,SHOW_010,
+ART_0152,BẰNG KIỀU,Person,,UCeLLw4rfJFLJEwYfMie755A,Bằng Kiều Official,có,0KWdVd7ZYhtlm0CLHIFBya,Bằng Kiều,đã duyệt,2026-11-06,vai trò tầng 1: composer performer,1,bang kieu,SHOW_004,Bằng Kiều
+ART_0153,CHÂU TUYẾT VÂN,Person,,,,không tìm thấy kênh tick xanh,0bumIz1y6b6OurYMtWZukb,Châu Tuyết Vân,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,chau tuyet van,SHOW_016,Châu Tuyết Vân
+ART_0154,CƯỜNG SEVEN,Person,,UC0fuTR7bvXAzZL4uSMZydjQ,Cường Seven Official,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,cuong seven,SHOW_004,
+ART_0155,JASE,Person,,,,không tìm thấy kênh tick xanh,,,đã duyệt,11/5/2026,vai trò tầng 1: producer,1,jase,SHOW_016,Jase
+ART_0156,MINH TUYẾT,Person,,UC9d4ZU4K8G2ObQ95asH-jaA,Minh Tuyet Top Hits,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,minh tuyet,SHOW_016,Minh Tuyết
+ART_0157,MISTHY,Person,,UCctVE0w6y1AAwx7ueaN7bhg,MISTHY TV,có,6zGCV1ZUUdUeWGcKBxQrgH,Misthy,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,misthy,SHOW_016,Misthy
+ART_0158,NEWL,Person,,,,không tìm thấy kênh tick xanh,0v4ZbSvY35WpYvPV3HoYqD,NewL,đã duyệt,2026-11-06,vai trò tầng 1: producer,1,newl,SHOW_016,NewL
+ART_0159,NGỌC THANH TÂM,Person,,UCZQoLxHa2Wjt0aAGbfhmgqg,Ngọc Thanh Tâm Official,có,3DFJYJycIIbpZlwLSb4Szu,Ngọc Thanh Tâm,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,ngoc thanh tam,SHOW_016,Ngọc Thanh Tâm
+ART_0160,THUẬN NGUYỄN,Person,,,,không tìm thấy kênh tick xanh,,,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,thuan nguyen,SHOW_005,
+ART_0161,THỎ,Person,,,,không tìm thấy kênh tick xanh,,,đã duyệt,11/5/2026,vai trò tầng 1: composer performer,1,tho,SHOW_005,
+ART_0162,STRONG TRỌNG HIẾU,Person,,UCFbu6pUsxkEzrZz5p8NYIqQ,Trong Hieu Official,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,trong trong hieu,SHOW_004,
+ART_0163,TỰ LONG,Person,,,,không tìm thấy kênh tick xanh,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,tu long,SHOW_004,Tự Long
+SEED_109,Coldzy,Person,Rap/Hip-hop,UCytvXWix48dXj9r-1EwoWew,Coldzy,có,401ikVSob52311M6Fwnunt,Coldzy,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,coldzy,SHOW_010,
+ART_0164,GIL LÊ,Person,,UCbC5yLxVYI7uVjqGWH1Qajw,Gil Lê Official,có,4TL2YxMevy1F5NBfllZJuA,Gil Lê,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,gil le,SHOW_016,Gil Lê
+ART_0165,HÀ LÊ,Person,,UCb-OE4LtxYjm5lSGV8v3TeA,Hà Lê Official,có,0hWPa5etsuzHraxEq4xt6U,Hà Lê,đã duyệt,2026-11-06,vai trò tầng 1: composer performer,1,ha le,SHOW_004,
+ART_0166,SUNI HẠ LINH,Person,,UCQW7INx_1S6upbiyxgSt7Mg,SUNI,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,suni ha linh,SHOW_022,Suni Hạ Linh
+ART_0167,V#,Person,,UC8IE2v3Vmu6eY_J_rmAH8Rg,vthăng official,có,3XevJv2rTKu5WYtD0LW6om,V#,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,v,SHOW_010,
+ART_0168,DUONGK,Person,,,,không tìm thấy kênh tick xanh,2qoHk8oER4tuuQAnLZRKhe,DuongK,đã duyệt,2026-11-06,vai trò tầng 1: producer,1,duongk,SHOW_016,DuongK
+SEED_107,Dangrangto,Person,Rap/Hip-hop,UCiYnPsQGCmqqxaAxo9j178g,Dangrangto,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,dangrangto,SHOW_010,
+ART_0173,KIMLONG,Person,,UCPxUtLdXdPOvcnMenE9S5TA,KIMLONG,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,kimlong,SHOW_003,
+ART_0174,Mikelodic,Person,,UCXuh9ytaWiB86PmAgB7kByQ,"
+Lãng",có,0oR2FUZrC5r3beWB7QGDI2,Mikelodic,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,mikelodic,SHOW_009,
+SEED_125,Mỹ Anh,Person,Indie/Alternative,UCTPlvjeNZyJEJPsftSroXGQ,Mỹ Anh,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,my anh,SHOW_019,
+ART_0175,TRƯƠNG THẾ VINH,Person,,UCahMhptyuzuNa9L3w0G9O-Q,Trương Thế Vinh,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,truong the vinh,SHOW_004,
+ART_0176,SA Lil Van,Person,,UCyD-KYipDkz4La4V8LDCwWQ,SA LIL VAN,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,a lil van,SHOW_010,
+SEED_098,Andree Right Hand,Person,Rap/Hip-hop,UCnvMTqCVXbV8cqaFsjxFpsg,Andree Right Hand,có,4grjJqg7iwQ8RKHs8d9Snh,Andree Right Hand,đã duyệt,11/5/2026,vai trò tầng 1: coach,1,andree right hand,SHOW_009,
+ART_0177,DILLAN,Person,,UCQCkhVKAIc9I0lpVPdzerJQ,DILLAN,có,1PR1ZkCybfd7U1TXvjglNq,DILLAN,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,dillan,SHOW_003,
+ART_0178,HẠNH SINO,Person,,UCLYzt9PqBLNKxhCHVJBpXSw,Hạnh Sino Official,có,3f7Dr7qtAJutrBV8mjozhh,Hạnh Sino,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,hanh sino,SHOW_016,Hạnh Sino
+ART_0179,Hải Nam,Person,,UCX0ZH577M-fr2QszDBafQaQ,Hải Nam Official,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,hai nam,SHOW_002,
+SEED_121,Liu Grace,Person,Rap/Hip-hop,UC7zV8tLogJdzi5ybJ1Arn-Q,Liu Grace,có,5DTQVDm1qjLUoAGC8v85c3,Liu Grace,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,liu grace,SHOW_009,
+ART_0180,Huỳnh Công Hiếu,Person,,UCAe6GuHUI6J88zdBPB8ueIw,Huỳnh Công Hiếu,có,7aSN5TnSQet7xNM7LapfTE,Huỳnh Công Hiếu,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,huynh cong hieu,SHOW_009,
+SEED_006,Hương Tràm,Person,V-pop/Nhạc trẻ,UC4xAg5aKueJ7dl2Q5WLP_1g,Hương Tràm Official,có,6jFvKq4gMkQ50joURHPGXO,Hương Tràm,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,huong tram,SHOW_019,
+ART_0181,Hải Đăng Doo,Person,,UC9rDC1n0QWyFtczcbrRy3Dg,Hai Dang Doo,có,0F1rSmrNT6sp3LYohgYKsT,Hải Đăng Doo,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,hai dang doo,SHOW_001,
+ART_0182,Richie D. ICY,Person,,UCc3TKYSCPxbMRe9T-zRqPUw,Richie D. ICY,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,richie d icy,SHOW_009,
+ART_0183,14 CASPER,Person,,UCS0Dai12I5Q3n93ILlXSDig,14 Casper,có,0zo8kCJVktn7oPnzpkbC2p,14 Casper,đã duyệt,2026-11-06,vai trò tầng 1: composer performer,1,14 casper,SHOW_005,
+ART_0184,DRUM7,Person,,UCnnS7BOIlUzj8W8ahaher-w,Drum7,có,,,đã duyệt,11/5/2026,vai trò tầng 1: producer,1,drum7,SHOW_016,
+ART_0185,DT Tập Rap,Person,,UCsVnDtx4tgOG6a0Tg7tZCiQ,DT Tập Rap ,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,dt tap rap,SHOW_009,
+ART_0186,HUYR,Person,,UCIuTBz1zVKDxCcWswcVPbeg,HuyR,có,3B3UoHY8tKJ6zmyYZhkDSZ,HuyR,đã duyệt,2026-11-06,vai trò tầng 1: composer performer,1,huyr,SHOW_004,
+SEED_112,Lăng LD,Person,Rap/Hip-hop,UCn62PfTp-s7eQLHrRhGS1iA,LĂNG LD,có,0EOMdQwzUG6CKh9oWvcANr,Lăng LD,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,lang ld,SHOW_007,
+SEED_027,Ngô Kiến Huy,Person,V-pop/Nhạc trẻ,UCNN7Q7sx5lsivqDf22I7Itw,Ngô Kiến Huy,có,7at0gkjCnhOBrxwQlJPJ4s,Ngô Kiến Huy,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,ngo kien huy,SHOW_002,
+ART_0187,RTee,Person,,UCwh6AbQc_-pjqzpfl1yW5UA,Rtee Official,có,73AUXZbgPiHjPbv66nGVq7,Rtee,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,rtee,SHOW_007,
+SEED_104,Ricky Star,Person,Rap/Hip-hop,UCD5Ok91sJ96cJ8QdN_vA5Yw,Ricky Star So Dope,có,4jQZaxfgwiUJFQagCyZNV4,Ricky Star,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,ricky star,SHOW_007,
+SEED_108,Tage,Person,Rap/Hip-hop,UCZIm86nEjVHIA8L_r4wGGrA,Tage M.,có,6kFhNMq6O8P5QKdqlGMUVW,Tage,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,tage,SHOW_001,
+ART_0189,Thành Draw,Person,,UCJZnV8NNi7Nv4rEVFZXHwPg,THANHDRAW,có,4KVv7ziCrtWWB6K0RPr2XD,Thành Draw,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,thanh draw,SHOW_007,
+ART_0190,Tọi,Person,,UC3TT_1x14SkpDEZPik1eOMQ,Tọi Official,có,1aVkG16ZfTc5XJ9qP7ti7i,Tọi,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,toi,SHOW_009,
+ART_0191,UMIE,Person,,UCte1ajIre53fI09W6nnALEA,UMIE Official,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,umie,SHOW_009,
+SEED_087,Wowy,Person,Rap/Hip-hop,UC4epxz9TwShqMzkmm28nh2w,Wowy,có,4iFNiWhODcMZdmpNkxsTFp,Wowy,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,wowy,SHOW_007,
+ART_0192,YoungPuppy,Person,,UCQIaKIHcNBe6m39J15zdq0Q,Young Puppy,có,2dC1IBU9NOD9xsQJ5RE7j7,YoungPuppy,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,youngpuppy,SHOW_010,
+ART_0193,Duy Andy,Person,,UCsBGWOdvvRL6D3qH38BcZgg,Duy Andy,có,0tThYvMPafMHjXI11IbtZ8,Duy Andy,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,duy andy,SHOW_007,
+SEED_105,GDucky,Person,Rap/Hip-hop,UC7mFqLRKM-95uFzvTb75ohg,GDucky Official ,có,3T3DOlgOEkr243zdzFCrXW,GDucky,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,gducky,SHOW_007,
+ART_0195,HUỲNH VĂN,Person,,UCQnj0PypaXaoJxB_jKfhOKQ,HUVA // Huỳnh Văn,có,5NTaNiqKj5W38izmUj435H,Huỳnh Văn,đã duyệt,2026-11-06,vai trò tầng 1: composer,1,huynh van,SHOW_015,
+ART_0196,HƯƠNG GIANG,Person,,UCVqClKhvPRMtVaEEaxgY35A,Huong Giang Entertainment,có,1L2VD3TPgcbUod5IID06xJ,Hương Giang,đã duyệt,2026-11-06,vai trò tầng 1: composer,1,huong giang,SHOW_004,
+ART_0197,Hương Ly,Person,,UC1wpPoxnjKs2oI4yXw7X9Ew,Nguyễn Hương Ly Official,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,huong ly,SHOW_015,
+ART_0198,KHOI VU,Person,,UCWBhkwRP-zQy194ZhzlMTTA,Khoi Vu Official,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,khoi vu,SHOW_002,
+SEED_020,Lou Hoàng,Person,V-pop/Nhạc trẻ,UCYb4Rb4Gznn2OkydUS1XTog,Lou Hoàng OFFICIAL,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,lou hoang,SHOW_001,
+ART_0199,MinhLai,Person,,UChMNxj57P1K9cy1dax3QKXA,Minh Lai Official,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,minhlai,SHOW_009,
+ART_0200,Nhâm Phương Nam,Person,,UCOoQ4_lEG2TX_v8W7NaZZvw,Nhâm Phương Nam Official,có,4usb4zmoHVcrvPPHHkKYaV,Nhâm Phương Nam,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,nham phuong nam,SHOW_002,
+ART_0203,RIO,Person,,UCKDzHZETy0MecjpzKbqOMlQ,RIO Official,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,rio,SHOW_002,
+ART_0204,RichChoi,Person,,UCoZr4hObrItORuoaH0HI3VQ,RichChoi Official,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,richchoi,SHOW_013,Richchoi
+ART_0205,Sivan,Person,,UCg7ha0OQC6Jn3MZKO807R9Q,SIVAN,có,0wJWawRvX8K9joiK9QqkX5,SIVAN,đã duyệt,2026-11-06,vai trò tầng 1: producer,1,sivan,SHOW_016,
+ART_0206,SnoopDee,Person,,UCXR9bsLPMfhzyutJjStBcgw,Snoop Dee,có,3zM3ErAyryDmX29WCQGo4E,SnoopDee,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,snoopdee,SHOW_009,
+ART_0207,Sóc Nâu,Person,,UCrqaBknerIgiwUpqCwiCfkQ,Sóc Nâu Official,có,3bFCDFiTz8uVUhdaepE5Mo,Sóc Nâu,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,soc nau,SHOW_013,
+SEED_072,VƯƠNG ANH TÚ,Person,V-pop/Nhạc trẻ,UCu5NJewJ84PrgvyZuIGgOdQ,Vương Anh Tú Official,có,3OeYidiG0MAcGmiSwTHZf6,Vương Anh Tú,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,vuong anh tu,SHOW_005,
+SEED_101,16 Typh,Person,Rap/Hip-hop,UCG44ngVzqC1Jp_WBWOvNx1g,16 Typh,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,16 typh,SHOW_007,
+ART_0210,ANDIEZ,Person,,UC1FBkKvvTRfKLHAfK2dJstA,Andiez Official,có,0tBmmwc8j8zbJxISwdsvjA,Andiez,đã duyệt,2026-11-06,vai trò tầng 1: composer,1,andiez,SHOW_004,
+SEED_134,Chillies,Group,Indie/Alternative,UCLOCzuU5ddDqvd_e3qpomZQ,Chillies,có,2xvW7dgL1640K8exTcRMS4,Chillies,đã duyệt,11/5/2026,vai trò tầng 1: composer,1,chillies,SHOW_016,
+SEED_182,DJ MIE,Person,EDM/Electronic,UCkMg37FsmVwSvJ7MXrISFdg,DJ MIE OFFICIAL,có,5WFbYwCCWDArxgBuHonry9,DJ Mie,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,dj mie,SHOW_016,
+SEED_117,Dế Choắt,Person,Rap/Hip-hop,UCdev_S5LGO4GC-4xISv1D5Q,Dế Choắt,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,de choat,SHOW_007,
+SEED_157,HOÀI LÂM,Person,Dân gian đương đại/Bolero/Trữ tình,UCtzE22oB3YUmiExOoDBWqhQ,Hoài Lâm,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer,1,hoai lam,SHOW_005,
+SEED_065,Huy Tuấn,Person,V-pop/Nhạc trẻ,,,không tìm thấy kênh tick xanh,0KDTULG4Tu6K3BaGro5g57,Huy Tuấn,đã duyệt,11/5/2026,vai trò tầng 1: composer,1,huy tuan,SHOW_016,
+SEED_176,HỒNG NHUNG,Person,Dân gian đương đại/Bolero/Trữ tình,UCTiE_Yzgawojnjy-jt4jkDA,Hong Nhung Official,có,5MibVKlWvof8lLAkOaaDmi,Hồng Nhung,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,hong nhung,SHOW_025,
+SEED_003,Hồ Ngọc Hà,Person,V-pop/Nhạc trẻ,UCNgCserSzcAWFOY-7_f3iug,Ho Ngoc Ha's Official Channel,có,24Wn81dwdDeTCuB1BWGoVJ,Hồ Ngọc Hà,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,ho ngoc ha,SHOW_020,
+ART_0211,KEWTIE,Person,,,,không tìm thấy kênh tick xanh,,,đã duyệt,11/5/2026,vai trò tầng 1: producer,1,kewtie,SHOW_024,
+SEED_024,Khắc Việt,Person,V-pop/Nhạc trẻ,UCPr94gEP09WeEHl6z8KMtQw,KHẮC VIỆT,có,7luDDYsfkSivBsoTz3BKMq,Khắc Việt,đã duyệt,11/5/2026,vai trò tầng 1: composer,1,khac viet,SHOW_018,
+SEED_111,Kimmese,Person,Rap/Hip-hop,UCR-MS1rC0ReM7D22COCGX_g,Kimmese Official,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer,1,kimmese,SHOW_022,
+SEED_148,Lệ Quyên,Person,Dân gian đương đại/Bolero/Trữ tình,UCub2cHeQ7IHcEOvB4EzX-XQ,Lệ Quyên,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,le quyen,SHOW_015,
+ART_0212,MARZUZ,Person,,UCML3RIvX4zWLHIYxs_Dcc_g,marzuz,có,3y6Lfjkrdn5TgkbgDxbpvM,marzuz,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,marzuz,SHOW_028,
+SEED_181,MASEW,Person,EDM/Electronic,UCpm6kKrf5OdNRZ9hMgk3gsA,Masew,có,3nGqUwkJHiLPDECMVrX1Sq,Masew,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,masew,SHOW_002,
+ART_0213,MINH TỐC,Person,,UCDFOgEr9FPmHhuqEObbTCng,Minh Tốc & Lam,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,minh toc,SHOW_024,
+ART_0214,MUỘIl,Person,,UC6Uhs25WgEZqk5lwDt_iuMw,Muộii OFFICIAL,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,muoil,SHOW_025,
+SEED_038,Myra Trần,Person,V-pop/Nhạc trẻ,UCYOWVGdM6G9mjZmVC-921lg,Myra Trần Official,có,0Y9KzsdFByEI4bigKF1htd,Myra Trần,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,myra tran,SHOW_009,
+SEED_002,MỸ TÂM,Person,V-pop/Nhạc trẻ,UCmgGhZ_OMFGRn5cbfd4Svrw,My Tam,có,1CWwyDPjCowRTO4p6A7r6g,Mỹ Tâm,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,my tam,SHOW_022,
+SEED_094,Obito,Person,Rap/Hip-hop,UCJwp8w_Ru1q--tCEfrPIA6g,Obito Official,có,0ZbgKh0FgPYeFP38nVaEGp,Obito,đã duyệt,11/5/2026,vai trò tầng 1: composer,1,obito,SHOW_022,
+SEED_120,Phúc Du,Person,Rap/Hip-hop,UCPQM-wqVHzULADG9zJir5HQ,PHÚC DU,có,0qkGQFUrj8ERPAZcdpa79j,Phuc Du,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,phuc du,SHOW_002,
+SEED_103,Seachains,Person,Rap/Hip-hop,UC51L-ygCrFScx3mu-XIg-Tg,Seachains,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer,1,seachains,SHOW_022,
+SEED_184,TRIPLE D,Person,EDM/Electronic,,,,,,đã duyệt,11/5/2026,vai trò tầng 1: producer,1,triple d,SHOW_004,
+ART_0216,TUẤN CRY,Person,,UCq1F801owX5Wvm_elU0LikQ,Tuấn Cry,có,1XeMw22FKMPIjQIkyV3yDN,Tuấn Cry,đã duyệt,2026-11-06,vai trò tầng 1: composer performer,1,tuan cry,SHOW_025,
+SEED_124,Thái Đinh,Person,Indie/Alternative,UCi9DIWFqKlTaaX5hQzXhqkA,Thái Đinh,có,7lq25uVNvzRoAJgr4CYr8e,Thái Đinh,đã duyệt,11/5/2026,vai trò tầng 1: composer,1,thai dinh,SHOW_018,
+SEED_123,Thịnh Suy,Person,Indie/Alternative,UCMB1S8NDPFbc0sgopX9pQ2Q,Thịnh Suy,có,2xK6qcvfXuFFbU0NL95aeo,Thịnh Suy,đã duyệt,11/5/2026,vai trò tầng 1: composer,1,thinh suy,SHOW_018,
+ART_0217,VirusS,Person,,UC0rBe-KRTerlOz2v_Sye5iQ,ViruSs Reaction,có,,,đã duyệt,11/5/2026,vai trò tầng 1: composer,1,viruss,SHOW_022,
+ART_0218,VŨ PHỤNG TIÊN,Person,,UCNGA8jfOR9tMBhEs1uW9DCw,VŨ PHỤNG TIÊN,có,70ULEgr5A3zBL12foM4bnj,Vũ Phụng Tiên,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,vu phung tien,SHOW_023,
+ART_0219,YOUNG UNO,Person,,,,không tìm thấy kênh tick xanh,,,đã duyệt,11/5/2026,vai trò tầng 1: composer,1,young uno,SHOW_006,
+ART_0220,ĐÀO TỬ A1J,Person,,UCRJv6EsGm5iVqb_YrKxPFPA,桃子 Đào Tử A1J,có,,,đã duyệt,11/5/2026,vai trò tầng 1: performer,1,dao tu a1j,SHOW_025,
+ART_0221,Đỗ Phú Quí,Person,,UCEz84kqwqo8Q1WTJDOCSh7g,ĐỖ PHÚ QUÍ,có,1bkEtYsRYvm3mKCzL2X21A,ĐỖ PHÚ QUÍ ,đã duyệt,2026-11-06,vai trò tầng 1: performer,1,do phu qui,SHOW_001,
+SEED_001,Sơn Tùng M-TP,Person,V-pop/Nhạc trẻ,UClyA28-01x4z60eWQ2kiNbA,Sơn Tùng M-TP Official,có,5dfZ5uSmzR7VQK0udbAVpf,Sơn Tùng M-TP,đã duyệt,11/5/2026,,1b,son tung m tp,bổ sung theo dòng nhạc,
+SEED_010,Chi Pu,Person,V-pop/Nhạc trẻ,UCuxh56VsQXSrRzbeKwDIyqQ,Chi Pu Official,có,6jRD85dsXJYn5vv73rqSGi,Chi Pu,đã duyệt,11/5/2026,,1b,chi pu,bổ sung theo dòng nhạc,
+SEED_011,Bích Phương,Person,V-pop/Nhạc trẻ,UC90LfbAFYhRLh86Qd-Fs4zg,BÍCH PHƯƠNG,có,,,đã duyệt,11/5/2026,,1b,bich phuong,bổ sung theo dòng nhạc,
+SEED_017,Jack - J97,Person,V-pop/Nhạc trẻ,UChUJa1JyBc7Lc4orkiNKKQg,J97,có,3KJopZ2uUclqEtLxQg0FNn,Jack - J97,đã duyệt,11/5/2026,,1b,jack j97,bổ sung theo dòng nhạc,
+SEED_025,Hari Won,Person,V-pop/Nhạc trẻ,UC7EzhxEvDQXWxYaxV95qfnA,Hari Won,có,,,đã duyệt,11/5/2026,,1b,hari won,bổ sung theo dòng nhạc,
+SEED_030,Chi Dân,Person,V-pop/Nhạc trẻ,UC9Z4fZvQyEn-6MMazzGKveg,Chi Dân,có,604MsLiPn50AblFYzOg1RD,Chi Dân,đã duyệt,11/5/2026,,1b,chi dan,bổ sung theo dòng nhạc,
+SEED_033,Tăng Phúc,Person,V-pop/Nhạc trẻ,UCqosN4QGo-pmyWVoaiVAIEA,TĂNG PHÚC OFFICIAL,có,5TSjLaWHQ69GaALubAM7gR,Tăng Phúc,đã duyệt,11/5/2026,,1b,tang phuc,bổ sung theo dòng nhạc,
+SEED_036,Phương Ly,Person,V-pop/Nhạc trẻ,UCVfTp0vAXnuDL8SSI8tPYGA,Phuong Ly Official,có,5Kh0ta0UY4uJ4g2CIdq9V9,Phương Ly,đã duyệt,11/5/2026,,1b,phuong ly,bổ sung theo dòng nhạc,
+SEED_039,Hoàng Duyên,Person,V-pop/Nhạc trẻ,UC8tHaL8az8MvXkkmDltIcZQ,HOÀNG DUYÊN,có,3LbBKYlyMaATS8IIe7HJ0d,Hoàng Duyên,đã duyệt,11/5/2026,,1b,hoang duyen,bổ sung theo dòng nhạc,
+SEED_040,Bùi Anh Tuấn,Person,V-pop/Nhạc trẻ,UCx4B5Awm-hVnW6lMiEsomYA,Bùi Anh Tuấn,có,,,đã duyệt,11/5/2026,,1b,bui anh tuan,bổ sung theo dòng nhạc,
+SEED_041,Uyên Linh,Person,V-pop/Nhạc trẻ,UCsP0N8J60sdZ7EwwvGIujIw,Uyen Linh Official,có,2KUMXzsDcJqXZW0CRh07zP,Uyên Linh,đã duyệt,11/5/2026,,1b,uyen linh,bổ sung theo dòng nhạc,
+SEED_042,Hà Anh Tuấn,Person,V-pop/Nhạc trẻ,UCV7qWy2FoFZ4v4p1x_R-n3Q,Hà Anh Tuấn,có,3FwYnbtGNt8hJfjNuOfpeG,Hà Anh Tuấn,đã duyệt,11/5/2026,,1b,ha anh tuan,bổ sung theo dòng nhạc,
+SEED_045,Hồ Quang Hiếu,Person,V-pop/Nhạc trẻ,UCLTHu3eSIe2Fp21v3mWnZAA,Hồ Quang Hiếu TV,có,3x6FwiNj93pnxxMDNRA1IR,Hồ Quang Hiếu,đã duyệt,11/5/2026,YouTube: cần xem lại kênh,1b,ho quang hieu,bổ sung theo dòng nhạc,
+SEED_048,Lê Bảo Bình,Person,V-pop/Nhạc trẻ,UClP6DSD9Ztkrdml-w-OZWCA,Lê Bảo Bình,có,,,đã duyệt,11/5/2026,,1b,le bao binh,bổ sung theo dòng nhạc,
+SEED_049,Đạt G,Person,V-pop/Nhạc trẻ,UC2OzDIKOESoKIdR1VtwCAAQ,DatG Music,có,4R3mugkUqCALXgkwSptTbg,Đạt G,đã duyệt,11/5/2026,,1b,dat g,bổ sung theo dòng nhạc,
+SEED_056,Trung Quân Idol,Person,V-pop/Nhạc trẻ,UCq3s8x6TAWfeBC5q_zaGMYw,TRUNG QUÂN,có,05QxIXCqguwj9qHKga14ib,Trung Quân Idol,đã duyệt,11/5/2026,,1b,trung quan idol,bổ sung theo dòng nhạc,
+SEED_058,Hồ Quỳnh Hương,Person,V-pop/Nhạc trẻ,UCxJNyS-UvyUB_HXViJPoz9Q,Hồ Quỳnh Hương,có,3EP4RX5LSuwDVy4mDeF1rl,Hồ Quỳnh Hương,đã duyệt,11/5/2026,,1b,ho quynh huong,bổ sung theo dòng nhạc,
+SEED_061,Khải Đăng,Person,V-pop/Nhạc trẻ,UCALwF_wl-pj4-O_hYKTmDaQ,Khải Đăng Official,có,,,đã duyệt,11/5/2026,nhạc sĩ/producer,1b,khai dang,bổ sung theo dòng nhạc,
+SEED_073,K-ICM,Person,V-pop/Nhạc trẻ,,,không tìm thấy kênh tick xanh,6mD6SQbvl9pILx7SAHBzbq,K-ICM,đã duyệt,11/5/2026,nhạc sĩ/producer,1b,k icm,bổ sung theo dòng nhạc,
+SEED_074,Onionn,Person,V-pop/Nhạc trẻ,,,không tìm thấy kênh tick xanh,,,đã duyệt,11/5/2026,nhạc sĩ/producer,1b,onionn,bổ sung theo dòng nhạc,
+SEED_075,365daband,Group,V-pop/Nhạc trẻ,,,không tìm thấy kênh tick xanh,3T0DQqf12WVrbkSvmuNin3,365DaBand,đã duyệt,11/5/2026,,1b,365daband,bổ sung theo dòng nhạc,
+SEED_077,Monstar,Group,V-pop/Nhạc trẻ,,,,2CLdtsyD2NsTOBBOVr7fi8,MONSTAR,đã duyệt,11/5/2026,,1b,monstar,bổ sung theo dòng nhạc,
+SEED_122,Vũ.,Person,Indie/Alternative,UCePWSQHSdXqzQlzyJfwY1Jg,Vũ Official,có,57g2v7gJZepcwsuwssIfZs,Vũ.,đã duyệt,11/5/2026,,1b,vu,bổ sung theo dòng nhạc,
+SEED_126,Phùng Khánh Linh,Person,Indie/Alternative,UC50AGrSmpULW71VH3AguryQ,Phùng Khánh Linh,có,23Gbd21nBxC1kCtcG2Cd0C,Phùng Khánh Linh,đã duyệt,11/5/2026,,1b,phung khanh linh,bổ sung theo dòng nhạc,
+SEED_128,Madihu,Person,Indie/Alternative,UCBWbe2rOZSBR7LKFkWaIw-A,Madihu,có,1OIYKbmhG0RxPXvVPNj3NN,Madihu,đã duyệt,11/5/2026,,1b,madihu,bổ sung theo dòng nhạc,
+SEED_132,Ngọt,Group,Indie/Alternative,UCuKWFCkVDNzcFy5JGeJFrOw,Ngọt,có,,,đã duyệt,11/5/2026,,1b,ngot,bổ sung theo dòng nhạc,
+SEED_133,Cá Hồi Hoang,Group,Indie/Alternative,UCqJq5x5zDoVQnHqfAILMJmg,Cá Hồi Hoang,có,2j3AXmye1FJXoGOXr6tufj,Cá Hồi Hoang,đã duyệt,11/5/2026,,1b,ca hoi hoang,bổ sung theo dòng nhạc,
+SEED_136,The Cassette,Group,Indie/Alternative,UC20O6lv9UuTXmd3ziagH6IA,The Cassette,có,1fQjpmcx8iNIy1gKRelTD2,The Cassette,đã duyệt,11/5/2026,,1b,the cassette,bổ sung theo dòng nhạc,
+SEED_083,Đen Vâu,Person,Rap/Hip-hop,UCWu91J5KWEj1bQhCBuGeJxw,Đen Vâu Official,có,,,đã duyệt,11/5/2026,,1b,den vau,bổ sung theo dòng nhạc,
+SEED_090,MCK,Person,Rap/Hip-hop,UC8EB7c0E_TS4tpTQwMtv6fw,MCK // Nger,có,1zSv9qZANOWB4HRE8sxeTL,MCK,đã duyệt,11/5/2026,,1b,mck,bổ sung theo dòng nhạc,
+SEED_092,Low G,Person,Rap/Hip-hop,UCu4ZnhvM4AUpxM8D0SCnldA,Low G,có,6TITnFVRcl0AcZ4syE7Toe,Low G,đã duyệt,11/5/2026,,1b,low g,bổ sung theo dòng nhạc,
+SEED_115,Gonzo,Person,Rap/Hip-hop,UC-WN38FEwiTspqtLH2nhVFA,GONZO,có,,,đã duyệt,11/5/2026,,1b,gonzo,bổ sung theo dòng nhạc,
+SEED_180,Hoaprox,Person,EDM/Electronic,UCPhGL_7h4RVGb7jqKDVeHdQ,Hoaprox Official,có,,,đã duyệt,11/5/2026,,1b,hoaprox,bổ sung theo dòng nhạc,
+SEED_183,DJ Trang Moon,Person,EDM/Electronic,,,không tìm thấy kênh tick xanh,,,đã duyệt,11/5/2026,,1b,dj trang moon,bổ sung theo dòng nhạc,

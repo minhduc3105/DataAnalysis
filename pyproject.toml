@@ -1,0 +1,14 @@
+[project]
+name = "vn-music-network"
+version = "0.1.0"
+description = "Thu thập và xây dựng mạng lưới ca sĩ, nhạc sĩ, công ty giải trí Việt Nam"
+requires-python = ">=3.11"
+dependencies = [
+    "yt-dlp>=2025.10.22",
+    "requests>=2.32",
+    "pandas>=2.2",
+    "python-dotenv>=1.0",
+]
+
+[tool.uv]
+package = false

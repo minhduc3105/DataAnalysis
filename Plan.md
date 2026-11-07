@@ -111,8 +111,11 @@ Mỗi nút cần: ID duy nhất, tên chuẩn, loại, tên khác nếu có và 
 | AMBASSADOR_OF | Person → Brand | Đại sứ thương hiệu |
 | ORGANIZED_BY | Event → Company | Công ty tổ chức sự kiện |
 | COLLABORATED_WITH | Person ↔ Person | Hợp tác qua sản phẩm chung đã xác minh |
+| DISPUTED_WITH | Person/Company ↔ Person/Company | Tranh chấp bản quyền, hợp đồng hoặc scandal; ghi rõ loại và tác phẩm liên quan (nếu có) trong `role_detail` |
 
-Thử trước 4–6 loại dễ có bằng chứng, sau đó mở rộng để có ít nhất 10 loại thực tế. Mục tiêu đầy đủ là 12–14 loại nếu dữ liệu đáp ứng.
+Thử trước 4–6 loại dễ có bằng chứng, sau đó mở rộng để có ít nhất 10 loại thực tế. Mục tiêu đầy đủ là 12–15 loại nếu dữ liệu đáp ứng.
+
+Quan hệ `DISPUTED_WITH` cần bằng chứng chặt hơn: chỉ tạo khi nguồn nêu rõ có tranh chấp/khởi kiện/cáo buộc công khai giữa hai bên; ghi trạng thái trong `role_detail` (cáo buộc, đang tranh chấp, đã hòa giải, có phán quyết). Tin đồn hoặc bình luận của cộng đồng mạng không đủ căn cứ.
 
 Quan hệ hợp tác là quan hệ dẫn xuất từ credit cùng sản phẩm, tức thông tin xác nhận những người tham gia sản phẩm đó. Không suy ra hợp tác chỉ vì cùng bài báo, chương trình hay sự kiện. Thống kê riêng cạnh trực tiếp và cạnh dẫn xuất; chốt với giảng viên cách tính cạnh dẫn xuất vào chỉ tiêu.
 
@@ -273,7 +276,7 @@ Bắt đầu với 5–10 nguồn; mở rộng đến khoảng 30–50 nguồn n
 5. Chia phần phát triển và phần kiểm thử giữ riêng, ví dụ 70%/30%. Chia theo tài liệu hoặc nhóm bài trùng, không để câu của cùng một bài nằm ở cả hai phần.
 6. Chỉ dùng phần phát triển để chỉnh quy tắc. Nếu huấn luyện mô hình sau này, cần chia thêm phần huấn luyện và kiểm định phù hợp.
 
-Ví dụ giả định: “A phủ nhận gia nhập công ty C” không tạo quan hệ quản lý. “A dự kiến biểu diễn tại Y” chưa xác nhận A đã biểu diễn ở Y.
+Ví dụ giả định: “A phủ nhận gia nhập công ty C” không tạo quan hệ quản lý. “A dự kiến biểu diễn tại Y” chưa xác nhận A đã biểu diễn ở Y. “Dân mạng nghi A đạo nhái B” chưa đủ tạo `DISPUTED_WITH`; “B gửi đơn khiếu nại A về bản quyền bài X” thì đủ, với trạng thái cáo buộc.
 
 **Đầu ra:** Hướng dẫn gán nhãn, đáp án mẫu, danh sách chia tập và các bất đồng đã giải quyết.
 
