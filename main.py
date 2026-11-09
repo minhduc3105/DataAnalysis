@@ -54,7 +54,7 @@ def cmd_spotify(args) -> None:
         write_seeds(seeds)
         print(f"Đã dò {len(chosen)} seed; xem data/interim/spotify_artist_candidates.csv")
     else:
-        spotify.crawl(client, chosen)
+        spotify.crawl(client, chosen, args.top, args.max_calls)
 
 
 def cmd_shows(args) -> None:
@@ -99,7 +99,9 @@ def cmd_stats(_args) -> None:
             artist_ids.update(x["id"] for x in t.get("artists", []))
         artist_ids.update(x["id"] for x in a.get("artists", []))
     labels.discard("")
-    print(f"Spotify: {len({a['album_id'] for a in albums})} release, {len(track_ids)} track, {len(artist_ids)} nghệ sĩ, {len(labels)} label")
+    listed = list(iter_jsonl((RAW_DIR / "spotify" / "releases").glob("*.jsonl")))
+    print(f"Spotify: {len({r['album_id'] for r in listed})} release đã liệt kê (trong giai đoạn) của {len({r['seed_artist_id'] for r in listed})} nghệ sĩ")
+    print(f"  Chi tiết: {len({a['album_id'] for a in albums})} release, {len(track_ids)} track, {len(artist_ids)} nghệ sĩ, {len(labels)} label")
     print("(Số sơ bộ theo ID nền tảng, chưa gộp trùng thực thể.)")
 
 
@@ -126,6 +128,8 @@ def main() -> None:
     sp.add_argument("action", choices=["resolve", "crawl"])
     sp.add_argument("--seed", nargs="*")
     sp.add_argument("--force", action="store_true")
+    sp.add_argument("--top", type=int, default=5, help="crawl: số release nổi bật lấy chi tiết mỗi nghệ sĩ (0 = tất cả)")
+    sp.add_argument("--max-calls", type=int, default=0, help="crawl: dừng khi đã gọi API quá số lần này (0 = không giới hạn)")
     sp.set_defaults(func=cmd_spotify)
 
     sh = sub.add_parser("shows", help="Tầng 0: tải video từ playlist trong seeds/shows.csv")

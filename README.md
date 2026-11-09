@@ -31,7 +31,7 @@ uv run python main.py seeds                     # thống kê seeds/seeds.csv
 uv run python main.py youtube resolve           # dò kênh chính thức (tick xanh + khớp tên) → điền seeds.csv
 uv run python main.py youtube crawl             # tự dùng API nếu có YOUTUBE_API_KEY, nếu không dùng yt-dlp
 uv run python main.py spotify resolve           # dò artist ID (chỉ tự điền khi trùng tên duy nhất)
-uv run python main.py spotify crawl             # release → track, label, bản quyền
+uv run python main.py spotify crawl             # liệt kê mọi release trong giai đoạn; lấy chi tiết (track, ℗/©) cho 5 release nổi bật (--top N, 0 = tất cả)
 uv run python main.py documents                 # xuất data/interim/documents.csv (bảng Document)
 uv run python main.py extract                   # rút credit, bài hát, album, label, brand, handle MXH → mentions.csv, social_handles.csv
 uv run python main.py graph                     # dựng bảng Entity/Relation/Evidence → data/interim/graph/
@@ -74,7 +74,8 @@ Thêm `--seed SEED_001 SEED_002` để chạy một phần. Lệnh crawl chạy 
 | `seeds/seeds.csv` | Danh sách khởi tạo; cột `verification_status` do người duyệt cập nhật |
 | `data/interim/*_candidates.csv` | Kênh/artist ứng viên để duyệt tay |
 | `data/raw/youtube/<channel_id>.jsonl` | Video thô (không commit) |
-| `data/raw/spotify/albums/<artist_id>.jsonl` | Release thô kèm track (không commit) |
+| `data/raw/spotify/releases/<artist_id>.jsonl` | Mọi release trong giai đoạn (tên, ngày, nghệ sĩ của release, hạng top-tracks, lượt xem MV YouTube cùng tên) |
+| `data/raw/spotify/albums/<artist_id>.jsonl` | Chi tiết release nổi bật kèm track và dòng ℗/© (không commit) |
 | `data/interim/documents.csv` | Bảng `Document` theo Bước 2 của Plan.md |
 | `data/interim/mentions.csv` | Mọi tên rút được kèm vai trò, câu trích và vị trí |
 | `data/interim/social_handles.csv` | Handle MXH theo nghệ sĩ; cột `suggest`, điền `approve` để duyệt |
@@ -120,4 +121,6 @@ Tên nghệ sĩ một chữ (Ngắn, Min, Orange…) phải khớp nguyên dạn
 - Chỉ lưu nội dung xuất bản trong giai đoạn; video trước 2016 chỉ lưu ID để dừng quét.
 - Chỉ tự nhận kênh YouTube có tick xanh và tên khớp; kênh fan, reup, Topic bị loại.
 - Release dạng `appears_on` chỉ giữ track có nghệ sĩ seed.
+- Spotify không trả lượt nghe; release nổi bật xếp theo top-tracks của Spotify (nếu app dùng được), rồi lượt xem MV YouTube cùng tên, rồi album trước single; bản remix/lofi và release ghi hình chương trình xếp sau, mỗi tên bài lấy 1 bản.
+- Spotify khóa app Development khi gọi dồn: tool gọi ~1 lần/1,2 giây và dừng cả lượt khi bị chặn, in giờ chạy lại được.
 - `document_id` cố định theo ID nền tảng: `DOC_YT_<videoId>`, `DOC_SP_<albumId>`.
