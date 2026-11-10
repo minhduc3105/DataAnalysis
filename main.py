@@ -4,7 +4,7 @@ from collections import Counter
 
 from dotenv import load_dotenv
 
-from crawler import documents, extract, graph, layer1_extract, layer2, shows, spotify, viewer, youtube, youtube_search
+from crawler import analysis, documents, extract, graph, graphdb, layer1_extract, layer2, shows, spotify, viewer, youtube, youtube_search
 from crawler.common import iter_jsonl, read_seeds, select_seeds, write_seeds
 from crawler.config import PERIOD_END, PERIOD_START, RAW_DIR
 
@@ -85,6 +85,20 @@ def cmd_view(_args) -> None:
     viewer.build()
 
 
+def cmd_neo4j(args) -> None:
+    if args.action == "load":
+        graphdb.load()
+    else:
+        driver = graphdb.connect()
+        with driver.session() as session:
+            graphdb.check(session)
+        driver.close()
+
+
+def cmd_analyze(_args) -> None:
+    analysis.run()
+
+
 def cmd_stats(_args) -> None:
     yt = list(iter_jsonl((RAW_DIR / "youtube").glob("*.jsonl")))
     print(f"Giai đoạn: {PERIOD_START} → {PERIOD_END}")
@@ -150,6 +164,10 @@ def main() -> None:
     sub.add_parser("extract", help="Rút credit, bài hát, label, brand, handle MXH từ documents.csv").set_defaults(func=cmd_extract)
     sub.add_parser("graph", help="Dựng bảng Entity/Relation/Evidence từ mentions.csv").set_defaults(func=cmd_graph)
     sub.add_parser("view", help="Tạo trang HTML xem graph (data/interim/graph/viewer.html)").set_defaults(func=cmd_view)
+    nj = sub.add_parser("neo4j", help="Nạp 4 bảng vào Neo4j (xóa dữ liệu cũ) hoặc chỉ kiểm tra graph")
+    nj.add_argument("action", choices=["load", "check"])
+    nj.set_defaults(func=cmd_neo4j)
+    sub.add_parser("analyze", help="Chạy thuật toán Neo4j GDS, xuất bảng kết quả vào data/interim/analysis/").set_defaults(func=cmd_analyze)
     sub.add_parser("stats", help="Thống kê dữ liệu đã thu").set_defaults(func=cmd_stats)
 
     args = p.parse_args()

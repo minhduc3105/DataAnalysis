@@ -38,6 +38,21 @@ uv run python main.py graph                     # dựng bảng Entity/Relation/
 uv run python main.py stats
 ```
 
+## Neo4j và phân tích mạng (Bước 11–12)
+
+Cần Neo4j Desktop, một database đang chạy có plugin **Graph Data Science**, và `NEO4J_URI`, `NEO4J_USER`, `NEO4J_PASSWORD` trong `.env`.
+
+```powershell
+uv run python main.py neo4j load     # xóa database, nạp Entity/Relation/Document/Evidence, in kết quả kiểm tra Bước 11
+uv run python main.py analyze        # chạy GDS: WCC, Louvain, PageRank, Betweenness, Degree → data/interim/analysis/
+```
+
+- Nút: `:Entity:<Loại>` (Person, Song…), thêm `:Document` và `:Evidence` để truy nguồn; hai loại này và cạnh `FROM_DOCUMENT` không tính vào chỉ tiêu.
+- Cạnh mang `relation_id`; bằng chứng tìm bằng `MATCH (e:Evidence {relation_id: r.relation_id})`.
+- Mạng hợp tác: nút Person/Group, cạnh COLLABORATED_WITH vô hướng, `weight` = số bài khác nhau cùng trình bày. Chạy 2 bản: có và không có cạnh chỉ đến từ tiết mục chương trình (`show_only`), để kiểm tra độ ổn định.
+- Thời gian (RQ3) dùng `first_year` = năm đăng sớm nhất của tài liệu bằng chứng; với YouTube đây là xấp xỉ năm phát hành.
+- `analysis/gephi_nodes.csv`, `gephi_edges.csv`: mở trong Gephi (File → Import Spreadsheet) để vẽ cộng đồng. Truy vấn demo cho Neo4j Browser ở [neo4j/queries.cypher](neo4j/queries.cypher).
+
 Chạy lại `documents → extract → graph` mỗi khi sửa seeds hoặc crawl thêm. ID trong `graph/` (PER_, SON_, REL_…) được giữ cố định qua `graph/id_registry.csv`.
 
 ## Rút thực thể và quan hệ ([crawler/extract.py](crawler/extract.py), [crawler/graph.py](crawler/graph.py))
