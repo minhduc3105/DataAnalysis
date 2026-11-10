@@ -4,11 +4,7 @@ from collections import Counter
 
 from dotenv import load_dotenv
 
-<<<<<<< Updated upstream
-from crawler import analysis, documents, extract, graph, graphdb, layer1_extract, layer2, shows, spotify, viewer, youtube, youtube_search
-=======
-from crawler import documents, extract, graph, layer1_extract, layer2, shows, spotify, viewer, web, youtube, youtube_search
->>>>>>> Stashed changes
+from crawler import analysis, documents, extract, graph, graphdb, layer1_extract, layer2, shows, spotify, viewer, web, youtube, youtube_search
 from crawler.common import iter_jsonl, read_seeds, select_seeds, write_seeds
 from crawler.config import PERIOD_END, PERIOD_START, RAW_DIR
 
