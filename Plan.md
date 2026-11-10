@@ -49,7 +49,7 @@ Các yêu cầu dưới đây được giữ theo bản kế hoạch ban đầu,
 
 **Đề tài:** Xây dựng và phân tích mạng lưới hợp tác trong ngành âm nhạc Việt Nam giai đoạn 2016–2026 bằng kỹ thuật xử lý ngôn ngữ tự nhiên.
 
-**Thành viên và thời hạn:** Nhóm gồm 2 thành viên; hạn nộp đồ án là 05/11/2026. Mốc chốt dữ liệu dự kiến là 22/10/2026. Chỉ đưa vào phạm vi các nội dung xuất bản đến mốc này; lưu riêng ngày thu thập thực tế.
+**Thành viên và thời hạn:** Nhóm gồm 2 thành viên; hạn nộp đồ án là 05/11/2026. Mốc chốt dữ liệu là 21/10/2026, thống nhất với `crawler/config.py` và README. Chỉ đưa vào phạm vi các nội dung xuất bản đến mốc này; lưu riêng ngày thu thập thực tế.
 
 **Phạm vi dữ liệu:** Toàn ngành âm nhạc Việt Nam trong giai đoạn nghiên cứu, bao phủ sáu nhóm: V-pop/Nhạc trẻ; Rap/Hip-hop; Indie/Alternative; Rock/Band; Dân gian đương đại/Bolero/Trữ tình; EDM/Electronic. Nguồn gồm báo chí, website chính thức và tài khoản mạng xã hội chính thức đã xác minh. Không sử dụng Wikipedia hoặc Wikidata. Khởi tạo khoảng 180 thực thể từ nghệ sĩ, công ty và chương trình, sau đó mở rộng có kiểm soát dựa trên bằng chứng.
 

@@ -8,7 +8,11 @@ dependencies = [
     "requests>=2.32",
     "pandas>=2.2",
     "python-dotenv>=1.0",
+<<<<<<< Updated upstream
     "neo4j>=5.20",
+=======
+    "trafilatura>=2.0",
+>>>>>>> Stashed changes
 ]
 
 [tool.uv]

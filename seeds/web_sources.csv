@@ -1,0 +1,9 @@
+source_name,source_type,feed_url,site_url,enabled,notes
+VnExpress,báo điện tử,https://vnexpress.net/rss/giai-tri.rss,https://vnexpress.net,yes,RSS Giải trí; đọc sitemap khai báo trong robots.txt
+Tuổi Trẻ Online,báo điện tử,https://tuoitre.vn/rss/van-hoa.rss,https://tuoitre.vn,yes,RSS Văn hóa; đọc sitemap khai báo trong robots.txt
+Thanh Niên,báo điện tử,https://thanhnien.vn/rss/van-hoa.rss,https://thanhnien.vn,yes,RSS Văn hóa; đọc sitemap khai báo trong robots.txt
+VTV,báo điện tử,https://vtv.vn/rss/van-hoa-giai-tri.rss,https://vtv.vn,yes,RSS Văn hóa - Giải trí
+VOV,báo điện tử,https://vov.vn/rss/van-hoa.rss,https://vov.vn,yes,Feed cần xác nhận khi kiểm tra nguồn
+Znews,báo điện tử,,https://znews.vn,yes,Đọc sitemap khai báo trong robots.txt
+Kênh14,báo điện tử,,https://kenh14.vn,yes,Khám phá sitemap; kiểm tra nguồn trước khi chạy mẫu
+SaoStar,báo điện tử,,https://saostar.vn,yes,Khám phá sitemap; kiểm tra nguồn trước khi chạy mẫu

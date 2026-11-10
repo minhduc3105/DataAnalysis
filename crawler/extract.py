@@ -461,7 +461,7 @@ def extract() -> None:
     frozen_people = frozenset(known_people)
     known_groups = load_known_groups(seeds)
     with DOCUMENTS_PATH.open(encoding="utf-8-sig", newline="") as f:
-        docs = [d for d in csv.DictReader(f) if d["document_status"] != "loại bỏ"]
+        docs = [d for d in csv.DictReader(f) if d["document_status"] != "loại bỏ" and d.get("platform") != "web"]
 
     rows: list[dict] = []
     handles: dict[tuple[str, str, str], set[str]] = defaultdict(set)

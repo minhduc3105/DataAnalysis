@@ -4,7 +4,11 @@ from collections import Counter
 
 from dotenv import load_dotenv
 
+<<<<<<< Updated upstream
 from crawler import analysis, documents, extract, graph, graphdb, layer1_extract, layer2, shows, spotify, viewer, youtube, youtube_search
+=======
+from crawler import documents, extract, graph, layer1_extract, layer2, shows, spotify, viewer, web, youtube, youtube_search
+>>>>>>> Stashed changes
 from crawler.common import iter_jsonl, read_seeds, select_seeds, write_seeds
 from crawler.config import PERIOD_END, PERIOD_START, RAW_DIR
 
@@ -71,6 +75,30 @@ def cmd_layer2(args) -> None:
 
 def cmd_documents(_args) -> None:
     documents.build(read_seeds())
+
+
+def cmd_web(args) -> None:
+    if args.action == "sources-check":
+        web.sources_check()
+    elif args.action == "add-urls":
+        web.add_urls(args.url, args.entity)
+    elif args.action == "discover":
+        web.discover(args.entity, args.limit_per_source, args.search_limit, args.dry_run, args.date_from, args.date_to, args.force)
+    elif args.action == "crawl":
+        web.crawl(args.limit, args.entity, args.resolve_limit, args.workers)
+    elif args.action == "clean":
+        web.clean()
+    elif args.action == "signals":
+        from crawler import web_signals
+        web_signals.build()
+    elif args.action == "review-export":
+        web.review_export()
+    elif args.action == "review-import":
+        web.review_import()
+    elif args.action == "recover-urls":
+        web.recover_urls(args.dry_run)
+    else:
+        web.stats()
 
 
 def cmd_extract(_args) -> None:
@@ -161,6 +189,20 @@ def main() -> None:
     l2.set_defaults(func=cmd_layer2)
 
     sub.add_parser("documents", help="Xuất bảng Document").set_defaults(func=cmd_documents)
+    web_parser = sub.add_parser("web", help="Thu thập báo chí và website chính thức")
+    web_parser.add_argument("action", choices=["sources-check", "add-urls", "discover", "crawl", "clean", "signals", "review-export", "review-import", "recover-urls", "stats"])
+    web_parser.add_argument("--entity", nargs="*", help="Chỉ xử lý entity_id được chọn trong discover/crawl")
+    web_parser.add_argument("--limit-per-source", type=int, default=1000, help="Số URL sitemap tối đa đọc mỗi nguồn")
+    web_parser.add_argument("--search-limit", type=int, default=50, help="Tổng số query Google News tối đa trong lượt")
+    web_parser.add_argument("--dry-run", action="store_true", help="discover: chỉ xem query dự kiến, không gọi mạng hoặc ghi checkpoint")
+    web_parser.add_argument("--force", action="store_true", help="discover: chạy lại cả query đã hoàn tất gần đây")
+    web_parser.add_argument("--from", dest="date_from", help="Ngày đăng bắt đầu, YYYY-MM-DD")
+    web_parser.add_argument("--to", dest="date_to", help="Ngày đăng kết thúc, YYYY-MM-DD")
+    web_parser.add_argument("--limit", type=int, help="Số URL tối đa crawl trong lượt")
+    web_parser.add_argument("--resolve-limit", type=int, default=50, help="Số link Google News tối đa tự giải ra URL bài gốc mỗi lượt crawl")
+    web_parser.add_argument("--workers", type=int, default=8, help="Số URL tải song song tối đa; request cùng host vẫn được giãn nhịp")
+    web_parser.add_argument("--url", nargs="+", help="URL bài gốc cho action add-urls")
+    web_parser.set_defaults(func=cmd_web)
     sub.add_parser("extract", help="Rút credit, bài hát, label, brand, handle MXH từ documents.csv").set_defaults(func=cmd_extract)
     sub.add_parser("graph", help="Dựng bảng Entity/Relation/Evidence từ mentions.csv").set_defaults(func=cmd_graph)
     sub.add_parser("view", help="Tạo trang HTML xem graph (data/interim/graph/viewer.html)").set_defaults(func=cmd_view)

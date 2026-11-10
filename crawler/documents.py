@@ -24,6 +24,9 @@ DOCUMENT_COLUMNS = [
     "platform_item_id",
     "seed_ids",
     "content_tag",
+    "entity_ids",
+    "quality_flags",
+    "search_entity_ids",
 ]
 EXCLUDED = "loại bỏ"
 
@@ -72,6 +75,7 @@ def _youtube_docs(verified_channels: dict[str, str], seed_ids: set[str], show_id
             "platform": "youtube",
             "platform_item_id": vid,
             "seed_ids": {owner},
+            "entity_ids": "",
         }
     return docs
 
@@ -116,6 +120,7 @@ def _spotify_docs() -> dict[str, dict]:
             "platform": "spotify",
             "platform_item_id": aid,
             "seed_ids": {r["seed_id"]},
+            "entity_ids": "",
         }
     return docs
 
@@ -132,15 +137,22 @@ def build(seeds: list[dict]) -> int:
     spotify_docs = list(_spotify_docs().values())
     for d in spotify_docs:
         d["content_tag"] = "release"
-    docs = youtube_docs + spotify_docs
+    web_path = RAW_DIR / "web" / "documents.jsonl"
+    web_docs = []
+    if web_path.exists():
+        from . import web
+        web.clean()
+        with web.OUT_PATH.open(encoding="utf-8-sig", newline="") as f:
+            web_docs = [{key: row.get(key, "") for key in DOCUMENT_COLUMNS} for row in csv.DictReader(f)]
+    docs = youtube_docs + spotify_docs + web_docs
 
     INTERIM_DIR.mkdir(parents=True, exist_ok=True)
     path = INTERIM_DIR / "documents.csv"
     with path.open("w", encoding="utf-8-sig", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=DOCUMENT_COLUMNS)
+        writer = csv.DictWriter(f, fieldnames=DOCUMENT_COLUMNS, lineterminator="\n")
         writer.writeheader()
         for d in docs:
-            writer.writerow({**d, "seed_ids": "|".join(sorted(d["seed_ids"]))})
+            writer.writerow({**d, "seed_ids": "|".join(sorted(d["seed_ids"])) if isinstance(d["seed_ids"], set) else d["seed_ids"]})
     print(f"Đã ghi {len(docs)} tài liệu → {path} ({now_iso()})")
     print("Theo content_tag:", dict(Counter(d["content_tag"] for d in docs)))
     print("Theo trạng thái:", dict(Counter(d["document_status"] for d in docs)))

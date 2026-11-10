@@ -1,0 +1,23 @@
+relation_type,term,query_terms,term_group
+COLLABORATED_WITH,hợp tác,hợp tác với|kết hợp cùng|song ca|song tấu,signal
+COLLABORATED_WITH,kết hợp,kết hợp|hợp tác|song ca,signal
+COLLABORATED_WITH,song ca,song ca|hát cùng|kết hợp,signal
+COLLABORATED_WITH,ra mắt cùng,ra mắt cùng|hợp tác,signal
+COLLABORATED_WITH,sáng tác cho,sáng tác cho|nhạc sĩ|ca khúc,signal
+COLLABORATED_WITH,feat,feat|featuring|kết hợp,signal
+COLLABORATED_WITH,featuring,featuring|feat|hợp tác,signal
+DISPUTED_WITH,tranh chấp,tranh chấp|mâu thuẫn|khởi kiện,signal
+DISPUTED_WITH,khởi kiện,khởi kiện|kiện|tòa án,signal
+DISPUTED_WITH,mâu thuẫn,mâu thuẫn|tranh chấp|bất hòa,signal
+DISPUTED_WITH,tố cáo,tố cáo|cáo buộc|tranh chấp,signal
+DISPUTED_WITH,đòi bồi thường,đòi bồi thường|tranh chấp|khởi kiện,signal
+DISPUTED_WITH,tranh chấp bản quyền,tranh chấp bản quyền|khởi kiện|kiện,signal
+DISPUTED_WITH,vi phạm bản quyền,vi phạm bản quyền|khởi kiện|kiện,signal
+DISPUTED_WITH,khiếu nại bản quyền,khiếu nại bản quyền|tranh chấp|khởi kiện,signal
+DISPUTED_WITH,chấm dứt hợp đồng,chấm dứt hợp đồng|tranh chấp|hợp đồng,signal
+,,không có|không hề|không phải|chưa từng,negation
+,,tin đồn|nghi vấn|chưa xác nhận,uncertain
+AMBASSADOR_OF,đại sứ thương hiệu,đại sứ thương hiệu|đại sứ,signal
+AMBASSADOR_OF,đại sứ,đại sứ thương hiệu|đại sứ,signal
+DISPUTED_WITH,cáo buộc,cáo buộc|khởi kiện|tranh chấp,signal
+,,cư dân mạng|đồn đoán|bị đồn|chưa được xác nhận,uncertain
