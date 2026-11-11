@@ -94,7 +94,7 @@ REL_000092,SON_0020,RELEASED_BY,COM_0003,chờ kiểm tra,không,,,trang phát h
 REL_000093,SON_0020,RELEASED_BY,COM_0004,chờ kiểm tra,không,,,chủ sở hữu bản quyền,,Dear,SpaceSpeakers Label,1
 REL_000094,PER_0306,COLLABORATED_WITH,PER_0329,chờ kiểm tra,có,,,cùng trình bày một bài,,Gonzo,Lê Hiếu,1
 REL_000095,PER_0306,PERFORMED,SON_0021,chờ kiểm tra,không,,,trình bày,,Gonzo,Baggage,1
-REL_000097,PER_0333,MEMBER_OF,GRO_0009,chờ kiểm tra,không,,,thành viên crew (tiền tố trong nghệ danh),,RPT Phongkhin,RPT (Rap Nhà Làm),2
+REL_000097,PER_0333,MEMBER_OF,GRO_0009,chờ kiểm tra,không,,,thành viên crew (tiền tố trong nghệ danh),,RPT Phongkhin,RPT (Rapital),2
 REL_000098,PER_0306,PERFORMED,SON_0022,chờ kiểm tra,không,,,trình bày,,Gonzo,con đang về,1
 REL_000099,PER_0332,PRODUCED,SON_0022,chờ kiểm tra,không,,,sản xuất/hòa âm,,Derkalavier,con đang về,1
 REL_000100,PER_0306,PERFORMED,SON_0023,chờ kiểm tra,không,,,trình bày,,Gonzo,tired,1
@@ -3597,7 +3597,7 @@ REL_003627,PER_0229,FEATURED_ON,SON_1187,chờ kiểm tra,không,,,trình bày,,
 REL_003628,SON_1187,RELEASED_BY,COM_0032,chờ kiểm tra,không,,,hãng phát hành (℗/label),,Mắt Môi Tay Chân,ah311synd,1
 REL_003629,PER_0229,COLLABORATED_WITH,PER_0304,chờ kiểm tra,có,,,cùng trình bày một bài,,Tage,MCK,2
 REL_003630,PER_0304,PERFORMED,SON_1188,chờ kiểm tra,không,,,trình bày,,MCK,Huh,1
-REL_003631,PER_1042,MEMBER_OF,GRO_0009,chờ kiểm tra,không,,,thành viên crew (tiền tố trong nghệ danh),,RPT Orijinn,RPT (Rap Nhà Làm),7
+REL_003631,PER_1042,MEMBER_OF,GRO_0009,chờ kiểm tra,không,,,thành viên crew (tiền tố trong nghệ danh),,RPT Orijinn,RPT (Rapital),7
 REL_003632,PER_1042,FEATURED_ON,SON_1188,chờ kiểm tra,không,,,trình bày,,RPT Orijinn,Huh,1
 REL_003633,PER_0230,FEATURED_ON,SON_1188,chờ kiểm tra,không,,,trình bày,,Thành Draw,Huh,1
 REL_003634,PER_0304,COLLABORATED_WITH,PER_1042,chờ kiểm tra,có,,,cùng trình bày một bài,,MCK,RPT Orijinn,1
@@ -3613,7 +3613,7 @@ REL_003643,PER_0304,PERFORMED,SON_1194,chờ kiểm tra,không,,,trình bày,,MC
 REL_003644,PER_0304,PERFORMED,SON_1195,chờ kiểm tra,không,,,trình bày,,MCK,2h,1
 REL_003645,PER_0304,PERFORMED,SON_1196,chờ kiểm tra,không,,,trình bày,,MCK,Nghe Như Tình Yêu,1
 REL_003646,PER_0304,PERFORMED,SON_1197,chờ kiểm tra,không,,,trình bày,,MCK,SODA,1
-REL_003647,PER_0304,MEMBER_OF,GRO_0009,chờ kiểm tra,không,,,thành viên crew (tiền tố trong nghệ danh),,MCK,RPT (Rap Nhà Làm),18
+REL_003647,PER_0304,MEMBER_OF,GRO_0009,chờ kiểm tra,không,,,thành viên crew (tiền tố trong nghệ danh),,MCK,RPT (Rapital),18
 REL_003648,PER_1044,COMPOSED,SON_1189,chờ kiểm tra,không,,,sáng tác/viết lời,,Nghiêm Vũ Hoàng Long,Ai Mới Là Kẻ Xấu Xa,1
 REL_003649,PER_1045,PRODUCED,SON_1189,chờ kiểm tra,không,,,sản xuất/hòa âm,,Lope Pham,Ai Mới Là Kẻ Xấu Xa,1
 REL_003650,PER_0304,PERFORMED,SON_1198,chờ kiểm tra,không,,,trình bày,,MCK,Anh Đã Ổn Hơn,1
@@ -4983,7 +4983,7 @@ REL_005049,PER_0161,PERFORMED,SON_1604,chờ kiểm tra,không,,,trình bày,,Wx
 REL_005050,PER_0161,COMPOSED,SON_1604,chờ kiểm tra,không,,,sáng tác/viết lời,,Wxrdie,DOPE BOYS,1
 REL_005051,PER_0079,PRODUCED,SON_1604,chờ kiểm tra,không,,,sản xuất/hòa âm,,2PILLZ,DOPE BOYS,1
 REL_005052,PER_0161,PERFORMED,SON_1605,chờ kiểm tra,không,,,trình bày,,Wxrdie,40 ĐỘ,1
-REL_005053,PER_1279,MEMBER_OF,GRO_0009,chờ kiểm tra,không,,,thành viên crew (tiền tố trong nghệ danh),,RPT Spidey,RPT (Rap Nhà Làm),1
+REL_005053,PER_1279,MEMBER_OF,GRO_0009,chờ kiểm tra,không,,,thành viên crew (tiền tố trong nghệ danh),,RPT Spidey,RPT (Rapital),1
 REL_005054,PER_1279,FEATURED_ON,SON_1605,chờ kiểm tra,không,,,trình bày,,RPT Spidey,40 ĐỘ,1
 REL_005055,PER_0161,COMPOSED,SON_1605,chờ kiểm tra,không,,,sáng tác/viết lời,,Wxrdie,40 ĐỘ,1
 REL_005056,PER_1279,COMPOSED,SON_1605,chờ kiểm tra,không,,,sáng tác/viết lời,,RPT Spidey,40 ĐỘ,1
@@ -5061,7 +5061,7 @@ REL_005129,PER_0161,COLLABORATED_WITH,PER_1286,chờ kiểm tra,có,,,cùng trì
 REL_005130,PER_0161,PERFORMED,SON_1628,chờ kiểm tra,không,,,trình bày,,Wxrdie,ALL THESE FEELINGS,1
 REL_005131,PER_0079,FEATURED_ON,SON_1628,chờ kiểm tra,không,,,trình bày,,2PILLZ,ALL THESE FEELINGS,1
 REL_005132,PER_1287,PERFORMED,SON_1629,chờ kiểm tra,không,,,trình bày,,Thu Trong Phòng Ngủ,Right,1
-REL_005133,PER_1288,MEMBER_OF,GRO_0009,chờ kiểm tra,không,,,thành viên crew (tiền tố trong nghệ danh),,RPT JasonDilla,RPT (Rap Nhà Làm),1
+REL_005133,PER_1288,MEMBER_OF,GRO_0009,chờ kiểm tra,không,,,thành viên crew (tiền tố trong nghệ danh),,RPT JasonDilla,RPT (Rapital),1
 REL_005134,PER_1288,FEATURED_ON,SON_1629,chờ kiểm tra,không,,,trình bày,,RPT JasonDilla,Right,1
 REL_005135,PER_0161,FEATURED_ON,SON_1629,chờ kiểm tra,không,,,trình bày,,Wxrdie,Right,1
 REL_005136,SON_1629,RELEASED_BY,COM_0010,chờ kiểm tra,không,,,trang phát hành audio,,Right,Universal Music Vietnam,1
