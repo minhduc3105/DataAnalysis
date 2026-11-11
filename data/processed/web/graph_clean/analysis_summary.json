@@ -1,0 +1,112 @@
+{
+  "entities": 340,
+  "relations": 633,
+  "evidence": 2553,
+  "documents": 829,
+  "relation_types": {
+    "COLLABORATED_WITH": 614,
+    "DISPUTED_WITH": 19
+  },
+  "top_entities_by_relation_degree": [
+    {
+      "entity_id": "PER_0005",
+      "name": "Orange",
+      "degree": 44
+    },
+    {
+      "entity_id": "PER_0295",
+      "name": "Trung Quân Idol",
+      "degree": 32
+    },
+    {
+      "entity_id": "PER_0019",
+      "name": "Hứa Kim Tuyền",
+      "degree": 31
+    },
+    {
+      "entity_id": "PER_0006",
+      "name": "Bùi Công Nam",
+      "degree": 31
+    },
+    {
+      "entity_id": "PER_0027",
+      "name": "Karik",
+      "degree": 30
+    },
+    {
+      "entity_id": "PER_0010",
+      "name": "HOÀNG DŨNG",
+      "degree": 30
+    },
+    {
+      "entity_id": "PER_0143",
+      "name": "Thuỳ Chi",
+      "degree": 25
+    },
+    {
+      "entity_id": "PER_0017",
+      "name": "Khắc Hưng",
+      "degree": 24
+    },
+    {
+      "entity_id": "PER_0257",
+      "name": "Hồ Ngọc Hà",
+      "degree": 23
+    },
+    {
+      "entity_id": "PER_0016",
+      "name": "GREY D",
+      "degree": 21
+    },
+    {
+      "entity_id": "PER_0263",
+      "name": "MASEW",
+      "degree": 21
+    },
+    {
+      "entity_id": "PER_0249",
+      "name": "VƯƠNG ANH TÚ",
+      "degree": 17
+    },
+    {
+      "entity_id": "PER_0004",
+      "name": "Anh Tú",
+      "degree": 17
+    },
+    {
+      "entity_id": "PER_0145",
+      "name": "AMEE",
+      "degree": 15
+    },
+    {
+      "entity_id": "PER_0161",
+      "name": "Wxrdie",
+      "degree": 14
+    },
+    {
+      "entity_id": "PER_0239",
+      "name": "Hương Ly",
+      "degree": 14
+    },
+    {
+      "entity_id": "PER_0044",
+      "name": "Wren Evans",
+      "degree": 13
+    },
+    {
+      "entity_id": "PER_0041",
+      "name": "KAI ĐINH",
+      "degree": 13
+    },
+    {
+      "entity_id": "PER_0259",
+      "name": "Khắc Việt",
+      "degree": 13
+    },
+    {
+      "entity_id": "PER_0033",
+      "name": "Hòa Minzy",
+      "degree": 13
+    }
+  ]
+}

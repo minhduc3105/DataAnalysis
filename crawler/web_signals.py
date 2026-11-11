@@ -4,6 +4,7 @@ import hashlib
 import json
 import re
 import unicodedata
+import urllib.parse
 
 import pandas as pd
 
@@ -48,6 +49,15 @@ def _exact_entity_matches(sentence, candidates, exact_names, name_owners):
                     continue
                 matched.add(entity_id)
                 break
+    return sorted(matched)
+
+
+def _surface_candidates(sentence, mention_pattern, name_owners):
+    """Return all catalog IDs whose names occur in a relation sentence."""
+    matched = set()
+    if mention_pattern:
+        for mention in mention_pattern.finditer(sentence):
+            matched.update(name_owners.get(_accent_key(mention.group(0)), ()))
     return sorted(matched)
 
 
@@ -127,7 +137,6 @@ def build(write=True):
         print("Không có Person/Group trong graph để dò tín hiệu.")
         return pd.DataFrame(columns=SIGNAL_COLUMNS)
     term_rows = web._terms(entities.to_dict("records"))
-    matcher = web._matcher(term_rows)
     exact_names = {}
     for entity_id, name, _ in term_rows:
         exact_names.setdefault(entity_id, set()).add((name, _accent_key(name)))
@@ -135,6 +144,8 @@ def build(write=True):
     for entity_id, names in exact_names.items():
         for _, name_key in names:
             name_owners.setdefault(name_key, set()).add(entity_id)
+    surfaces = sorted({name for names in exact_names.values() for name, _ in names if name}, key=len, reverse=True)
+    mention_pattern = re.compile(r"(?<!\w)(?:" + "|".join(re.escape(name) for name in surfaces) + r")(?!\w)", re.I | re.UNICODE) if surfaces else None
     entity_names = entities.set_index("entity_id")["canonical_name"].to_dict()
     graph_relations = _graph_relations()
     docs = pd.DataFrame(web._read_docs()).fillna("")
@@ -159,6 +170,10 @@ def build(write=True):
     for column in ("published_at", "published_at_source", "published_at_conflict", "collected_at", "content_hash", "document_status"):
         if column not in docs:
             docs[column] = ""
+    if "collection_method" in docs:
+        docs = docs[~docs["collection_method"].eq("google_news_preview")]
+    if "final_url" in docs:
+        docs = docs[~docs["final_url"].map(lambda value: (urllib.parse.urlparse(str(value)).hostname or "").lower() == "news.google.com" if value else False)]
     docs = docs[~docs["document_status"].isin({"loại bỏ"})]
     docs["published_date"] = docs["published_at"].map(web._date)
     if "published_at_source" in docs:
@@ -171,7 +186,7 @@ def build(write=True):
 
     found = []
     for doc in docs.to_dict("records"):
-        content = unicodedata.normalize("NFC", doc.get("content", ""))
+        content = unicodedata.normalize("NFC", "\n".join(dict.fromkeys(filter(None, (doc.get("abstract", ""), doc.get("article_lead", ""), doc.get("content", ""))))))
         title = unicodedata.normalize("NFC", doc.get("title", ""))
         lead = web._lead_text(content)
         # Inspect each sentence in the full extracted body, including documents queued for review.
@@ -181,7 +196,7 @@ def build(write=True):
             relation_types = {rtype for rtype, cue in signal_terms if cue and _has_phrase(sentence, cue)}
             if not relation_types:
                 continue
-            rough_matches = web._matches(sentence, matcher, allow_single_word=True)
+            rough_matches = _surface_candidates(sentence, mention_pattern, name_owners)
             matched = _exact_entity_matches(sentence, rough_matches, exact_names, name_owners)
             if len(matched) < 2 or len(matched) > 4:
                 continue

@@ -1,0 +1,15 @@
+{
+  "raw_documents": 7757,
+  "normalized": 7757,
+  "ready": 5240,
+  "review": 951,
+  "excluded": 1566,
+  "duplicate_rows": 32,
+  "entity_links": 7332,
+  "scope": [
+    "2016-01-01",
+    "2026-10-21"
+  ],
+  "duplicate_groups": 12,
+  "documents_for_entity_review": 675
+}

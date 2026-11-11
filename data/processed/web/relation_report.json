@@ -1,0 +1,10 @@
+{
+  "normalized_articles": 5240,
+  "signals": 4256,
+  "statuses": {
+    "unreviewed": 4256
+  },
+  "entity_catalog_size": 10886,
+  "candidate_output": "/run/media/minhduc/D/Study/DataAnalysis/data/processed/web/relation_candidates.csv",
+  "decision_ledger": "/run/media/minhduc/D/Study/DataAnalysis/data/processed/web/relation_decisions.csv"
+}

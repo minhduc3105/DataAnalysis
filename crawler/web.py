@@ -3,7 +3,9 @@
 from __future__ import annotations
 
 import csv
+import asyncio
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from email.utils import parsedate_to_datetime
 import hashlib
 from html.parser import HTMLParser
 import json
@@ -28,7 +30,7 @@ DB_PATH = WEB_DIR / "crawl.sqlite3"
 SOURCES_PATH = ROOT / "seeds" / "web_sources.csv"
 DOCS_PATH = INTERIM_DIR / "web_raw_documents.csv"
 DISCOVERY_REJECTS_PATH = INTERIM_DIR / "web_discovery_rejected.csv"
-DOC_COLUMNS = ["document_id", "url", "resolved_url", "final_url", "source_name", "source_type", "title", "published_at", "published_at_raw", "published_at_source", "published_at_conflict", "collected_at", "content", "raw_html_path", "collection_method", "document_status", "author", "content_hash", "duplicate_content_of", "crawl_relevance_status", "seed_ids"]
+DOC_COLUMNS = ["document_id", "url", "resolved_url", "final_url", "source_name", "source_type", "title", "title_source", "abstract", "abstract_source", "rss_abstract", "article_lead", "lead_source", "published_at", "published_at_iso", "published_at_raw", "published_at_source", "published_at_conflict", "collected_at", "content", "raw_html_path", "collection_method", "document_status", "author", "content_hash", "duplicate_content_of", "crawl_relevance_status", "review_reason", "query_entity_ids", "seed_ids"]
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; VnMusicResearchBot/1.0; +https://example.org/research)"}
 TIMEOUT = 25
 URL_FILTER_VERSION = "exact-source-url-v2"
@@ -66,8 +68,8 @@ def _db():
     existed = DB_PATH.exists()
     db = sqlite3.connect(DB_PATH, timeout=30)
     db.execute("PRAGMA journal_mode=WAL")
-    db.execute("CREATE TABLE IF NOT EXISTS urls (url TEXT COLLATE BINARY PRIMARY KEY, state TEXT NOT NULL DEFAULT 'discovered', source_kind TEXT NOT NULL DEFAULT '', discovered_at TEXT NOT NULL DEFAULT '', updated_at TEXT NOT NULL DEFAULT '', error TEXT NOT NULL DEFAULT '', subject_ids TEXT NOT NULL DEFAULT '', source_name TEXT NOT NULL DEFAULT '', query TEXT NOT NULL DEFAULT '', resolved_url TEXT NOT NULL DEFAULT '', final_url TEXT NOT NULL DEFAULT '', resolution_state TEXT NOT NULL DEFAULT 'pending', exclusion_reason TEXT NOT NULL DEFAULT '', attempts INTEGER NOT NULL DEFAULT 0)")
-    db.execute("CREATE TABLE IF NOT EXISTS url_provenance (url TEXT NOT NULL, source_kind TEXT NOT NULL, subject_ids TEXT NOT NULL DEFAULT '', source_name TEXT NOT NULL DEFAULT '', query TEXT NOT NULL DEFAULT '', discovered_at TEXT NOT NULL DEFAULT '', UNIQUE(url,source_kind,subject_ids,query))")
+    db.execute("CREATE TABLE IF NOT EXISTS urls (url TEXT COLLATE BINARY PRIMARY KEY, state TEXT NOT NULL DEFAULT 'discovered', source_kind TEXT NOT NULL DEFAULT '', discovered_at TEXT NOT NULL DEFAULT '', updated_at TEXT NOT NULL DEFAULT '', error TEXT NOT NULL DEFAULT '', subject_ids TEXT NOT NULL DEFAULT '', source_name TEXT NOT NULL DEFAULT '', query TEXT NOT NULL DEFAULT '', resolved_url TEXT NOT NULL DEFAULT '', final_url TEXT NOT NULL DEFAULT '', resolution_state TEXT NOT NULL DEFAULT 'pending', exclusion_reason TEXT NOT NULL DEFAULT '', attempts INTEGER NOT NULL DEFAULT 0, rss_title TEXT NOT NULL DEFAULT '', rss_abstract TEXT NOT NULL DEFAULT '', rss_published_at TEXT NOT NULL DEFAULT '', rss_source TEXT NOT NULL DEFAULT '')")
+    db.execute("CREATE TABLE IF NOT EXISTS url_provenance (url TEXT NOT NULL, source_kind TEXT NOT NULL, subject_ids TEXT NOT NULL DEFAULT '', source_name TEXT NOT NULL DEFAULT '', query TEXT NOT NULL DEFAULT '', discovered_at TEXT NOT NULL DEFAULT '', rss_title TEXT NOT NULL DEFAULT '', rss_abstract TEXT NOT NULL DEFAULT '', rss_published_at TEXT NOT NULL DEFAULT '', rss_source TEXT NOT NULL DEFAULT '', UNIQUE(url,source_kind,subject_ids,query))")
     db.execute("CREATE TABLE IF NOT EXISTS discovery_rejections (url TEXT NOT NULL, query TEXT NOT NULL, reason TEXT NOT NULL, discovered_at TEXT NOT NULL, PRIMARY KEY(url,query))")
     db.execute("CREATE TABLE IF NOT EXISTS discovery_events (event_id INTEGER PRIMARY KEY, url TEXT NOT NULL DEFAULT '', source_kind TEXT NOT NULL, query TEXT NOT NULL DEFAULT '', subject_ids TEXT NOT NULL DEFAULT '', published_at TEXT NOT NULL DEFAULT '', period_status TEXT NOT NULL DEFAULT 'unknown', outcome TEXT NOT NULL, discovered_at TEXT NOT NULL)")
     event_columns = {row[1] for row in db.execute("PRAGMA table_info(discovery_events)")}
@@ -79,7 +81,7 @@ def _db():
         db.execute("ALTER TABLE discovery_events ADD COLUMN period_status TEXT NOT NULL DEFAULT 'unknown'")
     # Existing databases predate the provenance columns.
     columns = {row[1] for row in db.execute("PRAGMA table_info(urls)")}
-    additions = (("subject_ids", "TEXT NOT NULL DEFAULT ''"), ("source_name", "TEXT NOT NULL DEFAULT ''"), ("query", "TEXT NOT NULL DEFAULT ''"), ("source_kind", "TEXT NOT NULL DEFAULT ''"), ("resolved_url", "TEXT NOT NULL DEFAULT ''"), ("final_url", "TEXT NOT NULL DEFAULT ''"), ("resolution_state", "TEXT NOT NULL DEFAULT 'pending'"), ("exclusion_reason", "TEXT NOT NULL DEFAULT ''"), ("attempts", "INTEGER NOT NULL DEFAULT 0"))
+    additions = (("subject_ids", "TEXT NOT NULL DEFAULT ''"), ("source_name", "TEXT NOT NULL DEFAULT ''"), ("query", "TEXT NOT NULL DEFAULT ''"), ("source_kind", "TEXT NOT NULL DEFAULT ''"), ("resolved_url", "TEXT NOT NULL DEFAULT ''"), ("final_url", "TEXT NOT NULL DEFAULT ''"), ("resolution_state", "TEXT NOT NULL DEFAULT 'pending'"), ("exclusion_reason", "TEXT NOT NULL DEFAULT ''"), ("attempts", "INTEGER NOT NULL DEFAULT 0"), ("rss_title", "TEXT NOT NULL DEFAULT ''"), ("rss_abstract", "TEXT NOT NULL DEFAULT ''"), ("rss_published_at", "TEXT NOT NULL DEFAULT ''"), ("rss_source", "TEXT NOT NULL DEFAULT ''"))
     missing = [(name, kind) for name, kind in additions if name not in columns]
     if missing:
         # Back up the live SQLite database before changing an existing schema.
@@ -90,6 +92,17 @@ def _db():
             target.close()
         for name, kind in missing:
             db.execute(f"ALTER TABLE urls ADD COLUMN {name} {kind}")
+    provenance_columns = {row[1] for row in db.execute("PRAGMA table_info(url_provenance)")}
+    provenance_additions = (("rss_title", "TEXT NOT NULL DEFAULT ''"), ("rss_abstract", "TEXT NOT NULL DEFAULT ''"), ("rss_published_at", "TEXT NOT NULL DEFAULT ''"), ("rss_source", "TEXT NOT NULL DEFAULT ''"))
+    missing_provenance = [(name, kind) for name, kind in provenance_additions if name not in provenance_columns]
+    if missing_provenance:
+        if existed and provenance_columns:
+            backup = DB_PATH.with_name(f"crawl.schema-backup-{datetime.now().strftime('%Y%m%d-%H%M%S-%f')}.sqlite3")
+            target = sqlite3.connect(backup)
+            db.backup(target)
+            target.close()
+        for name, kind in missing_provenance:
+            db.execute(f"ALTER TABLE url_provenance ADD COLUMN {name} {kind}")
     if "entity_ids" in columns:
         db.execute("UPDATE urls SET subject_ids=replace(entity_ids,'|',',') WHERE subject_ids=''")
     db.commit()
@@ -137,6 +150,27 @@ def _matches(text, matcher, allow_single_word=False):
     return list(dict.fromkeys(found))
 
 
+def _relevance_terms(entities):
+    """Use multiword aliases plus distinctive single-word names unique in graph."""
+    terms = _terms(entities)
+    owners = {}
+    for eid, _name, key in terms:
+        if len(key.split()) == 1 and len(key) >= 5:
+            owners.setdefault(key, set()).add(eid)
+    return [term for term in terms if len(term[2].split()) > 1 or (len(term[2]) >= 5 and owners.get(term[2]) == {term[0]})]
+
+
+def _relevance_matches(title, text, matcher):
+    """Match phrases anywhere and unique one-word aliases in headline casing."""
+    matches = _matches(text, matcher)
+    single_terms = [term for term in matcher if len(term[2].split()) == 1]
+    for eid, name, _key in single_terms:
+        pattern = re.compile(rf"(?<!\w){re.escape(name)}(?!\w)", re.I | re.UNICODE)
+        if any(m.group(0)[:1].isupper() for m in pattern.finditer(title or "")):
+            matches.append(eid)
+    return list(dict.fromkeys(matches))
+
+
 def _lead_text(content, max_chars=1200):
     """Return the opening portion used for relevance checks and review."""
     return re.sub(r"\s+", " ", str(content or "")).strip()[:max_chars]
@@ -156,10 +190,13 @@ def _source_for_url(url, sources=None):
 
 
 def _is_article_url(url):
-    p = urllib.parse.urlparse(url)
+    try:
+        p = urllib.parse.urlparse(url)
+    except ValueError:
+        return False
     host = (p.hostname or "").lower()
     path = p.path.lower()
-    if p.scheme not in {"http", "https"} or not host or host.endswith(("wikipedia.org", "wikidata.org")):
+    if p.scheme not in {"http", "https"} or not host or host in {"news.google.com", "google.com", "www.google.com", "accounts.google.com", "consent.google.com", "wikipedia.org", "wikidata.org"} or host.endswith((".googleusercontent.com", ".wikipedia.org", ".wikidata.org")):
         return False
     if any(path.endswith(ext) for ext in (".jpg", ".jpeg", ".png", ".gif", ".webp", ".pdf", ".mp4", ".mp3", ".xml", ".css", ".js")):
         return False
@@ -177,12 +214,32 @@ def _date(value):
             parsed = parsed.astimezone(VN_TZ)
         return parsed.date().isoformat()
     except ValueError:
+        try:
+            parsed = parsedate_to_datetime(str(value))
+            if parsed.tzinfo:
+                parsed = parsed.astimezone(VN_TZ)
+            return parsed.date().isoformat()
+        except (TypeError, ValueError, OverflowError):
+            pass
         for fmt in ("%Y-%m-%d", "%Y/%m/%d", "%d/%m/%Y", "%Y-%m-%d %H:%M:%S"):
             try:
                 return datetime.strptime(str(value)[:19], fmt).date().isoformat()
             except ValueError:
                 pass
     return ""
+
+
+def _published_iso(value):
+    """Keep an ISO timestamp only when its timezone is explicit."""
+    try:
+        parsed = datetime.fromisoformat(str(value or "").replace("Z", "+00:00"))
+        return parsed.isoformat() if parsed.tzinfo is not None else ""
+    except ValueError:
+        try:
+            parsed = parsedate_to_datetime(str(value))
+            return parsed.isoformat() if parsed and parsed.tzinfo else ""
+        except (TypeError, ValueError, OverflowError):
+            return ""
 
 
 def _period_status(published, start, end):
@@ -204,7 +261,7 @@ def _page_publication_dates(html):
             attrs = {key.lower(): value or "" for key, value in attrs}
             if tag.lower() == "meta":
                 key = (attrs.get("property") or attrs.get("name") or "").lower()
-                if key in {"article:published_time", "og:published_time", "pubdate", "publishdate"}:
+                if key in {"article:published_time", "og:published_time", "pubdate", "publishdate", "datepublished", "date"}:
                     self.dates.append((attrs.get("content", ""), "meta:published"))
             elif tag.lower() == "time" and attrs.get("datetime"):
                 self.dates.append((attrs["datetime"], "html:time"))
@@ -278,13 +335,19 @@ def _save_docs(rows):
         if header != DOC_COLUMNS:
             old = {r.get("document_id"): r for r in _read_docs()}
             old.update({r["document_id"]: r for r in rows})
+            columns = list(dict.fromkeys(DOC_COLUMNS + [key for row in old.values() for key in row if key not in DOC_COLUMNS]))
             with DOCS_PATH.open("w", encoding="utf-8-sig", newline="") as f:
-                writer = csv.DictWriter(f, fieldnames=DOC_COLUMNS, extrasaction="ignore")
+                writer = csv.DictWriter(f, fieldnames=columns, extrasaction="ignore")
                 writer.writeheader()
                 writer.writerows(old.values())
             return
         mode = "a"
         encoding = "utf-8"
+        with DOCS_PATH.open(encoding="utf-8-sig", newline="") as f:
+            existing_ids = {r.get("document_id", "") for r in csv.DictReader(f)}
+        rows = [row for row in rows if row.get("document_id") not in existing_ids]
+        if not rows:
+            return
     else:
         mode = "w"
         encoding = "utf-8-sig"
@@ -295,7 +358,7 @@ def _save_docs(rows):
         writer.writerows(rows)
 
 
-def _add_url(db, url, source_kind, subject_ids="", source_name="", query="", published_at="", period_status="unknown"):
+def _add_url(db, url, source_kind, subject_ids="", source_name="", query="", published_at="", period_status="unknown", rss_title="", rss_abstract="", rss_source="", rss_published_at=""):
     # Preserve the exact URL string supplied by RSS/XML or the user.
     url = "" if url is None else str(url)
     now = now_iso()
@@ -311,16 +374,18 @@ def _add_url(db, url, source_kind, subject_ids="", source_name="", query="", pub
     out_of_scope = host in {"wikipedia.org", "wikidata.org"} or host.endswith((".wikipedia.org", ".wikidata.org"))
     reason = "out_of_scope_source" if out_of_scope else ("invalid_http_url" if not valid_http else "")
     state = "out_of_scope" if out_of_scope else ("invalid_url" if not valid_http else "discovered")
-    values = {"url": url, "state": state, "source_kind": source_kind, "source_name": source_name or _source_for_url(url).get("source_name", ""), "discovered_at": now, "updated_at": now, "subject_ids": subject_ids, "query": query, "error": "", "attempts": 0, "entity_ids": subject_ids, "resolution_state": "pending", "exclusion_reason": reason}
+    rss_published_at = rss_published_at or published_at
+    values = {"url": url, "state": state, "source_kind": source_kind, "source_name": source_name or _source_for_url(url).get("source_name", ""), "discovered_at": now, "updated_at": now, "subject_ids": subject_ids, "query": query, "error": "", "attempts": 0, "entity_ids": subject_ids, "resolution_state": "pending", "exclusion_reason": reason, "rss_title": rss_title, "rss_abstract": rss_abstract, "rss_published_at": rss_published_at, "rss_source": rss_source}
     columns = {row[1] for row in db.execute("PRAGMA table_info(urls)")}
     selected = {key: value for key, value in values.items() if key in columns}
     names = list(selected)
     result = db.execute(f"INSERT INTO urls({','.join(names)}) VALUES({','.join('?' for _ in names)}) ON CONFLICT(url) DO NOTHING", tuple(selected.values()))
-    provenance_values = {"url": url, "provenance_key": hashlib.sha256(f"{source_kind}|{subject_ids}|{query}".encode()).hexdigest(), "source_kind": source_kind, "subject_ids": subject_ids, "source_name": values["source_name"], "query": query, "query_text": query, "discovered_at": now, "query_type": "entity" if source_kind == "Google News RSS" else "", "relation_type": "", "query_hash": "", "date_start": "", "date_end": "", "rss_published_at": published_at}
+    provenance_values = {"url": url, "provenance_key": hashlib.sha256(f"{source_kind}|{subject_ids}|{query}".encode()).hexdigest(), "source_kind": source_kind, "subject_ids": subject_ids, "source_name": values["source_name"], "query": query, "query_text": query, "discovered_at": now, "query_type": "entity" if source_kind == "Google News RSS" else "", "relation_type": "", "query_hash": "", "date_start": "", "date_end": "", "rss_published_at": rss_published_at, "rss_title": rss_title, "rss_abstract": rss_abstract, "rss_source": rss_source}
     pcols = {row[1] for row in db.execute("PRAGMA table_info(url_provenance)")}
     pselected = {key: value for key, value in provenance_values.items() if key in pcols}
     pnames = list(pselected)
-    db.execute(f"INSERT INTO url_provenance({','.join(pnames)}) VALUES({','.join('?' for _ in pnames)}) ON CONFLICT DO NOTHING", tuple(pselected.values()))
+    db.execute(f"INSERT INTO url_provenance({','.join(pnames)}) VALUES({','.join('?' for _ in pnames)}) ON CONFLICT(url,source_kind,subject_ids,query) DO UPDATE SET rss_title=CASE WHEN excluded.rss_title<>'' THEN excluded.rss_title ELSE url_provenance.rss_title END,rss_abstract=CASE WHEN excluded.rss_abstract<>'' THEN excluded.rss_abstract ELSE url_provenance.rss_abstract END,rss_published_at=CASE WHEN excluded.rss_published_at<>'' THEN excluded.rss_published_at ELSE url_provenance.rss_published_at END,rss_source=CASE WHEN excluded.rss_source<>'' THEN excluded.rss_source ELSE url_provenance.rss_source END", tuple(pselected.values()))
+    db.execute("UPDATE urls SET rss_title=CASE WHEN rss_title='' THEN ? ELSE rss_title END,rss_abstract=CASE WHEN rss_abstract='' THEN ? ELSE rss_abstract END,rss_published_at=CASE WHEN rss_published_at='' THEN ? ELSE rss_published_at END,rss_source=CASE WHEN rss_source='' THEN ? ELSE rss_source END WHERE url=?", (rss_title, rss_abstract, rss_published_at, rss_source, url))
     outcome = "inserted" if result.rowcount == 1 else "exact_duplicate"
     db.execute("INSERT INTO discovery_events(url,source_kind,query,subject_ids,published_at,period_status,outcome,discovered_at) VALUES(?,?,?,?,?,?,?,?)", (url, source_kind, query, subject_ids, published_at, period_status, outcome, now))
     if subject_ids:
@@ -348,14 +413,44 @@ def add_urls(urls, entity_ids=None):
     print(f"URL nhập: mới {counts['inserted']}, trùng chính xác {counts['exact_duplicate']}, thiếu link {counts['missing_url']}.")
 
 
-def _xml_items(url, limit=1000):
+def _plain_xml_text(value):
+    class TextParser(HTMLParser):
+        def __init__(self):
+            super().__init__(convert_charrefs=True)
+            self.parts = []
+
+        def handle_starttag(self, tag, attrs):
+            if tag.lower() in {"p", "div", "br", "li", "section"}:
+                self.parts.append(" ")
+
+        def handle_endtag(self, tag):
+            if tag.lower() in {"p", "div", "br", "li", "section"}:
+                self.parts.append(" ")
+
+        def handle_data(self, data):
+            if data:
+                self.parts.append(data)
+
+    parser = TextParser()
+    parser.feed(value or "")
+    return re.sub(r"\s+", " ", "".join(parser.parts)).strip()
+
+
+def _xml_items(url, limit=1000, include_metadata=False):
     response = _polite_get(url, headers=HEADERS, timeout=TIMEOUT)
     response.raise_for_status()
     root = ET.fromstring(response.content)
     ns = {"a": "http://www.w3.org/2005/Atom", "sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
     if root.tag.endswith("rss"):
         for item in root.findall(".//item")[:limit]:
-            yield item.findtext("link", ""), item.findtext("pubDate", "")
+            article_url = item.findtext("link", "")
+            published = item.findtext("pubDate", "")
+            if include_metadata:
+                source = item.findtext("source", "")
+                yield (article_url, published, _plain_xml_text(item.findtext("title", "")),
+                       _plain_xml_text(item.findtext("description", "")), _plain_xml_text(source))
+            else:
+                yield article_url, published
     else:
         for item in root.findall(".//sm:url", ns)[:limit]:
             yield item.findtext("sm:loc", "", ns), item.findtext("sm:lastmod", "", ns)
@@ -526,12 +621,12 @@ def discover(entity_ids=None, limit_per_source=1000, search_limit=50, dry_run=Fa
             try:
                 db.execute("SAVEPOINT query_batch")
                 query_new = query_duplicates = query_missing = 0
-                for article_url, published in _xml_items(url, 100):
+                for article_url, published, rss_title, rss_abstract, rss_source in _xml_items(url, 100, include_metadata=True):
                     query_results += 1
                     d = _date(published)
                     if d and not start.isoformat() <= d <= end.isoformat():
                         out_of_range += 1
-                    outcome = _add_url(db, article_url, "Google News RSS", eid, "Google News", query, d, _period_status(d, start, end))
+                    outcome = _add_url(db, article_url, "Google News RSS", eid, "Google News", query, d, _period_status(d, start, end), rss_title, rss_abstract, rss_source, published)
                     query_new += outcome == "inserted"
                     query_duplicates += outcome == "exact_duplicate"
                     query_missing += outcome == "missing_url"
@@ -591,176 +686,485 @@ def discover(entity_ids=None, limit_per_source=1000, search_limit=50, dry_run=Fa
         db.close()
 
 
-def _resolve_news_url(url):
-    host = (urllib.parse.urlparse(url).hostname or "").lower()
-    if host != "news.google.com":
-        return url
-    response = _polite_get(url, headers=HEADERS, timeout=TIMEOUT)
-    response.raise_for_status()
+def _google_news_response(url):
+    """Return (publisher URL, response) from a Google News wrapper request."""
+    response = _polite_get(url, headers=HEADERS, timeout=TIMEOUT, allow_redirects=True)
+    try:
+        response.raise_for_status()
+    except requests.RequestException as exc:
+        raise ValueError(f"Google News HTTP {response.status_code}; content-type={response.headers.get('Content-Type', '')}; final={response.url}; {exc}") from exc
     match = re.search(r'(?:url|article_url)=([^&" ]+)', response.url + " " + response.text[:20000], re.I)
     if match:
         candidate = urllib.parse.unquote(match.group(1)).replace("&amp;", "&")
         candidate_host = (urllib.parse.urlparse(candidate).hostname or "").lower()
         if urllib.parse.urlparse(candidate).scheme in {"http", "https"} and candidate_host and candidate_host != "news.google.com":
-            return candidate
+            return candidate, response
     if (urllib.parse.urlparse(response.url).hostname or "").lower() != "news.google.com":
-        return response.url
+        return response.url, response
+    return "", response
+
+
+def _response_snippet(response, limit=300):
+    """Make a short, readable diagnostic from an HTTP response body."""
+    text = re.sub(r"<[^>]+>", " ", getattr(response, "text", "") or "")
+    return re.sub(r"\s+", " ", text).strip()[:limit]
+
+
+def _resolve_news_url(url):
+    host = (urllib.parse.urlparse(url).hostname or "").lower()
+    if host != "news.google.com":
+        return url
+    target, _response = _google_news_response(url)
+    if target:
+        return target
     raise ValueError("chưa giải được URL bài gốc từ Google News")
 
 
-def _extract_page(url, entity_ids, matcher=None, matcher_by_id=None):
-    response = _polite_get(url, headers=HEADERS, timeout=TIMEOUT, allow_redirects=True)
-    response.raise_for_status()
-    html = response.text
-    raw, date_source, published, conflict = _page_publication_dates(html)
-    downloaded = trafilatura.extract(html, include_comments=False, include_tables=True, output_format="txt") or ""
-    metadata = trafilatura.extract_metadata(html)
-    title = (metadata.title if metadata else "") or ""
-    author = (metadata.author if metadata else "") or ""
+def _html_metadata(html):
+    """Read common title, author, and description fields from HTML metadata."""
+    class MetadataParser(HTMLParser):
+        def __init__(self):
+            super().__init__(convert_charrefs=True)
+            self.meta = {}
+            self.title_parts = []
+            self.in_title = False
+
+        def handle_starttag(self, tag, attrs):
+            attrs = {key.lower(): value or "" for key, value in attrs}
+            if tag.lower() == "meta":
+                key = (attrs.get("property") or attrs.get("name") or "").lower()
+                if key and attrs.get("content"):
+                    self.meta.setdefault(key, attrs["content"].strip())
+            elif tag.lower() == "title":
+                self.in_title = True
+
+        def handle_endtag(self, tag):
+            if tag.lower() == "title":
+                self.in_title = False
+
+        def handle_data(self, data):
+            if self.in_title and data.strip():
+                self.title_parts.append(data.strip())
+
+    parser = MetadataParser()
+    parser.feed((html or "")[:200_000])
+    title = (parser.meta.get("og:title") or parser.meta.get("twitter:title") or " ".join(parser.title_parts)).strip()
+    abstract = (parser.meta.get("og:description") or parser.meta.get("description") or parser.meta.get("twitter:description") or "").strip()
+    author = (parser.meta.get("author") or parser.meta.get("article:author") or parser.meta.get("parsely-author") or "").strip()
+    return title, author, abstract
+
+
+def _google_news_metadata(html):
+    """Extract the headline and short summary exposed by a Google News preview."""
+    title, _author, abstract = _html_metadata(html)
+    return title, abstract
+
+
+def _extract_article_fields(html):
+    """Extract article-specific fields with provenance, excluding site chrome."""
+    class ArticleParser(HTMLParser):
+        def __init__(self):
+            super().__init__(convert_charrefs=True)
+            self.meta, self.jsonld = {}, []
+            self.in_script = False
+            self.script_data = []
+            self.stack, self.blocks = [], []
+            self.current = None
+            self.in_h1 = False
+            self.h1_parts = []
+            self.in_title = False
+            self.title_parts = []
+
+        def handle_starttag(self, tag, attrs):
+            attrs = {k.lower(): (v or "") for k, v in attrs}
+            tag = tag.lower()
+            if tag == "meta":
+                key = (attrs.get("property") or attrs.get("name") or attrs.get("itemprop") or "").lower()
+                if key and attrs.get("content"):
+                    self.meta.setdefault(key, attrs["content"].strip())
+            if tag == "script" and "ld+json" in attrs.get("type", "").lower():
+                self.in_script, self.script_data = True, []
+            classes = (attrs.get("class", "") + " " + attrs.get("itemprop", "")).lower()
+            blocked = tag in {"nav", "aside", "footer", "header", "form", "button"} or any(x in classes for x in ("advert", "related", "recommend", "menu", "breadcrumb", "caption", "social", "comment"))
+            self.stack.append((tag, blocked or (self.stack[-1][1] if self.stack else False), classes))
+            in_article = any(t in {"article", "main"} or any(x in cls for x in ("article", "story", "content")) for t, _blocked, cls in self.stack)
+            if tag == "h1" and not self.stack[-1][1] and in_article:
+                self.in_h1, self.h1_parts = True, []
+            if tag == "title":
+                self.in_title = True
+            in_article = any(t in {"article", "main"} or any(x in cls for x in ("article", "story", "content")) for t, _blocked, cls in self.stack)
+            if tag == "p" and not self.stack[-1][1] and in_article:
+                self.current = {"classes": classes, "text": []}
+
+        def handle_endtag(self, tag):
+            tag = tag.lower()
+            if tag == "script" and self.in_script:
+                self.jsonld.append("".join(self.script_data)); self.in_script = False
+            if tag == "h1":
+                self.in_h1 = False
+            if tag == "title":
+                self.in_title = False
+            if tag == "p" and self.current is not None:
+                text = " ".join(" ".join(self.current["text"]).split())
+                if len(text) >= 30:
+                    self.blocks.append((text, self.current["classes"]))
+                self.current = None
+            for i in range(len(self.stack) - 1, -1, -1):
+                if self.stack[i][0] == tag:
+                    self.stack = self.stack[:i]
+                    break
+
+        def handle_data(self, data):
+            if self.in_script: self.script_data.append(data)
+            if self.in_h1: self.h1_parts.append(data.strip())
+            if self.in_title: self.title_parts.append(data.strip())
+            if self.current is not None and not (self.stack and self.stack[-1][1]):
+                self.current["text"].append(data.strip())
+
+    parser = ArticleParser()
+    parser.feed((html or "")[:2_000_000])
+    nodes = []
+    def visit(value):
+        if isinstance(value, dict):
+            typ = value.get("@type", [])
+            if isinstance(typ, str): typ = [typ]
+            if any(str(t).lower() in {"article", "newsarticle", "reportagenewsarticle", "blogposting"} for t in typ):
+                nodes.append(value)
+            for child in value.values(): visit(child)
+        elif isinstance(value, list):
+            for child in value: visit(child)
+    for block in parser.jsonld:
+        try: visit(json.loads(block))
+        except (json.JSONDecodeError, RecursionError): pass
+    headline = next((str(n.get("headline") or n.get("name", "")).strip() for n in nodes if n.get("headline") or n.get("name")), "")
+    title = headline
+    title_source = "json-ld:headline" if headline else ""
     if not title:
-        m = re.search(r"<title[^>]*>(.*?)</title>", html, re.I | re.S)
-        title = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", m.group(1))).strip() if m else ""
-    if len(downloaded) < 120:
-        raise ValueError("không trích xuất được nội dung bài đủ dài")
+        title = " ".join(parser.h1_parts).strip()
+        title_source = "html:h1" if title else ""
+    if not title:
+        title = parser.meta.get("og:title", "").strip()
+        title_source = "meta:og:title" if title else ""
+    description = next((str(n.get("description", "")).strip() for n in nodes if n.get("description")), "")
+    abstract = description or parser.meta.get("article:description", "").strip() or parser.meta.get("og:description", "").strip() or parser.meta.get("description", "").strip()
+    abstract_source = ("json-ld:description" if description else "meta:article:description" if parser.meta.get("article:description") else "meta:og:description" if parser.meta.get("og:description") else "meta:description" if parser.meta.get("description") else "")
+    lead_candidates = [text for text, classes in parser.blocks if any(x in classes for x in ("sapo", "summary", "lead", "description", "article-intro"))]
+    if lead_candidates:
+        lead, lead_source = _truncate_word_boundary(lead_candidates[0], 2000), "html:article-sapo"
+    else:
+        paragraphs = [text for text, _ in parser.blocks[:3]]
+        lead, lead_source = _truncate_word_boundary(" ".join(paragraphs), 2000), ("html:article-paragraphs" if paragraphs else "")
+        if not lead:
+            extracted = trafilatura.extract(html, include_comments=False, include_tables=False, output_format="txt") or ""
+            lead = _truncate_word_boundary(" ".join(extracted.splitlines()[:3]), 2000)
+            lead_source = "trafilatura:lead" if lead else ""
+    if not abstract and lead_candidates:
+        abstract, abstract_source = lead_candidates[0][:2000], "html:article-sapo"
+    author = next((str(n.get("author", {}).get("name", "")).strip() if isinstance(n.get("author"), dict) else ", ".join(str(a.get("name", "")) for a in n.get("author", []) if isinstance(a, dict)) for n in nodes if n.get("author")), "")
+    author = author or parser.meta.get("author", "").strip() or parser.meta.get("article:author", "").strip()
+    return title, title_source, abstract, abstract_source, lead, lead_source, author
+
+
+def _truncate_word_boundary(text, limit=2000):
+    text = re.sub(r"\s+", " ", str(text or "")).strip()
+    if len(text) <= limit:
+        return text
+    cut = text[:limit]
+    return cut.rsplit(" ", 1)[0].rstrip(" ,;:-")
+
+
+def _extract_article_html(url, html, entity_ids, matcher=None, matcher_by_id=None):
+    if not _is_article_url(url):
+        raise ValueError("URL cuối không thuộc dạng trang bài báo")
+    title, title_source, abstract, abstract_source, article_lead, lead_source, author = _extract_article_fields(html)
+    page_title, _, _ = _html_metadata(html)
+    challenge_title = re.search(r"\b(log ?in|sign ?in|captcha|consent|access denied|verify)\b", page_title, re.I)
+    challenge_body = re.search(r"(unusual traffic|verify you are human|checking your browser|before you continue)", re.sub(r"<[^>]+>", " ", (html or "")[:100_000]), re.I)
+    if challenge_title or (challenge_body and not article_lead):
+        raise ValueError("trang đăng nhập/consent/CAPTCHA; chưa xác minh được bài báo")
+    raw, date_source, published, conflict = _page_publication_dates(html)
+    if not abstract:
+        abstract_source = ""
+    if not title and not article_lead:
+        raise ValueError("thiếu tiêu đề và đoạn mở đầu trên trang bài báo")
     if matcher_by_id is not None and entity_ids:
         candidate_terms = [term for entity_id in entity_ids for term in matcher_by_id.get(entity_id, ())]
     elif matcher is not None:
         candidate_terms = matcher
     else:
         entities = _entities()
-        candidate_terms = _terms([e for e in entities if not entity_ids or e["entity_id"] in entity_ids])
-    matches = _matches(title + "\n" + downloaded, candidate_terms)
+        candidate_terms = _relevance_terms([e for e in entities if not entity_ids or e["entity_id"] in entity_ids])
+    matches = _relevance_matches(title, title + "\n" + abstract + "\n" + article_lead, candidate_terms)
     relevance = "liên quan" if matches else "cần duyệt liên quan"
-    return response.url, html, title, author, raw, date_source, published, conflict, downloaded, relevance, matches
+    return {"url": url, "html": html, "title": title, "title_source": title_source,
+            "author": author, "raw": raw, "date_source": date_source, "published": published,
+            "published_iso": _published_iso(raw), "conflict": conflict, "article_lead": article_lead,
+            "lead_source": lead_source, "abstract": abstract, "abstract_source": abstract_source,
+            "content": article_lead or abstract, "relevance": relevance, "matched": matches}
 
 
-def _fetch_crawl_item(original, previously_resolved, subjects, source_name, source_kind, allow_resolve, matcher, matcher_by_id, sources):
-    """Fetch one URL without touching SQLite; callers persist results serially."""
+def _extract_page(url, entity_ids, matcher=None, matcher_by_id=None):
+    response = _polite_get(url, headers=HEADERS, timeout=TIMEOUT, allow_redirects=True)
+    response.raise_for_status()
+    result = _extract_article_html(response.url, response.text, entity_ids, matcher, matcher_by_id)
+    result.update(http_status=response.status_code, response=response)
+    return result
+
+
+class _BrowserBroker:
+    """One reusable Chromium instance; each task owns and closes its page."""
+    def __init__(self):
+        self.loop = asyncio.new_event_loop()
+        self.thread = threading.Thread(target=self.loop.run_forever, daemon=True)
+        self.thread.start()
+        self.ready = asyncio.run_coroutine_threadsafe(self._start(), self.loop).result(timeout=40)
+
+    async def _start(self):
+        from playwright.async_api import async_playwright
+        self.playwright = await async_playwright().start()
+        self.browser = await self.playwright.chromium.launch(headless=True)
+        self.semaphore = asyncio.Semaphore(2)
+
+    async def _resolve(self, url):
+        async with self.semaphore:
+            page = await self.browser.new_page()
+            try:
+                deadline = time.monotonic() + 30
+                await page.goto(url, wait_until="domcontentloaded", timeout=30_000)
+                stable_url = ""
+                stable_since = 0.0
+                while time.monotonic() < deadline:
+                    current_url = page.url
+                    host = (urllib.parse.urlparse(current_url).hostname or "").lower()
+                    is_publisher = host and host != "news.google.com" and not host.endswith(".google.com")
+                    if is_publisher:
+                        if current_url != stable_url:
+                            stable_url, stable_since = current_url, time.monotonic()
+                        elif time.monotonic() - stable_since >= 1.0:
+                            try:
+                                await page.wait_for_load_state("domcontentloaded", timeout=max(1, min(1500, int((deadline - time.monotonic()) * 1000))))
+                            except Exception:
+                                pass
+                            break
+                    else:
+                        stable_url, stable_since = "", 0.0
+                    await page.wait_for_timeout(250)
+                final = page.url
+                if not stable_url or final != stable_url:
+                    raise ValueError(f"redirect chưa ổn định sau 30 giây; URL cuối quan sát được: {final}")
+                try:
+                    html = await page.content()
+                except Exception:
+                    # A publisher can start one more client-side navigation just as
+                    # the redirect settles. Wait briefly and read the settled DOM.
+                    remaining_ms = max(1, min(1500, int((deadline - time.monotonic()) * 1000)))
+                    await page.wait_for_load_state("domcontentloaded", timeout=remaining_ms)
+                    await page.wait_for_timeout(min(300, remaining_ms))
+                    final = page.url
+                    html = await page.content()
+                title = (await page.title()).casefold()
+                body = (await page.locator("body").inner_text(timeout=2000)).casefold()[:4000]
+                challenge_title = any(x in title for x in ("captcha", "sign in", "log in", "consent", "access denied"))
+                challenge_body = any(x in body for x in ("unusual traffic", "verify you are human", "checking your browser", "before you continue"))
+                challenge = challenge_title or challenge_body
+                if challenge or not _is_article_url(final):
+                    raise ValueError("trang trung gian/consent/đăng nhập/CAPTCHA; chưa tới trang bài báo")
+                return final, html
+            finally:
+                await page.close()
+
+    def resolve(self, url):
+        return asyncio.run_coroutine_threadsafe(self._resolve(url), self.loop).result(timeout=35)
+
+    async def _stop(self):
+        await self.browser.close()
+        await self.playwright.stop()
+
+    def close(self):
+        try:
+            asyncio.run_coroutine_threadsafe(self._stop(), self.loop).result(timeout=10)
+        finally:
+            self.loop.call_soon_threadsafe(self.loop.stop)
+            self.thread.join(timeout=5)
+
+
+def _fetch_crawl_item(original, previously_resolved, subjects, source_name, source_kind, allow_resolve, rss_abstract, matcher, matcher_by_id, sources, browser=None):
     ids = [x for x in re.split(r"[,|]", subjects) if x]
+    host = ""
     url = previously_resolved or original
     resolved_new = False
+    step = "resolve_http"
+    status_code, response_url, snippet = None, "", ""
+    browser_html = ""
     try:
         parsed = urllib.parse.urlparse(original)
-        if parsed.scheme not in {"http", "https"} or not parsed.hostname:
+        host = (parsed.hostname or "").lower()
+        if parsed.scheme not in {"http", "https"} or not host:
             raise ValueError("URL không phải HTTP/HTTPS hợp lệ")
-        if (parsed.hostname or "").lower() == "news.google.com":
-            if previously_resolved:
-                url = previously_resolved
-            elif not allow_resolve:
+        if host == "news.google.com" and not previously_resolved:
+            if not allow_resolve:
                 return {"kind": "pending", "original": original}
-            else:
-                url = _resolve_news_url(original)
-                resolved_new = True
-        else:
-            url = original
-        source = _source_for_url(url, sources)
-        final, html, title, author, raw, date_source, published, conflict, content, relevance, matched = _extract_page(url, ids, matcher, matcher_by_id)
-        return {"kind": "downloaded", "original": original, "url": url, "final": final, "ids": ids,
-                "source": source, "source_name": source_name, "source_kind": source_kind,
-                "html": html, "title": title, "author": author, "raw": raw,
-                "date_source": date_source, "published": published, "conflict": conflict,
-                "content": content, "relevance": relevance, "matched": matched,
-                "resolved_new": resolved_new}
-    except Exception as exc:
+            try:
+                url, intermediate = _google_news_response(original)
+                status_code, response_url = getattr(intermediate, "status_code", None), getattr(intermediate, "url", "")
+                snippet = _response_snippet(intermediate, 800)
+            except Exception as exc:
+                url = ""
+                http_resolve_error = str(exc)
+            if not url and browser:
+                step = "resolve_browser"
+                url, browser_html = browser.resolve(original)
+            elif not url:
+                raise ValueError(http_resolve_error if 'http_resolve_error' in locals() else "Google News trả trang trung gian; bật --browser-fallback để thử Chromium")
+            resolved_new = True
+        if not _is_article_url(url):
+            raise ValueError("URL đích chưa được xác minh là trang bài báo")
+        step = "fetch_article"
         try:
-            original_host = (urllib.parse.urlparse(original).hostname or "").lower()
-        except ValueError:
-            original_host = ""
-        return {"kind": "error", "original": original, "error": str(exc)[:500],
-                "resolved_url": url if url != original else "",
-                "resolved_new": resolved_new,
-                "resolution_state": ("resolved" if previously_resolved or url != original else "error") if original_host == "news.google.com" else "pending"}
+            extracted = _extract_page(url, ids, matcher, matcher_by_id)
+            status_code = extracted["http_status"]
+            response_url = extracted["response"].url
+        except Exception as exc:
+            if not browser_html:
+                raise
+            extracted = _extract_article_html(url, browser_html, ids, matcher, matcher_by_id)
+            status_code = status_code or 200
+            response_url = url
+            extracted["http_status"] = status_code
+            extracted["response"] = None
+        if browser and (not extracted["title"] or not extracted["published"] or not extracted["article_lead"]):
+            step = "extract_metadata" if not extracted["title"] or not extracted["published"] else "extract_lead"
+            try:
+                rendered_url, rendered_html = browser.resolve(url)
+                rendered = _extract_article_html(rendered_url, rendered_html, ids, matcher, matcher_by_id)
+                if not extracted["title"]: extracted["title"], extracted["title_source"] = rendered["title"], rendered["title_source"]
+                if not extracted["abstract"]: extracted["abstract"], extracted["abstract_source"] = rendered["abstract"], rendered["abstract_source"]
+                if not extracted["published"]: extracted["raw"], extracted["date_source"], extracted["published"], extracted["published_iso"] = rendered["raw"], rendered["date_source"], rendered["published"], rendered["published_iso"]
+                if not extracted["article_lead"]: extracted["article_lead"], extracted["lead_source"] = rendered["article_lead"], rendered["lead_source"]
+                if not extracted["author"]: extracted["author"] = rendered["author"]
+                if not extracted.get("html"): extracted["html"] = rendered_html
+            except Exception:
+                pass
+        missing = [name for name, value in (("title", extracted["title"]), ("published_at", extracted["published"]), ("article_lead", extracted["article_lead"])) if not value]
+        incomplete_step = "extract_metadata" if any(x in missing for x in ("title", "published_at")) else ("extract_lead" if missing else "complete")
+        extracted.update(kind="article", original=original, resolved_url=url, final=extracted["url"], ids=ids,
+                         source=_source_for_url(extracted["url"], sources), source_name=source_name,
+                         source_kind=source_kind, rss_abstract=rss_abstract, resolved_new=resolved_new, missing_fields=missing,
+                         http_status=status_code, response_snippet=snippet,
+                         step=incomplete_step)
+        return extracted
+    except Exception as exc:
+        if isinstance(exc, requests.HTTPError) and exc.response is not None:
+            status_code = exc.response.status_code
+            response_url = exc.response.url
+            snippet = _response_snippet(exc.response, 800)
+        return {"kind": "error", "original": original, "error": str(exc), "step": step,
+                "http_status": status_code, "final_url": response_url, "response_snippet": snippet,
+                "resolved_url": url if url and url != original and _is_article_url(url) else "",
+                "resolved_new": resolved_new, "resolution_state": "error" if host == "news.google.com" else "pending"}
 
 
-def crawl(limit=None, entity_ids=None, resolve_limit=50, workers=8):
+def _filter_queue_rows(rows, entity_ids=None, limit=None):
+    """Filter exact entity IDs first, then apply the requested batch limit."""
+    selected_entities = set(entity_ids or [])
+    if selected_entities:
+        rows = [row for row in rows if selected_entities.intersection(x for x in re.split(r"[,|]", row[2] or "") if x)]
+    eligible = len(rows)
+    if limit is None:
+        return rows, eligible, 0
+    selected = rows[:max(0, limit)]
+    return selected, eligible, eligible - len(selected)
+
+
+def crawl(limit=None, entity_ids=None, resolve_limit=50, workers=8, browser_fallback=False):
     db = _db()
-    accepted = review = out_period = errors = downloaded = resolved = 0
+    accepted = review = out_period = errors = downloaded = resolved = complete_fields = 0
+    error_counts, error_samples = {}, []
+    error_steps, missing_field_counts = {}, {}
+    browser = None
     try:
-        rows = db.execute("SELECT url,resolved_url,subject_ids,source_name,source_kind FROM urls WHERE state IN ('discovered','error') ORDER BY discovered_at LIMIT ?", (limit or -1,)).fetchall()
-        entities = [e for e in _entities() if not entity_ids or e["entity_id"] in entity_ids]
-        matcher = _terms(entities)
+        rows = db.execute("SELECT url,resolved_url,subject_ids,source_name,source_kind,attempts,rss_abstract FROM urls WHERE state IN ('discovered','error') ORDER BY CASE WHEN attempts=0 THEN 0 ELSE 1 END,discovered_at").fetchall()
+        selected_entities = set(entity_ids or [])
+        rows, eligible_count, deferred_limit = _filter_queue_rows(rows, entity_ids, limit)
+        tasks, deferred = [], 0
+        resolve_budget = max(0, resolve_limit)
+        for original, previously_resolved, subjects, source_name, source_kind, attempts, rss_abstract in rows:
+            tasks.append((original, previously_resolved, subjects, source_name, source_kind, rss_abstract))
+        selected = tasks
+        # Apply resolve budget after limit so a small crawl does not reserve resolution slots for deferred URLs.
+        resolve_budget = max(0, resolve_limit)
+        selected_tasks = []
+        for task in selected:
+            try: is_google = (urllib.parse.urlparse(task[0]).hostname or "").lower() == "news.google.com" and not task[1]
+            except ValueError: is_google = False
+            allow = not is_google or resolve_budget > 0
+            if is_google and allow: resolve_budget -= 1
+            elif is_google: deferred += 1
+            selected_tasks.append((*task[:5], allow, task[5]))
+        if browser_fallback and selected_tasks:
+            try: browser = _BrowserBroker()
+            except Exception as exc:
+                raise RuntimeError(f"Không khởi tạo được Chromium; cài bằng `uv run playwright install chromium`: {exc}") from exc
+        all_entities = _entities()
+        entities = [e for e in all_entities if not selected_entities or e["entity_id"] in selected_entities]
+        all_match_terms = _relevance_terms(all_entities)
+        matcher = [term for term in all_match_terms if not selected_entities or term[0] in selected_entities]
         matcher_by_id = {}
-        for term in matcher:
-            matcher_by_id.setdefault(term[0], []).append(term)
+        for term in matcher: matcher_by_id.setdefault(term[0], []).append(term)
         sources = _sources()
         content_owner = {r.get("content_hash"): r.get("document_id") for r in _read_docs() if r.get("content_hash") and r.get("document_id")}
-        tasks = []
-        resolve_budget = max(0, resolve_limit)
-        for original, previously_resolved, subjects, source_name, source_kind in rows:
-            ids = [x for x in re.split(r"[,|]", subjects) if x]
-            if entity_ids and ids and not set(ids).intersection(entity_ids):
-                continue
-            try:
-                host = (urllib.parse.urlparse(original).hostname or "").lower()
-            except ValueError:
-                host = ""
-            needs_resolve = host == "news.google.com" and not previously_resolved
-            allow_resolve = not needs_resolve or resolve_budget > 0
-            if needs_resolve and allow_resolve:
-                resolve_budget -= 1
-            tasks.append((original, previously_resolved, subjects, source_name, source_kind, allow_resolve))
-
-        chunk_size = max(1, max(1, workers) * 4)
-        records = []
         processed = 0
-        print(f"Bắt đầu crawl {len(tasks)} URL; workers={max(1, workers)}, giới hạn giải Google News={max(0, resolve_limit)}.", flush=True)
+        print(f"Bắt đầu crawl {len(selected_tasks)} URL trong {eligible_count} phù hợp; hoãn do --limit={deferred_limit}, hoãn do --resolve-limit={max(0, deferred)}; workers={max(1, workers)}; browser fallback={'bật' if browser_fallback else 'tắt'}.", flush=True)
         with ThreadPoolExecutor(max_workers=max(1, workers)) as pool:
-            for offset in range(0, len(tasks), chunk_size):
-                chunk = tasks[offset:offset + chunk_size]
-                futures = [pool.submit(_fetch_crawl_item, *task, matcher, matcher_by_id, sources) for task in chunk]
-                for future in as_completed(futures):
-                    result = future.result()
-                    processed += 1
-                    original = result["original"]
-                    if result["kind"] == "pending":
-                        db.execute("UPDATE urls SET resolution_state='pending',error='đợi lượt giải URL Google News' WHERE url=?", (original,))
-                    elif result["kind"] == "error":
-                        errors += 1
-                        resolved += bool(result.get("resolved_new"))
-                        db.execute("UPDATE urls SET state='error',resolved_url=CASE WHEN ?='' THEN resolved_url ELSE ? END,updated_at=?,error=?,exclusion_reason=?,resolution_state=?,attempts=attempts+1 WHERE url=?", (result["resolved_url"], result["resolved_url"], now_iso(), result["error"], result["error"], result["resolution_state"], original))
-                    else:
-                        resolved += bool(result.get("resolved_new"))
-                        url, final = result["url"], result["final"]
-                        ids, source = result["ids"], result["source"]
-                        title, author, raw = result["title"], result["author"], result["raw"]
-                        date_source, published = result["date_source"], result["published"]
-                        conflict, content = result["conflict"], result["content"]
-                        relevance, matched, html = result["relevance"], result["matched"], result["html"]
-                        raw_path = WEB_DIR / "html" / (hashlib.sha256(original.encode()).hexdigest() + ".html")
-                        raw_path.parent.mkdir(parents=True, exist_ok=True)
-                        raw_path.write_text(html, encoding="utf-8")
-                        d = date.fromisoformat(published) if published else None
-                        if d and not (PERIOD_START <= d <= PERIOD_END):
-                            state, status = "out_of_period", "loại bỏ"
-                            out_period += 1
-                        elif not d or conflict or relevance != "liên quan" or not _is_article_url(final):
-                            state, status = "needs_review", "cần kiểm tra"
-                            review += 1
-                        else:
-                            state, status = "crawled", "hợp lệ"
-                            accepted += 1
-                        docid = "DOC_WEB_" + hashlib.sha256(original.encode()).hexdigest()[:20]
-                        content_hash = hashlib.sha256(content.encode()).hexdigest()
-                        duplicate_of = content_owner.get(content_hash, "")
-                        if duplicate_of == docid:
-                            duplicate_of = ""
-                        content_owner.setdefault(content_hash, docid)
-                        records.append({"document_id": docid, "url": original, "resolved_url": url, "final_url": final, "source_name": source.get("source_name") or result["source_name"], "source_type": source.get("source_type", "website chưa xác minh"), "title": title, "published_at": published, "published_at_raw": raw, "published_at_source": date_source, "published_at_conflict": conflict, "collected_at": now_iso(), "content": content, "raw_html_path": str(raw_path.relative_to(ROOT)), "collection_method": result["source_kind"] or "web", "document_status": status, "author": author, "content_hash": content_hash, "duplicate_content_of": duplicate_of, "crawl_relevance_status": relevance, "seed_ids": ",".join(sorted(set(ids + matched)))})
-                        review_reason = "đích tải không có dạng bài viết thông thường" if not _is_article_url(final) else "cần kiểm tra ngày/nội dung/liên quan"
-                        db.execute("UPDATE urls SET state=?,resolved_url=?,final_url=?,updated_at=?,error='',resolution_state='resolved',exclusion_reason=? WHERE url=?", (state, url, final, now_iso(), "ngoài kỳ" if state == "out_of_period" else (review_reason if state == "needs_review" else ""), original))
-                        downloaded += 1
-                    if processed % 10 == 0 or processed == len(tasks):
-                        print(f"Tiến độ crawl: {processed}/{len(tasks)}; tải được {downloaded}, lỗi {errors}, Google News đã giải {resolved}.", flush=True)
-                if records:
-                    _save_docs(records)
-                    records.clear()
-                db.commit()
-        db.commit()
-        report = {"processed_this_run": processed, "downloaded_this_run": downloaded, "google_candidates_resolved": resolved, "accepted_this_run": accepted, "needs_review_this_run": review, "out_of_period_this_run": out_period, "errors_this_run": errors, "workers": max(1, workers)}
+            futures = [pool.submit(_fetch_crawl_item, *task[:5], task[5], task[6], matcher, matcher_by_id, sources, browser) for task in selected_tasks]
+            records = []
+            for future in as_completed(futures):
+                result = future.result(); processed += 1; original = result["original"]
+                if result["kind"] == "pending":
+                    db.execute("UPDATE urls SET resolution_state='pending',error='đợi lượt giải URL Google News',updated_at=?,attempts=attempts+1 WHERE url=?", (now_iso(), original))
+                elif result["kind"] == "error":
+                    errors += 1
+                    message = result["error"]
+                    error_counts[message] = error_counts.get(message, 0) + 1
+                    error_steps[result["step"]] = error_steps.get(result["step"], 0) + 1
+                    error_samples.append({"url": original, **{k: result.get(k) for k in ("error", "step", "http_status", "final_url", "response_snippet")}})
+                    db.execute("UPDATE urls SET state='error',resolved_url=CASE WHEN ?='' THEN resolved_url ELSE ? END,final_url=?,updated_at=?,error=?,exclusion_reason=?,resolution_state=?,attempts=attempts+1 WHERE url=?", (result.get("resolved_url", ""), result.get("resolved_url", ""), result.get("final_url", ""), now_iso(), result["error"], result["step"], result["resolution_state"], original))
+                else:
+                    resolved += bool(result.get("resolved_new")); downloaded += 1
+                    missing = result["missing_fields"]
+                    if not missing: complete_fields += 1
+                    for field in missing: missing_field_counts[field] = missing_field_counts.get(field, 0) + 1
+                    published = result["published"]
+                    d = date.fromisoformat(published) if published else None
+                    if d and not (PERIOD_START <= d <= PERIOD_END): state, status = "out_of_period", "loại bỏ"; out_period += 1
+                    elif missing or result["conflict"] or result["relevance"] != "liên quan": state, status = "needs_review", "cần kiểm tra"; review += 1
+                    else: state, status = "crawled", "hợp lệ"; accepted += 1
+                    html = result.get("html", "")
+                    raw_path = ""
+                    if html:
+                        html_path = WEB_DIR / "html" / (hashlib.sha256(original.encode()).hexdigest() + ".html")
+                        html_path.parent.mkdir(parents=True, exist_ok=True); html_path.write_text(html, encoding="utf-8"); raw_path = str(html_path.relative_to(ROOT))
+                    docid = "DOC_WEB_" + hashlib.sha256(original.encode()).hexdigest()[:20]
+                    content = result["content"]
+                    content_hash = hashlib.sha256(content.encode()).hexdigest() if content else ""
+                    duplicate_of = content_owner.get(content_hash, "") if content_hash else ""
+                    if duplicate_of == docid: duplicate_of = ""
+                    if content_hash: content_owner.setdefault(content_hash, docid)
+                    reason = "; ".join([*(f"thiếu {x}" for x in missing), result["conflict"], *( ["ngoài kỳ"] if state == "out_of_period" else [] )]).strip("; ")
+                    if result["relevance"] != "liên quan": reason = "; ".join(filter(None, (reason, "chưa khớp tên thực thể trong tiêu đề/nội dung")))
+                    records.append({"document_id": docid, "url": original, "resolved_url": result["resolved_url"], "final_url": result["final"], "source_name": result["source"].get("source_name") or result["source_name"], "source_type": result["source"].get("source_type", "website chưa xác minh"), "title": result["title"], "title_source": result["title_source"], "abstract": result["abstract"], "abstract_source": result["abstract_source"], "rss_abstract": result["rss_abstract"], "article_lead": result["article_lead"], "lead_source": result["lead_source"], "published_at": published, "published_at_iso": result["published_iso"], "published_at_raw": result["raw"], "published_at_source": result["date_source"], "published_at_conflict": result["conflict"], "collected_at": now_iso(), "content": content, "raw_html_path": raw_path, "collection_method": result["source_kind"] or "web", "document_status": status, "author": result["author"], "content_hash": content_hash, "duplicate_content_of": duplicate_of, "crawl_relevance_status": result["relevance"], "review_reason": reason, "query_entity_ids": ",".join(result["ids"]), "seed_ids": ",".join(sorted(set(result["matched"])))})
+                    db.execute("UPDATE urls SET state=?,resolved_url=?,final_url=?,updated_at=?,error='',resolution_state='resolved',exclusion_reason=? WHERE url=?", (state, result["resolved_url"], result["final"], now_iso(), reason, original))
+                if processed % 10 == 0 or processed == len(selected_tasks):
+                    print(f"Tiến độ crawl: {processed}/{len(selected_tasks)}; trang bài báo {downloaded}, đủ trường {accepted}, thiếu trường/chờ duyệt {review}, giải được URL {resolved}, lỗi {errors}.", flush=True)
+                if processed % max(1, workers * 4) == 0 or processed == len(selected_tasks):
+                    if records: _save_docs(records); records.clear()
+                    db.commit()
+        report = {"selected": len(selected_tasks), "eligible_before_limit": eligible_count, "deferred_by_limit": deferred_limit, "deferred_by_resolve_limit": deferred, "processed_this_run": processed, "publisher_pages_fetched": downloaded, "complete_fields": complete_fields, "accepted_for_analysis": accepted, "missing_fields_or_review": review, "missing_field_counts": missing_field_counts, "out_of_period": out_period, "resolved_links": resolved, "errors": errors, "error_steps": error_steps, "error_counts": error_counts, "error_samples": error_samples[:100], "workers": max(1, workers), "browser_fallback": browser_fallback}
         INTERIM_DIR.mkdir(parents=True, exist_ok=True)
         (INTERIM_DIR / "web_crawl_report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
-        print(f"Tải xong: {downloaded} trang; hợp lệ {accepted}, chờ duyệt {review}, ngoài kỳ {out_period}, lỗi {errors}.")
+        print(f"Tải xong: {downloaded} trang bài báo; đủ trường {accepted}, thiếu trường/chờ duyệt {review}, ngoài kỳ {out_period}, lỗi {errors}.")
     finally:
+        if browser: browser.close()
         db.close()
 
 

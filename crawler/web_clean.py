@@ -37,7 +37,7 @@ def clean():
         return
 
     entities = web._entities()
-    matcher = web._terms(entities)
+    matcher = web._relevance_terms(entities)
     matcher_by_id = {}
     for term in matcher:
         matcher_by_id.setdefault(term[0], []).append(term)
@@ -46,8 +46,10 @@ def clean():
         if col not in docs:
             docs[col] = ""
     docs["title"] = docs["title"].map(_clean_text)
-    docs["content"] = docs["content"].map(_clean_text)
+    docs["abstract"] = docs["abstract"].map(_clean_text)
+    docs["content"] = docs.apply(lambda row: _clean_text(row.get("content") or row.get("abstract")), axis=1)
     docs["published_at"] = docs.apply(lambda r: r.get("published_at", "") or web._date(r.get("published_at_raw", "")), axis=1)
+    docs["published_at_iso"] = docs.apply(lambda r: r.get("published_at_iso", "") or web._published_iso(r.get("published_at_raw", "")), axis=1)
     # Keep a separate document for every exact source URL. Equal content is a
     # review hint, never a reason to discard a distinct source link.
 
@@ -59,7 +61,7 @@ def clean():
         url, content, title = row.get("url", ""), row.get("content", ""), row.get("title", "")
         published = web._date(row.get("published_at", ""))
         raw_path = row.get("raw_html_path", "")
-        source_present = bool(row.get("published_at_source"))
+        source_present = bool(row.get("published_at_source")) and not str(row.get("published_at_source", "")).startswith("Google News RSS")
         conflict = row.get("published_at_conflict", "")
         in_period = bool(published and PERIOD_START.isoformat() <= published <= PERIOD_END.isoformat())
         should_verify_html = not published or (in_period and (not source_present or bool(conflict)))
@@ -69,16 +71,16 @@ def clean():
                     raw_html = html_file.read(100_000).decode("utf-8", errors="replace")
                 raw, source, published, conflict = web._page_publication_dates(raw_html)
                 row.update(published_at=published, published_at_raw=raw, published_at_source=source, published_at_conflict=conflict)
+                row["published_at_iso"] = web._published_iso(raw)
                 source_present = bool(source)
             except OSError:
                 pass
-        raw_ids = row.get("seed_ids", "") or row.get("entity_ids", "")
+        raw_ids = row.get("query_entity_ids", "") or row.get("seed_ids", "") or row.get("entity_ids", "")
         known = set(x for x in re.split(r"[,|]", raw_ids) if x)
         # Prior extraction already recorded candidate IDs; restrict matching to them.
         # New RSS documents without attached IDs still search the full graph.
         candidate_matcher = [term for eid in known for term in matcher_by_id.get(eid, ())] if known else matcher
-        matches = web._matches(title + "\n" + content, candidate_matcher)
-        matches = list(dict.fromkeys([*matches, *known]))
+        matches = web._relevance_matches(title, title + "\n" + row.get("abstract", "") + "\n" + content, candidate_matcher)
         for eid in matches:
             entity = entity_by_id.get(eid, {})
             links.append({"document_id": row.get("document_id", ""), "entity_id": eid, "entity_name": entity.get("canonical_name", ""), "match_method": "tiêu đề/nội dung"})
@@ -93,8 +95,14 @@ def clean():
             why.append("URL không phải HTTP/HTTPS hợp lệ")
         elif not web._is_article_url(row.get("final_url") or url):
             why.append("đích tải không có dạng bài viết thông thường")
+        if row.get("collection_method") == "google_news_preview" or (row.get("final_url") and (urllib.parse.urlparse(row.get("final_url", "")).hostname or "").lower() == "news.google.com"):
+            why.append("bản ghi preview Google News cũ chưa xác minh từ bài báo gốc")
         if len(content) < 120:
             why.append("chưa đủ nội dung bài viết")
+        if not title or not row.get("title_source"):
+            why.append("thiếu tiêu đề bài gốc đã xác minh")
+        if not row.get("article_lead") or not row.get("lead_source"):
+            why.append("thiếu đoạn mở đầu bài gốc đã xác minh")
         if not published or not source_present:
             why.append("thiếu ngày đăng xác minh từ bài gốc")
         elif conflict:
@@ -102,14 +110,15 @@ def clean():
         elif not (PERIOD_START.isoformat() <= published <= PERIOD_END.isoformat()):
             why.append("ngoài phạm vi thời gian")
         if not matches:
-            why.append("không liên quan thực thể mục tiêu")
+            why.append("không tìm thấy tên thực thể trong tiêu đề/nội dung; kiểm tra kết quả truy vấn")
         row["published_at"] = published
+        row["review_reason"] = "|".join(why)
+        for reason in why:
+            reason_counts[reason] = reason_counts.get(reason, 0) + 1
         if why and "ngoài phạm vi thời gian" in why:
             row["document_status"] = "loại bỏ"
             row["exclude_reason"] = "|".join(why)
             rejected.append(row)
-            for reason in why:
-                reason_counts[reason] = reason_counts.get(reason, 0) + 1
         elif why:
             row["document_status"] = "cần kiểm tra"
             row["exclude_reason"] = "|".join(why)

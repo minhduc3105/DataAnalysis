@@ -1,0 +1,77 @@
+{
+  "csv_rows": 7636,
+  "legacy_rows": 1957,
+  "legacy_parse_errors": 0,
+  "recovery_rows": 121,
+  "merged_rows": 7757,
+  "unique_urls": 7757,
+  "unique_document_ids": 7757,
+  "conflicts": [
+    {
+      "key": "DOC_WEB_5447493e2a258e39e814",
+      "field": "collected_at",
+      "preferred_source": "csv",
+      "preferred_value": {
+        "length": 25,
+        "sha256": "977f1fdc9af70f1d8469bff55f1507a080eb93700ad568e34ec79fd080d09f13",
+        "preview": "2026-11-08T22:41:41+07:00"
+      },
+      "other_source": "legacy",
+      "other_value": {
+        "length": 25,
+        "sha256": "4eac0b38c466c807281ad5caf72856cde60ac5d7185011217d4f3f23b8c33873",
+        "preview": "2026-11-08T22:34:33+07:00"
+      }
+    },
+    {
+      "key": "DOC_WEB_5447493e2a258e39e814",
+      "field": "content",
+      "preferred_source": "csv",
+      "preferred_value": {
+        "length": 8216,
+        "sha256": "cad8d9d1555a4f675413248dd1b8d97007e8c550c7938ddc5ec32ea3bb1df2a9",
+        "preview": "Giải hạng nhất: Một cầu thủ ghi bàn nhiều hơn 10 đội bóng\nThể thao\nVới cú đúp vào lưới Thép Cần Thơ ở vòng 7 Giải hạng nhất 2026-2027, Victor Mansaray đã có 11 bàn thắng, nhiều hơn số bàn thắng mà 10 CLB khác ghi được.\nSau cái chết đầy thươ"
+      },
+      "other_source": "legacy",
+      "other_value": {
+        "length": 8216,
+        "sha256": "35278877b86015fe681a4e5a61c02fca84164eae0b03a89be218a0a26cb3703e",
+        "preview": "Giải hạng nhất: một cầu thủ ghi bàn nhiều hơn 10 đội bóng\nThể thao\nVới cú đúp vào lưới Thép Cần Thơ ở vòng 7 Giải hạng nhất 2026-2027, Victor Mansaray đã có 11 bàn thắng, nhiều hơn số bàn thắng mà 10 CLB khác ghi được.\nSau cái chết đầy thươ"
+      }
+    },
+    {
+      "key": "DOC_WEB_65db35cd223081194e1c",
+      "field": "collected_at",
+      "preferred_source": "csv",
+      "preferred_value": {
+        "length": 25,
+        "sha256": "49e6422cf23a9b1975417664b9ae970fa8e8cd4d2a167e7df99c451dec59bbb0",
+        "preview": "2026-11-08T23:31:49+07:00"
+      },
+      "other_source": "legacy",
+      "other_value": {
+        "length": 25,
+        "sha256": "841e8baf58fb5597556b8ae0a2e98bf747e965fb6c5975e9cca7e1b0cc1fb60a",
+        "preview": "2026-11-08T23:30:30+07:00"
+      }
+    },
+    {
+      "key": "DOC_WEB_4ba3cb5678eae60076fd",
+      "field": "collected_at",
+      "preferred_source": "csv",
+      "preferred_value": {
+        "length": 25,
+        "sha256": "5ea0e1c8d79e42b807bef5506c367becb90272af30ad55efc3a459f0e5adeefe",
+        "preview": "2026-11-08T23:44:30+07:00"
+      },
+      "other_source": "legacy",
+      "other_value": {
+        "length": 25,
+        "sha256": "26df1313ed385cc845e6b910bdbd099a826193743c0ca03a1e44ba86e13d1e82",
+        "preview": "2026-11-08T23:35:24+07:00"
+      }
+    }
+  ],
+  "url_collisions": [],
+  "dry_run": false
+}

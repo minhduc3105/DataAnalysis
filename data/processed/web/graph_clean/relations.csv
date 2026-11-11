@@ -1,0 +1,634 @@
+﻿relation_id,source_entity_id,relation_type,target_entity_id,verification_status,is_derived,valid_from,valid_to,role_detail,notes,source_name,target_name,n_documents
+REL_WEB_0edac7fe48168be80716,PER_0289,COLLABORATED_WITH,PER_0295,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Anh Tuấn,Trung Quân Idol,9
+REL_WEB_45c154fea073514009a7,PER_0044,COLLABORATED_WITH,PER_0298,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Wren Evans,K-ICM,16
+REL_WEB_9227ce6d6559eaab3b57,PER_0238,COLLABORATED_WITH,PER_0295,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HƯƠNG GIANG,Trung Quân Idol,3
+REL_WEB_a9c5037825f5d4b3dc85,PER_0158,COLLABORATED_WITH,PER_0295,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,TIÊN TIÊN,Trung Quân Idol,1
+REL_WEB_ff2182afcb03d4ecbc9b,PER_0038,DISPUTED_WITH,PER_1265,đã xác minh,không,,,,web evidence reviewed,GILL,HYPERFOCUS,2
+REL_WEB_f85c868b717cdf7e9d22,PER_0161,DISPUTED_WITH,PER_1265,đã xác minh,không,,,,web evidence reviewed,Wxrdie,HYPERFOCUS,2
+REL_WEB_a5b85536713c825d91e1,PER_0038,COLLABORATED_WITH,PER_0161,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,GILL,Wxrdie,4
+REL_WEB_6d847eca5548f2346f0e,PER_0161,COLLABORATED_WITH,PER_1265,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Wxrdie,HYPERFOCUS,3
+REL_WEB_f5636719835bda7eecbe,PER_0038,COLLABORATED_WITH,PER_1259,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,GILL,Lucin3x,2
+REL_WEB_71f237be1e0edba6f817,PER_0161,COLLABORATED_WITH,PER_1259,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Wxrdie,Lucin3x,2
+REL_WEB_5c58f5717d3edb828fa2,PER_0005,COLLABORATED_WITH,PER_0027,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,Karik,18
+REL_WEB_a9579cdf8f1bc03c55b6,PER_0005,COLLABORATED_WITH,PER_1019,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,Superbrothers,6
+REL_WEB_904d8b0379463b856966,PER_0027,COLLABORATED_WITH,PER_1019,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Karik,Superbrothers,7
+REL_WEB_fbde298486c668704c68,PER_0291,COLLABORATED_WITH,PER_0295,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hà Anh Tuấn,Trung Quân Idol,2
+REL_WEB_a74b6bcb9fd11cdf88a2,PER_0088,COLLABORATED_WITH,PER_0123,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Quân A.P,Anh Tú Atus,2
+REL_WEB_03bf09be1324c75e8c7f,PER_0016,COLLABORATED_WITH,PER_0260,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,GREY D,Kimmese,3
+REL_WEB_d6cbf3630968fd80e6ed,PER_0043,COLLABORATED_WITH,PER_0143,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Vương Bình,Thuỳ Chi,7
+REL_WEB_c6e1ba68a26018cba253,PER_0007,COLLABORATED_WITH,PER_0289,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Văn Mai Hương,Bùi Anh Tuấn,3
+REL_WEB_6313254851f437f1c1be,PER_0007,COLLABORATED_WITH,PER_1452,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Văn Mai Hương,Đồng Ánh Quỳnh,2
+REL_WEB_f0184fdafc4859500fb2,PER_0289,COLLABORATED_WITH,PER_1452,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Anh Tuấn,Đồng Ánh Quỳnh,2
+REL_WEB_a1ee40cb58c3b613a075,PER_0008,COLLABORATED_WITH,PER_0027,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,B Ray,Karik,4
+REL_WEB_1495335b2c0717f1c3ba,PER_0008,COLLABORATED_WITH,PER_0028,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,B Ray,JustaTee,2
+REL_WEB_8fa28c0d90dfabbc4355,PER_0008,COLLABORATED_WITH,PER_0054,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,B Ray,BigDaddy,2
+REL_WEB_7fc84bfb19835ac9b703,PER_0027,COLLABORATED_WITH,PER_0028,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Karik,JustaTee,2
+REL_WEB_99cd2374a45d3d875c42,PER_0027,COLLABORATED_WITH,PER_0054,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Karik,BigDaddy,2
+REL_WEB_2f0f6aa0da1dfc8a5993,PER_0028,COLLABORATED_WITH,PER_0054,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,JustaTee,BigDaddy,2
+REL_WEB_342f910de965f66eb2bf,PER_0027,COLLABORATED_WITH,PER_0053,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Karik,Thái VG,10
+REL_WEB_9f15ed4346036d2f7718,PER_0027,COLLABORATED_WITH,PER_0080,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Karik,ONLY C,19
+REL_WEB_ebe879343244133db090,PER_0027,COLLABORATED_WITH,PER_0233,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Karik,Wowy,10
+REL_WEB_084ff182d62a17feb819,PER_0027,COLLABORATED_WITH,PER_0236,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Karik,GDucky,12
+REL_WEB_bf98c4e785245bf031ea,PER_0011,COLLABORATED_WITH,PER_0017,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Erik,Khắc Hưng,4
+REL_WEB_e142885c1e2c8752882b,PER_0011,COLLABORATED_WITH,PER_0098,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Erik,MIN,5
+REL_WEB_529745ff01cecc116dff,PER_0017,COLLABORATED_WITH,PER_0098,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Khắc Hưng,MIN,6
+REL_WEB_1d9e51232b9f94100889,PER_0044,COLLABORATED_WITH,PER_3304,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Wren Evans,KHÁNH LINH,2
+REL_WEB_be4719d93413d598440d,PER_0002,COLLABORATED_WITH,PER_0016,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HIEUTHUHAI,GREY D,3
+REL_WEB_710e6e986f338fa797c4,PER_0002,COLLABORATED_WITH,PER_0044,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HIEUTHUHAI,Wren Evans,5
+REL_WEB_7ff771be34c42023cdc7,PER_0016,COLLABORATED_WITH,PER_0044,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,GREY D,Wren Evans,3
+REL_WEB_25237049cb0dc58e0e0b,PER_0041,COLLABORATED_WITH,PER_0079,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,KAI ĐINH,2PILLZ,1
+REL_WEB_db48eaaf3380db8957b7,PER_0044,COLLABORATED_WITH,PER_0209,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Wren Evans,Mỹ Anh,2
+REL_WEB_57df1d78578fb161b8e8,PER_0271,COLLABORATED_WITH,PER_0295,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,TRIPLE D,Trung Quân Idol,3
+REL_WEB_f1fa6318c76eadd29f53,PER_0143,COLLABORATED_WITH,PER_0275,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Thuỳ Chi,VirusS,16
+REL_WEB_feba49874b7a6af37de5,PER_0295,DISPUTED_WITH,PER_2288,đã xác minh,không,,,,web evidence reviewed,Trung Quân Idol,Đinh Hà Uyên Thư,2
+REL_WEB_2c0a6f7f12c4762b428b,PER_0016,COLLABORATED_WITH,PER_0079,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,GREY D,2PILLZ,7
+REL_WEB_1087dcf673cef9eb1bd1,PER_0016,COLLABORATED_WITH,PER_0153,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,GREY D,MONO,3
+REL_WEB_91022912a0bf21f12a51,PER_0079,COLLABORATED_WITH,PER_0153,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,2PILLZ,MONO,4
+REL_WEB_7f8863a970082e9324eb,PER_0017,COLLABORATED_WITH,PER_0295,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Khắc Hưng,Trung Quân Idol,7
+REL_WEB_34f2d8c7e0824dc9609a,PER_0259,DISPUTED_WITH,PER_0594,đã xác minh,không,,,cáo buộc (cần kiểm tra),web evidence reviewed,Khắc Việt,CAO THÁI SƠN,4
+REL_WEB_dd0cd8d9350598ffb8c4,PER_0018,COLLABORATED_WITH,PER_0103,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Vũ Cát Tường,SOOBIN,1
+REL_WEB_081496e0894e84a29968,PER_0304,COLLABORATED_WITH,PER_0369,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,MCK,Châu Bùi,3
+REL_WEB_56048fdc190025e9f1d2,PER_0027,COLLABORATED_WITH,PER_0270,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Karik,Seachains,2
+REL_WEB_a4982f18bcd7c2841221,PER_0027,COLLABORATED_WITH,PER_2192,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Karik,DLOW,1
+REL_WEB_5d4dc374efa0ec1da086,PER_0270,COLLABORATED_WITH,PER_2192,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Seachains,DLOW,1
+REL_WEB_c69f9dab963a973059f7,PER_0027,COLLABORATED_WITH,PER_0198,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Karik,STRONG TRỌNG HIẾU,7
+REL_WEB_07a9e8828b5ebfb26fa1,PER_0007,COLLABORATED_WITH,PER_0019,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Văn Mai Hương,Hứa Kim Tuyền,13
+REL_WEB_50d55278338b6d111138,PER_0008,COLLABORATED_WITH,PER_0016,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,B Ray,GREY D,3
+REL_WEB_4216491c922e2d206231,PER_0008,COLLABORATED_WITH,PER_0263,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,B Ray,MASEW,9
+REL_WEB_4600fc78225f7be20876,PER_0016,COLLABORATED_WITH,PER_0263,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,GREY D,MASEW,2
+REL_WEB_e30ee61baffc13992783,PER_0008,COLLABORATED_WITH,PER_0145,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,B Ray,AMEE,8
+REL_WEB_4d88d09ca7d7a26f008f,PER_0028,COLLABORATED_WITH,PER_0038,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,JustaTee,GILL,1
+REL_WEB_8d9ce283e06624e4762e,PER_0028,COLLABORATED_WITH,PER_0105,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,JustaTee,Robber,1
+REL_WEB_17223645c0659655d470,PER_0028,COLLABORATED_WITH,PER_0206,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,JustaTee,Dangrangto,1
+REL_WEB_d5d324e5486d1d1bbe33,PER_0038,COLLABORATED_WITH,PER_0105,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,GILL,Robber,1
+REL_WEB_b672371f412216a23d49,PER_0038,COLLABORATED_WITH,PER_0206,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,GILL,Dangrangto,1
+REL_WEB_87bec0a4308a0995e2b3,PER_0105,COLLABORATED_WITH,PER_0206,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Robber,Dangrangto,1
+REL_WEB_865472dd85d5a2817189,PER_0080,COLLABORATED_WITH,PER_0241,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,ONLY C,Lou Hoàng,3
+REL_WEB_46a2ab9fd558b1782d16,PER_0002,COLLABORATED_WITH,PER_0022,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HIEUTHUHAI,HURRYKNG,1
+REL_WEB_34c855057108ba48743c,PER_0161,COLLABORATED_WITH,PER_0242,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Wxrdie,MinhLai,2
+REL_WEB_2d4852a7e51b5bb068a5,PER_0249,COLLABORATED_WITH,PER_0282,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,VƯƠNG ANH TÚ,Bích Phương,1
+REL_WEB_8124729e7bec395cf51e,PER_0094,COLLABORATED_WITH,PER_0249,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Mai Tiến Dũng,VƯƠNG ANH TÚ,1
+REL_WEB_b75b28bcba415645d039,PER_0083,COLLABORATED_WITH,PER_0209,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hồ Hoài Anh,Mỹ Anh,1
+REL_WEB_15163f985d2c7c94738a,PER_0017,COLLABORATED_WITH,PER_0209,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Khắc Hưng,Mỹ Anh,1
+REL_WEB_fbbc2c039e82e00df518,PER_0209,COLLABORATED_WITH,PER_1243,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Mỹ Anh,Lục Huy,1
+REL_WEB_1971054985b99efb455f,PER_0017,COLLABORATED_WITH,PER_0267,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Khắc Hưng,MỸ TÂM,9
+REL_WEB_bbeacb4723ad5d507fb3,PER_0018,COLLABORATED_WITH,PER_0267,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Vũ Cát Tường,MỸ TÂM,2
+REL_WEB_6af762bfe9d946d62268,PER_0005,COLLABORATED_WITH,PER_0019,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,Hứa Kim Tuyền,5
+REL_WEB_9dceddba0ff8698b49b9,PER_0005,COLLABORATED_WITH,PER_0016,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,GREY D,5
+REL_WEB_817781527115bfadeaab,PER_0015,COLLABORATED_WITH,PER_0019,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Negav,Hứa Kim Tuyền,1
+REL_WEB_fe258d4448733af6c043,PER_0016,COLLABORATED_WITH,PER_0019,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,GREY D,Hứa Kim Tuyền,4
+REL_WEB_5b502cddd1fc713a6d0d,PER_0019,COLLABORATED_WITH,PER_0145,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hứa Kim Tuyền,AMEE,10
+REL_WEB_eb8f8391864adf28e0eb,PER_0010,COLLABORATED_WITH,PER_0145,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG DŨNG,AMEE,9
+REL_WEB_a2f4a3600b194df93949,PER_0004,COLLABORATED_WITH,PER_0033,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Anh Tú,Hòa Minzy,1
+REL_WEB_cd7bf10355e2bce90c29,PER_0249,COLLABORATED_WITH,PER_3635,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,VƯƠNG ANH TÚ,MINH CHÂU,1
+REL_WEB_53576353a3b50070e9f9,PER_0239,COLLABORATED_WITH,PER_0507,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hương Ly,X2X,2
+REL_WEB_47bd972029f01ce293a7,PER_0143,COLLABORATED_WITH,PER_0519,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Thuỳ Chi,Minh Vương,1
+REL_WEB_05c07e5f0fc6d2955a13,PER_0143,COLLABORATED_WITH,PER_3459,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Thuỳ Chi,M4U,6
+REL_WEB_ef01a3ca377dbeed9758,PER_0269,COLLABORATED_WITH,PER_2381,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Phúc Du,ĐỘ MIXI,2
+REL_WEB_d484c25a6241a823b7be,PER_0017,COLLABORATED_WITH,PER_0613,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Khắc Hưng,Jimmii Nguyễn,5
+REL_WEB_ed73fc58b0775b27565d,PER_0026,COLLABORATED_WITH,PER_0056,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,MEW AMAZING,THANH DUY,2
+REL_WEB_63b04b3bd4d66de560bd,PER_0026,COLLABORATED_WITH,PER_0063,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,MEW AMAZING,JUN PHẠM,2
+REL_WEB_f21812ef9da31e32a089,PER_0056,COLLABORATED_WITH,PER_0063,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,THANH DUY,JUN PHẠM,2
+REL_WEB_abb3a9337031fcd72310,PER_0063,COLLABORATED_WITH,PER_3669,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,JUN PHẠM,NGUYỄN TRẦN DUY NHẤT,2
+REL_WEB_58499b46bb64d52893d0,PER_0066,COLLABORATED_WITH,PER_0093,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG TÔN,HÀ AN HUY,4
+REL_WEB_22ef5871726c3173b278,PER_0156,COLLABORATED_WITH,PER_0263,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Pháo,MASEW,4
+REL_WEB_36685905a900552d6b90,PER_0143,COLLABORATED_WITH,PER_1940,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Thuỳ Chi,Khởi My,1
+REL_WEB_57f32e26c7c271192a2a,PER_0145,COLLABORATED_WITH,PER_0263,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,AMEE,MASEW,3
+REL_WEB_2ec972e55a0b470dbfc4,PER_0054,COLLABORATED_WITH,PER_0145,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,BigDaddy,AMEE,1
+REL_WEB_cfdbf34ca43206271cf0,PER_0054,COLLABORATED_WITH,PER_0248,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,BigDaddy,Sóc Nâu,1
+REL_WEB_049f0b4c06b810856473,PER_0145,COLLABORATED_WITH,PER_0248,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,AMEE,Sóc Nâu,1
+REL_WEB_971ed11c7c28816425e4,PER_0145,COLLABORATED_WITH,PER_0269,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,AMEE,Phúc Du,2
+REL_WEB_65ec3e2bcf7a83f2dd91,PER_0079,COLLABORATED_WITH,PER_0099,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,2PILLZ,WOKEUP,2
+REL_WEB_9e0cd9868884c44b764d,PER_0287,COLLABORATED_WITH,PER_1163,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Phương Ly,Trid Minh,2
+REL_WEB_65ae907f6adce4911592,PER_0039,COLLABORATED_WITH,PER_0143,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Song Luân,Thuỳ Chi,1
+REL_WEB_1269f137ad27cdd1afec,PER_0005,COLLABORATED_WITH,PER_0059,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,BINZ,6
+REL_WEB_3430b081e938f8c3f747,PER_0026,COLLABORATED_WITH,PER_0044,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,MEW AMAZING,Wren Evans,5
+REL_WEB_cade2d34a26a753fc8eb,PER_0156,COLLABORATED_WITH,PER_0269,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Pháo,Phúc Du,1
+REL_WEB_7b6dc46f66da3d63befb,PER_0156,COLLABORATED_WITH,PER_2381,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Pháo,ĐỘ MIXI,1
+REL_WEB_dd51cd6285a41096ca0c,PER_0263,COLLABORATED_WITH,PER_0269,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,MASEW,Phúc Du,1
+REL_WEB_06059af7c9a47d5d5b19,PER_0263,COLLABORATED_WITH,PER_2381,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,MASEW,ĐỘ MIXI,1
+REL_WEB_27b31fcdddc5c299d2b9,PER_0004,COLLABORATED_WITH,PER_0020,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Anh Tú,LyLy,13
+REL_WEB_ec9eaab8a5d49e65fa88,PER_0097,COLLABORATED_WITH,PER_1249,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Đông Nhi,Ông Cao Thắng,6
+REL_WEB_f4c90aac3de623f19f68,PER_0017,COLLABORATED_WITH,PER_0023,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Khắc Hưng,Jsol,2
+REL_WEB_e0ca76964c19dd08a496,PER_0119,COLLABORATED_WITH,PER_3197,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,TRỊNH THĂNG BÌNH,Quang Hải,1
+REL_WEB_c7fc2b5dd27c958d21ae,PER_0005,COLLABORATED_WITH,PER_0029,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,CHÂU ĐĂNG KHOA,20
+REL_WEB_be5775e78898bffd9927,PER_0019,COLLABORATED_WITH,PER_0289,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hứa Kim Tuyền,Bùi Anh Tuấn,1
+REL_WEB_1009ebacd84db6224223,PER_0007,COLLABORATED_WITH,PER_1512,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Văn Mai Hương,Xuân Tài,1
+REL_WEB_7f2db25cfc6d077bae11,PER_0300,COLLABORATED_WITH,PER_0534,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Vũ.,Sơn Tùng,1
+REL_WEB_e1c67467bb15cee3d726,PER_0008,COLLABORATED_WITH,PER_0168,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,B Ray,HOÀNG YẾN CHIBI,1
+REL_WEB_de085e3ebc148a23baf8,PER_0005,COLLABORATED_WITH,PER_0179,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,MANBO,1
+REL_WEB_ce85e564b85451a2fce0,PER_0058,COLLABORATED_WITH,PER_0234,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Lương Bích Hữu,YoungPuppy,1
+REL_WEB_3db984b70d8400dffa6d,PER_0109,COLLABORATED_WITH,PER_2681,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,BẢO ANH,Hngle,1
+REL_WEB_d58551f904437b490c97,PER_0109,COLLABORATED_WITH,PER_2682,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,BẢO ANH,HYO,1
+REL_WEB_8f715dd34f936eb66880,PER_0003,COLLABORATED_WITH,PER_0010,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,RHYMASTIC,HOÀNG DŨNG,5
+REL_WEB_c0a993acd1710c467b52,PER_0079,COLLABORATED_WITH,PER_0150,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,2PILLZ,JUKY SAN,1
+REL_WEB_11079339ee5131d2f9f8,PER_0150,COLLABORATED_WITH,PER_0953,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,JUKY SAN,August,1
+REL_WEB_f747f717a6f56beda17f,PER_0150,COLLABORATED_WITH,PER_0954,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,JUKY SAN,Ronboogz,1
+REL_WEB_4ea4fa1b7e003a9267eb,PER_0005,COLLABORATED_WITH,PER_3507,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,Minh Đức,1
+REL_WEB_e613b0cf79064b53d56b,PER_0007,COLLABORATED_WITH,PER_0033,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Văn Mai Hương,Hòa Minzy,2
+REL_WEB_a7f1f926f9e957ffca82,PER_0005,COLLABORATED_WITH,PER_0010,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,HOÀNG DŨNG,19
+REL_WEB_2c4183b1d20ca06b20a0,PER_0076,COLLABORATED_WITH,PER_1955,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,NGUYỄN VĂN CHUNG,Thanh Goll,1
+REL_WEB_12c60011d2cb0020ed22,PER_1862,COLLABORATED_WITH,PER_1955,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Trung Hiếu,Thanh Goll,1
+REL_WEB_ec460acc2dc7ecc53d4f,PER_0009,COLLABORATED_WITH,PER_0067,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Pháp Kiều,Mỹ Linh,1
+REL_WEB_b4d9e62ab6f6b1088dd7,PER_0009,COLLABORATED_WITH,PER_0216,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Pháp Kiều,Liu Grace,1
+REL_WEB_3b52a0c74dc7667be5fa,PER_0067,COLLABORATED_WITH,PER_0216,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Mỹ Linh,Liu Grace,1
+REL_WEB_d9835e36fed69ff2d877,PER_0002,COLLABORATED_WITH,PER_0268,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HIEUTHUHAI,Obito,1
+REL_WEB_3569bd42fce13e5da682,PER_0016,COLLABORATED_WITH,PER_0268,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,GREY D,Obito,1
+REL_WEB_eac69de1ad6c4df15f07,PER_0044,COLLABORATED_WITH,PER_0268,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Wren Evans,Obito,1
+REL_WEB_605c6ec90ece05bd90f3,PER_0249,COLLABORATED_WITH,PER_3653,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,VƯƠNG ANH TÚ,TÙNG MINT,1
+REL_WEB_e48b1a255bed1266f010,PER_0018,COLLABORATED_WITH,PER_0027,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Vũ Cát Tường,Karik,1
+REL_WEB_66c0dec433cf844bb9bd,PER_0018,COLLABORATED_WITH,PER_0226,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Vũ Cát Tường,Ngô Kiến Huy,1
+REL_WEB_9c41b1d478a6bc741119,PER_0027,COLLABORATED_WITH,PER_0226,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Karik,Ngô Kiến Huy,4
+REL_WEB_9990a3dcb99d9192334c,PER_0079,COLLABORATED_WITH,PER_0260,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,2PILLZ,Kimmese,2
+REL_WEB_c9aff992d53d96c47688,PER_0006,COLLABORATED_WITH,PER_0256,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Công Nam,HỒNG NHUNG,2
+REL_WEB_138ba407c5794d782281,PER_0044,COLLABORATED_WITH,PER_0079,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Wren Evans,2PILLZ,1
+REL_WEB_066bc403dcb1199abc8c,PER_0033,COLLABORATED_WITH,PER_0076,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hòa Minzy,NGUYỄN VĂN CHUNG,3
+REL_WEB_370ff69ac579a2d1293c,PER_0005,COLLABORATED_WITH,PER_0064,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,Thanh Lam,2
+REL_WEB_3a7e8c34aafda7f56a98,PER_0122,COLLABORATED_WITH,PER_0263,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Double2T,MASEW,6
+REL_WEB_c3cd017da32a8aa05fd4,PER_0139,COLLABORATED_WITH,PER_0269,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hà Trần,Phúc Du,1
+REL_WEB_ee0e97f9d61c1b04fc38,PER_0041,COLLABORATED_WITH,PER_0145,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,KAI ĐINH,AMEE,5
+REL_WEB_fcfd2a0ccfc25f553f85,PER_0176,COLLABORATED_WITH,PER_2183,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG ROB,Hoàng Touliver,2
+REL_WEB_87b59de8179cccf982e7,PER_0031,COLLABORATED_WITH,PER_0176,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,SLIMV,HOÀNG ROB,2
+REL_WEB_daac5ec4e44fc162929b,PER_0010,COLLABORATED_WITH,PER_0660,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG DŨNG,Pixel Neko,2
+REL_WEB_f88caf4ce2cc484fb3e3,PER_0010,COLLABORATED_WITH,PER_3685,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG DŨNG,LELAREC,1
+REL_WEB_b09c3379c8b9239ca78c,PER_0010,COLLABORATED_WITH,PER_0300,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG DŨNG,Vũ.,10
+REL_WEB_12e117dc399c21c8092a,PER_0010,COLLABORATED_WITH,PER_0303,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG DŨNG,Đen Vâu,20
+REL_WEB_eb6a6957de9474116757,PER_0010,COLLABORATED_WITH,PER_0750,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG DŨNG,NÂN,8
+REL_WEB_46372c90167601c46acc,PER_0017,COLLABORATED_WITH,PER_1188,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Khắc Hưng,Hoàng Thùy Linh,3
+REL_WEB_3847d88dad9647741007,PER_0263,COLLABORATED_WITH,PER_1465,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,MASEW,Xesi,6
+REL_WEB_758d49513870e83a25ed,PER_0294,COLLABORATED_WITH,PER_0298,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Đạt G,K-ICM,2
+REL_WEB_41dea3bf4ddba03c5535,PER_0010,COLLABORATED_WITH,PER_0236,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG DŨNG,GDucky,5
+REL_WEB_e663b1153a0d02dbbdf8,PER_0082,COLLABORATED_WITH,PER_0143,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,TIÊN COOKIE,Thuỳ Chi,3
+REL_WEB_5794f8b9d58d768b31f1,PER_0005,COLLABORATED_WITH,PER_0099,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,WOKEUP,9
+REL_WEB_93c8f42488c767d316f7,PER_0027,COLLABORATED_WITH,PER_0029,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Karik,CHÂU ĐĂNG KHOA,9
+REL_WEB_0b493f9351c6b8280e65,PER_0005,COLLABORATED_WITH,PER_0203,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,SUNI HẠ LINH,2
+REL_WEB_6dec75a6de6e9eb5995a,PER_0005,COLLABORATED_WITH,PER_0269,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,Phúc Du,2
+REL_WEB_ed7bcfea0ec945db8297,PER_0283,COLLABORATED_WITH,PER_0298,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Jack - J97,K-ICM,4
+REL_WEB_ec57b5296bbe0601c324,PER_0003,COLLABORATED_WITH,PER_0089,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,RHYMASTIC,Trúc Nhân,2
+REL_WEB_84840d1b41bc1ad9d9a7,PER_0044,COLLABORATED_WITH,PER_0089,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Wren Evans,Trúc Nhân,2
+REL_WEB_95c798a5ca763d2c67d9,PER_0089,COLLABORATED_WITH,PER_0098,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Trúc Nhân,MIN,2
+REL_WEB_3431672ee56b6e2704c6,PER_0001,COLLABORATED_WITH,PER_0014,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,RHYDER,CoolKid,2
+REL_WEB_ae251f58a72ee9148289,PER_0249,COLLABORATED_WITH,PER_0286,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,VƯƠNG ANH TÚ,Tăng Phúc,2
+REL_WEB_c5c1782221a580b34305,PER_0286,COLLABORATED_WITH,PER_0382,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Tăng Phúc,Nguyễn Đình Vũ,2
+REL_WEB_7114e30c761e96813f5f,PER_0257,COLLABORATED_WITH,PER_0438,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hồ Ngọc Hà,Đức Trí,5
+REL_WEB_3260030ba8912ced7fb5,PER_0041,COLLABORATED_WITH,PER_3258,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,KAI ĐINH,Ninh Dương Story,4
+REL_WEB_dc4236474ed7f54774a7,PER_0033,COLLABORATED_WITH,PER_0263,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hòa Minzy,MASEW,1
+REL_WEB_a8eff683e3e69bc3a716,PER_0033,COLLABORATED_WITH,PER_0272,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hòa Minzy,TUẤN CRY,2
+REL_WEB_e54f9ce025d4c503f589,PER_0272,COLLABORATED_WITH,PER_2421,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,TUẤN CRY,Hà Myo,2
+REL_WEB_91d1fc5344a7a63866a7,PER_0263,COLLABORATED_WITH,PER_0272,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,MASEW,TUẤN CRY,3
+REL_WEB_e9ddf8efc696aea1cf97,PER_0007,COLLABORATED_WITH,PER_0295,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Văn Mai Hương,Trung Quân Idol,4
+REL_WEB_a66c99c7373c643f195a,PER_0005,COLLABORATED_WITH,PER_0144,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,52HZ,7
+REL_WEB_de4c8618c1adbcde7778,PER_0005,COLLABORATED_WITH,PER_1200,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,Vstra,6
+REL_WEB_4febd8ca9812923bee97,PER_0144,COLLABORATED_WITH,PER_1200,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,52HZ,Vstra,6
+REL_WEB_e9643eebad40321832e7,PER_0014,COLLABORATED_WITH,PER_0162,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,CoolKid,YEOLAN,1
+REL_WEB_223f55011ec115ab60d1,PER_0010,COLLABORATED_WITH,PER_0264,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG DŨNG,MINH TỐC,1
+REL_WEB_c708e2185e1c60a6cb3b,PER_0010,COLLABORATED_WITH,PER_0016,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG DŨNG,GREY D,8
+REL_WEB_c927e9c0eac07d235e8f,PER_0004,COLLABORATED_WITH,PER_2223,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Anh Tú,Khoa,1
+REL_WEB_1ca7649932fc265be594,PER_0006,COLLABORATED_WITH,PER_0056,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Công Nam,THANH DUY,2
+REL_WEB_4400f8ef458d1858f128,PER_0006,COLLABORATED_WITH,PER_0059,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Công Nam,BINZ,1
+REL_WEB_9b6ede170f77c2c975ac,PER_0006,COLLABORATED_WITH,PER_0188,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Công Nam,BẰNG KIỀU,1
+REL_WEB_e78f4d2c26010c4afeab,PER_0056,COLLABORATED_WITH,PER_0059,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,THANH DUY,BINZ,1
+REL_WEB_518be362a6e7f2618ad5,PER_0056,COLLABORATED_WITH,PER_0188,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,THANH DUY,BẰNG KIỀU,1
+REL_WEB_b78748c07b9dbe71ea4d,PER_0059,COLLABORATED_WITH,PER_0188,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,BINZ,BẰNG KIỀU,1
+REL_WEB_6b98e751cdf3153829f1,PER_0016,COLLABORATED_WITH,PER_0041,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,GREY D,KAI ĐINH,11
+REL_WEB_e13412209a6465d15505,PER_0016,COLLABORATED_WITH,PER_0145,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,GREY D,AMEE,4
+REL_WEB_0bc8a59f5e9dc3628423,PER_0594,DISPUTED_WITH,PER_3396,đã xác minh,không,,,cáo buộc (cần kiểm tra),web evidence reviewed,CAO THÁI SƠN,Nathan Lee,4
+REL_WEB_5a742e8f457f06cca53c,PER_0005,COLLABORATED_WITH,PER_0139,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,Hà Trần,2
+REL_WEB_e86e38d1f848a7e60358,PER_0005,COLLABORATED_WITH,PER_0067,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,Mỹ Linh,3
+REL_WEB_e35ef80547a042d49774,PER_0019,COLLABORATED_WITH,PER_0089,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hứa Kim Tuyền,Trúc Nhân,3
+REL_WEB_5cb440f44a93cb5d4a55,PER_0139,COLLABORATED_WITH,PER_0295,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hà Trần,Trung Quân Idol,1
+REL_WEB_5457f5f080784ec46a77,PER_0290,COLLABORATED_WITH,PER_0295,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Uyên Linh,Trung Quân Idol,2
+REL_WEB_3755e236393bb723950b,PER_0067,COLLABORATED_WITH,PER_0295,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Mỹ Linh,Trung Quân Idol,1
+REL_WEB_740916252e260b5e89f3,PER_0257,COLLABORATED_WITH,PER_2237,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hồ Ngọc Hà,Kim Lý,10
+REL_WEB_b22e6df5078784372e49,PER_1465,DISPUTED_WITH,PER_2241,đã xác minh,không,,,cáo buộc (cần kiểm tra),web evidence reviewed,Xesi,Ngọc Mai,1
+REL_WEB_6c466ec7c2a2663df194,PER_0253,COLLABORATED_WITH,PER_1188,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Dế Choắt,Hoàng Thùy Linh,1
+REL_WEB_7c8fafa230d6daf1b28c,PER_0303,COLLABORATED_WITH,PER_1188,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Đen Vâu,Hoàng Thùy Linh,2
+REL_WEB_082d7cf9e1cec63867d6,PER_0110,COLLABORATED_WITH,PER_0145,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,CONGB,AMEE,4
+REL_WEB_ac886f440c2c2138020d,PER_0010,COLLABORATED_WITH,PER_0098,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG DŨNG,MIN,3
+REL_WEB_2cc04cbc9350d8f032ae,PER_0016,COLLABORATED_WITH,PER_0098,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,GREY D,MIN,6
+REL_WEB_be56f6f1f5b7bd138bf2,PER_0052,COLLABORATED_WITH,PER_0249,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Lâm Bảo Ngọc,VƯƠNG ANH TÚ,5
+REL_WEB_ed6d97f56b88d0afc3cf,PER_0010,COLLABORATED_WITH,PER_0019,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG DŨNG,Hứa Kim Tuyền,8
+REL_WEB_06b1f507d5fb70fb4d84,PER_0161,COLLABORATED_WITH,PER_1272,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Wxrdie,KayC,1
+REL_WEB_01da5c8a9075f98e3292,PER_0239,COLLABORATED_WITH,PER_0519,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hương Ly,Minh Vương,2
+REL_WEB_c8326d1cd4cf37c83592,PER_0239,COLLABORATED_WITH,PER_3459,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hương Ly,M4U,1
+REL_WEB_bf3fe4950cf09b79601b,PER_3414,COLLABORATED_WITH,PER_3415,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Thanh Phương,Dominik Nghĩa Đỗ,1
+REL_WEB_28db2ef46c4645453763,PER_3414,COLLABORATED_WITH,PER_3416,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Thanh Phương,Hoàng Quân,1
+REL_WEB_9d9f886eb5c98392129a,PER_0017,COLLABORATED_WITH,PER_0259,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Khắc Hưng,Khắc Việt,4
+REL_WEB_4e969d87c26a0763367b,PER_0117,COLLABORATED_WITH,PER_0259,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,TUẤN HƯNG,Khắc Việt,1
+REL_WEB_e1e98715f8c323c60131,PER_0018,COLLABORATED_WITH,PER_0143,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Vũ Cát Tường,Thuỳ Chi,1
+REL_WEB_e413c38686d346a7520e,PER_0249,COLLABORATED_WITH,PER_0266,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,VƯƠNG ANH TÚ,Myra Trần,9
+REL_WEB_54237c5d91f9b0bd2909,PER_0006,COLLABORATED_WITH,PER_0097,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Công Nam,Đông Nhi,3
+REL_WEB_595d0ae6507185f9b880,PER_0006,COLLABORATED_WITH,PER_1249,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Công Nam,Ông Cao Thắng,3
+REL_WEB_d3d8b5637fe6c7830413,PER_0015,COLLABORATED_WITH,PER_1088,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Negav,Evy,2
+REL_WEB_83450ae73b795e296eca,PER_1200,COLLABORATED_WITH,PER_1272,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Vstra,KayC,1
+REL_WEB_3552603bdae4915609a8,PER_0019,COLLABORATED_WITH,PER_2713,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hứa Kim Tuyền,LÂM PHÚC,2
+REL_WEB_fe619442ad91e1334a9c,PER_0019,COLLABORATED_WITH,PER_2714,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hứa Kim Tuyền,SIXTYUPTOWN,2
+REL_WEB_18000335fed7385f0f5f,PER_2713,COLLABORATED_WITH,PER_2714,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,LÂM PHÚC,SIXTYUPTOWN,2
+REL_WEB_95305c34bdbf2850ab15,PER_0005,COLLABORATED_WITH,PER_2288,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,Đinh Hà Uyên Thư,1
+REL_WEB_f0c951fc81ffc7bb85f2,PER_0029,COLLABORATED_WITH,PER_2288,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,CHÂU ĐĂNG KHOA,Đinh Hà Uyên Thư,2
+REL_WEB_dcf217e83d83575d77bc,PER_0239,DISPUTED_WITH,PER_0259,đã xác minh,không,,,cáo buộc (cần kiểm tra),web evidence reviewed,Hương Ly,Khắc Việt,1
+REL_WEB_ce62a9694294c75c4644,PER_0010,COLLABORATED_WITH,PER_0200,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG DŨNG,Coldzy,3
+REL_WEB_230b5ddaacda4265b82f,PER_0143,COLLABORATED_WITH,PER_0249,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Thuỳ Chi,VƯƠNG ANH TÚ,1
+REL_WEB_186cd3d2977c12303e24,PER_0295,COLLABORATED_WITH,PER_0504,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Trung Quân Idol,Rin9,1
+REL_WEB_f055445372f3eacad8d4,PER_0045,COLLABORATED_WITH,PER_0143,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Nhật Hoàng,Thuỳ Chi,2
+REL_WEB_c037111d876c194cbdb1,PER_0005,DISPUTED_WITH,PER_0029,đã xác minh,không,,,,web evidence reviewed,Orange,CHÂU ĐĂNG KHOA,18
+REL_WEB_1775870d166e296fe6f9,PER_0007,COLLABORATED_WITH,PER_0123,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Văn Mai Hương,Anh Tú Atus,1
+REL_WEB_12f8474d52d2578f51e3,PER_0005,COLLABORATED_WITH,PER_0011,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,Erik,5
+REL_WEB_5b10f61ab7cbb258a190,PER_0083,COLLABORATED_WITH,PER_0143,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hồ Hoài Anh,Thuỳ Chi,1
+REL_WEB_c47c4b653d8aceda0059,PER_0029,COLLABORATED_WITH,PER_0059,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,CHÂU ĐĂNG KHOA,BINZ,2
+REL_WEB_fbe44002009faec91c18,PER_0239,COLLABORATED_WITH,PER_0503,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hương Ly,Trịnh Đình Quang,1
+REL_WEB_a80cbff8033f27d10b61,PER_0010,COLLABORATED_WITH,PER_0203,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG DŨNG,SUNI HẠ LINH,3
+REL_WEB_68b52f2bd68669bb3a9b,PER_0008,COLLABORATED_WITH,PER_1593,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,B Ray,Hoàng Yến,1
+REL_WEB_102a51ac4a9516f24ed2,PER_0017,COLLABORATED_WITH,PER_1593,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Khắc Hưng,Hoàng Yến,1
+REL_WEB_ab7caec4d4e439715b6e,PER_1593,COLLABORATED_WITH,PER_2746,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hoàng Yến,Quốc Anh,1
+REL_WEB_8a43c3f78d98106527f6,PER_0007,COLLABORATED_WITH,PER_0016,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Văn Mai Hương,GREY D,3
+REL_WEB_e0fa7507f056979e668f,PER_0016,COLLABORATED_WITH,PER_0295,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,GREY D,Trung Quân Idol,4
+REL_WEB_fd8eddc28ef852a2a1fd,PER_0257,COLLABORATED_WITH,PER_1012,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hồ Ngọc Hà,Hoài Sa,2
+REL_WEB_c791ead2ba055b30fe21,PER_0010,COLLABORATED_WITH,PER_0017,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG DŨNG,Khắc Hưng,3
+REL_WEB_1c632ecae543cb52e30d,PER_0039,COLLABORATED_WITH,PER_0259,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Song Luân,Khắc Việt,2
+REL_WEB_170b42665eac40ae7121,PER_0116,COLLABORATED_WITH,PER_2197,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Saabirose,QueenB,1
+REL_WEB_e73f2456e4ffca68e31e,PER_0011,COLLABORATED_WITH,PER_0239,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Erik,Hương Ly,3
+REL_WEB_8bc791fba79dda232277,PER_0010,COLLABORATED_WITH,PER_0269,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG DŨNG,Phúc Du,1
+REL_WEB_62f1b501b6fe3cca3335,PER_0010,COLLABORATED_WITH,PER_0731,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG DŨNG,Vy Vy,1
+REL_WEB_f7d386c8ebf572627197,PER_0295,COLLABORATED_WITH,PER_3269,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Trung Quân Idol,Aiden Nguyen,1
+REL_WEB_50ee322fdfed19c69533,PER_0011,COLLABORATED_WITH,PER_0295,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Erik,Trung Quân Idol,1
+REL_WEB_f6c2c0bab459f90ef702,PER_0098,COLLABORATED_WITH,PER_0295,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,MIN,Trung Quân Idol,1
+REL_WEB_c59b9fe8f12ecb9c2643,PER_0005,COLLABORATED_WITH,PER_0079,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,2PILLZ,1
+REL_WEB_501bf9f3a28638850d89,PER_0006,COLLABORATED_WITH,PER_0286,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Công Nam,Tăng Phúc,1
+REL_WEB_6940ac2645da1d58c3e1,PER_0134,COLLABORATED_WITH,PER_0206,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,PIALINH,Dangrangto,3
+REL_WEB_f9f36903ccdedb214489,PER_0002,COLLABORATED_WITH,PER_0098,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HIEUTHUHAI,MIN,1
+REL_WEB_b3e1abafe86c0057533b,PER_0041,COLLABORATED_WITH,PER_0246,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,KAI ĐINH,Sivan,3
+REL_WEB_dfc15a880983ab0478a1,PER_0076,COLLABORATED_WITH,PER_1909,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,NGUYỄN VĂN CHUNG,Nguyễn Duyên Quỳnh,2
+REL_WEB_d35a016f14d09b878889,PER_0239,COLLABORATED_WITH,PER_1612,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hương Ly,Hoàng Phương,4
+REL_WEB_6933201d012eb98797c6,PER_0239,COLLABORATED_WITH,PER_3635,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hương Ly,MINH CHÂU,2
+REL_WEB_3577188bf3c3c6f50f4c,PER_1612,COLLABORATED_WITH,PER_3635,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hoàng Phương,MINH CHÂU,2
+REL_WEB_bcc224935bfbc682a998,PER_0263,COLLABORATED_WITH,PER_0294,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,MASEW,Đạt G,4
+REL_WEB_2f8180acbcecbd0fb5ea,PER_0263,COLLABORATED_WITH,PER_0298,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,MASEW,K-ICM,2
+REL_WEB_57285272ece50229e74c,PER_0280,COLLABORATED_WITH,PER_0299,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Sơn Tùng M-TP,Onionn,1
+REL_WEB_593329f6b0d785ab4db5,PER_0299,COLLABORATED_WITH,PER_0534,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Onionn,Sơn Tùng,1
+REL_WEB_6e55acfc646ab9cbaa03,PER_0017,COLLABORATED_WITH,PER_0168,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Khắc Hưng,HOÀNG YẾN CHIBI,1
+REL_WEB_e69c4cb246297b76222b,PER_0143,COLLABORATED_WITH,PER_0295,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Thuỳ Chi,Trung Quân Idol,2
+REL_WEB_c852b323b37939e49740,PER_0295,COLLABORATED_WITH,PER_1940,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Trung Quân Idol,Khởi My,2
+REL_WEB_5f294d6705986938db3a,PER_0017,COLLABORATED_WITH,PER_0169,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Khắc Hưng,MINH HẰNG,1
+REL_WEB_f474a02e5c0bc4dda19a,PER_0010,COLLABORATED_WITH,PER_3600,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG DŨNG,10CM,5
+REL_WEB_0c8e6ddaf83f9c2f5909,PER_0010,COLLABORATED_WITH,PER_3595,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG DŨNG,DEPT,4
+REL_WEB_8b194196b8c4c9d570df,PER_0027,COLLABORATED_WITH,PER_0276,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Karik,VŨ PHỤNG TIÊN,3
+REL_WEB_682ae5e0b30ab2d9f6ac,PER_0099,COLLABORATED_WITH,PER_0144,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,WOKEUP,52HZ,3
+REL_WEB_a37585ff85a98b55743c,PER_0099,COLLABORATED_WITH,PER_1200,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,WOKEUP,Vstra,3
+REL_WEB_78430c84dd9131c7d9a1,PER_0028,COLLABORATED_WITH,PER_0161,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,JustaTee,Wxrdie,4
+REL_WEB_2cd28eeefefa8862f4f5,PER_0076,COLLABORATED_WITH,PER_3396,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,NGUYỄN VĂN CHUNG,Nathan Lee,1
+REL_WEB_2fa37a6ad05416645a8a,PER_0139,COLLABORATED_WITH,PER_0143,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hà Trần,Thuỳ Chi,2
+REL_WEB_372eb43c5ba8335ff706,PER_0017,COLLABORATED_WITH,PER_0202,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Khắc Hưng,HÀ LÊ,1
+REL_WEB_8328625b2934cefbefd3,PER_0017,COLLABORATED_WITH,PER_1657,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Khắc Hưng,Kiên Ứng,1
+REL_WEB_5e322eb38c495119cb22,PER_0202,COLLABORATED_WITH,PER_1657,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HÀ LÊ,Kiên Ứng,1
+REL_WEB_b0952b9eedee3f79556d,PER_0074,COLLABORATED_WITH,PER_0153,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Noo Phước Thịnh,MONO,1
+REL_WEB_148bcc5149c66e66f8d8,PER_0074,COLLABORATED_WITH,PER_0257,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Noo Phước Thịnh,Hồ Ngọc Hà,9
+REL_WEB_535b7e36a87bd858f42e,PER_0052,COLLABORATED_WITH,PER_0295,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Lâm Bảo Ngọc,Trung Quân Idol,1
+REL_WEB_d24ac22bca990f18875f,PER_0249,COLLABORATED_WITH,PER_0284,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,VƯƠNG ANH TÚ,Hari Won,4
+REL_WEB_fb223955a39a0e59b20f,PER_0145,COLLABORATED_WITH,PER_0225,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,AMEE,Lăng LD,1
+REL_WEB_0c5677fed5a941a532fe,PER_0145,COLLABORATED_WITH,PER_0228,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,AMEE,Ricky Star,2
+REL_WEB_a35088379ea21ed791bf,PER_0225,COLLABORATED_WITH,PER_0228,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Lăng LD,Ricky Star,1
+REL_WEB_dbde62a3bde3d52c4c6c,PER_0159,COLLABORATED_WITH,PER_0170,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,TÙNG DƯƠNG,QUỐC THIÊN,1
+REL_WEB_78902dcedbeaad5d1d8f,PER_0159,COLLABORATED_WITH,PER_0259,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,TÙNG DƯƠNG,Khắc Việt,1
+REL_WEB_a4a4670665b6a214f3df,PER_0170,COLLABORATED_WITH,PER_0259,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,QUỐC THIÊN,Khắc Việt,1
+REL_WEB_5ea9ec1255f10a0d024b,PER_0077,COLLABORATED_WITH,PER_0295,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Suboi,Trung Quân Idol,1
+REL_WEB_b95a3d81aa93002e36da,PER_1377,COLLABORATED_WITH,PER_2738,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Mino,Zion,1
+REL_WEB_ff543fae056abbcf0d9f,PER_0249,COLLABORATED_WITH,PER_0295,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,VƯƠNG ANH TÚ,Trung Quân Idol,2
+REL_WEB_559884b92285b3c748fa,PER_0029,COLLABORATED_WITH,PER_0257,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,CHÂU ĐĂNG KHOA,Hồ Ngọc Hà,2
+REL_WEB_94a919420db87bc59f74,PER_0090,COLLABORATED_WITH,PER_0257,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Thu Minh,Hồ Ngọc Hà,2
+REL_WEB_a13db771cd8715b0bb08,PER_0010,COLLABORATED_WITH,PER_0041,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG DŨNG,KAI ĐINH,5
+REL_WEB_3303c8b7f63acbc87d24,PER_0027,COLLABORATED_WITH,PER_1476,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Karik,Uyên Pím,1
+REL_WEB_9521a37859d927d5ab1c,PER_0020,DISPUTED_WITH,PER_0029,đã xác minh,không,,,cáo buộc (cần kiểm tra),web evidence reviewed,LyLy,CHÂU ĐĂNG KHOA,13
+REL_WEB_72f03d0f615366b68d97,PER_0096,COLLABORATED_WITH,PER_0797,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Ái Phương,Minh Thư,1
+REL_WEB_9cc6b1f9fe8c75bcc85d,PER_0033,COLLABORATED_WITH,PER_0057,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hòa Minzy,Vũ Thảo My,1
+REL_WEB_2a153d48bc7b33603cda,PER_0033,COLLABORATED_WITH,PER_3545,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hòa Minzy,Tiêu Châu Như Quỳnh,1
+REL_WEB_7a16f6ab5390543c7f74,PER_0057,COLLABORATED_WITH,PER_3545,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Vũ Thảo My,Tiêu Châu Như Quỳnh,1
+REL_WEB_41839e872865e1c51133,PER_0027,COLLABORATED_WITH,PER_2058,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Karik,Emma,1
+REL_WEB_11c3df1655f685b27ea5,PER_0052,COLLABORATED_WITH,PER_0061,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Lâm Bảo Ngọc,Hoàng Hải,1
+REL_WEB_12a7ab41e8951449f4c7,PER_0052,COLLABORATED_WITH,PER_0159,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Lâm Bảo Ngọc,TÙNG DƯƠNG,1
+REL_WEB_8fe18409c4940c50adf0,PER_0061,COLLABORATED_WITH,PER_0159,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hoàng Hải,TÙNG DƯƠNG,1
+REL_WEB_9086580875a46118181d,PER_0027,COLLABORATED_WITH,PER_0047,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Karik,Phan Mạnh Quỳnh,1
+REL_WEB_854b9faa878f96bf278a,PER_0032,COLLABORATED_WITH,PER_0143,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Đức Phúc,Thuỳ Chi,2
+REL_WEB_3e09421a6704d26ca80c,PER_0005,COLLABORATED_WITH,PER_2690,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,ICD,2
+REL_WEB_8d08d265923b1377fce2,PER_0022,COLLABORATED_WITH,PER_0088,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HURRYKNG,Quân A.P,1
+REL_WEB_39bc0fd55eb07966e524,PER_0022,COLLABORATED_WITH,PER_0102,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HURRYKNG,Hùng Huỳnh,1
+REL_WEB_37c21fc2e36fae7f69aa,PER_0088,COLLABORATED_WITH,PER_0102,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Quân A.P,Hùng Huỳnh,1
+REL_WEB_b22f5cefc31d2d2740ad,PER_0161,COLLABORATED_WITH,PER_0230,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Wxrdie,Thành Draw,2
+REL_WEB_03a4a3fa1a426b9b32d6,PER_0161,COLLABORATED_WITH,PER_0271,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Wxrdie,TRIPLE D,2
+REL_WEB_7d8ee47088c6a2c08596,PER_0230,COLLABORATED_WITH,PER_0271,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Thành Draw,TRIPLE D,2
+REL_WEB_52a27836f7ecc254f534,PER_0010,COLLABORATED_WITH,PER_0176,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG DŨNG,HOÀNG ROB,4
+REL_WEB_0c57b4539048d087dfc3,PER_0004,COLLABORATED_WITH,PER_0300,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Anh Tú,Vũ.,2
+REL_WEB_b881af292e77d3e84287,PER_0004,COLLABORATED_WITH,PER_1160,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Anh Tú,GIGI HƯƠNG GIANG,1
+REL_WEB_c81ea8cf3a4c757def65,PER_0019,COLLABORATED_WITH,PER_0088,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hứa Kim Tuyền,Quân A.P,1
+REL_WEB_3957a980a5ab5366ee1c,PER_0257,COLLABORATED_WITH,PER_0291,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hồ Ngọc Hà,Hà Anh Tuấn,2
+REL_WEB_d825b9dee76caf7dc7cb,PER_0257,COLLABORATED_WITH,PER_0329,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hồ Ngọc Hà,Lê Hiếu,2
+REL_WEB_0dadf257dee466e7191b,PER_0020,COLLABORATED_WITH,PER_0029,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,LyLy,CHÂU ĐĂNG KHOA,5
+REL_WEB_fe7c8bab54a1683e879b,PER_0047,COLLABORATED_WITH,PER_0267,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Phan Mạnh Quỳnh,MỸ TÂM,3
+REL_WEB_bd98c29da60401b51f58,PER_0058,COLLABORATED_WITH,PER_0249,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Lương Bích Hữu,VƯƠNG ANH TÚ,1
+REL_WEB_8a306840ef8f23865bca,PER_0075,COLLABORATED_WITH,PER_0304,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,TLINH,MCK,3
+REL_WEB_bc0b4e9d0be81e33bf83,PER_0268,COLLABORATED_WITH,PER_0304,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Obito,MCK,2
+REL_WEB_a5beb41d8ad52613591c,PER_0295,COLLABORATED_WITH,PER_2288,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Trung Quân Idol,Đinh Hà Uyên Thư,4
+REL_WEB_6bee17230170532bb48f,PER_0027,COLLABORATED_WITH,PER_2365,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Karik,Khương Hoàn Mỹ,2
+REL_WEB_826386055d20aba31a04,PER_0010,COLLABORATED_WITH,PER_2631,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG DŨNG,Minh Trang,1
+REL_WEB_47c027d8ba35739ad3ef,PER_0029,DISPUTED_WITH,PER_2365,đã xác minh,không,,,cáo buộc (cần kiểm tra),web evidence reviewed,CHÂU ĐĂNG KHOA,Khương Hoàn Mỹ,1
+REL_WEB_faf28e28cdde680701cd,PER_0257,COLLABORATED_WITH,PER_0576,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hồ Ngọc Hà,Nguyễn Hồng Thuận,2
+REL_WEB_833aae818070f917ffec,PER_0066,COLLABORATED_WITH,PER_0257,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG TÔN,Hồ Ngọc Hà,1
+REL_WEB_708c57790d0be51a6910,PER_0006,COLLABORATED_WITH,PER_0007,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Công Nam,Văn Mai Hương,1
+REL_WEB_3ff685e08ac1b5b8b576,PER_0233,COLLABORATED_WITH,PER_0253,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Wowy,Dế Choắt,1
+REL_WEB_383193f9c87012ea77a6,PER_0004,COLLABORATED_WITH,PER_0369,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Anh Tú,Châu Bùi,1
+REL_WEB_5bd39514d13ad777f617,PER_0097,COLLABORATED_WITH,PER_0259,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Đông Nhi,Khắc Việt,1
+REL_WEB_c5befeedeab65165b3ac,PER_0018,COLLABORATED_WITH,PER_0296,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Vũ Cát Tường,Hồ Quỳnh Hương,1
+REL_WEB_b05be652aa0edf339f84,PER_0017,COLLABORATED_WITH,PER_3135,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Khắc Hưng,Huyền Sambi,3
+REL_WEB_e8943e848133b93b89d3,PER_0002,COLLABORATED_WITH,PER_0020,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HIEUTHUHAI,LyLy,1
+REL_WEB_1e2fb74f163bdbf2e732,PER_0058,COLLABORATED_WITH,PER_1884,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Lương Bích Hữu,LOHAN,1
+REL_WEB_0bbed11f030929b37925,PER_1884,COLLABORATED_WITH,PER_2137,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,LOHAN,Bảo Thy,1
+REL_WEB_d0b4eb74f2a757c3ed3f,PER_0251,COLLABORATED_WITH,PER_2137,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,ANDIEZ,Bảo Thy,1
+REL_WEB_6bb71c3f585c2f4d519c,PER_0295,COLLABORATED_WITH,PER_0298,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Trung Quân Idol,K-ICM,2
+REL_WEB_e33468e1e52b6b382b14,PER_0519,COLLABORATED_WITH,PER_2457,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Minh Vương,Thảo Bebe,1
+REL_WEB_d1b0caa66ca9dd1bee57,PER_0075,COLLABORATED_WITH,PER_0369,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,TLINH,Châu Bùi,2
+REL_WEB_2c491ff7b49c1bd79b5e,PER_0019,COLLABORATED_WITH,PER_0075,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hứa Kim Tuyền,TLINH,1
+REL_WEB_15a9d104c9dff8bd3bbf,PER_0019,COLLABORATED_WITH,PER_0304,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hứa Kim Tuyền,MCK,1
+REL_WEB_ed18548a3a3c0978c653,PER_0019,COLLABORATED_WITH,PER_0369,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hứa Kim Tuyền,Châu Bùi,1
+REL_WEB_b1298d5a39960b0fab50,PER_0008,COLLABORATED_WITH,PER_0294,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,B Ray,Đạt G,3
+REL_WEB_85dca9c8161d72b319b2,PER_0017,COLLABORATED_WITH,PER_0047,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Khắc Hưng,Phan Mạnh Quỳnh,3
+REL_WEB_e1128b873b0284480a70,PER_0007,COLLABORATED_WITH,PER_0047,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Văn Mai Hương,Phan Mạnh Quỳnh,1
+REL_WEB_ef930c0b0149a36be2a1,PER_0257,COLLABORATED_WITH,PER_1593,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hồ Ngọc Hà,Hoàng Yến,2
+REL_WEB_6df45f42e3f7d09aea57,PER_0259,COLLABORATED_WITH,PER_2933,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Khắc Việt,Quang Hà,1
+REL_WEB_15b8e70d81f6a145fd1a,PER_0263,COLLABORATED_WITH,PER_0324,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,MASEW,Nhật Nguyễn,2
+REL_WEB_d5b6da356fc667169575,PER_0324,COLLABORATED_WITH,PER_1465,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Nhật Nguyễn,Xesi,2
+REL_WEB_908350388df81a9b9e0e,PER_0005,COLLABORATED_WITH,PER_0090,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,Thu Minh,2
+REL_WEB_5e911c4ccd37a7e118a6,PER_0067,COLLABORATED_WITH,PER_0209,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Mỹ Linh,Mỹ Anh,2
+REL_WEB_8351139f5324d8bc97a0,PER_0005,COLLABORATED_WITH,PER_0047,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,Phan Mạnh Quỳnh,2
+REL_WEB_135d21cdbefe2ddead9f,PER_0239,DISPUTED_WITH,PER_3402,đã xác minh,không,,,,web evidence reviewed,Hương Ly,Quỳnh Hoa,1
+REL_WEB_13ae419447c6c21db486,PER_0016,COLLABORATED_WITH,PER_1188,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,GREY D,Hoàng Thùy Linh,6
+REL_WEB_224632440388ce376553,PER_0041,COLLABORATED_WITH,PER_0098,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,KAI ĐINH,MIN,8
+REL_WEB_182c7230579930f75c77,PER_0041,COLLABORATED_WITH,PER_1188,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,KAI ĐINH,Hoàng Thùy Linh,6
+REL_WEB_835c842d84dda44e801c,PER_0006,COLLABORATED_WITH,PER_0103,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Công Nam,SOOBIN,1
+REL_WEB_fe25078ca79c5a4bc4f5,PER_0190,COLLABORATED_WITH,PER_0198,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,CƯỜNG SEVEN,STRONG TRỌNG HIẾU,1
+REL_WEB_d8c5ac6aaf8c195cb54b,PER_0027,COLLABORATED_WITH,PER_2288,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Karik,Đinh Hà Uyên Thư,2
+REL_WEB_71ad3422e996f79a8af7,PER_0006,COLLABORATED_WITH,PER_0069,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Công Nam,TÓC TIÊN,2
+REL_WEB_041907445fefbd0f6012,PER_0005,COLLABORATED_WITH,PER_0006,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,Bùi Công Nam,1
+REL_WEB_b774b332c2b66eb87cb8,PER_0006,COLLABORATED_WITH,PER_0027,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Công Nam,Karik,1
+REL_WEB_595fcbdde4b8bc6c2e4f,PER_0056,COLLABORATED_WITH,PER_0295,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,THANH DUY,Trung Quân Idol,1
+REL_WEB_f26b342462b00ce3754a,PER_0295,COLLABORATED_WITH,PER_0390,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Trung Quân Idol,DELILAH,1
+REL_WEB_4ed4d487a2145c59b6b1,PER_0019,COLLABORATED_WITH,PER_0201,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hứa Kim Tuyền,GIL LÊ,1
+REL_WEB_4a2f894e0197cb0e8873,PER_0101,COLLABORATED_WITH,PER_0259,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,DƯƠNG HOÀNG YẾN,Khắc Việt,4
+REL_WEB_d6dec77d2d270fedcdea,PER_0028,COLLABORATED_WITH,PER_0107,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,JustaTee,TOULIVER,1
+REL_WEB_fd5f2d25dd61c421952a,PER_0028,COLLABORATED_WITH,PER_0260,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,JustaTee,Kimmese,1
+REL_WEB_3a849f4cc82f7b7bac1b,PER_0107,COLLABORATED_WITH,PER_0260,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,TOULIVER,Kimmese,1
+REL_WEB_613baf532659d4e711c5,PER_0182,COLLABORATED_WITH,PER_1295,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Quang Trung,Lâm Vỹ Dạ,1
+REL_WEB_d8834858f271633cd588,PER_0016,COLLABORATED_WITH,PER_0203,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,GREY D,SUNI HẠ LINH,1
+REL_WEB_8d33e092fafe9ddc618d,PER_0098,COLLABORATED_WITH,PER_2808,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,MIN,Kai,2
+REL_WEB_74c96a7fd6f4cffda8f4,PER_0099,COLLABORATED_WITH,PER_0145,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,WOKEUP,AMEE,1
+REL_WEB_56d143fef8a19743ac09,PER_0099,COLLABORATED_WITH,PER_0304,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,WOKEUP,MCK,1
+REL_WEB_d230cd4ba8ece66a0d71,PER_0099,COLLABORATED_WITH,PER_0305,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,WOKEUP,Low G,1
+REL_WEB_1fa616b2d2417b9e20f5,PER_0145,COLLABORATED_WITH,PER_0304,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,AMEE,MCK,2
+REL_WEB_97648efe561ed4ed0ab5,PER_0169,DISPUTED_WITH,PER_0257,đã xác minh,không,,,,web evidence reviewed,MINH HẰNG,Hồ Ngọc Hà,2
+REL_WEB_17c712741e91cec5c5f0,PER_0058,COLLABORATED_WITH,PER_0097,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Lương Bích Hữu,Đông Nhi,2
+REL_WEB_d66f57d9362e89d39f8f,PER_0058,COLLABORATED_WITH,PER_0143,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Lương Bích Hữu,Thuỳ Chi,2
+REL_WEB_9365d60cf171a9634cfd,PER_0143,COLLABORATED_WITH,PER_0228,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Thuỳ Chi,Ricky Star,1
+REL_WEB_a855b821264dbe98fe97,PER_0017,COLLABORATED_WITH,PER_0109,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Khắc Hưng,BẢO ANH,1
+REL_WEB_cbfea67aece6a393271b,PER_0005,COLLABORATED_WITH,PER_0113,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,Jaysonlei,2
+REL_WEB_a7c8374e07fe614b4b74,PER_0005,COLLABORATED_WITH,PER_0026,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,MEW AMAZING,3
+REL_WEB_833aa1870da52f5fab41,PER_0026,COLLABORATED_WITH,PER_0113,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,MEW AMAZING,Jaysonlei,2
+REL_WEB_438d5bffbac6ef27f4dc,PER_0027,DISPUTED_WITH,PER_0228,đã xác minh,không,,,,web evidence reviewed,Karik,Ricky Star,2
+REL_WEB_3e3b7403a4f45c4ce0b1,PER_0175,COLLABORATED_WITH,PER_0176,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,BÙI LAN HƯƠNG,HOÀNG ROB,1
+REL_WEB_2bbc0bdebee0058470e7,PER_0176,COLLABORATED_WITH,PER_0257,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG ROB,Hồ Ngọc Hà,1
+REL_WEB_d65eb3f07abf93b04cb6,PER_0031,COLLABORATED_WITH,PER_2183,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,SLIMV,Hoàng Touliver,1
+REL_WEB_aaca53eccde1fafd3863,PER_0027,COLLABORATED_WITH,PER_3206,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Karik,Bùi Duy Ngọc,1
+REL_WEB_6011d73c18423b89cf62,PER_0226,COLLABORATED_WITH,PER_3206,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Ngô Kiến Huy,Bùi Duy Ngọc,1
+REL_WEB_99b92cca2ea5375f01d4,PER_0005,COLLABORATED_WITH,PER_1422,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,Katzilla,1
+REL_WEB_ac830d0c81e48d1d3e0c,PER_0026,COLLABORATED_WITH,PER_1422,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,MEW AMAZING,Katzilla,1
+REL_WEB_272e429558b3bae4c8bf,PER_0295,COLLABORATED_WITH,PER_0748,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Trung Quân Idol,Phạm Hải Âu,1
+REL_WEB_1bc2ea7b927617747110,PER_0130,COLLABORATED_WITH,PER_0158,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,GIANG HỒNG NGỌC,TIÊN TIÊN,1
+REL_WEB_a4e2010ccb102cd9105d,PER_0044,COLLABORATED_WITH,PER_1545,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Wren Evans,Phương Vũ,3
+REL_WEB_b562639c305857abaa1c,PER_0017,COLLABORATED_WITH,PER_0203,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Khắc Hưng,SUNI HẠ LINH,1
+REL_WEB_def84af8941b88d37af5,PER_0017,COLLABORATED_WITH,PER_0059,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Khắc Hưng,BINZ,1
+REL_WEB_680a170a38e5342ffcd0,PER_0047,COLLABORATED_WITH,PER_0059,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Phan Mạnh Quỳnh,BINZ,1
+REL_WEB_95e47b25dc97c9fdd26e,PER_0041,COLLABORATED_WITH,PER_0203,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,KAI ĐINH,SUNI HẠ LINH,1
+REL_WEB_30265f905d1c45d3318e,PER_0005,DISPUTED_WITH,PER_1019,đã xác minh,không,,,cáo buộc (cần kiểm tra),web evidence reviewed,Orange,Superbrothers,4
+REL_WEB_67855a40805215cd7371,PER_0020,DISPUTED_WITH,PER_1019,đã xác minh,không,,,cáo buộc (cần kiểm tra),web evidence reviewed,LyLy,Superbrothers,3
+REL_WEB_231b2ac70ae3e53b47af,PER_0029,COLLABORATED_WITH,PER_2365,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,CHÂU ĐĂNG KHOA,Khương Hoàn Mỹ,2
+REL_WEB_7a47d0e11e697d4963aa,PER_0004,COLLABORATED_WITH,PER_0035,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Anh Tú,OgeNus,2
+REL_WEB_30268b1e86ac04ac2415,PER_0027,COLLABORATED_WITH,PER_0228,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Karik,Ricky Star,1
+REL_WEB_a3c19f2ea0234fe9c387,PER_0228,COLLABORATED_WITH,PER_0236,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Ricky Star,GDucky,1
+REL_WEB_d01557ac9296425d7ad0,PER_0020,COLLABORATED_WITH,PER_0061,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,LyLy,Hoàng Hải,2
+REL_WEB_25bb09cfae6b087dd080,PER_0035,COLLABORATED_WITH,PER_0058,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,OgeNus,Lương Bích Hữu,1
+REL_WEB_28d2ef501f5d42fb685c,PER_0005,COLLABORATED_WITH,PER_2999,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,Sofia,1
+REL_WEB_7b09d4c1bac3b4bcbf95,PER_0006,COLLABORATED_WITH,PER_0175,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Công Nam,BÙI LAN HƯƠNG,1
+REL_WEB_9b62a5a2ef37608a2fe1,PER_0249,COLLABORATED_WITH,PER_0594,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,VƯƠNG ANH TÚ,CAO THÁI SƠN,1
+REL_WEB_a9d7f30f7056b58f46ae,PER_0086,COLLABORATED_WITH,PER_0257,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,TĂNG DUY TÂN,Hồ Ngọc Hà,1
+REL_WEB_bb82e26e33199cbe1a40,PER_0029,COLLABORATED_WITH,PER_1019,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,CHÂU ĐĂNG KHOA,Superbrothers,1
+REL_WEB_80b8fb49f3e035c8fd9e,PER_0059,COLLABORATED_WITH,PER_1019,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,BINZ,Superbrothers,1
+REL_WEB_6038ce61df07c3a72985,PER_0272,COLLABORATED_WITH,PER_1963,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,TUẤN CRY,XUÂN HINH,1
+REL_WEB_766d62185f7f091616bb,PER_0041,COLLABORATED_WITH,PER_3273,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,KAI ĐINH,Tạ Quang Thắng,1
+REL_WEB_0df8d2ac21123ba6e6cf,PER_0143,COLLABORATED_WITH,PER_3499,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Thuỳ Chi,Trần Minh,1
+REL_WEB_df00aa9a5a6523d3df36,PER_0006,COLLABORATED_WITH,PER_0295,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Công Nam,Trung Quân Idol,2
+REL_WEB_10ac611b65cdb28f8f58,PER_0027,COLLABORATED_WITH,PER_0922,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Karik,Trường Giang,3
+REL_WEB_757d20b984e065b26e37,PER_0226,COLLABORATED_WITH,PER_0922,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Ngô Kiến Huy,Trường Giang,2
+REL_WEB_9376f099e40034a48cd0,PER_0010,COLLABORATED_WITH,PER_0150,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG DŨNG,JUKY SAN,1
+REL_WEB_750f02390485122fa7b6,PER_0019,COLLABORATED_WITH,PER_0150,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hứa Kim Tuyền,JUKY SAN,1
+REL_WEB_474f5ff27d91b4f59e02,PER_0082,COLLABORATED_WITH,PER_0218,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,TIÊN COOKIE,Hương Tràm,1
+REL_WEB_646bbe2f2ea99cd69050,PER_0082,COLLABORATED_WITH,PER_0282,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,TIÊN COOKIE,Bích Phương,1
+REL_WEB_8ea5f5abd7ae1847177c,PER_1012,COLLABORATED_WITH,PER_1119,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hoài Sa,Lưu Quang Minh,1
+REL_WEB_2e6a8c2c63e32ccb6226,PER_0006,COLLABORATED_WITH,PER_0032,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Công Nam,Đức Phúc,1
+REL_WEB_bf119fe38c02f64711ec,PER_0032,COLLABORATED_WITH,PER_2253,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Đức Phúc,Minh Quân,1
+REL_WEB_4e55c360ea245bcaa1ff,PER_0257,COLLABORATED_WITH,PER_0261,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hồ Ngọc Hà,Lệ Quyên,1
+REL_WEB_ba8c6a861518abcfe927,PER_0263,COLLABORATED_WITH,PER_0963,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,MASEW,RedT,3
+REL_WEB_fb15a614b04bf7eb2168,PER_0010,COLLABORATED_WITH,PER_0268,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG DŨNG,Obito,1
+REL_WEB_564c053e0427eb0ef081,PER_0019,COLLABORATED_WITH,PER_0268,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hứa Kim Tuyền,Obito,4
+REL_WEB_98a7944989558a3a063b,PER_0145,COLLABORATED_WITH,PER_0268,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,AMEE,Obito,5
+REL_WEB_c086c6c676f091b0ce60,PER_0005,COLLABORATED_WITH,PER_0033,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,Hòa Minzy,1
+REL_WEB_c75b44f1583ba1ba08b4,PER_0005,COLLABORATED_WITH,PER_3450,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,Annie,1
+REL_WEB_1e3f383e495b9d5a1b55,PER_0155,COLLABORATED_WITH,PER_0820,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,PHƯƠNG MỸ CHI,Minh Chiến,1
+REL_WEB_c56203167771a5988d38,PER_0006,COLLABORATED_WITH,PER_0052,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Công Nam,Lâm Bảo Ngọc,1
+REL_WEB_899a58a49cc95ef1d109,PER_0130,COLLABORATED_WITH,PER_1949,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,GIANG HỒNG NGỌC,Vicky Nhung,1
+REL_WEB_142806022d7689adabac,PER_0027,COLLABORATED_WITH,PER_1657,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Karik,Kiên Ứng,1
+REL_WEB_6ae28aa74e1074b1b2e6,PER_0004,COLLABORATED_WITH,PER_0157,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Anh Tú,THANH HƯNG,1
+REL_WEB_7b99b5c4b90ce3271a7d,PER_0004,DISPUTED_WITH,PER_0256,đã xác minh,không,,,cáo buộc (cần kiểm tra),web evidence reviewed,Anh Tú,HỒNG NHUNG,2
+REL_WEB_5ad0b59137db15715f7d,PER_0005,COLLABORATED_WITH,PER_0146,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,EMCEE L,2
+REL_WEB_d526d9c5d529d9354ecb,PER_0007,COLLABORATED_WITH,PER_0015,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Văn Mai Hương,Negav,2
+REL_WEB_a046e8f9342646b4eb17,PER_0292,COLLABORATED_WITH,PER_1299,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hồ Quang Hiếu,Hoàng Y Nhung,1
+REL_WEB_7ae5a25cbb070f2c3f75,PER_0006,COLLABORATED_WITH,PER_0168,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Công Nam,HOÀNG YẾN CHIBI,2
+REL_WEB_70be776ffad5d745ad5a,PER_0006,COLLABORATED_WITH,PER_1032,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Công Nam,StillaD,1
+REL_WEB_334dce82de6091a60fc4,PER_0249,COLLABORATED_WITH,PER_1306,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,VƯƠNG ANH TÚ,Ribi Sachi,1
+REL_WEB_e4fce10ac359b9e2a98c,PER_0239,COLLABORATED_WITH,PER_0446,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hương Ly,Đạt Max,1
+REL_WEB_61974a65508928183458,PER_0155,COLLABORATED_WITH,PER_1702,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,PHƯƠNG MỸ CHI,KIM TỬ LONG,1
+REL_WEB_5e43b63bf1157cd6a586,PER_0004,COLLABORATED_WITH,PER_2864,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Anh Tú,Fillinus,1
+REL_WEB_cae6dea918d1bb9377b1,PER_0011,COLLABORATED_WITH,PER_1858,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Erik,Quang Đăng,1
+REL_WEB_e7d2ebdee7c9e22140fd,PER_0017,COLLABORATED_WITH,PER_1858,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Khắc Hưng,Quang Đăng,1
+REL_WEB_89765f8c5fc29d201d02,PER_0098,COLLABORATED_WITH,PER_1858,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,MIN,Quang Đăng,1
+REL_WEB_273d38b3418eacbaf07f,PER_0006,COLLABORATED_WITH,PER_0064,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Công Nam,Thanh Lam,1
+REL_WEB_d6878479854bf38404bc,PER_0200,COLLABORATED_WITH,PER_0684,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Coldzy,Minsicko,1
+REL_WEB_ea0a0c6543d0fc02b295,PER_0005,COLLABORATED_WITH,PER_0089,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,Trúc Nhân,2
+REL_WEB_fad05950275bb1cfb012,PER_0005,COLLABORATED_WITH,PER_0282,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,Bích Phương,1
+REL_WEB_b7bfc72473bb386e0f62,PER_0257,COLLABORATED_WITH,PER_1160,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hồ Ngọc Hà,GIGI HƯƠNG GIANG,1
+REL_WEB_53dbc78cb2350a02396b,PER_0236,COLLABORATED_WITH,PER_2881,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,GDucky,Quân Xmas,1
+REL_WEB_e38ae81736e056c03803,PER_0004,COLLABORATED_WITH,PER_0067,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Anh Tú,Mỹ Linh,1
+REL_WEB_cd808973c8fbf409c184,PER_0006,COLLABORATED_WITH,PER_0068,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Công Nam,KAY TRẦN,2
+REL_WEB_fa68f357516df16fe7a9,PER_0076,COLLABORATED_WITH,PER_0594,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,NGUYỄN VĂN CHUNG,CAO THÁI SƠN,3
+REL_WEB_99ceec84478ccbd9aaf9,PER_0226,COLLABORATED_WITH,PER_0263,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Ngô Kiến Huy,MASEW,1
+REL_WEB_6b97b9a72906ef117047,PER_0263,COLLABORATED_WITH,PER_0281,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,MASEW,Chi Pu,1
+REL_WEB_58b332cd8bfad82cb731,PER_0006,COLLABORATED_WITH,PER_0010,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Công Nam,HOÀNG DŨNG,1
+REL_WEB_df1468537b410dc929e4,PER_0008,COLLABORATED_WITH,PER_1348,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,B Ray,Young H,2
+REL_WEB_76c60cd5e60131632795,PER_0292,COLLABORATED_WITH,PER_1308,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hồ Quang Hiếu,JANG MI,1
+REL_WEB_af0ddcaedd1fe8f717fa,PER_0268,COLLABORATED_WITH,PER_0270,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Obito,Seachains,1
+REL_WEB_fec10aa7455afe49081b,PER_0004,COLLABORATED_WITH,PER_3338,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Anh Tú,Jun Vũ,2
+REL_WEB_69a738fa3fb556526668,PER_0090,COLLABORATED_WITH,PER_0295,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Thu Minh,Trung Quân Idol,1
+REL_WEB_91464d92b4b98de37ee9,PER_0236,COLLABORATED_WITH,PER_0577,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,GDucky,Thu Hà,1
+REL_WEB_268f519e6e2138dfa309,PER_0267,COLLABORATED_WITH,PER_0274,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,MỸ TÂM,Thịnh Suy,1
+REL_WEB_c1bca46e5d3657ac80f2,PER_0267,COLLABORATED_WITH,PER_0300,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,MỸ TÂM,Vũ.,1
+REL_WEB_31b3ebfd56dc0e4ebb51,PER_0066,COLLABORATED_WITH,PER_0301,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG TÔN,Phùng Khánh Linh,1
+REL_WEB_e612b6f01f42e651bd5f,PER_0006,COLLABORATED_WITH,PER_0040,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Công Nam,CHENG,1
+REL_WEB_13c7ca847f9aeda3356a,PER_0076,DISPUTED_WITH,PER_0506,đã xác minh,không,,,,web evidence reviewed,NGUYỄN VĂN CHUNG,Khánh Phương,1
+REL_WEB_0998aa938efef8713d54,PER_0076,COLLABORATED_WITH,PER_0506,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,NGUYỄN VĂN CHUNG,Khánh Phương,1
+REL_WEB_d8a742f532b443b23a9e,PER_0005,COLLABORATED_WITH,PER_0021,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,Ali Hoàng Dương,2
+REL_WEB_8487221fdce319b1befb,PER_0011,COLLABORATED_WITH,PER_0021,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Erik,Ali Hoàng Dương,2
+REL_WEB_caa589030d7c11aad6e4,PER_0002,COLLABORATED_WITH,PER_0005,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HIEUTHUHAI,Orange,1
+REL_WEB_855cca21e46659f711e7,PER_0238,DISPUTED_WITH,PER_0257,đã xác minh,không,,,,web evidence reviewed,HƯƠNG GIANG,Hồ Ngọc Hà,2
+REL_WEB_9c383179107658549202,PER_0044,COLLABORATED_WITH,PER_0304,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Wren Evans,MCK,1
+REL_WEB_ec6036e33c4665af03f5,PER_0266,COLLABORATED_WITH,PER_0295,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Myra Trần,Trung Quân Idol,1
+REL_WEB_6cd1f29e9db7a73a3db7,PER_0076,COLLABORATED_WITH,PER_0159,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,NGUYỄN VĂN CHUNG,TÙNG DƯƠNG,6
+REL_WEB_3f09a2fa045c84f9c695,PER_0143,COLLABORATED_WITH,PER_3414,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Thuỳ Chi,Thanh Phương,1
+REL_WEB_2c7ddea87e4711ccf32f,PER_0088,COLLABORATED_WITH,PER_0101,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Quân A.P,DƯƠNG HOÀNG YẾN,1
+REL_WEB_c61a1d74e3c1fdc354be,PER_0088,COLLABORATED_WITH,PER_0249,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Quân A.P,VƯƠNG ANH TÚ,1
+REL_WEB_41d0ff700e689864eb0d,PER_0001,COLLABORATED_WITH,PER_0705,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,RHYDER,Feliks Alvin,1
+REL_WEB_1cd5b4cade96157dbd17,PER_0062,COLLABORATED_WITH,PER_0178,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,IT'S CHARLES,K.O,1
+REL_WEB_5c564387546c80605c38,PER_0062,COLLABORATED_WITH,PER_0184,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,IT'S CHARLES,WILL,1
+REL_WEB_83f84c7548867ce3dde7,PER_0178,COLLABORATED_WITH,PER_0184,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,K.O,WILL,1
+REL_WEB_0010d584dcdcdcf5b15d,PER_0019,COLLABORATED_WITH,PER_0288,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hứa Kim Tuyền,Hoàng Duyên,3
+REL_WEB_43b9113d1b1ec8a067dc,PER_0019,COLLABORATED_WITH,PER_0068,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hứa Kim Tuyền,KAY TRẦN,1
+REL_WEB_29aa51ad28a07b2bebd6,PER_0032,COLLABORATED_WITH,PER_0259,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Đức Phúc,Khắc Việt,1
+REL_WEB_6cb6810b63fddebe9af6,PER_0128,COLLABORATED_WITH,PER_0147,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Yuno BigBoi,HAN SARA,1
+REL_WEB_bb64c4441aa62908e922,PER_0032,COLLABORATED_WITH,PER_0176,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Đức Phúc,HOÀNG ROB,1
+REL_WEB_867bfcad0a057d16a559,PER_0020,COLLABORATED_WITH,PER_0027,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,LyLy,Karik,2
+REL_WEB_811a1bb0cb9cab50acab,PER_0089,COLLABORATED_WITH,PER_0255,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Trúc Nhân,Huy Tuấn,1
+REL_WEB_2f8e36ec231916be0bf9,PER_0089,COLLABORATED_WITH,PER_0257,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Trúc Nhân,Hồ Ngọc Hà,1
+REL_WEB_b372f480c4d74c8fe7e9,PER_0255,COLLABORATED_WITH,PER_0257,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Huy Tuấn,Hồ Ngọc Hà,1
+REL_WEB_7be03c2056ed32c8a4f9,PER_0047,COLLABORATED_WITH,PER_0175,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Phan Mạnh Quỳnh,BÙI LAN HƯƠNG,1
+REL_WEB_ee3d6b0d115d53e0f1ed,PER_0047,COLLABORATED_WITH,PER_0291,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Phan Mạnh Quỳnh,Hà Anh Tuấn,1
+REL_WEB_e010b2f35ebcb5ebf455,PER_0019,COLLABORATED_WITH,PER_1133,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hứa Kim Tuyền,Trần Dũng Khánh,1
+REL_WEB_521c73017cfc03144909,PER_0125,COLLABORATED_WITH,PER_0286,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Phạm Đình Thái Ngân,Tăng Phúc,1
+REL_WEB_e5155b8239eb69812e3f,PER_0125,COLLABORATED_WITH,PER_0297,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Phạm Đình Thái Ngân,Khải Đăng,1
+REL_WEB_9e5dfc12e79a3040dc12,PER_0286,COLLABORATED_WITH,PER_0297,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Tăng Phúc,Khải Đăng,1
+REL_WEB_e62ac4be73612c98303c,PER_3284,COLLABORATED_WITH,PER_3402,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Ngọc Linh,Quỳnh Hoa,1
+REL_WEB_ccba11fbeffa31656fcb,PER_0263,COLLABORATED_WITH,PER_0307,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,MASEW,Hoaprox,1
+REL_WEB_5696f0b6b2087ef2d282,PER_0289,COLLABORATED_WITH,PER_0291,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Anh Tuấn,Hà Anh Tuấn,1
+REL_WEB_238fa77c81f6918b4a96,PER_0033,COLLABORATED_WITH,PER_0218,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hòa Minzy,Hương Tràm,1
+REL_WEB_fbbfb99c2cbf247fa4ff,PER_0016,COLLABORATED_WITH,PER_0043,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,GREY D,Vương Bình,1
+REL_WEB_d8bf6a4031b8671026e2,PER_0043,COLLABORATED_WITH,PER_0110,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Vương Bình,CONGB,1
+REL_WEB_0c265e0f7f88bd2bc1da,PER_0043,COLLABORATED_WITH,PER_0301,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Vương Bình,Phùng Khánh Linh,1
+REL_WEB_5a91d78533c1c1f1af24,PER_0259,COLLABORATED_WITH,PER_2448,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Khắc Việt,Tấn Minh,1
+REL_WEB_378e2dd6c4d90fda09eb,PER_0161,COLLABORATED_WITH,PER_1545,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Wxrdie,Phương Vũ,2
+REL_WEB_a6a1d07b12756cc5c244,PER_0161,COLLABORATED_WITH,PER_0304,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Wxrdie,MCK,3
+REL_WEB_47738ef2203a6fbd4a24,PER_0041,COLLABORATED_WITH,PER_0134,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,KAI ĐINH,PIALINH,2
+REL_WEB_6c8a42ac81631d4fca09,PER_0041,COLLABORATED_WITH,PER_0206,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,KAI ĐINH,Dangrangto,2
+REL_WEB_41ac99d32104c526ed91,PER_0044,COLLABORATED_WITH,PER_0305,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Wren Evans,Low G,2
+REL_WEB_0b47b0b6ceeee3efec58,PER_0004,COLLABORATED_WITH,PER_0006,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Anh Tú,Bùi Công Nam,2
+REL_WEB_629f66a97e55e41ff2c0,PER_0013,COLLABORATED_WITH,PER_0241,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Quang Hùng MasterD,Lou Hoàng,1
+REL_WEB_c9cf89d6371e10774f16,PER_0005,COLLABORATED_WITH,PER_2552,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,Đạt,1
+REL_WEB_4203230a8f9f96b94c3a,PER_0019,COLLABORATED_WITH,PER_0052,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hứa Kim Tuyền,Lâm Bảo Ngọc,1
+REL_WEB_0060c5da00eeffd8c480,PER_0005,COLLABORATED_WITH,PER_0017,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,Khắc Hưng,1
+REL_WEB_5791edd24d9f559e4da8,PER_0005,COLLABORATED_WITH,PER_0300,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,Vũ.,1
+REL_WEB_059c2217e542508f7b8b,PER_0094,COLLABORATED_WITH,PER_0143,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Mai Tiến Dũng,Thuỳ Chi,3
+REL_WEB_498de5ce26f1a4f9e65f,PER_0023,COLLABORATED_WITH,PER_0288,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Jsol,Hoàng Duyên,1
+REL_WEB_f3fb98f0cc2534bf3b97,PER_0259,COLLABORATED_WITH,PER_0594,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Khắc Việt,CAO THÁI SƠN,3
+REL_WEB_d553718e36899068976d,PER_0010,COLLABORATED_WITH,PER_0021,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG DŨNG,Ali Hoàng Dương,1
+REL_WEB_5ad012ae787502232373,PER_0019,COLLABORATED_WITH,PER_0021,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hứa Kim Tuyền,Ali Hoàng Dương,1
+REL_WEB_9d3eb8d48a33e2b6e324,PER_0016,COLLABORATED_WITH,PER_0099,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,GREY D,WOKEUP,1
+REL_WEB_755f81ef09a996cf146d,PER_0021,COLLABORATED_WITH,PER_0161,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Ali Hoàng Dương,Wxrdie,2
+REL_WEB_da643eff035d9ef9e760,PER_0239,COLLABORATED_WITH,PER_0443,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hương Ly,Ngọc Châu,2
+REL_WEB_cfc109e8067245779a71,PER_0443,COLLABORATED_WITH,PER_1612,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Ngọc Châu,Hoàng Phương,2
+REL_WEB_a32aed0facf4210b31f4,PER_0076,COLLABORATED_WITH,PER_0143,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,NGUYỄN VĂN CHUNG,Thuỳ Chi,3
+REL_WEB_c3cf63f2faecb70843e0,PER_0078,COLLABORATED_WITH,PER_0114,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,TIÊU MINH PHỤNG,Mason Nguyễn,1
+REL_WEB_2526a0ad850edb660689,PER_0161,COLLABORATED_WITH,PER_1273,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Wxrdie,JasonDilla,1
+REL_WEB_ae6ecbc4e6346acc9259,PER_0300,COLLABORATED_WITH,PER_0577,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Vũ.,Thu Hà,1
+REL_WEB_d99a228fdcc45663abfd,PER_0257,COLLABORATED_WITH,PER_3091,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hồ Ngọc Hà,Ngọc Trinh,1
+REL_WEB_eaa2f71a6880a1fd66d6,PER_0004,COLLABORATED_WITH,PER_0005,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Anh Tú,Orange,1
+REL_WEB_06853b3291317d283b52,PER_0061,COLLABORATED_WITH,PER_0143,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hoàng Hải,Thuỳ Chi,2
+REL_WEB_bf1ca8a99e66ddf2c275,PER_0006,COLLABORATED_WITH,PER_0060,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Công Nam,DUY KHÁNH,1
+REL_WEB_e96b66a59c26dcc8d99d,PER_0006,COLLABORATED_WITH,PER_0170,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Công Nam,QUỐC THIÊN,1
+REL_WEB_9695284242d0d330d64c,PER_0060,COLLABORATED_WITH,PER_0170,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,DUY KHÁNH,QUỐC THIÊN,1
+REL_WEB_f64a32a112ddcf5d749a,PER_0183,COLLABORATED_WITH,PER_0249,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,THƠM,VƯƠNG ANH TÚ,1
+REL_WEB_c85e388e69d196e5bfd5,PER_0257,COLLABORATED_WITH,PER_2241,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hồ Ngọc Hà,Ngọc Mai,1
+REL_WEB_a79daa46aa8ab135f11d,PER_0019,COLLABORATED_WITH,PER_3532,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hứa Kim Tuyền,Việt Phương,2
+REL_WEB_aa5a7263886363f743a8,PER_0123,COLLABORATED_WITH,PER_1296,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Anh Tú Atus,Ninh Dương Lan Ngọc,1
+REL_WEB_ba4d1ef735319ae5940d,PER_0019,COLLABORATED_WITH,PER_1188,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hứa Kim Tuyền,Hoàng Thùy Linh,1
+REL_WEB_f8d578c70825888d98b0,PER_0263,COLLABORATED_WITH,PER_3297,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,MASEW,QUANG THỌ,1
+REL_WEB_a3da35ceb2328b431b07,PER_0239,COLLABORATED_WITH,PER_1858,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hương Ly,Quang Đăng,1
+REL_WEB_8a0509053c9eb40cff6e,PER_0067,COLLABORATED_WITH,PER_0296,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Mỹ Linh,Hồ Quỳnh Hương,1
+REL_WEB_819d75cd5e134c818082,PER_0070,COLLABORATED_WITH,PER_0288,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Sơn.K,Hoàng Duyên,1
+REL_WEB_2ecc1c6bbf5db1e32c53,PER_0185,COLLABORATED_WITH,PER_2223,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,XUÂN NGHI,Khoa,1
+REL_WEB_184266936c6527371c2f,PER_0185,COLLABORATED_WITH,PER_2760,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,XUÂN NGHI,TRUNG RUỒI,1
+REL_WEB_fb682c75a6175915ff4c,PER_2223,COLLABORATED_WITH,PER_2760,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Khoa,TRUNG RUỒI,1
+REL_WEB_d95292a7ca7dadf84e1d,PER_0005,COLLABORATED_WITH,PER_0122,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,Double2T,1
+REL_WEB_dc169e173ec8f609894c,PER_0005,COLLABORATED_WITH,PER_0263,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,MASEW,2
+REL_WEB_8822e3752f3789af57f0,PER_0010,COLLABORATED_WITH,PER_3304,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG DŨNG,KHÁNH LINH,1
+REL_WEB_0d44b67f24a2bbc58e4b,PER_0019,COLLABORATED_WITH,PER_3435,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hứa Kim Tuyền,PAM,1
+REL_WEB_98f6f59897deae529db2,PER_0017,COLLABORATED_WITH,PER_0287,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Khắc Hưng,Phương Ly,1
+REL_WEB_c7db27717b72a1f7334b,PER_0016,COLLABORATED_WITH,PER_0287,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,GREY D,Phương Ly,1
+REL_WEB_19091be027604ca43393,PER_0004,COLLABORATED_WITH,PER_0159,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Anh Tú,TÙNG DƯƠNG,1
+REL_WEB_9193ac9ae3c345b93c1c,PER_0004,COLLABORATED_WITH,PER_1089,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Anh Tú,Divo Tùng Dương,1
+REL_WEB_bed8202b4e434b1f0bb8,PER_0087,COLLABORATED_WITH,PER_0147,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Ánh Sáng AZA,HAN SARA,1
+REL_WEB_20a05b3b523dfe15b048,PER_0027,COLLABORATED_WITH,PER_2060,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Karik,Windy Quyên,1
+REL_WEB_61c4488dba6b9ba3433a,PER_0027,COLLABORATED_WITH,PER_1948,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Karik,Thái Trinh,1
+REL_WEB_fc94242bdbf68c013818,PER_0032,COLLABORATED_WITH,PER_0249,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Đức Phúc,VƯƠNG ANH TÚ,1
+REL_WEB_f4eae8f96204f56c0b39,PER_0239,COLLABORATED_WITH,PER_0472,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hương Ly,Jombie,2
+REL_WEB_9a46f0b6698640abd941,PER_0006,COLLABORATED_WITH,PER_0177,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Công Nam,HUỲNH LẬP,1
+REL_WEB_451cd9660aebbbadf7df,PER_0001,COLLABORATED_WITH,PER_0155,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,RHYDER,PHƯƠNG MỸ CHI,1
+REL_WEB_d08578e61be5cf84aa4e,PER_0080,COLLABORATED_WITH,PER_1980,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,ONLY C,XOÀI NON,1
+REL_WEB_bb15dd98cf35865c1e34,PER_0241,COLLABORATED_WITH,PER_1980,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Lou Hoàng,XOÀI NON,1
+REL_WEB_415880f305550831ac41,PER_3532,COLLABORATED_WITH,PER_3701,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Việt Phương,THE FLOB,1
+REL_WEB_dbfd90d957fb481f899d,PER_0033,COLLABORATED_WITH,PER_0177,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hòa Minzy,HUỲNH LẬP,1
+REL_WEB_bc1ea479f078b151c23f,PER_0056,COLLABORATED_WITH,PER_2231,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,THANH DUY,Khả Như,1
+REL_WEB_27b59091ce1c298518cc,PER_0143,COLLABORATED_WITH,PER_2690,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Thuỳ Chi,ICD,1
+REL_WEB_818e923629905740d9b5,PER_0275,COLLABORATED_WITH,PER_2690,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,VirusS,ICD,1
+REL_WEB_1beaa101926284c8e7b8,PER_0019,COLLABORATED_WITH,PER_0110,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hứa Kim Tuyền,CONGB,1
+REL_WEB_901e20bbba8ecb3a5b24,PER_0018,COLLABORATED_WITH,PER_0090,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Vũ Cát Tường,Thu Minh,1
+REL_WEB_fe718c1d2e367fed321b,PER_0006,COLLABORATED_WITH,PER_0218,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Công Nam,Hương Tràm,1
+REL_WEB_b4f4f2ffc0c807c0dd0f,PER_0006,COLLABORATED_WITH,PER_2990,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Công Nam,Cầm,1
+REL_WEB_f592aa55e8211c4383a8,PER_0139,COLLABORATED_WITH,PER_0257,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hà Trần,Hồ Ngọc Hà,1
+REL_WEB_85262cd5bfa1fa4480a6,PER_2603,COLLABORATED_WITH,PER_3531,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,THƯ,Nguyên Khang,1
+REL_WEB_aba70d7217cc4680b76b,PER_0161,COLLABORATED_WITH,PER_0352,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Wxrdie,Tín Lê,1
+REL_WEB_a754ae9b6cf8041a134f,PER_0056,COLLABORATED_WITH,PER_0089,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,THANH DUY,Trúc Nhân,1
+REL_WEB_5bfcdefe167a92e4956a,PER_0020,COLLABORATED_WITH,PER_0109,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,LyLy,BẢO ANH,1
+REL_WEB_066d396bb0a291925654,PER_0020,COLLABORATED_WITH,PER_2027,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,LyLy,Táo,1
+REL_WEB_d81263981b8be07ed078,PER_0109,COLLABORATED_WITH,PER_2027,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,BẢO ANH,Táo,1
+REL_WEB_e662940935e4b0321a4c,PER_0239,COLLABORATED_WITH,PER_0286,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hương Ly,Tăng Phúc,1
+REL_WEB_92a54ab44a81e9a2e51f,PER_0295,COLLABORATED_WITH,PER_0879,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Trung Quân Idol,Dương Khắc Linh,1
+REL_WEB_f435e9f076892b1871f7,PER_0010,COLLABORATED_WITH,PER_0202,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG DŨNG,HÀ LÊ,1
+REL_WEB_2ac3b309309bcc83fa84,PER_0006,COLLABORATED_WITH,PER_3623,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Công Nam,Nguyễn Lâm Thảo Tâm,1
+REL_WEB_674173bdfcd6ff1a3a8a,PER_0295,COLLABORATED_WITH,PER_2497,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Trung Quân Idol,PHÍ PHƯƠNG ANH,1
+REL_WEB_e49bf5a5a0e4d384ff68,PER_0010,COLLABORATED_WITH,PER_0143,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,HOÀNG DŨNG,Thuỳ Chi,2
+REL_WEB_0bb2c8b9be6c9c4db6fd,PER_0089,COLLABORATED_WITH,PER_0143,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Trúc Nhân,Thuỳ Chi,1
+REL_WEB_d389926af07c3f8f533e,PER_0249,DISPUTED_WITH,PER_1249,đã xác minh,không,,,cáo buộc (cần kiểm tra),web evidence reviewed,VƯƠNG ANH TÚ,Ông Cao Thắng,1
+REL_WEB_bab353d83acac3c9eea3,PER_0445,COLLABORATED_WITH,PER_0472,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hoon,Jombie,1
+REL_WEB_71069d93886b0c75d3c9,PER_0257,COLLABORATED_WITH,PER_2288,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hồ Ngọc Hà,Đinh Hà Uyên Thư,1
+REL_WEB_01888c8872d7c256789c,PER_0109,COLLABORATED_WITH,PER_2808,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,BẢO ANH,Kai,1
+REL_WEB_0a7ef9e6d45c22cedcf3,PER_0044,COLLABORATED_WITH,PER_1088,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Wren Evans,Evy,1
+REL_WEB_5240bff137d60141ca02,PER_0015,COLLABORATED_WITH,PER_0066,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Negav,HOÀNG TÔN,1
+REL_WEB_69ddc3cb4888d9b26f6a,PER_0117,COLLABORATED_WITH,PER_0519,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,TUẤN HƯNG,Minh Vương,1
+REL_WEB_c5d9fe20dd6bea6d666f,PER_0004,COLLABORATED_WITH,PER_3600,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Anh Tú,10CM,1
+REL_WEB_3470e1ab43caac3287e2,PER_0033,COLLABORATED_WITH,PER_0908,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hòa Minzy,Lam Trường,1
+REL_WEB_09874e4d2dae957ddbce,PER_0017,COLLABORATED_WITH,PER_0197,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Khắc Hưng,THỎ,1
+REL_WEB_02cec9773d99b3ce6d6d,PER_0019,COLLABORATED_WITH,PER_0281,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hứa Kim Tuyền,Chi Pu,1
+REL_WEB_f740dd38de85c28223c7,PER_0019,COLLABORATED_WITH,PER_2288,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hứa Kim Tuyền,Đinh Hà Uyên Thư,1
+REL_WEB_b1bbbf8614c20fd5a35e,PER_0281,COLLABORATED_WITH,PER_2288,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Chi Pu,Đinh Hà Uyên Thư,1
+REL_WEB_aab7f43ac29cd66c450c,PER_0038,COLLABORATED_WITH,PER_1265,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,GILL,HYPERFOCUS,1
+REL_WEB_fc9857ee32d48bbf38a4,PER_0007,COLLABORATED_WITH,PER_2915,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Văn Mai Hương,Thục Anh,1
+REL_WEB_5e82c5731b965062b771,PER_0019,COLLABORATED_WITH,PER_0303,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hứa Kim Tuyền,Đen Vâu,1
+REL_WEB_7c1f869019c8b0d42c64,PER_0019,COLLABORATED_WITH,PER_0033,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hứa Kim Tuyền,Hòa Minzy,1
+REL_WEB_0b8eb670cf55979de2df,PER_0033,COLLABORATED_WITH,PER_0268,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Hòa Minzy,Obito,1
+REL_WEB_854fd10b58de92ac1df2,PER_0295,COLLABORATED_WITH,PER_3135,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Trung Quân Idol,Huyền Sambi,1
+REL_WEB_73b87504c3ad71dc32b3,PER_0041,COLLABORATED_WITH,PER_1308,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,KAI ĐINH,JANG MI,1
+REL_WEB_5d32b4892c3791190b47,PER_0088,COLLABORATED_WITH,PER_0266,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Quân A.P,Myra Trần,1
+REL_WEB_da29466f4c67879f2d1a,PER_0099,COLLABORATED_WITH,PER_0276,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,WOKEUP,VŨ PHỤNG TIÊN,1
+REL_WEB_f4e6aee468f353f2327e,PER_0006,COLLABORATED_WITH,PER_0140,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Công Nam,NGUYỄN HÙNG,1
+REL_WEB_bb2ad9d27c83f0d5afbd,PER_0143,COLLABORATED_WITH,PER_0291,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Thuỳ Chi,Hà Anh Tuấn,1
+REL_WEB_a26cc5ed2105bf5c2211,PER_0008,COLLABORATED_WITH,PER_0963,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,B Ray,RedT,1
+REL_WEB_7e59dddc2e922cb37f58,PER_0008,COLLABORATED_WITH,PER_2434,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,B Ray,Ý Tiên,1
+REL_WEB_f100fe35d7e89f07456b,PER_0263,COLLABORATED_WITH,PER_2434,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,MASEW,Ý Tiên,1
+REL_WEB_4e2ce3cf5eae9e3ef81a,PER_0963,COLLABORATED_WITH,PER_2434,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,RedT,Ý Tiên,1
+REL_WEB_b2fb753fe1a539039d07,PER_0005,COLLABORATED_WITH,PER_0216,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Orange,Liu Grace,1
+REL_WEB_98e530088ff76700e30a,PER_0216,COLLABORATED_WITH,PER_0263,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Liu Grace,MASEW,1
+REL_WEB_abb177b152af3ea6eb6c,PER_0006,COLLABORATED_WITH,PER_0019,đã xác minh,không,,,tín hiệu hợp tác; chỉ suy ra cạnh sau khi xác minh credit cùng tác phẩm,web evidence reviewed,Bùi Công Nam,Hứa Kim Tuyền,1

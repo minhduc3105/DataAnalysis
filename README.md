@@ -37,6 +37,7 @@ uv run python main.py web sources-check         # kiểm tra RSS và website ngu
 uv run python main.py web discover              # tìm URL từ RSS, sitemap và Google News RSS
 uv run python main.py web discover --from 2024-01-01 --to 2024-12-31  # giới hạn theo ngày đăng
 uv run python main.py web crawl                 # tải tiếp URL đã tìm, giữ HTML gốc để chạy lại
+uv lock && uv sync && uv run playwright install chromium  # cài Chromium một lần nếu dùng --browser-fallback
 uv run python main.py web clean                 # xuất web_documents.csv và document_entities.csv
 uv run python main.py web signals               # phát hiện cặp người có tín hiệu hợp tác/xung đột
 uv run python main.py extract                   # rút credit, bài hát, album, label, brand, handle MXH → mentions.csv, social_handles.csv
@@ -63,7 +64,7 @@ Chạy lại `documents → extract → graph` mỗi khi sửa seeds hoặc craw
 
 Luồng web đọc danh mục `seeds/web_sources.csv`, lấy thực thể từ `data/interim/graph/entities.csv`, lưu hàng đợi và checkpoint tìm kiếm tại `data/raw/web/crawl.sqlite3`, HTML/nội dung tại `data/raw/web/`. `discover` lấy URL từ RSS, sitemap (khi chạy toàn kỳ) và Google News RSS với một query cho mỗi entity trên toàn khoảng ngày; query được chạy tiếp theo từng đợt, mặc định tối đa 50 query mỗi lượt. Dùng `--search-limit` để đổi giới hạn, `--entity` để lọc ID. Thêm `--from YYYY-MM-DD` và/hoặc `--to YYYY-MM-DD` để giới hạn kỳ tìm kiếm; URL vẫn được lưu dù ngày RSS ngoài kỳ, rồi ngày xuất bản bài gốc được xác minh lúc crawl/clean. Chạy `discover --dry-run` để xem query dự kiến mà không gọi mạng hoặc ghi checkpoint. Mỗi URL nguyên bản được lưu, chỉ chuỗi giống hệt mới trùng; query, nguồn và entity phát hiện link vẫn được lưu trong provenance. `crawl` giải URL Google News, tải trang và giữ riêng URL đầu vào, URL giải được và URL cuối sau redirect. `clean` xác minh loại trang, ngày và liên quan cho tập phân tích kỳ **01/01/2016–21/10/2026**.
 
-`web crawl` tự giải tối đa 50 URL Google News mỗi lượt ra URL bài gốc, rồi tải URL HTTP(S) đang chờ; dùng `--resolve-limit` để đổi số link giải, `--limit` để giới hạn số URL và `--workers` để đặt số tải song song (mặc định 8). Các request tới cùng host được giãn nhịp. Kết quả được ghi theo lô; dừng giữa lượt thì các lô đã lưu vẫn nằm trong DB/CSV. URL không phải bài, ảnh, chuyên mục, thiếu ngày, ngày mâu thuẫn hoặc chưa rõ liên quan vẫn được giữ trong kho và gắn lý do để duyệt. Wikipedia/Wikidata được đánh dấu ngoài phạm vi và không tải nội dung. Nội dung giống nhau được đánh dấu bằng `duplicate_content_of`, không xóa URL. Bài ngoài kỳ vẫn được lưu nhưng không vào tập phân tích. URL RSS/sitemap và query giữ nguồn gốc; thời gian RSS không thay ngày bài gốc. `web crawl --entity PER_0001` lọc URL đang chờ theo entity. Số trang tải, đạt, chờ duyệt, ngoài kỳ và lỗi được ghi riêng ở `web_crawl_report.json`.
+`web crawl` dùng HTTP trước. `--browser-fallback` bật Chromium để giải Google News bằng redirect JavaScript hoặc đọc DOM đã render; Chromium cần cài một lần bằng lệnh bên trên. HTTP không xác minh được trang trung gian Google News là bài báo. Dùng `--resolve-limit` để giới hạn link Google News được giải, `--limit` để giới hạn số URL sau khi lọc chính xác entity, và `--workers` để đặt số tải song song. Mỗi URL đầu vào và ID tài liệu được giữ nguyên; `resolved_url` và `final_url` lưu riêng. Bản ghi chỉ được tính thành công khi trang báo gốc có đủ tiêu đề, ngày đăng và đoạn mở đầu. Tiêu đề, abstract, đoạn mở đầu và ngày đều lưu nguồn trích xuất; RSS description nằm riêng trong `rss_abstract`, không thay metadata bài báo. Thiếu trường, ngày mâu thuẫn, ngoài kỳ hoặc chưa rõ liên quan được lưu để duyệt. Trình duyệt dùng chung, tối đa hai trang đồng thời, và các request cùng host được giãn nhịp. Kết quả được ghi theo lô; dừng giữa lượt thì các lô đã lưu vẫn nằm trong DB/CSV. Nội dung giống nhau được đánh dấu bằng `duplicate_content_of`, không xóa URL. Báo cáo `web_crawl_report.json` tách URL đã chọn/hoãn, tải trang báo, đủ trường, thiếu trường và lỗi theo bước.
 
 `web clean` dùng pandas để đọc bảng, chuẩn hóa ngày và văn bản, phân loại phạm vi, nối ID thực thể và tạo thống kê; không gộp URL khác nhau hoặc tài liệu chỉ vì nội dung giống nhau. `web signals` xuất `web_relation_candidates.csv` với câu trích, loại tín hiệu, trạng thái quan hệ hiện tại trong graph và trạng thái duyệt. Sửa `review_status`/`query_status` trong CSV để duyệt; lần chạy sau giữ quyết định đó, và đánh dấu duyệt lại nếu nội dung đổi. Từ điển chỉnh được ở `seeds/web_relation_terms.csv`; quan hệ có sẵn không chặn tìm tín hiệu loại khác. Google News candidates nằm ở `web_candidates.csv`; điền URL gốc rồi chạy `web review-import`. Query đã hoàn tất theo bộ lọc cũ sẽ được chạy lại một lượt khi phiên bản bộ lọc đổi. Dùng `web recover-urls --dry-run` để đếm URL lịch sử bị loại có thể phục hồi, rồi `web recover-urls` để đưa chúng về hàng đợi. Báo cáo query nằm ở `web_search_report.json`.
 
@@ -171,6 +172,7 @@ uv run python main.py web add-urls --entity PER_0001 --url 'https://example.com/
 uv run python main.py web discover --entity PER_0001 --search-limit 5 --dry-run
 uv run python main.py web discover --entity PER_0001 --search-limit 5 --limit-per-source 100
 uv run python main.py web crawl --entity PER_0001 --limit 20 --resolve-limit 10
+uv run python main.py web crawl --entity PER_0001 --limit 20 --resolve-limit 10 --browser-fallback
 uv run python main.py web clean
 uv run python main.py web signals
 ```
@@ -198,4 +200,55 @@ Chạy kiểm thử offline (dữ liệu giả chỉ nằm trong thư mục tạ
 
 ```bash
 uv run python -m unittest discover -s tests -v
+```
+
+### Chuẩn hóa bài báo web thành graph riêng
+
+Luồng dưới đây chỉ dùng dữ liệu báo chí đã crawl; không chạy crawl mới và không ghi graph tổng. Kết quả nằm trong `data/processed/web/`.
+
+```bash
+uv run python main.py web recover-data --dry-run
+uv run python main.py web recover-data
+uv run python main.py web merge-data --dry-run
+uv run python main.py web merge-data
+uv run python main.py web normalize
+uv run python main.py web relations
+uv run python main.py web graph-build
+```
+
+`recover-data` phục hồi HTML còn thiếu vào `recovered_documents.csv`; `merge-data` hợp nhất CSV hiện tại, JSONL lịch sử và bản phục hồi theo ID/URL, có thể chạy lặp lại. `normalize` xuất kho bài chuẩn, bài cần kiểm tra/bị loại, nhóm trùng và liên kết tài liệu–thực thể. `relations` tạo `relation_candidates.csv` cùng sổ `relation_decisions.csv`; tín hiệu mặc định là `unreviewed`. Duyệt một tín hiệu bằng lệnh sau, thay ID và ghi người duyệt/lý do:
+
+```bash
+uv run python main.py web decide-relation --signal-id SIG_ID --decision accepted --reviewer "Tên người duyệt" --reason "Câu trong bài xác nhận quan hệ"
+```
+
+`--decision` nhận `accepted`, `rejected` hoặc `unverified`. Có thể duyệt hàng loạt bằng cách sửa `review_status`, `decision_reason`, `reviewed_by` trong `relation_decisions.csv`; giữ `candidate_content_hash` nguyên trạng, rồi chạy `uv run python main.py web apply-decisions`. Quyết định `accepted` cần lý do và hash ứng viên phải còn khớp. Sau khi duyệt, chạy `graph-build` để xuất `graph_clean/`. Chỉ tín hiệu `accepted` có hash nội dung hiện hành, URL, câu trích và hai ID thực thể hợp lệ mới thành cạnh. Xem `quality_report.json`, `relation_report.json` và `graph_report.json` để kiểm tra số liệu. Không nạp `graph_clean/` bằng `neo4j load`; lệnh đó nạp graph tổng và xóa dữ liệu Neo4j hiện có.
+
+Có thể chạy lượt rà ngữ nghĩa tự động bằng OpenRouter. Key có thể đặt ở `OPENROUTER_API_KEY` hoặc `OPENAI_API_KEY`; model ở `OPENROUTER_MODEL` hoặc `WEB_RELATION_REVIEW_MODEL` (tên model theo dạng `provider/model`). Endpoint mặc định là `https://openrouter.ai/api/v1`; có thể ghi đè bằng `OPENROUTER_BASE_URL`. Hai header ghi nhận ứng dụng là tùy chọn qua `OPENROUTER_HTTP_REFERER` và `OPENROUTER_APP_TITLE`. Lệnh dưới đây chỉ ước lượng số quan hệ cần gửi, không gọi API:
+
+```bash
+uv run python main.py web semantic-review --dry-run
+```
+
+Chạy thử một quan hệ trước, rồi chạy tiếp toàn bộ. Mỗi quan hệ được gửi cùng tất cả bằng chứng và ngữ cảnh hiện có; kết quả được checkpoint sau từng quan hệ và lần chạy lại sẽ tiếp tục. `--force` chạy lại cả kết quả đã có:
+
+```bash
+uv run python main.py web semantic-review --limit 1
+uv run python main.py web semantic-review
+```
+
+Ví dụ các biến trong `.env` (điền key và model OpenRouter bạn muốn dùng):
+
+```dotenv
+OPENAI_API_KEY=... # Có thể dùng tên OPENROUTER_API_KEY thay thế
+WEB_RELATION_REVIEW_MODEL=provider/model # Hoặc OPENROUTER_MODEL
+```
+
+Kết quả nằm ở `graph_clean/relation_semantic_review.csv`, báo cáo ở `relation_semantic_review_report.json`. Các cột `auto_verdict`, `auto_relation_type_fit`, `auto_direction_fit`, `auto_issue_codes` và `auto_reason` là kết quả model để xem lại. Lệnh quét không sửa quyết định duyệt hoặc graph.
+
+Sau khi rà đủ toàn bộ graph, có thể tự nhập verdict của model vào sổ quyết định, áp dụng và dựng lại graph bằng một lệnh. Lệnh yêu cầu kết quả bao phủ đúng toàn bộ quan hệ và bằng chứng của graph hiện tại; `invalid` chuyển tín hiệu hỗ trợ quan hệ thành `rejected`, `uncertain` thành `unverified`, còn `valid` giữ nguyên quyết định. Kết quả semantic cũ được lưu thành bản archive và bảng đầu vào được làm mới theo graph mới:
+
+```bash
+uv run python main.py web apply-semantic-review --dry-run
+uv run python main.py web apply-semantic-review
 ```

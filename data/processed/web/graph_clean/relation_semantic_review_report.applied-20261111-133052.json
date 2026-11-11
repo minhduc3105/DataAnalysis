@@ -1,0 +1,28 @@
+{
+  "relations_reviewed": 1311,
+  "verdicts": {
+    "valid": 633,
+    "invalid": 395,
+    "uncertain": 283
+  },
+  "signals_to_reject": 798,
+  "signals_to_unverify": 542,
+  "signals_preserved": 2553,
+  "mode": "applied",
+  "decision_backup": "/run/media/minhduc/D/Study/DataAnalysis/data/processed/web/relation_decisions.before-semantic-review-20261111-133051.csv",
+  "decision_ledger": "/run/media/minhduc/D/Study/DataAnalysis/data/processed/web/relation_decisions.csv",
+  "applied_decisions": 4256,
+  "graph": {
+    "entities": 340,
+    "relations": 633,
+    "evidence": 2553,
+    "web_documents_ready": 5240
+  },
+  "refreshed_review_input": {
+    "current_graph_relations": 633,
+    "current_graph_evidence": 2553,
+    "review_input": "/run/media/minhduc/D/Study/DataAnalysis/data/processed/web/graph_clean/semantic_review.csv"
+  },
+  "audit_archive": "/run/media/minhduc/D/Study/DataAnalysis/data/processed/web/graph_clean/relation_semantic_review.applied-20261111-133052.csv",
+  "audit_report_archive": "/run/media/minhduc/D/Study/DataAnalysis/data/processed/web/graph_clean/relation_semantic_review_report.applied-20261111-133052.json"
+}

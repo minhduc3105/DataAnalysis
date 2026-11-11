@@ -1,0 +1,9 @@
+{
+  "web_documents_ready": 5240,
+  "candidate_signals": 4256,
+  "accepted_signals": 2553,
+  "relations": 633,
+  "evidence": 2553,
+  "entities": 340,
+  "excluded_accepted_signals": []
+}

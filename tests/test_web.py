@@ -169,6 +169,74 @@ class WebTests(unittest.TestCase):
             self.assertEqual(web._resolve_news_url(deceptive), deceptive)
             get.assert_not_called()
 
+    def test_google_news_intermediate_is_not_counted_as_article_when_unresolved(self):
+        class Response:
+            url = 'https://news.google.com/rss/articles/example?oc=5'
+            text = ('<html><head><meta property="og:title" content="Tiêu đề bài báo">'
+                    '<meta name="author" content="Tác giả thử nghiệm">'
+                    '<meta property="og:description" content="Mô tả ngắn của bài báo."></head></html>')
+
+        with patch.object(web, '_google_news_response', return_value=('', Response())):
+            result = web._fetch_crawl_item(
+                Response.url, '', 'PER_0001', 'Google News', 'Google News RSS', True,
+                'RSS description must stay only as a hint', [], {}, [],
+            )
+        self.assertEqual(result['kind'], 'error')
+        self.assertEqual(result['step'], 'resolve_http')
+        self.assertIn('Chromium', result['error'])
+
+    def test_article_extraction_uses_publisher_fields_and_separates_rss(self):
+        html = '''<html><head><meta property="og:title" content="Tên báo - bài viết">
+        <script type="application/ld+json">{"@type":"NewsArticle","headline":"Tiêu đề thật","datePublished":"2020-05-03T10:30:00+07:00","dateModified":"2020-05-04T10:30:00+07:00","description":"Sapo đã xác minh","author":{"name":"Tác giả"}}</script></head>
+        <body><nav><p>Menu giả không được lấy.</p></nav><main><article><h1>H1 thật</h1><p class="sapo">Sapo trong bài.</p><p>Đoạn mở đầu thứ nhất của bài báo có nội dung đủ dài để nhận diện và kiểm tra được.</p><p>Đoạn thứ hai cũng thuộc nội dung bài.</p></article></main><aside><p>Bài liên quan giả.</p></aside></body></html>'''
+        row = web._extract_article_html('https://example.com/news/story', html, ['P1'], [('P1', 'Nghệ sĩ', 'nghe si')])
+        self.assertEqual(row['title'], 'Tiêu đề thật')
+        self.assertEqual(row['title_source'], 'json-ld:headline')
+        self.assertEqual(row['abstract'], 'Sapo đã xác minh')
+        self.assertNotIn('Menu giả', row['article_lead'])
+        self.assertNotIn('Bài liên quan giả', row['article_lead'])
+        self.assertEqual(row['published'], '2020-05-03')
+        self.assertEqual(row['published_iso'], '2020-05-03T10:30:00+07:00')
+
+    def test_queue_filters_exact_entity_before_limit(self):
+        rows = [
+            ('u1', '', 'P2', '', '', 0, ''),
+            ('u2', '', 'P1,P2', '', '', 0, ''),
+            ('u3', '', 'P1', '', '', 0, ''),
+        ]
+        selected, total, deferred = web._filter_queue_rows(rows, ['P1'], 1)
+        self.assertEqual([row[0] for row in selected], ['u2'])
+        self.assertEqual((total, deferred), (2, 1))
+
+    def test_unique_single_word_artist_alias_matches_headline_but_collision_does_not(self):
+        entities = [
+            {'entity_id': 'PER_0001', 'canonical_name': 'RHYDER', 'aliases': 'Quang Anh Rhyder'},
+            {'entity_id': 'PER_0002', 'canonical_name': 'HIEUTHUHAI', 'aliases': 'HIEUTHUHAI'},
+        ]
+        terms = web._relevance_terms(entities)
+        self.assertIn('PER_0001', web._relevance_matches('RHYDER ra mắt MV mới', 'RHYDER ra mắt MV mới', terms))
+        collided = entities + [{'entity_id': 'PER_0003', 'canonical_name': 'Rhyder', 'aliases': ''}]
+        collided_terms = web._relevance_terms(collided)
+        self.assertNotIn('PER_0001', web._relevance_matches('RHYDER ra mắt MV mới', 'RHYDER ra mắt MV mới', collided_terms))
+
+    def test_google_news_rss_metadata_text_is_readable(self):
+        xml = b'''<rss><channel><item><title>Title &amp; source</title>
+        <description><![CDATA[<p>Opening <b>summary</b>.</p>]]></description>
+        <source>Publisher</source><link>https://news.google.com/rss/articles/id</link>
+        <pubDate>Wed, 10 Jun 2020 12:00:00 GMT</pubDate></item></channel></rss>'''
+
+        class Response:
+            content = xml
+            def raise_for_status(self):
+                return None
+
+        with patch.object(web, '_polite_get', return_value=Response()):
+            item = next(web._xml_items('https://news.google.com/rss/search?q=test', include_metadata=True))
+        self.assertEqual(item[2], 'Title & source')
+        self.assertEqual(item[3], 'Opening summary.')
+        self.assertEqual(item[4], 'Publisher')
+        self.assertEqual(web._date(item[1]), '2020-06-10')
+
     def test_query_plan_uses_one_full_period_query_per_entity(self):
         entities = [
             {'entity_id': 'P1', 'entity_type': 'Person', 'canonical_name': 'Ca sĩ Một', 'aliases': ''},

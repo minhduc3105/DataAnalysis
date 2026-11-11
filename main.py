@@ -74,6 +74,7 @@ def cmd_documents(_args) -> None:
 
 
 def cmd_web(args) -> None:
+    from crawler import web_pipeline
     if args.action == "sources-check":
         web.sources_check()
     elif args.action == "add-urls":
@@ -81,7 +82,7 @@ def cmd_web(args) -> None:
     elif args.action == "discover":
         web.discover(args.entity, args.limit_per_source, args.search_limit, args.dry_run, args.date_from, args.date_to, args.force)
     elif args.action == "crawl":
-        web.crawl(args.limit, args.entity, args.resolve_limit, args.workers)
+        web.crawl(args.limit, args.entity, args.resolve_limit, args.workers, args.browser_fallback)
     elif args.action == "clean":
         web.clean()
     elif args.action == "signals":
@@ -93,6 +94,30 @@ def cmd_web(args) -> None:
         web.review_import()
     elif args.action == "recover-urls":
         web.recover_urls(args.dry_run)
+    elif args.action == "recover-data":
+        web_pipeline.recover(args.dry_run)
+    elif args.action == "merge-data":
+        web_pipeline.merge(args.dry_run)
+    elif args.action == "normalize":
+        web_pipeline.normalize()
+    elif args.action == "relations":
+        web_pipeline.build_signals()
+    elif args.action == "decide-relation":
+        if not args.signal_id or not args.decision:
+            raise SystemExit("web decide-relation yêu cầu --signal-id và --decision")
+        web_pipeline.set_decision(args.signal_id, args.decision, args.reason or "", args.reviewer or "")
+    elif args.action == "apply-decisions":
+        web_pipeline.apply_decisions()
+    elif args.action == "graph-build":
+        web_pipeline.build_graph()
+    elif args.action == "semantic-review":
+        from crawler import web_semantic_review
+        web_semantic_review.run(limit=args.limit, force=args.force, dry_run=args.dry_run)
+    elif args.action == "apply-semantic-review":
+        from crawler import web_semantic_review
+        web_semantic_review.apply_and_rebuild(dry_run=args.dry_run)
+    elif args.action == "pipeline":
+        web_pipeline.pipeline(args.dry_run)
     else:
         web.stats()
 
@@ -186,18 +211,23 @@ def main() -> None:
 
     sub.add_parser("documents", help="Xuất bảng Document").set_defaults(func=cmd_documents)
     web_parser = sub.add_parser("web", help="Thu thập báo chí và website chính thức")
-    web_parser.add_argument("action", choices=["sources-check", "add-urls", "discover", "crawl", "clean", "signals", "review-export", "review-import", "recover-urls", "stats"])
+    web_parser.add_argument("action", choices=["sources-check", "add-urls", "discover", "crawl", "clean", "signals", "review-export", "review-import", "recover-urls", "recover-data", "merge-data", "normalize", "relations", "decide-relation", "apply-decisions", "graph-build", "semantic-review", "apply-semantic-review", "pipeline", "stats"])
     web_parser.add_argument("--entity", nargs="*", help="Chỉ xử lý entity_id được chọn trong discover/crawl")
     web_parser.add_argument("--limit-per-source", type=int, default=1000, help="Số URL sitemap tối đa đọc mỗi nguồn")
     web_parser.add_argument("--search-limit", type=int, default=50, help="Tổng số query Google News tối đa trong lượt")
-    web_parser.add_argument("--dry-run", action="store_true", help="discover: chỉ xem query dự kiến, không gọi mạng hoặc ghi checkpoint")
+    web_parser.add_argument("--dry-run", action="store_true", help="Chỉ xem trước; không gọi API hoặc thay đổi dữ liệu (theo action)")
     web_parser.add_argument("--force", action="store_true", help="discover: chạy lại cả query đã hoàn tất gần đây")
     web_parser.add_argument("--from", dest="date_from", help="Ngày đăng bắt đầu, YYYY-MM-DD")
     web_parser.add_argument("--to", dest="date_to", help="Ngày đăng kết thúc, YYYY-MM-DD")
     web_parser.add_argument("--limit", type=int, help="Số URL tối đa crawl trong lượt")
     web_parser.add_argument("--resolve-limit", type=int, default=50, help="Số link Google News tối đa tự giải ra URL bài gốc mỗi lượt crawl")
     web_parser.add_argument("--workers", type=int, default=8, help="Số URL tải song song tối đa; request cùng host vẫn được giãn nhịp")
+    web_parser.add_argument("--browser-fallback", action="store_true", help="Dùng Chromium khi HTTP chưa giải được Google News hoặc thiếu dữ liệu trong HTML ban đầu")
     web_parser.add_argument("--url", nargs="+", help="URL bài gốc cho action add-urls")
+    web_parser.add_argument("--signal-id", help="ID tín hiệu cho action decide-relation")
+    web_parser.add_argument("--decision", choices=["accepted", "rejected", "unverified"], help="Quyết định duyệt bằng chứng quan hệ")
+    web_parser.add_argument("--reason", help="Lý do quyết định duyệt quan hệ")
+    web_parser.add_argument("--reviewer", help="Người duyệt quan hệ")
     web_parser.set_defaults(func=cmd_web)
     sub.add_parser("extract", help="Rút credit, bài hát, label, brand, handle MXH từ documents.csv").set_defaults(func=cmd_extract)
     sub.add_parser("graph", help="Dựng bảng Entity/Relation/Evidence từ mentions.csv").set_defaults(func=cmd_graph)
