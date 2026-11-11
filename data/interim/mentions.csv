@@ -466,9 +466,8 @@ DOC_YT_3gNuUcPg1fk,SEED_084,mv_audio,Warner Music Vietnam,Company,audio_distribu
 DOC_YT_3gNuUcPg1fk,SEED_084,mv_audio,Warner Music Vietnam,Company,audio_distributor,HIT ME UP,,mô tả dòng 6,Pre-order 'Đan Xinh In Love' Box Set: http://wmvn.lnk.to/PreOrder-EPBINZ,quy tắc: dòng bản quyền/label
 DOC_YT_3gNuUcPg1fk,SEED_084,mv_audio,SS Label,Company,rights_owner,HIT ME UP,,mô tả dòng 30,© Bản quyền thuộc về SS Label & Binz Da Poet,quy tắc: dòng bản quyền/label
 DOC_YT_3gNuUcPg1fk,SEED_084,mv_audio,SS Label,Company,rights_owner,HIT ME UP,,mô tả dòng 31,© Copyright by SS Label & Binz Da Poet ☞ Do not Reup,quy tắc: dòng bản quyền/label
-DOC_YT_uiWqHVaMbn4,SEED_084,mv_audio,BINZ,Person,performer,The Story of Don't Break My Heart Collection,,tiêu đề,BINZ - The Story of Don't Break My Heart Collection,quy tắc: tiêu đề
-DOC_YT_uiWqHVaMbn4,SEED_084,mv_audio,The Story of Don't Break My Heart Collection,Song,song,The Story of Don't Break My Heart Collection,,tiêu đề,BINZ - The Story of Don't Break My Heart Collection,quy tắc: tiêu đề
-DOC_YT_uiWqHVaMbn4,SEED_084,mv_audio,Warner Music Vietnam,Company,audio_distributor,The Story of Don't Break My Heart Collection,,mô tả dòng 3,Audio here: https://wmvn.lnk.to/Binz-DBMH,quy tắc: dòng bản quyền/label
+DOC_YT_uiWqHVaMbn4,SEED_084,mv_audio,BINZ,Person,performer,,,tiêu đề,BINZ - The Story of Don't Break My Heart Collection,quy tắc: tiêu đề
+DOC_YT_uiWqHVaMbn4,SEED_084,mv_audio,Warner Music Vietnam,Company,audio_distributor,,,mô tả dòng 3,Audio here: https://wmvn.lnk.to/Binz-DBMH,quy tắc: dòng bản quyền/label
 DOC_YT_x8NfGzO83DQ,SEED_084,mv_audio,BINZ,Person,performer,DON'T BREAK MY HEART,,tiêu đề,BINZ x TOULIVER - DON'T BREAK MY HEART (Official Lyric Video),quy tắc: tiêu đề
 DOC_YT_x8NfGzO83DQ,SEED_084,mv_audio,TOULIVER,Person,performer,DON'T BREAK MY HEART,,tiêu đề,BINZ x TOULIVER - DON'T BREAK MY HEART (Official Lyric Video),quy tắc: tiêu đề
 DOC_YT_x8NfGzO83DQ,SEED_084,mv_audio,DON'T BREAK MY HEART,Song,song,DON'T BREAK MY HEART,,tiêu đề,BINZ x TOULIVER - DON'T BREAK MY HEART (Official Lyric Video),quy tắc: tiêu đề
@@ -601,6 +600,10 @@ DOC_YT_niaVYsuqu5o,ART_0031,mv_audio,THANH DUY,Person,performer,KIỀU OANH,,ti�
 DOC_YT_niaVYsuqu5o,ART_0031,mv_audio,KIỀU OANH,Song,song,KIỀU OANH,,tiêu đề,THANH DUY - KIỀU OANH - NÔN CƯỚI - NHẠC CƯỚI 2024,quy tắc: tiêu đề
 DOC_YT_niaVYsuqu5o,ART_0031,mv_audio,Thanh Duy,Person,composer,KIỀU OANH,,mô tả dòng 2,Sáng tác: Thanh Duy,quy tắc: dòng credit
 DOC_YT_wWEgrPSu7q4,ART_0031,mv_audio,Thanh Duy,Person,performer,,,tiêu đề,Thanh Duy - Album Xuân 1986,quy tắc: tiêu đề
+DOC_YT_QuZyovR7O6E,ART_0031,mv_audio,thanh duy,Person,featured,delilah,,tiêu đề,delilah - delilah ft. thanh duy - extended mix MV,quy tắc: tiêu đề
+DOC_YT_QuZyovR7O6E,ART_0031,mv_audio,delilah,Song,song,delilah,,tiêu đề,delilah - delilah ft. thanh duy - extended mix MV,quy tắc: tiêu đề
+DOC_YT_CjMy7oiS7_4,ART_0031,mv_audio,thanh duy,Person,featured,delilah,,tiêu đề,turn me on - delilah ft. thanh duy - extended mix MV,quy tắc: tiêu đề
+DOC_YT_CjMy7oiS7_4,ART_0031,mv_audio,delilah,Song,song,delilah,,tiêu đề,turn me on - delilah ft. thanh duy - extended mix MV,quy tắc: tiêu đề
 DOC_YT_mwElf5K84Fc,ART_0031,mv_audio,Shin Hồng Vịnh,Person,composer,,,mô tả dòng 3,Sáng tác: Shin Hồng Vịnh,quy tắc: dòng credit
 DOC_YT_mwElf5K84Fc,ART_0031,mv_audio,Cm1x,Person,producer,,,mô tả dòng 4,Phối khí: Cm1x,quy tắc: dòng credit
 DOC_YT_qmDi-oY52Ic,ART_0031,mv_audio,THANH DUY,Person,performer,THỞ RA THỞ VÀO,,tiêu đề,THANH DUY x NVM | THỞ RA THỞ VÀO | Backstage Moments,quy tắc: tiêu đề
@@ -800,6 +803,7 @@ DOC_YT_BsdJhdnmbos,ART_0210,mv_audio,Seachains,Person,featured,ĐI ĐỂ TRỞ V
 DOC_YT_BsdJhdnmbos,ART_0210,mv_audio,ĐI ĐỂ TRỞ VỀ MASHUP 2020,Song,song,ĐI ĐỂ TRỞ VỀ MASHUP 2020,,tiêu đề,ĐI ĐỂ TRỞ VỀ MASHUP 2020 - Andiez ft Seachains,quy tắc: tiêu đề
 DOC_YT_4f9KlVDdFNk,ART_0210,mv_audio,TRÚC NHÂN,Person,performer,Chuyện Cũ Bỏ Qua,,tiêu đề,TRÚC NHÂN X MIRINDA - Chuyện Cũ Bỏ Qua - andiez ft seachains cover,quy tắc: tiêu đề
 DOC_YT_4f9KlVDdFNk,ART_0210,mv_audio,MIRINDA,Person,performer,Chuyện Cũ Bỏ Qua,,tiêu đề,TRÚC NHÂN X MIRINDA - Chuyện Cũ Bỏ Qua - andiez ft seachains cover,quy tắc: tiêu đề
+DOC_YT_4f9KlVDdFNk,ART_0210,mv_audio,andiez,Person,performer,Chuyện Cũ Bỏ Qua,,tiêu đề,TRÚC NHÂN X MIRINDA - Chuyện Cũ Bỏ Qua - andiez ft seachains cover,quy tắc: tiêu đề
 DOC_YT_4f9KlVDdFNk,ART_0210,mv_audio,Chuyện Cũ Bỏ Qua,Song,song,Chuyện Cũ Bỏ Qua,,tiêu đề,TRÚC NHÂN X MIRINDA - Chuyện Cũ Bỏ Qua - andiez ft seachains cover,quy tắc: tiêu đề
 DOC_YT_FE5Qrzb75OI,ART_0210,mv_audio,PHAN MẠNH QUỲNH,Person,performer,TẾT VỀ SỚM NHÉ,,tiêu đề,[ĐI ĐỂ TRỞ VỀ 4] TẾT VỀ SỚM NHÉ - PHAN MẠNH QUỲNH - ANDIEZ ft SEACHAINS (COVER),quy tắc: tiêu đề
 DOC_YT_FE5Qrzb75OI,ART_0210,mv_audio,ANDIEZ,Person,performer,TẾT VỀ SỚM NHÉ,,tiêu đề,[ĐI ĐỂ TRỞ VỀ 4] TẾT VỀ SỚM NHÉ - PHAN MẠNH QUỲNH - ANDIEZ ft SEACHAINS (COVER),quy tắc: tiêu đề
@@ -4410,11 +4414,13 @@ DOC_YT_PRKe695Cnuk,ART_0120,mv_audio,Sợ Quá Cơ,Song,song,Sợ Quá Cơ,,tiê
 DOC_YT_d_O9nXTHzuE,ART_0120,mv_audio,Pháo Northside,Person,performer,Ganh,,tiêu đề,Pháo Northside - Ganh ft.Sterry,quy tắc: tiêu đề
 DOC_YT_d_O9nXTHzuE,ART_0120,mv_audio,Sterry,Person,featured,Ganh,,tiêu đề,Pháo Northside - Ganh ft.Sterry,quy tắc: tiêu đề
 DOC_YT_d_O9nXTHzuE,ART_0120,mv_audio,Ganh,Song,song,Ganh,,tiêu đề,Pháo Northside - Ganh ft.Sterry,quy tắc: tiêu đề
+DOC_YT_GgOgjSlL4Pc,SEED_091,mv_audio,tlinh,Person,performer,người điên NẶNG,,tiêu đề,tlinh - người điên NẶNG | OFFICIAL MUSIC VIDEO,quy tắc: tiêu đề
 DOC_YT_GgOgjSlL4Pc,SEED_091,mv_audio,người điên NẶNG,Song,song,người điên NẶNG,,tiêu đề,tlinh - người điên NẶNG | OFFICIAL MUSIC VIDEO,quy tắc: tiêu đề
 DOC_YT_GgOgjSlL4Pc,SEED_091,mv_audio,Machiot,Person,producer,người điên NẶNG,,mô tả dòng 9,"Producers: Machiot, Onionn.",quy tắc: dòng credit
 DOC_YT_GgOgjSlL4Pc,SEED_091,mv_audio,Onionn,Person,producer,người điên NẶNG,,mô tả dòng 9,"Producers: Machiot, Onionn.",quy tắc: dòng credit
 DOC_YT_GgOgjSlL4Pc,SEED_091,mv_audio,Mạnh Phùng,Person,producer,người điên NẶNG,,mô tả dòng 49,Producer: Mạnh Phùng (Z),quy tắc: dòng credit
 DOC_YT_GgOgjSlL4Pc,SEED_091,mv_audio,M Music Records,Company,audio_distributor,người điên NẶNG,,mô tả dòng 3,STREAM HERE: https://mmusicrecords.lnk.to/ndn,quy tắc: dòng bản quyền/label
+DOC_YT_P3tKRc-_3aU,SEED_091,mv_audio,tlinh,Person,performer,dặm bùa yêu,,tiêu đề,tlinh - dặm bùa yêu (bùa yêu remix) (prod. by kaixolit),quy tắc: tiêu đề
 DOC_YT_P3tKRc-_3aU,SEED_091,mv_audio,dặm bùa yêu,Song,song,dặm bùa yêu,,tiêu đề,tlinh - dặm bùa yêu (bùa yêu remix) (prod. by kaixolit),quy tắc: tiêu đề
 DOC_YT_P3tKRc-_3aU,SEED_091,mv_audio,Bích Phương,Person,performer,dặm bùa yêu,,mô tả dòng 5,Artist: Bích Phương,quy tắc: dòng credit
 DOC_YT_P3tKRc-_3aU,SEED_091,mv_audio,Tiên Cookie,Person,composer,dặm bùa yêu,,mô tả dòng 6,"Composers: Tiên Cookie, Phạm Thanh Hà",quy tắc: dòng credit
@@ -4422,8 +4428,11 @@ DOC_YT_P3tKRc-_3aU,SEED_091,mv_audio,Tiên Cookie,Person,producer,dặm bùa yê
 DOC_YT_P3tKRc-_3aU,SEED_091,mv_audio,DuongK,Person,producer,dặm bùa yêu,,mô tả dòng 7,"Music Producers: Tiên Cookie, Phạm Thanh Hà, DuongK",quy tắc: dòng credit
 DOC_YT_x7jkV9TUCcc,SEED_091,mv_audio,Bao Hoang,Person,producer,,,mô tả dòng 17,Producer: Bao Hoang,quy tắc: dòng credit
 DOC_YT_x7jkV9TUCcc,SEED_091,mv_audio,Machiot,Person,producer,,,mô tả dòng 20,Music Producer: Machiot,quy tắc: dòng credit
+DOC_YT_mR0T9pG0rds,SEED_091,mv_audio,tlinh,Person,performer,,,tiêu đề,tlinh - mixset at Unveiled Rebellion (Machiot Remix),quy tắc: tiêu đề
+DOC_YT_mR0T9pG0rds,SEED_091,mv_audio,Machiot,Person,producer,,,tiêu đề,tlinh - mixset at Unveiled Rebellion (Machiot Remix),quy tắc: tiêu đề
 DOC_YT_mR0T9pG0rds,SEED_091,mv_audio,Machiot,Person,producer,,,mô tả dòng 17,Producer: Machiot,quy tắc: dòng credit
 DOC_YT_mR0T9pG0rds,SEED_091,mv_audio,M Music Records,Company,audio_distributor,,,mô tả dòng 3,Stream now : https://mmusicrecords.lnk.to/mixsetUR,quy tắc: dòng bản quyền/label
+DOC_YT_o2GzH5rQ9o0,SEED_091,mv_audio,tlinh,Person,performer,,,tiêu đề,tlinh - one click collection [REWIND 2025],quy tắc: tiêu đề
 DOC_YT_o2GzH5rQ9o0,SEED_091,mv_audio,2pillz,Person,producer,,,mô tả dòng 21,"Producer: wokeup, 2pillz, TGSN, Minsicko, KADO, Machiot",quy tắc: dòng credit
 DOC_YT_o2GzH5rQ9o0,SEED_091,mv_audio,TGSN,Person,producer,,,mô tả dòng 21,"Producer: wokeup, 2pillz, TGSN, Minsicko, KADO, Machiot",quy tắc: dòng credit
 DOC_YT_o2GzH5rQ9o0,SEED_091,mv_audio,Minsicko,Person,producer,,,mô tả dòng 21,"Producer: wokeup, 2pillz, TGSN, Minsicko, KADO, Machiot",quy tắc: dòng credit
@@ -4557,6 +4566,7 @@ DOC_YT_Y-Ak8yxiGZQ,SEED_091,performance_show,Low G,Person,performer,,,mô tả d
 DOC_YT_Y-Ak8yxiGZQ,SEED_091,performance_show,Low G,Person,composer,,,mô tả dòng 6,"Composers: tlinh, Low G",quy tắc: dòng credit
 DOC_YT_Y-Ak8yxiGZQ,SEED_091,performance_show,Maiki,Person,producer,,,mô tả dòng 7,Producers: Maiki,quy tắc: dòng credit
 DOC_YT_SZisFdrR0p4,SEED_091,mv_audio,AMEE,Person,performer,Miền Mộng Mị,,tiêu đề,AMEE x tlinh - Miền Mộng Mị (remake),quy tắc: tiêu đề
+DOC_YT_SZisFdrR0p4,SEED_091,mv_audio,tlinh,Person,performer,Miền Mộng Mị,,tiêu đề,AMEE x tlinh - Miền Mộng Mị (remake),quy tắc: tiêu đề
 DOC_YT_SZisFdrR0p4,SEED_091,mv_audio,Miền Mộng Mị,Song,song,Miền Mộng Mị,,tiêu đề,AMEE x tlinh - Miền Mộng Mị (remake),quy tắc: tiêu đề
 DOC_YT_SZisFdrR0p4,SEED_091,mv_audio,AMEE,Person,performer,Miền Mộng Mị,,mô tả dòng 4,"artists: AMEE, tlinh",quy tắc: dòng credit
 DOC_YT_SZisFdrR0p4,SEED_091,mv_audio,Hứa Kim Tuyền,Person,producer,Miền Mộng Mị,,mô tả dòng 7,"music producers: Hứa Kim Tuyền, TDK",quy tắc: dòng credit
@@ -4566,6 +4576,7 @@ DOC_YT_SZisFdrR0p4,SEED_091,mv_audio,WOKEUP,Person,producer,Miền Mộng Mị,,
 DOC_YT_SZisFdrR0p4,SEED_091,mv_audio,Vĩnh Tâm,Person,producer,Miền Mộng Mị,,mô tả dòng 11,"arrangers: WOKEUP, TDK, Vĩnh Tâm",quy tắc: dòng credit
 DOC_YT_SZisFdrR0p4,SEED_091,mv_audio,Hứa Kim Tuyền,Person,producer,Miền Mộng Mị,,mô tả dòng 12,"vocal producers: TDK, Hứa Kim Tuyền",quy tắc: dòng credit
 DOC_YT_eyArDrXnvcw,SEED_091,mv_audio,Low G,Person,performer,,,tiêu đề,tlinh x Low G - “FLVR” FULL EP | one-click version,quy tắc: tiêu đề
+DOC_YT_eyArDrXnvcw,SEED_091,mv_audio,tlinh,Person,performer,,,tiêu đề,tlinh x Low G - “FLVR” FULL EP | one-click version,quy tắc: tiêu đề
 DOC_YT_eyArDrXnvcw,SEED_091,mv_audio,Low G,Person,performer,,,mô tả dòng 10,"Artists: tlinh, Low G",quy tắc: dòng credit
 DOC_YT_eyArDrXnvcw,SEED_091,mv_audio,Low G,Person,composer,,,mô tả dòng 11,"Composers: tlinh, Low G",quy tắc: dòng credit
 DOC_YT_eyArDrXnvcw,SEED_091,mv_audio,Maiki,Person,producer,,,mô tả dòng 12,"Producers: Maiki, 2pillz, Machiot",quy tắc: dòng credit
@@ -4597,9 +4608,11 @@ DOC_YT_T6bZ-BU9wI4,SEED_091,performance_show,Samuel Bosch,Person,producer,,,mô 
 DOC_YT_T6bZ-BU9wI4,SEED_091,performance_show,M Music Records,Company,audio_distributor,,,mô tả dòng 16,https://mmusicrecords.lnk.to/ailivefromgenfest23,quy tắc: dòng bản quyền/label
 DOC_YT_T6bZ-BU9wI4,SEED_091,performance_show,M Music Records,Company,audio_distributor,,,mô tả dòng 17,Apple Music: https://mmusicrecords.lnk.to/ailivefromgenfest23/applemusic,quy tắc: dòng bản quyền/label
 DOC_YT_T6bZ-BU9wI4,SEED_091,performance_show,M Music Records,Company,audio_distributor,,,mô tả dòng 18,Spotify: https://mmusicrecords.lnk.to/ailivefromgenfest23/spotify,quy tắc: dòng bản quyền/label
+DOC_YT_ThabO5GV_J4,SEED_091,mv_audio,tlinh,Person,performer,đừng làm nó phức tạp,,tiêu đề,tlinh - đừng làm nó phức tạp | OFFICIAL LYRIC VIDEO,quy tắc: tiêu đề
 DOC_YT_ThabO5GV_J4,SEED_091,mv_audio,đừng làm nó phức tạp,Song,song,đừng làm nó phức tạp,,tiêu đề,tlinh - đừng làm nó phức tạp | OFFICIAL LYRIC VIDEO,quy tắc: tiêu đề
 DOC_YT_ThabO5GV_J4,SEED_091,mv_audio,2pillz,Person,producer,đừng làm nó phức tạp,,mô tả dòng 7,Producer: 2pillz,quy tắc: dòng credit
 DOC_YT_ThabO5GV_J4,SEED_091,mv_audio,Hng,Person,producer,đừng làm nó phức tạp,,mô tả dòng 10,Producer: Hng,quy tắc: dòng credit
+DOC_YT_k2oCfQ5QOIk,SEED_091,mv_audio,tlinh,Person,performer,đừng làm nó phức tạp,,tiêu đề,tlinh - đừng làm nó phức tạp | OFFICIAL MUSIC VIDEO,quy tắc: tiêu đề
 DOC_YT_k2oCfQ5QOIk,SEED_091,mv_audio,đừng làm nó phức tạp,Song,song,đừng làm nó phức tạp,,tiêu đề,tlinh - đừng làm nó phức tạp | OFFICIAL MUSIC VIDEO,quy tắc: tiêu đề
 DOC_YT_k2oCfQ5QOIk,SEED_091,mv_audio,2pillz,Person,producer,đừng làm nó phức tạp,,mô tả dòng 6,Producer: 2pillz,quy tắc: dòng credit
 DOC_YT_k2oCfQ5QOIk,SEED_091,mv_audio,M Music Records,Company,audio_distributor,đừng làm nó phức tạp,,mô tả dòng 11,Stream ở tất cả các nền tảng: https://mmusicrecords.lnk.to/dlnpt/,quy tắc: dòng bản quyền/label
@@ -4608,6 +4621,7 @@ DOC_YT_k2oCfQ5QOIk,SEED_091,mv_audio,M Music Records,Company,audio_distributor,�
 DOC_YT_k2oCfQ5QOIk,SEED_091,mv_audio,M Music Records,Company,audio_distributor,đừng làm nó phức tạp,,mô tả dòng 15,NCT: https://mmusicrecords.lnk.to/dlnpt/nct,quy tắc: dòng bản quyền/label
 DOC_YT_k2oCfQ5QOIk,SEED_091,mv_audio,M Music Records,Company,audio_distributor,đừng làm nó phức tạp,,mô tả dòng 16,TikTok: https://mmusicrecords.lnk.to/dlnpt/tiktok-2,quy tắc: dòng bản quyền/label
 DOC_YT_k2oCfQ5QOIk,SEED_091,mv_audio,M Music Records,Company,audio_distributor,đừng làm nó phức tạp,,mô tả dòng 16,TikTok: https://mmusicrecords.lnk.to/dlnpt/tiktok,quy tắc: dòng bản quyền/label
+DOC_YT_SMyzXbdGxVY,SEED_091,mv_audio,tlinh,Person,performer,nữ siêu anh hùng,,tiêu đề,tlinh - nữ siêu anh hùng | OFFICIAL MUSIC VIDEO,quy tắc: tiêu đề
 DOC_YT_SMyzXbdGxVY,SEED_091,mv_audio,nữ siêu anh hùng,Song,song,nữ siêu anh hùng,,tiêu đề,tlinh - nữ siêu anh hùng | OFFICIAL MUSIC VIDEO,quy tắc: tiêu đề
 DOC_YT_SMyzXbdGxVY,SEED_091,mv_audio,2pillz,Person,composer,nữ siêu anh hùng,,mô tả dòng 7,"Composers: tlinh, 2pillz, wokeup",quy tắc: dòng credit
 DOC_YT_SMyzXbdGxVY,SEED_091,mv_audio,2pillz,Person,producer,nữ siêu anh hùng,,mô tả dòng 10,"Producers: 2pillz, wokeup",quy tắc: dòng credit
@@ -4619,6 +4633,7 @@ DOC_YT_SMyzXbdGxVY,SEED_091,mv_audio,M Music Records,Company,audio_distributor,n
 DOC_YT_SMyzXbdGxVY,SEED_091,mv_audio,M Music Records,Company,audio_distributor,nữ siêu anh hùng,,mô tả dòng 80,TikTok: https://mmusicrecords.lnk.to/ai-tlinh/tiktok,quy tắc: dòng bản quyền/label
 DOC_YT_SMyzXbdGxVY,SEED_091,mv_audio,M Music Records,Company,audio_distributor,nữ siêu anh hùng,,mô tả dòng 81,Zing MP3: https://mmusicrecords.lnk.to/ai-tlinh/zingmp3,quy tắc: dòng bản quyền/label
 DOC_YT_SMyzXbdGxVY,SEED_091,mv_audio,M Music Records,Company,audio_distributor,nữ siêu anh hùng,,mô tả dòng 82,NCT: https://mmusicrecords.lnk.to/ai-tlinh/nct,quy tắc: dòng bản quyền/label
+DOC_YT_hMwJggT9WSY,SEED_091,mv_audio,tlinh,Person,performer,nếu lúc đó,,tiêu đề,tlinh - nếu lúc đó | OFFICIAL VISUALIZER,quy tắc: tiêu đề
 DOC_YT_hMwJggT9WSY,SEED_091,mv_audio,nếu lúc đó,Song,song,nếu lúc đó,,tiêu đề,tlinh - nếu lúc đó | OFFICIAL VISUALIZER,quy tắc: tiêu đề
 DOC_YT_hMwJggT9WSY,SEED_091,mv_audio,M Music Records,Company,audio_distributor,nếu lúc đó,,mô tả dòng 25,Stream now: https://mmusicrecords.lnk.to/ai-tlinh,quy tắc: dòng bản quyền/label
 DOC_YT_hMwJggT9WSY,SEED_091,mv_audio,M Music Records,Company,audio_distributor,nếu lúc đó,,mô tả dòng 26,Spotify: https://mmusicrecords.lnk.to/ai-tlinh/spotify,quy tắc: dòng bản quyền/label
@@ -4628,6 +4643,7 @@ DOC_YT_hMwJggT9WSY,SEED_091,mv_audio,M Music Records,Company,audio_distributor,n
 DOC_YT_hMwJggT9WSY,SEED_091,mv_audio,M Music Records,Company,audio_distributor,nếu lúc đó,,mô tả dòng 30,TikTok: https://mmusicrecords.lnk.to/ai-tlinh/tiktok,quy tắc: dòng bản quyền/label
 DOC_YT_hMwJggT9WSY,SEED_091,mv_audio,M Music Records,Company,audio_distributor,nếu lúc đó,,mô tả dòng 31,Zing MP3: https://mmusicrecords.lnk.to/ai-tlinh/zingmp3,quy tắc: dòng bản quyền/label
 DOC_YT_hMwJggT9WSY,SEED_091,mv_audio,M Music Records,Company,audio_distributor,nếu lúc đó,,mô tả dòng 32,NCT: https://mmusicrecords.lnk.to/ai-tlinh/nct,quy tắc: dòng bản quyền/label
+DOC_YT_oOeBGT2mU90,SEED_091,mv_audio,tlinh,Person,performer,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi | OFFICIAL VISUALIZER,quy tắc: tiêu đề
 DOC_YT_oOeBGT2mU90,SEED_091,mv_audio,ghệ iu dấu của em ơi,Song,song,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi | OFFICIAL VISUALIZER,quy tắc: tiêu đề
 DOC_YT_oOeBGT2mU90,SEED_091,mv_audio,M Music Records,Company,audio_distributor,ghệ iu dấu của em ơi,,mô tả dòng 26,Stream now: https://mmusicrecords.lnk.to/ai-tlinh,quy tắc: dòng bản quyền/label
 DOC_YT_oOeBGT2mU90,SEED_091,mv_audio,M Music Records,Company,audio_distributor,ghệ iu dấu của em ơi,,mô tả dòng 27,Spotify: https://mmusicrecords.lnk.to/ai-tlinh/spotify,quy tắc: dòng bản quyền/label
@@ -4637,6 +4653,7 @@ DOC_YT_oOeBGT2mU90,SEED_091,mv_audio,M Music Records,Company,audio_distributor,g
 DOC_YT_oOeBGT2mU90,SEED_091,mv_audio,M Music Records,Company,audio_distributor,ghệ iu dấu của em ơi,,mô tả dòng 31,TikTok: https://mmusicrecords.lnk.to/ai-tlinh/tiktok,quy tắc: dòng bản quyền/label
 DOC_YT_oOeBGT2mU90,SEED_091,mv_audio,M Music Records,Company,audio_distributor,ghệ iu dấu của em ơi,,mô tả dòng 32,Zing MP3: https://mmusicrecords.lnk.to/ai-tlinh/zingmp3,quy tắc: dòng bản quyền/label
 DOC_YT_oOeBGT2mU90,SEED_091,mv_audio,M Music Records,Company,audio_distributor,ghệ iu dấu của em ơi,,mô tả dòng 33,NCT: https://mmusicrecords.lnk.to/ai-tlinh/nct,quy tắc: dòng bản quyền/label
+DOC_YT_xSRkawZQQZI,SEED_091,mv_audio,tlinh,Person,performer,nữ siêu anh hùng,,tiêu đề,tlinh - nữ siêu anh hùng | OFFICIAL VISUALIZER,quy tắc: tiêu đề
 DOC_YT_xSRkawZQQZI,SEED_091,mv_audio,nữ siêu anh hùng,Song,song,nữ siêu anh hùng,,tiêu đề,tlinh - nữ siêu anh hùng | OFFICIAL VISUALIZER,quy tắc: tiêu đề
 DOC_YT_xSRkawZQQZI,SEED_091,mv_audio,M Music Records,Company,audio_distributor,nữ siêu anh hùng,,mô tả dòng 26,Stream now: https://mmusicrecords.lnk.to/ai-tlinh,quy tắc: dòng bản quyền/label
 DOC_YT_xSRkawZQQZI,SEED_091,mv_audio,M Music Records,Company,audio_distributor,nữ siêu anh hùng,,mô tả dòng 27,Spotify: https://mmusicrecords.lnk.to/ai-tlinh/spotify,quy tắc: dòng bản quyền/label
@@ -4646,6 +4663,7 @@ DOC_YT_xSRkawZQQZI,SEED_091,mv_audio,M Music Records,Company,audio_distributor,n
 DOC_YT_xSRkawZQQZI,SEED_091,mv_audio,M Music Records,Company,audio_distributor,nữ siêu anh hùng,,mô tả dòng 31,TikTok: https://mmusicrecords.lnk.to/ai-tlinh/tiktok,quy tắc: dòng bản quyền/label
 DOC_YT_xSRkawZQQZI,SEED_091,mv_audio,M Music Records,Company,audio_distributor,nữ siêu anh hùng,,mô tả dòng 32,Zing MP3: https://mmusicrecords.lnk.to/ai-tlinh/zingmp3,quy tắc: dòng bản quyền/label
 DOC_YT_xSRkawZQQZI,SEED_091,mv_audio,M Music Records,Company,audio_distributor,nữ siêu anh hùng,,mô tả dòng 33,NCT: https://mmusicrecords.lnk.to/ai-tlinh/nct,quy tắc: dòng bản quyền/label
+DOC_YT_VtFmR18Vn5M,SEED_091,mv_audio,tlinh,Person,performer,những đốm sáng,,tiêu đề,tlinh - những đốm sáng | OFFICIAL VISUALIZER,quy tắc: tiêu đề
 DOC_YT_VtFmR18Vn5M,SEED_091,mv_audio,những đốm sáng,Song,song,những đốm sáng,,tiêu đề,tlinh - những đốm sáng | OFFICIAL VISUALIZER,quy tắc: tiêu đề
 DOC_YT_VtFmR18Vn5M,SEED_091,mv_audio,M Music Records,Company,audio_distributor,những đốm sáng,,mô tả dòng 26,Stream now: https://mmusicrecords.lnk.to/ai-tlinh,quy tắc: dòng bản quyền/label
 DOC_YT_VtFmR18Vn5M,SEED_091,mv_audio,M Music Records,Company,audio_distributor,những đốm sáng,,mô tả dòng 27,Spotify: https://mmusicrecords.lnk.to/ai-tlinh/spotify,quy tắc: dòng bản quyền/label
@@ -4655,6 +4673,7 @@ DOC_YT_VtFmR18Vn5M,SEED_091,mv_audio,M Music Records,Company,audio_distributor,n
 DOC_YT_VtFmR18Vn5M,SEED_091,mv_audio,M Music Records,Company,audio_distributor,những đốm sáng,,mô tả dòng 31,TikTok: https://mmusicrecords.lnk.to/ai-tlinh/tiktok,quy tắc: dòng bản quyền/label
 DOC_YT_VtFmR18Vn5M,SEED_091,mv_audio,M Music Records,Company,audio_distributor,những đốm sáng,,mô tả dòng 32,Zing MP3: https://mmusicrecords.lnk.to/ai-tlinh/zingmp3,quy tắc: dòng bản quyền/label
 DOC_YT_VtFmR18Vn5M,SEED_091,mv_audio,M Music Records,Company,audio_distributor,những đốm sáng,,mô tả dòng 33,NCT: https://mmusicrecords.lnk.to/ai-tlinh/nct,quy tắc: dòng bản quyền/label
+DOC_YT_a1JN9DJhKQ4,SEED_091,mv_audio,tlinh,Person,performer,thế giới thần tiên,,tiêu đề,tlinh - thế giới thần tiên | OFFICIAL VISUALIZER,quy tắc: tiêu đề
 DOC_YT_a1JN9DJhKQ4,SEED_091,mv_audio,thế giới thần tiên,Song,song,thế giới thần tiên,,tiêu đề,tlinh - thế giới thần tiên | OFFICIAL VISUALIZER,quy tắc: tiêu đề
 DOC_YT_a1JN9DJhKQ4,SEED_091,mv_audio,M Music Records,Company,audio_distributor,thế giới thần tiên,,mô tả dòng 26,Stream now: https://mmusicrecords.lnk.to/ai-tlinh,quy tắc: dòng bản quyền/label
 DOC_YT_a1JN9DJhKQ4,SEED_091,mv_audio,M Music Records,Company,audio_distributor,thế giới thần tiên,,mô tả dòng 27,Spotify: https://mmusicrecords.lnk.to/ai-tlinh/spotify,quy tắc: dòng bản quyền/label
@@ -4664,6 +4683,7 @@ DOC_YT_a1JN9DJhKQ4,SEED_091,mv_audio,M Music Records,Company,audio_distributor,t
 DOC_YT_a1JN9DJhKQ4,SEED_091,mv_audio,M Music Records,Company,audio_distributor,thế giới thần tiên,,mô tả dòng 31,TikTok: https://mmusicrecords.lnk.to/ai-tlinh/tiktok,quy tắc: dòng bản quyền/label
 DOC_YT_a1JN9DJhKQ4,SEED_091,mv_audio,M Music Records,Company,audio_distributor,thế giới thần tiên,,mô tả dòng 32,Zing MP3: https://mmusicrecords.lnk.to/ai-tlinh/zingmp3,quy tắc: dòng bản quyền/label
 DOC_YT_a1JN9DJhKQ4,SEED_091,mv_audio,M Music Records,Company,audio_distributor,thế giới thần tiên,,mô tả dòng 33,NCT: https://mmusicrecords.lnk.to/ai-tlinh/nct,quy tắc: dòng bản quyền/label
+DOC_YT_k4529BL7v9E,SEED_091,mv_audio,tlinh,Person,performer,làm lành chữa tình,,tiêu đề,tlinh - làm lành chữa tình | OFFICIAL VISUALIZER,quy tắc: tiêu đề
 DOC_YT_k4529BL7v9E,SEED_091,mv_audio,làm lành chữa tình,Song,song,làm lành chữa tình,,tiêu đề,tlinh - làm lành chữa tình | OFFICIAL VISUALIZER,quy tắc: tiêu đề
 DOC_YT_k4529BL7v9E,SEED_091,mv_audio,M Music Records,Company,audio_distributor,làm lành chữa tình,,mô tả dòng 26,Stream now: https://mmusicrecords.lnk.to/ai-tlinh,quy tắc: dòng bản quyền/label
 DOC_YT_k4529BL7v9E,SEED_091,mv_audio,M Music Records,Company,audio_distributor,làm lành chữa tình,,mô tả dòng 27,Spotify: https://mmusicrecords.lnk.to/ai-tlinh/spotify,quy tắc: dòng bản quyền/label
@@ -4673,6 +4693,7 @@ DOC_YT_k4529BL7v9E,SEED_091,mv_audio,M Music Records,Company,audio_distributor,l
 DOC_YT_k4529BL7v9E,SEED_091,mv_audio,M Music Records,Company,audio_distributor,làm lành chữa tình,,mô tả dòng 31,TikTok: https://mmusicrecords.lnk.to/ai-tlinh/tiktok,quy tắc: dòng bản quyền/label
 DOC_YT_k4529BL7v9E,SEED_091,mv_audio,M Music Records,Company,audio_distributor,làm lành chữa tình,,mô tả dòng 32,Zing MP3: https://mmusicrecords.lnk.to/ai-tlinh/zingmp3,quy tắc: dòng bản quyền/label
 DOC_YT_k4529BL7v9E,SEED_091,mv_audio,M Music Records,Company,audio_distributor,làm lành chữa tình,,mô tả dòng 33,NCT: https://mmusicrecords.lnk.to/ai-tlinh/nct,quy tắc: dòng bản quyền/label
+DOC_YT_tEeA73Dt-1w,SEED_091,mv_audio,tlinh,Person,performer,ái,,tiêu đề,tlinh - ái (interlude) | OFFICIAL VISUALIZER,quy tắc: tiêu đề
 DOC_YT_tEeA73Dt-1w,SEED_091,mv_audio,ái,Song,song,ái,,tiêu đề,tlinh - ái (interlude) | OFFICIAL VISUALIZER,quy tắc: tiêu đề
 DOC_YT_tEeA73Dt-1w,SEED_091,mv_audio,M Music Records,Company,audio_distributor,ái,,mô tả dòng 25,Stream now: https://mmusicrecords.lnk.to/ai-tlinh,quy tắc: dòng bản quyền/label
 DOC_YT_tEeA73Dt-1w,SEED_091,mv_audio,M Music Records,Company,audio_distributor,ái,,mô tả dòng 26,Spotify: https://mmusicrecords.lnk.to/ai-tlinh/spotify,quy tắc: dòng bản quyền/label
@@ -4682,6 +4703,7 @@ DOC_YT_tEeA73Dt-1w,SEED_091,mv_audio,M Music Records,Company,audio_distributor,�
 DOC_YT_tEeA73Dt-1w,SEED_091,mv_audio,M Music Records,Company,audio_distributor,ái,,mô tả dòng 30,TikTok: https://mmusicrecords.lnk.to/ai-tlinh/tiktok,quy tắc: dòng bản quyền/label
 DOC_YT_tEeA73Dt-1w,SEED_091,mv_audio,M Music Records,Company,audio_distributor,ái,,mô tả dòng 31,Zing MP3: https://mmusicrecords.lnk.to/ai-tlinh/zingmp3,quy tắc: dòng bản quyền/label
 DOC_YT_tEeA73Dt-1w,SEED_091,mv_audio,M Music Records,Company,audio_distributor,ái,,mô tả dòng 32,NCT: https://mmusicrecords.lnk.to/ai-tlinh/nct,quy tắc: dòng bản quyền/label
+DOC_YT_Br1fOAvSuVA,SEED_091,mv_audio,tlinh,Person,performer,kho báu đánh rơi,,tiêu đề,tlinh - kho báu đánh rơi (feat. Grey D) | OFFICIAL VISUALIZER,quy tắc: tiêu đề
 DOC_YT_Br1fOAvSuVA,SEED_091,mv_audio,Grey D,Person,featured,kho báu đánh rơi,,tiêu đề,tlinh - kho báu đánh rơi (feat. Grey D) | OFFICIAL VISUALIZER,quy tắc: tiêu đề
 DOC_YT_Br1fOAvSuVA,SEED_091,mv_audio,kho báu đánh rơi,Song,song,kho báu đánh rơi,,tiêu đề,tlinh - kho báu đánh rơi (feat. Grey D) | OFFICIAL VISUALIZER,quy tắc: tiêu đề
 DOC_YT_Br1fOAvSuVA,SEED_091,mv_audio,M Music Records,Company,audio_distributor,kho báu đánh rơi,,mô tả dòng 26,Stream now: https://mmusicrecords.lnk.to/ai-tlinh,quy tắc: dòng bản quyền/label
@@ -4692,6 +4714,7 @@ DOC_YT_Br1fOAvSuVA,SEED_091,mv_audio,M Music Records,Company,audio_distributor,k
 DOC_YT_Br1fOAvSuVA,SEED_091,mv_audio,M Music Records,Company,audio_distributor,kho báu đánh rơi,,mô tả dòng 31,TikTok: https://mmusicrecords.lnk.to/ai-tlinh/tiktok,quy tắc: dòng bản quyền/label
 DOC_YT_Br1fOAvSuVA,SEED_091,mv_audio,M Music Records,Company,audio_distributor,kho báu đánh rơi,,mô tả dòng 32,Zing MP3: https://mmusicrecords.lnk.to/ai-tlinh/zingmp3,quy tắc: dòng bản quyền/label
 DOC_YT_Br1fOAvSuVA,SEED_091,mv_audio,M Music Records,Company,audio_distributor,kho báu đánh rơi,,mô tả dòng 33,NCT: https://mmusicrecords.lnk.to/ai-tlinh/nct,quy tắc: dòng bản quyền/label
+DOC_YT_doN4GrGoVpA,SEED_091,mv_audio,tlinh,Person,performer,người điên,,tiêu đề,tlinh - người điên | OFFICIAL VISUALIZER,quy tắc: tiêu đề
 DOC_YT_doN4GrGoVpA,SEED_091,mv_audio,người điên,Song,song,người điên,,tiêu đề,tlinh - người điên | OFFICIAL VISUALIZER,quy tắc: tiêu đề
 DOC_YT_doN4GrGoVpA,SEED_091,mv_audio,M Music Records,Company,audio_distributor,người điên,,mô tả dòng 26,Stream now: https://mmusicrecords.lnk.to/ai-tlinh,quy tắc: dòng bản quyền/label
 DOC_YT_doN4GrGoVpA,SEED_091,mv_audio,M Music Records,Company,audio_distributor,người điên,,mô tả dòng 27,Spotify: https://mmusicrecords.lnk.to/ai-tlinh/spotify,quy tắc: dòng bản quyền/label
@@ -4701,6 +4724,7 @@ DOC_YT_doN4GrGoVpA,SEED_091,mv_audio,M Music Records,Company,audio_distributor,n
 DOC_YT_doN4GrGoVpA,SEED_091,mv_audio,M Music Records,Company,audio_distributor,người điên,,mô tả dòng 31,TikTok: https://mmusicrecords.lnk.to/ai-tlinh/tiktok,quy tắc: dòng bản quyền/label
 DOC_YT_doN4GrGoVpA,SEED_091,mv_audio,M Music Records,Company,audio_distributor,người điên,,mô tả dòng 32,Zing MP3: https://mmusicrecords.lnk.to/ai-tlinh/zingmp3,quy tắc: dòng bản quyền/label
 DOC_YT_doN4GrGoVpA,SEED_091,mv_audio,M Music Records,Company,audio_distributor,người điên,,mô tả dòng 33,NCT: https://mmusicrecords.lnk.to/ai-tlinh/nct,quy tắc: dòng bản quyền/label
+DOC_YT_AOkWWIkLvWM,SEED_091,mv_audio,tlinh,Person,performer,người đẹp ngủ,,tiêu đề,tlinh - người đẹp ngủ | OFFICIAL VISUALIZER,quy tắc: tiêu đề
 DOC_YT_AOkWWIkLvWM,SEED_091,mv_audio,người đẹp ngủ,Song,song,người đẹp ngủ,,tiêu đề,tlinh - người đẹp ngủ | OFFICIAL VISUALIZER,quy tắc: tiêu đề
 DOC_YT_AOkWWIkLvWM,SEED_091,mv_audio,M Music Records,Company,audio_distributor,người đẹp ngủ,,mô tả dòng 26,Stream now: https://mmusicrecords.lnk.to/ai-tlinh,quy tắc: dòng bản quyền/label
 DOC_YT_AOkWWIkLvWM,SEED_091,mv_audio,M Music Records,Company,audio_distributor,người đẹp ngủ,,mô tả dòng 27,Spotify: https://mmusicrecords.lnk.to/ai-tlinh/spotify,quy tắc: dòng bản quyền/label
@@ -4710,6 +4734,7 @@ DOC_YT_AOkWWIkLvWM,SEED_091,mv_audio,M Music Records,Company,audio_distributor,n
 DOC_YT_AOkWWIkLvWM,SEED_091,mv_audio,M Music Records,Company,audio_distributor,người đẹp ngủ,,mô tả dòng 31,TikTok: https://mmusicrecords.lnk.to/ai-tlinh/tiktok,quy tắc: dòng bản quyền/label
 DOC_YT_AOkWWIkLvWM,SEED_091,mv_audio,M Music Records,Company,audio_distributor,người đẹp ngủ,,mô tả dòng 32,Zing MP3: https://mmusicrecords.lnk.to/ai-tlinh/zingmp3,quy tắc: dòng bản quyền/label
 DOC_YT_AOkWWIkLvWM,SEED_091,mv_audio,M Music Records,Company,audio_distributor,người đẹp ngủ,,mô tả dòng 33,NCT: https://mmusicrecords.lnk.to/ai-tlinh/nct,quy tắc: dòng bản quyền/label
+DOC_YT_vkvAVi3mtHg,SEED_091,mv_audio,tlinh,Person,performer,tình yêu có nghĩa là gì?,,tiêu đề,tlinh - tình yêu có nghĩa là gì? (intro) | OFFICIAL VISUALIZER,quy tắc: tiêu đề
 DOC_YT_vkvAVi3mtHg,SEED_091,mv_audio,tình yêu có nghĩa là gì?,Song,song,tình yêu có nghĩa là gì?,,tiêu đề,tlinh - tình yêu có nghĩa là gì? (intro) | OFFICIAL VISUALIZER,quy tắc: tiêu đề
 DOC_YT_vkvAVi3mtHg,SEED_091,mv_audio,M Music Records,Company,audio_distributor,tình yêu có nghĩa là gì?,,mô tả dòng 26,Stream now: https://mmusicrecords.lnk.to/ai-tlinh,quy tắc: dòng bản quyền/label
 DOC_YT_vkvAVi3mtHg,SEED_091,mv_audio,M Music Records,Company,audio_distributor,tình yêu có nghĩa là gì?,,mô tả dòng 27,Spotify: https://mmusicrecords.lnk.to/ai-tlinh/spotify,quy tắc: dòng bản quyền/label
@@ -4719,6 +4744,7 @@ DOC_YT_vkvAVi3mtHg,SEED_091,mv_audio,M Music Records,Company,audio_distributor,t
 DOC_YT_vkvAVi3mtHg,SEED_091,mv_audio,M Music Records,Company,audio_distributor,tình yêu có nghĩa là gì?,,mô tả dòng 31,TikTok: https://mmusicrecords.lnk.to/ai-tlinh/tiktok,quy tắc: dòng bản quyền/label
 DOC_YT_vkvAVi3mtHg,SEED_091,mv_audio,M Music Records,Company,audio_distributor,tình yêu có nghĩa là gì?,,mô tả dòng 32,Zing MP3: https://mmusicrecords.lnk.to/ai-tlinh/zingmp3,quy tắc: dòng bản quyền/label
 DOC_YT_vkvAVi3mtHg,SEED_091,mv_audio,M Music Records,Company,audio_distributor,tình yêu có nghĩa là gì?,,mô tả dòng 33,NCT: https://mmusicrecords.lnk.to/ai-tlinh/nct,quy tắc: dòng bản quyền/label
+DOC_YT_82ZTNQNEQgE,SEED_091,mv_audio,tlinh,Person,performer,,,tiêu đề,tlinh - “ái” album | THE LISTENING EXPERIENCE,quy tắc: tiêu đề
 DOC_YT_82ZTNQNEQgE,SEED_091,mv_audio,M Music Records,Company,audio_distributor,,,mô tả dòng 26,Stream now: https://mmusicrecords.lnk.to/ai-tlinh,quy tắc: dòng bản quyền/label
 DOC_YT_82ZTNQNEQgE,SEED_091,mv_audio,M Music Records,Company,audio_distributor,,,mô tả dòng 27,Spotify: https://mmusicrecords.lnk.to/ai-tlinh/spotify,quy tắc: dòng bản quyền/label
 DOC_YT_82ZTNQNEQgE,SEED_091,mv_audio,M Music Records,Company,audio_distributor,,,mô tả dòng 28,Apple Music: https://mmusicrecords.lnk.to/ai-tlinh/applemusic,quy tắc: dòng bản quyền/label
@@ -4727,6 +4753,7 @@ DOC_YT_82ZTNQNEQgE,SEED_091,mv_audio,M Music Records,Company,audio_distributor,,
 DOC_YT_82ZTNQNEQgE,SEED_091,mv_audio,M Music Records,Company,audio_distributor,,,mô tả dòng 31,TikTok: https://mmusicrecords.lnk.to/ai-tlinh/tiktok,quy tắc: dòng bản quyền/label
 DOC_YT_82ZTNQNEQgE,SEED_091,mv_audio,M Music Records,Company,audio_distributor,,,mô tả dòng 32,Zing MP3: https://mmusicrecords.lnk.to/ai-tlinh/zingmp3,quy tắc: dòng bản quyền/label
 DOC_YT_82ZTNQNEQgE,SEED_091,mv_audio,M Music Records,Company,audio_distributor,,,mô tả dòng 33,NCT: https://mmusicrecords.lnk.to/ai-tlinh/nct,quy tắc: dòng bản quyền/label
+DOC_YT_Wmkf6SvJ9M4,SEED_091,mv_audio,tlinh,Person,performer,tình yêu có nghĩa là gì?,,tiêu đề,tlinh - tình yêu có nghĩa là gì? | OFFICIAL MUSIC VIDEO,quy tắc: tiêu đề
 DOC_YT_Wmkf6SvJ9M4,SEED_091,mv_audio,tình yêu có nghĩa là gì?,Song,song,tình yêu có nghĩa là gì?,,tiêu đề,tlinh - tình yêu có nghĩa là gì? | OFFICIAL MUSIC VIDEO,quy tắc: tiêu đề
 DOC_YT_Wmkf6SvJ9M4,SEED_091,mv_audio,M Music Records,Company,audio_distributor,tình yêu có nghĩa là gì?,,mô tả dòng 67,Stream now: https://mmusicrecords.lnk.to/tycnlg-tlinh,quy tắc: dòng bản quyền/label
 DOC_YT_Wmkf6SvJ9M4,SEED_091,mv_audio,M Music Records,Company,audio_distributor,tình yêu có nghĩa là gì?,,mô tả dòng 68,Spotify: https://mmusicrecords.lnk.to/tycnlg-tlinh/spotify,quy tắc: dòng bản quyền/label
@@ -4736,6 +4763,7 @@ DOC_YT_Wmkf6SvJ9M4,SEED_091,mv_audio,M Music Records,Company,audio_distributor,t
 DOC_YT_Wmkf6SvJ9M4,SEED_091,mv_audio,M Music Records,Company,audio_distributor,tình yêu có nghĩa là gì?,,mô tả dòng 72,TikTok: https://mmusicrecords.lnk.to/tycnlg-tlinh/tiktok,quy tắc: dòng bản quyền/label
 DOC_YT_Wmkf6SvJ9M4,SEED_091,mv_audio,M Music Records,Company,audio_distributor,tình yêu có nghĩa là gì?,,mô tả dòng 73,Zing MP3: https://mmusicrecords.lnk.to/tycnlg-tlinh/zingmp3,quy tắc: dòng bản quyền/label
 DOC_YT_Wmkf6SvJ9M4,SEED_091,mv_audio,M Music Records,Company,audio_distributor,tình yêu có nghĩa là gì?,,mô tả dòng 74,NCT: https://mmusicrecords.lnk.to/tycnlg-tlinh/nct,quy tắc: dòng bản quyền/label
+DOC_YT_RC8XZL7buBM,SEED_091,mv_audio,tlinh,Person,performer,mua thêm,,tiêu đề,tlinh - mua thêm (prod. by Nodey) (original soundtrack from Fanti the movie) | OFFICIAL LYRIC VIDEO,quy tắc: tiêu đề
 DOC_YT_RC8XZL7buBM,SEED_091,mv_audio,mua thêm,Song,song,mua thêm,,tiêu đề,tlinh - mua thêm (prod. by Nodey) (original soundtrack from Fanti the movie) | OFFICIAL LYRIC VIDEO,quy tắc: tiêu đề
 DOC_YT_RC8XZL7buBM,SEED_091,mv_audio,M Music Records,Company,audio_distributor,mua thêm,,mô tả dòng 14,Stream here: https://mmusicrecords.lnk.to/muathem-fanti,quy tắc: dòng bản quyền/label
 DOC_YT_RC8XZL7buBM,SEED_091,mv_audio,M Music Records,Company,audio_distributor,mua thêm,,mô tả dòng 15,Spotify: https://mmusicrecords.lnk.to/muathem-fanti/spotify,quy tắc: dòng bản quyền/label
@@ -4745,56 +4773,68 @@ DOC_YT_RC8XZL7buBM,SEED_091,mv_audio,M Music Records,Company,audio_distributor,m
 DOC_YT_RC8XZL7buBM,SEED_091,mv_audio,M Music Records,Company,audio_distributor,mua thêm,,mô tả dòng 19,TikTok: https://mmusicrecords.lnk.to/muathem-fanti/tiktok,quy tắc: dòng bản quyền/label
 DOC_YT_RC8XZL7buBM,SEED_091,mv_audio,M Music Records,Company,audio_distributor,mua thêm,,mô tả dòng 20,NCT: https://mmusicrecords.lnk.to/muathem-fanti/nct,quy tắc: dòng bản quyền/label
 DOC_YT_RC8XZL7buBM,SEED_091,mv_audio,M Music Records,Company,audio_distributor,mua thêm,,mô tả dòng 21,Zing MP3: https://mmusicrecords.lnk.to/muathem-fanti/zingmp3,quy tắc: dòng bản quyền/label
+DOC_YT_xW91BmRhVCU,SEED_091,mv_audio,tlinh,Person,performer,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (DATWEE Remix) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_xW91BmRhVCU,SEED_091,mv_audio,DATWEE,Person,producer,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (DATWEE Remix) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_xW91BmRhVCU,SEED_091,mv_audio,ghệ iu dấu của em ơi,Song,song,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (DATWEE Remix) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_xW91BmRhVCU,SEED_091,mv_audio,DATWEE,Person,producer,ghệ iu dấu của em ơi,,mô tả dòng 8,Producer: DATWEE,quy tắc: dòng credit
 DOC_YT_xW91BmRhVCU,SEED_091,mv_audio,M Music Records,Company,audio_distributor,ghệ iu dấu của em ơi,,mô tả dòng 27,All platforms: https://mmusicrecords.lnk.to/ghe-remixes-cua-em-oi,quy tắc: dòng bản quyền/label
+DOC_YT_ZffKEdbAhjA,SEED_091,mv_audio,tlinh,Person,performer,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (Feliks Alvin Remix) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_ZffKEdbAhjA,SEED_091,mv_audio,Feliks Alvin,Person,producer,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (Feliks Alvin Remix) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_ZffKEdbAhjA,SEED_091,mv_audio,ghệ iu dấu của em ơi,Song,song,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (Feliks Alvin Remix) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_ZffKEdbAhjA,SEED_091,mv_audio,Feliks Alvin,Person,producer,ghệ iu dấu của em ơi,,mô tả dòng 8,Producer: Feliks Alvin,quy tắc: dòng credit
 DOC_YT_ZffKEdbAhjA,SEED_091,mv_audio,M Music Records,Company,audio_distributor,ghệ iu dấu của em ơi,,mô tả dòng 27,All platforms: https://mmusicrecords.lnk.to/ghe-remixes-cua-em-oi,quy tắc: dòng bản quyền/label
+DOC_YT_cK9mHGTioOE,SEED_091,mv_audio,tlinh,Person,performer,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (Headie Remix) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_cK9mHGTioOE,SEED_091,mv_audio,Headie,Person,producer,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (Headie Remix) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_cK9mHGTioOE,SEED_091,mv_audio,ghệ iu dấu của em ơi,Song,song,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (Headie Remix) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_cK9mHGTioOE,SEED_091,mv_audio,Headie,Person,producer,ghệ iu dấu của em ơi,,mô tả dòng 9,Producer: Headie,quy tắc: dòng credit
 DOC_YT_cK9mHGTioOE,SEED_091,mv_audio,M Music Records,Company,audio_distributor,ghệ iu dấu của em ơi,,mô tả dòng 28,All platforms: https://mmusicrecords.lnk.to/ghe-remixes-cua-em-oi,quy tắc: dòng bản quyền/label
+DOC_YT_TM1sPh1Ejj0,SEED_091,mv_audio,tlinh,Person,performer,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (Amaj7ing Remix) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_TM1sPh1Ejj0,SEED_091,mv_audio,Amaj7ing,Person,producer,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (Amaj7ing Remix) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_TM1sPh1Ejj0,SEED_091,mv_audio,ghệ iu dấu của em ơi,Song,song,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (Amaj7ing Remix) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_TM1sPh1Ejj0,SEED_091,mv_audio,Amaj7ing,Person,producer,ghệ iu dấu của em ơi,,mô tả dòng 9,Producer: Amaj7ing,quy tắc: dòng credit
 DOC_YT_TM1sPh1Ejj0,SEED_091,mv_audio,M Music Records,Company,audio_distributor,ghệ iu dấu của em ơi,,mô tả dòng 28,All platforms: https://mmusicrecords.lnk.to/ghe-remixes-cua-em-oi,quy tắc: dòng bản quyền/label
+DOC_YT_SCDyikR0m2Q,SEED_091,mv_audio,tlinh,Person,performer,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (ft. Hoāng) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_SCDyikR0m2Q,SEED_091,mv_audio,Hoāng,Person,featured,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (ft. Hoāng) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_SCDyikR0m2Q,SEED_091,mv_audio,ghệ iu dấu của em ơi,Song,song,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (ft. Hoāng) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_SCDyikR0m2Q,SEED_091,mv_audio,Hoāng,Person,performer,ghệ iu dấu của em ơi,,mô tả dòng 5,"Artist: tlinh, Hoāng",quy tắc: dòng credit
 DOC_YT_SCDyikR0m2Q,SEED_091,mv_audio,2pillz,Person,producer,ghệ iu dấu của em ơi,,mô tả dòng 9,"Producers: 2pillz, wokeup",quy tắc: dòng credit
 DOC_YT_SCDyikR0m2Q,SEED_091,mv_audio,M Music Records,Company,audio_distributor,ghệ iu dấu của em ơi,,mô tả dòng 29,All platforms: https://mmusicrecords.lnk.to/ghe-remixes-cua-em-oi,quy tắc: dòng bản quyền/label
+DOC_YT_VtOolcdXCD0,SEED_091,mv_audio,tlinh,Person,performer,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (HANZ Remix) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_VtOolcdXCD0,SEED_091,mv_audio,HANZ,Person,producer,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (HANZ Remix) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_VtOolcdXCD0,SEED_091,mv_audio,ghệ iu dấu của em ơi,Song,song,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (HANZ Remix) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_VtOolcdXCD0,SEED_091,mv_audio,HANZ,Person,producer,ghệ iu dấu của em ơi,,mô tả dòng 8,Producer: HANZ,quy tắc: dòng credit
 DOC_YT_VtOolcdXCD0,SEED_091,mv_audio,M Music Records,Company,audio_distributor,ghệ iu dấu của em ơi,,mô tả dòng 27,All platforms: https://mmusicrecords.lnk.to/ghe-remixes-cua-em-oi,quy tắc: dòng bản quyền/label
+DOC_YT_PXcdsvjyYW0,SEED_091,mv_audio,tlinh,Person,performer,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (ft. Khoi Vu) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_PXcdsvjyYW0,SEED_091,mv_audio,Khoi Vu,Person,featured,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (ft. Khoi Vu) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_PXcdsvjyYW0,SEED_091,mv_audio,ghệ iu dấu của em ơi,Song,song,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (ft. Khoi Vu) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_PXcdsvjyYW0,SEED_091,mv_audio,Khoi Vu,Person,performer,ghệ iu dấu của em ơi,,mô tả dòng 5,"Artist: tlinh, Khoi Vu",quy tắc: dòng credit
 DOC_YT_PXcdsvjyYW0,SEED_091,mv_audio,2pillz,Person,producer,ghệ iu dấu của em ơi,,mô tả dòng 9,"Producers: 2pillz, wokeup",quy tắc: dòng credit
 DOC_YT_PXcdsvjyYW0,SEED_091,mv_audio,M Music Records,Company,audio_distributor,ghệ iu dấu của em ơi,,mô tả dòng 28,All platforms: https://mmusicrecords.lnk.to/ghe-remixes-cua-em-oi,quy tắc: dòng bản quyền/label
+DOC_YT_GhUFCE47Ltk,SEED_091,mv_audio,tlinh,Person,performer,ghệ iu dấu của em ơi,,tiêu đề,"tlinh - ghệ iu dấu của em ơi (Gonpop, 52Hz Remix) | “ghệ remixes của em ơi” EP",quy tắc: tiêu đề
 DOC_YT_GhUFCE47Ltk,SEED_091,mv_audio,Gonpop,Person,producer,ghệ iu dấu của em ơi,,tiêu đề,"tlinh - ghệ iu dấu của em ơi (Gonpop, 52Hz Remix) | “ghệ remixes của em ơi” EP",quy tắc: tiêu đề
 DOC_YT_GhUFCE47Ltk,SEED_091,mv_audio,52Hz,Person,producer,ghệ iu dấu của em ơi,,tiêu đề,"tlinh - ghệ iu dấu của em ơi (Gonpop, 52Hz Remix) | “ghệ remixes của em ơi” EP",quy tắc: tiêu đề
 DOC_YT_GhUFCE47Ltk,SEED_091,mv_audio,ghệ iu dấu của em ơi,Song,song,ghệ iu dấu của em ơi,,tiêu đề,"tlinh - ghệ iu dấu của em ơi (Gonpop, 52Hz Remix) | “ghệ remixes của em ơi” EP",quy tắc: tiêu đề
 DOC_YT_GhUFCE47Ltk,SEED_091,mv_audio,52Hz,Person,performer,ghệ iu dấu của em ơi,,mô tả dòng 5,"Artist: tlinh, 52Hz",quy tắc: dòng credit
 DOC_YT_GhUFCE47Ltk,SEED_091,mv_audio,Gonpop,Person,producer,ghệ iu dấu của em ơi,,mô tả dòng 9,Producer: Gonpop,quy tắc: dòng credit
 DOC_YT_GhUFCE47Ltk,SEED_091,mv_audio,M Music Records,Company,audio_distributor,ghệ iu dấu của em ơi,,mô tả dòng 29,All platforms: https://mmusicrecords.lnk.to/ghe-remixes-cua-em-oi,quy tắc: dòng bản quyền/label
+DOC_YT_3Ekz0fgea04,SEED_091,mv_audio,tlinh,Person,performer,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (CLOUDEE Remix) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_3Ekz0fgea04,SEED_091,mv_audio,CLOUDEE,Person,producer,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (CLOUDEE Remix) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_3Ekz0fgea04,SEED_091,mv_audio,ghệ iu dấu của em ơi,Song,song,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (CLOUDEE Remix) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_3Ekz0fgea04,SEED_091,mv_audio,CLOUDEE,Person,producer,ghệ iu dấu của em ơi,,mô tả dòng 9,Producer: CLOUDEE,quy tắc: dòng credit
 DOC_YT_3Ekz0fgea04,SEED_091,mv_audio,M Music Records,Company,audio_distributor,ghệ iu dấu của em ơi,,mô tả dòng 28,All platforms: https://mmusicrecords.lnk.to/ghe-remixes-cua-em-oi,quy tắc: dòng bản quyền/label
+DOC_YT_aQenZLVT0vI,SEED_091,mv_audio,tlinh,Person,performer,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (Smokele Remix) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_aQenZLVT0vI,SEED_091,mv_audio,Smokele,Person,producer,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (Smokele Remix) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_aQenZLVT0vI,SEED_091,mv_audio,ghệ iu dấu của em ơi,Song,song,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (Smokele Remix) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_aQenZLVT0vI,SEED_091,mv_audio,Smokele,Person,producer,ghệ iu dấu của em ơi,,mô tả dòng 9,Producer: Smokele,quy tắc: dòng credit
 DOC_YT_aQenZLVT0vI,SEED_091,mv_audio,M Music Records,Company,audio_distributor,ghệ iu dấu của em ơi,,mô tả dòng 28,All platforms: https://mmusicrecords.lnk.to/ghe-remixes-cua-em-oi,quy tắc: dòng bản quyền/label
+DOC_YT_-Nvy_PB8z9s,SEED_091,mv_audio,tlinh,Person,performer,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (Anh Long Đờ Riu Remix) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_-Nvy_PB8z9s,SEED_091,mv_audio,Anh Long Đờ Riu,Person,producer,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (Anh Long Đờ Riu Remix) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_-Nvy_PB8z9s,SEED_091,mv_audio,ghệ iu dấu của em ơi,Song,song,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi (Anh Long Đờ Riu Remix) | “ghệ remixes của em ơi” EP,quy tắc: tiêu đề
 DOC_YT_-Nvy_PB8z9s,SEED_091,mv_audio,Anh Long Đờ Riu,Person,producer,ghệ iu dấu của em ơi,,mô tả dòng 9,Producer: Anh Long Đờ Riu,quy tắc: dòng credit
 DOC_YT_-Nvy_PB8z9s,SEED_091,mv_audio,M Music Records,Company,audio_distributor,ghệ iu dấu của em ơi,,mô tả dòng 28,All platforms: https://mmusicrecords.lnk.to/ghe-remixes-cua-em-oi,quy tắc: dòng bản quyền/label
 DOC_YT_HDK-4bBEm1k,SEED_091,performance_show,M Music Records,Company,audio_distributor,,,mô tả dòng 15,https://mmusicrecords.lnk.to/ai-tlinh,quy tắc: dòng bản quyền/label
 DOC_YT_HDK-4bBEm1k,SEED_091,performance_show,M Music Records,Company,audio_distributor,,,mô tả dòng 17,https://mmusicrecords.lnk.to/kcpnn,quy tắc: dòng bản quyền/label
+DOC_YT_fyMgBQioTLo,SEED_091,mv_audio,tlinh,Person,performer,nếu lúc đó,,tiêu đề,tlinh - nếu lúc đó (ft. 2pillz) | OFFICIAL MUSIC VIDEO,quy tắc: tiêu đề
 DOC_YT_fyMgBQioTLo,SEED_091,mv_audio,2pillz,Person,featured,nếu lúc đó,,tiêu đề,tlinh - nếu lúc đó (ft. 2pillz) | OFFICIAL MUSIC VIDEO,quy tắc: tiêu đề
 DOC_YT_fyMgBQioTLo,SEED_091,mv_audio,nếu lúc đó,Song,song,nếu lúc đó,,tiêu đề,tlinh - nếu lúc đó (ft. 2pillz) | OFFICIAL MUSIC VIDEO,quy tắc: tiêu đề
 DOC_YT_fyMgBQioTLo,SEED_091,mv_audio,2pillz,Person,composer,nếu lúc đó,,mô tả dòng 6,"Composers: tlinh, 2pillz",quy tắc: dòng credit
@@ -4807,6 +4847,7 @@ DOC_YT_fyMgBQioTLo,SEED_091,mv_audio,M Music Records,Company,audio_distributor,n
 DOC_YT_fyMgBQioTLo,SEED_091,mv_audio,M Music Records,Company,audio_distributor,nếu lúc đó,,mô tả dòng 77,iTunes: https://mmusicrecords.lnk.to/neu-luc-do/itunes,quy tắc: dòng bản quyền/label
 DOC_YT_fyMgBQioTLo,SEED_091,mv_audio,M Music Records,Company,audio_distributor,nếu lúc đó,,mô tả dòng 78,Zing MP3: https://mmusicrecords.lnk.to/neu-luc-do/zingmp3,quy tắc: dòng bản quyền/label
 DOC_YT_fyMgBQioTLo,SEED_091,mv_audio,M Music Records,Company,audio_distributor,nếu lúc đó,,mô tả dòng 79,NCT: https://mmusicrecords.lnk.to/neu-luc-do/nct,quy tắc: dòng bản quyền/label
+DOC_YT_oNiW6AnmrcQ,SEED_091,mv_audio,tlinh,Person,performer,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi | sped up | (feat. 2pillz & wokeup),quy tắc: tiêu đề
 DOC_YT_oNiW6AnmrcQ,SEED_091,mv_audio,ghệ iu dấu của em ơi,Song,song,ghệ iu dấu của em ơi,,tiêu đề,tlinh - ghệ iu dấu của em ơi | sped up | (feat. 2pillz & wokeup),quy tắc: tiêu đề
 DOC_YT_oNiW6AnmrcQ,SEED_091,mv_audio,M Music Records,Company,audio_distributor,ghệ iu dấu của em ơi,,mô tả dòng 4,All Platforms: https://mmusicrecords.lnk.to/gheiudaucuaemoi,quy tắc: dòng bản quyền/label
 DOC_YT_oNiW6AnmrcQ,SEED_091,mv_audio,M Music Records,Company,audio_distributor,ghệ iu dấu của em ơi,,mô tả dòng 5,Spotify: https://mmusicrecords.lnk.to/gheiudaucuaemoi/spotify,quy tắc: dòng bản quyền/label
@@ -4814,7 +4855,9 @@ DOC_YT_oNiW6AnmrcQ,SEED_091,mv_audio,M Music Records,Company,audio_distributor,g
 DOC_YT_oNiW6AnmrcQ,SEED_091,mv_audio,M Music Records,Company,audio_distributor,ghệ iu dấu của em ơi,,mô tả dòng 7,Zing MP3: https://mmusicrecords.lnk.to/gheiudaucuaemoi/zingmp3,quy tắc: dòng bản quyền/label
 DOC_YT_oNiW6AnmrcQ,SEED_091,mv_audio,M Music Records,Company,audio_distributor,ghệ iu dấu của em ơi,,mô tả dòng 8,NCT: https://mmusicrecords.lnk.to/gheiudaucuaemoi/nct,quy tắc: dòng bản quyền/label
 DOC_YT_oNiW6AnmrcQ,SEED_091,mv_audio,M Music Records,Company,audio_distributor,ghệ iu dấu của em ơi,,mô tả dòng 9,iTunes: https://mmusicrecords.lnk.to/gheiudaucuaemoi/itunes,quy tắc: dòng bản quyền/label
+DOC_YT_qeirSHIiErc,SEED_091,mv_audio,tlinh,Person,performer,ghệ iu dấu của em ơi,,tiêu đề,"tlinh - ghệ iu dấu của em ơi (feat. 2pillz, wokeup) | OFFICIAL MUSIC VIDEO",quy tắc: tiêu đề
 DOC_YT_qeirSHIiErc,SEED_091,mv_audio,2pillz,Person,featured,ghệ iu dấu của em ơi,,tiêu đề,"tlinh - ghệ iu dấu của em ơi (feat. 2pillz, wokeup) | OFFICIAL MUSIC VIDEO",quy tắc: tiêu đề
+DOC_YT_qeirSHIiErc,SEED_091,mv_audio,wokeup,Person,featured,ghệ iu dấu của em ơi,,tiêu đề,"tlinh - ghệ iu dấu của em ơi (feat. 2pillz, wokeup) | OFFICIAL MUSIC VIDEO",quy tắc: tiêu đề
 DOC_YT_qeirSHIiErc,SEED_091,mv_audio,ghệ iu dấu của em ơi,Song,song,ghệ iu dấu của em ơi,,tiêu đề,"tlinh - ghệ iu dấu của em ơi (feat. 2pillz, wokeup) | OFFICIAL MUSIC VIDEO",quy tắc: tiêu đề
 DOC_YT_qeirSHIiErc,SEED_091,mv_audio,2pillz,Person,composer,ghệ iu dấu của em ơi,,mô tả dòng 9,"Composers: tlinh, 2pillz",quy tắc: dòng credit
 DOC_YT_qeirSHIiErc,SEED_091,mv_audio,2pillz,Person,producer,ghệ iu dấu của em ơi,,mô tả dòng 11,"Producers: 2pillz, wokeup",quy tắc: dòng credit
@@ -4828,32 +4871,40 @@ DOC_YT_qeirSHIiErc,SEED_091,mv_audio,M Music Records,Company,audio_distributor,g
 DOC_YT_aElFY3ZrP3s,SEED_091,mv_audio,MONO,Person,composer,,,mô tả dòng 8,Composer: tlinh x MONO x onionn.,quy tắc: dòng credit
 DOC_YT_aElFY3ZrP3s,SEED_091,mv_audio,Thư Nguyễn,Person,producer,,,mô tả dòng 30,PRODUCER: Thư Nguyễn,quy tắc: dòng credit
 DOC_YT_aElFY3ZrP3s,SEED_091,mv_audio,M Music Records,Company,audio_distributor,,,mô tả dòng 3,All Platforms: https://mmusicrecords.lnk.to/XuiHayVui,quy tắc: dòng bản quyền/label
+DOC_YT_a5BhQ3RShnE,SEED_091,mv_audio,tlinh,Person,performer,không cần phải nói nhiều,,tiêu đề,tlinh - không cần phải nói nhiều (The Goodboy Flip) | Visualizer,quy tắc: tiêu đề
 DOC_YT_a5BhQ3RShnE,SEED_091,mv_audio,The Goodboy,Person,producer,không cần phải nói nhiều,,tiêu đề,tlinh - không cần phải nói nhiều (The Goodboy Flip) | Visualizer,quy tắc: tiêu đề
 DOC_YT_a5BhQ3RShnE,SEED_091,mv_audio,không cần phải nói nhiều,Song,song,không cần phải nói nhiều,,tiêu đề,tlinh - không cần phải nói nhiều (The Goodboy Flip) | Visualizer,quy tắc: tiêu đề
 DOC_YT_a5BhQ3RShnE,SEED_091,mv_audio,M Music Records,Company,audio_distributor,không cần phải nói nhiều,,mô tả dòng 5,Stream now at: https://mmusicrecords.lnk.to/kcpnn,quy tắc: dòng bản quyền/label
+DOC_YT_dYSDH1bgWss,SEED_091,mv_audio,tlinh,Person,performer,Strip ‘em Down,,tiêu đề,tlinh - Strip ‘em Down (ft. 2pillz) | OFFICIAL VISUALIZER,quy tắc: tiêu đề
 DOC_YT_dYSDH1bgWss,SEED_091,mv_audio,2pillz,Person,featured,Strip ‘em Down,,tiêu đề,tlinh - Strip ‘em Down (ft. 2pillz) | OFFICIAL VISUALIZER,quy tắc: tiêu đề
 DOC_YT_dYSDH1bgWss,SEED_091,mv_audio,Strip ‘em Down,Song,song,Strip ‘em Down,,tiêu đề,tlinh - Strip ‘em Down (ft. 2pillz) | OFFICIAL VISUALIZER,quy tắc: tiêu đề
 DOC_YT_dYSDH1bgWss,SEED_091,mv_audio,2Pillz,Person,producer,Strip ‘em Down,,mô tả dòng 6,Producer: 2Pillz,quy tắc: dòng credit
+DOC_YT_uToJ3VkXPcY,SEED_091,mv_audio,tlinh,Person,performer,MÁU LÊN NÀO,,tiêu đề,tlinh  - MÁU LÊN NÀO| Official Music Video,quy tắc: tiêu đề
 DOC_YT_uToJ3VkXPcY,SEED_091,mv_audio,MÁU LÊN NÀO,Song,song,MÁU LÊN NÀO,,tiêu đề,tlinh  - MÁU LÊN NÀO| Official Music Video,quy tắc: tiêu đề
 DOC_YT_uToJ3VkXPcY,SEED_091,mv_audio,M Music Records,Company,audio_distributor,MÁU LÊN NÀO,,mô tả dòng 6,All Platforms: https://mmusicrecords.lnk.to/MauLenNao-tlinh,quy tắc: dòng bản quyền/label
 DOC_YT_uToJ3VkXPcY,SEED_091,mv_audio,M Music Records,Company,audio_distributor,MÁU LÊN NÀO,,mô tả dòng 7,Spotify: https://mmusicrecords.lnk.to/MauLenNao-tlinh/spotify,quy tắc: dòng bản quyền/label
 DOC_YT_uToJ3VkXPcY,SEED_091,mv_audio,M Music Records,Company,audio_distributor,MÁU LÊN NÀO,,mô tả dòng 8,Apple Music: https://mmusicrecords.lnk.to/MauLenNao-tlinh/applemusic,quy tắc: dòng bản quyền/label
 DOC_YT_uToJ3VkXPcY,SEED_091,mv_audio,M Music Records,Company,audio_distributor,MÁU LÊN NÀO,,mô tả dòng 9,ZING MP3: https://mmusicrecords.lnk.to/MauLenNao-tlinh/zingmp3,quy tắc: dòng bản quyền/label
 DOC_YT_uToJ3VkXPcY,SEED_091,mv_audio,M Music Records,Company,audio_distributor,MÁU LÊN NÀO,,mô tả dòng 10,NCT: https://mmusicrecords.lnk.to/MauLenNao-tlinh/nct,quy tắc: dòng bản quyền/label
+DOC_YT_aSls7yUP8l0,SEED_091,mv_audio,tlinh,Person,performer,NGƯỜI ĐI BAO,,tiêu đề,tlinh - NGƯỜI ĐI BAO (ft. Low G ) | OFFICIAL MUSIC VIDEO,quy tắc: tiêu đề
 DOC_YT_aSls7yUP8l0,SEED_091,mv_audio,Low G,Person,featured,NGƯỜI ĐI BAO,,tiêu đề,tlinh - NGƯỜI ĐI BAO (ft. Low G ) | OFFICIAL MUSIC VIDEO,quy tắc: tiêu đề
 DOC_YT_aSls7yUP8l0,SEED_091,mv_audio,NGƯỜI ĐI BAO,Song,song,NGƯỜI ĐI BAO,,tiêu đề,tlinh - NGƯỜI ĐI BAO (ft. Low G ) | OFFICIAL MUSIC VIDEO,quy tắc: tiêu đề
 DOC_YT_aSls7yUP8l0,SEED_091,mv_audio,Low G,Person,composer,NGƯỜI ĐI BAO,,mô tả dòng 10,"Lyricists: tlinh, Low G",quy tắc: dòng credit
 DOC_YT_aSls7yUP8l0,SEED_091,mv_audio,Hua Kim Tuyen,Person,producer,NGƯỜI ĐI BAO,,mô tả dòng 11,Music Producer: Hua Kim Tuyen,quy tắc: dòng credit
 DOC_YT_aSls7yUP8l0,SEED_091,mv_audio,Low G,Person,performer,NGƯỜI ĐI BAO,,mô tả dòng 12,"Singer: Low G, tlinh",quy tắc: dòng credit
+DOC_YT_7CymvjGuY5k,SEED_091,mv_audio,tlinh,Person,performer,không cần phải nói nhiều,,tiêu đề,tlinh - không cần phải nói nhiều  😶 (ft. Hoàng Tôn) | OFFICIAL MUSIC VIDEO,quy tắc: tiêu đề
 DOC_YT_7CymvjGuY5k,SEED_091,mv_audio,Hoàng Tôn,Person,featured,không cần phải nói nhiều,,tiêu đề,tlinh - không cần phải nói nhiều  😶 (ft. Hoàng Tôn) | OFFICIAL MUSIC VIDEO,quy tắc: tiêu đề
 DOC_YT_7CymvjGuY5k,SEED_091,mv_audio,không cần phải nói nhiều,Song,song,không cần phải nói nhiều,,tiêu đề,tlinh - không cần phải nói nhiều  😶 (ft. Hoàng Tôn) | OFFICIAL MUSIC VIDEO,quy tắc: tiêu đề
 DOC_YT_S_5z6YUfTfY,SEED_091,performance_show,COCO,Person,performer,,,mô tả dòng 5,Artist: tlinh x COCO,quy tắc: dòng credit
+DOC_YT_kFJd7U7vQ3o,SEED_091,mv_audio,tlinh,Person,performer,Gái Độc Thân,,tiêu đề,tlinh - Gái Độc Thân (ft. 2pillz & LastFire Crew) (Directed by A Flying Andrew) | Official MV,quy tắc: tiêu đề
 DOC_YT_kFJd7U7vQ3o,SEED_091,mv_audio,2pillz,Person,featured,Gái Độc Thân,,tiêu đề,tlinh - Gái Độc Thân (ft. 2pillz & LastFire Crew) (Directed by A Flying Andrew) | Official MV,quy tắc: tiêu đề
 DOC_YT_kFJd7U7vQ3o,SEED_091,mv_audio,Gái Độc Thân,Song,song,Gái Độc Thân,,tiêu đề,tlinh - Gái Độc Thân (ft. 2pillz & LastFire Crew) (Directed by A Flying Andrew) | Official MV,quy tắc: tiêu đề
 DOC_YT_kFJd7U7vQ3o,SEED_091,mv_audio,2pillz,Person,producer,Gái Độc Thân,,mô tả dòng 6,Music Producer: 2pillz,quy tắc: dòng credit
 DOC_YT_kFJd7U7vQ3o,SEED_091,mv_audio,A Flying Andrew,Person,producer,Gái Độc Thân,,mô tả dòng 19,Producer: A Flying Andrew,quy tắc: dòng credit
 DOC_YT_kFJd7U7vQ3o,SEED_091,mv_audio,Universal Music Vietnam,Company,audio_distributor,Gái Độc Thân,,mô tả dòng 88,Available on Spotify: https://umvn.lnk.to/gaidocthan,quy tắc: dòng bản quyền/label
+DOC_YT_8CTaIgEhj-U,SEED_091,mv_audio,tlinh,Person,performer,ecstacy,,tiêu đề,ecstacy (groovie lã thắng) - tlinh (prod. by yusei) | remake demo,quy tắc: tiêu đề
 DOC_YT_8CTaIgEhj-U,SEED_091,mv_audio,ecstacy,Song,song,ecstacy,,tiêu đề,ecstacy (groovie lã thắng) - tlinh (prod. by yusei) | remake demo,quy tắc: tiêu đề
+DOC_YT_p40OWOxAeSw,SEED_091,mv_audio,tlinh,Person,performer,Thích Quá Rùi Nà,,tiêu đề,tlinh - Thích Quá Rùi Nà (ft. Trung Trần) | OFFICIAL LYRICS VIDEO,quy tắc: tiêu đề
 DOC_YT_p40OWOxAeSw,SEED_091,mv_audio,Trung Trần,Person,featured,Thích Quá Rùi Nà,,tiêu đề,tlinh - Thích Quá Rùi Nà (ft. Trung Trần) | OFFICIAL LYRICS VIDEO,quy tắc: tiêu đề
 DOC_YT_p40OWOxAeSw,SEED_091,mv_audio,Thích Quá Rùi Nà,Song,song,Thích Quá Rùi Nà,,tiêu đề,tlinh - Thích Quá Rùi Nà (ft. Trung Trần) | OFFICIAL LYRICS VIDEO,quy tắc: tiêu đề
 DOC_YT_y5cylCyavVE,ART_0190,mv_audio,Tọi,Person,performer,"cừu, sói và áo cà sa",,tiêu đề,"cừu, sói và áo cà sa - Tọi",quy tắc: tiêu đề
@@ -8642,6 +8693,7 @@ DOC_YT_L4dSipbZj8A,SEED_090,mv_audio,MCK,Person,performer,Mắt Môi Tay Chân,,
 DOC_YT_L4dSipbZj8A,SEED_090,mv_audio,Tage,Person,featured,Mắt Môi Tay Chân,,tiêu đề,Mắt Môi Tay Chân - MCK (ft. Tage),quy tắc: tiêu đề
 DOC_YT_L4dSipbZj8A,SEED_090,mv_audio,Mắt Môi Tay Chân,Song,song,Mắt Môi Tay Chân,,tiêu đề,Mắt Môi Tay Chân - MCK (ft. Tage),quy tắc: tiêu đề
 DOC_YT_n7nt4ixOwmo,SEED_090,mv_audio,MCK,Person,performer,Baby,,tiêu đề,Baby - MCK (ft. marzuz),quy tắc: tiêu đề
+DOC_YT_n7nt4ixOwmo,SEED_090,mv_audio,marzuz,Person,featured,Baby,,tiêu đề,Baby - MCK (ft. marzuz),quy tắc: tiêu đề
 DOC_YT_n7nt4ixOwmo,SEED_090,mv_audio,Baby,Song,song,Baby,,tiêu đề,Baby - MCK (ft. marzuz),quy tắc: tiêu đề
 DOC_YT_mbEZ_9dhM_Y,SEED_090,mv_audio,MCK,Person,performer,2h,,tiêu đề,2h - MCK,quy tắc: tiêu đề
 DOC_YT_mbEZ_9dhM_Y,SEED_090,mv_audio,2h,Song,song,2h,,tiêu đề,2h - MCK,quy tắc: tiêu đề
@@ -8668,6 +8720,7 @@ DOC_YT_6fzH7a3XQW0,SEED_090,mv_audio,RPT MCK,Person,performer,Thôi Em Đừng �
 DOC_YT_6fzH7a3XQW0,SEED_090,mv_audio,Trung Trần,Person,featured,Thôi Em Đừng Đi,,tiêu đề,"07. Thôi Em Đừng Đi - RPT MCK ( ft. Trung Trần ) | "" 99% "" the album",quy tắc: tiêu đề
 DOC_YT_6fzH7a3XQW0,SEED_090,mv_audio,Thôi Em Đừng Đi,Song,song,Thôi Em Đừng Đi,,tiêu đề,"07. Thôi Em Đừng Đi - RPT MCK ( ft. Trung Trần ) | "" 99% "" the album",quy tắc: tiêu đề
 DOC_YT_5WkwBKu1le0,SEED_090,mv_audio,RPT MCK,Person,performer,Chỉ Một Đêm Nữa Thôi,,tiêu đề,"06. Chỉ Một Đêm Nữa Thôi - RPT MCK ( ft. tlinh ) | "" 99% "" the album",quy tắc: tiêu đề
+DOC_YT_5WkwBKu1le0,SEED_090,mv_audio,tlinh,Person,featured,Chỉ Một Đêm Nữa Thôi,,tiêu đề,"06. Chỉ Một Đêm Nữa Thôi - RPT MCK ( ft. tlinh ) | "" 99% "" the album",quy tắc: tiêu đề
 DOC_YT_5WkwBKu1le0,SEED_090,mv_audio,Chỉ Một Đêm Nữa Thôi,Song,song,Chỉ Một Đêm Nữa Thôi,,tiêu đề,"06. Chỉ Một Đêm Nữa Thôi - RPT MCK ( ft. tlinh ) | "" 99% "" the album",quy tắc: tiêu đề
 DOC_YT_hyPbk_EjCKU,SEED_090,mv_audio,RPT MCK,Person,performer,Tối Nay Ta Đi Đâu Nhờ,,tiêu đề,"05. Tối Nay Ta Đi Đâu Nhờ - RPT MCK (Remix) | ""99%"" the album",quy tắc: tiêu đề
 DOC_YT_hyPbk_EjCKU,SEED_090,mv_audio,Tối Nay Ta Đi Đâu Nhờ,Song,song,Tối Nay Ta Đi Đâu Nhờ,,tiêu đề,"05. Tối Nay Ta Đi Đâu Nhờ - RPT MCK (Remix) | ""99%"" the album",quy tắc: tiêu đề
@@ -8699,6 +8752,7 @@ DOC_YT_OM_6-e33gaE,SEED_090,mv_audio,LOMAX,Person,producer,,,mô tả dòng 8,Ar
 DOC_YT_OM_6-e33gaE,SEED_090,mv_audio,LOMAX,Person,producer,,,mô tả dòng 9,Producer: LOMAX,quy tắc: dòng credit
 DOC_YT_FCJ3m089p9Q,SEED_090,mv_audio,RPT MCK,Person,performer,Đìu Anh Luôn Giữ Kín Trong Tym,,tiêu đề,Đìu Anh Luôn Giữ Kín Trong Tym - RPT MCK ft tlinh & 2pillz | Official Music Video,quy tắc: tiêu đề
 DOC_YT_FCJ3m089p9Q,SEED_090,mv_audio,2pillz,Person,featured,Đìu Anh Luôn Giữ Kín Trong Tym,,tiêu đề,Đìu Anh Luôn Giữ Kín Trong Tym - RPT MCK ft tlinh & 2pillz | Official Music Video,quy tắc: tiêu đề
+DOC_YT_FCJ3m089p9Q,SEED_090,mv_audio,tlinh,Person,featured,Đìu Anh Luôn Giữ Kín Trong Tym,,tiêu đề,Đìu Anh Luôn Giữ Kín Trong Tym - RPT MCK ft tlinh & 2pillz | Official Music Video,quy tắc: tiêu đề
 DOC_YT_FCJ3m089p9Q,SEED_090,mv_audio,Đìu Anh Luôn Giữ Kín Trong Tym,Song,song,Đìu Anh Luôn Giữ Kín Trong Tym,,tiêu đề,Đìu Anh Luôn Giữ Kín Trong Tym - RPT MCK ft tlinh & 2pillz | Official Music Video,quy tắc: tiêu đề
 DOC_YT_FCJ3m089p9Q,SEED_090,mv_audio,RPT MCK,Person,composer,Đìu Anh Luôn Giữ Kín Trong Tym,,mô tả dòng 3,"Composers: RPT MCK, tlinh, Sơn Tùng MTP",quy tắc: dòng credit
 DOC_YT_FCJ3m089p9Q,SEED_090,mv_audio,Sơn Tùng MTP,Person,composer,Đìu Anh Luôn Giữ Kín Trong Tym,,mô tả dòng 3,"Composers: RPT MCK, tlinh, Sơn Tùng MTP",quy tắc: dòng credit
@@ -8708,6 +8762,7 @@ DOC_YT_FCJ3m089p9Q,SEED_090,mv_audio,2pillz,Person,producer,Đìu Anh Luôn Gi�
 DOC_YT_FCJ3m089p9Q,SEED_090,mv_audio,2pillz,Person,producer,Đìu Anh Luôn Giữ Kín Trong Tym,,mô tả dòng 6,Producer: 2pillz,quy tắc: dòng credit
 DOC_YT_FCJ3m089p9Q,SEED_090,mv_audio,Universal Music Vietnam,Company,audio_distributor,Đìu Anh Luôn Giữ Kín Trong Tym,,mô tả dòng 27,Nghe audio tại đây: https://umvn.lnk.to/DALGKTT,quy tắc: dòng bản quyền/label
 DOC_YT_r92jXyy_h0k,SEED_090,mv_audio,MCK,Person,performer,Dễ,,tiêu đề,MCK & tlinh - Dễ - ( DaniLeigh - Easy ft. Chris Brown ) Remix. Prod by VITALS & Sony tran,quy tắc: tiêu đề
+DOC_YT_r92jXyy_h0k,SEED_090,mv_audio,tlinh,Person,performer,Dễ,,tiêu đề,MCK & tlinh - Dễ - ( DaniLeigh - Easy ft. Chris Brown ) Remix. Prod by VITALS & Sony tran,quy tắc: tiêu đề
 DOC_YT_r92jXyy_h0k,SEED_090,mv_audio,Dễ,Song,song,Dễ,,tiêu đề,MCK & tlinh - Dễ - ( DaniLeigh - Easy ft. Chris Brown ) Remix. Prod by VITALS & Sony tran,quy tắc: tiêu đề
 DOC_YT_zC5SdK6m-4A,SEED_090,mv_audio,MCK,Person,performer,No L/Chẳng giống giáng sinh,,tiêu đề,No L/Chẳng giống giáng sinh (remake) - MCK prod. datfitzx,quy tắc: tiêu đề
 DOC_YT_zC5SdK6m-4A,SEED_090,mv_audio,No L/Chẳng giống giáng sinh,Song,song,No L/Chẳng giống giáng sinh,,tiêu đề,No L/Chẳng giống giáng sinh (remake) - MCK prod. datfitzx,quy tắc: tiêu đề
@@ -9961,6 +10016,7 @@ DOC_YT_fLTUCBWzeRA,ART_0071,mv_audio,SPOTLIGHT,Song,song,SPOTLIGHT,,tiêu đề,
 DOC_YT_9WZSZw4WtFQ,ART_0071,mv_audio,OSAD,Person,performer,Em Chỉ Im Lặng,,tiêu đề,OSAD ft PHÁO | Em Chỉ Im Lặng (Official MV),quy tắc: tiêu đề
 DOC_YT_9WZSZw4WtFQ,ART_0071,mv_audio,PHÁO,Person,featured,Em Chỉ Im Lặng,,tiêu đề,OSAD ft PHÁO | Em Chỉ Im Lặng (Official MV),quy tắc: tiêu đề
 DOC_YT_9WZSZw4WtFQ,ART_0071,mv_audio,Em Chỉ Im Lặng,Song,song,Em Chỉ Im Lặng,,tiêu đề,OSAD ft PHÁO | Em Chỉ Im Lặng (Official MV),quy tắc: tiêu đề
+DOC_YT_SvOSVXTS67M,ART_0071,mv_audio,osad,Person,performer,có người đón em rồi,,tiêu đề,có người đón em rồi.. - osad (official music video),quy tắc: tiêu đề
 DOC_YT_SvOSVXTS67M,ART_0071,mv_audio,có người đón em rồi,Song,song,có người đón em rồi,,tiêu đề,có người đón em rồi.. - osad (official music video),quy tắc: tiêu đề
 DOC_YT_l-bJbgh-cZM,ART_0071,mv_audio,OSAD,Person,performer,Lời Có Cánh,,tiêu đề,Lời Có Cánh - OSAD | Speed Up Version,quy tắc: tiêu đề
 DOC_YT_l-bJbgh-cZM,ART_0071,mv_audio,Lời Có Cánh,Song,song,Lời Có Cánh,,tiêu đề,Lời Có Cánh - OSAD | Speed Up Version,quy tắc: tiêu đề
@@ -10611,6 +10667,7 @@ DOC_YT_Y9N771mpI54,SEED_004,mv_audio,ĐÔNG NHI,Person,performer,,,tiêu đề,�
 DOC_YT_Y9N771mpI54,SEED_004,mv_audio,DTAP,Person,performer,,,tiêu đề,ĐÔNG NHI x DTAP | 1-0 (MỘT - KHÔNG) | OFFICIAL LYRIC VIDEO,quy tắc: tiêu đề
 DOC_YT_I5PTe1lSJjY,SEED_004,mv_audio,ĐÔNG NHI,Person,performer,Ý TRỜI,,tiêu đề,ĐÔNG NHI x DTAP | Ý TRỜI ft. tlinh | OFFICIAL LYRIC VIDEO,quy tắc: tiêu đề
 DOC_YT_I5PTe1lSJjY,SEED_004,mv_audio,DTAP,Person,performer,Ý TRỜI,,tiêu đề,ĐÔNG NHI x DTAP | Ý TRỜI ft. tlinh | OFFICIAL LYRIC VIDEO,quy tắc: tiêu đề
+DOC_YT_I5PTe1lSJjY,SEED_004,mv_audio,tlinh,Person,featured,Ý TRỜI,,tiêu đề,ĐÔNG NHI x DTAP | Ý TRỜI ft. tlinh | OFFICIAL LYRIC VIDEO,quy tắc: tiêu đề
 DOC_YT_I5PTe1lSJjY,SEED_004,mv_audio,Ý TRỜI,Song,song,Ý TRỜI,,tiêu đề,ĐÔNG NHI x DTAP | Ý TRỜI ft. tlinh | OFFICIAL LYRIC VIDEO,quy tắc: tiêu đề
 DOC_YT_A7LY3MjiHkk,SEED_004,mv_audio,ĐÔNG NHI,Person,performer,NGƯỜI ÔM PHÁO HOA,,tiêu đề,ĐÔNG NHI x DTAP | NGƯỜI ÔM PHÁO HOA | OFFICIAL LYRIC VIDEO,quy tắc: tiêu đề
 DOC_YT_A7LY3MjiHkk,SEED_004,mv_audio,DTAP,Person,performer,NGƯỜI ÔM PHÁO HOA,,tiêu đề,ĐÔNG NHI x DTAP | NGƯỜI ÔM PHÁO HOA | OFFICIAL LYRIC VIDEO,quy tắc: tiêu đề
@@ -10695,6 +10752,7 @@ DOC_YT_2cZPhiHaGTo,SEED_004,mv_audio,VILOCITY,Person,member_of,,INUS,mô tả d�
 DOC_YT_2cZPhiHaGTo,SEED_004,mv_audio,SDOG,Person,member_of,,INUS,mô tả dòng 10,Mixing Engineer: SDOG (INUS),quy tắc: tên kèm nhóm trong ngoặc
 DOC_YT_2cZPhiHaGTo,SEED_004,mv_audio,ĐÔNG NHI,Person,performer,Ý TRỜI,,tiêu đề,ĐÔNG NHI x DTAP - Ý TRỜI FT. tlinh | Speed Up Version,quy tắc: tiêu đề
 DOC_YT_2cZPhiHaGTo,SEED_004,mv_audio,DTAP,Person,performer,Ý TRỜI,,tiêu đề,ĐÔNG NHI x DTAP - Ý TRỜI FT. tlinh | Speed Up Version,quy tắc: tiêu đề
+DOC_YT_2cZPhiHaGTo,SEED_004,mv_audio,tlinh,Person,featured,Ý TRỜI,,tiêu đề,ĐÔNG NHI x DTAP - Ý TRỜI FT. tlinh | Speed Up Version,quy tắc: tiêu đề
 DOC_YT_2cZPhiHaGTo,SEED_004,mv_audio,Ý TRỜI,Song,song,Ý TRỜI,,tiêu đề,ĐÔNG NHI x DTAP - Ý TRỜI FT. tlinh | Speed Up Version,quy tắc: tiêu đề
 DOC_YT_2cZPhiHaGTo,SEED_004,mv_audio,DTAP,Person,producer,Ý TRỜI,,mô tả dòng 6,Music Producer: DTAP,quy tắc: dòng credit
 DOC_YT_2cZPhiHaGTo,SEED_004,mv_audio,DTAP,Person,composer,Ý TRỜI,,mô tả dòng 7,Songwriters: DTAP - VIOLET (INUS) - N. (INUS) - TLINH,quy tắc: dòng credit
@@ -10708,6 +10766,7 @@ DOC_YT_s9wnlCmzO88,SEED_004,mv_audio,VILOCITY,Person,member_of,,INUS,mô tả d�
 DOC_YT_s9wnlCmzO88,SEED_004,mv_audio,SDOG,Person,member_of,,INUS,mô tả dòng 10,Mixing Engineer: SDOG (INUS),quy tắc: tên kèm nhóm trong ngoặc
 DOC_YT_s9wnlCmzO88,SEED_004,mv_audio,ĐÔNG NHI,Person,performer,Ý TRỜI,,tiêu đề,ĐÔNG NHI x DTAP - Ý TRỜI FT. tlinh | Dance Practice,quy tắc: tiêu đề
 DOC_YT_s9wnlCmzO88,SEED_004,mv_audio,DTAP,Person,performer,Ý TRỜI,,tiêu đề,ĐÔNG NHI x DTAP - Ý TRỜI FT. tlinh | Dance Practice,quy tắc: tiêu đề
+DOC_YT_s9wnlCmzO88,SEED_004,mv_audio,tlinh,Person,featured,Ý TRỜI,,tiêu đề,ĐÔNG NHI x DTAP - Ý TRỜI FT. tlinh | Dance Practice,quy tắc: tiêu đề
 DOC_YT_s9wnlCmzO88,SEED_004,mv_audio,Ý TRỜI,Song,song,Ý TRỜI,,tiêu đề,ĐÔNG NHI x DTAP - Ý TRỜI FT. tlinh | Dance Practice,quy tắc: tiêu đề
 DOC_YT_s9wnlCmzO88,SEED_004,mv_audio,DTAP,Person,producer,Ý TRỜI,,mô tả dòng 6,Music Producer: DTAP,quy tắc: dòng credit
 DOC_YT_s9wnlCmzO88,SEED_004,mv_audio,DTAP,Person,composer,Ý TRỜI,,mô tả dòng 7,Songwriters: DTAP - VIOLET (INUS) - N. (INUS) - TLINH,quy tắc: dòng credit
@@ -13397,6 +13456,7 @@ DOC_YT_r5IuXu1uxoQ,SEED_128,mv_audio,Mạc Mai Sương,Person,composer,Phút Gi�
 DOC_YT_F2tELFjcbyw,SEED_128,mv_audio,Madihu,Person,performer,Nhà,,tiêu đề,Madihu - Nhà (.Feat Vũ Thanh Vân),quy tắc: tiêu đề
 DOC_YT_F2tELFjcbyw,SEED_128,mv_audio,Nhà,Song,song,Nhà,,tiêu đề,Madihu - Nhà (.Feat Vũ Thanh Vân),quy tắc: tiêu đề
 DOC_YT_eUNZxvmDFxs,SEED_128,mv_audio,Madihu,Person,performer,Em Đâu Cần,,tiêu đề,Madihu - Em Đâu Cần (Feat. tlinh) [Lyrics Video],quy tắc: tiêu đề
+DOC_YT_eUNZxvmDFxs,SEED_128,mv_audio,tlinh,Person,featured,Em Đâu Cần,,tiêu đề,Madihu - Em Đâu Cần (Feat. tlinh) [Lyrics Video],quy tắc: tiêu đề
 DOC_YT_eUNZxvmDFxs,SEED_128,mv_audio,Em Đâu Cần,Song,song,Em Đâu Cần,,tiêu đề,Madihu - Em Đâu Cần (Feat. tlinh) [Lyrics Video],quy tắc: tiêu đề
 DOC_YT_084rJvXnp1k,SEED_128,mv_audio,Madihu,Person,performer,Ba năm một cuộc tình,,tiêu đề,Madihu - Ba năm một cuộc tình (Feat. Trang) [Lyrics video],quy tắc: tiêu đề
 DOC_YT_084rJvXnp1k,SEED_128,mv_audio,Trang,Person,featured,Ba năm một cuộc tình,,tiêu đề,Madihu - Ba năm một cuộc tình (Feat. Trang) [Lyrics video],quy tắc: tiêu đề
@@ -15440,6 +15500,7 @@ DOC_YT_1aQvpcRHlCg,SEED_095,mv_audio,Kewtiie,Person,producer,,,mô tả dòng 7,
 DOC_YT_1aQvpcRHlCg,SEED_095,mv_audio,Kewtiie,Person,producer,,,mô tả dòng 8,Arranger: Kewtiie,quy tắc: dòng credit
 DOC_YT_1aQvpcRHlCg,SEED_095,mv_audio,M Music Records,Company,audio_distributor,,,mô tả dòng 2,Stream Audio: https://mmusicrecords.lnk.to/ACPBDTDD,quy tắc: dòng bản quyền/label
 DOC_YT_sJt_i0hOugA,SEED_095,mv_audio,HIEUTHUHAI,Person,performer,Exit Sign,,tiêu đề,HIEUTHUHAI - Exit Sign (prod. by Kewtiie) ft. marzuz [Official Lyric Video],quy tắc: tiêu đề
+DOC_YT_sJt_i0hOugA,SEED_095,mv_audio,marzuz,Person,featured,Exit Sign,,tiêu đề,HIEUTHUHAI - Exit Sign (prod. by Kewtiie) ft. marzuz [Official Lyric Video],quy tắc: tiêu đề
 DOC_YT_sJt_i0hOugA,SEED_095,mv_audio,Kewtiie,Person,producer,Exit Sign,,tiêu đề,HIEUTHUHAI - Exit Sign (prod. by Kewtiie) ft. marzuz [Official Lyric Video],quy tắc: tiêu đề
 DOC_YT_sJt_i0hOugA,SEED_095,mv_audio,Exit Sign,Song,song,Exit Sign,,tiêu đề,HIEUTHUHAI - Exit Sign (prod. by Kewtiie) ft. marzuz [Official Lyric Video],quy tắc: tiêu đề
 DOC_YT_sJt_i0hOugA,SEED_095,mv_audio,Kewtiie,Person,producer,Exit Sign,,mô tả dòng 7,Music Producer: Kewtiie,quy tắc: dòng credit
@@ -15498,12 +15559,16 @@ DOC_YT_i0nd3NPJ4MI,SEED_095,mv_audio,Không Thể Say,Song,song,Không Thể Say
 DOC_YT_i0nd3NPJ4MI,SEED_095,mv_audio,Kewtiie,Person,producer,Không Thể Say,,mô tả dòng 7,Music Producer: Kewtiie,quy tắc: dòng credit
 DOC_YT_i0nd3NPJ4MI,SEED_095,mv_audio,THUY VAN,Person,producer,Không Thể Say,,mô tả dòng 25,Producer: THUY VAN,quy tắc: dòng credit
 DOC_YT_i0nd3NPJ4MI,SEED_095,mv_audio,M Music Records,Company,audio_distributor,Không Thể Say,,mô tả dòng 4,Audio: https://mmusicrecords.lnk.to/khongthesay,quy tắc: dòng bản quyền/label
+DOC_YT_1OJQdxT6WHE,SEED_095,mv_audio,hieuthuhai,Person,performer,ngủ một mình,,tiêu đề,hieuthuhai - ngủ một mình (tình rất tình) ft. negav (prod. by kewtiie),quy tắc: tiêu đề
+DOC_YT_1OJQdxT6WHE,SEED_095,mv_audio,negav,Person,featured,ngủ một mình,,tiêu đề,hieuthuhai - ngủ một mình (tình rất tình) ft. negav (prod. by kewtiie),quy tắc: tiêu đề
 DOC_YT_1OJQdxT6WHE,SEED_095,mv_audio,ngủ một mình,Song,song,ngủ một mình,,tiêu đề,hieuthuhai - ngủ một mình (tình rất tình) ft. negav (prod. by kewtiie),quy tắc: tiêu đề
 DOC_YT_1OJQdxT6WHE,SEED_095,mv_audio,HIEUTHUHAI,Person,composer,ngủ một mình,,mô tả dòng 6,"Composer: HIEUTHUHAI, Negav",quy tắc: dòng credit
 DOC_YT_1OJQdxT6WHE,SEED_095,mv_audio,Negav,Person,composer,ngủ một mình,,mô tả dòng 6,"Composer: HIEUTHUHAI, Negav",quy tắc: dòng credit
 DOC_YT_1OJQdxT6WHE,SEED_095,mv_audio,Kewtiie,Person,producer,ngủ một mình,,mô tả dòng 7,Arranger & Producer: Kewtiie,quy tắc: dòng credit
 DOC_YT_1OJQdxT6WHE,SEED_095,mv_audio,Viet Anh,Person,producer,ngủ một mình,,mô tả dòng 18,Producer: Viet Anh,quy tắc: dòng credit
 DOC_YT_1OJQdxT6WHE,SEED_095,mv_audio,M Music Records,Company,audio_distributor,ngủ một mình,,mô tả dòng 4,Stream Audio on: https://mmusicrecords.lnk.to/n1m,quy tắc: dòng bản quyền/label
+DOC_YT_STjzkjnLlZ4,SEED_095,mv_audio,hieuthuhai,Person,performer,ngủ một mình,,tiêu đề,hieuthuhai - ngủ một mình ft. negav (prod. by kewtiie) | official mv,quy tắc: tiêu đề
+DOC_YT_STjzkjnLlZ4,SEED_095,mv_audio,negav,Person,featured,ngủ một mình,,tiêu đề,hieuthuhai - ngủ một mình ft. negav (prod. by kewtiie) | official mv,quy tắc: tiêu đề
 DOC_YT_STjzkjnLlZ4,SEED_095,mv_audio,ngủ một mình,Song,song,ngủ một mình,,tiêu đề,hieuthuhai - ngủ một mình ft. negav (prod. by kewtiie) | official mv,quy tắc: tiêu đề
 DOC_YT_STjzkjnLlZ4,SEED_095,mv_audio,HIEUTHUHAI,Person,composer,ngủ một mình,,mô tả dòng 7,"Composer: HIEUTHUHAI, NEGAV",quy tắc: dòng credit
 DOC_YT_STjzkjnLlZ4,SEED_095,mv_audio,NEGAV,Person,composer,ngủ một mình,,mô tả dòng 7,"Composer: HIEUTHUHAI, NEGAV",quy tắc: dòng credit
@@ -16022,6 +16087,7 @@ DOC_YT_SPxvyDcKzMs,SEED_106,mv_audio,M Music Records,Company,audio_distributor,�
 DOC_YT_SPxvyDcKzMs,SEED_106,mv_audio,M Music Records,Company,audio_distributor,ĐẠI DƯƠNG,,mô tả dòng 5,Stream Album KIÊU XA: https://mmusicrecords.lnk.to/KXPK,quy tắc: dòng bản quyền/label
 DOC_YT_SPxvyDcKzMs,SEED_106,mv_audio,MMUSIC RECORDS,Company,label,ĐẠI DƯƠNG,,mô tả dòng 79,"© Bản quyền thuộc về Pháp Kiều, phát hành độc quyền bởi MMUSIC RECORDS ☞ Không đăng lại dưới bất kỳ hình thức nào.",quy tắc: dòng bản quyền/label
 DOC_YT_aJCniGObA4c,SEED_106,mv_audio,Pháp Kiều,Person,performer,3 BÍCH,,tiêu đề,Pháp Kiều - 3 BÍCH ft. tlinh (prod.by KADO) | OFFICIAL MUSIC VIDEO,quy tắc: tiêu đề
+DOC_YT_aJCniGObA4c,SEED_106,mv_audio,tlinh,Person,featured,3 BÍCH,,tiêu đề,Pháp Kiều - 3 BÍCH ft. tlinh (prod.by KADO) | OFFICIAL MUSIC VIDEO,quy tắc: tiêu đề
 DOC_YT_aJCniGObA4c,SEED_106,mv_audio,KADO,Person,producer,3 BÍCH,,tiêu đề,Pháp Kiều - 3 BÍCH ft. tlinh (prod.by KADO) | OFFICIAL MUSIC VIDEO,quy tắc: tiêu đề
 DOC_YT_aJCniGObA4c,SEED_106,mv_audio,3 BÍCH,Song,song,3 BÍCH,,tiêu đề,Pháp Kiều - 3 BÍCH ft. tlinh (prod.by KADO) | OFFICIAL MUSIC VIDEO,quy tắc: tiêu đề
 DOC_YT_aJCniGObA4c,SEED_106,mv_audio,KADO,Person,producer,3 BÍCH,,mô tả dòng 7,Music Producer: KADO,quy tắc: dòng credit
@@ -18782,6 +18848,7 @@ DOC_YT_V7JzukIYzy8,SEED_096,performance_show,VieNETWORK,Company,rights_owner,,,m
 DOC_YT_98cElw44qXU,SEED_096,mv_audio,Negav,Person,performer,Chăm Sóc Em,,tiêu đề,Negav - Chăm Sóc Em | Official Lyric Video,quy tắc: tiêu đề
 DOC_YT_98cElw44qXU,SEED_096,mv_audio,Chăm Sóc Em,Song,song,Chăm Sóc Em,,tiêu đề,Negav - Chăm Sóc Em | Official Lyric Video,quy tắc: tiêu đề
 DOC_YT_ThLU1rJMsRc,SEED_096,performance_show,VieNETWORK,Company,rights_owner,,,mô tả dòng 13,© Copyright by VieNETWORK ☞ Do not Reup.,quy tắc: dòng bản quyền/label
+DOC_YT_GwM-PL9opNY,SEED_096,mv_audio,negav,Person,performer,em khiến anh muốn trở thành người Hà Nội,,tiêu đề,negav - em khiến anh muốn trở thành người Hà Nội | Official Music Video,quy tắc: tiêu đề
 DOC_YT_GwM-PL9opNY,SEED_096,mv_audio,em khiến anh muốn trở thành người Hà Nội,Song,song,em khiến anh muốn trở thành người Hà Nội,,tiêu đề,negav - em khiến anh muốn trở thành người Hà Nội | Official Music Video,quy tắc: tiêu đề
 DOC_YT_GwM-PL9opNY,SEED_096,mv_audio,NEGAV,Person,composer,em khiến anh muốn trở thành người Hà Nội,,mô tả dòng 6,COMPOSER: NEGAV,quy tắc: dòng credit
 DOC_YT_GwM-PL9opNY,SEED_096,mv_audio,KADO,Person,producer,em khiến anh muốn trở thành người Hà Nội,,mô tả dòng 7,MUSIC PRODUCER: KADO,quy tắc: dòng credit
@@ -22033,6 +22100,7 @@ DOC_YT_cdkSV-mBg0s,ART_0149,mv_audio,NƠI TA CHỜ EM,Song,song,NƠI TA CHỜ EM
 DOC_YT_22XL2LzYG3E,ART_0149,mv_audio,WILL 365,Person,performer,NƠI TA CHỜ EM,,tiêu đề,NƠI TA CHỜ EM (OFFICIAL VIDEO LYRICS) - WILL 365 | 1ST SINGLE (FULL) - PHIM EM CHƯA 18 OST,quy tắc: tiêu đề
 DOC_YT_22XL2LzYG3E,ART_0149,mv_audio,NƠI TA CHỜ EM,Song,song,NƠI TA CHỜ EM,,tiêu đề,NƠI TA CHỜ EM (OFFICIAL VIDEO LYRICS) - WILL 365 | 1ST SINGLE (FULL) - PHIM EM CHƯA 18 OST,quy tắc: tiêu đề
 DOC_YT_22XL2LzYG3E,ART_0149,mv_audio,Rhymastic,Person,composer,NƠI TA CHỜ EM,,mô tả dòng 15,Sáng tác : Rhymastic,quy tắc: dòng credit
+DOC_YT_Bb5Qb7ziIig,SEED_094,mv_audio,obito,Person,performer,dạo này,,tiêu đề,obito - 'dạo này' (official music video),quy tắc: tiêu đề
 DOC_YT_Bb5Qb7ziIig,SEED_094,mv_audio,dạo này,Song,song,dạo này,,tiêu đề,obito - 'dạo này' (official music video),quy tắc: tiêu đề
 DOC_YT_EYSegIgigd4,SEED_094,mv_audio,Obito,Person,performer,ĐÁNH ĐỔI,,tiêu đề,Obito - ĐÁNH ĐỔI (ft. MCK) livestage @ NTPMM,quy tắc: tiêu đề
 DOC_YT_EYSegIgigd4,SEED_094,mv_audio,ĐÁNH ĐỔI,Song,song,ĐÁNH ĐỔI,,tiêu đề,Obito - ĐÁNH ĐỔI (ft. MCK) livestage @ NTPMM,quy tắc: tiêu đề
@@ -23817,7 +23885,9 @@ DOC_YT_dPhli2kutiE,SEED_009,mv_audio,MIN,Person,performer,PHẢI LÒNG ANH ENGLI
 DOC_YT_dPhli2kutiE,SEED_009,mv_audio,MEW AMAZING,Person,performer,PHẢI LÒNG ANH ENGLISH VERSION,,tiêu đề,MIN X MEW AMAZING | PHẢI LÒNG ANH ENGLISH VERSION | VHS VIDEO (edited by min),quy tắc: tiêu đề
 DOC_YT_dPhli2kutiE,SEED_009,mv_audio,PHẢI LÒNG ANH ENGLISH VERSION,Song,song,PHẢI LÒNG ANH ENGLISH VERSION,,tiêu đề,MIN X MEW AMAZING | PHẢI LÒNG ANH ENGLISH VERSION | VHS VIDEO (edited by min),quy tắc: tiêu đề
 DOC_YT_dPhli2kutiE,SEED_009,mv_audio,Warner Music Vietnam,Company,audio_distributor,PHẢI LÒNG ANH ENGLISH VERSION,,mô tả dòng 3,🧡 Dear MIN - The 2nd Album | OUT NOW: https://WMVN.lnk.to/DearMin,quy tắc: dòng bản quyền/label
-DOC_YT_30i47zkBgP0,SEED_009,mv_audio,Warner Music Vietnam,Company,audio_distributor,,,mô tả dòng 4,🧡 Dear MIN - The 2nd Album | OUT NOW: https://WMVN.lnk.to/DearMin,quy tắc: dòng bản quyền/label
+DOC_YT_30i47zkBgP0,SEED_009,mv_audio,min,Person,performer,girls like me don't cry,,tiêu đề,thuy x min - girls like me don't cry remix (lyric video),quy tắc: tiêu đề
+DOC_YT_30i47zkBgP0,SEED_009,mv_audio,girls like me don't cry,Song,song,girls like me don't cry,,tiêu đề,thuy x min - girls like me don't cry remix (lyric video),quy tắc: tiêu đề
+DOC_YT_30i47zkBgP0,SEED_009,mv_audio,Warner Music Vietnam,Company,audio_distributor,girls like me don't cry,,mô tả dòng 4,🧡 Dear MIN - The 2nd Album | OUT NOW: https://WMVN.lnk.to/DearMin,quy tắc: dòng bản quyền/label
 DOC_YT_Bs9-t0MoQRo,SEED_009,performance_show,Warner Music Vietnam,Company,audio_distributor,,,mô tả dòng 1,🧡 Dear MIN - The 2nd Album | OUT NOW: https://WMVN.lnk.to/DearMin,quy tắc: dòng bản quyền/label
 DOC_YT_zfhBXo-o4sA,SEED_009,mv_audio,MIN,Person,performer,TÌM X,,tiêu đề,TÌM X - MIN x HỨA KIM TUYỀN x VEYO | OFFICIAL MUSIC VIDEO,quy tắc: tiêu đề
 DOC_YT_zfhBXo-o4sA,SEED_009,mv_audio,HỨA KIM TUYỀN,Person,performer,TÌM X,,tiêu đề,TÌM X - MIN x HỨA KIM TUYỀN x VEYO | OFFICIAL MUSIC VIDEO,quy tắc: tiêu đề
@@ -26283,12 +26353,10 @@ DOC_YT_f-BzUepNeZw,SEED_002,mv_audio,VIC DANG,Person,producer,NGƯỜI HÃY QUÊ
 DOC_YT_RywCvt5JHyw,SEED_002,mv_audio,MỸ TÂM,Person,performer,NGƯỜI HÃY QUÊN EM ĐI,,tiêu đề,NGƯỜI HÃY QUÊN EM ĐI | MỸ TÂM (Audio),quy tắc: tiêu đề
 DOC_YT_RywCvt5JHyw,SEED_002,mv_audio,NGƯỜI HÃY QUÊN EM ĐI,Song,song,NGƯỜI HÃY QUÊN EM ĐI,,tiêu đề,NGƯỜI HÃY QUÊN EM ĐI | MỸ TÂM (Audio),quy tắc: tiêu đề
 DOC_YT_RywCvt5JHyw,SEED_002,mv_audio,KHẮC HƯNG,Person,composer,NGƯỜI HÃY QUÊN EM ĐI,,mô tả dòng 8,- Composer: KHẮC HƯNG,quy tắc: dòng credit
-DOC_YT_dPak48qiwNQ,SEED_002,mv_audio,MỸ TÂM,Person,performer,DRUNKEN DANCE COLLECTION,,tiêu đề,DRUNKEN DANCE COLLECTION #2 | NGƯỜI HÃY QUÊN EM ĐI | MỸ TÂM,quy tắc: tiêu đề
-DOC_YT_dPak48qiwNQ,SEED_002,mv_audio,DRUNKEN DANCE COLLECTION,Song,song,DRUNKEN DANCE COLLECTION,,tiêu đề,DRUNKEN DANCE COLLECTION #2 | NGƯỜI HÃY QUÊN EM ĐI | MỸ TÂM,quy tắc: tiêu đề
-DOC_YT_dPak48qiwNQ,SEED_002,mv_audio,KHẮC HƯNG,Person,composer,DRUNKEN DANCE COLLECTION,,mô tả dòng 8,- Composer: KHẮC HƯNG,quy tắc: dòng credit
-DOC_YT_wiWR39gi4NU,SEED_002,mv_audio,MỸ TÂM,Person,performer,DRUNKEN DANCE COLLECTION,,tiêu đề,DRUNKEN DANCE COLLECTION | NGƯỜI HÃY QUÊN EM ĐI | MỸ TÂM,quy tắc: tiêu đề
-DOC_YT_wiWR39gi4NU,SEED_002,mv_audio,DRUNKEN DANCE COLLECTION,Song,song,DRUNKEN DANCE COLLECTION,,tiêu đề,DRUNKEN DANCE COLLECTION | NGƯỜI HÃY QUÊN EM ĐI | MỸ TÂM,quy tắc: tiêu đề
-DOC_YT_wiWR39gi4NU,SEED_002,mv_audio,KHẮC HƯNG,Person,composer,DRUNKEN DANCE COLLECTION,,mô tả dòng 8,- Composer: KHẮC HƯNG,quy tắc: dòng credit
+DOC_YT_dPak48qiwNQ,SEED_002,mv_audio,MỸ TÂM,Person,performer,,,tiêu đề,DRUNKEN DANCE COLLECTION #2 | NGƯỜI HÃY QUÊN EM ĐI | MỸ TÂM,quy tắc: tiêu đề
+DOC_YT_dPak48qiwNQ,SEED_002,mv_audio,KHẮC HƯNG,Person,composer,,,mô tả dòng 8,- Composer: KHẮC HƯNG,quy tắc: dòng credit
+DOC_YT_wiWR39gi4NU,SEED_002,mv_audio,MỸ TÂM,Person,performer,,,tiêu đề,DRUNKEN DANCE COLLECTION | NGƯỜI HÃY QUÊN EM ĐI | MỸ TÂM,quy tắc: tiêu đề
+DOC_YT_wiWR39gi4NU,SEED_002,mv_audio,KHẮC HƯNG,Person,composer,,,mô tả dòng 8,- Composer: KHẮC HƯNG,quy tắc: dòng credit
 DOC_YT_-T6XSRcUKO4,SEED_002,mv_audio,MỸ TÂM,Person,performer,NẾU CÓ BUÔNG TAY,,tiêu đề,MỸ TÂM - NẾU CÓ BUÔNG TAY (IF YOU LET GO) (Audio),quy tắc: tiêu đề
 DOC_YT_-T6XSRcUKO4,SEED_002,mv_audio,NẾU CÓ BUÔNG TAY,Song,song,NẾU CÓ BUÔNG TAY,,tiêu đề,MỸ TÂM - NẾU CÓ BUÔNG TAY (IF YOU LET GO) (Audio),quy tắc: tiêu đề
 DOC_YT_-T6XSRcUKO4,SEED_002,mv_audio,KHẮC HƯNG,Person,composer,NẾU CÓ BUÔNG TAY,,mô tả dòng 8,- Composer: KHẮC HƯNG,quy tắc: dòng credit
@@ -26334,54 +26402,68 @@ DOC_YT_de7qFaFeBnI,SEED_002,mv_audio,KHAC HUNG,Person,composer,Cuộc Tình Khô
 DOC_YT_xSAVfhW0xD0,SEED_002,mv_audio,Mỹ Tâm,Person,performer,Đôi Mắt Màu Xanh,,tiêu đề,Mỹ Tâm - Đôi Mắt Màu Xanh (Blue Eyes) M/V,quy tắc: tiêu đề
 DOC_YT_xSAVfhW0xD0,SEED_002,mv_audio,Đôi Mắt Màu Xanh,Song,song,Đôi Mắt Màu Xanh,,tiêu đề,Mỹ Tâm - Đôi Mắt Màu Xanh (Blue Eyes) M/V,quy tắc: tiêu đề
 DOC_YT_xSAVfhW0xD0,SEED_002,mv_audio,MY TAM,Person,composer,Đôi Mắt Màu Xanh,,mô tả dòng 3,- Composer: MY TAM,quy tắc: dòng credit
+DOC_YT_-V-FuTOseCo,ART_0212,mv_audio,marzuz,Person,performer,vì,,tiêu đề,marzuz - vì ft. justatee | official music video,quy tắc: tiêu đề
+DOC_YT_-V-FuTOseCo,ART_0212,mv_audio,justatee,Person,featured,vì,,tiêu đề,marzuz - vì ft. justatee | official music video,quy tắc: tiêu đề
 DOC_YT_-V-FuTOseCo,ART_0212,mv_audio,vì,Song,song,vì,,tiêu đề,marzuz - vì ft. justatee | official music video,quy tắc: tiêu đề
 DOC_YT_-V-FuTOseCo,ART_0212,mv_audio,Ok Jang Geum,Person,producer,vì,,mô tả dòng 36,Producer: Ok Jang Geum,quy tắc: dòng credit
 DOC_YT_MuvvbursSZ8,ART_0212,mv_audio,WEAN,Person,performer,Gió,,tiêu đề,Gió – marzuz & WEAN | Official Music Video,quy tắc: tiêu đề
+DOC_YT_MuvvbursSZ8,ART_0212,mv_audio,marzuz,Person,performer,Gió,,tiêu đề,Gió – marzuz & WEAN | Official Music Video,quy tắc: tiêu đề
 DOC_YT_MuvvbursSZ8,ART_0212,mv_audio,Gió,Song,song,Gió,,tiêu đề,Gió – marzuz & WEAN | Official Music Video,quy tắc: tiêu đề
 DOC_YT_MuvvbursSZ8,ART_0212,mv_audio,Mạnh Phùng,Person,producer,Gió,,mô tả dòng 89,"Producer: Mạnh Phùng (Z), Trang Pizu",quy tắc: dòng credit
 DOC_YT_MuvvbursSZ8,ART_0212,mv_audio,Trang Pizu,Person,producer,Gió,,mô tả dòng 89,"Producer: Mạnh Phùng (Z), Trang Pizu",quy tắc: dòng credit
 DOC_YT_MuvvbursSZ8,ART_0212,mv_audio,WEAN,Person,composer,Gió,,mô tả dòng 149,"Composer: marzuz, WEAN",quy tắc: dòng credit
 DOC_YT_MuvvbursSZ8,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,Gió,,mô tả dòng 1,GIÓ – marzuz & WEAN | Official Audio: https://wmvn.lnk.to/Gio,quy tắc: dòng bản quyền/label
+DOC_YT_SHMKECaKHHY,ART_0212,mv_audio,marzuz,Person,performer,lại là cảm xúc này phải không?,,tiêu đề,marzuz - lại là cảm xúc này phải không? (official music video),quy tắc: tiêu đề
 DOC_YT_SHMKECaKHHY,ART_0212,mv_audio,lại là cảm xúc này phải không?,Song,song,lại là cảm xúc này phải không?,,tiêu đề,marzuz - lại là cảm xúc này phải không? (official music video),quy tắc: tiêu đề
 DOC_YT_SHMKECaKHHY,ART_0212,mv_audio,Tiến Dương,Person,producer,lại là cảm xúc này phải không?,,mô tả dòng 50,Producer: Tiến Dương (Antiantiart),quy tắc: dòng credit
 DOC_YT_SHMKECaKHHY,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,lại là cảm xúc này phải không?,,mô tả dòng 1,"marzuz - lại là cảm xúc này phải không? (từ album ""ả"") | official audio: https://WMVN.lnk.to/a-marzuz",quy tắc: dòng bản quyền/label
 DOC_YT_SHMKECaKHHY,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,lại là cảm xúc này phải không?,,mô tả dòng 2,❣️ phiên bản vật lý của “ả” - album đầu tay từ marzuz: https://WMVN.lnk.to/preorder-a,quy tắc: dòng bản quyền/label
+DOC_YT_Ndk5e3bhrps,ART_0212,mv_audio,marzuz,Person,performer,phản chiếu,,tiêu đề,"marzuz, maiki - phản chiếu (official music video)",quy tắc: tiêu đề
 DOC_YT_Ndk5e3bhrps,ART_0212,mv_audio,phản chiếu,Song,song,phản chiếu,,tiêu đề,"marzuz, maiki - phản chiếu (official music video)",quy tắc: tiêu đề
 DOC_YT_Ndk5e3bhrps,ART_0212,mv_audio,Tiến Dương,Person,producer,phản chiếu,,mô tả dòng 48,Producer: Tiến Dương (Antiantiart),quy tắc: dòng credit
 DOC_YT_Ndk5e3bhrps,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,phản chiếu,,mô tả dòng 1,"marzuz, maiki - phản chiếu (từ album ""ả"") | official audio: https://WMVN.lnk.to/a-marzuz",quy tắc: dòng bản quyền/label
 DOC_YT_Ndk5e3bhrps,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,phản chiếu,,mô tả dòng 2,❣️ phiên bản vật lý của “ả” - album đầu tay từ marzuz: https://WMVN.lnk.to/preorder-a,quy tắc: dòng bản quyền/label
+DOC_YT_KJVRnOomDmE,ART_0212,mv_audio,marzuz,Person,performer,thiên thần giáng Trần,,tiêu đề,marzuz - thiên thần giáng Trần (official music video),quy tắc: tiêu đề
 DOC_YT_KJVRnOomDmE,ART_0212,mv_audio,thiên thần giáng Trần,Song,song,thiên thần giáng Trần,,tiêu đề,marzuz - thiên thần giáng Trần (official music video),quy tắc: tiêu đề
 DOC_YT_KJVRnOomDmE,ART_0212,mv_audio,Tiến Dương,Person,producer,thiên thần giáng Trần,,mô tả dòng 70,Producer: Tiến Dương (Antiantiart),quy tắc: dòng credit
 DOC_YT_KJVRnOomDmE,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,thiên thần giáng Trần,,mô tả dòng 1,"marzuz - thiên thần giáng Trần (từ album ""ả"") | official audio: https://WMVN.lnk.to/a-marzuz",quy tắc: dòng bản quyền/label
 DOC_YT_KJVRnOomDmE,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,thiên thần giáng Trần,,mô tả dòng 2,❣️ phiên bản vật lý của “ả” - album đầu tay từ marzuz: https://WMVN.lnk.to/preorder-a,quy tắc: dòng bản quyền/label
+DOC_YT_BKN8kLuGZNA,ART_0212,mv_audio,marzuz,Person,performer,cảm ơn?,,tiêu đề,marzuz - cảm ơn? (official music video),quy tắc: tiêu đề
 DOC_YT_BKN8kLuGZNA,ART_0212,mv_audio,cảm ơn?,Song,song,cảm ơn?,,tiêu đề,marzuz - cảm ơn? (official music video),quy tắc: tiêu đề
 DOC_YT_BKN8kLuGZNA,ART_0212,mv_audio,Tiến Dương,Person,producer,cảm ơn?,,mô tả dòng 46,Producer: Tiến Dương (Antiantiart),quy tắc: dòng credit
 DOC_YT_BKN8kLuGZNA,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,cảm ơn?,,mô tả dòng 1,"marzuz - cảm ơn? (từ album ""ả"") | official audio: https://WMVN.lnk.to/a-marzuz",quy tắc: dòng bản quyền/label
 DOC_YT_BKN8kLuGZNA,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,cảm ơn?,,mô tả dòng 2,❣️ phiên bản vật lý của “ả” - album đầu tay từ marzuz: https://WMVN.lnk.to/preorder-a,quy tắc: dòng bản quyền/label
+DOC_YT_bJJcg82jp9Q,ART_0212,mv_audio,marzuz,Person,performer,rêu xanh trên mặt nước,,tiêu đề,marzuz - rêu xanh trên mặt nước (official music video),quy tắc: tiêu đề
 DOC_YT_bJJcg82jp9Q,ART_0212,mv_audio,rêu xanh trên mặt nước,Song,song,rêu xanh trên mặt nước,,tiêu đề,marzuz - rêu xanh trên mặt nước (official music video),quy tắc: tiêu đề
 DOC_YT_bJJcg82jp9Q,ART_0212,mv_audio,Tiến Dương,Person,producer,rêu xanh trên mặt nước,,mô tả dòng 62,Producer: Tiến Dương (Antiantiart),quy tắc: dòng credit
 DOC_YT_bJJcg82jp9Q,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,rêu xanh trên mặt nước,,mô tả dòng 1,"marzuz - rêu xanh trên mặt nước (từ album ""ả"") | official audio: https://WMVN.lnk.to/a-marzuz",quy tắc: dòng bản quyền/label
 DOC_YT_bJJcg82jp9Q,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,rêu xanh trên mặt nước,,mô tả dòng 2,❣️ phiên bản vật lý của “ả” - album đầu tay từ marzuz: https://WMVN.lnk.to/preorder-a,quy tắc: dòng bản quyền/label
+DOC_YT_I7bftEkatWs,ART_0212,mv_audio,marzuz,Person,performer,ảo ảnh,,tiêu đề,marzuz - ảo ảnh (official music video),quy tắc: tiêu đề
 DOC_YT_I7bftEkatWs,ART_0212,mv_audio,ảo ảnh,Song,song,ảo ảnh,,tiêu đề,marzuz - ảo ảnh (official music video),quy tắc: tiêu đề
 DOC_YT_I7bftEkatWs,ART_0212,mv_audio,Tiến Dương,Person,producer,ảo ảnh,,mô tả dòng 48,Producer: Tiến Dương (Antiantiart),quy tắc: dòng credit
 DOC_YT_I7bftEkatWs,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,ảo ảnh,,mô tả dòng 1,"marzuz - ảo ảnh (từ album ""ả"") | official audio: https://WMVN.lnk.to/a-marzuz",quy tắc: dòng bản quyền/label
 DOC_YT_I7bftEkatWs,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,ảo ảnh,,mô tả dòng 2,❣️ phiên bản vật lý của “ả” - album đầu tay từ marzuz: https://WMVN.lnk.to/preorder-a,quy tắc: dòng bản quyền/label
+DOC_YT_DKO3N1PHsuI,ART_0212,mv_audio,marzuz,Person,performer,đang yên đang lành,,tiêu đề,"marzuz, maiki - đang yên đang lành (official music video)",quy tắc: tiêu đề
 DOC_YT_DKO3N1PHsuI,ART_0212,mv_audio,đang yên đang lành,Song,song,đang yên đang lành,,tiêu đề,"marzuz, maiki - đang yên đang lành (official music video)",quy tắc: tiêu đề
 DOC_YT_DKO3N1PHsuI,ART_0212,mv_audio,Tiến Dương,Person,producer,đang yên đang lành,,mô tả dòng 47,Producer: Tiến Dương (Antiantiart),quy tắc: dòng credit
 DOC_YT_DKO3N1PHsuI,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,đang yên đang lành,,mô tả dòng 1,"marzuz, maiki - đang yên đang lành (từ album ""ả"") | official audio: https://WMVN.lnk.to/a-marzuz",quy tắc: dòng bản quyền/label
 DOC_YT_DKO3N1PHsuI,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,đang yên đang lành,,mô tả dòng 2,❣️ phiên bản vật lý của “ả” - album đầu tay từ marzuz: https://WMVN.lnk.to/preorder-a,quy tắc: dòng bản quyền/label
+DOC_YT_W1g_IDcwXNA,ART_0212,mv_audio,marzuz,Person,performer,ngăn cản,,tiêu đề,marzuz - ngăn cản (official music video),quy tắc: tiêu đề
 DOC_YT_W1g_IDcwXNA,ART_0212,mv_audio,ngăn cản,Song,song,ngăn cản,,tiêu đề,marzuz - ngăn cản (official music video),quy tắc: tiêu đề
 DOC_YT_W1g_IDcwXNA,ART_0212,mv_audio,Tiến Dương,Person,producer,ngăn cản,,mô tả dòng 47,Producer: Tiến Dương (Antiantiart),quy tắc: dòng credit
 DOC_YT_W1g_IDcwXNA,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,ngăn cản,,mô tả dòng 1,"marzuz - ngăn cản (từ album ""ả"") | official audio: https://WMVN.lnk.to/a-marzuz",quy tắc: dòng bản quyền/label
 DOC_YT_W1g_IDcwXNA,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,ngăn cản,,mô tả dòng 2,❣️ phiên bản vật lý của “ả” - album đầu tay từ marzuz: https://WMVN.lnk.to/preorder-a,quy tắc: dòng bản quyền/label
+DOC_YT_eUb3y83OBjM,ART_0212,mv_audio,marzuz,Person,performer,,,tiêu đề,marzuz - ả (full album experience),quy tắc: tiêu đề
 DOC_YT_eUb3y83OBjM,ART_0212,mv_audio,ả,Album,album,,,tiêu đề,marzuz - ả (full album experience),quy tắc: tiêu đề
 DOC_YT_eUb3y83OBjM,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,,,mô tả dòng 1,marzuz - ả (full album experience) | Official Audio: https://WMVN.lnk.to/a-marzuz,quy tắc: dòng bản quyền/label
 DOC_YT_eUb3y83OBjM,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,,,mô tả dòng 2,❣️ phiên bản vật lý của “ả” - Album đầu tiên từ marzuz: https://WMVN.lnk.to/preorder-a,quy tắc: dòng bản quyền/label
 DOC_YT_eUb3y83OBjM,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,,,mô tả dòng 4,Đăng ký tham dự buổi ký tặng Album “ả” tại: https://WMVN.lnk.to/fansign-marzuz,quy tắc: dòng bản quyền/label
+DOC_YT_HvuOeAtqGWM,ART_0212,mv_audio,marzuz,Person,performer,ả / intro to the visual album ả,,tiêu đề,marzuz - ả (official music video) / intro to the visual album ả,quy tắc: tiêu đề
 DOC_YT_HvuOeAtqGWM,ART_0212,mv_audio,ả / intro to the visual album ả,Song,song,ả / intro to the visual album ả,,tiêu đề,marzuz - ả (official music video) / intro to the visual album ả,quy tắc: tiêu đề
 DOC_YT_HvuOeAtqGWM,ART_0212,mv_audio,Tiến Dương,Person,producer,ả / intro to the visual album ả,,mô tả dòng 38,Producer: Tiến Dương (Antiantiart),quy tắc: dòng credit
 DOC_YT_HvuOeAtqGWM,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,ả / intro to the visual album ả,,mô tả dòng 1,"marzuz - ả (từ album ""ả"") | official audio: https://WMVN.lnk.to/a-marzuz",quy tắc: dòng bản quyền/label
 DOC_YT_HvuOeAtqGWM,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,ả / intro to the visual album ả,,mô tả dòng 2,❣️ phiên bản vật lý của “ả” - album đầu tay từ marzuz: https://WMVN.lnk.to/preorder-a,quy tắc: dòng bản quyền/label
+DOC_YT_rXkF6uu-rFY,ART_0212,mv_audio,marzuz,Person,performer,lại là cảm xúc này phải không?,,tiêu đề,marzuz - lại là cảm xúc này phải không? (official audio),quy tắc: tiêu đề
 DOC_YT_rXkF6uu-rFY,ART_0212,mv_audio,lại là cảm xúc này phải không?,Song,song,lại là cảm xúc này phải không?,,tiêu đề,marzuz - lại là cảm xúc này phải không? (official audio),quy tắc: tiêu đề
 DOC_YT_rXkF6uu-rFY,ART_0212,mv_audio,Giovi Phùng,Person,producer,lại là cảm xúc này phải không?,,mô tả dòng 29,"producer: Giovi Phùng (Antiantiart), Tiến Dương (Antiantiart)",quy tắc: dòng credit
 DOC_YT_rXkF6uu-rFY,ART_0212,mv_audio,Tiến Dương,Person,producer,lại là cảm xúc này phải không?,,mô tả dòng 29,"producer: Giovi Phùng (Antiantiart), Tiến Dương (Antiantiart)",quy tắc: dòng credit
@@ -26389,6 +26471,7 @@ DOC_YT_rXkF6uu-rFY,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distribu
 DOC_YT_rXkF6uu-rFY,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,lại là cảm xúc này phải không?,,mô tả dòng 2,❣️ phiên bản vật lý của “ả” - Album đầu tiên từ marzuz: https://WMVN.lnk.to/preorder-a,quy tắc: dòng bản quyền/label
 DOC_YT_rXkF6uu-rFY,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,lại là cảm xúc này phải không?,,mô tả dòng 4,Đăng ký tham dự buổi ký tặng Album “ả” tại: https://WMVN.lnk.to/fansign-marzuz,quy tắc: dòng bản quyền/label
 DOC_YT_rXkF6uu-rFY,ART_0212,mv_audio,Warner Music Vietnam,Company,label,lại là cảm xúc này phải không?,,mô tả dòng 20,record label: Warner Music Vietnam,quy tắc: dòng bản quyền/label
+DOC_YT_bWEw9hL3eJo,ART_0212,mv_audio,marzuz,Person,performer,phản chiếu,,tiêu đề,"marzuz, maiki - phản chiếu (official audio)",quy tắc: tiêu đề
 DOC_YT_bWEw9hL3eJo,ART_0212,mv_audio,phản chiếu,Song,song,phản chiếu,,tiêu đề,"marzuz, maiki - phản chiếu (official audio)",quy tắc: tiêu đề
 DOC_YT_bWEw9hL3eJo,ART_0212,mv_audio,Giovi Phùng,Person,producer,phản chiếu,,mô tả dòng 28,"producer: Giovi Phùng (Antiantiart), Tiến Dương (Antiantiart)",quy tắc: dòng credit
 DOC_YT_bWEw9hL3eJo,ART_0212,mv_audio,Tiến Dương,Person,producer,phản chiếu,,mô tả dòng 28,"producer: Giovi Phùng (Antiantiart), Tiến Dương (Antiantiart)",quy tắc: dòng credit
@@ -26396,12 +26479,14 @@ DOC_YT_bWEw9hL3eJo,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distribu
 DOC_YT_bWEw9hL3eJo,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,phản chiếu,,mô tả dòng 2,❣️ phiên bản vật lý của “ả” - Album đầu tiên từ marzuz: https://WMVN.lnk.to/preorder-a,quy tắc: dòng bản quyền/label
 DOC_YT_bWEw9hL3eJo,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,phản chiếu,,mô tả dòng 4,Đăng ký tham dự buổi ký tặng Album “ả” tại: https://WMVN.lnk.to/fansign-marzuz,quy tắc: dòng bản quyền/label
 DOC_YT_bWEw9hL3eJo,ART_0212,mv_audio,Warner Music Vietnam,Company,label,phản chiếu,,mô tả dòng 19,record label: Warner Music Vietnam,quy tắc: dòng bản quyền/label
+DOC_YT_foRDalDXOQU,ART_0212,mv_audio,marzuz,Person,performer,thiên thần giáng Trần,,tiêu đề,marzuz - thiên thần giáng Trần (official audio),quy tắc: tiêu đề
 DOC_YT_foRDalDXOQU,ART_0212,mv_audio,thiên thần giáng Trần,Song,song,thiên thần giáng Trần,,tiêu đề,marzuz - thiên thần giáng Trần (official audio),quy tắc: tiêu đề
 DOC_YT_foRDalDXOQU,ART_0212,mv_audio,Giovi Phùng,Person,producer,thiên thần giáng Trần,,mô tả dòng 53,"producer: Giovi Phùng (Antiantiart), Tiến Dương (Antiantiart)",quy tắc: dòng credit
 DOC_YT_foRDalDXOQU,ART_0212,mv_audio,Tiến Dương,Person,producer,thiên thần giáng Trần,,mô tả dòng 53,"producer: Giovi Phùng (Antiantiart), Tiến Dương (Antiantiart)",quy tắc: dòng credit
 DOC_YT_foRDalDXOQU,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,thiên thần giáng Trần,,mô tả dòng 1,"marzuz - thiên thần giáng Trần (từ Album ""ả"") | Official Audio: https://WMVN.lnk.to/a-marzuz",quy tắc: dòng bản quyền/label
 DOC_YT_foRDalDXOQU,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,thiên thần giáng Trần,,mô tả dòng 2,❣️ phiên bản vật lý của “ả” - Album đầu tiên từ marzuz: https://WMVN.lnk.to/preorder-a,quy tắc: dòng bản quyền/label
 DOC_YT_foRDalDXOQU,ART_0212,mv_audio,Warner Music Vietnam,Company,label,thiên thần giáng Trần,,mô tả dòng 44,record label: Warner Music Vietnam,quy tắc: dòng bản quyền/label
+DOC_YT_uyR8V4hGrTk,ART_0212,mv_audio,marzuz,Person,performer,cảm ơn?,,tiêu đề,marzuz - cảm ơn? (official audio),quy tắc: tiêu đề
 DOC_YT_uyR8V4hGrTk,ART_0212,mv_audio,cảm ơn?,Song,song,cảm ơn?,,tiêu đề,marzuz - cảm ơn? (official audio),quy tắc: tiêu đề
 DOC_YT_uyR8V4hGrTk,ART_0212,mv_audio,Giovi Phùng,Person,producer,cảm ơn?,,mô tả dòng 26,"producer: Giovi Phùng (Antiantiart), Tiến Dương (Antiantiart)",quy tắc: dòng credit
 DOC_YT_uyR8V4hGrTk,ART_0212,mv_audio,Tiến Dương,Person,producer,cảm ơn?,,mô tả dòng 26,"producer: Giovi Phùng (Antiantiart), Tiến Dương (Antiantiart)",quy tắc: dòng credit
@@ -26409,6 +26494,7 @@ DOC_YT_uyR8V4hGrTk,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distribu
 DOC_YT_uyR8V4hGrTk,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,cảm ơn?,,mô tả dòng 2,❣️ phiên bản vật lý của “ả” - Album đầu tiên từ marzuz: https://WMVN.lnk.to/preorder-a,quy tắc: dòng bản quyền/label
 DOC_YT_uyR8V4hGrTk,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,cảm ơn?,,mô tả dòng 4,Đăng ký tham dự buổi ký tặng Album “ả” tại: https://WMVN.lnk.to/fansign-marzuz,quy tắc: dòng bản quyền/label
 DOC_YT_uyR8V4hGrTk,ART_0212,mv_audio,Warner Music Vietnam,Company,label,cảm ơn?,,mô tả dòng 17,record label: Warner Music Vietnam,quy tắc: dòng bản quyền/label
+DOC_YT_KLfnkwmRUQw,ART_0212,mv_audio,marzuz,Person,performer,rêu xanh trên mặt nước,,tiêu đề,marzuz - rêu xanh trên mặt nước (official audio),quy tắc: tiêu đề
 DOC_YT_KLfnkwmRUQw,ART_0212,mv_audio,rêu xanh trên mặt nước,Song,song,rêu xanh trên mặt nước,,tiêu đề,marzuz - rêu xanh trên mặt nước (official audio),quy tắc: tiêu đề
 DOC_YT_KLfnkwmRUQw,ART_0212,mv_audio,Giovi Phùng,Person,producer,rêu xanh trên mặt nước,,mô tả dòng 28,"producer: Giovi Phùng (Antiantiart), Tiến Dương (Antiantiart)",quy tắc: dòng credit
 DOC_YT_KLfnkwmRUQw,ART_0212,mv_audio,Tiến Dương,Person,producer,rêu xanh trên mặt nước,,mô tả dòng 28,"producer: Giovi Phùng (Antiantiart), Tiến Dương (Antiantiart)",quy tắc: dòng credit
@@ -26416,6 +26502,7 @@ DOC_YT_KLfnkwmRUQw,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distribu
 DOC_YT_KLfnkwmRUQw,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,rêu xanh trên mặt nước,,mô tả dòng 2,❣️ phiên bản vật lý của “ả” - Album đầu tiên từ marzuz: https://WMVN.lnk.to/preorder-a,quy tắc: dòng bản quyền/label
 DOC_YT_KLfnkwmRUQw,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,rêu xanh trên mặt nước,,mô tả dòng 4,Đăng ký tham dự buổi ký tặng Album “ả” tại: https://WMVN.lnk.to/fansign-marzuz,quy tắc: dòng bản quyền/label
 DOC_YT_KLfnkwmRUQw,ART_0212,mv_audio,Warner Music Vietnam,Company,label,rêu xanh trên mặt nước,,mô tả dòng 19,record label: Warner Music Vietnam,quy tắc: dòng bản quyền/label
+DOC_YT_6vTkrqdXLmU,ART_0212,mv_audio,marzuz,Person,performer,ảo ảnh,,tiêu đề,marzuz - ảo ảnh (official audio),quy tắc: tiêu đề
 DOC_YT_6vTkrqdXLmU,ART_0212,mv_audio,ảo ảnh,Song,song,ảo ảnh,,tiêu đề,marzuz - ảo ảnh (official audio),quy tắc: tiêu đề
 DOC_YT_6vTkrqdXLmU,ART_0212,mv_audio,Giovi Phùng,Person,producer,ảo ảnh,,mô tả dòng 28,"producer: Giovi Phùng (Antiantiart), Tiến Dương (Antiantiart)",quy tắc: dòng credit
 DOC_YT_6vTkrqdXLmU,ART_0212,mv_audio,Tiến Dương,Person,producer,ảo ảnh,,mô tả dòng 28,"producer: Giovi Phùng (Antiantiart), Tiến Dương (Antiantiart)",quy tắc: dòng credit
@@ -26423,6 +26510,7 @@ DOC_YT_6vTkrqdXLmU,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distribu
 DOC_YT_6vTkrqdXLmU,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,ảo ảnh,,mô tả dòng 2,❣️ phiên bản vật lý của “ả” - Album đầu tiên từ marzuz: https://WMVN.lnk.to/preorder-a,quy tắc: dòng bản quyền/label
 DOC_YT_6vTkrqdXLmU,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,ảo ảnh,,mô tả dòng 4,Đăng ký tham dự buổi ký tặng Album “ả” tại: https://WMVN.lnk.to/fansign-marzuz,quy tắc: dòng bản quyền/label
 DOC_YT_6vTkrqdXLmU,ART_0212,mv_audio,Warner Music Vietnam,Company,label,ảo ảnh,,mô tả dòng 19,record label: Warner Music Vietnam,quy tắc: dòng bản quyền/label
+DOC_YT_vK_sZg1G4-o,ART_0212,mv_audio,marzuz,Person,performer,đang yên đang lành,,tiêu đề,"marzuz, maiki - đang yên đang lành (official audio)",quy tắc: tiêu đề
 DOC_YT_vK_sZg1G4-o,ART_0212,mv_audio,đang yên đang lành,Song,song,đang yên đang lành,,tiêu đề,"marzuz, maiki - đang yên đang lành (official audio)",quy tắc: tiêu đề
 DOC_YT_vK_sZg1G4-o,ART_0212,mv_audio,Giovi Phùng,Person,producer,đang yên đang lành,,mô tả dòng 28,"producer: Giovi Phùng (Antiantiart), Tiến Dương (Antiantiart)",quy tắc: dòng credit
 DOC_YT_vK_sZg1G4-o,ART_0212,mv_audio,Tiến Dương,Person,producer,đang yên đang lành,,mô tả dòng 28,"producer: Giovi Phùng (Antiantiart), Tiến Dương (Antiantiart)",quy tắc: dòng credit
@@ -26430,6 +26518,7 @@ DOC_YT_vK_sZg1G4-o,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distribu
 DOC_YT_vK_sZg1G4-o,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,đang yên đang lành,,mô tả dòng 2,❣️ phiên bản vật lý của “ả” - Album đầu tiên từ marzuz: https://WMVN.lnk.to/preorder-a,quy tắc: dòng bản quyền/label
 DOC_YT_vK_sZg1G4-o,ART_0212,mv_audio,Warner Music Vietnam,Company,audio_distributor,đang yên đang lành,,mô tả dòng 4,Đăng ký tham dự buổi ký tặng Album “ả” tại: https://WMVN.lnk.to/fansign-marzuz,quy tắc: dòng bản quyền/label
 DOC_YT_vK_sZg1G4-o,ART_0212,mv_audio,Warner Music Vietnam,Company,label,đang yên đang lành,,mô tả dòng 19,record label: Warner Music Vietnam,quy tắc: dòng bản quyền/label
+DOC_YT_0fh8tDAtSEs,ART_0212,mv_audio,marzuz,Person,performer,ngăn cản,,tiêu đề,marzuz - ngăn cản (official audio),quy tắc: tiêu đề
 DOC_YT_0fh8tDAtSEs,ART_0212,mv_audio,ngăn cản,Song,song,ngăn cản,,tiêu đề,marzuz - ngăn cản (official audio),quy tắc: tiêu đề
 DOC_YT_0fh8tDAtSEs,ART_0212,mv_audio,Giovi Phùng,Person,producer,ngăn cản,,mô tả dòng 28,"producer: Giovi Phùng (Antiantiart), Tiến Dương (Antiantiart)",quy tắc: dòng credit
 DOC_YT_0fh8tDAtSEs,ART_0212,mv_audio,Tiến Dương,Person,producer,ngăn cản,,mô tả dòng 28,"producer: Giovi Phùng (Antiantiart), Tiến Dương (Antiantiart)",quy tắc: dòng credit
@@ -30932,6 +31021,7 @@ DOC_YT_9TH5JGYZB4o,SEED_050,mv_audio,Warner Music Vietnam,Company,audio_distribu
 DOC_YT_9TH5JGYZB4o,SEED_050,mv_audio,SS Label,Company,rights_owner,Bật Nó Lên,,mô tả dòng 32,© Bản quyền thuộc về SS Label & SOOBIN,quy tắc: dòng bản quyền/label
 DOC_YT_9TH5JGYZB4o,SEED_050,mv_audio,SS Label,Company,rights_owner,Bật Nó Lên,,mô tả dòng 33,© Copyright by SS Label & SOOBIN ☞ Do not Reup,quy tắc: dòng bản quyền/label
 DOC_YT_oV7qaHKPoK0,SEED_050,mv_audio,SOOBIN,Person,performer,Ai Mà Biết Được,,tiêu đề,"SOOBIN, tlinh - Ai Mà Biết Được (ft. Touliver) | 'BẬT NÓ LÊN' Album (Official MV)",quy tắc: tiêu đề
+DOC_YT_oV7qaHKPoK0,SEED_050,mv_audio,tlinh,Person,performer,Ai Mà Biết Được,,tiêu đề,"SOOBIN, tlinh - Ai Mà Biết Được (ft. Touliver) | 'BẬT NÓ LÊN' Album (Official MV)",quy tắc: tiêu đề
 DOC_YT_oV7qaHKPoK0,SEED_050,mv_audio,Ai Mà Biết Được,Song,song,Ai Mà Biết Được,,tiêu đề,"SOOBIN, tlinh - Ai Mà Biết Được (ft. Touliver) | 'BẬT NÓ LÊN' Album (Official MV)",quy tắc: tiêu đề
 DOC_YT_oV7qaHKPoK0,SEED_050,mv_audio,Warner Music Vietnam,Company,audio_distributor,Ai Mà Biết Được,,mô tả dòng 7,Audio here ▶️ https://wmvn.lnk.to/BATNOLEN,quy tắc: dòng bản quyền/label
 DOC_YT_oV7qaHKPoK0,SEED_050,mv_audio,SS Label,Company,rights_owner,Ai Mà Biết Được,,mô tả dòng 29,© Bản quyền thuộc về SS Label & SOOBIN,quy tắc: dòng bản quyền/label
@@ -35221,28 +35311,48 @@ DOC_YT_8Fid-rNWeho,SEED_069,mv_audio,Gadopax Forte,Person,performer,Nắng Ngoà
 DOC_YT_8Fid-rNWeho,SEED_069,mv_audio,Nắng Ngoài Sân,Song,song,Nắng Ngoài Sân,,tiêu đề,Nắng Ngoài Sân | Hứa Kim Tuyền x Pam Yêu Ơi x Gadopax Forte | Official MV,quy tắc: tiêu đề
 DOC_YT_8Fid-rNWeho,SEED_069,mv_audio,Hứa Kim Tuyền,Person,composer,Nắng Ngoài Sân,,mô tả dòng 10,Composer & Music Producer: Hứa Kim Tuyền,quy tắc: dòng credit
 DOC_YT_8Fid-rNWeho,SEED_069,mv_audio,Hứa Kim Tuyền,Person,producer,Nắng Ngoài Sân,,mô tả dòng 10,Composer & Music Producer: Hứa Kim Tuyền,quy tắc: dòng credit
+DOC_YT_TLxVGdEIUTs,SEED_069,mv_audio,hứa kim tuyền,Person,performer,,,tiêu đề,🏠 '213' (hai người một nhà ba con mèo) - hứa kim tuyền x negav (from EP 'những tổn thương đã qua'),quy tắc: tiêu đề
+DOC_YT_TLxVGdEIUTs,SEED_069,mv_audio,negav,Person,performer,,,tiêu đề,🏠 '213' (hai người một nhà ba con mèo) - hứa kim tuyền x negav (from EP 'những tổn thương đã qua'),quy tắc: tiêu đề
+DOC_YT__DnHBw9zsx0,SEED_069,mv_audio,hứa kim tuyền,Person,performer,bàn kế bên,,tiêu đề,'bàn kế bên' - hứa kim tuyền x vương bình (from EP 'những tổn thương đã qua'),quy tắc: tiêu đề
+DOC_YT__DnHBw9zsx0,SEED_069,mv_audio,vương bình,Person,performer,bàn kế bên,,tiêu đề,'bàn kế bên' - hứa kim tuyền x vương bình (from EP 'những tổn thương đã qua'),quy tắc: tiêu đề
 DOC_YT__DnHBw9zsx0,SEED_069,mv_audio,bàn kế bên,Song,song,bàn kế bên,,tiêu đề,'bàn kế bên' - hứa kim tuyền x vương bình (from EP 'những tổn thương đã qua'),quy tắc: tiêu đề
+DOC_YT_rlGIQa-ZBxM,SEED_069,mv_audio,hứa kim tuyền,Person,performer,chúng ta chỉ là đã từng,,tiêu đề,'chúng ta chỉ là đã từng' - hứa kim tuyền x orange (from EP 'những tổn thương đã qua'),quy tắc: tiêu đề
+DOC_YT_rlGIQa-ZBxM,SEED_069,mv_audio,orange,Person,performer,chúng ta chỉ là đã từng,,tiêu đề,'chúng ta chỉ là đã từng' - hứa kim tuyền x orange (from EP 'những tổn thương đã qua'),quy tắc: tiêu đề
 DOC_YT_rlGIQa-ZBxM,SEED_069,mv_audio,chúng ta chỉ là đã từng,Song,song,chúng ta chỉ là đã từng,,tiêu đề,'chúng ta chỉ là đã từng' - hứa kim tuyền x orange (from EP 'những tổn thương đã qua'),quy tắc: tiêu đề
+DOC_YT_Obp0hRrP_6s,SEED_069,mv_audio,hứa kim tuyền,Person,performer,anh sẽ đến cùng cơn mưa,,tiêu đề,'anh sẽ đến cùng cơn mưa' - hứa kim tuyền x grey d (from EP 'những tổn thương đã qua'),quy tắc: tiêu đề
+DOC_YT_Obp0hRrP_6s,SEED_069,mv_audio,grey d,Person,performer,anh sẽ đến cùng cơn mưa,,tiêu đề,'anh sẽ đến cùng cơn mưa' - hứa kim tuyền x grey d (from EP 'những tổn thương đã qua'),quy tắc: tiêu đề
 DOC_YT_Obp0hRrP_6s,SEED_069,mv_audio,anh sẽ đến cùng cơn mưa,Song,song,anh sẽ đến cùng cơn mưa,,tiêu đề,'anh sẽ đến cùng cơn mưa' - hứa kim tuyền x grey d (from EP 'những tổn thương đã qua'),quy tắc: tiêu đề
+DOC_YT_E-ttLB9T8po,SEED_069,mv_audio,hứa kim tuyền,Person,performer,rồi sẽ ổn cả thôi mà,,tiêu đề,rồi sẽ ổn cả thôi mà (interlude) - hứa kim tuyền (from EP 'những tổn thương đã qua'),quy tắc: tiêu đề
 DOC_YT_E-ttLB9T8po,SEED_069,mv_audio,rồi sẽ ổn cả thôi mà,Song,song,rồi sẽ ổn cả thôi mà,,tiêu đề,rồi sẽ ổn cả thôi mà (interlude) - hứa kim tuyền (from EP 'những tổn thương đã qua'),quy tắc: tiêu đề
+DOC_YT_GMpH1r1e4Hw,SEED_069,mv_audio,hứa kim tuyền,Person,performer,cánh đồng mây của thượng đế,,tiêu đề,cánh đồng mây của thượng đế - hứa kim tuyền (from album 'Colours') (lyrics video),quy tắc: tiêu đề
 DOC_YT_GMpH1r1e4Hw,SEED_069,mv_audio,cánh đồng mây của thượng đế,Song,song,cánh đồng mây của thượng đế,,tiêu đề,cánh đồng mây của thượng đế - hứa kim tuyền (from album 'Colours') (lyrics video),quy tắc: tiêu đề
 DOC_YT_GMpH1r1e4Hw,SEED_069,mv_audio,Hứa Kim Tuyền,Person,performer,cánh đồng mây của thượng đế,,mô tả dòng 3,Singer: Hứa Kim Tuyền,quy tắc: dòng credit
 DOC_YT_GMpH1r1e4Hw,SEED_069,mv_audio,JASE,Person,producer,cánh đồng mây của thượng đế,,mô tả dòng 4,Arranger: JASE,quy tắc: dòng credit
+DOC_YT_8c4iy9vbBUE,SEED_069,mv_audio,hứa kim tuyền,Person,performer,ước mơ của mẹ,,tiêu đề,ước mơ của mẹ - hứa kim tuyền x văn mai hương (from album 'Colours') (OST Đếm Ngày Xa Mẹ),quy tắc: tiêu đề
+DOC_YT_8c4iy9vbBUE,SEED_069,mv_audio,văn mai hương,Person,performer,ước mơ của mẹ,,tiêu đề,ước mơ của mẹ - hứa kim tuyền x văn mai hương (from album 'Colours') (OST Đếm Ngày Xa Mẹ),quy tắc: tiêu đề
 DOC_YT_8c4iy9vbBUE,SEED_069,mv_audio,ước mơ của mẹ,Song,song,ước mơ của mẹ,,tiêu đề,ước mơ của mẹ - hứa kim tuyền x văn mai hương (from album 'Colours') (OST Đếm Ngày Xa Mẹ),quy tắc: tiêu đề
 DOC_YT_8c4iy9vbBUE,SEED_069,mv_audio,Văn Mai Hương,Person,performer,ước mơ của mẹ,,mô tả dòng 5,Singer: Văn Mai Hương,quy tắc: dòng credit
 DOC_YT_8c4iy9vbBUE,SEED_069,mv_audio,JASE,Person,producer,ước mơ của mẹ,,mô tả dòng 6,Arranger: JASE,quy tắc: dòng credit
+DOC_YT_A9JybDb_PDw,SEED_069,mv_audio,hứa kim tuyền,Person,performer,Lucy,,tiêu đề,Lucy - hứa kim tuyền x nguyên hà (from album 'Colours') (lyrics video),quy tắc: tiêu đề
 DOC_YT_A9JybDb_PDw,SEED_069,mv_audio,Lucy,Song,song,Lucy,,tiêu đề,Lucy - hứa kim tuyền x nguyên hà (from album 'Colours') (lyrics video),quy tắc: tiêu đề
 DOC_YT_A9JybDb_PDw,SEED_069,mv_audio,Nguyên Hà,Person,performer,Lucy,,mô tả dòng 5,Singer: Nguyên Hà,quy tắc: dòng credit
 DOC_YT_A9JybDb_PDw,SEED_069,mv_audio,Duy Trần,Person,producer,Lucy,,mô tả dòng 6,Arranger: Duy Trần,quy tắc: dòng credit
+DOC_YT_irEEpfCsq94,SEED_069,mv_audio,hứa kim tuyền,Person,performer,một ngày tôi quên hết,,tiêu đề,một ngày tôi quên hết - hứa kim tuyền x cẩm vân ft. cece trương (from album 'Colours')(lyrics video),quy tắc: tiêu đề
 DOC_YT_irEEpfCsq94,SEED_069,mv_audio,một ngày tôi quên hết,Song,song,một ngày tôi quên hết,,tiêu đề,một ngày tôi quên hết - hứa kim tuyền x cẩm vân ft. cece trương (from album 'Colours')(lyrics video),quy tắc: tiêu đề
 DOC_YT_irEEpfCsq94,SEED_069,mv_audio,Cẩm Vân,Person,performer,một ngày tôi quên hết,,mô tả dòng 5,"Singer: Cẩm Vân, Cece Trương",quy tắc: dòng credit
 DOC_YT_irEEpfCsq94,SEED_069,mv_audio,Cece Trương,Person,performer,một ngày tôi quên hết,,mô tả dòng 5,"Singer: Cẩm Vân, Cece Trương",quy tắc: dòng credit
 DOC_YT_irEEpfCsq94,SEED_069,mv_audio,Duy Trần,Person,producer,một ngày tôi quên hết,,mô tả dòng 6,Arranger: Duy Trần,quy tắc: dòng credit
+DOC_YT_qhyJWBlzoNs,SEED_069,mv_audio,hứa kim tuyền,Person,performer,nếu một mai tôi bay lên trời,,tiêu đề,nếu một mai tôi bay lên trời - hứa kim tuyền x trúc nhân (new version) (from album 'Colours'),quy tắc: tiêu đề
+DOC_YT_qhyJWBlzoNs,SEED_069,mv_audio,trúc nhân,Person,performer,nếu một mai tôi bay lên trời,,tiêu đề,nếu một mai tôi bay lên trời - hứa kim tuyền x trúc nhân (new version) (from album 'Colours'),quy tắc: tiêu đề
 DOC_YT_qhyJWBlzoNs,SEED_069,mv_audio,nếu một mai tôi bay lên trời,Song,song,nếu một mai tôi bay lên trời,,tiêu đề,nếu một mai tôi bay lên trời - hứa kim tuyền x trúc nhân (new version) (from album 'Colours'),quy tắc: tiêu đề
 DOC_YT_qhyJWBlzoNs,SEED_069,mv_audio,Trúc Nhân,Person,performer,nếu một mai tôi bay lên trời,,mô tả dòng 5,Singer: Trúc Nhân,quy tắc: dòng credit
 DOC_YT_qhyJWBlzoNs,SEED_069,mv_audio,Duy Trần,Person,producer,nếu một mai tôi bay lên trời,,mô tả dòng 6,Arranger: Duy Trần,quy tắc: dòng credit
+DOC_YT_rThHfQhaLUs,SEED_069,mv_audio,hứa kim tuyền,Person,performer,hai mươi hai,,tiêu đề,hai mươi hai - hứa kim tuyền x amee (from album 'Colours') (lyrics video),quy tắc: tiêu đề
+DOC_YT_rThHfQhaLUs,SEED_069,mv_audio,amee,Person,performer,hai mươi hai,,tiêu đề,hai mươi hai - hứa kim tuyền x amee (from album 'Colours') (lyrics video),quy tắc: tiêu đề
 DOC_YT_rThHfQhaLUs,SEED_069,mv_audio,hai mươi hai,Song,song,hai mươi hai,,tiêu đề,hai mươi hai - hứa kim tuyền x amee (from album 'Colours') (lyrics video),quy tắc: tiêu đề
 DOC_YT_rThHfQhaLUs,SEED_069,mv_audio,AMEE,Person,performer,hai mươi hai,,mô tả dòng 5,Singer: AMEE,quy tắc: dòng credit
+DOC_YT_xaADHOYgWik,SEED_069,mv_audio,hứa kim tuyền,Person,performer,Hoa Kỳ,,tiêu đề,Hoa Kỳ - hứa kim tuyền x hoàng dũng (solo version) (from album 'Colours'),quy tắc: tiêu đề
+DOC_YT_xaADHOYgWik,SEED_069,mv_audio,hoàng dũng,Person,performer,Hoa Kỳ,,tiêu đề,Hoa Kỳ - hứa kim tuyền x hoàng dũng (solo version) (from album 'Colours'),quy tắc: tiêu đề
 DOC_YT_xaADHOYgWik,SEED_069,mv_audio,Hoa Kỳ,Song,song,Hoa Kỳ,,tiêu đề,Hoa Kỳ - hứa kim tuyền x hoàng dũng (solo version) (from album 'Colours'),quy tắc: tiêu đề
 DOC_YT_xaADHOYgWik,SEED_069,mv_audio,Hoàng Dũng,Person,performer,Hoa Kỳ,,mô tả dòng 5,Singer: Hoàng Dũng,quy tắc: dòng credit
 DOC_YT_xaADHOYgWik,SEED_069,mv_audio,Lê Hữu Minh,Person,producer,Hoa Kỳ,,mô tả dòng 6,Arranger: Lê Hữu Minh,quy tắc: dòng credit
@@ -35258,14 +35368,22 @@ DOC_YT_sjBbF9OtAgI,SEED_069,mv_audio,HUA KIM TUYEN,Person,performer,Tình Bạn 
 DOC_YT_sjBbF9OtAgI,SEED_069,mv_audio,NHANH LE,Person,producer,Tình Bạn Vạn Người Mê,,mô tả dòng 39,Producer: NHANH LE,quy tắc: dòng credit
 DOC_YT_75oWbaZyWoc,SEED_069,performance_show,Orange,Person,performer,,,mô tả dòng 5,Singer: Orange,quy tắc: dòng credit
 DOC_YT_75oWbaZyWoc,SEED_069,performance_show,Đoàn Minh Vũ,Person,producer,,,mô tả dòng 6,Arranger: Đoàn Minh Vũ,quy tắc: dòng credit
+DOC_YT_Xuwfo1Axqi0,SEED_069,mv_audio,tóc tiên,Person,performer,mang ghế ra sân ngồi hát,,tiêu đề,mang ghế ra sân ngồi hát - tóc tiên x hứa kim tuyền (from album 'Colours'),quy tắc: tiêu đề
+DOC_YT_Xuwfo1Axqi0,SEED_069,mv_audio,hứa kim tuyền,Person,performer,mang ghế ra sân ngồi hát,,tiêu đề,mang ghế ra sân ngồi hát - tóc tiên x hứa kim tuyền (from album 'Colours'),quy tắc: tiêu đề
 DOC_YT_Xuwfo1Axqi0,SEED_069,mv_audio,mang ghế ra sân ngồi hát,Song,song,mang ghế ra sân ngồi hát,,tiêu đề,mang ghế ra sân ngồi hát - tóc tiên x hứa kim tuyền (from album 'Colours'),quy tắc: tiêu đề
 DOC_YT_Xuwfo1Axqi0,SEED_069,mv_audio,Tóc Tiên,Person,performer,mang ghế ra sân ngồi hát,,mô tả dòng 4,Singer: Tóc Tiên,quy tắc: dòng credit
 DOC_YT_Xuwfo1Axqi0,SEED_069,mv_audio,SMELOD,Person,producer,mang ghế ra sân ngồi hát,,mô tả dòng 5,Arranger: SMELOD,quy tắc: dòng credit
+DOC_YT_xY7hPsvtWMA,SEED_069,mv_audio,hứa kim tuyền,Person,performer,Lucy,,tiêu đề,Lucy - nguyên hà x hứa kim tuyền (from album 'Colours') (Official MV),quy tắc: tiêu đề
 DOC_YT_xY7hPsvtWMA,SEED_069,mv_audio,Lucy,Song,song,Lucy,,tiêu đề,Lucy - nguyên hà x hứa kim tuyền (from album 'Colours') (Official MV),quy tắc: tiêu đề
 DOC_YT_EMf1Bed2C1s,SEED_069,mv_audio,colours,Song,song,colours,,tiêu đề,'colours - the first album by Hứa Kim Tuyền' - shoutout video,quy tắc: tiêu đề
+DOC_YT_n2iFnPaAsnU,SEED_069,mv_audio,amee,Person,performer,hai mươi hai,,tiêu đề,hai mươi hai (22) - amee x hứa kim tuyền (from album 'Colours'),quy tắc: tiêu đề
+DOC_YT_n2iFnPaAsnU,SEED_069,mv_audio,hứa kim tuyền,Person,performer,hai mươi hai,,tiêu đề,hai mươi hai (22) - amee x hứa kim tuyền (from album 'Colours'),quy tắc: tiêu đề
 DOC_YT_n2iFnPaAsnU,SEED_069,mv_audio,hai mươi hai,Song,song,hai mươi hai,,tiêu đề,hai mươi hai (22) - amee x hứa kim tuyền (from album 'Colours'),quy tắc: tiêu đề
+DOC_YT_PkbrBoaEj9o,SEED_069,mv_audio,hứa kim tuyền,Person,performer,hai mươi hai,,tiêu đề,hai mươi hai (22) - hứa kim tuyền x amee (teaser mv),quy tắc: tiêu đề
+DOC_YT_PkbrBoaEj9o,SEED_069,mv_audio,amee,Person,performer,hai mươi hai,,tiêu đề,hai mươi hai (22) - hứa kim tuyền x amee (teaser mv),quy tắc: tiêu đề
 DOC_YT_PkbrBoaEj9o,SEED_069,mv_audio,hai mươi hai,Song,song,hai mươi hai,,tiêu đề,hai mươi hai (22) - hứa kim tuyền x amee (teaser mv),quy tắc: tiêu đề
 DOC_YT_KrRV0sQDtLc,SEED_069,mv_audio,JASE,Person,producer,,,mô tả dòng 6,arranger: JASE,quy tắc: dòng credit
+DOC_YT_vWBTu-kTaW4,SEED_069,mv_audio,hứa kim tuyền,Person,performer,một ngày tôi quên hết,,tiêu đề,một ngày tôi quên hết - hứa kim tuyền x cẩm vân x cece trương (from album 'Colours'),quy tắc: tiêu đề
 DOC_YT_vWBTu-kTaW4,SEED_069,mv_audio,một ngày tôi quên hết,Song,song,một ngày tôi quên hết,,tiêu đề,một ngày tôi quên hết - hứa kim tuyền x cẩm vân x cece trương (from album 'Colours'),quy tắc: tiêu đề
 DOC_YT_vWBTu-kTaW4,SEED_069,mv_audio,HUA KIM TUYEN,Person,composer,một ngày tôi quên hết,,mô tả dòng 24,COMPOSER & MUSIC PRODUCER: HUA KIM TUYEN,quy tắc: dòng credit
 DOC_YT_vWBTu-kTaW4,SEED_069,mv_audio,HUA KIM TUYEN,Person,producer,một ngày tôi quên hết,,mô tả dòng 24,COMPOSER & MUSIC PRODUCER: HUA KIM TUYEN,quy tắc: dòng credit
@@ -35285,12 +35403,18 @@ DOC_YT_BdPk9ipvczM,SEED_069,mv_audio,HOÀNG DUYÊN,Person,performer,SÀI GÒN Đ
 DOC_YT_BdPk9ipvczM,SEED_069,mv_audio,SÀI GÒN ĐAU LÒNG QUÁ' toàn kỷ niệm chúng ta,Song,song,SÀI GÒN ĐAU LÒNG QUÁ' toàn kỷ niệm chúng ta,,tiêu đề,'SÀI GÒN ĐAU LÒNG QUÁ' toàn kỷ niệm chúng ta... | HỨA KIM TUYỀN x HOÀNG DUYÊN (OFFICIAL MV),quy tắc: tiêu đề
 DOC_YT_BdPk9ipvczM,SEED_069,mv_audio,Hứa Kim Tuyền,Person,producer,SÀI GÒN ĐAU LÒNG QUÁ' toàn kỷ niệm chúng ta,,mô tả dòng 17,Music Producer: Hứa Kim Tuyền,quy tắc: dòng credit
 DOC_YT_BdPk9ipvczM,SEED_069,mv_audio,Kan Nguyễn,Person,producer,SÀI GÒN ĐAU LÒNG QUÁ' toàn kỷ niệm chúng ta,,mô tả dòng 25,Producer: Kan Nguyễn,quy tắc: dòng credit
+DOC_YT_k_GLCQiwHYY,SEED_069,mv_audio,hứa kim tuyền,Person,performer,Hoa Kỳ,,tiêu đề,Hoa Kỳ - hứa kim tuyền x hoàng dũng (from album 'Colours'),quy tắc: tiêu đề
+DOC_YT_k_GLCQiwHYY,SEED_069,mv_audio,hoàng dũng,Person,performer,Hoa Kỳ,,tiêu đề,Hoa Kỳ - hứa kim tuyền x hoàng dũng (from album 'Colours'),quy tắc: tiêu đề
 DOC_YT_k_GLCQiwHYY,SEED_069,mv_audio,Hoa Kỳ,Song,song,Hoa Kỳ,,tiêu đề,Hoa Kỳ - hứa kim tuyền x hoàng dũng (from album 'Colours'),quy tắc: tiêu đề
 DOC_YT_k_GLCQiwHYY,SEED_069,mv_audio,Hứa Kim Tuyền,Person,composer,Hoa Kỳ,,mô tả dòng 3,Composer & Producer: Hứa Kim Tuyền,quy tắc: dòng credit
 DOC_YT_k_GLCQiwHYY,SEED_069,mv_audio,Hứa Kim Tuyền,Person,producer,Hoa Kỳ,,mô tả dòng 3,Composer & Producer: Hứa Kim Tuyền,quy tắc: dòng credit
+DOC_YT_I10MqeKQCvQ,SEED_069,mv_audio,hứa kim tuyền,Person,performer,ước mơ của mẹ,,tiêu đề,ước mơ của mẹ - hứa kim tuyền x văn mai hương (from album 'Colours'),quy tắc: tiêu đề
+DOC_YT_I10MqeKQCvQ,SEED_069,mv_audio,văn mai hương,Person,performer,ước mơ của mẹ,,tiêu đề,ước mơ của mẹ - hứa kim tuyền x văn mai hương (from album 'Colours'),quy tắc: tiêu đề
 DOC_YT_I10MqeKQCvQ,SEED_069,mv_audio,ước mơ của mẹ,Song,song,ước mơ của mẹ,,tiêu đề,ước mơ của mẹ - hứa kim tuyền x văn mai hương (from album 'Colours'),quy tắc: tiêu đề
 DOC_YT_I10MqeKQCvQ,SEED_069,mv_audio,Hứa Kim Tuyền,Person,composer,ước mơ của mẹ,,mô tả dòng 5,Composer & Music Producer: Hứa Kim Tuyền,quy tắc: dòng credit
 DOC_YT_I10MqeKQCvQ,SEED_069,mv_audio,Hứa Kim Tuyền,Person,producer,ước mơ của mẹ,,mô tả dòng 5,Composer & Music Producer: Hứa Kim Tuyền,quy tắc: dòng credit
+DOC_YT_V1v5mAOgTJg,SEED_069,mv_audio,hứa kim tuyền,Person,performer,nếu một mai tôi bay lên trời,,tiêu đề,nếu một mai tôi bay lên trời - hứa kim tuyền x trúc nhân (from album 'Colours'),quy tắc: tiêu đề
+DOC_YT_V1v5mAOgTJg,SEED_069,mv_audio,trúc nhân,Person,performer,nếu một mai tôi bay lên trời,,tiêu đề,nếu một mai tôi bay lên trời - hứa kim tuyền x trúc nhân (from album 'Colours'),quy tắc: tiêu đề
 DOC_YT_V1v5mAOgTJg,SEED_069,mv_audio,nếu một mai tôi bay lên trời,Song,song,nếu một mai tôi bay lên trời,,tiêu đề,nếu một mai tôi bay lên trời - hứa kim tuyền x trúc nhân (from album 'Colours'),quy tắc: tiêu đề
 DOC_YT_3BwF3uqTTkQ,SEED_069,mv_audio,HỨA KIM TUYỀN,Person,composer,,,mô tả dòng 12,COMPOSER & MUSIC PRODUCER: HỨA KIM TUYỀN,quy tắc: dòng credit
 DOC_YT_3BwF3uqTTkQ,SEED_069,mv_audio,HỨA KIM TUYỀN,Person,producer,,,mô tả dòng 12,COMPOSER & MUSIC PRODUCER: HỨA KIM TUYỀN,quy tắc: dòng credit
@@ -38686,6 +38810,7 @@ DOC_YT_AWLp157GHZA,SEED_092,mv_audio,Kida,Person,producer,Giải Cứu Mỹ Nhâ
 DOC_YT_AWLp157GHZA,SEED_092,mv_audio,Hiên Mai Trương,Person,producer,Giải Cứu Mỹ Nhân,,mô tả dòng 37,Producer: Hiên Mai Trương (Dummies’ Classroom),quy tắc: dòng credit
 DOC_YT_AWLp157GHZA,SEED_092,mv_audio,M Music Records,Company,audio_distributor,Giải Cứu Mỹ Nhân,,mô tả dòng 4,Stream now: https://mmusicrecords.lnk.to/L2K,quy tắc: dòng bản quyền/label
 DOC_YT_bMmIAaMcWsU,SEED_092,mv_audio,Low G,Person,performer,Love Game,,tiêu đề,Low G | Love Game (ft. tlinh) | ‘L2K’ The Album,quy tắc: tiêu đề
+DOC_YT_bMmIAaMcWsU,SEED_092,mv_audio,tlinh,Person,featured,Love Game,,tiêu đề,Low G | Love Game (ft. tlinh) | ‘L2K’ The Album,quy tắc: tiêu đề
 DOC_YT_bMmIAaMcWsU,SEED_092,mv_audio,Love Game,Song,song,Love Game,,tiêu đề,Low G | Love Game (ft. tlinh) | ‘L2K’ The Album,quy tắc: tiêu đề
 DOC_YT_bMmIAaMcWsU,SEED_092,mv_audio,Low G,Person,performer,Love Game,,mô tả dòng 8,"Artists: Low G, tlinh",quy tắc: dòng credit
 DOC_YT_bMmIAaMcWsU,SEED_092,mv_audio,Low G,Person,composer,Love Game,,mô tả dòng 9,"Composers: Low G, tlinh",quy tắc: dòng credit
@@ -38744,6 +38869,7 @@ DOC_YT_Y2QrPKgBLQ0,SEED_092,mv_audio,Low G,Person,performer,,,mô tả dòng 6,"
 DOC_YT_Y2QrPKgBLQ0,SEED_092,mv_audio,Mỹ Anh,Person,performer,,,mô tả dòng 6,"Artists: Low G, Mỹ Anh",quy tắc: dòng credit
 DOC_YT_Y2QrPKgBLQ0,SEED_092,mv_audio,Phi Hong Ha,Person,producer,,,mô tả dòng 33,Producer: Phi Hong Ha,quy tắc: dòng credit
 DOC_YT_cI5b71ZBAn0,SEED_092,mv_audio,Low G,Person,performer,Love Game,,tiêu đề,Low G | Love Game (ft. tlinh) | OFFICIAL MUSIC VIDEO,quy tắc: tiêu đề
+DOC_YT_cI5b71ZBAn0,SEED_092,mv_audio,tlinh,Person,featured,Love Game,,tiêu đề,Low G | Love Game (ft. tlinh) | OFFICIAL MUSIC VIDEO,quy tắc: tiêu đề
 DOC_YT_cI5b71ZBAn0,SEED_092,mv_audio,Love Game,Song,song,Love Game,,tiêu đề,Low G | Love Game (ft. tlinh) | OFFICIAL MUSIC VIDEO,quy tắc: tiêu đề
 DOC_YT_cI5b71ZBAn0,SEED_092,mv_audio,Low G,Person,performer,Love Game,,mô tả dòng 8,"aRtiSts: Low G, tlinh",quy tắc: dòng credit
 DOC_YT_cI5b71ZBAn0,SEED_092,mv_audio,M Music Records,Company,audio_distributor,Love Game,,mô tả dòng 2,Stream now: https://mmusicrecords.lnk.to/LoveGame,quy tắc: dòng bản quyền/label
@@ -39433,6 +39559,7 @@ DOC_YT_XJUW8VQ35AU,ART_0096,mv_audio,Nghiia,Person,performer,Chuyện Hai Trái 
 DOC_YT_XJUW8VQ35AU,ART_0096,mv_audio,CM1X,Person,performer,Chuyện Hai Trái Tim,,tiêu đề,Chuyện Hai Trái Tim - Nghiia & CM1X,quy tắc: tiêu đề
 DOC_YT_XJUW8VQ35AU,ART_0096,mv_audio,Chuyện Hai Trái Tim,Song,song,Chuyện Hai Trái Tim,,tiêu đề,Chuyện Hai Trái Tim - Nghiia & CM1X,quy tắc: tiêu đề
 DOC_YT_RPQ44dNQHcQ,ART_0096,mv_audio,2pillz,Person,featured,ghệ iu dấu của em ơi,,tiêu đề,ghệ iu dấu của em ơi (cm1x remix) - @tlinhofficial ft. 2pillz & wokeup,quy tắc: tiêu đề
+DOC_YT_RPQ44dNQHcQ,ART_0096,mv_audio,wokeup,Person,featured,ghệ iu dấu của em ơi,,tiêu đề,ghệ iu dấu của em ơi (cm1x remix) - @tlinhofficial ft. 2pillz & wokeup,quy tắc: tiêu đề
 DOC_YT_RPQ44dNQHcQ,ART_0096,mv_audio,ghệ iu dấu của em ơi,Song,song,ghệ iu dấu của em ơi,,tiêu đề,ghệ iu dấu của em ơi (cm1x remix) - @tlinhofficial ft. 2pillz & wokeup,quy tắc: tiêu đề
 DOC_YT_RPQ44dNQHcQ,ART_0096,mv_audio,2pillz,Person,composer,ghệ iu dấu của em ơi,,mô tả dòng 2,"Composer & Singer: tlinh, 2pillz, WOKEUP",quy tắc: dòng credit
 DOC_YT_RPQ44dNQHcQ,ART_0096,mv_audio,2pillz,Person,performer,ghệ iu dấu của em ơi,,mô tả dòng 2,"Composer & Singer: tlinh, 2pillz, WOKEUP",quy tắc: dòng credit
@@ -39580,6 +39707,7 @@ DOC_YT_H2nA96z-xYg,ART_0096,mv_audio,Freaky,Person,performer,Một Ngày Nắng,
 DOC_YT_H2nA96z-xYg,ART_0096,mv_audio,Tempo G,Person,performer,Một Ngày Nắng,,tiêu đề,Một Ngày Nắng (CM1X Remix) - Anh Thư Phan x Freaky x Tempo G,quy tắc: tiêu đề
 DOC_YT_H2nA96z-xYg,ART_0096,mv_audio,CM1X,Person,producer,Một Ngày Nắng,,tiêu đề,Một Ngày Nắng (CM1X Remix) - Anh Thư Phan x Freaky x Tempo G,quy tắc: tiêu đề
 DOC_YT_H2nA96z-xYg,ART_0096,mv_audio,Một Ngày Nắng,Song,song,Một Ngày Nắng,,tiêu đề,Một Ngày Nắng (CM1X Remix) - Anh Thư Phan x Freaky x Tempo G,quy tắc: tiêu đề
+DOC_YT_bRjpXqyQzXg,ART_0096,mv_audio,tlinh,Person,performer,không cần phải nói nhiều,,tiêu đề,không cần phải nói nhiều (CM1X Remix) - tlinh ft. Hoàng Tôn,quy tắc: tiêu đề
 DOC_YT_bRjpXqyQzXg,ART_0096,mv_audio,Hoàng Tôn,Person,featured,không cần phải nói nhiều,,tiêu đề,không cần phải nói nhiều (CM1X Remix) - tlinh ft. Hoàng Tôn,quy tắc: tiêu đề
 DOC_YT_bRjpXqyQzXg,ART_0096,mv_audio,CM1X,Person,producer,không cần phải nói nhiều,,tiêu đề,không cần phải nói nhiều (CM1X Remix) - tlinh ft. Hoàng Tôn,quy tắc: tiêu đề
 DOC_YT_bRjpXqyQzXg,ART_0096,mv_audio,không cần phải nói nhiều,Song,song,không cần phải nói nhiều,,tiêu đề,không cần phải nói nhiều (CM1X Remix) - tlinh ft. Hoàng Tôn,quy tắc: tiêu đề
@@ -44686,10 +44814,12 @@ DOC_YT_FexweCIv81o,ART_0015,mv_audio,LIEM HIEU,Person,producer,Mưa Còn Rơi Tr
 DOC_YT_FexweCIv81o,ART_0015,mv_audio,JIRO,Person,producer,Mưa Còn Rơi Trên Phố,,mô tả dòng 9,Music producer: LIEM HIEU - JIRO,quy tắc: dòng credit
 DOC_YT_FexweCIv81o,ART_0015,mv_audio,M Music Records,Company,audio_distributor,Mưa Còn Rơi Trên Phố,,mô tả dòng 1,Stream now: https://mmusicrecords.lnk.to/muaconroitrenpho,quy tắc: dòng bản quyền/label
 DOC_YT_FexweCIv81o,ART_0015,mv_audio,W Entertainment,Company,rights_owner,Mưa Còn Rơi Trên Phố,,mô tả dòng 30,© Copyright by W Entertainment ☞ Do not Reup,quy tắc: dòng bản quyền/label
-DOC_YT_Zquk6XYjue8,ART_0015,mv_audio,WEAN,Person,composer,,,mô tả dòng 5,Composer: WEAN,quy tắc: dòng credit
-DOC_YT_Zquk6XYjue8,ART_0015,mv_audio,LIEM HIEU,Person,producer,,,mô tả dòng 6,Music producer: LIEM HIEU,quy tắc: dòng credit
-DOC_YT_Zquk6XYjue8,ART_0015,mv_audio,M Music Records,Company,audio_distributor,,,mô tả dòng 3,Stream here: https://mmusicrecords.lnk.to/NOWME,quy tắc: dòng bản quyền/label
-DOC_YT_Zquk6XYjue8,ART_0015,mv_audio,W Entertainment,Company,rights_owner,,,mô tả dòng 26,© Copyright by W Entertainment ☞ Do not Reup,quy tắc: dòng bản quyền/label
+DOC_YT_Zquk6XYjue8,ART_0015,mv_audio,wean,Person,performer,nowme,,tiêu đề,wean - nowme,quy tắc: tiêu đề
+DOC_YT_Zquk6XYjue8,ART_0015,mv_audio,nowme,Song,song,nowme,,tiêu đề,wean - nowme,quy tắc: tiêu đề
+DOC_YT_Zquk6XYjue8,ART_0015,mv_audio,WEAN,Person,composer,nowme,,mô tả dòng 5,Composer: WEAN,quy tắc: dòng credit
+DOC_YT_Zquk6XYjue8,ART_0015,mv_audio,LIEM HIEU,Person,producer,nowme,,mô tả dòng 6,Music producer: LIEM HIEU,quy tắc: dòng credit
+DOC_YT_Zquk6XYjue8,ART_0015,mv_audio,M Music Records,Company,audio_distributor,nowme,,mô tả dòng 3,Stream here: https://mmusicrecords.lnk.to/NOWME,quy tắc: dòng bản quyền/label
+DOC_YT_Zquk6XYjue8,ART_0015,mv_audio,W Entertainment,Company,rights_owner,nowme,,mô tả dòng 26,© Copyright by W Entertainment ☞ Do not Reup,quy tắc: dòng bản quyền/label
 DOC_YT_h3BLToDKv7E,ART_0015,mv_audio,WEAN,Person,performer,BAO LÂU RỒI EM,,tiêu đề,WEAN - BAO LÂU RỒI EM | Official Music Video,quy tắc: tiêu đề
 DOC_YT_h3BLToDKv7E,ART_0015,mv_audio,BAO LÂU RỒI EM,Song,song,BAO LÂU RỒI EM,,tiêu đề,WEAN - BAO LÂU RỒI EM | Official Music Video,quy tắc: tiêu đề
 DOC_YT_h3BLToDKv7E,ART_0015,mv_audio,WEAN,Person,composer,BAO LÂU RỒI EM,,mô tả dòng 11,Songwriter: WEAN,quy tắc: dòng credit
@@ -44734,6 +44864,7 @@ DOC_YT_xgbQxPJwt5k,ART_0015,mv_audio,WEAN,Person,performer,ĐỢI,,tiêu đề,"
 DOC_YT_xgbQxPJwt5k,ART_0015,mv_audio,ĐỢI,Song,song,ĐỢI,,tiêu đề,"ĐỢI (Special Version) - 52Hz, WEAN ( prod.RIO)",quy tắc: tiêu đề
 DOC_YT_xgbQxPJwt5k,ART_0015,mv_audio,RIO,Person,producer,ĐỢI,,mô tả dòng 5,Music Producer: RIO,quy tắc: dòng credit
 DOC_YT_Pys2iOT9rpw,ART_0015,mv_audio,WEAN,Person,performer,shhhhhhh,,tiêu đề,WEAN – shhhhhhh.. feat tlinh (Official Lyrics Video),quy tắc: tiêu đề
+DOC_YT_Pys2iOT9rpw,ART_0015,mv_audio,tlinh,Person,featured,shhhhhhh,,tiêu đề,WEAN – shhhhhhh.. feat tlinh (Official Lyrics Video),quy tắc: tiêu đề
 DOC_YT_Pys2iOT9rpw,ART_0015,mv_audio,shhhhhhh,Song,song,shhhhhhh,,tiêu đề,WEAN – shhhhhhh.. feat tlinh (Official Lyrics Video),quy tắc: tiêu đề
 DOC_YT_Pys2iOT9rpw,ART_0015,mv_audio,WEAN,Person,performer,shhhhhhh,,mô tả dòng 5,Artist: WEAN - tlinh,quy tắc: dòng credit
 DOC_YT_Pys2iOT9rpw,ART_0015,mv_audio,Liem Hieu,Person,producer,shhhhhhh,,mô tả dòng 6,Music Producer:  Liem Hieu & Alterboi,quy tắc: dòng credit
@@ -46730,6 +46861,7 @@ DOC_YT_klCcuCSgLl8,ART_0048,mv_audio,BAO XOAN,Person,producer,CHẲNG AI VẬY,,
 DOC_YT_klCcuCSgLl8,ART_0048,mv_audio,Warner Music Vietnam,Company,audio_distributor,CHẲNG AI VẬY,,mô tả dòng 2,🎧 Official Audio: https://WMVN.lnk.to/PILLZCASSO,quy tắc: dòng bản quyền/label
 DOC_YT_klCcuCSgLl8,ART_0048,mv_audio,WARNER MUSIC VIETNAM,Company,label,CHẲNG AI VẬY,,mô tả dòng 5,RECORD LABEL: WARNER MUSIC VIETNAM,quy tắc: dòng bản quyền/label
 DOC_YT__NXSRPVrqvg,ART_0048,mv_audio,2pillz,Person,performer,NGỪI ĐẸP ƠII,,tiêu đề,NGỪI ĐẸP ƠII - 2pillz x tlinh,quy tắc: tiêu đề
+DOC_YT__NXSRPVrqvg,ART_0048,mv_audio,tlinh,Person,performer,NGỪI ĐẸP ƠII,,tiêu đề,NGỪI ĐẸP ƠII - 2pillz x tlinh,quy tắc: tiêu đề
 DOC_YT__NXSRPVrqvg,ART_0048,mv_audio,NGỪI ĐẸP ƠII,Song,song,NGỪI ĐẸP ƠII,,tiêu đề,NGỪI ĐẸP ƠII - 2pillz x tlinh,quy tắc: tiêu đề
 DOC_YT__NXSRPVrqvg,ART_0048,mv_audio,2PILLZ,Person,composer,NGỪI ĐẸP ƠII,,mô tả dòng 12,"COMPOSER: 2PILLZ, TLINH",quy tắc: dòng credit
 DOC_YT__NXSRPVrqvg,ART_0048,mv_audio,TLINH,Person,composer,NGỪI ĐẸP ƠII,,mô tả dòng 12,"COMPOSER: 2PILLZ, TLINH",quy tắc: dòng credit
@@ -46837,6 +46969,7 @@ DOC_YT__Wp0_ci0Ws8,ART_0048,mv_audio,Warner Music Vietnam,Company,audio_distribu
 DOC_YT__Wp0_ci0Ws8,ART_0048,mv_audio,WARNER MUSIC VIETNAM,Company,label,BƯỚC ĐI/NÁN LẠI?,,mô tả dòng 5,RECORD LABEL: WARNER MUSIC VIETNAM,quy tắc: dòng bản quyền/label
 DOC_YT_cYPbSpZ2ZhE,ART_0048,mv_audio,2pillz,Person,performer,ĐƯA EM VÀO TRÒNG,,tiêu đề,ĐƯA EM VÀO TRÒNG - 2pillz x GDUCKY x tlinh,quy tắc: tiêu đề
 DOC_YT_cYPbSpZ2ZhE,ART_0048,mv_audio,GDUCKY,Person,performer,ĐƯA EM VÀO TRÒNG,,tiêu đề,ĐƯA EM VÀO TRÒNG - 2pillz x GDUCKY x tlinh,quy tắc: tiêu đề
+DOC_YT_cYPbSpZ2ZhE,ART_0048,mv_audio,tlinh,Person,performer,ĐƯA EM VÀO TRÒNG,,tiêu đề,ĐƯA EM VÀO TRÒNG - 2pillz x GDUCKY x tlinh,quy tắc: tiêu đề
 DOC_YT_cYPbSpZ2ZhE,ART_0048,mv_audio,ĐƯA EM VÀO TRÒNG,Song,song,ĐƯA EM VÀO TRÒNG,,tiêu đề,ĐƯA EM VÀO TRÒNG - 2pillz x GDUCKY x tlinh,quy tắc: tiêu đề
 DOC_YT_cYPbSpZ2ZhE,ART_0048,mv_audio,G DUCKY,Person,composer,ĐƯA EM VÀO TRÒNG,,mô tả dòng 12,"COMPOSER: G DUCKY, TLINH",quy tắc: dòng credit
 DOC_YT_cYPbSpZ2ZhE,ART_0048,mv_audio,TLINH,Person,composer,ĐƯA EM VÀO TRÒNG,,mô tả dòng 12,"COMPOSER: G DUCKY, TLINH",quy tắc: dòng credit
@@ -46847,6 +46980,7 @@ DOC_YT_cYPbSpZ2ZhE,ART_0048,mv_audio,BAO XOAN,Person,producer,ĐƯA EM VÀO TRÒ
 DOC_YT_cYPbSpZ2ZhE,ART_0048,mv_audio,Warner Music Vietnam,Company,audio_distributor,ĐƯA EM VÀO TRÒNG,,mô tả dòng 2,🎧 Official Audio: https://WMVN.lnk.to/PILLZCASSO,quy tắc: dòng bản quyền/label
 DOC_YT_cYPbSpZ2ZhE,ART_0048,mv_audio,WARNER MUSIC VIETNAM,Company,label,ĐƯA EM VÀO TRÒNG,,mô tả dòng 5,RECORD LABEL: WARNER MUSIC VIETNAM,quy tắc: dòng bản quyền/label
 DOC_YT_8Dm5o61Cn1A,ART_0048,mv_audio,2pillz,Person,performer,ĐẾN LÚC NÀY THÌ…,,tiêu đề,ĐẾN LÚC NÀY THÌ… - 2pillz x tlinh,quy tắc: tiêu đề
+DOC_YT_8Dm5o61Cn1A,ART_0048,mv_audio,tlinh,Person,performer,ĐẾN LÚC NÀY THÌ…,,tiêu đề,ĐẾN LÚC NÀY THÌ… - 2pillz x tlinh,quy tắc: tiêu đề
 DOC_YT_8Dm5o61Cn1A,ART_0048,mv_audio,ĐẾN LÚC NÀY THÌ…,Song,song,ĐẾN LÚC NÀY THÌ…,,tiêu đề,ĐẾN LÚC NÀY THÌ… - 2pillz x tlinh,quy tắc: tiêu đề
 DOC_YT_8Dm5o61Cn1A,ART_0048,mv_audio,2PILLZ,Person,composer,ĐẾN LÚC NÀY THÌ…,,mô tả dòng 13,"COMPOSER: 2PILLZ, TLINH",quy tắc: dòng credit
 DOC_YT_8Dm5o61Cn1A,ART_0048,mv_audio,TLINH,Person,composer,ĐẾN LÚC NÀY THÌ…,,mô tả dòng 13,"COMPOSER: 2PILLZ, TLINH",quy tắc: dòng credit
@@ -46876,6 +47010,7 @@ DOC_YT_9d8gIGuCYOI,ART_0048,mv_audio,thật tình,Song,song,thật tình,,tiêu 
 DOC_YT_9d8gIGuCYOI,ART_0048,mv_audio,Warner Music Vietnam,Company,audio_distributor,thật tình,,mô tả dòng 3,🎵Official Audio: https://WMVN.lnk.to/hoanghon,quy tắc: dòng bản quyền/label
 DOC_YT_9d8gIGuCYOI,ART_0048,mv_audio,Warner Music Vietnam,Company,audio_distributor,thật tình,,mô tả dòng 7,🎵Official Audio: https://WMVN.lnk.to/SUNset,quy tắc: dòng bản quyền/label
 DOC_YT_o_APBjERj6s,ART_0048,mv_audio,2pillz,Person,performer,hoàng hôn,,tiêu đề,2pillz x tlinh - ‘hoàng hôn’ | official visualizer,quy tắc: tiêu đề
+DOC_YT_o_APBjERj6s,ART_0048,mv_audio,tlinh,Person,performer,hoàng hôn,,tiêu đề,2pillz x tlinh - ‘hoàng hôn’ | official visualizer,quy tắc: tiêu đề
 DOC_YT_o_APBjERj6s,ART_0048,mv_audio,hoàng hôn,Song,song,hoàng hôn,,tiêu đề,2pillz x tlinh - ‘hoàng hôn’ | official visualizer,quy tắc: tiêu đề
 DOC_YT_o_APBjERj6s,ART_0048,mv_audio,Warner Music Vietnam,Company,audio_distributor,hoàng hôn,,mô tả dòng 3,🎵Official Audio: https://WMVN.lnk.to/hoanghon,quy tắc: dòng bản quyền/label
 DOC_YT_o_APBjERj6s,ART_0048,mv_audio,Warner Music Vietnam,Company,audio_distributor,hoàng hôn,,mô tả dòng 7,🎵Official Audio: https://WMVN.lnk.to/SUNset,quy tắc: dòng bản quyền/label
@@ -46891,9 +47026,13 @@ DOC_YT_WKJSIAwkzbc,ART_0048,mv_audio,2PILLZ,Person,producer,tình wá akk,,mô t
 DOC_YT_WKJSIAwkzbc,ART_0048,mv_audio,GREY D,Person,composer,tình wá akk,,mô tả dòng 42,COMPOSER: GREY D,quy tắc: dòng credit
 DOC_YT_WKJSIAwkzbc,ART_0048,mv_audio,Warner Music Vietnam,Company,audio_distributor,tình wá akk,,mô tả dòng 3,🌊 Official Audio: https://wmvn.lnk.to/twa,quy tắc: dòng bản quyền/label
 DOC_YT_0r0zboqNOVY,ART_0048,mv_audio,2pillz,Person,performer,Còn Gì Để Mất,,tiêu đề,"2pillz - ""Còn Gì Để Mất"" (ft wokeup, wxrdie, tlinh) [Official Visualizer]",quy tắc: tiêu đề
+DOC_YT_0r0zboqNOVY,ART_0048,mv_audio,wokeup,Person,featured,Còn Gì Để Mất,,tiêu đề,"2pillz - ""Còn Gì Để Mất"" (ft wokeup, wxrdie, tlinh) [Official Visualizer]",quy tắc: tiêu đề
+DOC_YT_0r0zboqNOVY,ART_0048,mv_audio,wxrdie,Person,featured,Còn Gì Để Mất,,tiêu đề,"2pillz - ""Còn Gì Để Mất"" (ft wokeup, wxrdie, tlinh) [Official Visualizer]",quy tắc: tiêu đề
+DOC_YT_0r0zboqNOVY,ART_0048,mv_audio,tlinh,Person,featured,Còn Gì Để Mất,,tiêu đề,"2pillz - ""Còn Gì Để Mất"" (ft wokeup, wxrdie, tlinh) [Official Visualizer]",quy tắc: tiêu đề
 DOC_YT_0r0zboqNOVY,ART_0048,mv_audio,Còn Gì Để Mất,Song,song,Còn Gì Để Mất,,tiêu đề,"2pillz - ""Còn Gì Để Mất"" (ft wokeup, wxrdie, tlinh) [Official Visualizer]",quy tắc: tiêu đề
 DOC_YT_OBuKVxgZoeg,ART_0048,mv_audio,RPT MCK,Person,performer,Đìu Anh Luôn Giữ Kín Trong Tym,,tiêu đề,Đìu Anh Luôn Giữ Kín Trong Tym - RPT MCK ft tlinh & 2pillz (2pillz remix) | Official Visualizer,quy tắc: tiêu đề
 DOC_YT_OBuKVxgZoeg,ART_0048,mv_audio,2pillz,Person,featured,Đìu Anh Luôn Giữ Kín Trong Tym,,tiêu đề,Đìu Anh Luôn Giữ Kín Trong Tym - RPT MCK ft tlinh & 2pillz (2pillz remix) | Official Visualizer,quy tắc: tiêu đề
+DOC_YT_OBuKVxgZoeg,ART_0048,mv_audio,tlinh,Person,featured,Đìu Anh Luôn Giữ Kín Trong Tym,,tiêu đề,Đìu Anh Luôn Giữ Kín Trong Tym - RPT MCK ft tlinh & 2pillz (2pillz remix) | Official Visualizer,quy tắc: tiêu đề
 DOC_YT_OBuKVxgZoeg,ART_0048,mv_audio,Đìu Anh Luôn Giữ Kín Trong Tym,Song,song,Đìu Anh Luôn Giữ Kín Trong Tym,,tiêu đề,Đìu Anh Luôn Giữ Kín Trong Tym - RPT MCK ft tlinh & 2pillz (2pillz remix) | Official Visualizer,quy tắc: tiêu đề
 DOC_YT_OBuKVxgZoeg,ART_0048,mv_audio,Universal Music Vietnam,Company,audio_distributor,Đìu Anh Luôn Giữ Kín Trong Tym,,mô tả dòng 9,Nghe audio tại đây: https://umvn.lnk.to/DALGKTT_Remix,quy tắc: dòng bản quyền/label
 DOC_YT_sFXagZPquJw,ART_0174,mv_audio,Lãng,Person,performer,Lỡ,,tiêu đề,Lãng - Lỡ (Audio Official),quy tắc: tiêu đề
@@ -46903,6 +47042,7 @@ DOC_YT_dUq8_LbKJ7w,ART_0174,mv_audio,Lil Wuyn,Person,featured,Trăm Năm,,tiêu 
 DOC_YT_dUq8_LbKJ7w,ART_0174,mv_audio,Trăm Năm,Song,song,Trăm Năm,,tiêu đề,Lãng - Trăm Năm ft. Lil Wuyn (Audio),quy tắc: tiêu đề
 DOC_YT_FruVMdLNcjA,ART_0174,mv_audio,Lãng,Person,performer,Cô đơn đã quá bình thường,,tiêu đề,Lãng - Cô đơn đã quá bình thường (Audio),quy tắc: tiêu đề
 DOC_YT_FruVMdLNcjA,ART_0174,mv_audio,Cô đơn đã quá bình thường,Song,song,Cô đơn đã quá bình thường,,tiêu đề,Lãng - Cô đơn đã quá bình thường (Audio),quy tắc: tiêu đề
+DOC_YT_5-JKgg4FRbs,ART_0174,mv_audio,lãng,Person,performer,nguyên xi,,tiêu đề,lãng - nguyên xi ft. namcocain (mv 8K 18 triệu màu),quy tắc: tiêu đề
 DOC_YT_5-JKgg4FRbs,ART_0174,mv_audio,nguyên xi,Song,song,nguyên xi,,tiêu đề,lãng - nguyên xi ft. namcocain (mv 8K 18 triệu màu),quy tắc: tiêu đề
 DOC_YT_rfB9Us-wAQo,ART_0174,mv_audio,Lãng,Person,performer,Thằng Mike,,tiêu đề,Lãng - Thằng Mike (Audio),quy tắc: tiêu đề
 DOC_YT_rfB9Us-wAQo,ART_0174,mv_audio,Thằng Mike,Song,song,Thằng Mike,,tiêu đề,Lãng - Thằng Mike (Audio),quy tắc: tiêu đề
@@ -47935,6 +48075,7 @@ DOC_YT_X8WMd8irD6o,SEED_109,mv_audio,Coldzy,Person,performer,Dracold,,tiêu đ�
 DOC_YT_X8WMd8irD6o,SEED_109,mv_audio,Dracold,Song,song,Dracold,,tiêu đề,Coldzy - Dracold (Mane) [Visualizer],quy tắc: tiêu đề
 DOC_YT_uYguQqvIdDQ,SEED_109,mv_audio,Coldzy,Person,performer,If You Said So,,tiêu đề,"Coldzy, tlinh, 2pillz - If You Said So (Remix) [Visualizer]",quy tắc: tiêu đề
 DOC_YT_uYguQqvIdDQ,SEED_109,mv_audio,2pillz,Person,performer,If You Said So,,tiêu đề,"Coldzy, tlinh, 2pillz - If You Said So (Remix) [Visualizer]",quy tắc: tiêu đề
+DOC_YT_uYguQqvIdDQ,SEED_109,mv_audio,tlinh,Person,performer,If You Said So,,tiêu đề,"Coldzy, tlinh, 2pillz - If You Said So (Remix) [Visualizer]",quy tắc: tiêu đề
 DOC_YT_uYguQqvIdDQ,SEED_109,mv_audio,If You Said So,Song,song,If You Said So,,tiêu đề,"Coldzy, tlinh, 2pillz - If You Said So (Remix) [Visualizer]",quy tắc: tiêu đề
 DOC_YT_upt6e4hszKU,SEED_109,performance_show,Viet Kuro,Person,producer,,,mô tả dòng 20,"Producer: Viet Kuro, Dinh Dung",quy tắc: dòng credit
 DOC_YT_upt6e4hszKU,SEED_109,performance_show,Dinh Dung,Person,producer,,,mô tả dòng 20,"Producer: Viet Kuro, Dinh Dung",quy tắc: dòng credit
@@ -51168,6 +51309,7 @@ DOC_YT_EPbDn_rnLKw,ART_0158,mv_audio,Universal Music Vietnam,Company,audio_distr
 DOC_YT_txdTrlyhy90,ART_0158,mv_audio,2pillz,Person,featured,storm version,,tiêu đề,"vaicaunoicokhiennguoithaydoi - storm version (feat. tlinh, 2pillz, NewL, WOKEUP)",quy tắc: tiêu đề
 DOC_YT_txdTrlyhy90,ART_0158,mv_audio,NewL,Person,featured,storm version,,tiêu đề,"vaicaunoicokhiennguoithaydoi - storm version (feat. tlinh, 2pillz, NewL, WOKEUP)",quy tắc: tiêu đề
 DOC_YT_txdTrlyhy90,ART_0158,mv_audio,WOKEUP,Person,featured,storm version,,tiêu đề,"vaicaunoicokhiennguoithaydoi - storm version (feat. tlinh, 2pillz, NewL, WOKEUP)",quy tắc: tiêu đề
+DOC_YT_txdTrlyhy90,ART_0158,mv_audio,tlinh,Person,featured,storm version,,tiêu đề,"vaicaunoicokhiennguoithaydoi - storm version (feat. tlinh, 2pillz, NewL, WOKEUP)",quy tắc: tiêu đề
 DOC_YT_txdTrlyhy90,ART_0158,mv_audio,storm version,Song,song,storm version,,tiêu đề,"vaicaunoicokhiennguoithaydoi - storm version (feat. tlinh, 2pillz, NewL, WOKEUP)",quy tắc: tiêu đề
 DOC_YT_txdTrlyhy90,ART_0158,mv_audio,ST.319 Entertainment,Company,label,storm version,,mô tả dòng 7,℗ ST.319 Entertainment,quy tắc: dòng bản quyền/label
 DOC_YT_hABRGiAEaXo,ART_0160,performance_show,THỎ,Person,member_of,,Da LAB,mô tả dòng 34,"🕺 Các nghệ sĩ góp mặt vào của chương trình, bao gồm: ĐẠI NGHĨA, NGUYỄN VĂN CHUNG, THÁI VG, TÙNG MINT, THANH DUY, THỎ (DA LAB), TRỊNH THĂNG BÌNH, HOÀNG TÔN, THƠM (DA LAB), JUN PHẠM, ĐINH MẠNH NINH, VƯƠ",quy tắc: tên kèm nhóm trong ngoặc
@@ -51327,8 +51469,7 @@ DOC_YT_C8cBMmgqRG4,ART_0163|SHOW_004,performance_show,1Label,Company,audio_distr
 DOC_YT_X8qLvnVXwOE,ART_0163,mv_audio,Records DK,Company,label,,,mô tả dòng 7,℗ 13537455 Records DK,quy tắc: dòng bản quyền/label
 DOC_YT_o1CG4MMWb9Y,ART_0163,mv_audio,Records DK,Company,label,,,mô tả dòng 7,℗ 13537455 Records DK,quy tắc: dòng bản quyền/label
 DOC_YT_ErRyG2etuz4,ART_0163,mv_audio,Records DK,Company,label,,,mô tả dòng 7,℗ 13537455 Records DK,quy tắc: dòng bản quyền/label
-DOC_YT_gRukKoYDq5E,ART_0168,mv_audio,DuongK,Person,performer,Mixset Bayxa,,tiêu đề,DuongK - Mixset Bayxa (Official M/V),quy tắc: tiêu đề
-DOC_YT_gRukKoYDq5E,ART_0168,mv_audio,Mixset Bayxa,Song,song,Mixset Bayxa,,tiêu đề,DuongK - Mixset Bayxa (Official M/V),quy tắc: tiêu đề
+DOC_YT_gRukKoYDq5E,ART_0168,mv_audio,DuongK,Person,performer,,,tiêu đề,DuongK - Mixset Bayxa (Official M/V),quy tắc: tiêu đề
 DOC_YT_OfHCnuvrPLM,ART_0168,mv_audio,Universal Music Pte,Company,label,,,mô tả dòng 7,℗ 2024 Universal Music Pte. Ltd.,quy tắc: dòng bản quyền/label
 DOC_YT_9tcFnx0-cQY,SEED_032,mv_audio,ONLY C,Person,performer,NGƯỜI ĐÁNG THƯƠNG LÀ ANH,,tiêu đề,NGƯỜI ĐÁNG THƯƠNG LÀ ANH - ONLY C X NGUYỄN PHÚC THIỆN | OFFICIAL MUSIC VIDEO,quy tắc: tiêu đề
 DOC_YT_9tcFnx0-cQY,SEED_032,mv_audio,NGƯỜI ĐÁNG THƯƠNG LÀ ANH,Song,song,NGƯỜI ĐÁNG THƯƠNG LÀ ANH,,tiêu đề,NGƯỜI ĐÁNG THƯƠNG LÀ ANH - ONLY C X NGUYỄN PHÚC THIỆN | OFFICIAL MUSIC VIDEO,quy tắc: tiêu đề
