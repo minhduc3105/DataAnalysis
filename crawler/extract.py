@@ -3,8 +3,8 @@ import re
 import unicodedata
 from collections import Counter, defaultdict
 
-from .common import normalize_name, now_iso, read_seeds
-from .config import INTERIM_DIR, SEEDS_PATH
+from .common import iter_jsonl, normalize_name, now_iso, read_seeds
+from .config import INTERIM_DIR, RAW_DIR, SEEDS_PATH
 from .layer1 import DASH, NAME_SPLIT, SHOW_WORDS, _clean, _key, _names, _songs, parse_title
 from .layer1_extract import _write_preserving_review, org_mentions
 from .scope import VI_CHARS
@@ -464,8 +464,87 @@ def _social(desc: str) -> list[tuple[str, str]]:
     return out
 
 
+SPOTIFY_ALBUMS = RAW_DIR / "spotify" / "albums"
+SPOTIFY_METHOD = "Spotify API: danh sách bài"
+SPOTIFY_COPYRIGHT = "Spotify API: dòng bản quyền"
+NOT_RELEASE_TRACK = re.compile(r"\b(?:beat|instrumental|inst|karaoke|acapella|a cappella|minus one)\b", re.IGNORECASE)
+# Spotify cho chương trình đứng tên như nghệ sĩ ("RAP VIỆT", "ANH TRAI "SAY HI""); giữ lại sẽ sinh cạnh hợp tác giả.
+SHOW_ARTIST = re.compile(r"say hi|^rap việt|king of rap|anh trai|chông gai|our song|biển của hy vọng|làn sóng xanh|tân binh toàn năng|chị đẹp", re.IGNORECASE)
+COPYRIGHT_HEAD = re.compile(r"^\s*(?:[℗©]|\([CP]\))?\s*(?:\d{4}\b)?\s*[|:,-]?\s*")
+LICENSE = re.compile(
+    r"\s*,?\s*\b(?:under\s+)?(?:exclusive(?:ly)?\s+)?(?:licen[cs]ed?\s+(?:by|from)|licen[cs]ed?\s+(?:to\b)?|distribut(?:ed|ion)\s+(?:by|under))\s*",
+    re.IGNORECASE,
+)
+LEGAL_WORDS = re.compile(r",?\s*\b(?:co\.?\s*,?\s*)?(?:ltd|limited|inc|llc|jsc)\b\.?", re.IGNORECASE)
+PEOPLE_SPLIT = re.compile(r"\s*(?:,|&|\s[xX×]\s|\bfeat\.?|\bft\.?)\s*")
+
+
+def _spotify_albums() -> dict[str, dict]:
+    albums: dict[str, dict] = {}
+    for r in iter_jsonl(sorted(SPOTIFY_ALBUMS.glob("*.jsonl"))):
+        albums.setdefault(r["album_id"], r)
+    return albums
+
+
+def _spotify_companies(album: dict, people: set[str]) -> list[tuple[str, str, str]]:
+    """Dòng bản quyền Spotify: "2024 Exclusive Licensed to WM Vietnam, VIE CHANNEL" → chủ quyền + đơn vị phát hành."""
+    found: dict[str, tuple[str, str, str]] = {}
+    lines = [c.get("text") or "" for c in album.get("copyrights") or []] + ([f"label {album['label']}"] if album.get("label") else [])
+    for line in lines:
+        parts = LICENSE.split(COPYRIGHT_HEAD.sub("", line.replace("label ", "", 1) if line.startswith("label ") else line))
+        # "X under license from Y": Y mới là chủ quyền, X là đơn vị phát hành.
+        owner_last = bool(re.search(r"licen[cs]ed?\s+(?:by|from)\b", line, re.IGNORECASE))
+        for i, part in enumerate(parts):
+            for raw in re.split(r"\s*(?:,|/)\s*(?=[A-ZĐ0-9©℗(+])", LEGAL_WORDS.sub("", part)):
+                name = re.sub(r"\s*\([^()]*\)$", "", COPYRIGHT_HEAD.sub("", raw)).strip(" .,;:|-" + QUOTES)
+                key = normalize_name(name)
+                if not (2 <= len(name) <= 50) or not key or key in LEGAL_SUFFIX or name.isdigit() or FOREIGN_SCRIPT.search(name):
+                    continue
+                # Nghệ sĩ tự phát hành ("© 2026 Bùi Công Nam", "Lamian x Negav") không phải công ty.
+                if all(normalize_name(n) in people for n in PEOPLE_SPLIT.split(name) if n.strip()):
+                    continue
+                role = "label" if len(parts) == 1 or (i > 0) != owner_last else "rights_owner"
+                if key not in found or found[key][1] == "rights_owner":
+                    found[key] = (name, role, line.strip()[:200])
+    return list(found.values())
+
+
+def _spotify_mentions(album: dict, add, seed_name_of: dict[str, str], known_people: frozenset[str]) -> None:
+    tracks = album.get("tracks") or []
+    album_artists = {a.get("id") for a in album.get("artists") or []}
+    track_artists = {normalize_name(a.get("name") or "") for t in tracks for a in t.get("artists") or []}
+    companies = _spotify_companies(album, set(known_people) | track_artists)
+    # Single/EP và album tuyển tập không thành nút Album: tuyển tập gom bài của nhiều nghệ sĩ không liên quan.
+    album_name = (album.get("name") or "").strip() if album.get("album_type") == "album" and len(tracks) > 1 else ""
+    for t in tracks:
+        raw = t.get("name") or ""
+        song = "" if NOT_RELEASE_TRACK.search(raw) else clean_song(raw, known_people)
+        if not song:
+            continue
+        artists = [
+            a for a in t.get("artists") or []
+            if a.get("name") and normalize_name(a["name"]) != "various artists" and not SHOW_ARTIST.search(a["name"])
+        ]
+        disc = t.get("disc_number") or 1
+        location = f"track {t.get('track_number')}" if disc == 1 else f"đĩa {disc} track {t.get('track_number')}"
+        quote = f"{album.get('name')} — {t.get('track_number')}. {raw} — {', '.join(a['name'] for a in t.get('artists') or [])}"
+        feat = FEAT.split(raw, maxsplit=1)
+        feat_part = normalize_name(feat[1]) if len(feat) > 1 else ""
+        add(song, "Song", "song", song, location, quote, SPOTIFY_METHOD)
+        for a in artists:
+            name = seed_name_of.get(a.get("id")) or re.sub(r"\s*\([^()]*\)$", "", a["name"]).strip() or a["name"]
+            featured = a.get("id") not in album_artists and feat_part and normalize_name(a["name"]) in feat_part
+            add(name, "Person", "featured" if featured else "performer", song, location, quote, SPOTIFY_METHOD)
+        if album_name:
+            add(album_name, "Album", "album", song, location, quote, SPOTIFY_METHOD)
+        for name, role, cquote in companies:
+            add(name, "Company", role, song, "bản quyền", cquote, SPOTIFY_COPYRIGHT)
+
+
 def extract() -> None:
     seeds = {s["seed_id"]: s for s in read_seeds()}
+    seed_name_of = {s["spotify_artist_id"]: s["name"] for s in seeds.values() if s.get("spotify_artist_id")}
+    spotify_albums = _spotify_albums()
     shows = {s["show_id"]: s for s in read_shows()}
     keys_of = {
         sid: {normalize_name(n) for n in [s["name"], s.get("youtube_channel_name", ""), *s.get("aliases", "").split(" | ")] if normalize_name(n)}
@@ -494,6 +573,12 @@ def extract() -> None:
                     "role": role, "song": song, "group": group, "location": location, "quote": title if quote is None else quote, "method": method,
                 }
             )
+
+        if d.get("platform") == "spotify":
+            album = spotify_albums.get(d.get("platform_item_id", ""))
+            if album:
+                _spotify_mentions(album, add, seed_name_of, frozen_people)
+            continue
 
         # Video show bỏ qua: "(NHÀ THIẾU NHI)" ở ATVNCG là đội thi tạm thời, không phải nhóm nhạc.
         if artist_ids and not show_ids:

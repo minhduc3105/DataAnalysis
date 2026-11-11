@@ -39,7 +39,7 @@ COMPETITION = re.compile(r"say hi|vượt ngàn chông gai|tân binh|rap việt|
 RELEASE_ROLES = {"label", "audio_distributor", "rights_owner"}
 ORGANIZER_ROLES = {"format_owner", "rights_owner", "broadcaster", "format_distributor"}
 CREW_PREFIX = {"hustlang", "rpt"}
-CONFIDENCE = {"quy tắc: tên kèm nhóm trong ngoặc": 0.85,"quy tắc: tiêu đề": 0.8, "quy tắc: dòng credit": 0.9, "quy tắc: dòng bản quyền/label": 0.8, "quy tắc: brand": 0.6}
+CONFIDENCE = {"quy tắc: tên kèm nhóm trong ngoặc": 0.85,"quy tắc: tiêu đề": 0.8, "quy tắc: dòng credit": 0.9, "quy tắc: dòng bản quyền/label": 0.8, "quy tắc: brand": 0.6, "Spotify API: danh sách bài": 0.95, "Spotify API: dòng bản quyền": 0.85}
 
 
 class Registry:
@@ -368,7 +368,7 @@ def build() -> None:
             if m["mention_type"] == "Song":
                 songs[m["mention"]] = g.entity(
                     "Song", song_key(m["mention"]), m["mention"], doc_id,
-                    release_year=year if doc["content_tag"] == "mv_audio" and not doc_shows else "", official_url=doc["url"] if not doc_shows else "",
+                    release_year=year if doc["content_tag"] in {"mv_audio", "release"} and not doc_shows else "", official_url=doc["url"] if not doc_shows else "",
                 )
 
         def song_of(m):
@@ -447,7 +447,9 @@ def build() -> None:
                 g.relate(p, "AMBASSADOR_OF", bid, doc, m, "hợp tác MV/quảng cáo (brand đứng tên trong tiêu đề)")
 
     vn_docs = {i for i, d in docs.items() if VI_CHARS.search(d.get("title", "")) or VI_CHARS.search(d.get("content", ""))}
-    _prune(g, mentions, vn_docs)
+    web_rel = WEB_GRAPH_DIR / "relations.csv"
+    in_press = {r[k] for r in _read_csv(web_rel) for k in ("source_entity_id", "target_entity_id")} if web_rel.exists() else set()
+    _prune(g, mentions, vn_docs, in_press)
     _merge_web(g)
     _write(g)
 
@@ -512,7 +514,7 @@ def _merge_web(g: Graph) -> None:
         print(f"  Bỏ qua {len(skipped)} cạnh vì nút đã bị lọc khỏi graph tổng: {', '.join(skipped)}")
 
 
-def _prune(g: Graph, mentions: list[dict], vn_docs: set[str]) -> None:
+def _prune(g: Graph, mentions: list[dict], vn_docs: set[str], in_press: set[str] = frozenset()) -> None:
     """Bỏ node rác còn sót sau quy tắc: nhạc sĩ nước ngoài của bài cover, từ thường một chữ chỉ gặp một lần."""
     # Âm tiết tên Việt học từ chính dữ liệu: mọi chữ của tên/bài có dấu, đổi về không dấu.
     vi_syllables = {
@@ -565,7 +567,8 @@ def _prune(g: Graph, mentions: list[dict], vn_docs: set[str]) -> None:
             continue
         # Từ một chữ có dấu chỉ gặp một lần, hoặc hay gặp trong tên bài ("Những", "Bác", "Còn"), là từ thường, không phải nghệ danh.
         common_word = song_words[name.casefold()] >= 5
-        if len(tokens) == 1 and _has_accent(name) and not name.isupper() and (len(g.docs_of[eid]) <= 1 or common_word):
+        # Nghệ danh một chữ đã được duyệt tay trong graph báo chí ("Cầm", "Đạt") thì giữ dù trùng từ trong tên bài.
+        if len(tokens) == 1 and _has_accent(name) and not name.isupper() and eid not in in_press and (len(g.docs_of[eid]) <= 1 or common_word):
             drop.add(eid)
 
     # HLV/giám khảo của một show ("Team Rhymastic") không đồng thời là thí sinh của show đó.

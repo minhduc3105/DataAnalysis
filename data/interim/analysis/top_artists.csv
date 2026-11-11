@@ -1,121 +1,121 @@
 ﻿metric,rank,name,entity_type,genre_group,community,value,neighbor_communities
-Nhiều cộng sự (Degree),1,Orange,Person,V-pop/Nhạc trẻ,156,71.0,13
-Nhiều cộng sự (Degree),2,Bùi Công Nam,Person,,156,65.0,15
-Nhiều cộng sự (Degree),3,Karik,Person,Rap/Hip-hop,229,63.0,13
-Nhiều cộng sự (Degree),4,Trung Quân Idol,Person,V-pop/Nhạc trẻ,255,61.0,14
-Nhiều cộng sự (Degree),5,MASEW,Person,EDM/Electronic,261,59.0,15
-Nhiều cộng sự (Degree),6,NGUYỄN VĂN CHUNG,Person,V-pop/Nhạc trẻ,252,57.0,9
-Nhiều cộng sự (Degree),7,HOÀNG DŨNG,Person,V-pop/Nhạc trẻ,156,53.0,9
-Nhiều cộng sự (Degree),8,DTAP,Group,V-pop/Nhạc trẻ,274,50.0,11
-Nhiều cộng sự (Degree),9,Hứa Kim Tuyền,Person,V-pop/Nhạc trẻ,156,49.0,12
-Nhiều cộng sự (Degree),10,Anh Tú,Person,,156,48.0,11
-Nhiều cộng sự (Degree),11,Wxrdie,Person,Rap/Hip-hop,158,48.0,7
-Nhiều cộng sự (Degree),12,Erik,Person,V-pop/Nhạc trẻ,34,45.0,10
-Nhiều cộng sự (Degree),13,Hồ Ngọc Hà,Person,V-pop/Nhạc trẻ,255,45.0,8
-Nhiều cộng sự (Degree),14,CM1X,Person,,129,43.0,7
-Nhiều cộng sự (Degree),15,BINZ,Person,Rap/Hip-hop,59,41.0,13
-Nhiều cộng sự (Degree),16,Wowy,Person,Rap/Hip-hop,229,41.0,8
-Nhiều cộng sự (Degree),17,HIEUTHUHAI,Person,Rap/Hip-hop,34,40.0,10
-Nhiều cộng sự (Degree),18,Đức Phúc,Person,V-pop/Nhạc trẻ,34,40.0,12
-Nhiều cộng sự (Degree),19,B Ray,Person,Rap/Hip-hop,261,39.0,11
-Nhiều cộng sự (Degree),20,MIN,Person,V-pop/Nhạc trẻ,156,39.0,10
-Nhiều cộng sự (Degree),21,Ali Hoàng Dương,Person,,34,38.0,8
-Nhiều cộng sự (Degree),22,TÓC TIÊN,Person,V-pop/Nhạc trẻ,166,38.0,10
-Nhiều cộng sự (Degree),23,Khắc Việt,Person,V-pop/Nhạc trẻ,257,38.0,8
-Nhiều cộng sự (Degree),24,Negav,Person,Rap/Hip-hop,34,37.0,11
-Nhiều cộng sự (Degree),25,Captain,Person,,34,35.0,8
-Nhiều cộng sự (Degree),26,JustaTee,Person,Rap/Hip-hop,59,35.0,9
-Nhiều cộng sự (Degree),27,Hòa Minzy,Person,V-pop/Nhạc trẻ,34,35.0,13
-Nhiều cộng sự (Degree),28,Tăng Phúc,Person,V-pop/Nhạc trẻ,280,35.0,11
-Nhiều cộng sự (Degree),29,RHYMASTIC,Person,Rap/Hip-hop,59,34.0,9
-Nhiều cộng sự (Degree),30,LyLy,Person,V-pop/Nhạc trẻ,156,34.0,10
-Nhiều lượt hợp tác (tổng trọng số),1,Anh Tú,Person,,156,151.0,11
-Nhiều lượt hợp tác (tổng trọng số),2,Orange,Person,V-pop/Nhạc trẻ,156,149.0,13
-Nhiều lượt hợp tác (tổng trọng số),3,Bùi Công Nam,Person,,156,123.0,15
-Nhiều lượt hợp tác (tổng trọng số),4,NGUYỄN VĂN CHUNG,Person,V-pop/Nhạc trẻ,252,113.0,9
-Nhiều lượt hợp tác (tổng trọng số),5,DTAP,Group,V-pop/Nhạc trẻ,274,113.0,11
-Nhiều lượt hợp tác (tổng trọng số),6,MASEW,Person,EDM/Electronic,261,106.0,15
-Nhiều lượt hợp tác (tổng trọng số),7,Karik,Person,Rap/Hip-hop,229,98.0,13
-Nhiều lượt hợp tác (tổng trọng số),8,HOÀNG DŨNG,Person,V-pop/Nhạc trẻ,156,96.0,9
-Nhiều lượt hợp tác (tổng trọng số),9,Đức Phúc,Person,V-pop/Nhạc trẻ,34,89.0,12
-Nhiều lượt hợp tác (tổng trọng số),10,Erik,Person,V-pop/Nhạc trẻ,34,88.0,10
-Nhiều lượt hợp tác (tổng trọng số),11,Hứa Kim Tuyền,Person,V-pop/Nhạc trẻ,156,87.0,12
-Nhiều lượt hợp tác (tổng trọng số),12,Wowy,Person,Rap/Hip-hop,229,85.0,8
-Nhiều lượt hợp tác (tổng trọng số),13,Trung Quân Idol,Person,V-pop/Nhạc trẻ,255,80.0,14
-Nhiều lượt hợp tác (tổng trọng số),14,Lâm Bảo Ngọc,Person,V-pop/Nhạc trẻ,156,78.0,10
-Nhiều lượt hợp tác (tổng trọng số),15,LyLy,Person,V-pop/Nhạc trẻ,156,76.0,10
-Nhiều lượt hợp tác (tổng trọng số),16,Wxrdie,Person,Rap/Hip-hop,158,76.0,7
-Nhiều lượt hợp tác (tổng trọng số),17,Tăng Phúc,Person,V-pop/Nhạc trẻ,280,73.0,11
-Nhiều lượt hợp tác (tổng trọng số),18,B Ray,Person,Rap/Hip-hop,261,70.0,11
-Nhiều lượt hợp tác (tổng trọng số),19,Khắc Việt,Person,V-pop/Nhạc trẻ,257,69.0,8
-Nhiều lượt hợp tác (tổng trọng số),20,MIN,Person,V-pop/Nhạc trẻ,156,65.0,10
-Nhiều lượt hợp tác (tổng trọng số),21,Hòa Minzy,Person,V-pop/Nhạc trẻ,34,64.0,13
-Nhiều lượt hợp tác (tổng trọng số),22,CM1X,Person,,129,64.0,7
-Nhiều lượt hợp tác (tổng trọng số),23,TÓC TIÊN,Person,V-pop/Nhạc trẻ,166,63.0,10
-Nhiều lượt hợp tác (tổng trọng số),24,2PILLZ,Person,,158,62.0,6
-Nhiều lượt hợp tác (tổng trọng số),25,PHƯƠNG MỸ CHI,Person,Dân gian đương đại/Bolero/Trữ tình,274,59.0,7
-Nhiều lượt hợp tác (tổng trọng số),26,BINZ,Person,Rap/Hip-hop,59,58.0,13
-Nhiều lượt hợp tác (tổng trọng số),27,Ali Hoàng Dương,Person,,34,57.0,8
-Nhiều lượt hợp tác (tổng trọng số),28,Trúc Nhân,Person,V-pop/Nhạc trẻ,156,57.0,10
-Nhiều lượt hợp tác (tổng trọng số),29,HIEUTHUHAI,Person,Rap/Hip-hop,34,56.0,10
-Nhiều lượt hợp tác (tổng trọng số),30,Negav,Person,Rap/Hip-hop,34,56.0,11
-PageRank,1,NGUYỄN VĂN CHUNG,Person,V-pop/Nhạc trẻ,252,14.801416397027022,9
-PageRank,2,CM1X,Person,,129,12.684262916230194,7
-PageRank,3,Orange,Person,V-pop/Nhạc trẻ,156,12.218392126201307,13
-PageRank,4,Anh Tú,Person,,156,11.956221854133183,11
-PageRank,5,MASEW,Person,EDM/Electronic,261,11.040173742318682,15
-PageRank,6,Bùi Công Nam,Person,,156,10.718446577932784,15
-PageRank,7,Karik,Person,Rap/Hip-hop,229,9.395187489066497,13
-PageRank,8,Trung Quân Idol,Person,V-pop/Nhạc trẻ,255,9.142083867695058,14
-PageRank,9,HOÀNG DŨNG,Person,V-pop/Nhạc trẻ,156,9.111278514776235,9
-PageRank,10,DTAP,Group,V-pop/Nhạc trẻ,274,9.105488976292083,11
-PageRank,11,Wowy,Person,Rap/Hip-hop,229,9.007617151484032,8
-PageRank,12,Khắc Việt,Person,V-pop/Nhạc trẻ,257,8.885161428377526,8
-PageRank,13,Wxrdie,Person,Rap/Hip-hop,158,8.62111073050085,7
-PageRank,14,Hứa Kim Tuyền,Person,V-pop/Nhạc trẻ,156,7.5172121440065105,12
-PageRank,15,Hương Ly,Person,,752,7.490261311256401,7
-PageRank,16,Erik,Person,V-pop/Nhạc trẻ,34,7.44440910593016,10
-PageRank,17,Tăng Phúc,Person,V-pop/Nhạc trẻ,280,7.376741501913563,11
-PageRank,18,Đức Phúc,Person,V-pop/Nhạc trẻ,34,7.320821602687213,12
-PageRank,19,Hồ Ngọc Hà,Person,V-pop/Nhạc trẻ,255,7.026475990507843,8
-PageRank,20,Lâm Bảo Ngọc,Person,V-pop/Nhạc trẻ,156,6.569638433179838,10
-PageRank,21,RichChoi,Person,,242,6.356254852820431,8
-PageRank,22,BINZ,Person,Rap/Hip-hop,59,6.283630159757605,13
-PageRank,23,LyLy,Person,V-pop/Nhạc trẻ,156,6.262371531168822,10
-PageRank,24,B Ray,Person,Rap/Hip-hop,261,6.230192525942433,11
-PageRank,25,Hồ Quang Hiếu,Person,V-pop/Nhạc trẻ,752,6.116387290452246,6
-PageRank,26,MIN,Person,V-pop/Nhạc trẻ,156,5.776244116255951,10
-PageRank,27,2PILLZ,Person,,158,5.560455817415697,6
-PageRank,28,Hòa Minzy,Person,V-pop/Nhạc trẻ,34,5.459646316922412,13
-PageRank,29,KAI ĐINH,Person,V-pop/Nhạc trẻ,158,5.448814324612273,9
-PageRank,30,LIL'WUYN,Person,Rap/Hip-hop,52,5.3329429274399995,6
-Cầu nối (Betweenness),1,Bùi Công Nam,Person,,156,69447.64824545228,15
-Cầu nối (Betweenness),2,Karik,Person,Rap/Hip-hop,229,55875.994639038545,13
-Cầu nối (Betweenness),3,NGUYỄN VĂN CHUNG,Person,V-pop/Nhạc trẻ,252,55821.21350622997,9
-Cầu nối (Betweenness),4,Trung Quân Idol,Person,V-pop/Nhạc trẻ,255,55354.62052018961,14
-Cầu nối (Betweenness),5,MASEW,Person,EDM/Electronic,261,51868.067693012104,15
-Cầu nối (Betweenness),6,Orange,Person,V-pop/Nhạc trẻ,156,51802.886989164654,13
-Cầu nối (Betweenness),7,CM1X,Person,,129,49836.113122915325,7
-Cầu nối (Betweenness),8,HOÀNG DŨNG,Person,V-pop/Nhạc trẻ,156,43140.5001493798,9
-Cầu nối (Betweenness),9,Wowy,Person,Rap/Hip-hop,229,38071.227523232505,8
-Cầu nối (Betweenness),10,Wxrdie,Person,Rap/Hip-hop,158,38045.96451334384,7
-Cầu nối (Betweenness),11,DTAP,Group,V-pop/Nhạc trẻ,274,33771.91359597584,11
-Cầu nối (Betweenness),12,Tăng Phúc,Person,V-pop/Nhạc trẻ,280,33321.79366923561,11
-Cầu nối (Betweenness),13,Hồ Ngọc Hà,Person,V-pop/Nhạc trẻ,255,32583.0273010367,8
-Cầu nối (Betweenness),14,Khắc Việt,Person,V-pop/Nhạc trẻ,257,32418.02011869286,8
-Cầu nối (Betweenness),15,Lâm Bảo Ngọc,Person,V-pop/Nhạc trẻ,156,28590.608528964825,10
-Cầu nối (Betweenness),16,Erik,Person,V-pop/Nhạc trẻ,34,28283.841928277845,10
-Cầu nối (Betweenness),17,Anh Tú,Person,,156,27109.383293344366,11
-Cầu nối (Betweenness),18,Hương Ly,Person,,752,26733.41975379038,7
-Cầu nối (Betweenness),19,BINZ,Person,Rap/Hip-hop,59,26187.857334518412,13
-Cầu nối (Betweenness),20,Phạm Đình Thái Ngân,Person,,252,26019.998130818516,8
-Cầu nối (Betweenness),21,RichChoi,Person,,242,24898.617681545536,8
-Cầu nối (Betweenness),22,Ái Phương,Person,,280,24722.87389777798,6
-Cầu nối (Betweenness),23,Hồ Quang Hiếu,Person,V-pop/Nhạc trẻ,752,24504.669496742416,6
-Cầu nối (Betweenness),24,Pháo,Person,,261,24130.474572761286,8
-Cầu nối (Betweenness),25,OSAD,Person,,182,24117.92629718188,9
-Cầu nối (Betweenness),26,HIEUTHUHAI,Person,Rap/Hip-hop,34,23800.67826558555,10
-Cầu nối (Betweenness),27,Hứa Kim Tuyền,Person,V-pop/Nhạc trẻ,156,23255.37374403703,12
-Cầu nối (Betweenness),28,Thuỳ Chi,Person,V-pop/Nhạc trẻ,255,23204.604144921675,11
-Cầu nối (Betweenness),29,Hòa Minzy,Person,V-pop/Nhạc trẻ,34,22944.993178878023,13
-Cầu nối (Betweenness),30,Đức Phúc,Person,V-pop/Nhạc trẻ,34,22037.60649124642,12
+Nhiều cộng sự (Degree),1,Bùi Công Nam,Person,,266,110.0,12
+Nhiều cộng sự (Degree),2,Orange,Person,V-pop/Nhạc trẻ,274,88.0,9
+Nhiều cộng sự (Degree),3,Erik,Person,V-pop/Nhạc trẻ,266,78.0,8
+Nhiều cộng sự (Degree),4,MASEW,Person,EDM/Electronic,272,74.0,13
+Nhiều cộng sự (Degree),5,Karik,Person,Rap/Hip-hop,120,73.0,13
+Nhiều cộng sự (Degree),6,NGUYỄN VĂN CHUNG,Person,V-pop/Nhạc trẻ,906,65.0,11
+Nhiều cộng sự (Degree),7,B Ray,Person,Rap/Hip-hop,272,62.0,12
+Nhiều cộng sự (Degree),8,Trung Quân Idol,Person,V-pop/Nhạc trẻ,266,62.0,13
+Nhiều cộng sự (Degree),9,HIEUTHUHAI,Person,Rap/Hip-hop,122,60.0,12
+Nhiều cộng sự (Degree),10,HOÀNG DŨNG,Person,V-pop/Nhạc trẻ,266,60.0,12
+Nhiều cộng sự (Degree),11,Văn Mai Hương,Person,V-pop/Nhạc trẻ,266,59.0,11
+Nhiều cộng sự (Degree),12,Anh Tú,Person,,266,56.0,11
+Nhiều cộng sự (Degree),13,Quang Hùng MasterD,Person,,122,53.0,8
+Nhiều cộng sự (Degree),14,Hứa Kim Tuyền,Person,V-pop/Nhạc trẻ,266,52.0,9
+Nhiều cộng sự (Degree),15,DTAP,Group,V-pop/Nhạc trẻ,274,52.0,11
+Nhiều cộng sự (Degree),16,BINZ,Person,Rap/Hip-hop,177,51.0,12
+Nhiều cộng sự (Degree),17,HOÀNG TÔN,Person,V-pop/Nhạc trẻ,97,51.0,10
+Nhiều cộng sự (Degree),18,Wxrdie,Person,Rap/Hip-hop,463,51.0,9
+Nhiều cộng sự (Degree),19,Negav,Person,Rap/Hip-hop,120,50.0,10
+Nhiều cộng sự (Degree),20,Lâm Bảo Ngọc,Person,V-pop/Nhạc trẻ,266,50.0,8
+Nhiều cộng sự (Degree),21,RHYMASTIC,Person,Rap/Hip-hop,177,49.0,9
+Nhiều cộng sự (Degree),22,WEAN,Person,,122,47.0,9
+Nhiều cộng sự (Degree),23,JUN PHẠM,Person,,177,47.0,8
+Nhiều cộng sự (Degree),24,Hồ Ngọc Hà,Person,V-pop/Nhạc trẻ,266,47.0,10
+Nhiều cộng sự (Degree),25,BẢO ANH,Person,V-pop/Nhạc trẻ,274,46.0,9
+Nhiều cộng sự (Degree),26,Captain,Person,,122,45.0,8
+Nhiều cộng sự (Degree),27,CM1X,Person,,1293,45.0,9
+Nhiều cộng sự (Degree),28,CoolKid,Person,,122,44.0,8
+Nhiều cộng sự (Degree),29,Hòa Minzy,Person,V-pop/Nhạc trẻ,266,44.0,11
+Nhiều cộng sự (Degree),30,THANH DUY,Person,,177,44.0,6
+Nhiều lượt hợp tác (tổng trọng số),1,Bùi Công Nam,Person,,266,406.0,12
+Nhiều lượt hợp tác (tổng trọng số),2,Orange,Person,V-pop/Nhạc trẻ,274,273.0,9
+Nhiều lượt hợp tác (tổng trọng số),3,B Ray,Person,Rap/Hip-hop,272,262.0,12
+Nhiều lượt hợp tác (tổng trọng số),4,Anh Tú,Person,,266,231.0,11
+Nhiều lượt hợp tác (tổng trọng số),5,MASEW,Person,EDM/Electronic,272,206.0,13
+Nhiều lượt hợp tác (tổng trọng số),6,Lâm Bảo Ngọc,Person,V-pop/Nhạc trẻ,266,205.0,8
+Nhiều lượt hợp tác (tổng trọng số),7,Quang Hùng MasterD,Person,,122,199.0,8
+Nhiều lượt hợp tác (tổng trọng số),8,Karik,Person,Rap/Hip-hop,120,182.0,13
+Nhiều lượt hợp tác (tổng trọng số),9,Erik,Person,V-pop/Nhạc trẻ,266,176.0,8
+Nhiều lượt hợp tác (tổng trọng số),10,RHYMASTIC,Person,Rap/Hip-hop,177,171.0,9
+Nhiều lượt hợp tác (tổng trọng số),11,JUN PHẠM,Person,,177,167.0,8
+Nhiều lượt hợp tác (tổng trọng số),12,Negav,Person,Rap/Hip-hop,120,164.0,10
+Nhiều lượt hợp tác (tổng trọng số),13,THANH DUY,Person,,177,163.0,6
+Nhiều lượt hợp tác (tổng trọng số),14,BINZ,Person,Rap/Hip-hop,177,163.0,12
+Nhiều lượt hợp tác (tổng trọng số),15,Forest Studio,Person,,266,157.0,3
+Nhiều lượt hợp tác (tổng trọng số),16,NGUYỄN VĂN CHUNG,Person,V-pop/Nhạc trẻ,906,154.0,11
+Nhiều lượt hợp tác (tổng trọng số),17,OgeNus,Person,,120,149.0,8
+Nhiều lượt hợp tác (tổng trọng số),18,Jaysonlei,Person,,120,148.0,9
+Nhiều lượt hợp tác (tổng trọng số),19,Tăng Phúc,Person,V-pop/Nhạc trẻ,177,148.0,11
+Nhiều lượt hợp tác (tổng trọng số),20,CONGB,Person,,120,144.0,7
+Nhiều lượt hợp tác (tổng trọng số),21,BB TRẦN,Person,,177,143.0,8
+Nhiều lượt hợp tác (tổng trọng số),22,SOOBIN,Person,V-pop/Nhạc trẻ,177,142.0,8
+Nhiều lượt hợp tác (tổng trọng số),23,Sơn.K,Person,,120,138.0,4
+Nhiều lượt hợp tác (tổng trọng số),24,KAY TRẦN,Person,,177,136.0,4
+Nhiều lượt hợp tác (tổng trọng số),25,GILL,Person,Rap/Hip-hop,120,135.0,8
+Nhiều lượt hợp tác (tổng trọng số),26,HIEUTHUHAI,Person,Rap/Hip-hop,122,134.0,12
+Nhiều lượt hợp tác (tổng trọng số),27,Vương Bình,Person,,120,133.0,6
+Nhiều lượt hợp tác (tổng trọng số),28,Mason Nguyễn,Person,Rap/Hip-hop,120,132.0,5
+Nhiều lượt hợp tác (tổng trọng số),29,QUỐC THIÊN,Person,,177,132.0,6
+Nhiều lượt hợp tác (tổng trọng số),30,PHƯƠNG MỸ CHI,Person,Dân gian đương đại/Bolero/Trữ tình,274,129.0,6
+PageRank,1,Bùi Công Nam,Person,,266,19.3662740791284,12
+PageRank,2,NGUYỄN VĂN CHUNG,Person,V-pop/Nhạc trẻ,906,14.543635004108255,11
+PageRank,3,B Ray,Person,Rap/Hip-hop,272,13.210471864075744,12
+PageRank,4,Orange,Person,V-pop/Nhạc trẻ,274,13.081938556068426,9
+PageRank,5,MASEW,Person,EDM/Electronic,272,12.792833612621996,13
+PageRank,6,Erik,Person,V-pop/Nhạc trẻ,266,11.759916484102908,8
+PageRank,7,Anh Tú,Person,,266,11.520868516954357,11
+PageRank,8,CM1X,Person,,1293,11.364389921541456,9
+PageRank,9,Quang Hùng MasterD,Person,,122,10.112859788970622,8
+PageRank,10,Lâm Bảo Ngọc,Person,V-pop/Nhạc trẻ,266,9.949697571678678,8
+PageRank,11,Karik,Person,Rap/Hip-hop,120,9.642318686873494,13
+PageRank,12,BINZ,Person,Rap/Hip-hop,177,7.917277482058427,12
+PageRank,13,Trung Quân Idol,Person,V-pop/Nhạc trẻ,266,7.708391997212417,13
+PageRank,14,RHYMASTIC,Person,Rap/Hip-hop,177,7.652492602419918,9
+PageRank,15,Wxrdie,Person,Rap/Hip-hop,463,7.595998386720794,9
+PageRank,16,Tăng Phúc,Person,V-pop/Nhạc trẻ,177,7.5895411400554815,11
+PageRank,17,Hương Ly,Person,,52,7.52142970129109,8
+PageRank,18,HIEUTHUHAI,Person,Rap/Hip-hop,122,7.487600259712566,12
+PageRank,19,HOÀNG DŨNG,Person,V-pop/Nhạc trẻ,266,7.427039130039617,12
+PageRank,20,Negav,Person,Rap/Hip-hop,120,7.313780758440362,10
+PageRank,21,Văn Mai Hương,Person,V-pop/Nhạc trẻ,266,7.230388566697132,11
+PageRank,22,JUN PHẠM,Person,,177,7.202107131741867,8
+PageRank,23,Hứa Kim Tuyền,Person,V-pop/Nhạc trẻ,266,6.941857080298399,9
+PageRank,24,Forest Studio,Person,,266,6.92834668133398,3
+PageRank,25,PHƯƠNG MỸ CHI,Person,Dân gian đương đại/Bolero/Trữ tình,274,6.860869335130003,6
+PageRank,26,Wowy,Person,Rap/Hip-hop,176,6.858661946188764,10
+PageRank,27,THANH DUY,Person,,177,6.687801438590761,6
+PageRank,28,Khắc Việt,Person,V-pop/Nhạc trẻ,268,6.67785287621055,9
+PageRank,29,DTAP,Group,V-pop/Nhạc trẻ,274,6.600178633500447,11
+PageRank,30,GILL,Person,Rap/Hip-hop,120,6.460944895180326,8
+Cầu nối (Betweenness),1,Bùi Công Nam,Person,,266,112534.53003705475,12
+Cầu nối (Betweenness),2,NGUYỄN VĂN CHUNG,Person,V-pop/Nhạc trẻ,906,80916.55013089898,11
+Cầu nối (Betweenness),3,MASEW,Person,EDM/Electronic,272,76124.2584940367,13
+Cầu nối (Betweenness),4,Erik,Person,V-pop/Nhạc trẻ,266,73445.76933703278,8
+Cầu nối (Betweenness),5,HIEUTHUHAI,Person,Rap/Hip-hop,122,64829.39930920341,12
+Cầu nối (Betweenness),6,Karik,Person,Rap/Hip-hop,120,63115.06893897558,13
+Cầu nối (Betweenness),7,CM1X,Person,,1293,62670.27514634421,9
+Cầu nối (Betweenness),8,Trung Quân Idol,Person,V-pop/Nhạc trẻ,266,62064.42291678152,13
+Cầu nối (Betweenness),9,Orange,Person,V-pop/Nhạc trẻ,274,55933.56776663462,9
+Cầu nối (Betweenness),10,HOÀNG DŨNG,Person,V-pop/Nhạc trẻ,266,47220.809729745386,12
+Cầu nối (Betweenness),11,B Ray,Person,Rap/Hip-hop,272,46764.88126641292,12
+Cầu nối (Betweenness),12,Wxrdie,Person,Rap/Hip-hop,463,46575.10036529595,9
+Cầu nối (Betweenness),13,Lâm Bảo Ngọc,Person,V-pop/Nhạc trẻ,266,45508.35867097862,8
+Cầu nối (Betweenness),14,CoolKid,Person,,122,42197.64511486324,8
+Cầu nối (Betweenness),15,LYNK LEE,Person,V-pop/Nhạc trẻ,52,41400.703649163486,3
+Cầu nối (Betweenness),16,Văn Mai Hương,Person,V-pop/Nhạc trẻ,266,40859.415921973436,11
+Cầu nối (Betweenness),17,Quang Hùng MasterD,Person,,122,39900.5570189618,8
+Cầu nối (Betweenness),18,Wowy,Person,Rap/Hip-hop,176,39481.33603185185,10
+Cầu nối (Betweenness),19,Hương Ly,Person,,52,37965.207871316095,8
+Cầu nối (Betweenness),20,Hồ Ngọc Hà,Person,V-pop/Nhạc trẻ,266,37717.41499159937,10
+Cầu nối (Betweenness),21,Anh Tú,Person,,266,36356.49723199942,11
+Cầu nối (Betweenness),22,RichChoi,Person,,253,36011.23719125834,8
+Cầu nối (Betweenness),23,Tăng Phúc,Person,V-pop/Nhạc trẻ,177,35677.18837357114,11
+Cầu nối (Betweenness),24,Thái VG,Person,Rap/Hip-hop,842,33444.759683221266,11
+Cầu nối (Betweenness),25,Khắc Việt,Person,V-pop/Nhạc trẻ,268,33329.786332406366,9
+Cầu nối (Betweenness),26,Pháo,Person,,274,32927.605513234404,10
+Cầu nối (Betweenness),27,HOÀNG TÔN,Person,V-pop/Nhạc trẻ,97,32826.350419065326,10
+Cầu nối (Betweenness),28,Phạm Đình Thái Ngân,Person,,120,32729.220397586818,11
+Cầu nối (Betweenness),29,WEAN,Person,,122,29352.981949044013,9
+Cầu nối (Betweenness),30,Negav,Person,Rap/Hip-hop,120,29217.135943067224,10

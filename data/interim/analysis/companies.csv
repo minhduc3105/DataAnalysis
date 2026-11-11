@@ -1,62 +1,139 @@
 ﻿entity_id,company,songs,artists
-COM_0010,Universal Music Vietnam,267,148
-COM_0003,Warner Music Vietnam,256,134
-COM_0007,M Music Records,160,99
-COM_0002,Sony Music Entertainment Vietnam,111,94
-COM_0004,SpaceSpeakers Label,100,48
-COM_0110,Hà Trần Productions,73,38
-COM_0109,HQH Entertainment,60,28
-COM_0028,Nguyên Hương Entertainment,37,25
-COM_0026,Yin Yang Media,34,25
-COM_0017,InQ International,31,29
-COM_0020,Universal Music Pte,25,16
-COM_0044,C Mazor Entertainment,25,22
-COM_0023,HÃNG ĐĨA THỜI ĐẠI,23,6
-COM_0083,KHẮC VIỆT ENTERTAINMENT,22,25
-COM_0031,Warner Music Singapore Pte Ltd,20,7
+COM_0003,Warner Music Vietnam,407,225
+COM_0007,M Music Records,299,188
+COM_0010,Universal Music Vietnam,270,186
+COM_0133,UMG Recordings,218,264
+COM_0026,Yin Yang Media,192,166
+COM_0132,Sony Music Entertainment Hong Kong,173,144
+COM_0020,Universal Music Pte,164,146
+COM_0004,SpaceSpeakers Label,140,97
+COM_0195,Cát Tiên Sa,137,134
+COM_0001,Great Entertainment,135,62
+COM_0002,Sony Music Entertainment Vietnam,111,99
+COM_0062,Def Jam Recordings Vietnam,109,86
+COM_0176,DAT VIET VAC,103,78
+COM_0191,T Production,81,147
+COM_0027,1Label,75,85
+COM_0110,Hà Trần Productions,73,43
+COM_0119,ST.319 Entertainment,65,56
+COM_0253,mixtape.so,62,71
+COM_0109,HQH Entertainment,60,29
+COM_0117,POPS Music,55,27
+COM_0098,VIE IP CORPORATION,49,59
+COM_0130,VIVI ENM,47,54
+COM_0006,DAO Entertainment,44,31
+COM_0068,Mixus,38,42
+COM_0028,Nguyên Hương Entertainment,37,27
+COM_0182,LOOPS Music,34,45
+COM_0237,+84 Vietnam New Wave,33,35
+COM_0184,NhacCuaTui,32,74
+COM_0225,Spotify,32,27
+COM_0017,InQ International,31,30
+COM_0084,MasterD Entertainment,31,11
+COM_0147,Walt Disney Records,29,3
+COM_0246,Disney Enterprises,29,3
+COM_0213,Làng Văn,26,8
+COM_0044,C Mazor Entertainment,25,23
+COM_0023,HÃNG ĐĨA THỜI ĐẠI,23,7
+COM_0083,KHẮC VIỆT ENTERTAINMENT,22,28
+COM_0122,Viettel Media,22,18
+COM_0212,SYE Holdings,22,47
+COM_0031,Warner Music Singapore Pte Ltd,21,9
 COM_0096,ACV Entertainment,20,6
-COM_0047,Suboi Entertainment Music,19,4
+COM_0047,Suboi Entertainment Music,19,5
+COM_0066,VG Entertainment,18,57
 COM_0070,HIGHER DIMENSION,18,13
-COM_0082,VHD ENTERTAINMENT,15,19
-COM_0101,GOM Entertainment,14,6
-COM_0066,VG Entertainment,13,50
-COM_0006,DAO Entertainment,12,12
-COM_0018,TechBeat Music,12,14
-COM_0001,Great Entertainment,10,15
-COM_0099,Hon-No Label,10,1
-COM_0021,Believe,9,8
-COM_0027,1Label,9,9
+COM_0183,Hi Entertainment,16,9
+COM_0082,VHD ENTERTAINMENT,15,21
+COM_0175,NCT Corporation,15,46
+COM_0101,GOM Entertainment,14,8
+COM_0018,TechBeat Music,13,15
+COM_0141,DreamS Entertainment,13,8
+COM_0192,V-MAS,11,10
+COM_0215,NS Records,11,46
+COM_0217,The First Management,11,17
+COM_0099,Hon-No Label,10,2
+COM_0202,RHYDER ENTERTAINMENT,10,9
+COM_0238,Dihavina,10,8
+COM_0021,Believe,9,10
 COM_0049,Madihu Records,9,7
 COM_0053,CELEB ENTERTAINMENT,9,5
+COM_0126,ICM Entertainment,9,10
+COM_0156,+84 Entertainment,9,5
+COM_0218,Future Art Production,9,4
+COM_0222,Gerdnang,9,6
 COM_0032,ah311synd,8,4
 COM_0054,PQA,8,9
 COM_0111,Lighthouse Entertainment,8,5
+COM_0150,Vietnam Music Award,8,38
+COM_0159,LUNY Entertainment,8,10
+COM_0165,MaiDao Music,8,14
+COM_0086,ENS Entertainment,7,6
 COM_0102,Eventista,7,2
+COM_0136,DagoatsHouse,7,9
+COM_0203,SCLVB Label,7,11
 COM_0013,88 Music Label,6,1
 COM_0022,BLACK SWAN LABEL LLC,6,2
 COM_0038,TiênTiên Music,6,5
-COM_0062,Def Jam Recordings Vietnam,6,3
+COM_0045,G Label,6,3
+COM_0164,Orinn Music,6,11
+COM_0171,WeChoice Awards,6,21
+COM_0209,HIN Productions,6,5
+COM_0224,CAT TIEN SA MEDIA GROUP,6,8
+COM_0242,Viettel,6,5
 COM_0059,Võ Hoàng Entertainment,5,1
 COM_0063,Xin Chào Live Music,5,9
 COM_0081,KV MUSIC,5,4
-COM_0107,HPM Collective,5,8
+COM_0107,HPM Collective,5,13
 COM_0113,Lirico Entertainment,5,2
+COM_0163,Gala Nhac Viet,5,4
+COM_0174,12 trái lê,5,10
+COM_0197,TE Records,5,2
+COM_0240,VIEENT Music,5,18
 COM_0036,Zekrise Music,4,1
-COM_0033,Bonghoaday Entertainment,3,9
+COM_0131,Euphoria Media Vietnam,4,3
+COM_0138,SUBLIME,4,2
+COM_0143,monoX,4,4
+COM_0151,VECTOR PRESENTS,4,8
+COM_0155,6th Sense Entertainment,4,3
+COM_0168,SOXO 1 9 6 7 Slowed,4,4
+COM_0179,VibeNation,4,6
+COM_0208,M.Y Entertainment,4,5
+COM_0219,Zing MP3,4,5
+COM_0234,Cổ Động,4,4
+COM_0011,Hồng Ân Entertainment,3,4
+COM_0033,Bonghoaday Entertainment,3,10
 COM_0048,Suboi Entertainment,3,1
-COM_0074,MT Entertainment,3,8
+COM_0074,MT Entertainment,3,10
 COM_0076,MEGMUSIC,3,3
-COM_0084,MasterD Entertainment,3,2
-COM_0005,Universal Music Group,2,1
+COM_0158,Metaplay,3,1
+COM_0181,Acee Media,3,5
+COM_0194,Ho Ngoc Ha Entertainment & T Production,3,3
+COM_0216,Top Music Group,3,16
+COM_0226,OG Entertainment,3,3
+COM_0245,Star Online,3,8
+COM_0255,BEE COMMUNICATIONS,3,5
+COM_0005,Universal Music Group,2,3
+COM_0012,Euphoria Media Group,2,4
 COM_0024,TIMES RECORDS,2,1
 COM_0035,Thai Viet Entertainment,2,4
-COM_0043,GUT Label,2,2
-COM_0045,G Label,2,1
+COM_0043,GUT Label,2,4
 COM_0065,BMZ Entertainment,2,1
-COM_0086,EnS Entertainment,2,3
+COM_0095,Nboro Entertainment,2,2
 COM_0106,W Entertainment,2,1
-COM_0011,Hồng Ân Entertainment,1,3
-COM_0012,Euphoria Media Group,1,2
+COM_0121,OnlyC Production,2,3
+COM_0134,NOMAD MGMT Vietnam,2,3
+COM_0144,Sen Viet Media advertising,2,1
+COM_0146,HYPERFOCUS,2,5
+COM_0160,Euphoria Media,2,2
+COM_0162,Go Music,2,1
+COM_0169,1989s Entertainment,2,2
+COM_0177,DONG TAY PROMOTION CORPORATION,2,5
+COM_0187,Yeah1 Group Corporation,2,3
+COM_0201,Mogul Music,2,3
+COM_0214,NH4T Entertainment,2,3
+COM_0221,Crow On Hyenas,2,1
+COM_0241,Làn Sóng Xanh,2,4
 COM_0025,Lumif Recordings,1,2
 COM_0039,Juss Records,1,2
 COM_0040,Bigguys Entertainments,1,2
@@ -67,19 +144,67 @@ COM_0051,ZUONGZERO Entertainment,1,1
 COM_0056,Điền Quân Entertainment,1,1
 COM_0057,RG Entertainment,1,1
 COM_0058,HAYMusic,1,1
+COM_0060,Adler Music,1,9
 COM_0061,BigArts Entertainment,1,3
 COM_0067,Empire,1,1
-COM_0068,Mixus,1,3
 COM_0073,M-TP Entertainment,1,1
 COM_0080,Monstercat,1,1
 COM_0088,4B Nexus,1,5
 COM_0089,SONY MUSIC ENTERTAINMENT HONGKONG LIMITED,1,2
 COM_0093,The Losers Entertainment,1,2
 COM_0094,T.A.P Entertainment,1,2
-COM_0095,Nboro Entertainment,1,1
 COM_0097,inner outer,1,2
 COM_0100,Z STUDIO,1,1
 COM_0104,BMZ Music,1,1
 COM_0105,BPro Entertainment,1,1
-COM_0108,NCT,1,1
+COM_0108,NCT,1,3
 COM_0112,SKY Music,1,1
+COM_0135,Puppy,1,2
+COM_0137,LVL Entertainment,1,2
+COM_0145,KAIZEN Entertainment,1,1
+COM_0148,Thu Trang Entertainment,1,2
+COM_0149,VIEON CORPORATION by DatVietVAC,1,4
+COM_0153,A+84 Music,1,2
+COM_0154,VIE IP,1,7
+COM_0157,Looperappears,1,6
+COM_0161,GENDO Entertainment,1,2
+COM_0170,MUNIZ,1,1
+COM_0172,TikTok Shop,1,2
+COM_0178,HKFilm,1,2
+COM_0180,winwinentertainment,1,1
+COM_0185,Dentsu Redder x W Media Entertainment,1,2
+COM_0186,Kakao M Corp,1,2
+COM_0188,Music in Air,1,1
+COM_0189,SIROCON ENTERTAINMENT,1,4
+COM_0190,HK Donuts Culture,1,2
+COM_0193,Gia Đình Lớn,1,40
+COM_0196,MRP,1,3
+COM_0198,Vicente record,1,3
+COM_0199,Imperio Mk Record,1,3
+COM_0200,LIFEDANCE Music,1,2
+COM_0204,African Dreaming,1,2
+COM_0205,4901613 Records DK,1,6
+COM_0206,3256301 Records DK,1,3
+COM_0210,ASIA RISING,1,1
+COM_0211,88rising Records,1,1
+COM_0223,54OG Entertainment,1,1
+COM_0227,NGUYÊN BẢN,1,1
+COM_0228,meChill,1,2
+COM_0229,M2W,1,1
+COM_0230,OCEAN MOB,1,2
+COM_0231,Pizza Vietnam,1,1
+COM_0232,TIKI,1,1
+COM_0233,W Media Entertainment,1,1
+COM_0235,SKY Music SJC,1,2
+COM_0236,Jaunty Maniacs,1,4
+COM_0239,Tran Thanh Town,1,2
+COM_0243,NHAT TAM AGENCY,1,1
+COM_0244,COP28 UAE,1,13
+COM_0247,S•HUBE Label & ST.319 Entertainment,1,11
+COM_0248,Yeah1,1,1
+COM_0249,SAIGON CO.OP,1,1
+COM_0250,KIRIN,1,1
+COM_0251,Dong Tay Promotion by DatVietVAC,1,2
+COM_0254,AIA,1,2
+COM_0256,MDigital Global,1,3
+COM_0257,The Little Prince Music Company,1,1
