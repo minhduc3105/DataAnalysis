@@ -5,7 +5,7 @@ from neo4j import GraphDatabase
 
 from .common import read_seeds
 from .config import INTERIM_DIR
-from .graph import GRAPH_DIR
+from .graph import GRAPH_DIR, web_documents
 
 BATCH = 2000
 ENTITY_TYPES = {"Person", "Group", "Song", "Album", "Company", "Brand", "Show", "Event"}
@@ -46,6 +46,7 @@ def prepare() -> dict[str, pd.DataFrame]:
     relations = _csv(GRAPH_DIR / "relations.csv")
     evidence = _csv(GRAPH_DIR / "evidence.csv")
     documents = _csv(INTERIM_DIR / "documents.csv").drop(columns=["content"])
+    documents = pd.concat([documents, pd.DataFrame(web_documents(), dtype=str)], ignore_index=True).fillna("")
     documents = documents[documents.document_id.isin(set(evidence.document_id))]
 
     genre = {s["seed_id"]: s.get("genre_group", "") for s in read_seeds()}

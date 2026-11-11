@@ -1,3 +1,3 @@
 ﻿variant,nodes,edges,avg_degree,density,components,largest_component,largest_component_share,louvain_communities,modularity
-có tiết mục chương trình,1381,3502,5.072,0.003675,15,1339,0.97,35,0.6393
-chỉ sản phẩm chính thức,1357,2860,4.215,0.003109,23,1275,0.94,40,0.6861
+có tiết mục chương trình,1424,3847,5.403,0.003797,15,1382,0.971,35,0.613
+chỉ sản phẩm chính thức,1402,3245,4.629,0.003304,18,1341,0.956,34,0.6454

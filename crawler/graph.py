@@ -15,6 +15,8 @@ from .shows import read_shows
 
 GRAPH_DIR = INTERIM_DIR / "graph"
 ID_REGISTRY = GRAPH_DIR / "id_registry.csv"
+WEB_GRAPH_DIR = INTERIM_DIR.parent / "processed" / "web" / "graph_clean"
+UNDIRECTED = {"COLLABORATED_WITH", "DISPUTED_WITH"}
 PREFIX = {"Person": "PER", "Song": "SON", "Album": "ALB", "Company": "COM", "Show": "SHO", "Event": "EVT", "Group": "GRO", "Brand": "BRA", "Relation": "REL", "Evidence": "EVD"}
 VERIFIED, PENDING, UNVERIFIED = "đã xác minh", "chờ kiểm tra", "chưa xác minh"
 
@@ -446,7 +448,68 @@ def build() -> None:
 
     vn_docs = {i for i, d in docs.items() if VI_CHARS.search(d.get("title", "")) or VI_CHARS.search(d.get("content", ""))}
     _prune(g, mentions, vn_docs)
+    _merge_web(g)
     _write(g)
+
+
+def _read_csv(path) -> list[dict]:
+    with path.open(encoding="utf-8-sig", newline="") as f:
+        return list(csv.DictReader(f))
+
+
+def web_documents() -> list[dict]:
+    path = WEB_GRAPH_DIR / "documents.csv"
+    if not path.exists():
+        return []
+    # url gốc là link news.google.com; trích dẫn phải trỏ về bài báo gốc.
+    return [
+        {
+            "document_id": d["document_id"], "url": d["final_url"] or d["resolved_url"] or d["url"], "source_name": d["source_name"], "source_type": d["source_type"],
+            "title": d["title"], "published_at": d["published_at"][:10], "collected_at": d["collected_at"], "collection_method": d["collection_method"],
+            "document_status": d["document_status"], "account_verified": "", "platform": "web", "content_tag": "press", "seed_ids": "",
+        }
+        for d in _read_csv(path)
+    ]
+
+
+def _merge_web(g: Graph) -> None:
+    rel_path = WEB_GRAPH_DIR / "relations.csv"
+    if not rel_path.exists():
+        return
+    docs = {d["document_id"]: d for d in web_documents()}
+    evidence_of: dict[str, list[dict]] = defaultdict(list)
+    for ev in _read_csv(WEB_GRAPH_DIR / "evidence.csv"):
+        if ev["document_id"] in docs:
+            evidence_of[ev["relation_id"]].append(ev)
+
+    added, enriched, skipped = Counter(), Counter(), []
+    for wr in _read_csv(rel_path):
+        src, rtype, tgt = wr["source_entity_id"], wr["relation_type"], wr["target_entity_id"]
+        evs = evidence_of[wr["relation_id"]]
+        if src not in g.entities or tgt not in g.entities or not evs:
+            skipped.append(f"{wr['source_name']} – {wr['target_name']}")
+            continue
+        if rtype in UNDIRECTED:
+            src, tgt = sorted((src, tgt))
+        key = (src, rtype, tgt)
+        existed = key in g.relations
+        for ev in evs:
+            doc = docs[ev["document_id"]]
+            mention = {"location": ev["sentence_location"], "quote": ev["quote"], "method": f"báo chí: {ev['extraction_method']}"}
+            g.relate(src, rtype, tgt, doc, mention, "báo chí xác nhận" if existed else wr["role_detail"])
+            g.evidence[(g.relations[key]["relation_id"], doc["document_id"], ev["sentence_location"])].update(
+                review_status=ev["review_status"], review_note=ev["review_note"], confidence_score=ev["confidence_score"],
+            )
+            g.docs_of[src].add(doc["document_id"])
+            g.docs_of[tgt].add(doc["document_id"])
+        rel = g.relations[key]
+        rel["notes"] = "có bằng chứng báo chí"
+        if wr["verification_status"] == VERIFIED:
+            rel["verification_status"] = VERIFIED
+        (enriched if existed else added)[rtype] += 1
+    print(f"Gộp graph báo chí ({WEB_GRAPH_DIR.name}): cạnh mới {dict(added)}, cạnh có sẵn thêm bằng chứng {dict(enriched)}")
+    if skipped:
+        print(f"  Bỏ qua {len(skipped)} cạnh vì nút đã bị lọc khỏi graph tổng: {', '.join(skipped)}")
 
 
 def _prune(g: Graph, mentions: list[dict], vn_docs: set[str]) -> None:
