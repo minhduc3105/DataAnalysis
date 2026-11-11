@@ -309,8 +309,6 @@ REL_000309,PER_0371,FEATURED_ON,SON_0071,chờ kiểm tra,không,,,trình bày,,
 REL_000310,SON_0071,RELEASED_BY,COM_0003,chờ kiểm tra,không,,,trang phát hành audio,,LIFT,Warner Music Vietnam,1
 REL_000311,SON_0071,RELEASED_BY,COM_0004,chờ kiểm tra,không,,,chủ sở hữu bản quyền,,LIFT,SpaceSpeakers Label,1
 REL_000312,PER_0059,COLLABORATED_WITH,PER_0371,chờ kiểm tra,có,,,cùng trình bày một bài,,BINZ,$A MILO,1
-REL_000313,PER_0059,PERFORMED,SON_0072,chờ kiểm tra,không,,,trình bày,,BINZ,The Story of Don't Break My Heart Collection,1
-REL_000314,SON_0072,RELEASED_BY,COM_0003,chờ kiểm tra,không,,,trang phát hành audio,,The Story of Don't Break My Heart Collection,Warner Music Vietnam,1
 REL_000315,PER_0059,PERFORMED,SON_0073,chờ kiểm tra,không,,,trình bày,,BINZ,DON'T BREAK MY HEART,4
 REL_000316,PER_0107,PERFORMED,SON_0073,chờ kiểm tra,không,,,trình bày,,TOULIVER,DON'T BREAK MY HEART,4
 REL_000317,SON_0073,RELEASED_BY,COM_0003,chờ kiểm tra,không,,,trang phát hành audio,,DON'T BREAK MY HEART,Warner Music Vietnam,3
@@ -379,10 +377,8 @@ REL_000379,PER_0386,COMPOSED,SON_0094,chờ kiểm tra,không,,,sáng tác/viế
 REL_000380,PER_0129,PRODUCED,SON_0094,chờ kiểm tra,không,,,sản xuất/hòa âm,,CM1X,WERK,1
 REL_000381,PER_0387,PRODUCED,SON_0094,chờ kiểm tra,không,,,sản xuất/hòa âm,,TIA,WERK,1
 REL_000382,PER_0056,PERFORMED,SON_0095,chờ kiểm tra,không,,,trình bày,,THANH DUY,TINH TÚ CẦU,1
-REL_000383,PER_0390,FEATURED_ON,SON_0095,chờ kiểm tra,không,,,trình bày,,DELILAH,TINH TÚ CẦU,1
 REL_000384,PER_0391,PRODUCED,SON_0095,chờ kiểm tra,không,,,sản xuất/hòa âm,,Lý Anh Khoa,TINH TÚ CẦU,1
 REL_000385,PER_0392,PRODUCED,SON_0095,chờ kiểm tra,không,,,sản xuất/hòa âm,,Hải Phạm,TINH TÚ CẦU,1
-REL_000386,PER_0056,COLLABORATED_WITH,PER_0390,chờ kiểm tra,có,,,cùng trình bày một bài,,THANH DUY,DELILAH,1
 REL_000387,PER_0056,PERFORMED,SON_0096,chờ kiểm tra,không,,,biểu diễn tại chương trình; trình bày,,THANH DUY,TÌNH ANH BÁN CHIẾU,4
 REL_000388,PER_0379,PRODUCED,SON_0096,chờ kiểm tra,không,,,sản xuất/hòa âm,,Dũng Nguyễn,TÌNH ANH BÁN CHIẾU,1
 REL_000389,PER_0056,PERFORMED,SON_0097,chờ kiểm tra,không,,,trình bày,,THANH DUY,KIỀU OANH,1
@@ -4124,7 +4120,7 @@ REL_004173,PER_0089,PERFORMED,SON_1369,chờ kiểm tra,không,,,trình bày,,Tr
 REL_004174,PER_0019,PERFORMED,SON_1369,chờ kiểm tra,không,,,trình bày,,Hứa Kim Tuyền,Chạm Gần Thêm Thương,1
 REL_004175,PER_0019,PRODUCED,SON_1369,chờ kiểm tra,không,,,sản xuất/hòa âm,,Hứa Kim Tuyền,Chạm Gần Thêm Thương,1
 REL_004176,PER_0019,COMPOSED,SON_1369,chờ kiểm tra,không,,,sáng tác/viết lời,,Hứa Kim Tuyền,Chạm Gần Thêm Thương,1
-REL_004177,PER_0019,COLLABORATED_WITH,PER_0089,chờ kiểm tra,có,,,cùng trình bày một bài,,Hứa Kim Tuyền,Trúc Nhân,7
+REL_004177,PER_0019,COLLABORATED_WITH,PER_0089,chờ kiểm tra,có,,,cùng trình bày một bài,,Hứa Kim Tuyền,Trúc Nhân,9
 REL_004178,PER_0089,PERFORMED,SON_1370,chờ kiểm tra,không,,,trình bày,,Trúc Nhân,Có Ánh Nắng Trên Làn Tóc Mây,1
 REL_004179,PER_1128,COMPOSED,SON_1370,chờ kiểm tra,không,,,sáng tác/viết lời,,Lê Xuân Đức,Có Ánh Nắng Trên Làn Tóc Mây,1
 REL_004180,PER_0089,PERFORMED,SON_1371,chờ kiểm tra,không,,,trình bày,,Trúc Nhân,TẾT NHỚ TỚI GIÀ,1
@@ -5017,7 +5013,7 @@ REL_005080,PER_0161,PERFORMED,SON_1611,chờ kiểm tra,không,,,trình bày,,Wx
 REL_005081,SON_1611,RELEASED_BY,COM_0007,chờ kiểm tra,không,,,trang phát hành audio,,CẦN GÌ NÓI DRILL,M Music Records,1
 REL_005082,PER_0161,PERFORMED,SON_1612,chờ kiểm tra,không,,,trình bày,,Wxrdie,CẦN GÌ NÓI IU,2
 REL_005083,PER_0079,FEATURED_ON,SON_1612,chờ kiểm tra,không,,,trình bày,,2PILLZ,CẦN GÌ NÓI IU,1
-REL_005084,PER_0079,COLLABORATED_WITH,PER_0161,chờ kiểm tra,có,,,cùng trình bày một bài,,2PILLZ,Wxrdie,8
+REL_005084,PER_0079,COLLABORATED_WITH,PER_0161,chờ kiểm tra,có,,,cùng trình bày một bài,,2PILLZ,Wxrdie,9
 REL_005085,SON_1612,RELEASED_BY,COM_0007,chờ kiểm tra,không,,,trang phát hành audio,,CẦN GÌ NÓI IU,M Music Records,1
 REL_005086,PER_0161,PERFORMED,SON_1613,chờ kiểm tra,không,,,trình bày,,Wxrdie,Kỷ Nguyên Mới,1
 REL_005087,PER_1272,PERFORMED,SON_1613,chờ kiểm tra,không,,,trình bày,,KayC,Kỷ Nguyên Mới,1
@@ -8029,7 +8025,7 @@ REL_008144,PER_0022,PERFORMED,SON_2417,chờ kiểm tra,không,,,biểu diễn t
 REL_008145,PER_0002,PERFORMED,SON_2417,chờ kiểm tra,không,,,biểu diễn tại chương trình; trình bày,,HIEUTHUHAI,Kim Phút Kim Giờ,4
 REL_008146,PER_0009,PERFORMED,SON_2417,chờ kiểm tra,không,,,biểu diễn tại chương trình; trình bày,,Pháp Kiều,Kim Phút Kim Giờ,4
 REL_008147,PER_0055,PERFORMED,SON_2417,chờ kiểm tra,không,,,biểu diễn tại chương trình; trình bày,,Isaac,Kim Phút Kim Giờ,4
-REL_008148,PER_0002,COLLABORATED_WITH,PER_0015,chờ kiểm tra,có,,,cùng trình bày một bài,,HIEUTHUHAI,Negav,6
+REL_008148,PER_0002,COLLABORATED_WITH,PER_0015,chờ kiểm tra,có,,,cùng trình bày một bài,,HIEUTHUHAI,Negav,8
 REL_008149,PER_0009,COLLABORATED_WITH,PER_0015,chờ kiểm tra,có,,,cùng trình bày một bài,,Pháp Kiều,Negav,9
 REL_008150,PER_0015,COLLABORATED_WITH,PER_0055,chờ kiểm tra,có,,,cùng trình bày một bài,,Negav,Isaac,7
 REL_008151,PER_0022,COLLABORATED_WITH,PER_0055,chờ kiểm tra,có,,,cùng trình bày một bài,,HURRYKNG,Isaac,8
@@ -11551,8 +11547,6 @@ REL_011696,PER_2178,PRODUCED,SON_3526,chờ kiểm tra,không,,,sản xuất/hò
 REL_011697,PER_0267,PERFORMED,SON_3527,chờ kiểm tra,không,,,trình bày,,MỸ TÂM,Rực Rỡ Tháng Năm,2
 REL_011698,PER_0438,COMPOSED,SON_3527,chờ kiểm tra,không,,,sáng tác/viết lời,,Đức Trí,Rực Rỡ Tháng Năm,2
 REL_011699,PER_0816,PRODUCED,SON_3525,chờ kiểm tra,không,,,sản xuất/hòa âm,,Vic Đặng,Người Hãy Quên Em Đi,1
-REL_011700,PER_0267,PERFORMED,SON_3528,chờ kiểm tra,không,,,trình bày,,MỸ TÂM,DRUNKEN DANCE COLLECTION,2
-REL_011701,PER_0017,COMPOSED,SON_3528,chờ kiểm tra,không,,,sáng tác/viết lời,,Khắc Hưng,DRUNKEN DANCE COLLECTION,2
 REL_011702,PER_0267,PERFORMED,SON_3529,chờ kiểm tra,không,,,trình bày,,MỸ TÂM,NẾU CÓ BUÔNG TAY,1
 REL_011703,PER_0017,COMPOSED,SON_3529,chờ kiểm tra,không,,,sáng tác/viết lời,,Khắc Hưng,NẾU CÓ BUÔNG TAY,1
 REL_011704,PER_0267,PERFORMED,SON_3530,chờ kiểm tra,không,,,trình bày,,MỸ TÂM,CÔ ẤY LÀ AI,1
@@ -13014,7 +13008,7 @@ REL_013182,PER_0216,COLLABORATED_WITH,PER_0263,chờ kiểm tra,có,,,cùng trì
 REL_013183,PER_0005,PERFORMED,SON_3921,chờ kiểm tra,không,,,trình bày,,Orange,Đôi giày nhầm size,1
 REL_013184,PER_0019,PERFORMED,SON_3921,chờ kiểm tra,không,,,trình bày,,Hứa Kim Tuyền,Đôi giày nhầm size,1
 REL_013185,SON_3921,RELEASED_BY,COM_0044,chờ kiểm tra,không,,,chủ sở hữu bản quyền,,Đôi giày nhầm size,C Mazor Entertainment,1
-REL_013186,PER_0005,COLLABORATED_WITH,PER_0019,chờ kiểm tra,có,,,cùng trình bày một bài,,Orange,Hứa Kim Tuyền,8
+REL_013186,PER_0005,COLLABORATED_WITH,PER_0019,chờ kiểm tra,có,,,cùng trình bày một bài,,Orange,Hứa Kim Tuyền,9
 REL_013187,PER_0019,AMBASSADOR_OF,BRA_0002,chờ kiểm tra,không,,,hợp tác MV/quảng cáo (brand đứng tên trong tiêu đề),,Hứa Kim Tuyền,Biti's,1
 REL_013188,PER_0005,AMBASSADOR_OF,BRA_0002,chờ kiểm tra,không,,,hợp tác MV/quảng cáo (brand đứng tên trong tiêu đề),,Orange,Biti's,1
 REL_013189,PER_0005,PERFORMED,SON_3922,chờ kiểm tra,không,,,trình bày,,Orange,Wouldn’t It Be Nice?,1
@@ -13082,8 +13076,8 @@ REL_013250,PER_0019,PERFORMED,SON_3933,chờ kiểm tra,không,,,trình bày,,H�
 REL_013251,SON_3933,RELEASED_BY,COM_0044,chờ kiểm tra,không,,,chủ sở hữu bản quyền,,Nơi Pháo Hoa Rực Rỡ,C Mazor Entertainment,1
 REL_013252,PER_0005,COLLABORATED_WITH,PER_2371,chờ kiểm tra,có,,,cùng trình bày một bài,,Orange,Cẩm Vân,1
 REL_013253,PER_0010,COLLABORATED_WITH,PER_2371,chờ kiểm tra,có,,,cùng trình bày một bài,,HOÀNG DŨNG,Cẩm Vân,1
-REL_013254,PER_0010,COLLABORATED_WITH,PER_0019,chờ kiểm tra,có,,,cùng trình bày một bài,,HOÀNG DŨNG,Hứa Kim Tuyền,3
-REL_013255,PER_0019,COLLABORATED_WITH,PER_2371,chờ kiểm tra,có,,,cùng trình bày một bài,,Hứa Kim Tuyền,Cẩm Vân,1
+REL_013254,PER_0010,COLLABORATED_WITH,PER_0019,chờ kiểm tra,có,,,cùng trình bày một bài,,HOÀNG DŨNG,Hứa Kim Tuyền,5
+REL_013255,PER_0019,COLLABORATED_WITH,PER_2371,chờ kiểm tra,có,,,cùng trình bày một bài,,Hứa Kim Tuyền,Cẩm Vân,2
 REL_013256,PER_0005,PERFORMED,SON_3934,chờ kiểm tra,không,,,trình bày,,Orange,Gặp Lại Năm Ta 60,1
 REL_013257,PER_0005,COMPOSED,SON_3934,chờ kiểm tra,không,,,sáng tác/viết lời,,Orange,Gặp Lại Năm Ta 60,1
 REL_013258,PER_1398,PRODUCED,SON_3934,chờ kiểm tra,không,,,sản xuất/hòa âm,,Justin TechN9,Gặp Lại Năm Ta 60,1
@@ -15961,7 +15955,7 @@ REL_016168,PER_0019,AMBASSADOR_OF,BRA_0035,chờ kiểm tra,không,,,hợp tác 
 REL_016169,PER_2716,AMBASSADOR_OF,BRA_0035,chờ kiểm tra,không,,,hợp tác MV/quảng cáo (brand đứng tên trong tiêu đề),,Pam Yêu Ơi,Gadopax,1
 REL_016170,PER_0019,PERFORMED,SON_4692,chờ kiểm tra,không,,,trình bày,,Hứa Kim Tuyền,cánh đồng mây của thượng đế,1
 REL_016171,PER_0191,PRODUCED,SON_4692,chờ kiểm tra,không,,,sản xuất/hòa âm,,JASE,cánh đồng mây của thượng đế,1
-REL_016172,PER_0007,PERFORMED,SON_2855,chờ kiểm tra,không,,,trình bày,,Văn Mai Hương,ước mơ của mẹ,1
+REL_016172,PER_0007,PERFORMED,SON_2855,chờ kiểm tra,không,,,trình bày,,Văn Mai Hương,ước mơ của mẹ,2
 REL_016173,PER_0191,PRODUCED,SON_2855,chờ kiểm tra,không,,,sản xuất/hòa âm,,JASE,ước mơ của mẹ,1
 REL_016174,PER_0890,PERFORMED,SON_4693,chờ kiểm tra,không,,,trình bày,,Nguyên Hà,Lucy,1
 REL_016175,PER_2717,PRODUCED,SON_4693,chờ kiểm tra,không,,,sản xuất/hòa âm,,Duy Trần,Lucy,1
@@ -15969,10 +15963,10 @@ REL_016176,PER_2371,PERFORMED,SON_4694,chờ kiểm tra,không,,,trình bày,,C�
 REL_016177,PER_2718,PERFORMED,SON_4694,chờ kiểm tra,không,,,trình bày,,Cece Trương,một ngày tôi quên hết,1
 REL_016178,PER_2717,PRODUCED,SON_4694,chờ kiểm tra,không,,,sản xuất/hòa âm,,Duy Trần,một ngày tôi quên hết,2
 REL_016179,PER_2371,COLLABORATED_WITH,PER_2718,chờ kiểm tra,có,,,cùng trình bày một bài,,Cẩm Vân,Cece Trương,1
-REL_016180,PER_0089,PERFORMED,SON_4695,chờ kiểm tra,không,,,trình bày,,Trúc Nhân,nếu một mai tôi bay lên trời,1
+REL_016180,PER_0089,PERFORMED,SON_4695,chờ kiểm tra,không,,,trình bày,,Trúc Nhân,nếu một mai tôi bay lên trời,2
 REL_016181,PER_2717,PRODUCED,SON_4695,chờ kiểm tra,không,,,sản xuất/hòa âm,,Duy Trần,nếu một mai tôi bay lên trời,1
-REL_016182,PER_0145,PERFORMED,SON_4696,chờ kiểm tra,không,,,trình bày,,AMEE,Hai Mươi Hai,1
-REL_016183,PER_0010,PERFORMED,SON_4697,chờ kiểm tra,không,,,trình bày,,HOÀNG DŨNG,Hoa Kỳ,1
+REL_016182,PER_0145,PERFORMED,SON_4696,chờ kiểm tra,không,,,trình bày,,AMEE,Hai Mươi Hai,3
+REL_016183,PER_0010,PERFORMED,SON_4697,chờ kiểm tra,không,,,trình bày,,HOÀNG DŨNG,Hoa Kỳ,2
 REL_016184,PER_2719,PRODUCED,SON_4697,chờ kiểm tra,không,,,sản xuất/hòa âm,,Lê Hữu Minh,Hoa Kỳ,1
 REL_016185,PER_0010,PERFORMED,SON_4698,chờ kiểm tra,không,,,trình bày,,HOÀNG DŨNG,Tình Bạn Vạn Người Mê,1
 REL_016186,PER_0150,PERFORMED,SON_4698,chờ kiểm tra,không,,,trình bày,,JUKY SAN,Tình Bạn Vạn Người Mê,1
@@ -15988,7 +15982,7 @@ REL_016195,PER_0653,PRODUCED,SON_4699,chờ kiểm tra,không,,,sản xuất/hò
 REL_016196,PER_0019,COMPOSED,SON_4694,chờ kiểm tra,không,,,sáng tác/viết lời,,Hứa Kim Tuyền,một ngày tôi quên hết,1
 REL_016197,PER_0019,PRODUCED,SON_4694,chờ kiểm tra,không,,,sản xuất/hòa âm,,Hứa Kim Tuyền,một ngày tôi quên hết,1
 REL_016198,PER_1013,PRODUCED,SON_4694,chờ kiểm tra,không,,,sản xuất/hòa âm,,Linh Nguyen,một ngày tôi quên hết,1
-REL_016199,PER_0019,PERFORMED,SON_4694,chờ kiểm tra,không,,,trình bày,,Hứa Kim Tuyền,một ngày tôi quên hết,1
+REL_016199,PER_0019,PERFORMED,SON_4694,chờ kiểm tra,không,,,trình bày,,Hứa Kim Tuyền,một ngày tôi quên hết,3
 REL_016200,PER_1962,PERFORMED,SON_4694,chờ kiểm tra,không,,,trình bày,,Danh,một ngày tôi quên hết,1
 REL_016201,PER_0019,COLLABORATED_WITH,PER_1962,chờ kiểm tra,có,,,cùng trình bày một bài,,Hứa Kim Tuyền,Danh,1
 REL_016202,PER_0019,PERFORMED,SON_4701,chờ kiểm tra,không,,,trình bày,,Hứa Kim Tuyền,NGƯỜI GIEO MẦM XANH,1
@@ -17665,7 +17659,7 @@ REL_017900,PER_0129,PRODUCED,SON_5183,chờ kiểm tra,không,,,sản xuất/hò
 REL_017901,PER_1170,PRODUCED,SON_5183,chờ kiểm tra,không,,,sản xuất/hòa âm,,VRT,BILLIONAIRE,1
 REL_017902,PER_0019,PERFORMED,SON_2962,chờ kiểm tra,không,,,trình bày,,Hứa Kim Tuyền,Đại Minh Tinh,1
 REL_017903,PER_0129,PRODUCED,SON_2962,chờ kiểm tra,không,,,sản xuất/hòa âm,,CM1X,Đại Minh Tinh,1
-REL_017904,PER_0007,COLLABORATED_WITH,PER_0019,chờ kiểm tra,có,,,cùng trình bày một bài,,Văn Mai Hương,Hứa Kim Tuyền,2
+REL_017904,PER_0007,COLLABORATED_WITH,PER_0019,chờ kiểm tra,có,,,cùng trình bày một bài,,Văn Mai Hương,Hứa Kim Tuyền,4
 REL_017905,PER_0129,PRODUCED,SON_3931,chờ kiểm tra,không,,,sản xuất/hòa âm,,CM1X,Có Đau Thì Đau Một Mình,1
 REL_017906,PER_0129,PERFORMED,SON_5185,chờ kiểm tra,không,,,trình bày,,CM1X,ANH KHÔNG LÀ GU,1
 REL_017907,PER_0129,PRODUCED,SON_0593,chờ kiểm tra,không,,,sản xuất/hòa âm,,CM1X,Người Lạ Trong Mơ,1
@@ -17707,7 +17701,7 @@ REL_017944,PER_0129,COLLABORATED_WITH,PER_2986,chờ kiểm tra,có,,,cùng trì
 REL_017945,PER_0079,PERFORMED,SON_0551,chờ kiểm tra,không,,,trình bày,,2PILLZ,ghệ iu dấu của em ơi,1
 REL_017946,PER_0099,COMPOSED,SON_0551,chờ kiểm tra,không,,,sáng tác/viết lời,,WOKEUP,ghệ iu dấu của em ơi,1
 REL_017947,PER_0099,PERFORMED,SON_0551,chờ kiểm tra,không,,,trình bày,,WOKEUP,ghệ iu dấu của em ơi,1
-REL_017948,PER_0079,COLLABORATED_WITH,PER_0099,chờ kiểm tra,có,,,cùng trình bày một bài,,2PILLZ,WOKEUP,3
+REL_017948,PER_0079,COLLABORATED_WITH,PER_0099,chờ kiểm tra,có,,,cùng trình bày một bài,,2PILLZ,WOKEUP,5
 REL_017949,PER_1010,PERFORMED,SON_5195,chờ kiểm tra,không,,,trình bày,,Đỗ Bảo,Everyday My Love,1
 REL_017950,PER_0129,PERFORMED,SON_5195,chờ kiểm tra,không,,,trình bày,,CM1X,Everyday My Love,1
 REL_017951,PER_1010,COMPOSED,SON_5195,chờ kiểm tra,không,,,sáng tác/viết lời,,Đỗ Bảo,Everyday My Love,1
@@ -17879,7 +17873,7 @@ REL_018119,PER_0129,PRODUCED,SON_5119,chờ kiểm tra,không,,,sản xuất/hò
 REL_018120,PER_0656,COLLABORATED_WITH,PER_2061,chờ kiểm tra,có,,,cùng trình bày một bài,,Minchu,Changg,1
 REL_018121,PER_0216,COLLABORATED_WITH,PER_0656,chờ kiểm tra,có,,,cùng trình bày một bài,,Liu Grace,Minchu,1
 REL_018122,PER_0216,COLLABORATED_WITH,PER_2061,chờ kiểm tra,có,,,cùng trình bày một bài,,Liu Grace,Changg,1
-REL_018123,PER_0075,PERFORMED,SON_0565,chờ kiểm tra,không,,,trình bày,,TLINH,Gái Độc Thân,1
+REL_018123,PER_0075,PERFORMED,SON_0565,chờ kiểm tra,không,,,trình bày,,TLINH,Gái Độc Thân,2
 REL_018124,PER_0129,PRODUCED,SON_0565,chờ kiểm tra,không,,,sản xuất/hòa âm,,CM1X,Gái Độc Thân,1
 REL_018125,PER_0967,PRODUCED,SON_0565,chờ kiểm tra,không,,,sản xuất/hòa âm,,Daeron,Gái Độc Thân,1
 REL_018126,PER_3013,PERFORMED,SON_5241,chờ kiểm tra,không,,,trình bày,,RNB CM1X CỰC CHILL,"XE ĐẠP, SÀI GÒN ĐAU LÒNG QUÁ",1
@@ -21523,7 +21517,7 @@ REL_021843,PER_0200,COLLABORATED_WITH,PER_0684,chờ kiểm tra,có,,,cùng trì
 REL_021844,PER_0200,PERFORMED,SON_5003,chờ kiểm tra,không,,,trình bày,,Coldzy,FEVER,1
 REL_021845,PER_0075,FEATURED_ON,SON_5003,chờ kiểm tra,không,,,trình bày,,TLINH,FEVER,1
 REL_021846,PER_0684,FEATURED_ON,SON_5003,chờ kiểm tra,không,,,trình bày,,Minsicko,FEVER,1
-REL_021847,PER_0075,COLLABORATED_WITH,PER_0200,chờ kiểm tra,có,,,cùng trình bày một bài,,TLINH,Coldzy,1
+REL_021847,PER_0075,COLLABORATED_WITH,PER_0200,chờ kiểm tra,có,,,cùng trình bày một bài,,TLINH,Coldzy,2
 REL_021848,PER_0075,COLLABORATED_WITH,PER_0684,chờ kiểm tra,có,,,cùng trình bày một bài,,TLINH,Minsicko,1
 REL_021849,PER_0200,PERFORMED,SON_6181,chờ kiểm tra,không,,,trình bày,,Coldzy,Cold Lạc Bộ,2
 REL_021850,PER_0010,FEATURED_ON,SON_6181,chờ kiểm tra,không,,,trình bày,,HOÀNG DŨNG,Cold Lạc Bộ,2
@@ -23076,7 +23070,6 @@ REL_023424,PER_0199,CONTESTANT_ON,SHO_0004,chờ kiểm tra,không,,,nghệ sĩ 
 REL_023425,PER_3126,COMPOSED,SON_6534,chờ kiểm tra,không,,,sáng tác/viết lời,,Tuấn Phương,TÌNH ĐẤT,1
 REL_023426,PER_0031,PRODUCED,SON_6534,chờ kiểm tra,không,,,sản xuất/hòa âm,,SLIMV,TÌNH ĐẤT,1
 REL_023427,PER_0036,PRODUCED,SON_6534,chờ kiểm tra,không,,,sản xuất/hòa âm,,JAVIX,TÌNH ĐẤT,1
-REL_023428,PER_0205,PERFORMED,SON_6535,chờ kiểm tra,không,,,trình bày,,DUONGK,Mixset Bayxa,1
 REL_023429,PER_0080,PERFORMED,SON_6536,chờ kiểm tra,không,,,trình bày,,ONLY C,NGƯỜI ĐÁNG THƯƠNG LÀ ANH,1
 REL_023430,PER_1398,PRODUCED,SON_6536,chờ kiểm tra,không,,,sản xuất/hòa âm,,Justin TechN9,NGƯỜI ĐÁNG THƯƠNG LÀ ANH,1
 REL_023431,PER_1034,PRODUCED,SON_6536,chờ kiểm tra,không,,,sản xuất/hòa âm,,Hiếu Nguyễn,NGƯỜI ĐÁNG THƯƠNG LÀ ANH,1
@@ -25014,10 +25007,10 @@ REL_025403,PER_0005,PERFORMED,SON_6860,chờ kiểm tra,không,,,biểu diễn t
 REL_025404,PER_0019,PERFORMED,SON_6860,chờ kiểm tra,không,,,biểu diễn tại chương trình,,Hứa Kim Tuyền,Khúc Nhạc Làm Ta Vui,1
 REL_025405,PER_0021,PERFORMED,SON_2578,chờ kiểm tra,không,,,biểu diễn tại chương trình,,Ali Hoàng Dương,Đi Qua Mùa Hạ,1
 REL_025406,PER_0273,COMPOSED,SON_2578,chờ kiểm tra,không,,,sáng tác/viết lời,,Thái Đinh,Đi Qua Mùa Hạ,1
-REL_025407,PER_0019,PERFORMED,SON_4689,chờ kiểm tra,không,,,biểu diễn tại chương trình,,Hứa Kim Tuyền,Chúng Ta Chỉ Là Đã Từng,1
-REL_025408,PER_0005,PERFORMED,SON_4689,chờ kiểm tra,không,,,biểu diễn tại chương trình,,Orange,Chúng Ta Chỉ Là Đã Từng,1
+REL_025407,PER_0019,PERFORMED,SON_4689,chờ kiểm tra,không,,,biểu diễn tại chương trình; trình bày,,Hứa Kim Tuyền,Chúng Ta Chỉ Là Đã Từng,2
+REL_025408,PER_0005,PERFORMED,SON_4689,chờ kiểm tra,không,,,biểu diễn tại chương trình; trình bày,,Orange,Chúng Ta Chỉ Là Đã Từng,2
 REL_025409,PER_0019,COMPOSED,SON_4689,chờ kiểm tra,không,,,sáng tác/viết lời,,Hứa Kim Tuyền,Chúng Ta Chỉ Là Đã Từng,1
-REL_025410,PER_0019,PERFORMED,SON_4690,chờ kiểm tra,không,,,biểu diễn tại chương trình,,Hứa Kim Tuyền,Anh Sẽ Đến Cùng Cơn Mưa,1
+REL_025410,PER_0019,PERFORMED,SON_4690,chờ kiểm tra,không,,,biểu diễn tại chương trình; trình bày,,Hứa Kim Tuyền,Anh Sẽ Đến Cùng Cơn Mưa,2
 REL_025411,PER_0019,COMPOSED,SON_4690,chờ kiểm tra,không,,,sáng tác/viết lời,,Hứa Kim Tuyền,Anh Sẽ Đến Cùng Cơn Mưa,1
 REL_025412,PER_0004,PERFORMED,SON_2525,chờ kiểm tra,không,,,biểu diễn tại chương trình,,Anh Tú,Bởi Vì Là Khi Yêu,1
 REL_025413,PER_0020,COMPOSED,SON_2525,chờ kiểm tra,không,,,sáng tác/viết lời,,LyLy,Bởi Vì Là Khi Yêu,1
@@ -25027,7 +25020,7 @@ REL_025416,PER_0274,COMPOSED,SON_3479,chờ kiểm tra,không,,,sáng tác/viế
 REL_025417,PER_0089,PERFORMED,SON_6861,chờ kiểm tra,không,,,biểu diễn tại chương trình,,Trúc Nhân,Ô Cửa Sổ,1
 REL_025418,PER_0051,COMPOSED,SON_6861,chờ kiểm tra,không,,,sáng tác/viết lời,,Võ Thiện Thanh,Ô Cửa Sổ,1
 REL_025419,PER_0089,PERFORMED,SON_5453,chờ kiểm tra,không,,,biểu diễn tại chương trình,,Trúc Nhân,Tự Nguyện,1
-REL_025420,PER_0019,PERFORMED,SON_4688,chờ kiểm tra,không,,,biểu diễn tại chương trình,,Hứa Kim Tuyền,Bàn Kế Bên,1
+REL_025420,PER_0019,PERFORMED,SON_4688,chờ kiểm tra,không,,,biểu diễn tại chương trình; trình bày,,Hứa Kim Tuyền,Bàn Kế Bên,2
 REL_025421,PER_0019,COMPOSED,SON_4688,chờ kiểm tra,không,,,sáng tác/viết lời,,Hứa Kim Tuyền,Bàn Kế Bên,1
 REL_025422,PER_0005,PERFORMED,SON_0732,chờ kiểm tra,không,,,biểu diễn tại chương trình,,Orange,It's Okay Not To Be Okay,1
 REL_025423,PER_0005,COMPOSED,SON_0732,chờ kiểm tra,không,,,sáng tác/viết lời,,Orange,It's Okay Not To Be Okay,1
@@ -25524,7 +25517,7 @@ REL_025928,PER_0203,PERFORMED,SON_6853,chờ kiểm tra,không,,,biểu diễn t
 REL_025929,PER_0203,PERFORMED_AT,SHO_0022,chờ kiểm tra,không,,,khách mời/nghệ sĩ biểu diễn trong chương trình,,SUNI HẠ LINH,Hương Mùa Hè Show mùa 1,7
 REL_025930,PER_0075,PERFORMED,SON_6853,chờ kiểm tra,không,,,biểu diễn tại chương trình,,TLINH,Có Hẹn Với Thanh Xuân,1
 REL_025931,PER_0075,PERFORMED_AT,SHO_0022,chờ kiểm tra,không,,,khách mời/nghệ sĩ biểu diễn trong chương trình,,TLINH,Hương Mùa Hè Show mùa 1,2
-REL_025932,PER_0016,COLLABORATED_WITH,PER_0075,chờ kiểm tra,có,,,cùng trình bày một bài,,GREY D,TLINH,2
+REL_025932,PER_0016,COLLABORATED_WITH,PER_0075,chờ kiểm tra,có,,,cùng trình bày một bài,,GREY D,TLINH,3
 REL_025933,PER_0010,COLLABORATED_WITH,PER_0075,chờ kiểm tra,có,,,cùng trình bày một bài,,HOÀNG DŨNG,TLINH,1
 REL_025934,PER_0005,COLLABORATED_WITH,PER_0203,chờ kiểm tra,có,,,cùng trình bày một bài,,Orange,SUNI HẠ LINH,3
 REL_025935,PER_0005,COLLABORATED_WITH,PER_0075,chờ kiểm tra,có,,,cùng trình bày một bài,,Orange,TLINH,1
@@ -25616,7 +25609,7 @@ REL_026025,PER_0026,COMPOSED,SON_1365,chờ kiểm tra,không,,,sáng tác/viế
 REL_026026,PER_0075,PERFORMED,SON_6957,chờ kiểm tra,không,,,biểu diễn tại chương trình,,TLINH,CÔNG CHÚA ĐI,1
 REL_026027,PER_0075,PERFORMED_AT,EVT_0002,chờ kiểm tra,không,,,biểu diễn tại sự kiện,,TLINH,Làn Sóng Xanh 2024,1
 REL_026028,GRO_0001,PERFORMED,SON_6957,chờ kiểm tra,không,,,biểu diễn tại chương trình,,DTAP,CÔNG CHÚA ĐI,1
-REL_026029,GRO_0001,COLLABORATED_WITH,PER_0075,chờ kiểm tra,có,,,cùng trình bày một bài,,DTAP,TLINH,1
+REL_026029,GRO_0001,COLLABORATED_WITH,PER_0075,chờ kiểm tra,có,,,cùng trình bày một bài,,DTAP,TLINH,4
 REL_026030,PER_0013,PERFORMED_AT,EVT_0002,chờ kiểm tra,không,,,biểu diễn tại sự kiện,,Quang Hùng MasterD,Làn Sóng Xanh 2024,1
 REL_026031,PER_0963,COMPOSED,SON_4262,chờ kiểm tra,không,,,sáng tác/viết lời,,RedT,Catch Me If You Can,1
 REL_026032,PER_0013,COMPOSED,SON_4262,chờ kiểm tra,không,,,sáng tác/viết lời,,Quang Hùng MasterD,Catch Me If You Can,1
@@ -25824,7 +25817,7 @@ REL_026233,PER_0013,PERFORMED_AT,EVT_0006,chờ kiểm tra,không,,,biểu diễ
 REL_026234,PER_0002,PERFORMED_AT,EVT_0006,chờ kiểm tra,không,,,biểu diễn tại sự kiện,,HIEUTHUHAI,Sóng 26 2026,1
 REL_026235,PER_0262,PERFORMED,SON_2067,chờ kiểm tra,không,,,biểu diễn tại chương trình,,MARZUZ,Exit Sign,1
 REL_026236,PER_0262,PERFORMED_AT,EVT_0006,chờ kiểm tra,không,,,biểu diễn tại sự kiện,,MARZUZ,Sóng 26 2026,1
-REL_026237,PER_0002,COLLABORATED_WITH,PER_0262,chờ kiểm tra,có,,,cùng trình bày một bài,,HIEUTHUHAI,MARZUZ,1
+REL_026237,PER_0002,COLLABORATED_WITH,PER_0262,chờ kiểm tra,có,,,cùng trình bày một bài,,HIEUTHUHAI,MARZUZ,2
 REL_026238,PER_0152,PERFORMED,SON_5880,chờ kiểm tra,không,,,biểu diễn tại chương trình,,LYHAN,Không Thời Gian,1
 REL_026239,PER_0152,PERFORMED_AT,EVT_0006,chờ kiểm tra,không,,,biểu diễn tại sự kiện,,LYHAN,Sóng 26 2026,1
 REL_026240,PER_0152,PERFORMED,SON_3971,chờ kiểm tra,không,,,biểu diễn tại chương trình,,LYHAN,TIẾC CHO EM,1
@@ -25866,3 +25859,112 @@ REL_026275,PER_0049,COLLABORATED_WITH,PER_0087,chờ kiểm tra,có,,,cùng trì
 REL_026276,PER_0049,COLLABORATED_WITH,PER_0147,chờ kiểm tra,có,,,cùng trình bày một bài,,Ngô Lan Hương,HAN SARA,1
 REL_026277,PER_0087,COLLABORATED_WITH,PER_0162,chờ kiểm tra,có,,,cùng trình bày một bài,,Ánh Sáng AZA,YEOLAN,1
 REL_026278,PER_0147,COLLABORATED_WITH,PER_0162,chờ kiểm tra,có,,,cùng trình bày một bài,,HAN SARA,YEOLAN,1
+REL_026279,PER_0056,FEATURED_ON,SON_6972,chờ kiểm tra,không,,,trình bày,,THANH DUY,delilah,2
+REL_026280,PER_0251,PERFORMED,SON_0128,chờ kiểm tra,không,,,trình bày,,ANDIEZ,Chuyện Cũ Bỏ Qua,1
+REL_026281,PER_0089,COLLABORATED_WITH,PER_0251,chờ kiểm tra,có,,,cùng trình bày một bài,,Trúc Nhân,ANDIEZ,1
+REL_026282,PER_0251,AMBASSADOR_OF,BRA_0001,chờ kiểm tra,không,,,hợp tác MV/quảng cáo (brand đứng tên trong tiêu đề),,ANDIEZ,Mirinda,1
+REL_026283,PER_0075,PERFORMED,SON_0545,chờ kiểm tra,không,,,trình bày,,TLINH,người điên NẶNG,1
+REL_026284,PER_0075,PERFORMED,SON_0546,chờ kiểm tra,không,,,trình bày,,TLINH,dặm bùa yêu,1
+REL_026285,PER_0075,COLLABORATED_WITH,PER_0282,chờ kiểm tra,có,,,cùng trình bày một bài,,TLINH,Bích Phương,1
+REL_026286,PER_0075,PERFORMED,SON_0547,chờ kiểm tra,không,,,trình bày,,TLINH,Miền Mộng Mị,1
+REL_026287,PER_0075,COLLABORATED_WITH,PER_0145,chờ kiểm tra,có,,,cùng trình bày một bài,,TLINH,AMEE,1
+REL_026288,PER_0075,PERFORMED,SON_0548,chờ kiểm tra,không,,,trình bày,,TLINH,đừng làm nó phức tạp,2
+REL_026289,PER_0075,PERFORMED,SON_0549,chờ kiểm tra,không,,,trình bày,,TLINH,nữ siêu anh hùng,2
+REL_026290,PER_0075,PERFORMED,SON_0550,chờ kiểm tra,không,,,trình bày,,TLINH,nếu lúc đó,2
+REL_026291,PER_0075,PERFORMED,SON_0551,chờ kiểm tra,không,,,trình bày,,TLINH,ghệ iu dấu của em ơi,14
+REL_026292,PER_0075,PERFORMED,SON_0552,chờ kiểm tra,không,,,trình bày,,TLINH,những đốm sáng,1
+REL_026293,PER_0075,PERFORMED,SON_0553,chờ kiểm tra,không,,,trình bày,,TLINH,thế giới thần tiên,1
+REL_026294,PER_0075,PERFORMED,SON_0554,chờ kiểm tra,không,,,trình bày,,TLINH,làm lành chữa tình,1
+REL_026295,PER_0075,PERFORMED,SON_0555,chờ kiểm tra,không,,,trình bày,,TLINH,ái,1
+REL_026296,PER_0075,PERFORMED,SON_0556,chờ kiểm tra,không,,,trình bày,,TLINH,kho báu đánh rơi,1
+REL_026297,PER_0075,PERFORMED,SON_0557,chờ kiểm tra,không,,,trình bày,,TLINH,người điên,1
+REL_026298,PER_0075,PERFORMED,SON_0558,chờ kiểm tra,không,,,trình bày,,TLINH,người đẹp ngủ,1
+REL_026299,PER_0075,PERFORMED,SON_0559,chờ kiểm tra,không,,,trình bày,,TLINH,tình yêu có nghĩa là gì?,2
+REL_026300,PER_0075,PERFORMED,SON_0560,chờ kiểm tra,không,,,trình bày,,TLINH,mua thêm,1
+REL_026302,PER_0075,COLLABORATED_WITH,PER_0240,chờ kiểm tra,có,,,cùng trình bày một bài,,TLINH,KHOI VU,1
+REL_026303,PER_0075,COLLABORATED_WITH,PER_0144,chờ kiểm tra,có,,,cùng trình bày một bài,,TLINH,52HZ,1
+REL_026304,PER_0075,COLLABORATED_WITH,PER_0079,chờ kiểm tra,có,,,cùng trình bày một bài,,TLINH,2PILLZ,13
+REL_026305,PER_0099,FEATURED_ON,SON_0551,chờ kiểm tra,không,,,trình bày,,WOKEUP,ghệ iu dấu của em ơi,2
+REL_026306,PER_0075,COLLABORATED_WITH,PER_0099,chờ kiểm tra,có,,,cùng trình bày một bài,,TLINH,WOKEUP,3
+REL_026307,PER_0075,PERFORMED,SON_0561,chờ kiểm tra,không,,,trình bày,,TLINH,không cần phải nói nhiều,3
+REL_026308,PER_0075,PERFORMED,SON_0562,chờ kiểm tra,không,,,trình bày,,TLINH,Strip ‘em Down,1
+REL_026309,PER_0075,PERFORMED,SON_0563,chờ kiểm tra,không,,,trình bày,,TLINH,MÁU LÊN NÀO,1
+REL_026310,PER_0075,PERFORMED,SON_0564,chờ kiểm tra,không,,,trình bày,,TLINH,NGƯỜI ĐI BAO,1
+REL_026311,PER_0075,COLLABORATED_WITH,PER_0305,chờ kiểm tra,có,,,cùng trình bày một bài,,TLINH,Low G,3
+REL_026312,PER_0066,COLLABORATED_WITH,PER_0075,chờ kiểm tra,có,,,cùng trình bày một bài,,HOÀNG TÔN,TLINH,2
+REL_026313,PER_0075,PERFORMED,SON_0566,chờ kiểm tra,không,,,trình bày,,TLINH,ecstacy,1
+REL_026314,PER_0075,PERFORMED,SON_0567,chờ kiểm tra,không,,,trình bày,,TLINH,Thích Quá Rùi Nà,1
+REL_026315,PER_0075,COLLABORATED_WITH,PER_0687,chờ kiểm tra,có,,,cùng trình bày một bài,,TLINH,Trung Trần,1
+REL_026316,PER_0262,FEATURED_ON,SON_1194,chờ kiểm tra,không,,,trình bày,,MARZUZ,Baby,1
+REL_026317,PER_0262,COLLABORATED_WITH,PER_0304,chờ kiểm tra,có,,,cùng trình bày một bài,,MARZUZ,MCK,1
+REL_026318,PER_0075,FEATURED_ON,SON_1203,chờ kiểm tra,không,,,trình bày,,TLINH,Chỉ Một Đêm Nữa Thôi,1
+REL_026319,PER_0075,COLLABORATED_WITH,PER_0304,chờ kiểm tra,có,,,cùng trình bày một bài,,TLINH,MCK,4
+REL_026320,PER_0075,FEATURED_ON,SON_1210,chờ kiểm tra,không,,,trình bày,,TLINH,Đìu Anh Luôn Giữ Kín Trong Tym,2
+REL_026321,PER_0075,PERFORMED,SON_1211,chờ kiểm tra,không,,,trình bày,,TLINH,Dễ,1
+REL_026322,PER_0100,PERFORMED,SON_1456,chờ kiểm tra,không,,,trình bày,,OSAD,có người đón em rồi,1
+REL_026323,PER_0075,FEATURED_ON,SON_1068,chờ kiểm tra,không,,,trình bày,,TLINH,Ý Trời,3
+REL_026324,PER_0075,COLLABORATED_WITH,PER_0097,chờ kiểm tra,có,,,cùng trình bày một bài,,TLINH,Đông Nhi,3
+REL_026325,PER_0075,FEATURED_ON,SON_1822,chờ kiểm tra,không,,,trình bày,,TLINH,Em Đâu Cần,1
+REL_026326,PER_0075,COLLABORATED_WITH,PER_0302,chờ kiểm tra,có,,,cùng trình bày một bài,,TLINH,Madihu,1
+REL_026327,PER_0262,FEATURED_ON,SON_2067,chờ kiểm tra,không,,,trình bày,,MARZUZ,Exit Sign,1
+REL_026328,PER_0002,PERFORMED,SON_2074,chờ kiểm tra,không,,,trình bày,,HIEUTHUHAI,ngủ một mình,2
+REL_026329,PER_0015,FEATURED_ON,SON_2074,chờ kiểm tra,không,,,trình bày,,Negav,ngủ một mình,2
+REL_026330,PER_0075,FEATURED_ON,SON_2137,chờ kiểm tra,không,,,trình bày,,TLINH,3 BÍCH,1
+REL_026331,PER_0009,COLLABORATED_WITH,PER_0075,chờ kiểm tra,có,,,cùng trình bày một bài,,Pháp Kiều,TLINH,1
+REL_026332,PER_0015,PERFORMED,SON_2419,chờ kiểm tra,không,,,trình bày,,Negav,em khiến anh muốn trở thành người Hà Nội,1
+REL_026333,PER_0268,PERFORMED,SON_2847,chờ kiểm tra,không,,,trình bày,,Obito,dạo này,1
+REL_026334,PER_0098,PERFORMED,SON_6973,chờ kiểm tra,không,,,trình bày,,MIN,girls like me don't cry,1
+REL_026335,SON_6973,RELEASED_BY,COM_0003,chờ kiểm tra,không,,,trang phát hành audio,,girls like me don't cry,Warner Music Vietnam,1
+REL_026336,PER_0262,PERFORMED,SON_3537,chờ kiểm tra,không,,,trình bày,,MARZUZ,vì,1
+REL_026337,PER_0028,FEATURED_ON,SON_3537,chờ kiểm tra,không,,,trình bày,,JustaTee,vì,1
+REL_026338,PER_0028,COLLABORATED_WITH,PER_0262,chờ kiểm tra,có,,,cùng trình bày một bài,,JustaTee,MARZUZ,1
+REL_026339,PER_0262,PERFORMED,SON_3538,chờ kiểm tra,không,,,trình bày,,MARZUZ,Gió,1
+REL_026340,PER_0037,COLLABORATED_WITH,PER_0262,chờ kiểm tra,có,,,cùng trình bày một bài,,WEAN,MARZUZ,1
+REL_026341,PER_0262,PERFORMED,SON_3539,chờ kiểm tra,không,,,trình bày,,MARZUZ,lại là cảm xúc này phải không?,2
+REL_026342,PER_0262,PERFORMED,SON_1355,chờ kiểm tra,không,,,trình bày,,MARZUZ,phản chiếu,2
+REL_026343,PER_0262,PERFORMED,SON_3540,chờ kiểm tra,không,,,trình bày,,MARZUZ,thiên thần giáng Trần,2
+REL_026344,PER_0262,PERFORMED,SON_1174,chờ kiểm tra,không,,,trình bày,,MARZUZ,Cảm Ơn,2
+REL_026345,PER_0262,PERFORMED,SON_3541,chờ kiểm tra,không,,,trình bày,,MARZUZ,rêu xanh trên mặt nước,2
+REL_026346,PER_0262,PERFORMED,SON_1354,chờ kiểm tra,không,,,trình bày,,MARZUZ,ảo ảnh,2
+REL_026347,PER_0262,PERFORMED,SON_3542,chờ kiểm tra,không,,,trình bày,,MARZUZ,đang yên đang lành,2
+REL_026348,PER_0262,PERFORMED,SON_3543,chờ kiểm tra,không,,,trình bày,,MARZUZ,ngăn cản,2
+REL_026349,PER_0262,PERFORMED,SON_3544,chờ kiểm tra,không,,,trình bày,,MARZUZ,ả / intro to the visual album ả,1
+REL_026350,PER_0075,PERFORMED,SON_4126,chờ kiểm tra,không,,,trình bày,,TLINH,Ai Mà Biết Được,1
+REL_026351,PER_0075,COLLABORATED_WITH,PER_0103,chờ kiểm tra,có,,,cùng trình bày một bài,,TLINH,SOOBIN,1
+REL_026352,PER_0043,PERFORMED,SON_4688,chờ kiểm tra,không,,,trình bày,,Vương Bình,Bàn Kế Bên,1
+REL_026353,PER_0019,COLLABORATED_WITH,PER_0043,chờ kiểm tra,có,,,cùng trình bày một bài,,Hứa Kim Tuyền,Vương Bình,1
+REL_026354,PER_0016,PERFORMED,SON_4690,chờ kiểm tra,không,,,trình bày,,GREY D,Anh Sẽ Đến Cùng Cơn Mưa,1
+REL_026355,PER_0016,COLLABORATED_WITH,PER_0019,chờ kiểm tra,có,,,cùng trình bày một bài,,GREY D,Hứa Kim Tuyền,1
+REL_026356,PER_0019,PERFORMED,SON_4691,chờ kiểm tra,không,,,trình bày,,Hứa Kim Tuyền,rồi sẽ ổn cả thôi mà,1
+REL_026357,PER_0019,PERFORMED,SON_2855,chờ kiểm tra,không,,,trình bày,,Hứa Kim Tuyền,ước mơ của mẹ,2
+REL_026358,PER_0019,PERFORMED,SON_4693,chờ kiểm tra,không,,,trình bày,,Hứa Kim Tuyền,Lucy,2
+REL_026359,PER_0019,COLLABORATED_WITH,PER_0890,chờ kiểm tra,có,,,cùng trình bày một bài,,Hứa Kim Tuyền,Nguyên Hà,1
+REL_026360,PER_0019,COLLABORATED_WITH,PER_2718,chờ kiểm tra,có,,,cùng trình bày một bài,,Hứa Kim Tuyền,Cece Trương,1
+REL_026361,PER_0019,PERFORMED,SON_4695,chờ kiểm tra,không,,,trình bày,,Hứa Kim Tuyền,nếu một mai tôi bay lên trời,2
+REL_026362,PER_0019,PERFORMED,SON_4696,chờ kiểm tra,không,,,trình bày,,Hứa Kim Tuyền,Hai Mươi Hai,3
+REL_026363,PER_0019,COLLABORATED_WITH,PER_0145,chờ kiểm tra,có,,,cùng trình bày một bài,,Hứa Kim Tuyền,AMEE,3
+REL_026364,PER_0019,PERFORMED,SON_4697,chờ kiểm tra,không,,,trình bày,,Hứa Kim Tuyền,Hoa Kỳ,2
+REL_026365,PER_0019,PERFORMED,SON_4699,chờ kiểm tra,không,,,trình bày,,Hứa Kim Tuyền,mang ghế ra sân ngồi hát,1
+REL_026366,PER_0019,COLLABORATED_WITH,PER_0069,chờ kiểm tra,có,,,cùng trình bày một bài,,Hứa Kim Tuyền,TÓC TIÊN,1
+REL_026367,PER_0075,FEATURED_ON,SON_5092,chờ kiểm tra,không,,,trình bày,,TLINH,Love Game,2
+REL_026368,PER_0037,PERFORMED,SON_6974,chờ kiểm tra,không,,,trình bày,,WEAN,nowme,1
+REL_026369,PER_0037,COMPOSED,SON_6974,chờ kiểm tra,không,,,sáng tác/viết lời,,WEAN,nowme,1
+REL_026370,PER_3322,PRODUCED,SON_6974,chờ kiểm tra,không,,,sản xuất/hòa âm,,Liêm Hiếu,nowme,1
+REL_026371,SON_6974,RELEASED_BY,COM_0007,chờ kiểm tra,không,,,trang phát hành audio,,nowme,M Music Records,1
+REL_026372,SON_6974,RELEASED_BY,COM_0106,chờ kiểm tra,không,,,chủ sở hữu bản quyền,,nowme,W Entertainment,1
+REL_026373,PER_0075,FEATURED_ON,SON_5818,chờ kiểm tra,không,,,trình bày,,TLINH,shhhhhhh,1
+REL_026374,PER_0037,COLLABORATED_WITH,PER_0075,chờ kiểm tra,có,,,cùng trình bày một bài,,WEAN,TLINH,1
+REL_026375,PER_0075,PERFORMED,SON_6052,chờ kiểm tra,không,,,trình bày,,TLINH,NGỪI ĐẸP ƠII,1
+REL_026376,PER_0075,PERFORMED,SON_3466,chờ kiểm tra,không,,,trình bày,,TLINH,Đưa Em Vào Trong,1
+REL_026377,PER_0075,COLLABORATED_WITH,PER_0236,chờ kiểm tra,có,,,cùng trình bày một bài,,TLINH,GDucky,1
+REL_026378,PER_0075,PERFORMED,SON_6062,chờ kiểm tra,không,,,trình bày,,TLINH,ĐẾN LÚC NÀY THÌ…,1
+REL_026379,PER_0075,PERFORMED,SON_0709,chờ kiểm tra,không,,,trình bày,,TLINH,Hoàng Hôn,1
+REL_026380,PER_0099,FEATURED_ON,SON_6067,chờ kiểm tra,không,,,trình bày,,WOKEUP,Còn Gì Để Mất,1
+REL_026381,PER_0161,FEATURED_ON,SON_6067,chờ kiểm tra,không,,,trình bày,,Wxrdie,Còn Gì Để Mất,1
+REL_026382,PER_0075,FEATURED_ON,SON_6067,chờ kiểm tra,không,,,trình bày,,TLINH,Còn Gì Để Mất,1
+REL_026383,PER_0099,COLLABORATED_WITH,PER_0161,chờ kiểm tra,có,,,cùng trình bày một bài,,WOKEUP,Wxrdie,1
+REL_026384,PER_0075,COLLABORATED_WITH,PER_0161,chờ kiểm tra,có,,,cùng trình bày một bài,,TLINH,Wxrdie,1
+REL_026385,PER_0208,PERFORMED,SON_6071,chờ kiểm tra,không,,,trình bày,,Mikelodic,nguyên xi,1
+REL_026386,PER_0075,PERFORMED,SON_6194,chờ kiểm tra,không,,,trình bày,,TLINH,If You Said So,1
+REL_026387,PER_0075,FEATURED_ON,SON_6531,chờ kiểm tra,không,,,trình bày,,TLINH,storm version,1
+REL_026388,PER_0075,COLLABORATED_WITH,PER_0194,chờ kiểm tra,có,,,cùng trình bày một bài,,TLINH,NEWL,1

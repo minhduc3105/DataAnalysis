@@ -5,7 +5,7 @@ from collections import Counter, defaultdict
 
 from .common import normalize_name, now_iso, read_seeds
 from .config import INTERIM_DIR, SEEDS_PATH
-from .layer1 import DASH, SHOW_WORDS, _clean, _key, _names, _songs, parse_title
+from .layer1 import DASH, NAME_SPLIT, SHOW_WORDS, _clean, _key, _names, _songs, parse_title
 from .layer1_extract import _write_preserving_review, org_mentions
 from .scope import VI_CHARS
 from .shows import read_shows
@@ -148,7 +148,7 @@ def _parse_song_first(title: str) -> tuple[list[tuple[str, str]], list[str], boo
 NOT_SONG_TITLE = re.compile(
     r"hay nhất|siêu phẩm|phần \d|khui quà|sinh nhật|birthday|chill at home|chủ đề|liveclip|sổ tay|mới nhất|nhạc (?:vàng|trẻ|trữ tình|bolero)|^(?:ep|vol)\.?\s*\d|"
     r"＠|@|award|challenge|setup|thiết bị|documentary|motor show|festival|fesival|\bpart \d|\bp\d+$|^st\s*:|^(?:piano|acoustic) version$|^making$|"
-    r"^màn\s|fan ?meeting|focus cam|in da house|^remix\b|\bby$",
+    r"^màn\s|fan ?meeting|focus cam|in da house|^remix\b|\bby$|\bmix ?set\b|one[- ]click|\bcollection$",
     re.IGNORECASE,
 )
 MUSIC_TITLE = re.compile(
@@ -233,6 +233,19 @@ def clean_person(name: str) -> str:
     return name
 
 
+def _names_with_known(part: str, known: set[str] | frozenset[str]) -> list[str]:
+    # _names bỏ tên viết thường ("tlinh", "obito"), nên tên đã có trong seed được nhận lại ở đây.
+    names = _names(part)
+    seen = {normalize_name(n) for n in names}
+    for raw in NAME_SPLIT.split(part or ""):
+        raw = re.split(r"[(\[]", raw)[0].strip(" .:;-–" + QUOTES)
+        key = normalize_name(raw)
+        if key and key in known and key not in seen:
+            names.append(raw)
+            seen.add(key)
+    return names
+
+
 def parse_artist_title(title: str, artist_keys: set[str], known_people: frozenset[str] = frozenset()) -> dict[str, list[str]]:
     """Trả {performer, featured, producer, song, album} từ tiêu đề video trên kênh nghệ sĩ; cần thấy tên nghệ sĩ để biết vế nào là bài hát."""
     out: dict[str, list[str]] = {"performer": [], "featured": [], "producer": [], "song": [], "album": []}
@@ -264,7 +277,7 @@ def parse_artist_title(title: str, artist_keys: set[str], known_people: frozense
             artist_part, song_part = parts[side], parts[1 - side]
             break
     if not artist_part:
-        side = next((i for i, s in enumerate(segments) if len(s) <= 60 and _has_name(s, artist_keys) and _names(s)), None)
+        side = next((i for i, s in enumerate(segments) if len(s) <= 60 and _has_name(s, artist_keys) and _names_with_known(s, artist_keys | known_people)), None)
         rest = [s for i, s in enumerate(segments) if i != side and not SHOW_WORDS.search(s) and not _has_name(s, artist_keys) and not DASH.search(s)]
         if side is None:
             return out
@@ -283,8 +296,9 @@ def parse_artist_title(title: str, artist_keys: set[str], known_people: frozense
         remixers = re.sub(r"(?i)\b(?:remix|edit|flip|bootleg|version|ver\.?|mix)\b", " ", m.group(0)[1:-1])
         out["producer"] += [n for n in map(clean_person, _names(remixers)) if n]
     song_main = REMIX_PAREN.sub("", song_main).strip(" -–" + QUOTES)
-    out["performer"] = [n for n in map(clean_person, _names(artist_main)) if n]
-    out["featured"] = [n for n in map(clean_person, _names(artist_feat) + _names(song_feat)) if n]
+    known = artist_keys | known_people
+    out["performer"] = [n for n in map(clean_person, _names_with_known(artist_main, known)) if n]
+    out["featured"] = [n for n in map(clean_person, _names_with_known(artist_feat, known) + _names_with_known(song_feat, known)) if n]
     out["album"] = [a for a in album_segs if a]
     album_in_song = ALBUM.match(song_main)
     if song_main and (FULL_ALBUM.search(title) or album_in_song):

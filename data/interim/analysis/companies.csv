@@ -1,14 +1,14 @@
 ﻿entity_id,company,songs,artists
-COM_0010,Universal Music Vietnam,267,147
-COM_0003,Warner Music Vietnam,256,132
-COM_0007,M Music Records,159,97
+COM_0010,Universal Music Vietnam,267,148
+COM_0003,Warner Music Vietnam,256,134
+COM_0007,M Music Records,160,99
 COM_0002,Sony Music Entertainment Vietnam,111,94
-COM_0004,SpaceSpeakers Label,100,47
-COM_0110,Hà Trần Productions,73,37
+COM_0004,SpaceSpeakers Label,100,48
+COM_0110,Hà Trần Productions,73,38
 COM_0109,HQH Entertainment,60,28
 COM_0028,Nguyên Hương Entertainment,37,25
-COM_0026,Yin Yang Media,34,24
-COM_0017,InQ International,31,28
+COM_0026,Yin Yang Media,34,25
+COM_0017,InQ International,31,29
 COM_0020,Universal Music Pte,25,16
 COM_0044,C Mazor Entertainment,25,22
 COM_0023,HÃNG ĐĨA THỜI ĐẠI,23,6
@@ -54,6 +54,7 @@ COM_0043,GUT Label,2,2
 COM_0045,G Label,2,1
 COM_0065,BMZ Entertainment,2,1
 COM_0086,EnS Entertainment,2,3
+COM_0106,W Entertainment,2,1
 COM_0011,Hồng Ân Entertainment,1,3
 COM_0012,Euphoria Media Group,1,2
 COM_0025,Lumif Recordings,1,2
@@ -80,6 +81,5 @@ COM_0097,inner outer,1,2
 COM_0100,Z STUDIO,1,1
 COM_0104,BMZ Music,1,1
 COM_0105,BPro Entertainment,1,1
-COM_0106,W Entertainment,1,1
 COM_0108,NCT,1,1
 COM_0112,SKY Music,1,1
