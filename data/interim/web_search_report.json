@@ -1,26 +1,26 @@
 {
-  "planned": 3609,
+  "planned": 1,
   "rss_results": 240,
-  "rss_new_urls": 28,
-  "rss_duplicates": 212,
+  "rss_new_urls": 4,
+  "rss_duplicates": 236,
   "rss_missing_urls": 0,
-  "rss_out_of_period": 0,
+  "rss_out_of_period": 190,
   "rss_errors": 0,
   "sitemap_results": 0,
   "sitemap_new_urls": 0,
   "sitemap_duplicates": 0,
   "sitemap_missing_urls": 0,
   "sitemap_errors": 0,
-  "google_news_results": 84289,
-  "google_news_new_urls": 46424,
-  "google_news_duplicates": 37865,
+  "google_news_results": 57,
+  "google_news_new_urls": 1,
+  "google_news_duplicates": 56,
   "google_news_missing_urls": 0,
   "google_news_out_of_period": 0,
-  "google_news_errors": 88,
-  "errors": 88,
+  "google_news_errors": 0,
+  "errors": 0,
   "period": [
     "2016-01-01",
     "2026-10-21"
   ],
-  "checked_at": "2026-11-10T14:36:13+07:00"
+  "checked_at": "2026-11-10T15:40:55+07:00"
 }

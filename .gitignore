@@ -4,3 +4,7 @@ __pycache__/
 *.pyc
 data/raw/
 logs/
+
+# Local crawl snapshots and generated article corpus
+/backups/
+/data/processed/web/articles.csv

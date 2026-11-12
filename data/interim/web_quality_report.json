@@ -1,0 +1,21 @@
+{
+  "total_raw": 1954,
+  "raw_documents": 1954,
+  "clean": 0,
+  "review": 1952,
+  "rejected": 2,
+  "clean_by_year": {},
+  "clean_by_source": {},
+  "rejected_by_reason": {
+    "thiếu tiêu đề bài gốc đã xác minh": 1954,
+    "thiếu đoạn mở đầu bài gốc đã xác minh": 1954,
+    "thiếu ngày đăng xác minh từ bài gốc": 1592,
+    "không tìm thấy tên thực thể trong tiêu đề/nội dung; kiểm tra kết quả truy vấn": 301,
+    "đích tải không có dạng bài viết thông thường": 1,
+    "ngoài phạm vi thời gian": 2
+  },
+  "period": [
+    "2016-01-01",
+    "2026-10-21"
+  ]
+}

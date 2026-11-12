@@ -1,0 +1,13 @@
+{
+  "candidates": 121,
+  "recovered": 121,
+  "failures": [],
+  "status_mismatches": [],
+  "statuses": {
+    "cần kiểm tra": 13,
+    "hợp lệ": 3,
+    "loại bỏ": 105
+  },
+  "recovered_at": "2026-11-11T05:49:52+07:00",
+  "output": "/run/media/minhduc/D/Study/DataAnalysis/data/processed/web/recovered_documents.csv"
+}
