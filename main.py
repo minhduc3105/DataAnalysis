@@ -4,7 +4,7 @@ from collections import Counter
 
 from dotenv import load_dotenv
 
-from crawler import analysis, documents, extract, graph, graphdb, layer1_extract, layer2, shows, spotify, viewer, web, youtube, youtube_search
+from crawler import analysis, documents, extract, gold, graph, graphdb, layer1_extract, layer2, shows, spotify, viewer, web, youtube, youtube_search
 from crawler.common import iter_jsonl, read_seeds, select_seeds, write_seeds
 from crawler.config import PERIOD_END, PERIOD_START, RAW_DIR
 
@@ -148,6 +148,16 @@ def cmd_analyze(_args) -> None:
     analysis.run()
 
 
+def cmd_gold(args) -> None:
+    gold.sample(force=args.force)
+
+
+def cmd_slm(args) -> None:
+    from crawler import slm
+
+    slm.bench(args.models)
+
+
 def cmd_stats(_args) -> None:
     yt = list(iter_jsonl((RAW_DIR / "youtube").glob("*.jsonl")))
     print(f"Giai đoạn: {PERIOD_START} → {PERIOD_END}")
@@ -237,6 +247,14 @@ def main() -> None:
     nj.set_defaults(func=cmd_neo4j)
     sub.add_parser("analyze", help="Chạy thuật toán Neo4j GDS, xuất bảng kết quả vào data/interim/analysis/").set_defaults(func=cmd_analyze)
     sub.add_parser("stats", help="Thống kê dữ liệu đã thu").set_defaults(func=cmd_stats)
+    gd = sub.add_parser("gold", help="Lấy mẫu bộ gold (cạnh đồ thị + câu báo chí) để gán nhãn tay vào data/gold/")
+    gd.add_argument("action", choices=["sample"])
+    gd.add_argument("--force", action="store_true", help="Tạo lại file đã có (xóa nhãn đã gán)")
+    gd.set_defaults(func=cmd_gold)
+    sl = sub.add_parser("slm", help="Benchmark SLM (Ollama) trích thực thể/quan hệ trên data/gold/gold_sentences.csv")
+    sl.add_argument("action", choices=["bench"])
+    sl.add_argument("--models", nargs="+", default=["qwen3:4b", "qwen3:8b"])
+    sl.set_defaults(func=cmd_slm)
 
     args = p.parse_args()
     args.func(args)
