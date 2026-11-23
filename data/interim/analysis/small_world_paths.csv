@@ -1,0 +1,11 @@
+﻿from,from_genre,to,to_genre,hops,path
+NGUYỄN VĂN CHUNG,V-pop/Nhạc trẻ,B Ray,Rap/Hip-hop,2,NGUYỄN VĂN CHUNG → Phạm Đình Thái Ngân → B Ray
+NGUYỄN VĂN CHUNG,V-pop/Nhạc trẻ,MASEW,EDM/Electronic,2,NGUYỄN VĂN CHUNG → Hòa Minzy → MASEW
+NGUYỄN VĂN CHUNG,V-pop/Nhạc trẻ,PHƯƠNG MỸ CHI,Dân gian đương đại/Bolero/Trữ tình,2,NGUYỄN VĂN CHUNG → Lâm Bảo Ngọc → PHƯƠNG MỸ CHI
+NGUYỄN VĂN CHUNG,V-pop/Nhạc trẻ,Wren Evans,Indie/Alternative,2,NGUYỄN VĂN CHUNG → Bùi Công Nam → Wren Evans
+B Ray,Rap/Hip-hop,MASEW,EDM/Electronic,1,B Ray → MASEW
+B Ray,Rap/Hip-hop,PHƯƠNG MỸ CHI,Dân gian đương đại/Bolero/Trữ tình,2,B Ray → Suboi → PHƯƠNG MỸ CHI
+B Ray,Rap/Hip-hop,Wren Evans,Indie/Alternative,2,B Ray → HIEUTHUHAI → Wren Evans
+MASEW,EDM/Electronic,PHƯƠNG MỸ CHI,Dân gian đương đại/Bolero/Trữ tình,2,MASEW → Orange → PHƯƠNG MỸ CHI
+MASEW,EDM/Electronic,Wren Evans,Indie/Alternative,2,MASEW → K-ICM → Wren Evans
+PHƯƠNG MỸ CHI,Dân gian đương đại/Bolero/Trữ tình,Wren Evans,Indie/Alternative,2,PHƯƠNG MỸ CHI → WEAN → Wren Evans

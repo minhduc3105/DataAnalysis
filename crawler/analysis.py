@@ -1,3 +1,9 @@
+import math
+import random
+from collections import Counter
+
+import networkx as nx
+import numpy as np
 import pandas as pd
 
 from .config import INTERIM_DIR
@@ -7,7 +13,20 @@ OUT = INTERIM_DIR / "analysis"
 COLLAB = "collab"
 PERIODS = [(2016, 2018), (2019, 2021), (2022, 2024), (2025, 2026)]
 TOP = 30
-METRIC_PROPS = ["community", "pagerank", "betweenness", "collab_degree", "collab_strength", "component"]
+METRIC_PROPS = ["community", "pagerank", "betweenness", "collab_degree", "collab_strength", "component", "eigenvector", "core", "leiden"]
+RANDOM_GRAPHS = 20
+RANDOM_SOURCES = 300
+FULL_SOURCES = 500
+LEIDEN_RUNS = 10
+SEED = 42
+ROLE_LABEL = {"PERFORMED": "Ca sĩ/rapper", "COMPOSED": "Nhạc sĩ", "PRODUCED": "Producer"}
+
+COLLAB_EDGES = """
+MATCH (a:Entity)-[r:COLLABORATED_WITH]->(b:Entity)
+WHERE (a:Person OR a:Group) AND (b:Person OR b:Group)
+RETURN a.entity_id AS a, b.entity_id AS b, r.weight AS w
+"""
+FULL_EDGES = "MATCH (a:Entity)-[r]->(b:Entity) RETURN a.entity_id AS a, b.entity_id AS b"
 
 # Mạng hợp tác (Bước 12.2): nút nghệ sĩ/nhóm, cạnh COLLABORATED_WITH vô hướng, trọng số = số bài chung.
 PROJECT_COLLAB = """
@@ -119,6 +138,9 @@ def collaboration(session) -> pd.DataFrame:
         ("degree", "collab_degree", ""),
         ("degree", "collab_strength", weight),
         ("wcc", "component", ""),
+        ("eigenvector", "eigenvector", weight),
+        ("kcore", "core", ""),
+        ("leiden", "leiden", f"{weight}, randomSeed: {SEED}, concurrency: 1"),
     ]:
         session.run(f"CALL gds.{proc}.write('{name}', {{writeProperty: '{prop}'{', ' + cfg if cfg else ''}}})").consume()
     _drop(session, name)
@@ -132,10 +154,20 @@ def collaboration(session) -> pd.DataFrame:
         RETURN a.entity_id AS entity_id, a.name AS name, [l IN labels(a) WHERE l <> 'Entity'][0] AS entity_type,
                a.is_seed AS is_seed, a.genre_group AS genre_group, a.community AS community, a.component AS component,
                toInteger(a.collab_degree) AS degree, toInteger(a.collab_strength) AS strength, a.pagerank AS pagerank,
-               a.betweenness AS betweenness, neighbor_communities
+               a.betweenness AS betweenness, a.eigenvector AS eigenvector, toInteger(a.core) AS core, a.leiden AS leiden,
+               neighbor_communities
         """,
     )
-    for col in ["degree", "strength", "pagerank", "betweenness"]:
+    roles = _df(
+        session,
+        """
+        MATCH (a:Entity)-[r:PERFORMED|FEATURED_ON|COMPOSED|PRODUCED]->(:Song) WHERE a.community IS NOT NULL
+        RETURN a.entity_id AS entity_id, CASE type(r) WHEN 'FEATURED_ON' THEN 'PERFORMED' ELSE type(r) END AS role, count(*) AS n
+        """,
+    )
+    main_role = roles.sort_values("n", ascending=False).drop_duplicates("entity_id").set_index("entity_id").role.map(ROLE_LABEL)
+    metrics["main_role"] = metrics.entity_id.map(main_role).fillna("Khác")
+    for col in ["degree", "strength", "pagerank", "betweenness", "eigenvector"]:
         metrics[f"rank_{col}"] = metrics[col].rank(ascending=False, method="min").astype(int)
     metrics["rank_pagerank_no_show"] = metrics.entity_id.map({k: i + 1 for i, k in enumerate(alt.entity_id)})
     _save(metrics.sort_values("pagerank", ascending=False), "artist_metrics.csv")
@@ -191,16 +223,178 @@ def communities(session, metrics: pd.DataFrame) -> None:
     _save(metrics.sort_values(["community", "pagerank"], ascending=[True, False])[["community", "entity_id", "name", "entity_type", "genre_group", "pagerank", "degree"]], "community_members.csv")
 
 
+def _lcc(g: nx.Graph) -> nx.Graph:
+    return g.subgraph(max(nx.connected_components(g), key=len)).copy()
+
+
+def _distances(g: nx.Graph, sources=None) -> Counter:
+    counts: Counter = Counter()
+    for s in sources if sources is not None else g.nodes:
+        counts.update(d for d in nx.single_source_shortest_path_length(g, s).values() if d)
+    return counts
+
+
+def _avg(counts: Counter) -> float:
+    return sum(d * c for d, c in counts.items()) / sum(counts.values())
+
+
+def _sample(g: nx.Graph, k: int, rng: random.Random) -> list:
+    nodes = list(g.nodes)
+    return nodes if len(nodes) <= k else rng.sample(nodes, k)
+
+
+def _nmi(a: pd.Series, b: pd.Series) -> float:
+    p = pd.crosstab(a, b).to_numpy() / len(a)
+    pa, pb = p.sum(1), p.sum(0)
+    nz = p > 0
+    mi = (p[nz] * np.log(p[nz] / np.outer(pa, pb)[nz])).sum()
+    h = lambda q: -(q[q > 0] * np.log(q[q > 0])).sum()
+    return float(2 * mi / (h(pa) + h(pb)))
+
+
+def small_world(session, metrics: pd.DataFrame) -> None:
+    print("2.1 Thế giới nhỏ (thành phần liên thông lớn nhất của mạng hợp tác)")
+    rng = random.Random(SEED)
+    g = _lcc(nx.from_pandas_edgelist(_df(session, COLLAB_EDGES), "a", "b"))
+    n, m = g.number_of_nodes(), g.number_of_edges()
+    k = 2 * m / n
+    dist = _distances(g)
+    L, C = _avg(dist), nx.average_clustering(g)
+
+    def reference(make) -> tuple[float, float]:
+        ls, cs = [], []
+        for _ in range(RANDOM_GRAPHS):
+            r = _lcc(make(rng.randrange(1 << 30)))
+            ls.append(_avg(_distances(r, _sample(r, RANDOM_SOURCES, rng))))
+            cs.append(nx.average_clustering(r))
+        return float(np.mean(ls)), float(np.mean(cs))
+
+    def rewired(seed: int) -> nx.Graph:
+        r = g.copy()
+        nx.double_edge_swap(r, nswap=2 * m, max_tries=40 * m, seed=seed)
+        return r
+
+    l_er, c_er = reference(lambda s: nx.gnm_random_graph(n, m, seed=s))
+    l_cf, c_cf = reference(rewired)
+    # Lưới vòng cùng n và bậc trung bình: C ≈ 3(k−2)/(4(k−1)), mốc trên của gom cụm khi tính ω.
+    c_lattice = 3 * (k - 2) / (4 * (k - 1)) if k > 2 else float("nan")
+
+    full = _lcc(nx.from_pandas_edgelist(_df(session, FULL_EDGES), "a", "b"))
+    l_full = _avg(_distances(full, _sample(full, FULL_SOURCES, rng)))
+
+    rows = [
+        ("Số nút (thành phần lớn nhất)", n, ""),
+        ("Số cạnh", m, ""),
+        ("Bậc trung bình k", round(k, 3), ""),
+        ("Khoảng cách ngắn nhất trung bình L", round(L, 3), "tính trên mọi cặp nút"),
+        ("Đường kính", max(dist), ""),
+        ("Hệ số gom cụm trung bình C", round(C, 4), ""),
+        ("Transitivity", round(nx.transitivity(g), 4), ""),
+        ("L ngẫu nhiên Erdős–Rényi", round(l_er, 3), f"trung bình {RANDOM_GRAPHS} đồ thị cùng n, m"),
+        ("C ngẫu nhiên Erdős–Rényi", round(c_er, 4), ""),
+        ("L lý thuyết ln n / ln k", round(math.log(n) / math.log(k), 3), ""),
+        ("L ngẫu nhiên giữ phân phối bậc", round(l_cf, 3), f"{RANDOM_GRAPHS} đồ thị hoán đổi cạnh"),
+        ("C ngẫu nhiên giữ phân phối bậc", round(c_cf, 4), ""),
+        ("σ so với Erdős–Rényi", round((C / c_er) / (L / l_er), 2), "> 1 là thế giới nhỏ"),
+        ("σ so với đồ thị giữ bậc", round((C / c_cf) / (L / l_cf), 2), "> 1 là thế giới nhỏ"),
+        ("ω", round(l_er / L - C / c_lattice, 3), "trong [−0.5, 0.5] là thế giới nhỏ (Telesford 2011); âm: gần lưới, dương: gần ngẫu nhiên; C lưới theo công thức lưới vòng"),
+        ("L đồ thị tri thức đầy đủ", round(l_full, 3), f"{full.number_of_nodes()} nút, ước lượng từ {FULL_SOURCES} nút nguồn"),
+    ]
+    _save(pd.DataFrame(rows, columns=["metric", "value", "note"]), "small_world.csv")
+    total = sum(dist.values())
+    _save(pd.DataFrame([(d, c, round(c / total, 4)) for d, c in sorted(dist.items())], columns=["distance", "pairs", "share"]), "distance_distribution.csv")
+
+    names = dict(zip(metrics.entity_id, metrics.name))
+    in_g = metrics[metrics.entity_id.isin(g.nodes) & metrics.genre_group.fillna("").ne("")]
+    tops = in_g.sort_values("pagerank", ascending=False).drop_duplicates("genre_group")
+    pairs = [(a, b) for i, a in enumerate(tops.itertuples()) for b in list(tops.itertuples())[i + 1:]]
+    paths = []
+    for a, b in pairs:
+        p = nx.shortest_path(g, a.entity_id, b.entity_id)
+        paths.append({"from": a.name, "from_genre": a.genre_group, "to": b.name, "to_genre": b.genre_group, "hops": len(p) - 1, "path": " → ".join(names.get(x, x) for x in p)})
+    _save(pd.DataFrame(paths), "small_world_paths.csv")
+
+
+def centrality(metrics: pd.DataFrame) -> None:
+    print("2.2 So sánh các thước đo xếp hạng")
+    cols = ["degree", "strength", "pagerank", "betweenness", "eigenvector"]
+    _save(metrics[cols].corr(method="spearman").round(3).rename_axis("measure").reset_index(), "centrality_correlation.csv")
+    top = {c: set(metrics.nlargest(20, c).entity_id) for c in cols}
+    _save(pd.DataFrame([{"measure": c, "top20_overlap_with_pagerank": len(top[c] & top["pagerank"])} for c in cols]), "top20_overlap.csv")
+    by_role = metrics[metrics.main_role != "Khác"].sort_values("pagerank", ascending=False).groupby("main_role").head(15)
+    _save(by_role[["main_role", "name", "genre_group", "pagerank", "degree", "betweenness", "community"]].assign(rank=by_role.groupby("main_role").cumcount() + 1), "top_by_role.csv")
+
+
+def community_structure(session, metrics: pd.DataFrame) -> None:
+    print("2.3 Cộng đồng (Louvain so với Leiden) và hạt nhân (k-core)")
+    name = f"{COLLAB}_cd"
+    _project_collab(session, name, True)
+    weight = "relationshipWeightProperty: 'weight'"
+    louvain = _one(session, f"CALL gds.louvain.stats('{name}', {{{weight}, concurrency: 1}}) YIELD communityCount, modularity RETURN communityCount AS c, modularity AS q")
+    runs, base = [], None
+    for i in range(LEIDEN_RUNS):
+        st = _one(session, f"CALL gds.leiden.stats('{name}', {{{weight}, randomSeed: {i}, concurrency: 1}}) YIELD communityCount, modularity RETURN communityCount AS c, modularity AS q")
+        part = _df(session, f"CALL gds.leiden.stream('{name}', {{{weight}, randomSeed: {i}, concurrency: 1}}) YIELD nodeId, communityId RETURN gds.util.asNode(nodeId).entity_id AS entity_id, communityId AS c").set_index("entity_id").c
+        base = part if base is None else base
+        runs.append({"seed": i, "communities": st["c"], "modularity": st["q"], "nmi_vs_seed0": _nmi(base, part.reindex(base.index))})
+    _drop(session, name)
+    runs = pd.DataFrame(runs)
+    _save(runs, "leiden_runs.csv")
+    _save(
+        pd.DataFrame(
+            [
+                ("Louvain", louvain["c"], round(louvain["q"], 4), "", ""),
+                ("Leiden", int(runs.communities.median()), round(runs.modularity.mean(), 4), round(runs.modularity.std(), 4), round(runs.nmi_vs_seed0.mean(), 3)),
+                ("NMI Louvain–Leiden", "", "", "", round(_nmi(metrics.community, metrics.leiden), 3)),
+            ],
+            columns=["method", "communities", "modularity", "modularity_std", "nmi"],
+        ),
+        "community_methods.csv",
+    )
+
+    _save(metrics.core.value_counts().sort_index().rename_axis("k").reset_index(name="n_nodes"), "kcore_distribution.csv")
+    kmax = metrics.core.max()
+    _save(metrics[metrics.core == kmax].sort_values("pagerank", ascending=False)[["name", "entity_type", "genre_group", "community", "core", "degree", "pagerank"]], "max_core.csv")
+
+    edges = _df(session, COLLAB_EDGES)
+    comm = dict(zip(metrics.entity_id, metrics.community))
+    same = edges[edges.a.map(comm) == edges.b.map(comm)]
+    internal = pd.concat([same.a, same.b]).value_counts()
+    metrics = metrics.assign(internal_degree=metrics.entity_id.map(internal).fillna(0).astype(int))
+    rows = []
+    for c, mem in metrics.groupby("community"):
+        if len(mem) < 5:
+            continue
+        core_k = mem.core.max()
+        nucleus = mem[mem.core == core_k].sort_values("pagerank", ascending=False)
+        rows.append(
+            {
+                "community": c,
+                "size": len(mem),
+                "main_genre": mem.genre_group.replace("", pd.NA).dropna().mode().iat[0] if mem.genre_group.replace("", pd.NA).notna().any() else "",
+                "max_core_in_community": int(core_k),
+                "nucleus_size": len(nucleus),
+                "nucleus": "; ".join(nucleus.name.head(10)),
+                "hub_internal_degree": mem.nlargest(1, "internal_degree").name.iat[0],
+                "hub_pagerank": mem.nlargest(1, "pagerank").name.iat[0],
+            }
+        )
+    _save(pd.DataFrame(rows).sort_values("size", ascending=False), "community_cores.csv")
+
+
 def temporal(session) -> None:
     print("RQ3: thay đổi theo thời gian (năm đăng tài liệu bằng chứng sớm nhất)")
-    rows = []
+    rows, ranks = [], []
     for y0, y1 in PERIODS:
         name = f"{COLLAB}_{y0}"
         n, e = _project_collab(session, name, True, y0, y1)
         if n:
             rows.append({"period": f"{y0}–{y1}", **_network_stats(session, name, n, e)})
+            top = _df(session, f"CALL gds.pageRank.stream('{name}', {{relationshipWeightProperty: 'weight'}}) YIELD nodeId, score RETURN gds.util.asNode(nodeId).name AS name, score ORDER BY score DESC LIMIT 10")
+            ranks.append(top.assign(period=f"{y0}–{y1}", rank=range(1, len(top) + 1)))
         _drop(session, name)
     _save(pd.DataFrame(rows), "collab_by_period.csv")
+    _save(pd.concat(ranks)[["period", "rank", "name", "score"]], "pagerank_by_period.csv")
     yearly = _df(
         session,
         """
@@ -228,7 +422,7 @@ def companies_stats(session) -> None:
 
 def gephi(session) -> None:
     print("Xuất cho Gephi (Import Spreadsheet)")
-    nodes = _df(session, "MATCH (a:Entity) WHERE a.community IS NOT NULL RETURN a.entity_id AS Id, a.name AS Label, [l IN labels(a) WHERE l <> 'Entity'][0] AS type, a.genre_group AS genre_group, a.community AS community, a.pagerank AS pagerank, a.betweenness AS betweenness, a.collab_degree AS degree")
+    nodes = _df(session, "MATCH (a:Entity) WHERE a.community IS NOT NULL RETURN a.entity_id AS Id, a.name AS Label, [l IN labels(a) WHERE l <> 'Entity'][0] AS type, a.genre_group AS genre_group, a.community AS community, a.leiden AS leiden, a.core AS core, a.pagerank AS pagerank, a.betweenness AS betweenness, a.collab_degree AS degree")
     edges = _df(session, "MATCH (a:Entity)-[r:COLLABORATED_WITH]->(b:Entity) WHERE a.community IS NOT NULL AND b.community IS NOT NULL RETURN a.entity_id AS Source, b.entity_id AS Target, 'Undirected' AS Type, r.weight AS Weight, r.show_only AS show_only, r.first_year AS first_year")
     _save(nodes, "gephi_nodes.csv")
     _save(edges, "gephi_edges.csv")
@@ -248,6 +442,9 @@ def run() -> None:
         overview(session)
         metrics = collaboration(session)
         communities(session, metrics)
+        community_structure(session, metrics)
+        centrality(metrics)
+        small_world(session, metrics)
         temporal(session)
         companies_stats(session)
         gephi(session)

@@ -1,0 +1,17 @@
+﻿metric,value,note
+Số nút (thành phần lớn nhất),1674.0,
+Số cạnh,5530.0,
+Bậc trung bình k,6.607,
+Khoảng cách ngắn nhất trung bình L,3.865,tính trên mọi cặp nút
+Đường kính,8.0,
+Hệ số gom cụm trung bình C,0.3794,
+Transitivity,0.1499,
+L ngẫu nhiên Erdős–Rényi,4.145,"trung bình 20 đồ thị cùng n, m"
+C ngẫu nhiên Erdős–Rényi,0.0037,
+L lý thuyết ln n / ln k,3.931,
+L ngẫu nhiên giữ phân phối bậc,3.651,20 đồ thị hoán đổi cạnh
+C ngẫu nhiên giữ phân phối bậc,0.0346,
+σ so với Erdős–Rényi,109.57,> 1 là thế giới nhỏ
+σ so với đồ thị giữ bậc,10.36,> 1 là thế giới nhỏ
+ω,0.457,"trong [−0.5, 0.5] là thế giới nhỏ (Telesford 2011); âm: gần lưới, dương: gần ngẫu nhiên; C lưới theo công thức lưới vòng"
+L đồ thị tri thức đầy đủ,4.306,"11648 nút, ước lượng từ 500 nút nguồn"
