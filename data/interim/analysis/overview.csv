@@ -1,10 +1,10 @@
 ﻿metric,value
-Nút thực thể,13066
-Cạnh nghiệp vụ,36257
-Cạnh trích trực tiếp,31007
-Cạnh suy ra (is_derived),5250
+Nút thực thể,12436
+Cạnh nghiệp vụ,35096
+Cạnh trích trực tiếp,29796
+Cạnh suy ra (is_derived),5300
 Loại quan hệ có dữ liệu,14
-Nút cô lập,791
-Thành phần liên thông yếu,820
-Nút trong thành phần lớn nhất,12214
-Tài liệu làm bằng chứng,11602
+Nút cô lập,738
+Thành phần liên thông yếu,762
+Nút trong thành phần lớn nhất,11648
+Tài liệu làm bằng chứng,11586

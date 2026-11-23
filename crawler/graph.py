@@ -5,11 +5,11 @@ import unicodedata
 from collections import Counter, defaultdict
 from itertools import combinations
 
-from .common import normalize_name, now_iso, read_seeds, today_iso
+from .common import normalize_name, now_iso, read_reviewed_csv, read_seeds, today_iso
 from .config import INTERIM_DIR, SEEDS_PATH
 from .extract import DOCUMENTS_PATH, MENTIONS_PATH
 from .layer1_extract import _org_key
-from .layer2 import _canonical, load_aliases
+from .layer2 import ALIASES_PATH, _canonical, load_aliases
 from .scope import VI_CHARS
 from .shows import read_shows
 
@@ -36,6 +36,10 @@ COMPANY_ALIASES_PATH = SEEDS_PATH.with_name("company_aliases.csv")
 NOT_LABEL = re.compile(r"network|channel|\bmcn\b", re.IGNORECASE)
 # Chỉ show thi đấu mới có thí sinh; show/concert còn lại ghi là biểu diễn tại chương trình.
 COMPETITION = re.compile(r"say hi|vượt ngàn chông gai|tân binh|rap việt|masked singer|ca sĩ mặt nạ|king of rap|idol|chị đẹp", re.IGNORECASE)
+TITLE_SHOW_SKIP = re.compile(
+    r"reaction|vlog|behind|hậu trường|focus ?cam|rehearsal|phỏng vấn|interview|teaser|trailer|recap|podcast|\bbts\b|\bseries\b|\bep\.\s?\d", re.IGNORECASE
+)
+CONCERT = re.compile(r"concert|đêm nhạc|fan ?meeting|\bday \d|\btour\b", re.IGNORECASE)
 RELEASE_ROLES = {"label", "audio_distributor", "rights_owner"}
 ORGANIZER_ROLES = {"format_owner", "rights_owner", "broadcaster", "format_distributor"}
 CREW_PREFIX = {"hustlang", "rpt"}
@@ -79,16 +83,14 @@ COMPANY_DISPLAY: dict[str, str] = {}
 
 
 def _load_company_aliases() -> dict[str, str]:
-    if not COMPANY_ALIASES_PATH.exists():
-        return {}
-    with COMPANY_ALIASES_PATH.open(encoding="utf-8-sig", newline="") as f:
-        rows = list(csv.DictReader(f))
+    rows = read_reviewed_csv(COMPANY_ALIASES_PATH)
     COMPANY_DISPLAY.update({_raw_company_key(r["canonical_name"]): r["canonical_name"] for r in rows})
     return {_raw_company_key(r["alias"]): _raw_company_key(r["canonical_name"]) for r in rows}
 
 
 COMPANY_ALIASES = _load_company_aliases()
 GROUP_WORDS = re.compile(r"\b(?:band|choir|crew|ban nhạc|hợp xướng|boys|girls|brothers|squad|gang|collective)\b", re.IGNORECASE)
+ORG_WORDS = re.compile(r"\b(?:entertainment|studios?|records?|recordings|productions?)\b", re.IGNORECASE)
 
 
 BLOCKLIST_PATH = SEEDS_PATH.with_name("entity_blocklist.csv")
@@ -96,10 +98,7 @@ BLOCKLIST_PATH = SEEDS_PATH.with_name("entity_blocklist.csv")
 
 def load_blocklist() -> set[tuple[str, str]]:
     """Tên người dùng đánh dấu sai trong seeds/entity_blocklist.csv; chạy lại graph sẽ không tạo lại node đó."""
-    if not BLOCKLIST_PATH.exists():
-        return set()
-    with BLOCKLIST_PATH.open(encoding="utf-8-sig", newline="") as f:
-        return {(r["entity_type"].strip(), normalize_name(r["name"])) for r in csv.DictReader(f) if r.get("name")}
+    return {(r["entity_type"].strip(), normalize_name(r["name"])) for r in read_reviewed_csv(BLOCKLIST_PATH) if r.get("name")}
 
 
 OVERRIDES_PATH = SEEDS_PATH.with_name("entity_overrides.csv")
@@ -109,10 +108,10 @@ PROD_PREFIX = re.compile(r"^prod\.?\s*(?:by\s*)?(?=\S)", re.IGNORECASE)
 
 def load_overrides() -> dict[str, tuple[str, str]]:
     """seeds/entity_overrides.csv: tên rút từ tiêu đề/credit thực ra là Brand, Company, Group hoặc rác (drop)."""
-    if not OVERRIDES_PATH.exists():
-        return {}
-    with OVERRIDES_PATH.open(encoding="utf-8-sig", newline="") as f:
-        return {normalize_name(r["name"]): (r["entity_type"].strip(), (r.get("canonical_name") or r["name"]).strip()) for r in csv.DictReader(f) if r.get("name")}
+    return {
+        normalize_name(r["name"]): (r["entity_type"].strip(), (r.get("canonical_name") or r["name"]).strip())
+        for r in read_reviewed_csv(OVERRIDES_PATH) if r.get("name")
+    }
 
 
 VI_SURNAMES = set(
@@ -131,13 +130,16 @@ VI_SURNAMES_ACCENTED = set(
 SHOW_ROLES_PATH = SEEDS_PATH.with_name("show_roles.csv")
 
 
-def load_show_roles() -> set[tuple[str, str]]:
-    """(khóa người, khóa tên show) của HLV/giám khảo; chỉ dùng để không ghi họ là thí sinh, không tạo cạnh vì không có tài liệu."""
-    if not SHOW_ROLES_PATH.exists():
-        return set()
+GUEST_ROLE = "khách mời"
+
+
+def load_show_roles() -> dict[tuple[str, str], str]:
+    """{(khóa người, khóa tên show): vai trò}; HLV/giám khảo không là thí sinh, khách mời thì đổi thành biểu diễn tại chương trình."""
     aliases = load_aliases()
-    with SHOW_ROLES_PATH.open(encoding="utf-8-sig", newline="") as f:
-        return {(_canonical(r["person"], aliases), normalize_name(r["show_name"])) for r in csv.DictReader(f) if r.get("person")}
+    return {
+        (_canonical(r["person"], aliases), normalize_name(r["show_name"])): (r.get("role") or "").strip()
+        for r in read_reviewed_csv(SHOW_ROLES_PATH) if r.get("person")
+    }
 
 
 def _one_typo(a: str, b: str) -> bool:
@@ -175,6 +177,36 @@ def song_key(name: str) -> str:
     if len(plain.split()) > 3:
         return plain
     return " ".join(re.sub(r"[^\w\s]", " ", unicodedata.normalize("NFC", name).casefold()).split())
+
+
+def _tone_key(text: str) -> str:
+    """Bỏ khoảng trắng và dời dấu thanh về cuối âm tiết: "thuỷ" = "thủy", "hoạ" = "họa"."""
+    out = []
+    for token in text.split():
+        nfd = unicodedata.normalize("NFD", token)
+        out.append(unicodedata.normalize("NFC", "".join(c for c in nfd if c not in TONE_MARKS)) + "".join(c for c in nfd if c in TONE_MARKS))
+    return "".join(out)
+
+
+def song_aliases(mentions: list[dict]) -> dict[str, str]:
+    """Gộp cách viết liền/không dấu về bài có dấu duy nhất: MOIEM → Mời Em; "Nang" khớp cả Nắng lẫn Nàng nên giữ nguyên."""
+    counts = Counter(song_key(m["mention"]) for m in mentions if m["mention_type"] == "Song")
+    by_nospace: dict[str, list[str]] = defaultdict(list)
+    for k in counts:
+        by_nospace[_tone_key(k)].append(k)
+    rep = {ns: max(ks, key=lambda k: (k.count(" "), counts[k], k)) for ns, ks in by_nospace.items()}
+    accented_reps: dict[str, set[str]] = defaultdict(set)
+    for ns, r in rep.items():
+        if _has_accent(r):
+            accented_reps[normalize_name(r).replace(" ", "")].add(r)
+    out = {}
+    for ns, ks in by_nospace.items():
+        target = rep[ns]
+        cands = accented_reps.get(ns, set()) if not _has_accent(target) and len(ns) >= 4 else set()
+        if len(cands) == 1:
+            target = next(iter(cands))
+        out.update({k: target for k in ks if k != target})
+    return out
 
 
 def _display(variants: Counter) -> str:
@@ -285,8 +317,34 @@ def build() -> None:
         )
         g.entities[eid]["verification_status"] = VERIFIED
         show_entity[sid] = eid
+    show_by_family: dict[str, list[tuple[int, str]]] = defaultdict(list)
+    for sid, s in shows.items():
+        for part in [s["show_name"], *s["show_name"].split(" - ")]:
+            if len(normalize_name(part)) >= 6 and s.get("year", "").isdigit():
+                show_by_family[normalize_name(part)].append((int(s["year"]), show_entity[sid]))
+    families = sorted(show_by_family, key=len, reverse=True)
+
+    def show_in_title(title: str, year: str) -> str | None:
+        """Video kênh nghệ sĩ/album Spotify ghi tên chương trình ("EM XINH "SAY HI", TẬP 5"): chọn mùa theo năm ghi trong tiêu đề, không có thì theo năm đăng."""
+        padded = f" {normalize_name(title)} "
+        family = next((f for f in families if f" {f} " in padded), None)
+        if not family or not year.isdigit():
+            return None
+        seasons = show_by_family[family]
+        named = {int(y) for y in re.findall(r"\b(20\d{2})\b", title)}
+        exact = [eid for y, eid in seasons if y in named] or [eid for y, eid in seasons if y == int(year)]
+        if exact:
+            return exact[0]
+        earlier = [(y, eid) for y, eid in seasons if y <= int(year)]
+        return max(earlier)[1] if earlier else None
 
     song_keys = {normalize_name(m["mention"]) for m in mentions if m["mention_type"] == "Song"}
+    song_alias = song_aliases(mentions)
+
+    def skey(name: str) -> str:
+        k = song_key(name)
+        return song_alias.get(k, k)
+
     nospace_index = {k.replace(" ", ""): k for k in person_index}
     # Tên gốc của alias cũng tra được khi viết liền ("QuangAnhRhyder" → RHYDER).
     for s in seeds:
@@ -296,6 +354,9 @@ def build() -> None:
     seed_nospace = {k: v for k, v in nospace_index.items() if len(k) >= 6}
     g.blocked = load_blocklist()
     overrides = load_overrides()
+    # Alias khai báo tay ("Hái Nấm" → Hải Nam) thắng luật khác biến âm là hai người.
+    alias_spellings = {_vowel_key(r["alias"]) for r in read_reviewed_csv(ALIASES_PATH) if r.get("alias")}
+    song_keys -= {name for etype, name in g.blocked if etype == "Song"}
 
     def person(name: str, doc_id: str, doc_seed_keys: dict[str, str], from_title: bool = True) -> str | None:
         name = VARIANT_TAIL.sub("", PROD_PREFIX.sub("", name.strip())).strip() or name
@@ -318,12 +379,16 @@ def build() -> None:
         flat = key.replace(" ", "")
         # Tên ngắn lệch 1 chữ thường là hai người khác nhau (Duy Khang ≠ Duy Khánh), nên chỉ so gần đúng với tên ≥ 9 ký tự.
         if key not in person_index and len(flat) >= 9:
-            close = [k for k in difflib.get_close_matches(flat, seed_nospace, n=3, cutoff=0.8) if _one_typo(flat, k)]
+            # Tên nhiều chữ chỉ cho đảo ký tự; thêm/bớt 1 chữ thì ra người khác (Trung Dương ≠ Tùng Dương).
+            close = [
+                k for k in difflib.get_close_matches(flat, seed_nospace, n=3, cutoff=0.8)
+                if _one_typo(flat, k) and (len(key.split()) == 1 or len(k) == len(flat))
+            ]
             if len(close) == 1:
                 key = seed_nospace[close[0]]
         # Cùng chữ khi bỏ dấu nhưng khác biến âm là hai người: "Tuấn Hùng" ≠ seed "Tuấn Hưng".
         spellings = seed_spelling.get(person_index.get(key, ""), {}).get(normalize_name(name))
-        if spellings and _has_accent(name) and _vowel_key(name) not in spellings:
+        if spellings and _has_accent(name) and _vowel_key(name) not in spellings and _vowel_key(name) not in alias_spellings:
             key = f"{key}|{_vowel_key(name)}"
         if key in person_index:
             eid = person_index[key]
@@ -332,6 +397,8 @@ def build() -> None:
             return eid
         if key in song_keys:
             return None
+        if ORG_WORDS.search(name):
+            return g.entity("Company", _company_key(name), name, doc_id)
         eid = g.entity("Group" if GROUP_WORDS.search(name) else "Person", key, name, doc_id)
         if eid:
             person_index[key] = eid
@@ -367,12 +434,12 @@ def build() -> None:
         for m in ms:
             if m["mention_type"] == "Song":
                 songs[m["mention"]] = g.entity(
-                    "Song", song_key(m["mention"]), m["mention"], doc_id,
+                    "Song", skey(m["mention"]), m["mention"], doc_id,
                     release_year=year if doc["content_tag"] in {"mv_audio", "release"} and not doc_shows else "", official_url=doc["url"] if not doc_shows else "",
                 )
 
         def song_of(m):
-            return songs.get(m["song"]) or (g.entity("Song", song_key(m["song"]), m["song"], doc_id) if m["song"] else None)
+            return songs.get(m["song"]) or (g.entity("Song", skey(m["song"]), m["song"], doc_id) if m["song"] else None)
 
         singers_by_song: dict[str, list[tuple[str, dict]]] = defaultdict(list)
         doc_brands: list[tuple[str, dict]] = []
@@ -412,9 +479,13 @@ def build() -> None:
                     elif role == "performer":
                         g.relate(pid, "PERFORMED_AT", show_eid, doc, m, "biểu diễn tại sự kiện" if show_type == "Event" else "khách mời/nghệ sĩ biểu diễn trong chương trình")
             elif mtype == "Company":
-                cid = g.entity("Company", _company_key(m["mention"]), m["mention"], doc_id)
                 sid = song_of(m)
-                if from_artist_channel and sid and m["role"] in RELEASE_ROLES and not NOT_LABEL.search(m["mention"]):
+                releases = from_artist_channel and sid and role in RELEASE_ROLES and not NOT_LABEL.search(m["mention"])
+                # MCN/kênh (METUB, VieNETWORK) chỉ đứng ở dòng ©, không phát hành bài nào: không tạo nút.
+                if not releases and not (doc_shows and role in ORGANIZER_ROLES):
+                    continue
+                cid = g.entity("Company", _company_key(m["mention"]), m["mention"], doc_id)
+                if releases:
                     g.relate(sid, "RELEASED_BY", cid, doc, m, {"label": "hãng phát hành (℗/label)", "audio_distributor": "trang phát hành audio", "rights_owner": "chủ sở hữu bản quyền"}[role])
                 for show_eid in doc_shows:
                     if m["role"] in ORGANIZER_ROLES:
@@ -445,6 +516,20 @@ def build() -> None:
         for bid, m in doc_brands:
             for p in artists:
                 g.relate(p, "AMBASSADOR_OF", bid, doc, m, "hợp tác MV/quảng cáo (brand đứng tên trong tiêu đề)")
+
+        show_eid = None if doc_shows or TITLE_SHOW_SKIP.search(doc["title"]) else show_in_title(doc["title"], year)
+        if show_eid:
+            show_name = g.names[show_eid].most_common(1)[0][0]
+            contest = g.entities[show_eid]["entity_type"] == "Show" and COMPETITION.search(show_name) and not CONCERT.search(doc["title"])
+            seen = set()
+            for singers in singers_by_song.values():
+                for p, m in singers:
+                    if p not in seen:
+                        seen.add(p)
+                        if contest:
+                            g.relate(p, "CONTESTANT_ON", show_eid, doc, m, "tiết mục trong chương trình (tiêu đề video/album ghi tên chương trình)")
+                        else:
+                            g.relate(p, "PERFORMED_AT", show_eid, doc, m, "biểu diễn trong chương trình/concert (tiêu đề video/album ghi tên chương trình)")
 
     vn_docs = {i for i, d in docs.items() if VI_CHARS.search(d.get("title", "")) or VI_CHARS.search(d.get("content", ""))}
     web_rel = WEB_GRAPH_DIR / "relations.csv"
@@ -574,7 +659,21 @@ def _prune(g: Graph, mentions: list[dict], vn_docs: set[str], in_press: set[str]
     # HLV/giám khảo của một show ("Team Rhymastic") không đồng thời là thí sinh của show đó.
     # HLV/giám khảo ở bất kỳ mùa nào của cùng chương trình (theo "Team X" hoặc seeds/show_roles.csv) không phải thí sinh.
     show_family = {eid: normalize_name(re.sub(r"\s+(?:mùa \d+|\d{4})$", "", g.names[eid].most_common(1)[0][0])) for eid, e in g.entities.items() if e["entity_type"] in {"Show", "Event"}}
-    judge_keys = {(g.keys.get(src), show_family.get(tgt)) for (src, rtype, tgt) in g.relations if rtype == "JUDGE_ON"} | load_show_roles()
+    roles = load_show_roles()
+    judge_keys = {(g.keys.get(src), show_family.get(tgt)) for (src, rtype, tgt) in g.relations if rtype == "JUDGE_ON"}
+    judge_keys |= {k for k, role in roles.items() if role != GUEST_ROLE}
+    guest_keys = {k for k, role in roles.items() if role == GUEST_ROLE}
+    renamed: dict[str, str] = {}
+    for k in [k for k in g.relations if k[1] == "CONTESTANT_ON" and (g.keys.get(k[0]), show_family.get(k[2])) in guest_keys]:
+        rel = g.relations.pop(k)
+        new_key = (k[0], "PERFORMED_AT", k[2])
+        if new_key in g.relations:
+            g.relations[new_key]["docs"] |= rel["docs"]
+        else:
+            g.relations[new_key] = {**rel, "relation_id": g.reg.get("Relation", "|".join(new_key)), "relation_type": "PERFORMED_AT", "role_detail": {"khách mời biểu diễn (seeds/show_roles.csv)"}}
+        renamed[rel["relation_id"]] = g.relations[new_key]["relation_id"]
+    for ev in g.evidence.values():
+        ev["relation_id"] = renamed.get(ev["relation_id"], ev["relation_id"])
     stale = [
         k for k in g.relations
         if k[0] in drop or k[2] in drop or (k[1] == "CONTESTANT_ON" and (g.keys.get(k[0]), show_family.get(k[2])) in judge_keys)

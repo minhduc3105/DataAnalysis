@@ -1,0 +1,1681 @@
+﻿category,entity_id,entity_type,canonical_name,aliases,n_documents,n_relations,reason
+album_la_show_hoac_ost,ALB_0097,Album,Tình Ca Qua Thế Kỷ (Timeless Classics) Vol.2,,1,0,giống show/live/OST
+alias_dung_chung,PER_0283,Person,Jack - J97,J97 | JACK | Jack,49,17,"alias 'jack' dùng chung bởi PER_0283,SON_2556"
+alias_dung_chung,SON_2556,Song,Jack,JACK,24,12,"alias 'jack' dùng chung bởi PER_0283,SON_2556"
+alias_dung_chung,ALB_0055,Album,Cam'On,CAM'ON,12,11,"alias 'camon' dùng chung bởi ALB_0055,SON_1174,SON_2242"
+alias_dung_chung,SON_1174,Song,Cảm Ơn,CẢM ƠN | cảm ơn?,7,20,"alias 'camon' dùng chung bởi ALB_0055,SON_1174,SON_2242"
+alias_dung_chung,SON_0894,Song,Nàng,NÀNG,5,8,"alias 'nang' dùng chung bởi SON_0322,SON_0894"
+alias_dung_chung,SON_0322,Song,Nắng,NẮNG,4,4,"alias 'nang' dùng chung bởi SON_0322,SON_0894"
+alias_dung_chung,ALB_0054,Album,Hoa Hồng Trên Bê Tông,HOA HỒNG TRÊN BÊ TÔNG,2,11,"alias 'hoahongtrenbetong' dùng chung bởi ALB_0054,SON_3885"
+alias_dung_chung,SON_3885,Song,Hoa Hồng Trên Bê Tông,Hoa hồng trên bê tông,2,8,"alias 'hoahongtrenbetong' dùng chung bởi ALB_0054,SON_3885"
+alias_dung_chung,SON_2242,Song,Cám Ơn,CÁM ƠN,2,8,"alias 'camon' dùng chung bởi ALB_0055,SON_1174,SON_2242"
+alias_trung_entity_khac,COM_0007,Company,M Music Records,M Music Record Label | MMUSIC | MMUSIC RECORDS | MMUSIC Records | MMusic | MMusic Record Label | MMusic Records,325,289,alias 'MMUSIC' = canonical của PER_4159
+alias_trung_entity_khac,PER_0292,Person,Hồ Quang Hiếu,HO QUANG HIEU | Ho Quang Hieu | HỒ QUANG HIẾU | Hồ,186,175,alias 'Hồ' = canonical của SON_5152
+alias_trung_entity_khac,PER_0198,Person,STRONG TRỌNG HIẾU,TRONG | TRONG HIEU | TRONG TRỌNG HIẾU | TRONG Trọng Hiếu | TRỌNG HIẾU | Trong Hieu | Trọng Hiếu,68,13,alias 'TRONG' = canonical của SON_3462
+alias_trung_entity_khac,PER_0060,Person,DUY KHÁNH,Duy Khánh,66,96,alias 'Duy Khánh' = canonical của PER_3984
+alias_trung_entity_khac,PER_0303,Person,Đen Vâu,ĐEN | ĐEN VÂU | Đen,60,32,alias 'ĐEN' = canonical của SON_2007
+alias_trung_entity_khac,PER_0283,Person,Jack - J97,J97 | JACK | Jack,49,17,alias 'JACK' = canonical của SON_2556
+alias_trung_entity_khac,PER_1398,Person,Justin TechN9,JUSTIN TECHN9 | JustinTech9 | JustinTechN9,43,31,alias 'JustinTech9' = canonical của PER_1419
+alias_trung_entity_khac,ALB_0055,Album,Cam'On,CAM'ON,12,11,"alias 'CAM'ON' = canonical của SON_1174,SON_2242"
+alias_trung_entity_khac,SON_0593,Song,Người Lạ Trong Mơ,NGƯỜI LẠ TRONG MƠ,9,8,alias 'NGƯỜI LẠ TRONG MƠ' = canonical của ALB_0181
+alias_trung_entity_khac,SON_0875,Song,Viết Tiếp Câu Chuyện Hòa Bình,VIẾT TIẾP CÂU CHUYỆN HÒA BÌNH,9,11,alias 'VIẾT TIẾP CÂU CHUYỆN HÒA BÌNH' = canonical của ALB_0169
+alias_trung_entity_khac,SON_1252,Song,Thương,THƯƠNG,8,14,alias 'THƯƠNG' = canonical của SON_3458
+alias_trung_entity_khac,SON_2969,Song,Hương,HƯƠNG | hương,8,12,alias 'HƯƠNG' = canonical của ALB_0196
+alias_trung_entity_khac,SON_1174,Song,Cảm Ơn,CẢM ƠN | cảm ơn?,7,20,"alias 'CẢM ƠN' = canonical của ALB_0055,SON_2242"
+alias_trung_entity_khac,SON_4064,Song,Người Ấy,NGƯỜI ẤY | Người ấy,7,5,alias 'NGƯỜI ẤY' = canonical của ALB_0089
+alias_trung_entity_khac,SON_4225,Song,Những Ngày Mưa Cô Đơn,NHỮNG NGÀY MƯA CÔ ĐƠN | những ngày mưa cô đơn,7,6,alias 'NHỮNG NGÀY MƯA CÔ ĐƠN' = canonical của ALB_0065
+alias_trung_entity_khac,SON_0048,Song,Gặp Lại,GẶP LẠI,6,8,alias 'GẶP LẠI' = canonical của ALB_0182
+alias_trung_entity_khac,SON_0382,Song,Dằm Trong Tim,DẰM TRONG TIM | dằm trong tim,6,7,alias 'DẰM TRONG TIM' = canonical của ALB_0200
+alias_trung_entity_khac,SON_3693,Song,Sợ,SỢ,6,5,alias 'SỢ' = canonical của SON_0586
+alias_trung_entity_khac,SON_7079,Song,Thuỷ Triều,Thủy Triều,6,12,alias 'Thủy Triều' = canonical của SON_7076
+alias_trung_entity_khac,SON_0894,Song,Nàng,NÀNG,5,8,alias 'NÀNG' = canonical của SON_0322
+alias_trung_entity_khac,SON_1800,Song,Công,CÔNG,5,14,alias 'CÔNG' = canonical của SON_6781
+alias_trung_entity_khac,SON_2527,Song,Yêu,YÊU,5,7,alias 'YÊU' = canonical của SON_6636
+alias_trung_entity_khac,SON_0322,Song,Nắng,NẮNG,4,4,alias 'NẮNG' = canonical của SON_0894
+alias_trung_entity_khac,SON_3821,Song,Có Người,CÓ NGƯỜI,4,5,alias 'CÓ NGƯỜI' = canonical của SON_0764
+alias_trung_entity_khac,SON_2077,Song,Chơi,CHƠI,3,3,"alias 'CHƠI' = canonical của ALB_0019,SON_1903"
+alias_trung_entity_khac,SON_2329,Song,Purpose,PURPOSE,3,8,alias 'PURPOSE' = canonical của ALB_0178
+alias_trung_entity_khac,SON_2426,Song,Lạc,LẠC,3,5,alias 'LẠC' = canonical của SON_4543
+alias_trung_entity_khac,SON_4179,Song,Duyệt,DUYỆT,3,7,alias 'DUYỆT' = canonical của ALB_0061
+alias_trung_entity_khac,SON_6813,Song,Thất Tình,THẤT TÌNH | Thất tình,3,4,alias 'THẤT TÌNH' = canonical của SON_6064
+alias_trung_entity_khac,ALB_0032,Album,Người Như Chúng Ta,NGƯỜI NHƯ CHÚNG TA,2,1,alias 'NGƯỜI NHƯ CHÚNG TA' = canonical của SON_2455
+alias_trung_entity_khac,ALB_0054,Album,Hoa Hồng Trên Bê Tông,HOA HỒNG TRÊN BÊ TÔNG,2,11,alias 'HOA HỒNG TRÊN BÊ TÔNG' = canonical của SON_3885
+alias_trung_entity_khac,ALB_0074,Album,Colours,COLOURS,2,9,alias 'COLOURS' = canonical của SON_4700
+alias_trung_entity_khac,SON_1802,Song,Đời,ĐỜI,2,4,"alias 'ĐỜI' = canonical của SON_0853,SON_1777,SON_2113,SON_4240"
+alias_trung_entity_khac,SON_2242,Song,Cám Ơn,CÁM ƠN,2,8,"alias 'CÁM ƠN' = canonical của ALB_0055,SON_1174"
+alias_trung_entity_khac,SON_2789,Song,Cười Và Khóc,CƯỜI VÀ KHÓC,2,5,alias 'CƯỜI VÀ KHÓC' = canonical của ALB_0170
+alias_trung_entity_khac,SON_2848,Song,Đánh Đổi,ĐÁNH ĐỔI,2,5,alias 'ĐÁNH ĐỔI' = canonical của ALB_0038
+alias_trung_entity_khac,SON_3516,Song,Từ Đó,TỪ ĐÓ,2,8,alias 'TỪ ĐÓ' = canonical của SON_4333
+alias_trung_entity_khac,SON_3885,Song,Hoa Hồng Trên Bê Tông,Hoa hồng trên bê tông,2,8,alias 'Hoa hồng trên bê tông' = canonical của ALB_0054
+alias_trung_entity_khac,SON_4215,Song,Chuyện Mưa,CHUYỆN MƯA,2,3,alias 'CHUYỆN MƯA' = canonical của ALB_0199
+alias_trung_entity_khac,SON_4775,Song,Ngày Mưa,NGÀY MƯA,2,2,alias 'NGÀY MƯA' = canonical của SON_3717
+alias_trung_entity_khac,SON_5676,Song,Chằn Tinh,CHẰN TINH,2,14,alias 'CHẰN TINH' = canonical của SON_5015
+alias_trung_entity_khac,SON_6175,Song,Dừng Yêu,DỪNG YÊU,2,7,alias 'DỪNG YÊU' = canonical của SON_6862
+alias_trung_entity_khac,SON_6308,Song,Cỏ Và Mưa,Covamua,2,6,alias 'Covamua' = canonical của ALB_0121
+bien_the_bai,SON_8671,Song,Lại Là DG House,LẠI LÀ DG HOUSE | LẠI LÀ DGHOUSE,5,4,biến thể 'House' – có thể nên gộp về bài gốc
+bien_the_bai,SON_2727,Song,999 Đoá Hồng Acoustic Cover,999 ĐOÁ HỒNG ACOUSTIC COVER,2,4,biến thể 'Acoustic' – có thể nên gộp về bài gốc
+bien_the_bai,SON_5113,Song,KHÔNG PHẨY TÁM PHẦN TRĂM LOFI VERSION,,2,2,biến thể 'LOFI' – có thể nên gộp về bài gốc
+bien_the_bai,SON_0116,Song,THỊNH SUY COVER,,1,1,biến thể 'COVER' – có thể nên gộp về bài gốc
+bien_the_bai,SON_0169,Song,BẮC TRUNG NAM MỘT NHÀ REMIX HOT TIKTOK,,1,3,biến thể 'REMIX' – có thể nên gộp về bài gốc
+bien_the_bai,SON_0236,Song,Khuê Mộc Lang Lofi,,1,2,biến thể 'Lofi' – có thể nên gộp về bài gốc
+bien_the_bai,SON_0264,Song,Hạnh Phúc Bỏ Rơi Em Lofi,,1,2,biến thể 'Lofi' – có thể nên gộp về bài gốc
+bien_the_bai,SON_0284,Song,Version Piano Đình Dũng,,1,2,biến thể 'Version' – có thể nên gộp về bài gốc
+bien_the_bai,SON_0521,Song,Sara Acoustic,,1,1,biến thể 'Acoustic' – có thể nên gộp về bài gốc
+bien_the_bai,SON_0702,Song,Những bản piano cover nhạc Hoa lời Việt 2020,,1,1,biến thể 'piano' – có thể nên gộp về bài gốc
+bien_the_bai,SON_1238,Song,ĐI ĐU ĐƯA ĐI COVER,,1,1,biến thể 'COVER' – có thể nên gộp về bài gốc
+bien_the_bai,SON_1401,Song,Ngẫu Hứng Cover,,1,1,biến thể 'Cover' – có thể nên gộp về bài gốc
+bien_the_bai,SON_1496,Song,ĐÃ LỠ YÊU EM NHIỀU PIANO VERSION,,1,2,biến thể 'PIANO' – có thể nên gộp về bài gốc
+bien_the_bai,SON_1922,Song,Xinh Sao Phải Khóc 'Dance Version,,1,7,biến thể 'Version' – có thể nên gộp về bài gốc
+bien_the_bai,SON_1947,Song,Lý Cây Bông Rap Version,,1,2,biến thể 'Version' – có thể nên gộp về bài gốc
+bien_the_bai,SON_2046,Song,Thương em Lofi,,1,4,biến thể 'Lofi' – có thể nên gộp về bài gốc
+bien_the_bai,SON_2293,Song,Ngay Tho Chinese Ver,,1,7,biến thể 'Ver' – có thể nên gộp về bài gốc
+bien_the_bai,SON_2726,Song,A Whole New World Cover,,1,2,biến thể 'Cover' – có thể nên gộp về bài gốc
+bien_the_bai,SON_3009,Song,Bao giờ lấy vợ' nhưng nó acoustic,,1,1,biến thể 'acoustic' – có thể nên gộp về bài gốc
+bien_the_bai,SON_3074,Song,Một bản Demo được ra đời như thế nào?,,1,1,biến thể 'Demo' – có thể nên gộp về bài gốc
+bien_the_bai,SON_3144,Song,PHẢI LÒNG ANH ENGLISH VERSION,,1,3,biến thể 'VERSION' – có thể nên gộp về bài gốc
+bien_the_bai,SON_3147,Song,PHẢI LÒNG ANH DREAM VER,,1,2,biến thể 'VER' – có thể nên gộp về bài gốc
+bien_the_bai,SON_3246,Song,NƠI VỰC NƠI TRỜI DEEP HOUSE,,1,3,biến thể 'HOUSE' – có thể nên gộp về bài gốc
+bien_the_bai,SON_3331,Song,Xuân Remix 2019,,1,1,biến thể 'Remix' – có thể nên gộp về bài gốc
+bien_the_bai,SON_3339,Song,Cà phê sáng Acoustic: Xe đạp ơi,,1,1,biến thể 'Acoustic' – có thể nên gộp về bài gốc
+bien_the_bai,SON_3344,Song,Cà phê sáng Acoustic: Chú rể,,1,1,biến thể 'Acoustic' – có thể nên gộp về bài gốc
+bien_the_bai,SON_3345,Song,Cà phê sáng Acoustic: Nỗi nhớ Cao nguyên,,1,1,biến thể 'Acoustic' – có thể nên gộp về bài gốc
+bien_the_bai,SON_3346,Song,Cà phê sáng Acoustic: Nhỏ ơi,,1,1,biến thể 'Acoustic' – có thể nên gộp về bài gốc
+bien_the_bai,SON_3347,Song,Cà phê sáng Acoustic: Đàn bà,,1,1,biến thể 'Acoustic' – có thể nên gộp về bài gốc
+bien_the_bai,SON_3562,Song,HÔM NAY TÔI CÔ ĐƠN QUÁ Dance Version,,1,3,biến thể 'Version' – có thể nên gộp về bài gốc
+bien_the_bai,SON_3611,Song,Viet Nam ver,,1,1,biến thể 'ver' – có thể nên gộp về bài gốc
+bien_the_bai,SON_3616,Song,HOÀ MINZY COVER CÓ EM CHỜ,,1,1,biến thể 'COVER' – có thể nên gộp về bài gốc
+bien_the_bai,SON_4407,Song,MÀU NƯỚC MẮT' COVER,,1,2,biến thể 'COVER' – có thể nên gộp về bài gốc
+bien_the_bai,SON_4408,Song,HONGKONG1' COVER,,1,1,biến thể 'COVER' – có thể nên gộp về bài gốc
+bien_the_bai,SON_4410,Song,CHÀNG TIÊN CÁ' COVER,,1,2,biến thể 'COVER' – có thể nên gộp về bài gốc
+bien_the_bai,SON_4623,Song,22 cover version,,1,2,biến thể 'cover' – có thể nên gộp về bài gốc
+bien_the_bai,SON_4645,Song,Cuộc Thi Cover Yêu Một Người Vô Tâm,,1,1,biến thể 'Cover' – có thể nên gộp về bài gốc
+bien_the_bai,SON_4715,Song,FULL HOUSE,,1,2,biến thể 'HOUSE' – có thể nên gộp về bài gốc
+bien_the_bai,SON_4766,Song,Trách Thân Cover,,1,3,biến thể 'Cover' – có thể nên gộp về bài gốc
+bien_the_bai,SON_4837,Song,Anh Lại Say Rồi Remix 2025,,1,2,biến thể 'Remix' – có thể nên gộp về bài gốc
+bien_the_bai,SON_4864,Song,HẠT MƯA VƯƠNG VẤN REMIX I Q.HUY,,1,2,biến thể 'REMIX' – có thể nên gộp về bài gốc
+bien_the_bai,SON_4928,Song,CATENA COVER,,1,0,biến thể 'COVER' – có thể nên gộp về bài gốc
+bien_the_bai,SON_4937,Song,D'Angelo Cover: Untitled,,1,2,biến thể 'Cover' – có thể nên gộp về bài gốc
+bien_the_bai,SON_4951,Song,Look Easy/Thật Thà Acoustic Version,,1,2,biến thể 'Acoustic' – có thể nên gộp về bài gốc
+bien_the_bai,SON_5046,Song,Lâu Đài Tình Ái Disco Version,,1,1,biến thể 'Version' – có thể nên gộp về bài gốc
+bien_the_bai,SON_5112,Song,KHÔNG PHẨY TÁM PHẦN TRĂM GUITAR VERSION,,1,2,biến thể 'VERSION' – có thể nên gộp về bài gốc
+bien_the_bai,SON_5125,Song,Cứu Vãn Kịp Không Lofi,,1,1,biến thể 'Lofi' – có thể nên gộp về bài gốc
+bien_the_bai,SON_5134,Song,Lựa Chọn Thích Hợp Lofi,,1,2,biến thể 'Lofi' – có thể nên gộp về bài gốc
+bien_the_bai,SON_5289,Song,NGỌC TRAI COVER,,1,4,biến thể 'COVER' – có thể nên gộp về bài gốc
+bien_the_bai,SON_5557,Song,AI CŨNG ĐÁNG THƯƠNG MÀ REMIX VERSION,,1,1,biến thể 'REMIX' – có thể nên gộp về bài gốc
+bien_the_bai,SON_5598,Song,CHỜ EM ĐẾN HOA CŨNG TÀN COVER,,1,2,biến thể 'COVER' – có thể nên gộp về bài gốc
+bien_the_bai,SON_5599,Song,MỖI NGÀY YÊU EM THÊM MỘT CHÚT COVER,,1,2,biến thể 'COVER' – có thể nên gộp về bài gốc
+bien_the_bai,SON_5600,Song,LÝ HƯƠNG LAN COVER,,1,3,biến thể 'COVER' – có thể nên gộp về bài gốc
+bien_the_bai,SON_5602,Song,CHO ĐẾN KHI TRỜI ĐẤT SỤP ĐỔ COVER,,1,4,biến thể 'COVER' – có thể nên gộp về bài gốc
+bien_the_bai,SON_5603,Song,VIẾT NÊN CHUYỆN TÌNH COVER,,1,4,biến thể 'COVER' – có thể nên gộp về bài gốc
+bien_the_bai,SON_5637,Song,THUỐC KHÁNG XINH Piano Version,,1,1,biến thể 'Piano' – có thể nên gộp về bài gốc
+bien_the_bai,SON_5861,Song,NỮ HOÀNG REMIX VERSION,,1,2,biến thể 'REMIX' – có thể nên gộp về bài gốc
+bien_the_bai,SON_6304,Song,Bài Không Tên Cuối Cùng Acoustic,,1,1,biến thể 'Acoustic' – có thể nên gộp về bài gốc
+bien_the_bai,SON_6309,Song,Xin Còn Gọi Tên Nhau Acoustic,,1,1,biến thể 'Acoustic' – có thể nên gộp về bài gốc
+bien_the_bai,SON_6354,Song,ĐÔNG TÂY NAM BẮC Acoustic,,1,1,biến thể 'Acoustic' – có thể nên gộp về bài gốc
+bien_the_bai,SON_6412,Song,TIẾP NHIÊN LIỆU’ Speed Up Version,,1,2,biến thể 'Speed Up' – có thể nên gộp về bài gốc
+bien_the_bai,SON_6531,Song,storm version,,1,4,biến thể 'version' – có thể nên gộp về bài gốc
+bien_the_bai,SON_7050,Song,Bae Don't Cry (Lofi),,1,5,biến thể 'Lofi' – có thể nên gộp về bài gốc
+bien_the_bai,SON_7051,Song,Kết Thúc Khi Chưa Mở Bài (Lofi),,1,5,biến thể 'Lofi' – có thể nên gộp về bài gốc
+bien_the_bai,SON_7052,Song,Lần Cuối Anh Suy (Lofi),,1,5,biến thể 'Lofi' – có thể nên gộp về bài gốc
+bien_the_bai,SON_7053,Song,Sau Tan Ca (Lofi),,1,3,biến thể 'Lofi' – có thể nên gộp về bài gốc
+bien_the_bai,SON_7054,Song,Nguyệt Hoa (Lofi),,1,4,biến thể 'Lofi' – có thể nên gộp về bài gốc
+bien_the_bai,SON_7055,Song,Mưa Đá (2.0) (Lofi),,1,3,biến thể 'Lofi' – có thể nên gộp về bài gốc
+bien_the_bai,SON_7056,Song,Chất Gây Hại (Lofi),,1,5,biến thể 'Lofi' – có thể nên gộp về bài gốc
+bien_the_bai,SON_7057,Song,Lag Lag (Lofi),,1,3,biến thể 'Lofi' – có thể nên gộp về bài gốc
+bien_the_bai,SON_7058,Song,Bước Tới Tết Mới (Lofi),,1,4,biến thể 'Lofi' – có thể nên gộp về bài gốc
+bien_the_bai,SON_7059,Song,Lời Kết (Lofi),,1,4,biến thể 'Lofi' – có thể nên gộp về bài gốc
+bien_the_bai,SON_7060,Song,Bước Tới Tết Mới (Speed up),,1,3,biến thể 'Speed up' – có thể nên gộp về bài gốc
+bien_the_bai,SON_7061,Song,Nguyệt Hoa (Speed up),,1,3,biến thể 'Speed up' – có thể nên gộp về bài gốc
+bien_the_bai,SON_7062,Song,Kết Thúc Khi Chưa Mở Bài (Speed up),,1,3,biến thể 'Speed up' – có thể nên gộp về bài gốc
+bien_the_bai,SON_7063,Song,Bae Don't Cry (Speed up),,1,3,biến thể 'Speed up' – có thể nên gộp về bài gốc
+bien_the_bai,SON_7064,Song,Lời Kết (Speed up),,1,3,biến thể 'Speed up' – có thể nên gộp về bài gốc
+bien_the_bai,SON_7175,Song,Không Bằng (Slowed),,1,1,biến thể 'Slowed' – có thể nên gộp về bài gốc
+bien_the_bai,SON_7176,Song,Sầu Tím Thiệp Hồng (Slowed),,1,1,biến thể 'Slowed' – có thể nên gộp về bài gốc
+bien_the_bai,SON_7177,Song,Đừng Khóc Một Mình (Slowed),,1,1,biến thể 'Slowed' – có thể nên gộp về bài gốc
+bien_the_bai,SON_7178,Song,Dĩ Vãng Nhạt Nhoà (Slowed),,1,0,biến thể 'Slowed' – có thể nên gộp về bài gốc
+bien_the_bai,SON_7411,Song,Trong Trí Nhớ Của Anh (Cover),,1,2,biến thể 'Cover' – có thể nên gộp về bài gốc
+bien_the_bai,SON_7527,Song,Sau Cơn Mưa (Live at ZLAB),,1,3,biến thể 'Live' – có thể nên gộp về bài gốc
+bien_the_bai,SON_7536,Song,LIVE MY WAY,,1,1,biến thể 'LIVE' – có thể nên gộp về bài gốc
+bien_the_bai,SON_7704,Song,Xin Đừng Nhấc Máy (Lofi by Orinn),,1,4,biến thể 'Lofi' – có thể nên gộp về bài gốc
+bien_the_bai,SON_7942,Song,Bật Tình Yêu Lên (Deep House),,1,3,biến thể 'House' – có thể nên gộp về bài gốc
+bien_the_bai,SON_8048,Song,Yêu Em 2 Ngày (Live at ZLAB),,1,3,biến thể 'Live' – có thể nên gộp về bài gốc
+bien_the_bai,SON_8049,Song,A đến Ă (Live at ZLAB),,1,3,biến thể 'Live' – có thể nên gộp về bài gốc
+bien_the_bai,SON_8102,Song,Mamma Mia (Live at GENfest 24),,1,6,biến thể 'Live' – có thể nên gộp về bài gốc
+bien_the_bai,SON_8103,Song,CUA (Live at GENfest 24),,1,5,biến thể 'Live' – có thể nên gộp về bài gốc
+bien_the_bai,SON_8104,Song,Hẹn Gặp Em Dưới Ánh Trăng (Live at GENfest 24),,1,6,biến thể 'Live' – có thể nên gộp về bài gốc
+bien_the_bai,SON_8105,Song,Không Thể Say (Live at GENfest 24),,1,4,biến thể 'Live' – có thể nên gộp về bài gốc
+bien_the_bai,SON_8106,Song,Exit Sign (Live at GENfest 24),,1,5,biến thể 'Live' – có thể nên gộp về bài gốc
+bien_the_bai,SON_8107,Song,NOLOVENOLIFE (Live at GENfest 24),,1,4,biến thể 'Live' – có thể nên gộp về bài gốc
+bien_the_bai,SON_8108,Song,Quay Đi Quay Lại (Live at GENfest 24),,1,4,biến thể 'Live' – có thể nên gộp về bài gốc
+bien_the_bai,SON_8109,Song,Vệ Tinh (Live at GENfest 24),,1,5,biến thể 'Live' – có thể nên gộp về bài gốc
+bien_the_bai,SON_8110,Song,TRÌNH (Live at GENfest 24),,1,4,biến thể 'Live' – có thể nên gộp về bài gốc
+bien_the_bai,SON_8597,Song,không lời COVER,,1,3,biến thể 'COVER' – có thể nên gộp về bài gốc
+bien_the_bai,SON_8598,Song,CHÚNG TA CÒN Ở ĐÓ KHÔNG? COVER,,1,3,biến thể 'COVER' – có thể nên gộp về bài gốc
+bien_the_bai,SON_8718,Song,Anh Là Ai? Ver 2,,1,3,biến thể 'Ver' – có thể nên gộp về bài gốc
+co_lap,PER_1242,Person,Toof.P,,22,0,0 quan hệ
+co_lap,PER_1247,Person,Vân Nguyễn,,22,0,0 quan hệ
+co_lap,PER_0697,Person,TGSN,,16,0,0 quan hệ
+co_lap,COM_0092,Company,QStudio,,13,0,0 quan hệ
+co_lap,PER_2908,Person,Huy Việt,,12,0,0 quan hệ
+co_lap,PER_3404,Person,Ngọc Đại,,12,0,0 quan hệ
+co_lap,PER_1695,Person,Trần Quốc Vĩnh,Trần Quốc Vinh,10,0,0 quan hệ
+co_lap,PER_2121,Person,Mr.Tô,,10,0,0 quan hệ
+co_lap,PER_2122,Person,Đào Công Tâm,,9,0,0 quan hệ
+co_lap,PER_3611,Person,SỸ THẮNG,,8,0,0 quan hệ
+co_lap,ALB_0063,Album,NGƯỜI ĐANG YÊU,,7,0,0 quan hệ
+co_lap,PER_1633,Person,ONEY,,6,0,0 quan hệ
+co_lap,PER_2204,Person,DsD,DSD,6,0,0 quan hệ
+co_lap,PER_3472,Person,Icy Famous,,6,0,0 quan hệ
+co_lap,PER_4263,Person,Nhật Phong,NHẬT PHONG,6,0,0 quan hệ
+co_lap,ALB_0075,Album,Tình,TÌNH,5,0,0 quan hệ
+co_lap,PER_1900,Person,Lê Phúc,,5,0,0 quan hệ
+co_lap,PER_3281,Person,Trần Hậu,TRAN HAU,5,0,0 quan hệ
+co_lap,PER_0563,Person,Huy Nguyen,,4,0,0 quan hệ
+co_lap,PER_1054,Person,LV.KhanhHung,LV.KHANHHUNG,4,0,0 quan hệ
+co_lap,PER_1638,Person,Phan Ái Châu,,4,0,0 quan hệ
+co_lap,PER_1645,Person,Trong Hieu Nguyen,TRONG HIEU NGUYEN,4,0,0 quan hệ
+co_lap,PER_2024,Person,Trường Lê,Truong Le,4,0,0 quan hệ
+co_lap,PER_2930,Person,Vũ Đức Sao Biển,,4,0,0 quan hệ
+co_lap,PER_2943,Person,Minh Min,MINH MIN,4,0,0 quan hệ
+co_lap,PER_2956,Person,Phi Hong Ha,,4,0,0 quan hệ
+co_lap,PER_3473,Person,Fred0,,4,0,0 quan hệ
+co_lap,PER_0477,Person,Anh Rồng,ANH RONG,3,0,0 quan hệ
+co_lap,PER_0787,Person,Bùi Anh Dũng,,3,0,0 quan hệ
+co_lap,PER_0904,Person,Phạm Khải Tuấn,PHẠM KHẢI TUẤN,3,0,0 quan hệ
+co_lap,PER_1381,Person,Mai Lân,,3,0,0 quan hệ
+co_lap,PER_1449,Person,Đằng Phương,ĐẰNG PHƯƠNG,3,0,0 quan hệ
+co_lap,PER_1630,Person,ELSA SØLLESVIK,,3,0,0 quan hệ
+co_lap,PER_1631,Person,RONALD ALCALA,,3,0,0 quan hệ
+co_lap,PER_1632,Person,LUKAS MARIO MAIER,,3,0,0 quan hệ
+co_lap,PER_1640,Person,Til Von Dombois,,3,0,0 quan hệ
+co_lap,PER_1739,Person,Thiện Đợ,,3,0,0 quan hệ
+co_lap,PER_1902,Person,Trần Hải Nam,,3,0,0 quan hệ
+co_lap,PER_2177,Person,TRẦN TUẤN ANH,,3,0,0 quan hệ
+co_lap,PER_2384,Person,Nick Strand,,3,0,0 quan hệ
+co_lap,PER_2385,Person,Mio,,3,0,0 quan hệ
+co_lap,PER_2386,Person,Erik Smaaland,,3,0,0 quan hệ
+co_lap,PER_2387,Person,Nghi Be,,3,0,0 quan hệ
+co_lap,PER_2501,Person,HOÀNG THỐNG,,3,0,0 quan hệ
+co_lap,PER_3093,Person,Park Jeongwook,,3,0,0 quan hệ
+co_lap,PER_3276,Person,Võ Tấn Thịnh,,3,0,0 quan hệ
+co_lap,PER_3277,Person,Hiền VK,,3,0,0 quan hệ
+co_lap,PER_3596,Person,Kimkhanhxdtv,,3,0,0 quan hệ
+co_lap,PER_3607,Person,TRA MY,,3,0,0 quan hệ
+co_lap,PER_4281,Person,Minh Khang,MINH KHANG,3,0,0 quan hệ
+co_lap,SON_0154,Song,Nghe Là Thấy Tết,,3,0,0 quan hệ
+co_lap,ALB_0001,Album,Từ Vực Thẳm Đến Rìa Ánh Sáng,,2,0,0 quan hệ
+co_lap,ALB_0004,Album,UNFROZEN,,2,0,0 quan hệ
+co_lap,ALB_0029,Album,DÂN CHƠI DÂN CA,,2,0,0 quan hệ
+co_lap,ALB_0030,Album,VŨ TRỤ CÒ BAY,,2,0,0 quan hệ
+co_lap,GRO_0012,Group,Danh Tú Band,,2,0,0 quan hệ
+co_lap,PER_0406,Person,Ruzatori,,2,0,0 quan hệ
+co_lap,PER_0448,Person,An Clock,,2,0,0 quan hệ
+co_lap,PER_0686,Person,Andrew,ANDREW,2,0,0 quan hệ
+co_lap,PER_0789,Person,Lê Bá Vĩnh,LÊ BÁ VĨNH,2,0,0 quan hệ
+co_lap,PER_0846,Person,BẮC NGUYỄN,,2,0,0 quan hệ
+co_lap,PER_0936,Person,Võ Hồ,,2,0,0 quan hệ
+co_lap,PER_0982,Person,Đỗ Hoàng Vũ,,2,0,0 quan hệ
+co_lap,PER_0984,Person,Trường Linh,,2,0,0 quan hệ
+co_lap,PER_1197,Person,Binyounger,,2,0,0 quan hệ
+co_lap,PER_1428,Person,SilverC,,2,0,0 quan hệ
+co_lap,PER_1503,Person,Phạm Đại Minh Nhật,,2,0,0 quan hệ
+co_lap,PER_1507,Person,Kyle Nguyen,,2,0,0 quan hệ
+co_lap,PER_1508,Person,Minh Son,,2,0,0 quan hệ
+co_lap,PER_1509,Person,Hieu Say,,2,0,0 quan hệ
+co_lap,PER_1542,Person,Tú Tú,TU TU,2,0,0 quan hệ
+co_lap,PER_1560,Person,Chí Trung,CHÍ TRUNG,2,0,0 quan hệ
+co_lap,PER_1600,Person,Hoàng Hải Mạnh Nguyên,,2,0,0 quan hệ
+co_lap,PER_1602,Person,Phạm Anh Cường,,2,0,0 quan hệ
+co_lap,PER_1603,Person,Nghiệp Lê,,2,0,0 quan hệ
+co_lap,PER_1641,Person,Florian Brückel,,2,0,0 quan hệ
+co_lap,PER_1731,Person,Nhật Bùi,,2,0,0 quan hệ
+co_lap,PER_1762,Person,Trường Huy,,2,0,0 quan hệ
+co_lap,PER_1903,Person,Sơn Lê,,2,0,0 quan hệ
+co_lap,PER_1944,Person,Nguyễn Xuân Mai,,2,0,0 quan hệ
+co_lap,PER_1977,Person,GTL,,2,0,0 quan hệ
+co_lap,PER_1978,Person,Trương Minh Bảo,,2,0,0 quan hệ
+co_lap,PER_2009,Person,Vũ Thảo,VŨ THẢO,2,0,0 quan hệ
+co_lap,PER_2179,Person,PHAN THỊ MỸ TÂM,,2,0,0 quan hệ
+co_lap,PER_2186,Person,Madelynn,,2,0,0 quan hệ
+co_lap,PER_2187,Person,Trần Hồng Diệu Linh,,2,0,0 quan hệ
+co_lap,PER_2198,Person,Triệu An,,2,0,0 quan hệ
+co_lap,PER_2199,Person,Minh Lý,,2,0,0 quan hệ
+co_lap,PER_2208,Person,TRUNG X,,2,0,0 quan hệ
+co_lap,PER_2210,Person,NGỌC QUÝ,,2,0,0 quan hệ
+co_lap,PER_2211,Person,THIE,,2,0,0 quan hệ
+co_lap,PER_2212,Person,LÌ NGHIÊM,,2,0,0 quan hệ
+co_lap,PER_2252,Person,Khánh Băng,,2,0,0 quan hệ
+co_lap,PER_2394,Person,Đặng Mai Phương,Dang Mai Phuong,2,0,0 quan hệ
+co_lap,PER_2395,Person,Heleen,,2,0,0 quan hệ
+co_lap,PER_2396,Person,Đoàn Trọng Hồ Nguyên,,2,0,0 quan hệ
+co_lap,PER_2747,Person,Kim Đào,,2,0,0 quan hệ
+co_lap,PER_2767,Person,Hà Quang Minh,,2,0,0 quan hệ
+co_lap,PER_2848,Person,Phan Nhân,,2,0,0 quan hệ
+co_lap,PER_2849,Person,Trần Quang Lộc,,2,0,0 quan hệ
+co_lap,PER_2880,Person,Duc Vu,,2,0,0 quan hệ
+co_lap,PER_2925,Person,Thái Ngọc Sơn,,2,0,0 quan hệ
+co_lap,PER_2932,Person,Mặc Thế Nhân,Mạc Thế Nhân,2,0,0 quan hệ
+co_lap,PER_2936,Person,Đinh Miên Vũ,,2,0,0 quan hệ
+co_lap,PER_3278,Person,Phúc Minh,,2,0,0 quan hệ
+co_lap,PER_3280,Person,Jack Trần,,2,0,0 quan hệ
+co_lap,PER_3345,Person,Vũ Hoàng,,2,0,0 quan hệ
+co_lap,PER_3346,Person,Lê Văn Lộc,,2,0,0 quan hệ
+co_lap,PER_3392,Person,Sơn Thạch,,2,0,0 quan hệ
+co_lap,PER_3405,Person,Vũ Thành An,,2,0,0 quan hệ
+co_lap,PER_3442,Person,Huỳnh Quang Minh,,2,0,0 quan hệ
+co_lap,PER_3477,Person,$A Khoai Mer,,2,0,0 quan hệ
+co_lap,PER_3489,Person,Minh Triết,,2,0,0 quan hệ
+co_lap,PER_3581,Person,Hồng Kiên,,2,0,0 quan hệ
+co_lap,PER_3642,Person,DŨNG DT,,2,0,0 quan hệ
+co_lap,PER_3675,Person,KØDEINE,,2,0,0 quan hệ
+co_lap,PER_3710,Person,TULLIC,,2,0,0 quan hệ
+co_lap,PER_3741,Person,JACOB AARON,,2,0,0 quan hệ
+co_lap,PER_3742,Person,ROYDO,,2,0,0 quan hệ
+co_lap,PER_4284,Person,Phương Duyên,,2,0,0 quan hệ
+co_lap,SON_0419,Song,Adidas NMD,,2,0,0 quan hệ
+co_lap,ALB_0008,Album,THE REMIXES,,1,0,0 quan hệ
+co_lap,ALB_0014,Album,THEATER OF DREAMS,,1,0,0 quan hệ
+co_lap,ALB_0015,Album,Đơn Sơ,,1,0,0 quan hệ
+co_lap,ALB_0016,Album,Ở Trọ,,1,0,0 quan hệ
+co_lap,ALB_0017,Album,An,,1,0,0 quan hệ
+co_lap,ALB_0020,Album,AZA,,1,0,0 quan hệ
+co_lap,ALB_0021,Album,ĐÔI CHÂN ĐI,,1,0,0 quan hệ
+co_lap,ALB_0025,Album,CHẠM,,1,0,0 quan hệ
+co_lap,ALB_0028,Album,KẺ PHẢN DIỆN,,1,0,0 quan hệ
+co_lap,ALB_0033,Album,Lovely,,1,0,0 quan hệ
+co_lap,ALB_0035,Album,ĐẸP,,1,0,0 quan hệ
+co_lap,ALB_0036,Album,trái tim băng bó,,1,0,0 quan hệ
+co_lap,ALB_0037,Album,SONG SONG,,1,0,0 quan hệ
+co_lap,ALB_0038,Album,ĐÁNH ĐỔI,,1,0,0 quan hệ
+co_lap,ALB_0039,Album,DANTE,,1,0,0 quan hệ
+co_lap,ALB_0040,Album,Nắng Lên,,1,0,0 quan hệ
+co_lap,ALB_0041,Album,Ru Mãi Ngàn Năm,,1,0,0 quan hệ
+co_lap,ALB_0046,Album,50/50,,1,0,0 quan hệ
+co_lap,ALB_0047,Album,KIM,,1,0,0 quan hệ
+co_lap,ALB_0048,Album,Trên Những Đám Mây,,1,0,0 quan hệ
+co_lap,ALB_0049,Album,Qua Khung Cửa Sổ,,1,0,0 quan hệ
+co_lap,ALB_0050,Album,M-TP,,1,0,0 quan hệ
+co_lap,ALB_0051,Album,Thinhsuynghi,,1,0,0 quan hệ
+co_lap,ALB_0052,Album,INNER ME,,1,0,0 quan hệ
+co_lap,ALB_0053,Album,"Thương Em, Yêu Em, Hôn Em",,1,0,0 quan hệ
+co_lap,ALB_0057,Album,Blossom Mix,,1,0,0 quan hệ
+co_lap,ALB_0060,Album,Để Trái Tim Nghỉ Ngơi,,1,0,0 quan hệ
+co_lap,ALB_0066,Album,SUN SONG,,1,0,0 quan hệ
+co_lap,ALB_0067,Album,YÊU THẬT,,1,0,0 quan hệ
+co_lap,ALB_0068,Album,THẦN YÊU,,1,0,0 quan hệ
+co_lap,ALB_0069,Album,AN ỦI,,1,0,0 quan hệ
+co_lap,ALB_0071,Album,Trái Tim Em Cũng Biết Đau,,1,0,0 quan hệ
+co_lap,ALB_0072,Album,Ca Sĩ Giấu Mặt,,1,0,0 quan hệ
+co_lap,ALB_0073,Album,Leave Me Alone (Single),,1,0,0 quan hệ
+co_lap,ALB_0076,Album,Giấc Mơ Tôi,,1,0,0 quan hệ
+co_lap,ALB_0077,Album,Portrait,,1,0,0 quan hệ
+co_lap,ALB_0079,Album,DA8LO,,1,0,0 quan hệ
+co_lap,ALB_0082,Album,NỔ,,1,0,0 quan hệ
+co_lap,ALB_0083,Album,LOI CHOI không điểm dừng,,1,0,0 quan hệ
+co_lap,ALB_0084,Album,L2K,,1,0,0 quan hệ
+co_lap,ALB_0085,Album,NEURONS,,1,0,0 quan hệ
+co_lap,ALB_0088,Album,Người Thứ 3,,1,0,0 quan hệ
+co_lap,ALB_0089,Album,Người Ấy,,1,0,0 quan hệ
+co_lap,ALB_0090,Album,Đâu Ai Đợi Mình,,1,0,0 quan hệ
+co_lap,ALB_0091,Album,TÂM LINH,,1,0,0 quan hệ
+co_lap,ALB_0094,Album,Khi Em Hát,,1,0,0 quan hệ
+co_lap,ALB_0095,Album,Nhật Thực (Toàn Phần),,1,0,0 quan hệ
+co_lap,ALB_0096,Album,Bản Nguyên (To The Core),,1,0,0 quan hệ
+co_lap,ALB_0097,Album,Tình Ca Qua Thế Kỷ (Timeless Classics) Vol.2,,1,0,0 quan hệ
+co_lap,ALB_0099,Album,Đối Thoại 06 / Communication 06,,1,0,0 quan hệ
+co_lap,ALB_0100,Album,Hà Trần 98-03,,1,0,0 quan hệ
+co_lap,ALB_0101,Album,Những Con Sông Ngón Tay,,1,0,0 quan hệ
+co_lap,ALB_0102,Album,Nhật Thực,,1,0,0 quan hệ
+co_lap,ALB_0103,Album,Lời Cuối 2,,1,0,0 quan hệ
+co_lap,ALB_0104,Album,Ước Mơ,,1,0,0 quan hệ
+co_lap,ALB_0105,Album,Thiên Đàng,,1,0,0 quan hệ
+co_lap,ALB_0106,Album,Tình Em,,1,0,0 quan hệ
+co_lap,ALB_0107,Album,Nếu Như,,1,0,0 quan hệ
+co_lap,ALB_0108,Album,I Do,,1,0,0 quan hệ
+co_lap,ALB_0109,Album,Giác Quan Thứ 6,,1,0,0 quan hệ
+co_lap,ALB_0110,Album,Body Language,,1,0,0 quan hệ
+co_lap,ALB_0111,Album,Nụ Hôn Cuối,,1,0,0 quan hệ
+co_lap,ALB_0112,Album,MEDICINE,,1,0,0 quan hệ
+co_lap,ALB_0117,Album,Mùa Thu Chết,,1,0,0 quan hệ
+co_lap,ALB_0118,Album,Bay Về Thời Gian,,1,0,0 quan hệ
+co_lap,ALB_0119,Album,Em Biết Không Nên Vấn Vương,,1,0,0 quan hệ
+co_lap,ALB_0120,Album,Hãy Khóc Cho Ta Cần Nhau,,1,0,0 quan hệ
+co_lap,ALB_0121,Album,Cỏ Và Mưa,,1,0,0 quan hệ
+co_lap,ALB_0122,Album,Mãi Mãi Về Sau,,1,0,0 quan hệ
+co_lap,ALB_0125,Album,V.O.I.D,,1,0,0 quan hệ
+co_lap,ALB_0127,Album,YÊN,,1,0,0 quan hệ
+co_lap,ALB_0229,Album,"All Gas, No Brakes: A Purpose Driven",,1,0,0 quan hệ
+co_lap,COM_0009,Company,TD Network,,1,0,0 quan hệ
+co_lap,COM_0037,Company,F8 Entertainment,,1,0,0 quan hệ
+co_lap,COM_0042,Company,420 Entertainment,,1,0,0 quan hệ
+co_lap,COM_0064,Company,MEMO Creative,,1,0,0 quan hệ
+co_lap,COM_0075,Company,MEG Creative,,1,0,0 quan hệ
+co_lap,COM_0103,Company,VTV,,1,0,0 quan hệ
+co_lap,COM_0129,Company,JYP Entertainment,,1,0,0 quan hệ
+co_lap,COM_0259,Company,V.Music,,1,0,0 quan hệ
+co_lap,GRO_0022,Group,Paradox Band,,1,0,0 quan hệ
+co_lap,GRO_0040,Group,7UPPERCUTS,,1,0,0 quan hệ
+co_lap,PER_0338,Person,Hoàng Chí Trung,,1,0,0 quan hệ
+co_lap,PER_0359,Person,Jimi,,1,0,0 quan hệ
+co_lap,PER_0360,Person,Dương Dương,,1,0,0 quan hệ
+co_lap,PER_0456,Person,CUNG NỮ,,1,0,0 quan hệ
+co_lap,PER_0469,Person,Khang Viet,,1,0,0 quan hệ
+co_lap,PER_0476,Person,Danh Ka,,1,0,0 quan hệ
+co_lap,PER_0481,Person,CHÍ HƯỚNG,,1,0,0 quan hệ
+co_lap,PER_0483,Person,TVk,,1,0,0 quan hệ
+co_lap,PER_0485,Person,Dung Nina,,1,0,0 quan hệ
+co_lap,PER_0486,Person,Minh Hanh,,1,0,0 quan hệ
+co_lap,PER_0488,Person,Lee Ken,,1,0,0 quan hệ
+co_lap,PER_0493,Person,Trunky,,1,0,0 quan hệ
+co_lap,PER_0523,Person,Triệu Anh Quân,,1,0,0 quan hệ
+co_lap,PER_0533,Person,Lai Hoàng,,1,0,0 quan hệ
+co_lap,PER_0535,Person,Log,,1,0,0 quan hệ
+co_lap,PER_0539,Person,Sgirl,,1,0,0 quan hệ
+co_lap,PER_0541,Person,Virrus,,1,0,0 quan hệ
+co_lap,PER_0542,Person,Trần Duy Anh,,1,0,0 quan hệ
+co_lap,PER_0581,Person,Lý Trạch Húc,,1,0,0 quan hệ
+co_lap,PER_0582,Person,Hồ Dương Lâm,,1,0,0 quan hệ
+co_lap,PER_0583,Person,Lưu Húc Dương,,1,0,0 quan hệ
+co_lap,PER_0600,Person,Danny Huy Trần,,1,0,0 quan hệ
+co_lap,PER_0608,Person,Minh Xù,,1,0,0 quan hệ
+co_lap,PER_0610,Person,Nhạc Ngoại,,1,0,0 quan hệ
+co_lap,PER_0685,Person,Drrs,,1,0,0 quan hệ
+co_lap,PER_0696,Person,Bao Hoang,,1,0,0 quan hệ
+co_lap,PER_0715,Person,Thư Nguyễn,,1,0,0 quan hệ
+co_lap,PER_0717,Person,COCO,,1,0,0 quan hệ
+co_lap,PER_0729,Person,NÉM LY,,1,0,0 quan hệ
+co_lap,PER_0737,Person,CHICHA22,,1,0,0 quan hệ
+co_lap,PER_0749,Person,Bao Chi To,,1,0,0 quan hệ
+co_lap,PER_0794,Person,RoseWood,,1,0,0 quan hệ
+co_lap,PER_0805,Person,Tiêu Chiến,,1,0,0 quan hệ
+co_lap,PER_0806,Person,Vương Nhất Bác,,1,0,0 quan hệ
+co_lap,PER_0850,Person,SERGEY,,1,0,0 quan hệ
+co_lap,PER_0895,Person,Tích Kỳ Lê,,1,0,0 quan hệ
+co_lap,PER_0901,Person,Yên Lam,,1,0,0 quan hệ
+co_lap,PER_0925,Person,Nguyễn Văn Khang,,1,0,0 quan hệ
+co_lap,PER_0932,Person,TRẦN HUYỀN,,1,0,0 quan hệ
+co_lap,PER_0935,Person,Trang Đinh,,1,0,0 quan hệ
+co_lap,PER_0941,Person,DJ Kim Chol,DJ KIM CHOL,1,0,0 quan hệ
+co_lap,PER_0980,Person,SAEBYUCK,,1,0,0 quan hệ
+co_lap,PER_0988,Person,Belevian,,1,0,0 quan hệ
+co_lap,PER_0994,Person,RAFAEL,,1,0,0 quan hệ
+co_lap,PER_0996,Person,Danh Huy,,1,0,0 quan hệ
+co_lap,PER_1039,Person,Khương Ngọc,,1,0,0 quan hệ
+co_lap,PER_1058,Person,Duy Thanh,,1,0,0 quan hệ
+co_lap,PER_1069,Person,QUỲNH LÝ,,1,0,0 quan hệ
+co_lap,PER_1070,Person,Hong Tu,,1,0,0 quan hệ
+co_lap,PER_1071,Person,Xuan Nhi,,1,0,0 quan hệ
+co_lap,PER_1079,Person,YUYU NG,,1,0,0 quan hệ
+co_lap,PER_1083,Person,PHAN HƯƠNG GIANG,,1,0,0 quan hệ
+co_lap,PER_1097,Person,Lai Nguyễn,,1,0,0 quan hệ
+co_lap,PER_1114,Person,Lê Vụ Việt Thịnh,,1,0,0 quan hệ
+co_lap,PER_1116,Person,Phan Lê Ái Phương,,1,0,0 quan hệ
+co_lap,PER_1127,Person,Mai Trần,,1,0,0 quan hệ
+co_lap,PER_1157,Person,O_O' Full Album Experience,,1,0,0 quan hệ
+co_lap,PER_1186,Person,LinhCK,,1,0,0 quan hệ
+co_lap,PER_1187,Person,TLong,,1,0,0 quan hệ
+co_lap,PER_1192,Person,9FIRE,,1,0,0 quan hệ
+co_lap,PER_1225,Person,KIM DUYÊN,,1,0,0 quan hệ
+co_lap,PER_1277,Person,Bùi Thảo,,1,0,0 quan hệ
+co_lap,PER_1343,Person,Gia Đoàn,,1,0,0 quan hệ
+co_lap,PER_1365,Person,Atsushi,,1,0,0 quan hệ
+co_lap,PER_1372,Person,Hoàng Việt Hùng,,1,0,0 quan hệ
+co_lap,PER_1389,Person,JayTea,,1,0,0 quan hệ
+co_lap,PER_1397,Person,Thu Anh,,1,0,0 quan hệ
+co_lap,PER_1399,Person,Hoang Tung Lam,,1,0,0 quan hệ
+co_lap,PER_1403,Person,THAO MI,,1,0,0 quan hệ
+co_lap,PER_1432,Person,Vũ Bùi Thu Thủy,,1,0,0 quan hệ
+co_lap,PER_1433,Person,Nguyễn Trung Dũng,,1,0,0 quan hệ
+co_lap,PER_1435,Person,Novalane,,1,0,0 quan hệ
+co_lap,PER_1437,Person,Shoeboiz,,1,0,0 quan hệ
+co_lap,PER_1439,Person,PKL,,1,0,0 quan hệ
+co_lap,PER_1448,Person,SIEUNHANGAU,,1,0,0 quan hệ
+co_lap,PER_1479,Person,808 Lab,,1,0,0 quan hệ
+co_lap,PER_1484,Person,Khoa Phạm,,1,0,0 quan hệ
+co_lap,PER_1486,Person,Tô Ngọc Bảo Linh,,1,0,0 quan hệ
+co_lap,PER_1488,Person,Micky Mai,,1,0,0 quan hệ
+co_lap,PER_1501,Person,Võ Huy Hoàng,,1,0,0 quan hệ
+co_lap,PER_1502,Person,Đạt Mata,,1,0,0 quan hệ
+co_lap,PER_1530,Person,Lê Huy,,1,0,0 quan hệ
+co_lap,PER_1539,Person,Noden,,1,0,0 quan hệ
+co_lap,PER_1540,Person,Tieu H.Chau,,1,0,0 quan hệ
+co_lap,PER_1541,Person,Moyen Nguyen,,1,0,0 quan hệ
+co_lap,PER_1559,Person,Bao 4B,,1,0,0 quan hệ
+co_lap,PER_1561,Person,CHÍ HÙNG,,1,0,0 quan hệ
+co_lap,PER_1564,Person,Andre Ngo,,1,0,0 quan hệ
+co_lap,PER_1569,Person,Duy Tống,,1,0,0 quan hệ
+co_lap,PER_1570,Person,Nguyễn Thanh Pháp,,1,0,0 quan hệ
+co_lap,PER_1571,Person,Đỗ Hải Đăng,,1,0,0 quan hệ
+co_lap,PER_1584,Person,Duck Nguyễn,,1,0,0 quan hệ
+co_lap,PER_1598,Person,Hoàng Hải Thần Tượng Bolero,,1,0,0 quan hệ
+co_lap,PER_1628,Person,MELLY,,1,0,0 quan hệ
+co_lap,PER_1634,Person,LUAT PHAM,,1,0,0 quan hệ
+co_lap,PER_1635,Person,BONGBAY,,1,0,0 quan hệ
+co_lap,PER_1639,Person,Camellia,,1,0,0 quan hệ
+co_lap,PER_1643,Person,SPUDS,,1,0,0 quan hệ
+co_lap,PER_1644,Person,NGUYỄN THUỲ LINH,,1,0,0 quan hệ
+co_lap,PER_1648,Person,Tanney Ha,,1,0,0 quan hệ
+co_lap,PER_1678,Person,Charles Fox,,1,0,0 quan hệ
+co_lap,PER_1688,Person,22han,,1,0,0 quan hệ
+co_lap,PER_1696,Person,ShangHai,,1,0,0 quan hệ
+co_lap,PER_1697,Person,Kelou,,1,0,0 quan hệ
+co_lap,PER_1724,Person,Phan Ni Tấn,,1,0,0 quan hệ
+co_lap,PER_1732,Person,Quốc Thuận,,1,0,0 quan hệ
+co_lap,PER_1740,Person,Chu Ánh Nguyệt,,1,0,0 quan hệ
+co_lap,PER_1741,Person,Ma Bư,,1,0,0 quan hệ
+co_lap,PER_1751,Person,Bảoo Hânn,,1,0,0 quan hệ
+co_lap,PER_1753,Person,Bình Minh Vũ,,1,0,0 quan hệ
+co_lap,PER_1754,Person,Anh Kiet,,1,0,0 quan hệ
+co_lap,PER_1763,Person,Nguyễn Thanh Hà,,1,0,0 quan hệ
+co_lap,PER_1765,Person,Halmet Trương,,1,0,0 quan hệ
+co_lap,PER_1783,Person,VĨNH DUY,,1,0,0 quan hệ
+co_lap,PER_1784,Person,Nhật Tiên,,1,0,0 quan hệ
+co_lap,PER_1790,Person,Resonance,,1,0,0 quan hệ
+co_lap,PER_1792,Person,VP,,1,0,0 quan hệ
+co_lap,PER_1793,Person,Paperskin,,1,0,0 quan hệ
+co_lap,PER_1794,Person,Trung Trieu,,1,0,0 quan hệ
+co_lap,PER_1803,Person,KCTHESAUCE,,1,0,0 quan hệ
+co_lap,PER_1852,Person,Flowz,,1,0,0 quan hệ
+co_lap,PER_1853,Person,Nguyễn Duy Đăng Khoa,,1,0,0 quan hệ
+co_lap,PER_1879,Person,Luna,,1,0,0 quan hệ
+co_lap,PER_1896,Person,Phương Phương Thảo,,1,0,0 quan hệ
+co_lap,PER_1897,Person,Lương Duy Thắng,,1,0,0 quan hệ
+co_lap,PER_1898,Person,Bích Phương Bùi,,1,0,0 quan hệ
+co_lap,PER_1904,Person,Em - Dương Edward,,1,0,0 quan hệ
+co_lap,PER_1906,Person,Nhật Vũ,,1,0,0 quan hệ
+co_lap,PER_1935,Person,Full Album CHƯƠNG MỚI,,1,0,0 quan hệ
+co_lap,PER_1947,Person,Nguyễn Song Lan Anh,,1,0,0 quan hệ
+co_lap,PER_1981,Person,DOAN MINH VU RECORDING,,1,0,0 quan hệ
+co_lap,PER_1989,Person,Thao Le,,1,0,0 quan hệ
+co_lap,PER_2005,Person,CUNG TIẾN,,1,0,0 quan hệ
+co_lap,PER_2007,Person,Tuấn Bùi,,1,0,0 quan hệ
+co_lap,PER_2040,Person,Hồng Thanh,,1,0,0 quan hệ
+co_lap,PER_2070,Person,PHƯƠNG NHI,,1,0,0 quan hệ
+co_lap,PER_2075,Person,LÊ THANH SƠN,,1,0,0 quan hệ
+co_lap,PER_2077,Person,BAD.BZ,,1,0,0 quan hệ
+co_lap,PER_2130,Person,Eric Huỳnh,,1,0,0 quan hệ
+co_lap,PER_2131,Person,Balin,,1,0,0 quan hệ
+co_lap,PER_2175,Person,LEE HAN BOEM,,1,0,0 quan hệ
+co_lap,PER_2191,Person,Yungboi_$$,,1,0,0 quan hệ
+co_lap,PER_2213,Person,Nhã Anh,,1,0,0 quan hệ
+co_lap,PER_2228,Person,Út Khánh,,1,0,0 quan hệ
+co_lap,PER_2229,Person,Cả Thuận,,1,0,0 quan hệ
+co_lap,PER_2250,Person,Xuân Ngọc,,1,0,0 quan hệ
+co_lap,PER_2251,Person,Trần Trung Thành,,1,0,0 quan hệ
+co_lap,PER_2258,Person,Paroles,,1,0,0 quan hệ
+co_lap,PER_2259,Person,Leo Chiosso,,1,0,0 quan hệ
+co_lap,PER_2270,Person,Mr. Sâu,,1,0,0 quan hệ
+co_lap,PER_2271,Person,Chips,,1,0,0 quan hệ
+co_lap,PER_2272,Person,Nam Anh,,1,0,0 quan hệ
+co_lap,PER_2302,Person,Minh Nhat Doan,,1,0,0 quan hệ
+co_lap,PER_2303,Person,Michael Choi,,1,0,0 quan hệ
+co_lap,PER_2309,Person,Thụy Bình,,1,0,0 quan hệ
+co_lap,PER_2310,Person,Trọng Nguyên,,1,0,0 quan hệ
+co_lap,PER_2318,Person,MAX,,1,0,0 quan hệ
+co_lap,PER_2319,Person,Như Mai,,1,0,0 quan hệ
+co_lap,PER_2353,Person,84GRND,,1,0,0 quan hệ
+co_lap,PER_2354,Person,Jay Bach,,1,0,0 quan hệ
+co_lap,PER_2355,Person,SEXNORITA,,1,0,0 quan hệ
+co_lap,PER_2368,Person,QUYNH LE,,1,0,0 quan hệ
+co_lap,PER_2373,Person,Teresa Han,,1,0,0 quan hệ
+co_lap,PER_2382,Person,CONTREKZ,,1,0,0 quan hệ
+co_lap,PER_2397,Person,Chí Thành,,1,0,0 quan hệ
+co_lap,PER_2430,Person,VÔ LƯỢNG,,1,0,0 quan hệ
+co_lap,PER_2437,Person,Thy Thy Đinh Nguyễn,,1,0,0 quan hệ
+co_lap,PER_2438,Person,Anna Nguyễn,,1,0,0 quan hệ
+co_lap,PER_2467,Person,Hào Năng,,1,0,0 quan hệ
+co_lap,PER_2468,Person,Tô Minh,,1,0,0 quan hệ
+co_lap,PER_2493,Person,Hồ Đào Nhất Thống,,1,0,0 quan hệ
+co_lap,PER_2498,Person,ANH VẪN VẬY,,1,0,0 quan hệ
+co_lap,PER_2499,Person,EM ĐỔI THAY,,1,0,0 quan hệ
+co_lap,PER_2511,Person,Bảo Lư,,1,0,0 quan hệ
+co_lap,PER_2558,Person,Nguyễn Hữu Trí,,1,0,0 quan hệ
+co_lap,PER_2566,Person,Nham Nhien,,1,0,0 quan hệ
+co_lap,PER_2570,Person,Kaler Khang,,1,0,0 quan hệ
+co_lap,PER_2577,Person,PHAM MINH TRIET,,1,0,0 quan hệ
+co_lap,PER_2579,Person,SUNGKYOON KIM,,1,0,0 quan hệ
+co_lap,PER_2580,Person,NGUYEN TUAN LINH,,1,0,0 quan hệ
+co_lap,PER_2581,Person,SANGWOOK HONG,,1,0,0 quan hệ
+co_lap,PER_2598,Person,QUỲNH NHƯ,,1,0,0 quan hệ
+co_lap,PER_2599,Person,Orrin,,1,0,0 quan hệ
+co_lap,PER_2600,Person,It’s Lee,,1,0,0 quan hệ
+co_lap,PER_2604,Person,Sam Lin,,1,0,0 quan hệ
+co_lap,PER_2632,Person,MARIO,,1,0,0 quan hệ
+co_lap,PER_2643,Person,KissesBeats,,1,0,0 quan hệ
+co_lap,PER_2669,Person,Nguyễn Duy Thanh,,1,0,0 quan hệ
+co_lap,PER_2671,Person,Jun Phạm Nhà,,1,0,0 quan hệ
+co_lap,PER_2703,Person,MC Ngọc Hoa,,1,0,0 quan hệ
+co_lap,PER_2708,Person,Flower,,1,0,0 quan hệ
+co_lap,PER_2715,Person,Bùi Thạc Chuyên,,1,0,0 quan hệ
+co_lap,PER_2723,Person,Vũ Dạ Ca,,1,0,0 quan hệ
+co_lap,PER_2764,Person,NGUYỄN QUỐC TRUNG,,1,0,0 quan hệ
+co_lap,PER_2765,Person,NGUYỄN TRẦN LINH LAN,,1,0,0 quan hệ
+co_lap,PER_2769,Person,Trịnh Nam Sơn,,1,0,0 quan hệ
+co_lap,PER_2784,Person,Phan Đức Phú Cường,,1,0,0 quan hệ
+co_lap,PER_2820,Person,DJ Eric T-J,,1,0,0 quan hệ
+co_lap,PER_2826,Person,Jammy,,1,0,0 quan hệ
+co_lap,PER_2841,Person,VKT,,1,0,0 quan hệ
+co_lap,PER_2842,Person,Minh Trí,,1,0,0 quan hệ
+co_lap,PER_2843,Person,Thanh Lan,,1,0,0 quan hệ
+co_lap,PER_2846,Person,Lý Minh Trí,,1,0,0 quan hệ
+co_lap,PER_2859,Person,Trần Tâm,,1,0,0 quan hệ
+co_lap,PER_2860,Person,Võ Hồ Minh Tâm,,1,0,0 quan hệ
+co_lap,PER_2861,Person,Võ Hải Anh,,1,0,0 quan hệ
+co_lap,PER_2868,Person,Vi Van Vo,,1,0,0 quan hệ
+co_lap,PER_2869,Person,TRƯƠNG CƯỜNG,,1,0,0 quan hệ
+co_lap,PER_2878,Person,Trâm Anh Phạm,,1,0,0 quan hệ
+co_lap,PER_2900,Person,Đức Nghĩa,,1,0,0 quan hệ
+co_lap,PER_2901,Person,Bill,,1,0,0 quan hệ
+co_lap,PER_2902,Person,Kiệt Trần,,1,0,0 quan hệ
+co_lap,PER_2903,Person,Nguyễn Xuân Lan,,1,0,0 quan hệ
+co_lap,PER_2904,Person,KODEINE,,1,0,0 quan hệ
+co_lap,PER_2905,Person,Phước Trần,,1,0,0 quan hệ
+co_lap,PER_2906,Person,Mr.K,,1,0,0 quan hệ
+co_lap,PER_2910,Person,Sinh,,1,0,0 quan hệ
+co_lap,PER_2914,Person,Thái Hùng,,1,0,0 quan hệ
+co_lap,PER_2924,Person,Quí Phi,,1,0,0 quan hệ
+co_lap,PER_2926,Person,HOÀNG NGỌC SƠN,,1,0,0 quan hệ
+co_lap,PER_2935,Person,Ngọc Sơn,,1,0,0 quan hệ
+co_lap,PER_2939,Person,Lương Bằng Vinh,,1,0,0 quan hệ
+co_lap,PER_2940,Person,Quốc Vượng,,1,0,0 quan hệ
+co_lap,PER_2941,Person,Vũ Chương,,1,0,0 quan hệ
+co_lap,PER_2942,Person,Hồ Phi Nal,,1,0,0 quan hệ
+co_lap,PER_2948,Person,Lâm Hữu Nghị,,1,0,0 quan hệ
+co_lap,PER_2955,Person,Kiyoto,,1,0,0 quan hệ
+co_lap,PER_2981,Person,MELOPHILE,,1,0,0 quan hệ
+co_lap,PER_2983,Person,Sao Em Không Khóc,,1,0,0 quan hệ
+co_lap,PER_3004,Person,Quỳnh Gai,,1,0,0 quan hệ
+co_lap,PER_3005,Person,Nul,,1,0,0 quan hệ
+co_lap,PER_3010,Person,DH,,1,0,0 quan hệ
+co_lap,PER_3015,Person,SEADREAK,,1,0,0 quan hệ
+co_lap,PER_3016,Person,JENK,,1,0,0 quan hệ
+co_lap,PER_3023,Person,Đình Thọ,,1,0,0 quan hệ
+co_lap,PER_3025,Person,Camry,,1,0,0 quan hệ
+co_lap,PER_3040,Person,KAERI,,1,0,0 quan hệ
+co_lap,PER_3041,Person,WEKA,,1,0,0 quan hệ
+co_lap,PER_3071,Person,MIKEDEEL,,1,0,0 quan hệ
+co_lap,PER_3086,Person,Beanie Nguyễn,,1,0,0 quan hệ
+co_lap,PER_3090,Person,VAVA,,1,0,0 quan hệ
+co_lap,PER_3094,Person,Ara Cho,,1,0,0 quan hệ
+co_lap,PER_3096,Person,Trinh Lien,,1,0,0 quan hệ
+co_lap,PER_3113,Person,Khanh Linh Doan,,1,0,0 quan hệ
+co_lap,PER_3124,Person,Văn An,,1,0,0 quan hệ
+co_lap,PER_3136,Person,Lương Ngọc Châu,,1,0,0 quan hệ
+co_lap,PER_3137,Person,Rocker Nguyễn,,1,0,0 quan hệ
+co_lap,PER_3138,Person,MC Thùy Linh,,1,0,0 quan hệ
+co_lap,PER_3156,Person,Vương Kỳ Kỳ,,1,0,0 quan hệ
+co_lap,PER_3182,Person,Thuy Huong,,1,0,0 quan hệ
+co_lap,PER_3186,Person,Junbeka,,1,0,0 quan hệ
+co_lap,PER_3191,Person,TRỊNH THĂNG BÌNH MIXTAPE,,1,0,0 quan hệ
+co_lap,PER_3238,Person,REMI,,1,0,0 quan hệ
+co_lap,PER_3249,Person,SIB,,1,0,0 quan hệ
+co_lap,PER_3252,Person,MT,,1,0,0 quan hệ
+co_lap,PER_3257,Person,VŨ NHƯ THẢO,,1,0,0 quan hệ
+co_lap,PER_3270,Person,NEWL GREY D,,1,0,0 quan hệ
+co_lap,PER_3272,Person,KAI ĐINH 'winter,,1,0,0 quan hệ
+co_lap,PER_3279,Person,Ngọc Biên,,1,0,0 quan hệ
+co_lap,PER_3282,Person,Đồng Âm,,1,0,0 quan hệ
+co_lap,PER_3283,Person,Mạnh Kha,,1,0,0 quan hệ
+co_lap,PER_3285,Person,Linh Vu,,1,0,0 quan hệ
+co_lap,PER_3305,Person,Nguyễn Quang Nghĩa,,1,0,0 quan hệ
+co_lap,PER_3308,Person,DORA,,1,0,0 quan hệ
+co_lap,PER_3309,Person,Nguyễn Hoàng Anh Minh,,1,0,0 quan hệ
+co_lap,PER_3319,Person,TRẦN NGUYỄN THẢO NGUYÊN,,1,0,0 quan hệ
+co_lap,PER_3320,Person,GIANG HỒ,,1,0,0 quan hệ
+co_lap,PER_3321,Person,S.T365,,1,0,0 quan hệ
+co_lap,PER_3325,Person,Ha Tat Thanh,,1,0,0 quan hệ
+co_lap,PER_3350,Person,Tố Tố,,1,0,0 quan hệ
+co_lap,PER_3368,Person,Nhật Đoàn,,1,0,0 quan hệ
+co_lap,PER_3403,Person,Dương Thiệu Tước,,1,0,0 quan hệ
+co_lap,PER_3406,Person,Nguyễn Đình Toàn,,1,0,0 quan hệ
+co_lap,PER_3407,Person,Đoàn Chuẩn,,1,0,0 quan hệ
+co_lap,PER_3408,Person,Từ Linh,,1,0,0 quan hệ
+co_lap,PER_3434,Person,Châu Đức Hạnh,,1,0,0 quan hệ
+co_lap,PER_3439,Person,Hoa Vinh,,1,0,0 quan hệ
+co_lap,PER_3448,Person,Nguyễn Đức Cường,,1,0,0 quan hệ
+co_lap,PER_3456,Person,Dương Gia Mỹ,,1,0,0 quan hệ
+co_lap,PER_3469,Person,Nguyên Ngô,,1,0,0 quan hệ
+co_lap,PER_3470,Person,Bomy Trần,,1,0,0 quan hệ
+co_lap,PER_3474,Person,Phoebe,,1,0,0 quan hệ
+co_lap,PER_3476,Person,CHXSER,,1,0,0 quan hệ
+co_lap,PER_3478,Person,ROID,,1,0,0 quan hệ
+co_lap,PER_3493,Person,Viet Kuro,,1,0,0 quan hệ
+co_lap,PER_3494,Person,Huong Le,,1,0,0 quan hệ
+co_lap,PER_3500,Person,Giáp Văn Thạch,,1,0,0 quan hệ
+co_lap,PER_3508,Person,Ligia Văn,,1,0,0 quan hệ
+co_lap,PER_3514,Person,By Giang Hồng Ngọc,,1,0,0 quan hệ
+co_lap,PER_3521,Person,Phạm Mạnh Cương,,1,0,0 quan hệ
+co_lap,PER_3554,Person,Giiza,,1,0,0 quan hệ
+co_lap,PER_3556,Person,Trần Thăng Long,,1,0,0 quan hệ
+co_lap,PER_3573,Person,Sakhar,,1,0,0 quan hệ
+co_lap,PER_3578,Person,Phó Đức Phương Nhạc,,1,0,0 quan hệ
+co_lap,PER_3586,Person,Gounod,,1,0,0 quan hệ
+co_lap,PER_3590,Person,Mỹ Linh-Huy Tuấn,,1,0,0 quan hệ
+co_lap,PER_3594,Person,Trương Ngọc Ninh,,1,0,0 quan hệ
+co_lap,PER_3608,Person,Rinnie Blue,,1,0,0 quan hệ
+co_lap,PER_3620,Person,Lê Bin Thế Vĩ,,1,0,0 quan hệ
+co_lap,PER_3636,Person,NSUT Y PHÔN KSOR,,1,0,0 quan hệ
+co_lap,PER_3637,Person,CAO VĂN HUY,,1,0,0 quan hệ
+co_lap,PER_3657,Person,Phúc Thiện,,1,0,0 quan hệ
+co_lap,PER_3666,Person,Y VŨ,,1,0,0 quan hệ
+co_lap,PER_3670,Person,GRVITY- DUY SƠN,,1,0,0 quan hệ
+co_lap,PER_3673,Person,SA MILO,,1,0,0 quan hệ
+co_lap,PER_3676,Person,TRẦN NGỌC TÙNG,,1,0,0 quan hệ
+co_lap,PER_3677,Person,ĐINH TUẤN KHANH,,1,0,0 quan hệ
+co_lap,PER_3678,Person,CAO MINH TRUNG,,1,0,0 quan hệ
+co_lap,PER_3679,Person,PHAN ANH TUẤN,,1,0,0 quan hệ
+co_lap,PER_3680,Person,CHÈO CỔ,,1,0,0 quan hệ
+co_lap,PER_3682,Person,CAO VĂN LẦU,,1,0,0 quan hệ
+co_lap,PER_3683,Person,TÔN NỮ THỤY KHƯƠNG,,1,0,0 quan hệ
+co_lap,PER_3703,Person,ĐỨC HUY,,1,0,0 quan hệ
+co_lap,PER_3704,Person,XUÂN TRƯỜNG,,1,0,0 quan hệ
+co_lap,PER_3705,Person,MẠNH QUYỀN,,1,0,0 quan hệ
+co_lap,PER_3706,Person,JVFour,,1,0,0 quan hệ
+co_lap,PER_3707,Person,TƯƠI TRẦN,,1,0,0 quan hệ
+co_lap,PER_3709,Person,NOMAD,,1,0,0 quan hệ
+co_lap,PER_3711,Person,SWAN NGUYỄN,,1,0,0 quan hệ
+co_lap,PER_3718,Person,BẠCH HỒNG CƯỜNG,,1,0,0 quan hệ
+co_lap,PER_3722,Person,PHAN THANH HIỂN,,1,0,0 quan hệ
+co_lap,PER_3723,Person,TRẦN VĂN PHONG,,1,0,0 quan hệ
+co_lap,PER_3724,Person,GREVITY,,1,0,0 quan hệ
+co_lap,PER_3725,Person,PHẠM VĂN TÂM,,1,0,0 quan hệ
+co_lap,PER_3731,Person,ĐỨC DUY,,1,0,0 quan hệ
+co_lap,PER_3732,Person,MONOTREE,,1,0,0 quan hệ
+co_lap,PER_3733,Person,AUTTA,,1,0,0 quan hệ
+co_lap,PER_3734,Person,JOOHYOUNG LEE,,1,0,0 quan hệ
+co_lap,PER_3736,Person,NILD,,1,0,0 quan hệ
+co_lap,PER_3737,Person,HERON KIM,,1,0,0 quan hệ
+co_lap,PER_3738,Person,SEUNGHOON LEE,,1,0,0 quan hệ
+co_lap,PER_3744,Person,ANDY LOVE,,1,0,0 quan hệ
+co_lap,PER_3745,Person,ZSUNDER,,1,0,0 quan hệ
+co_lap,PER_3747,Person,PHAT55,,1,0,0 quan hệ
+co_lap,PER_3749,Person,BUGGYRUN,,1,0,0 quan hệ
+co_lap,PER_3753,Person,LCY,,1,0,0 quan hệ
+co_lap,PER_3754,Person,Mike Gonek,,1,0,0 quan hệ
+co_lap,PER_3755,Person,Gonek,,1,0,0 quan hệ
+co_lap,PER_3756,Person,Purple,,1,0,0 quan hệ
+co_lap,PER_3757,Person,Deuk,,1,0,0 quan hệ
+co_lap,PER_3758,Person,HYUN,,1,0,0 quan hệ
+co_lap,PER_3761,Person,SEATRAVEL,,1,0,0 quan hệ
+co_lap,PER_3762,Person,KUIZZ,,1,0,0 quan hệ
+co_lap,PER_3763,Person,BANG YONG-GUK,,1,0,0 quan hệ
+co_lap,PER_3764,Person,KIM CHANG-RAK,,1,0,0 quan hệ
+co_lap,PER_3765,Person,LASER,,1,0,0 quan hệ
+co_lap,PER_3767,Person,RIKE,,1,0,0 quan hệ
+co_lap,PER_3768,Person,IKE,,1,0,0 quan hệ
+co_lap,PER_3770,Person,BENJI BAE,,1,0,0 quan hệ
+co_lap,PER_3771,Person,O.KWON,,1,0,0 quan hệ
+co_lap,PER_3772,Person,TONSER,,1,0,0 quan hệ
+co_lap,PER_3773,Person,KIM J,,1,0,0 quan hệ
+co_lap,PER_3774,Person,DY,,1,0,0 quan hệ
+co_lap,PER_3775,Person,GEONULIFE,,1,0,0 quan hệ
+co_lap,PER_3776,Person,SHOKICHI,,1,0,0 quan hệ
+co_lap,PER_3777,Person,SKY BEATZ,,1,0,0 quan hệ
+co_lap,PER_3782,Person,DWILLY,,1,0,0 quan hệ
+co_lap,PER_3783,Person,ALI REZA,,1,0,0 quan hệ
+co_lap,PER_3786,Person,YOHEI,,1,0,0 quan hệ
+co_lap,PER_3787,Person,ANDREW CHOI,,1,0,0 quan hệ
+co_lap,PER_3788,Person,JSONG,,1,0,0 quan hệ
+co_lap,PER_3789,Person,ROUNO,,1,0,0 quan hệ
+co_lap,PER_3790,Person,HYKE,,1,0,0 quan hệ
+co_lap,PER_3791,Person,ADRIAN.K,,1,0,0 quan hệ
+co_lap,PER_3792,Person,AARON.H,,1,0,0 quan hệ
+co_lap,PER_3793,Person,NOERIO,,1,0,0 quan hệ
+co_lap,PER_3794,Person,LSY,,1,0,0 quan hệ
+co_lap,PER_3799,Person,HWAJI,,1,0,0 quan hệ
+co_lap,PER_3801,Person,SMEW,,1,0,0 quan hệ
+co_lap,PER_3802,Person,ĐỖ ĐÌNH PHÚC,,1,0,0 quan hệ
+co_lap,PER_3803,Person,CÁT TIÊN,,1,0,0 quan hệ
+co_lap,PER_3809,Person,IRIS CAO,,1,0,0 quan hệ
+co_lap,PER_3810,Person,Mai Thang,,1,0,0 quan hệ
+co_lap,PER_3819,Person,JARDIN KIM TUYỀN,,1,0,0 quan hệ
+co_lap,PER_3820,Person,TEA,,1,0,0 quan hệ
+co_lap,PER_3821,Person,MFMF,,1,0,0 quan hệ
+co_lap,PER_3838,Person,Rocoberry,,1,0,0 quan hệ
+co_lap,PER_3844,Person,Nguyễn Phạm Thuỳ Trang,,1,0,0 quan hệ
+co_lap,PER_3845,Person,Phạm Trọng Cầu,,1,0,0 quan hệ
+co_lap,PER_3851,Person,Lê Thương,,1,0,0 quan hệ
+co_lap,PER_3852,Person,Phạm Tuyên,,1,0,0 quan hệ
+co_lap,PER_3853,Person,Nguyễn Mạnh Hoàng,,1,0,0 quan hệ
+co_lap,PER_3856,Person,Lê Quốc Thắng,,1,0,0 quan hệ
+co_lap,PER_3873,Person,Lee Yonggyu,,1,0,0 quan hệ
+co_lap,PER_3874,Person,Shin Sungjin,,1,0,0 quan hệ
+co_lap,PER_3889,Person,KINO,,1,0,0 quan hệ
+co_lap,PER_3890,Person,NATHAN,,1,0,0 quan hệ
+co_lap,PER_3891,Person,HOHO,,1,0,0 quan hệ
+co_lap,PER_3892,Person,Yuto,,1,0,0 quan hệ
+co_lap,PER_3893,Person,Wuseok,,1,0,0 quan hệ
+co_lap,PER_3896,Person,BIG Naughty,,1,0,0 quan hệ
+co_lap,PER_3897,Person,SEO DONGHYEON,,1,0,0 quan hệ
+co_lap,PER_3899,Person,Vendors,,1,0,0 quan hệ
+co_lap,PER_4280,Person,Ngồi Chờ Trong Vấn Vương,,1,0,0 quan hệ
+co_lap,PER_4294,Person,Tiến Pịp,,1,0,0 quan hệ
+co_lap,PER_4308,Person,NGÃ NGỬA,,1,0,0 quan hệ
+co_lap,PER_4310,Person,Tuấn Nguyễn,,1,0,0 quan hệ
+co_lap,PER_4313,Person,TBii,,1,0,0 quan hệ
+co_lap,SON_0115,Song,"Bông Hoa Đẹp Nhất, Suýt Nữa Thì, Một Đêm Say",,1,0,0 quan hệ
+co_lap,SON_0117,Song,NHỮNG CON ĐƯỜNG CÔ ĐƠN,,1,0,0 quan hệ
+co_lap,SON_0119,Song,THƯỚC PHIM DÀI NHẤT,,1,0,0 quan hệ
+co_lap,SON_0136,Song,Đen đá không đường,,1,0,0 quan hệ
+co_lap,SON_0142,Song,BITY,,1,0,0 quan hệ
+co_lap,SON_0157,Song,MÂY,,1,0,0 quan hệ
+co_lap,SON_0173,Song,Chuyện tình ngày xưa mơ hồ như cơn gió,,1,0,0 quan hệ
+co_lap,SON_0175,Song,Mùng 1 Tết Nghe Sẽ May Mắn Cả Năm,,1,0,0 quan hệ
+co_lap,SON_0176,Song,List Nhạc Dọn Nhà Cho Ngày 30 Tết,,1,0,0 quan hệ
+co_lap,SON_0192,Song,YÊU TRONG BÓNG TỐI,,1,0,0 quan hệ
+co_lap,SON_0195,Song,Hạnh Phúc Không Dành Cho Tình Nhân,,1,0,0 quan hệ
+co_lap,SON_0202,Song,Nhắm mắt lại hôn vào tai,,1,0,0 quan hệ
+co_lap,SON_0210,Song,Hạ đầu tam bái nước mắt rơi,,1,0,0 quan hệ
+co_lap,SON_0220,Song,Sợ ngày mai em đi mất,,1,0,0 quan hệ
+co_lap,SON_0221,Song,Thà yêu lấy một người bình thường,,1,0,0 quan hệ
+co_lap,SON_0227,Song,DuUyên,,1,0,0 quan hệ
+co_lap,SON_0239,Song,3107 I W/n,,1,0,0 quan hệ
+co_lap,SON_0260,Song,Lần Đầu Thử Rap Để XUÂN NÀY HẾT SƯỢNG TRÂN,,1,0,0 quan hệ
+co_lap,SON_0289,Song,NHẠC HOA LỜI VIỆT,,1,0,0 quan hệ
+co_lap,SON_0291,Song,ĐỘ TA KHÔNG ĐỘ NÀNG,,1,0,0 quan hệ
+co_lap,SON_0416,Song,6.2018,,1,0,0 quan hệ
+co_lap,SON_0420,Song,Mực Tím Online 2007,,1,0,0 quan hệ
+co_lap,SON_0422,Song,Ánh Trăng Hiểu Lòng Em,,1,0,0 quan hệ
+co_lap,SON_0423,Song,Ánh Trăng Nói Hộ Lòng Em / 月亮代表我的心,,1,0,0 quan hệ
+co_lap,SON_0430,Song,Tạp Chí Showbiz Số 44,,1,0,0 quan hệ
+co_lap,SON_0431,Song,Canada,,1,0,0 quan hệ
+co_lap,SON_0433,Song,6.2016,,1,0,0 quan hệ
+co_lap,SON_0696,Song,"Cục Vợ ơi, lấy anh nha!",,1,0,0 quan hệ
+co_lap,SON_0863,Song,CÒN EM ANH BỎ CHO AI?,,1,0,0 quan hệ
+co_lap,SON_0864,Song,ÔM EM ĐƯỢC KHÔNG?,,1,0,0 quan hệ
+co_lap,SON_1221,Song,Sự Kiện Ra Mắt Phim Nghỉ Hè Sợ Nghỉ Hưu,,1,0,0 quan hệ
+co_lap,SON_1428,Song,"ĐIỀU ANH BIẾT, 1 2 3 4",,1,0,0 quan hệ
+co_lap,SON_1476,Song,Em Nào Có Hay Anh Nhớ Thương,,1,0,0 quan hệ
+co_lap,SON_1703,Song,NHÌN LẠI NĂM 2025,,1,0,0 quan hệ
+co_lap,SON_2000,Song,Để Mị nói cho mà nghe,,1,0,0 quan hệ
+co_lap,SON_2015,Song,Shape of you,,1,0,0 quan hệ
+co_lap,SON_2082,Song,Nếu Không Vui Đã Là Sai Rồi,,1,0,0 quan hệ
+co_lap,SON_2176,Song,Đời Còn Cô Đơn & Tìm Lại Người Yêu,,1,0,0 quan hệ
+co_lap,SON_2221,Song,Gác Nhỏ Đêm Xuân,,1,0,0 quan hệ
+co_lap,SON_2445,Song,một đêm thật đáng nhớ,,1,0,0 quan hệ
+co_lap,SON_2476,Song,Yêu Người Không Thể Yêu,,1,0,0 quan hệ
+co_lap,SON_2477,Song,Tình Yêu Đẹp Nhất,,1,0,0 quan hệ
+co_lap,SON_2478,Song,Người Từng Yêu Anh Rất Sâu Nặng,,1,0,0 quan hệ
+co_lap,SON_2487,Song,Trái Tim Anh Cũng Biết Đau,,1,0,0 quan hệ
+co_lap,SON_2530,Song,ĐỪNG LO ANH ĐỢI MÀ,,1,0,0 quan hệ
+co_lap,SON_2547,Song,VIỆT NAM VÔ ĐỊCH,,1,0,0 quan hệ
+co_lap,SON_2710,Song,Nothing Gonna Change My Love For You,,1,0,0 quan hệ
+co_lap,SON_3014,Song,MỸ,,1,0,0 quan hệ
+co_lap,SON_3044,Song,Hà Nội tuyệt vời,,1,0,0 quan hệ
+co_lap,SON_3046,Song,Việt Nam tớ đẹp lắm,,1,0,0 quan hệ
+co_lap,SON_3078,Song,MAKE IT TOGETHER,,1,0,0 quan hệ
+co_lap,SON_3087,Song,Dù Có Cách Xa,,1,0,0 quan hệ
+co_lap,SON_3088,Song,Dù Chẳng Phải Anh,,1,0,0 quan hệ
+co_lap,SON_3089,Song,Về Đây Nghe Em,,1,0,0 quan hệ
+co_lap,SON_3432,Song,360 DEGREE,,1,0,0 quan hệ
+co_lap,SON_3454,Song,VỚI EM LÀ MÃI MÃI,,1,0,0 quan hệ
+co_lap,SON_3594,Song,QUAY ĐẦU LÀ HIPHOP,,1,0,0 quan hệ
+co_lap,SON_3607,Song,ANH SẼ ĐỢI 我会等,,1,0,0 quan hệ
+co_lap,SON_3608,Song,KIÊU NGẠO 嚣张,,1,0,0 quan hệ
+co_lap,SON_3712,Song,The Face Vietnam 2016,,1,0,0 quan hệ
+co_lap,SON_3794,Song,ANH ĐÂU CÓ HAY,,1,0,0 quan hệ
+co_lap,SON_3815,Song,wAvy,,1,0,0 quan hệ
+co_lap,SON_3965,Song,TLNBVL,,1,0,0 quan hệ
+co_lap,SON_4102,Song,Đình Thi,,1,0,0 quan hệ
+co_lap,SON_4222,Song,AI CHUNG TÌNH ĐƯỢC MÃI,,1,0,0 quan hệ
+co_lap,SON_4251,Song,MASTERD ĐÂU?,,1,0,0 quan hệ
+co_lap,SON_4466,Song,"ĐẬP HỘP NÚT BẠC, HÁT HÒ ĂN MỪNG",,1,0,0 quan hệ
+co_lap,SON_4475,Song,TÌNH NHÂN ƠI ! Superbrothers,,1,0,0 quan hệ
+co_lap,SON_4480,Song,Em Yêu,,1,0,0 quan hệ
+co_lap,SON_4535,Song,Stop Attacking My LINE 別再攻擊我的LINE,,1,0,0 quan hệ
+co_lap,SON_4552,Song,Show The Night Long Khánh,,1,0,0 quan hệ
+co_lap,SON_4559,Song,Bài Này Căng Phết,,1,0,0 quan hệ
+co_lap,SON_4700,Song,colours,,1,0,0 quan hệ
+co_lap,SON_4754,Song,LÀM DÂU,,1,0,0 quan hệ
+co_lap,SON_4755,Song,LẤY CHỒNG,,1,0,0 quan hệ
+co_lap,SON_4835,Song,Có Còn Yêu Em,,1,0,0 quan hệ
+co_lap,SON_4840,Song,Quên Rồi Khổ Đau Năm Ấy,,1,0,0 quan hệ
+co_lap,SON_4928,Song,CATENA COVER,,1,0,0 quan hệ
+co_lap,SON_5039,Song,Đông Dịu Ngọt,,1,0,0 quan hệ
+co_lap,SON_5050,Song,KHẤT DUYÊN,,1,0,0 quan hệ
+co_lap,SON_5109,Song,Wrapped 2024,,1,0,0 quan hệ
+co_lap,SON_5139,Song,"Hết Thương Cạn Nhớ, Có Tất Cả Nhưng Thiếu Anh",,1,0,0 quan hệ
+co_lap,SON_5153,Song,Đạp xe 1 tiếng cùng Xe Đạp,,1,0,0 quan hệ
+co_lap,SON_5203,Song,thế giới có nơi nào cho em,,1,0,0 quan hệ
+co_lap,SON_5229,Song,phải làm sao để níu kéo một người,,1,0,0 quan hệ
+co_lap,SON_5247,Song,XÁM,,1,0,0 quan hệ
+co_lap,SON_5256,Song,LƠI,,1,0,0 quan hệ
+co_lap,SON_5260,Song,MUỐN ĐƯỢC CÙNG EM,,1,0,0 quan hệ
+co_lap,SON_5261,Song,ÂM BẢN,,1,0,0 quan hệ
+co_lap,SON_5262,Song,SẦU HỒNG GAI,,1,0,0 quan hệ
+co_lap,SON_5267,Song,3 1 0 7,,1,0,0 quan hệ
+co_lap,SON_5272,Song,Tizi Đích Lép,,1,0,0 quan hệ
+co_lap,SON_5279,Song,PC,,1,0,0 quan hệ
+co_lap,SON_5280,Song,FAY & CHUNG THANH DUY,,1,0,0 quan hệ
+co_lap,SON_5281,Song,V.O.X & VŨ PHỤNG TIÊN,,1,0,0 quan hệ
+co_lap,SON_5291,Song,D.BLUE & ĐẠT G,,1,0,0 quan hệ
+co_lap,SON_5293,Song,EmD,,1,0,0 quan hệ
+co_lap,SON_5294,Song,Tempo G,,1,0,0 quan hệ
+co_lap,SON_5295,Song,TRUNGG I.U,,1,0,0 quan hệ
+co_lap,SON_5296,Song,TRÚC PHƯƠNG,,1,0,0 quan hệ
+co_lap,SON_5299,Song,TÙA & FREAKY,,1,0,0 quan hệ
+co_lap,SON_5668,Song,TÌNH YÊU LÀ QUÃNG ĐƯỜNG TA ĐI,,1,0,0 quan hệ
+co_lap,SON_5710,Song,CHỜ THÊM MỘT ĐỜI,,1,0,0 quan hệ
+co_lap,SON_5833,Song,20 Facts About Me,,1,0,0 quan hệ
+co_lap,SON_5834,Song,Đi Đâu? Ăn Gì? Mua Gì?,,1,0,0 quan hệ
+co_lap,SON_5835,Song,"Tập Gym, Tập Võ, Cắt Tóc",,1,0,0 quan hệ
+co_lap,SON_5837,Song,Tất Cả Sẽ Thay Em,,1,0,0 quan hệ
+co_lap,SON_6099,Song,Love Memories Radio,,1,0,0 quan hệ
+co_lap,SON_6101,Song,Chạy về nơi,,1,0,0 quan hệ
+co_lap,SON_6148,Song,Xức nước hoa Trấn Thành sợ ma muốn chết,,1,0,0 quan hệ
+co_lap,SON_6166,Song,NGƯỜI TA,,1,0,0 quan hệ
+co_lap,SON_6359,Song,CÓ HẸN VỚI HẠNH PHÚC,,1,0,0 quan hệ
+co_lap,SON_6360,Song,Lỗi Của Yêu Thương,,1,0,0 quan hệ
+co_lap,SON_6399,Song,MAKE OVER,,1,0,0 quan hệ
+co_lap,SON_6400,Song,Thử thách chỉ nói TIẾNG ANH ngày giãn cách,,1,0,0 quan hệ
+co_lap,SON_6401,Song,M-Log 24 tiếng “quẩy” hết mình ở Đà Nẵng,,1,0,0 quan hệ
+co_lap,SON_6413,Song,CÁI KẾT DÀNH CHO KẺ SỐNG ẢO HAM HƯ VINH,,1,0,0 quan hệ
+co_lap,SON_6524,Song,DIMZ,,1,0,0 quan hệ
+co_lap,SON_6549,Song,Phạm Hoài Nam,,1,0,0 quan hệ
+co_lap,SON_6550,Song,Các bản đàn tranh gây nghiện,,1,0,0 quan hệ
+co_lap,SON_6711,Song,Dễ Tính,,1,0,0 quan hệ
+co_lap,SON_6733,Song,Dậy Đê!!!,,1,0,0 quan hệ
+co_lap,SON_6734,Song,Dream Soldier,,1,0,0 quan hệ
+co_lap,SON_7178,Song,Dĩ Vãng Nhạt Nhoà (Slowed),,1,0,0 quan hệ
+co_lap,SON_8585,Song,Bạn Diễn Liếm Mặt Khí Thế Khi Chụp Ảnh,,1,0,0 quan hệ
+co_lap,SON_8588,Song,tình cảm 하리와 쩐탄이 이노래를 부른다고?,,1,0,0 quan hệ
+co_lap,SON_8626,Song,Nối Chữ,,1,0,0 quan hệ
+co_lap,SON_8635,Song,"Bảo Anh, Châu Bùi, Only C, Lou Hoàng",,1,0,0 quan hệ
+co_lap,SON_8658,Song,Hoàng Quý Muội,,1,0,0 quan hệ
+co_lap,SON_8829,Song,Khi Nào,,1,0,0 quan hệ
+co_lap,SON_8842,Song,Anh Em Rap,,1,0,0 quan hệ
+co_lap,GRO_0004,Group,365daband,,0,0,0 quan hệ
+co_lap,PER_0211,Person,SA Lil Van,,0,0,0 quan hệ
+co_lap,PER_0308,Person,DJ Trang Moon,,0,0,0 quan hệ
+company_nghi_brand_hoac_nguoi,COM_0110,Company,HÀ TRẦN PRODUCTIONS,,76,73,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0027,Company,1Label,1LABEL,40,74,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0070,Company,HIGHER DIMENSION,,36,18,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0017,Company,InQ International,,33,31,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0068,Company,Mixus,MIXUS,30,38,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0023,Company,HÃNG ĐĨA THỜI ĐẠI,,22,22,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0130,Company,VIVI ENM,,19,43,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0062,Company,Def Jam Recordings Vietnam,Def Jam Recordings Viet Nam | Def Jam Vietnam | Def Jam recordings Viet Nam,17,109,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0133,Company,UMG Recordings,,16,216,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0176,Company,DAT VIET VAC,,15,121,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0092,Company,QStudio,,13,0,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0195,Company,Cát Tiên Sa,cát tiên sa,13,137,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0107,Company,HPM Collective,,11,5,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0222,Company,Gerdnang,GERDNANG,11,9,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0253,Company,mixtape.so,,10,62,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0021,Company,Believe,BELIEVE,9,9,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0032,Company,ah311synd,,8,8,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0054,Company,PQA,,8,8,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0102,Company,Eventista,,7,7,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0174,Company,12 trái lê,,6,6,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0212,Company,SYE Holdings,,5,23,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0136,Company,DagoatsHouse,DaGoats House,4,6,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0138,Company,SUBLIME,,4,4,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0143,Company,monoX,,4,4,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0151,Company,VECTOR PRESENTS,,4,4,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0217,Company,The First Management,,4,11,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0234,Company,Cổ Động,,4,4,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0237,Company,+84 Vietnam New Wave,,4,33,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0076,Company,MEGMUSIC,,3,3,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0146,Company,HYPERFOCUS,,3,2,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0158,Company,Metaplay,,3,3,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0230,Company,OCEAN MOB,,3,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0245,Company,Star Online,,3,3,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0041,Company,KAIZEN Gumi,KAIZEN GUMI,2,2,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0134,Company,NOMAD MGMT Vietnam,NOMAD MGMT VIETNAM,2,2,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0213,Company,Làng Văn,,2,26,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0221,Company,Crow On Hyenas,,2,2,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0025,Company,Lumif Recordings,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0040,Company,Bigguys Entertainments,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0058,Company,HAYMusic,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0064,Company,MEMO Creative,,1,0,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0067,Company,Empire,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0075,Company,MEG Creative,,1,0,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0080,Company,Monstercat,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0088,Company,4B Nexus,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0097,Company,inner outer,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0103,Company,VTV,,1,0,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0108,Company,NCT,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0154,Company,VIE IP,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0157,Company,Looperappears,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0170,Company,MUNIZ,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0178,Company,HKFilm,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0179,Company,VibeNation,,1,4,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0180,Company,winwinentertainment,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0190,Company,HK Donuts Culture,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0192,Company,VMAS,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0193,Company,Gia Đình Lớn,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0196,Company,MRP,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0204,Company,African Dreaming,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0209,Company,HIN Productions,,1,6,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0210,Company,ASIA RISING,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0227,Company,NGUYÊN BẢN,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0228,Company,meChill,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0229,Company,M2W,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0231,Company,Pizza Vietnam,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0236,Company,Jaunty Maniacs,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0238,Company,Dihavina,,1,10,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0239,Company,Tran Thanh Town,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0244,Company,COP28 UAE,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0246,Company,Disney Enterprises,,1,29,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0248,Company,Yeah1,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0250,Company,KIRIN,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0251,Company,Dong Tay Promotion by DatVietVAC,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0255,Company,BEE COMMUNICATIONS,,1,3,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0256,Company,MDigital Global,,1,1,không có hậu tố tổ chức
+company_nghi_brand_hoac_nguoi,COM_0258,Company,BLUEBELLS,,1,1,không có hậu tố tổ chức
+group_nghi_ngo,GRO_0005,Group,Monstar,,3,18,"Group ít tài liệu, không có từ band/nhóm"
+group_nghi_ngo,GRO_0039,Group,Uni5,,3,2,"Group ít tài liệu, không có từ band/nhóm"
+group_nghi_ngo,GRO_0048,Group,Cadillac,,3,4,"Group ít tài liệu, không có từ band/nhóm"
+group_nghi_ngo,GRO_0028,Group,Maius Philharmonic,,1,2,"Group ít tài liệu, không có từ band/nhóm"
+group_nghi_ngo,GRO_0036,Group,Trần's Gang,,1,3,"Group ít tài liệu, không có từ band/nhóm"
+group_nghi_ngo,GRO_0040,Group,7UPPERCUTS,,1,0,"Group ít tài liệu, không có từ band/nhóm"
+group_nghi_ngo,GRO_0042,Group,P336,,1,3,"Group ít tài liệu, không có từ band/nhóm"
+group_nghi_ngo,GRO_0004,Group,365daband,,0,0,"Group ít tài liệu, không có từ band/nhóm"
+khoang_trang_thua,SON_3050,Song,How to '' quẩy  mùa Cô Vy,,1,1,"""How to '' quẩy  mùa Cô Vy"""
+khong_tai_lieu,GRO_0004,Group,365daband,,0,0,0 tài liệu (đến từ seed/Spotify/báo?)
+khong_tai_lieu,PER_0211,Person,SA Lil Van,,0,0,0 tài liệu (đến từ seed/Spotify/báo?)
+khong_tai_lieu,PER_0308,Person,DJ Trang Moon,,0,0,0 tài liệu (đến từ seed/Spotify/báo?)
+ky_tu_la,PER_0204,Person,V#,,8,11,chứa emoji/#/@
+ngoac_nhay_le,SON_6762,Song,Let 'Em Know,LET 'EM KNOW,2,1,ngoặc/nháy không cân
+ngoac_nhay_le,PER_1157,Person,O_O' Full Album Experience,,1,0,ngoặc/nháy không cân
+ngoac_nhay_le,PER_3272,Person,KAI ĐINH 'winter,,1,0,ngoặc/nháy không cân
+ngoac_nhay_le,SON_0047,Song,Giấc Mơ Lạ 'Dream,,1,4,ngoặc/nháy không cân
+ngoac_nhay_le,SON_0303,Song,Mini Album 'Đồng Hồ Cát,,1,1,ngoặc/nháy không cân
+ngoac_nhay_le,SON_1922,Song,Xinh Sao Phải Khóc 'Dance Version,,1,7,ngoặc/nháy không cân
+ngoac_nhay_le,SON_2362,Song,INTRO 'DÂN CHƠI DÂN CA,,1,9,ngoặc/nháy không cân
+ngoac_nhay_le,SON_2986,Song,Girls' Steps: Bước Về Phía Mặt Trời,,1,3,ngoặc/nháy không cân
+ngoac_nhay_le,SON_3009,Song,Bao giờ lấy vợ' nhưng nó acoustic,,1,1,ngoặc/nháy không cân
+ngoac_nhay_le,SON_3427,Song,Skyler' Theme Song,,1,1,ngoặc/nháy không cân
+ngoac_nhay_le,SON_3872,Song,THEGIOIMANHDONG' the mixtape,,1,1,ngoặc/nháy không cân
+ngoac_nhay_le,SON_3932,Song,The First Album CAM' ON,,1,1,ngoặc/nháy không cân
+ngoac_nhay_le,SON_4048,Song,Câu chuyện 'Đừng Gọi Anh Dậy,,1,1,ngoặc/nháy không cân
+ngoac_nhay_le,SON_4407,Song,MÀU NƯỚC MẮT' COVER,,1,2,ngoặc/nháy không cân
+ngoac_nhay_le,SON_4408,Song,HONGKONG1' COVER,,1,1,ngoặc/nháy không cân
+ngoac_nhay_le,SON_4410,Song,CHÀNG TIÊN CÁ' COVER,,1,2,ngoặc/nháy không cân
+ngoac_nhay_le,SON_4502,Song,THROUGH THE NIGHT' 밤편지,,1,1,ngoặc/nháy không cân
+ngoac_nhay_le,SON_4702,Song,SÀI GÒN ĐAU LÒNG QUÁ' toàn kỷ niệm chúng ta,,1,4,ngoặc/nháy không cân
+ngoac_nhay_le,SON_5988,Song,Woman in Love' Pop-up Show at Polygon Musik,,1,1,ngoặc/nháy không cân
+ngoac_nhay_le,SON_5989,Song,Để Em Mơ' Pop-up Show at Polygon Musik,,1,1,ngoặc/nháy không cân
+ngoac_nhay_le,SON_6621,Song,DANCIN' MY WAY,,1,2,ngoặc/nháy không cân
+ngoac_nhay_le,SON_8606,Song,Có Em Chờ Theo Phong Cách 'Siêu Lầy,,1,1,ngoặc/nháy không cân
+person_chu_thuong,PER_1872,Person,zex zex,ZEXZEX,2,4,"toàn chữ thường, nhiều từ"
+person_chu_thuong,PER_4101,Person,fueled by boba,,1,4,"toàn chữ thường, nhiều từ"
+person_co_so,PER_0129,Person,CM1X,. CM1X | Cm1x,223,281,chứa chữ số
+person_co_so,PER_0079,Person,2PILLZ,2Pillz | 2pillz,143,170,chứa chữ số
+person_co_so,PER_0071,Person,24k.Right,24K Right | 24K.RIGHT,66,84,chứa chữ số
+person_co_so,PER_0221,Person,14 CASPER,14 Casper | Casper,53,79,chứa chữ số
+person_co_so,PER_0144,Person,52HZ,52Hz,49,79,chứa chữ số
+person_co_so,PER_0283,Person,Jack - J97,J97 | JACK | Jack,49,17,chứa chữ số
+person_co_so,PER_0122,Person,Double2T,DOUBLE2T | Double 2T,46,73,chứa chữ số
+person_co_so,PER_1398,Person,Justin TechN9,JUSTIN TECHN9 | JustinTech9 | JustinTechN9,43,31,chứa chữ số
+person_co_so,PER_0222,Person,DRUM7,Drum7,41,57,chứa chữ số
+person_co_so,PER_0250,Person,16 Typh,,28,35,chứa chữ số
+person_co_so,PER_0187,Person,7dnight,,26,32,chứa chữ số
+person_co_so,PER_0504,Person,Rin9,RIN9,25,22,chứa chữ số
+person_co_so,PER_1459,Person,J4rdin,J4RDIN,22,8,chứa chữ số
+person_co_so,PER_2339,Person,Slime7,SLIME7,18,17,chứa chữ số
+person_co_so,PER_1259,Person,Lucin3x,,16,15,chứa chữ số
+person_co_so,PER_1655,Person,gung0cay,GUNG0CAY,15,14,chứa chữ số
+person_co_so,PER_0278,Person,ĐÀO TỬ A1J,Đào Tử A1J | 桃子A1J,13,32,chứa chữ số
+person_co_so,PER_3459,Person,M4U,,13,9,chứa chữ số
+person_co_so,PER_0502,Person,The 199X,THE 199X,11,8,chứa chữ số
+person_co_so,PER_3600,Person,10CM,,11,6,chứa chữ số
+person_co_so,PER_2822,Person,April16,,10,6,chứa chữ số
+person_co_so,PER_0507,Person,X2x,X2X,9,9,chứa chữ số
+person_co_so,PER_1312,Person,1nG,1NG,7,7,chứa chữ số
+person_co_so,PER_0835,Person,NOWHEREMAN87,,6,5,chứa chữ số
+person_co_so,PER_1087,Person,1DEE,,6,8,chứa chữ số
+person_co_so,PER_4291,Person,MC 12,MC12,6,6,chứa chữ số
+person_co_so,PER_1777,Person,H212,,5,1,chứa chữ số
+person_co_so,PER_0768,Person,Sol7,SOL7,4,9,chứa chữ số
+person_co_so,PER_1006,Person,Phát Huy T4,PHAT HUY T4,4,6,chứa chữ số
+person_co_so,PER_1347,Person,16 BrT,,4,7,chứa chữ số
+person_co_so,PER_2268,Person,95R,,4,3,chứa chữ số
+person_co_so,PER_2832,Person,2See,2SEE,4,4,chứa chữ số
+person_co_so,PER_3473,Person,Fred0,,4,0,chứa chữ số
+person_co_so,PER_0707,Person,Amaj7ing,AMAJ7ING,3,3,chứa chữ số
+person_co_so,PER_0845,Person,39 Kingdom,,3,1,chứa chữ số
+person_co_so,PER_1352,Person,BILLY100,,3,8,chứa chữ số
+person_co_so,PER_1419,Person,Justin Tech9,,3,2,chứa chữ số
+person_co_so,PER_1781,Person,1HIT,,3,1,chứa chữ số
+person_co_so,PER_1805,Person,2Can,2CAN,3,4,chứa chữ số
+person_co_so,PER_2004,Person,Nguyễn Ánh 9,NGUYỄN ÁNH 9,3,1,chứa chữ số
+person_co_so,PER_3073,Person,ANDU25,,3,2,chứa chữ số
+person_co_so,PER_0492,Person,H2K,,2,1,chứa chữ số
+person_co_so,PER_0907,Person,TG9X Thái Dương,,2,1,chứa chữ số
+person_co_so,PER_1101,Person,H2O,,2,3,chứa chữ số
+person_co_so,PER_1325,Person,HIGH4,,2,4,chứa chữ số
+person_co_so,PER_1415,Person,Mb3at,MB3AT,2,1,chứa chữ số
+person_co_so,PER_1842,Person,TayF3rd,,2,3,chứa chữ số
+person_co_so,PER_1855,Person,Tulic.20,,2,2,chứa chữ số
+person_co_so,PER_2629,Person,V142,,2,2,chứa chữ số
+person_co_so,PER_3057,Person,Al403,AL403,2,1,chứa chữ số
+person_co_so,PER_3188,Person,9Jik,9jik,2,1,chứa chữ số
+person_co_so,PER_3484,Person,Ngọc Anh 3A,,2,2,chứa chữ số
+person_co_so,PER_0376,Person,Am1r,,1,2,chứa chữ số
+person_co_so,PER_0737,Person,CHICHA22,,1,0,chứa chữ số
+person_co_so,PER_0757,Person,RABE13,,1,3,chứa chữ số
+person_co_so,PER_1191,Person,2ni,,1,1,chứa chữ số
+person_co_so,PER_1192,Person,9FIRE,,1,0,chứa chữ số
+person_co_so,PER_1479,Person,808 Lab,,1,0,chứa chữ số
+person_co_so,PER_1559,Person,Bao 4B,,1,0,chứa chữ số
+person_co_so,PER_1688,Person,22han,,1,0,chứa chữ số
+person_co_so,PER_1746,Person,THIỆN NỮ 2,,1,2,chứa chữ số
+person_co_so,PER_1775,Person,GruGru56,,1,1,chứa chữ số
+person_co_so,PER_1785,Person,Leomusic.1,,1,2,chứa chữ số
+person_co_so,PER_1936,Person,NHẠC QUỐC KHÁNH 2,,1,3,chứa chữ số
+person_co_so,PER_1985,Person,WILL 365,,1,1,chứa chữ số
+person_co_so,PER_2104,Person,Tuấn Quang-H20,,1,2,chứa chữ số
+person_co_so,PER_2117,Person,Son 2M,,1,3,chứa chữ số
+person_co_so,PER_2215,Person,T00N,,1,1,chứa chữ số
+person_co_so,PER_2266,Person,95R-LAB,,1,1,chứa chữ số
+person_co_so,PER_2295,Person,Paul Fiction 1909b,,1,4,chứa chữ số
+person_co_so,PER_2333,Person,H 6A6Y9ANG,,1,3,chứa chữ số
+person_co_so,PER_2345,Person,24K.Choi,,1,1,chứa chữ số
+person_co_so,PER_2353,Person,84GRND,,1,0,chứa chữ số
+person_co_so,PER_2469,Person,DJ Leek54,,1,1,chứa chữ số
+person_co_so,PER_2542,Person,20CARATS,,1,1,chứa chữ số
+person_co_so,PER_2601,Person,PD7,,1,2,chứa chữ số
+person_co_so,PER_2648,Person,080beatz,,1,1,chứa chữ số
+person_co_so,PER_2712,Person,CHANGTRAITHANG1,,1,1,chứa chữ số
+person_co_so,PER_2724,Person,20six,,1,1,chứa chữ số
+person_co_so,PER_2727,Person,PALE1080,,1,1,chứa chữ số
+person_co_so,PER_3001,Person,CLOUD5,,1,1,chứa chữ số
+person_co_so,PER_3013,Person,RNB CM1X CỰC CHILL,,1,1,chứa chữ số
+person_co_so,PER_3050,Person,2T,,1,2,chứa chữ số
+person_co_so,PER_3223,Person,4W,,1,1,chứa chữ số
+person_co_so,PER_3321,Person,S.T365,,1,0,chứa chữ số
+person_co_so,PER_3358,Person,Tổ 114,,1,1,chứa chữ số
+person_co_so,PER_3374,Person,NA$TY5,,1,1,chứa chữ số
+person_co_so,PER_3726,Person,FLIP_00,,1,1,chứa chữ số
+person_co_so,PER_3747,Person,PHAT55,,1,0,chứa chữ số
+person_co_so,PER_3999,Person,1977 Vlog,,1,1,chứa chữ số
+person_co_so,PER_4029,Person,Rokh3at,,1,2,chứa chữ số
+person_co_so,PER_4057,Person,Dfoxie37,,1,3,chứa chữ số
+person_co_so,PER_4180,Person,P3ace,,1,3,chứa chữ số
+person_co_so,PER_4187,Person,Hồng Dương M4U,,1,1,chứa chữ số
+person_co_so,PER_4190,Person,SGO48,,1,2,chứa chữ số
+person_co_so,PER_4198,Person,365,,1,1,chứa chữ số
+person_gop_nhieu_nguoi,PER_4336,Person,W/N,,2,6,có dấu nối nhiều người
+person_lan_vai_tro,PER_0252,Person,DJ MIE,DJ Mie | Dj Mie,49,45,chứa 'DJ'
+person_lan_vai_tro,PER_2108,Person,Hoàng Rapper,HOÀNG RAPPER,9,9,chứa 'Rapper'
+person_lan_vai_tro,PER_2100,Person,DJ Việt Anh,Dj Việt Anh,6,8,chứa 'DJ'
+person_lan_vai_tro,PER_4291,Person,MC 12,MC12,6,6,chứa 'MC'
+person_lan_vai_tro,PER_3181,Person,DJ Mr. Feel,DJ Mr Feel,5,6,chứa 'DJ'
+person_lan_vai_tro,PER_1749,Person,Dj Future,DJ Future,4,5,chứa 'Dj'
+person_lan_vai_tro,PER_1802,Person,DJ Feliks,DJ FELIKS,4,21,chứa 'DJ'
+person_lan_vai_tro,PER_2460,Person,DJ KIM BÌNH,,3,4,chứa 'DJ'
+person_lan_vai_tro,PER_2464,Person,DJ Daniel Mastro,,3,5,chứa 'DJ'
+person_lan_vai_tro,PER_3599,Person,Drum,,3,7,chứa 'Drum'
+person_lan_vai_tro,PER_0356,Person,DJ M-A,,2,1,chứa 'DJ'
+person_lan_vai_tro,PER_2320,Person,MC ILL,,2,5,chứa 'MC'
+person_lan_vai_tro,PER_2461,Person,DJ Kenz,DJ KENZ,2,3,chứa 'DJ'
+person_lan_vai_tro,PER_2811,Person,DJ Thái Anthony,,2,2,chứa 'DJ'
+person_lan_vai_tro,PER_3698,Person,DJ GOKOO,,2,1,chứa 'DJ'
+person_lan_vai_tro,PER_3975,Person,NSND Thanh Hoa,,2,4,chứa 'NSND'
+person_lan_vai_tro,PER_4025,Person,Mc Tairo Mk,,2,5,chứa 'Mc'
+person_lan_vai_tro,PER_4149,Person,MC Wiz,,2,3,chứa 'MC'
+person_lan_vai_tro,PER_0361,Person,DJ Minh Anh,,1,1,chứa 'DJ'
+person_lan_vai_tro,PER_0941,Person,DJ Kim Chol,DJ KIM CHOL,1,0,chứa 'DJ'
+person_lan_vai_tro,PER_0947,Person,DJ ĐẠI MÈO,,1,2,chứa 'DJ'
+person_lan_vai_tro,PER_1328,Person,DJ BASSIK,,1,2,chứa 'DJ'
+person_lan_vai_tro,PER_2032,Person,DJ MIE Vi,,1,1,chứa 'DJ'
+person_lan_vai_tro,PER_2065,Person,DJ NIMBIA,,1,2,chứa 'DJ'
+person_lan_vai_tro,PER_2362,Person,DJ TUẤN SU,,1,3,chứa 'DJ'
+person_lan_vai_tro,PER_2458,Person,DJ Zuka,,1,2,chứa 'DJ'
+person_lan_vai_tro,PER_2465,Person,DJ Jet,,1,3,chứa 'DJ'
+person_lan_vai_tro,PER_2469,Person,DJ Leek54,,1,1,chứa 'DJ'
+person_lan_vai_tro,PER_2703,Person,MC Ngọc Hoa,,1,0,chứa 'MC'
+person_lan_vai_tro,PER_2803,Person,DJ THÁI ATHONY,,1,2,chứa 'DJ'
+person_lan_vai_tro,PER_2807,Person,DJ N Boro,,1,2,chứa 'DJ'
+person_lan_vai_tro,PER_2816,Person,DJ Valhein,,1,1,chứa 'DJ'
+person_lan_vai_tro,PER_2820,Person,DJ Eric T-J,,1,0,chứa 'DJ'
+person_lan_vai_tro,PER_3138,Person,MC Thùy Linh,,1,0,chứa 'MC'
+person_lan_vai_tro,PER_3160,Person,DJ Dương K,,1,2,chứa 'DJ'
+person_lan_vai_tro,PER_3989,Person,DJ AM,,1,1,chứa 'DJ'
+person_lan_vai_tro,PER_4036,Person,DJ Darkko,,1,1,chứa 'DJ'
+person_lan_vai_tro,PER_4085,Person,DJ DISAMPRAS,,1,3,chứa 'DJ'
+person_lan_vai_tro,PER_4178,Person,NSND Lê Dung,,1,1,chứa 'NSND'
+person_lan_vai_tro,PER_4235,Person,NSND Hữu Quốc,,1,7,chứa 'NSND'
+person_lan_vai_tro,PER_4236,Person,NSND Thu Huyền,,1,2,chứa 'NSND'
+person_lan_vai_tro,PER_4333,Person,Sol'bass,,1,1,chứa 'bass'
+person_lan_vai_tro,PER_0308,Person,DJ Trang Moon,,0,0,chứa 'DJ'
+person_ten_dai,PER_3291,Person,Bùi Hoàng Nam Đức Anh,,3,2,5 từ
+person_ten_dai,PER_1598,Person,Hoàng Hải Thần Tượng Bolero,,1,0,5 từ
+person_ten_dai,PER_4280,Person,Ngồi Chờ Trong Vấn Vương,,1,0,5 từ
+person_trung_ten_bai,PER_4262,Person,Du Uyên,,2,5,tên trùng một Song
+song_khong_nguoi_hat,SON_1216,Song,Chẳng Quan Tâm,,2,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_2294,Song,DẠ VŨ,,2,3,Song không có PERFORMED
+song_khong_nguoi_hat,SON_2995,Song,NỬA SỰ THẬT TALK,,2,2,Song không có PERFORMED
+song_khong_nguoi_hat,SON_5849,Song,Giá Như Mình Đã Bao Dung,,2,3,Song không có PERFORMED
+song_khong_nguoi_hat,SON_5851,Song,Đi Về Phía Thinh Lặng,,2,3,Song không có PERFORMED
+song_khong_nguoi_hat,SON_6721,Song,Sao Mà Đỡ Được,,2,2,Song không có PERFORMED
+song_khong_nguoi_hat,SON_0152,Song,BÊN ẤY EM CÓ AI RỒI,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_0161,Song,THIỆP HỒNG SAI TÊN,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_0164,Song,EM THUA CÔ TA,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_0206,Song,Tập sống nâng niu những gì,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_0212,Song,Một khi nỗi nhớ em biến thành giải ngân hà,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_0217,Song,Nửa thế giới em dành cho một ai đó thôi,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_0234,Song,Bạn Tình Ơi,,1,2,Song không có PERFORMED
+song_khong_nguoi_hat,SON_0240,Song,HẠ CÒN VƯƠNG NẮNG,,1,2,Song không có PERFORMED
+song_khong_nguoi_hat,SON_0253,Song,Hoa Hải Đường,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_0256,Song,Tết Nhà Mình,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_0280,Song,XUÂN NÀY CON VỀ MẸ Ở ĐÂU,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_0288,Song,SÓNG GIÓ,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_0294,Song,GIÓ VẪN HÁT,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_0592,Song,BUỘC GIÓ,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_0694,Song,Mần Rể Miền Tây,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_0695,Song,Người yêu Thơ,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_0980,Song,Tuyết Yêu Thương,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_1217,Song,"EM ỔN KHÔNG 你, 好不好",,1,2,Song không có PERFORMED
+song_khong_nguoi_hat,SON_1643,Song,CHỈ MUỐN SUỐT ĐỜI BÊN EM,,1,2,Song không có PERFORMED
+song_khong_nguoi_hat,SON_2027,Song,Gửi Em Xa Nhớ,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_2155,Song,Xa Anh Chầm Chậm Thôi,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_2489,Song,Anh Đã Sai Vì Anh Tin,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_2529,Song,RẠNG NGỜI VẺ ĐẸP KHÔNG TUỔI,,1,2,Song không có PERFORMED
+song_khong_nguoi_hat,SON_2747,Song,"Anh Nợ Em, Ta Thương Một Người",,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_2764,Song,ĐỒNG DIỄN NHẠC CỤ DÂN TỘC,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_3041,Song,Không giới hạn,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_3115,Song,"THẤY TẾT LỚN, MỪNG TẾT LỚN 2021",,1,2,Song không có PERFORMED
+song_khong_nguoi_hat,SON_3174,Song,GẤP ĐÔI NUÔNG CHIỀU,,1,2,Song không có PERFORMED
+song_khong_nguoi_hat,SON_4029,Song,Magazine,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_4086,Song,Mình Bước Qua Đời Nhau,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_4568,Song,Simple Cypher,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_4830,Song,Kẻ Say Tình,,1,2,Song không có PERFORMED
+song_khong_nguoi_hat,SON_5157,Song,NGẢ NGHIÊNG,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_5181,Song,SAO HIỂU ĐƯỢC,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_5188,Song,Trời Đánh,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_5191,Song,MỘT NGÀY CHẲNG NẮNG,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_5197,Song,Rể Quý,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_5205,Song,Ngày Chưa Giông Bão,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_5207,Song,"2 3 con mực, Anh Yêu Em Cực",,1,2,Song không có PERFORMED
+song_khong_nguoi_hat,SON_5210,Song,CÓ ĐÂU AI NGỜ,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_5211,Song,Yêu Để Chia Tay,,1,2,Song không có PERFORMED
+song_khong_nguoi_hat,SON_5212,Song,Suy Tư,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_5222,Song,TỰA ĐẦU VÀO VIBE,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_5226,Song,EM LÀ HOÀNG HÔN,,1,2,Song không có PERFORMED
+song_khong_nguoi_hat,SON_5227,Song,Say Đắm Trong Lần Đầu,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_5250,Song,CÔ ĐƠN VẮT VAI,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_5257,Song,TẠM BIỆT NHÉ THANH XUÂN,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_5393,Song,Mời Anh Vào Team Em,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_5395,Song,Go Everywhere See Everything Cùng Hội Bạn Thân Siêu Hot,,1,2,Song không có PERFORMED
+song_khong_nguoi_hat,SON_5397,Song,Tình Hồng Như Mơ,,1,2,Song không có PERFORMED
+song_khong_nguoi_hat,SON_5398,Song,Ánh Trăng Nói Hộ Lòng Tôi,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_5454,Song,VÌ MỘT NGÀY MAI XANH HƠN,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_5465,Song,Bài Ca Không Quên,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_5571,Song,Say You Do,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_5848,Song,Đừng Sống Mãi Trong Bài Hát Của Anh,,1,3,Song không có PERFORMED
+song_khong_nguoi_hat,SON_5902,Song,Silent Evening,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_5903,Song,Peaceful Breath,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_5904,Song,Slow Down For A Moment,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_6114,Song,Em Không Sai,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_6117,Song,CHẲNG AI CÓ THỂ NGỜ,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_6494,Song,Thu Phương,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_6531,Song,storm version,,1,4,Song không có PERFORMED
+song_khong_nguoi_hat,SON_6543,Song,Lê Phan Việt Hà,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_6546,Song,NGUYỄN ĐÌNH TUẤN DŨNG,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_7344,Song,BITE ME,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_7424,Song,Mùa Thu Khép Lại,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_7425,Song,Màu Của Lãng Quên,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_7426,Song,Hoa Có Vàng Nơi Ấy,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_7428,Song,Dòng Sông Lơ Đãng,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_7429,Song,Đánh Rơi Bên Bờ,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_7589,Song,Không Dám Nói Chia Tay,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_8038,Song,Welcome To My Fun World,,1,3,Song không có PERFORMED
+song_khong_nguoi_hat,SON_8090,Song,Em Nhớ Anh,,1,2,Song không có PERFORMED
+song_khong_nguoi_hat,SON_8091,Song,Em Yêu Anh (I Love You),,1,2,Song không có PERFORMED
+song_khong_nguoi_hat,SON_8092,Song,Giả Vờ Nhưng Em Yêu Anh,,1,2,Song không có PERFORMED
+song_khong_nguoi_hat,SON_8093,Song,Không Gian Vắng,,1,2,Song không có PERFORMED
+song_khong_nguoi_hat,SON_8143,Song,Chè Đậu Đỏ Đê,,1,3,Song không có PERFORMED
+song_khong_nguoi_hat,SON_8150,Song,Một Con Ngu Tin Lời Hứa Của Một Thằng Điên,,1,3,Song không có PERFORMED
+song_khong_nguoi_hat,SON_8171,Song,Thạch Sanh,,1,3,Song không có PERFORMED
+song_khong_nguoi_hat,SON_8210,Song,Chiều tím,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_8274,Song,Chỉ Còn Trong Mơ,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_8275,Song,Chờ Định Mệnh Mỉm Cười,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_8276,Song,Gửi Con Tương Lai,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_8278,Song,Hát Cho Màn Đêm,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_8279,Song,Mảnh Ghép Đã Vỡ,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_8280,Song,Mẹ,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_8282,Song,Nhìn Em Từ Phía Sau,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_8283,Song,Nỗi Đau Xót Xa,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_8284,Song,Phải Không Em?,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_8344,Song,Hmmm,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_8556,Song,Papa Siêu Nhân,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_8636,Song,SGN-TPE EP Thật Âu Mỹ mà Việt Nam Đài Loan,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_8649,Song,Thôi Em Đừng Lo,,1,1,Song không có PERFORMED
+song_khong_nguoi_hat,SON_8662,Song,CASKYANE cùng NS Dương Khắc Linh !!!,,1,2,Song không có PERFORMED
+song_khong_nguoi_hat,SON_8709,Song,Cùng Bay Nào,,1,2,Song không có PERFORMED
+song_khong_nguoi_hat,SON_8727,Song,Tình Yêu Tôi Hát,,1,3,Song không có PERFORMED
+song_khong_nguoi_hat,SON_8747,Song,GWENCHANA,,1,2,Song không có PERFORMED
+song_khong_nguoi_hat,SON_8770,Song,Tháng 7 Của Anh,,1,2,Song không có PERFORMED
+song_khong_nguoi_hat,SON_8812,Song,Thế Giới Ảo Tình Yêu Thật,,1,2,Song không có PERFORMED
+song_khong_nguoi_hat,SON_8830,Song,CƠN GIÓ VỀ,,1,1,Song không có PERFORMED
+song_trung_ten_nghe_si,SON_0227,Song,DuUyên,,1,0,tên bài trùng tên Person/Group
+ten_bai_co_nhieu,SON_3268,Song,Tập Cô Đơn,,2,1,chứa 'Tập'
+ten_bai_co_nhieu,SON_6793,Song,Đi Tập Gym,ĐI TẬP GYM,2,4,chứa 'Tập'
+ten_bai_co_nhieu,SON_6871,Song,Dưới Ánh Đèn Sân Khấu,dưới ánh đèn sân khấu,2,7,chứa 'Sân Khấu'
+ten_bai_co_nhieu,SON_7382,Song,Liên Khúc Áo Mùa Đông x Trở Về,,2,5,chứa 'Liên Khúc'
+ten_bai_co_nhieu,SON_8711,Song,Da Money Team (Ánh Đèn Sân Khấu 2),,2,4,chứa 'Sân Khấu'
+ten_bai_co_nhieu,SON_0127,Song,ĐI ĐỂ TRỞ VỀ MASHUP 2020,,1,2,chứa 'MASHUP'
+ten_bai_co_nhieu,SON_0206,Song,Tập sống nâng niu những gì,,1,1,chứa 'Tập'
+ten_bai_co_nhieu,SON_2283,Song,Anh Đã Loop Trong Niềm Đau Này,,1,6,chứa 'Loop'
+ten_bai_co_nhieu,SON_2749,Song,Ốc Mượn Hồn OST: Anh Nợ Em,,1,2,chứa 'OST'
+ten_bai_co_nhieu,SON_3772,Song,Bí mật của hạnh phúc mashup Mặt Mộc,,1,2,chứa 'mashup'
+ten_bai_co_nhieu,SON_3774,Song,Tiểu Thuyết Tình Yêu mashup Ánh Trăng Tình Ái,,1,2,chứa 'mashup'
+ten_bai_co_nhieu,SON_4715,Song,FULL HOUSE,,1,2,chứa 'FULL'
+ten_bai_co_nhieu,SON_5835,Song,"Tập Gym, Tập Võ, Cắt Tóc",,1,0,chứa 'Tập'
+ten_bai_co_nhieu,SON_5840,Song,MỘT VÒNG VIỆT NAM MASHUP ĐI GIỮA TRỜI RỰC RỠ,,1,2,chứa 'MASHUP'
+ten_bai_co_nhieu,SON_6196,Song,LOOP,,1,4,chứa 'LOOP'
+ten_bai_co_nhieu,SON_6945,Song,yêu yêu yêu’ mashup,,1,4,chứa 'mashup'
+ten_bai_co_nhieu,SON_7117,Song,Mashup: Có Bao Lần - Sau Lời Từ Khước,,1,5,chứa 'Mashup'
+ten_bai_co_nhieu,SON_7457,Song,Liên Khúc: Tình Khúc Vàng - Một Thời Thanh Xuân,,1,2,chứa 'Liên Khúc'
+ten_bai_co_nhieu,SON_7458,Song,Liên Khúc: Tuổi Học Trò - Thương Ca Mùa Hạ,,1,4,chứa 'Liên Khúc'
+ten_bai_co_nhieu,SON_7459,Song,Liên Khúc: Về Đi Em - Khúc Hát Sông Quê,,1,3,chứa 'Liên Khúc'
+ten_bai_co_nhieu,SON_7472,Song,Liên Khúc: Gái Xuân - Chiều Xuân,,1,2,chứa 'Liên Khúc'
+ten_bai_co_nhieu,SON_7473,Song,Liên Khúc: Đón Tết - Xuân Ca,,1,6,chứa 'Liên Khúc'
+ten_bai_co_nhieu,SON_7474,Song,Mashup Răng Khôn x Có Hẹn Với Thanh Xuân,,1,2,chứa 'Mashup'
+ten_bai_co_nhieu,SON_7508,Song,Full silver moon,,1,2,chứa 'Full'
+ten_bai_co_nhieu,SON_7901,Song,Liên Khúc: Yêu Là Cưới,,1,7,chứa 'Liên Khúc'
+ten_bai_co_nhieu,SON_7903,Song,Mashup Như Hoa Mùa Xuân - Nàng Xuân,,1,6,chứa 'Mashup'
+ten_bai_co_nhieu,SON_7909,Song,Liên khúc: Hoa Cỏ Thì Thầm Mùa Xuân,,1,2,chứa 'Liên khúc'
+ten_bai_co_nhieu,SON_7913,Song,Liên khúc: Việt Nam / Quê Hương Tôi,,1,2,chứa 'Liên khúc'
+ten_bai_co_nhieu,SON_8297,Song,"Mashup Thank You, Việt Nam Tử Tế",,1,2,chứa 'Mashup'
+ten_bai_co_nhieu,SON_8313,Song,Mashup Em Trong Mắt Tôi/Nồng Nàn Hà Nội,,1,4,chứa 'Mashup'
+ten_bai_co_nhieu,SON_8326,Song,Liên Khúc: Câu Chuyện Đầu Năm,,1,3,chứa 'Liên Khúc'
+ten_bai_co_nhieu,SON_8327,Song,Liên Khúc: Xuân Tây Bắc,,1,3,chứa 'Liên Khúc'
+ten_bai_co_nhieu,SON_8328,Song,Liên Khúc: Nụ Hôn Mùa Xuân,,1,2,chứa 'Liên Khúc'
+ten_bai_co_nhieu,SON_8333,Song,Liên Khúc: Tết Trong Tâm Hồn - Tết Nguyên Đán,,1,9,chứa 'Liên Khúc'
+ten_bai_co_nhieu,SON_8349,Song,Lasting Legacy - COP28 Official Anthem,,1,14,chứa 'Official'
+ten_bai_co_nhieu,SON_8478,Song,Anh Thấy / Màu Đỏ - Mashup,,1,3,chứa 'Mashup'
+ten_bai_co_nhieu,SON_8487,Song,Ba Kể Con Nghe x Dưới Ánh Đèn Sân Khấu,,1,4,chứa 'Sân Khấu'
+ten_bai_co_nhieu,SON_8493,Song,Mashup Phố Xa x Biết Yêu,,1,5,chứa 'Mashup'
+ten_bai_co_nhieu,SON_8494,Song,Mashup Khúc Giao Mùa x Năm Qua Đã Làm Gì,,1,7,chứa 'Mashup'
+ten_bai_co_nhieu,SON_8498,Song,Mashup Thằng Cuội x Chiếc Đèn Ông Sao,,1,4,chứa 'Mashup'
+ten_bai_co_nhieu,SON_8502,Song,Mashup Giã từ dĩ vãng x Bỗng dưng muốn khóc,,1,3,chứa 'Mashup'
+ten_bai_co_nhieu,SON_8505,Song,[Mashup] Nhớ Mãi Chuyến Đi Này x Miền An Nhiên,,1,4,chứa 'Mashup'
+ten_bai_co_nhieu,SON_8570,Song,Mashup Chạm Tới Mặt Trời x Say,,1,2,chứa 'Mashup'
+ten_bai_co_nhieu,SON_8674,Song,Mashup Thuỷ Triều (2.0) x Ánh Mắt Biết Cười,,1,3,chứa 'Mashup'
+ten_bai_la_show_tag,SON_6671,Song,Chuyện Rap Việt: G.Ducky,,1,1,chứa 'Rap Việt'
+ten_bai_la_show_tag,SON_8178,Song,KOR Freeverse,,1,4,chứa 'KOR'
+ten_bai_lan_nghe_si,SON_0376,Song,Stay Home with LBH,,3,6,chứa 'with'
+ten_bai_lan_nghe_si,SON_2600,Song,Sandwich & Story,,2,4,chứa '&'
+ten_bai_lan_nghe_si,SON_5956,Song,Falling With You,,2,8,chứa 'With'
+ten_bai_lan_nghe_si,SON_6922,Song,Lời Tỏ Tình Dễ Thương 1&2,,2,4,chứa '&'
+ten_bai_lan_nghe_si,SON_7382,Song,Liên Khúc Áo Mùa Đông x Trở Về,,2,5,chứa 'x'
+ten_bai_lan_nghe_si,SON_8470,Song,GENE x CÓ KHÔNG GIỮ MẤT ĐỪNG TÌM,,2,7,chứa 'x'
+ten_bai_lan_nghe_si,SON_8482,Song,Đường Xa Ướt Mưa x Đừng Qua Lối Đó,,2,7,chứa 'x'
+ten_bai_lan_nghe_si,SON_8697,Song,[ NGƯỜI - NGỰA ],,2,3,chứa '-'
+ten_bai_lan_nghe_si,ALB_0132,Album,Quang Hùng MasterD x 1 9 6 7 (Remix),,1,12,chứa 'x'
+ten_bai_lan_nghe_si,ALB_0133,Album,Quang Hùng MasterD x 1 9 6 7 Lofi,,1,15,chứa 'x'
+ten_bai_lan_nghe_si,ALB_0175,Album,Điện Tử Thẻ & Truyện Tranh,,1,8,chứa '&'
+ten_bai_lan_nghe_si,ALB_0207,Album,Tùng Dương - Chapter 4,,1,13,chứa '-'
+ten_bai_lan_nghe_si,SON_0371,Song,CÔ GÁI TRUNG HOA & DẰM TRONG TIM,,1,1,chứa '&'
+ten_bai_lan_nghe_si,SON_0787,Song,mpg with. Sergey Nedzvetskiy,,1,4,chứa 'with'
+ten_bai_lan_nghe_si,SON_0891,Song,VÌ EM YÊU ANH & CHUYỆN NHƯ CHƯA BẮT ĐẦU,,1,1,chứa '&'
+ten_bai_lan_nghe_si,SON_0892,Song,CHIỀU THU HỌA BÓNG NÀNG & CHÂN MÂY,,1,2,chứa '&'
+ten_bai_lan_nghe_si,SON_1074,Song,Mars & Venus,,1,1,chứa '&'
+ten_bai_lan_nghe_si,SON_1181,Song,H & H,,1,1,chứa '&'
+ten_bai_lan_nghe_si,SON_1206,Song,Suit & Tie,,1,2,chứa '&'
+ten_bai_lan_nghe_si,SON_1550,Song,Xin Anh Đừng & Trách Ai Bây Giờ,,1,1,chứa '&'
+ten_bai_lan_nghe_si,SON_1709,Song,Come with me,,1,1,chứa 'with'
+ten_bai_lan_nghe_si,SON_2170,Song,Tìm Lại Người Xưa & Làm Người Lạ Đi Anh,,1,1,chứa '&'
+ten_bai_lan_nghe_si,SON_2176,Song,Đời Còn Cô Đơn & Tìm Lại Người Yêu,,1,0,chứa '&'
+ten_bai_lan_nghe_si,SON_2177,Song,Tìm Lại Người Yêu & Buồn Trong Nỗi Nhớ,,1,2,chứa '&'
+ten_bai_lan_nghe_si,SON_2204,Song,Chỉ Hai Đứa Mình Thôi Nhé & Lẻ Bóng,,1,2,chứa '&'
+ten_bai_lan_nghe_si,SON_3569,Song,Thế Giới Không Có Anh & Big Girl Don't Cry,,1,4,chứa '&'
+ten_bai_lan_nghe_si,SON_3632,Song,Comme Toi & Bang Bang,,1,1,chứa '&'
+ten_bai_lan_nghe_si,SON_3638,Song,Hãy Thứ Tha Cho Em & Xin Hãy Thứ Tha,,1,1,chứa '&'
+ten_bai_lan_nghe_si,SON_3640,Song,Trống Vắng & Trả Nợ Tình Xa,,1,1,chứa '&'
+ten_bai_lan_nghe_si,SON_3645,Song,Khi Mình Yêu & Những Lời Mê Hoặc,,1,1,chứa '&'
+ten_bai_lan_nghe_si,SON_3647,Song,Mascara & Lặng Thầm Một Tình Yêu,,1,1,chứa '&'
+ten_bai_lan_nghe_si,SON_3648,Song,Cự Tuyệt & Chạy Theo Lý Trí,,1,1,chứa '&'
+ten_bai_lan_nghe_si,SON_3649,Song,Thêm Một Lần Vỡ Tan & Anh Đừng Quên,,1,1,chứa '&'
+ten_bai_lan_nghe_si,SON_3650,Song,Chưa Bao Giờ & Chợt Nhớ Về Anh,,1,1,chứa '&'
+ten_bai_lan_nghe_si,SON_3651,Song,Em Muốn Anh Đưa Em Về & Say Goodbye,,1,1,chứa '&'
+ten_bai_lan_nghe_si,SON_4397,Song,"Muộn Rồi Mà Sao Còn"" & ""Yêu 5",,1,3,chứa '&'
+ten_bai_lan_nghe_si,SON_4544,Song,Fresh & Raw 13,,1,1,chứa '&'
+ten_bai_lan_nghe_si,SON_4586,Song,CHILL WITH ME,,1,3,chứa 'WITH'
+ten_bai_lan_nghe_si,SON_4658,Song,Xin Lỗi & Cảm Ơn,,1,1,chứa '&'
+ten_bai_lan_nghe_si,SON_4762,Song,Cải Lương & DJ quốc tế WuKong,,1,1,chứa '&'
+ten_bai_lan_nghe_si,SON_4947,Song,First Fancall with Myeochu,,1,3,chứa 'with'
+ten_bai_lan_nghe_si,SON_5280,Song,FAY & CHUNG THANH DUY,,1,0,chứa '&'
+ten_bai_lan_nghe_si,SON_5281,Song,V.O.X & VŨ PHỤNG TIÊN,,1,0,chứa '&'
+ten_bai_lan_nghe_si,SON_5286,Song,ALICE & ROKI,,1,5,chứa '&'
+ten_bai_lan_nghe_si,SON_5287,Song,Freaky & Tùa,,1,1,chứa '&'
+ten_bai_lan_nghe_si,SON_5291,Song,D.BLUE & ĐẠT G,,1,0,chứa '&'
+ten_bai_lan_nghe_si,SON_5299,Song,TÙA & FREAKY,,1,0,chứa '&'
+ten_bai_lan_nghe_si,SON_5419,Song,See Sing & Share,,1,1,chứa '&'
+ten_bai_lan_nghe_si,SON_5681,Song,THỊ TRẤN & THÀNH PHỐ,,1,5,chứa '&'
+ten_bai_lan_nghe_si,SON_5713,Song,DANCE WITH ME,,1,1,chứa 'WITH'
+ten_bai_lan_nghe_si,SON_5735,Song,LỄ ĐƯỜNG của Hải Long & Salim,,1,1,chứa '&'
+ten_bai_lan_nghe_si,SON_5763,Song,PHỐ KHÔNG MÙA & CHƯA BAO GIỜ,,1,1,chứa '&'
+ten_bai_lan_nghe_si,SON_5780,Song,CÂY BÀNG & ĐÔI BÀN TAY,,1,1,chứa '&'
+ten_bai_lan_nghe_si,SON_5782,Song,MONG ƯỚC BÌNH THƯỜNG & VIỆT NAM TỬ TẾ,,1,2,chứa '&'
+ten_bai_lan_nghe_si,SON_5788,Song,PHỐ KHÔNG MÙA & THÀNH THỊ,,1,2,chứa '&'
+ten_bai_lan_nghe_si,SON_6170,Song,When You Bellieve & Never Enough,,1,2,chứa '&'
+ten_bai_lan_nghe_si,SON_6353,Song,ĐẾN GIỜ CƠM & CHA GIÀ RỒI ĐÚNG KHÔNG,,1,1,chứa '&'
+ten_bai_lan_nghe_si,SON_6445,Song,Hoa Cỏ Mùa Xuân & Thì Thầm Mùa Xuân,,1,3,chứa '&'
+ten_bai_lan_nghe_si,SON_6564,Song,Zillionaire Doe & Montana 700,,1,1,chứa '&'
+ten_bai_lan_nghe_si,SON_6652,Song,CÔ GÁI M52 & ANH THANH NIÊN,,1,1,chứa '&'
+ten_bai_lan_nghe_si,SON_6653,Song,CÔ BÉ MÙA ĐÔNG & THƯƠNG THƯƠNG THƯƠNG,,1,1,chứa '&'
+ten_bai_lan_nghe_si,SON_6655,Song,HƠN 1000 NĂM SAU & CHIA CÁCH BÌNH YÊN,,1,1,chứa '&'
+ten_bai_lan_nghe_si,SON_6950,Song,PHÓNG ĐỔ TIM EM - TÒ TE TÍ,,1,1,chứa '-'
+ten_bai_lan_nghe_si,SON_6956,Song,MẤT KẾT NỐI & TRÀN BỘ NHỚ,,1,7,chứa '&'
+ten_bai_lan_nghe_si,SON_6958,Song,CHO EM MỘT NGÀY & BÀI CA ĐÊM,,1,4,chứa '&'
+ten_bai_lan_nghe_si,SON_6959,Song,TỪNG LÀ & SAU LỜI TỪ KHƯỚC,,1,2,chứa '&'
+ten_bai_lan_nghe_si,SON_6965,Song,MƯA ĐÁ - THUỶ TRIỀU,,1,1,chứa '-'
+ten_bai_lan_nghe_si,SON_7012,Song,Trọc - Metaplay Deephouse,,1,2,chứa '-'
+ten_bai_lan_nghe_si,SON_7117,Song,Mashup: Có Bao Lần - Sau Lời Từ Khước,,1,5,chứa '-'
+ten_bai_lan_nghe_si,SON_7136,Song,Đại Minh Tinh & Martini,,1,2,chứa '&'
+ten_bai_lan_nghe_si,SON_7139,Song,Chân Ái & Tình Nhân Ơi,,1,3,chứa '&'
+ten_bai_lan_nghe_si,SON_7140,Song,Thiêu Thân & Gặp Lại Năm Ta 60,,1,3,chứa '&'
+ten_bai_lan_nghe_si,SON_7142,Song,Mộng Chiều Xuân & Đêm Đô Thị & Đón Xuân,,1,7,chứa '&'
+ten_bai_lan_nghe_si,SON_7195,Song,Cơn Lốc Vô Cực - GrabUnlimited,,1,4,chứa '-'
+ten_bai_lan_nghe_si,SON_7197,Song,happy! - outro,,1,3,chứa '-'
+ten_bai_lan_nghe_si,SON_7447,Song,Sợ & I Don't Believe,,1,4,chứa '&'
+ten_bai_lan_nghe_si,SON_7457,Song,Liên Khúc: Tình Khúc Vàng - Một Thời Thanh Xuân,,1,2,chứa '-'
+ten_bai_lan_nghe_si,SON_7458,Song,Liên Khúc: Tuổi Học Trò - Thương Ca Mùa Hạ,,1,4,chứa '-'
+ten_bai_lan_nghe_si,SON_7459,Song,Liên Khúc: Về Đi Em - Khúc Hát Sông Quê,,1,3,chứa '-'
+ten_bai_lan_nghe_si,SON_7463,Song,Thanh Xuân - Đừng Ngại Ngùng,,1,4,chứa '-'
+ten_bai_lan_nghe_si,SON_7472,Song,Liên Khúc: Gái Xuân - Chiều Xuân,,1,2,chứa '-'
+ten_bai_lan_nghe_si,SON_7473,Song,Liên Khúc: Đón Tết - Xuân Ca,,1,6,chứa '-'
+ten_bai_lan_nghe_si,SON_7474,Song,Mashup Răng Khôn x Có Hẹn Với Thanh Xuân,,1,2,chứa 'x'
+ten_bai_lan_nghe_si,SON_7521,Song,Vũ Nông Dân - Tết Lên Hết!,,1,3,chứa '-'
+ten_bai_lan_nghe_si,SON_7659,Song,Thua Cuộc - Intro,,1,4,chứa '-'
+ten_bai_lan_nghe_si,SON_7664,Song,Finale 3 - Outro,,1,4,chứa '-'
+ten_bai_lan_nghe_si,SON_7673,Song,Bonus Track. Roll Call - Intro,,1,3,chứa '-'
+ten_bai_lan_nghe_si,SON_7835,Song,Bet On Me - ASIA RISING FOREVER,,1,3,chứa '-'
+ten_bai_lan_nghe_si,SON_7903,Song,Mashup Như Hoa Mùa Xuân - Nàng Xuân,,1,6,chứa '-'
+ten_bai_lan_nghe_si,SON_7941,Song,Bắc Bling (Bắc Ninh) (Prod. by Masew),,1,4,chứa 'Prod'
+ten_bai_lan_nghe_si,SON_8152,Song,Nothing Free x Chilldoc,,1,4,chứa 'x'
+ten_bai_lan_nghe_si,SON_8333,Song,Liên Khúc: Tết Trong Tâm Hồn - Tết Nguyên Đán,,1,9,chứa '-'
+ten_bai_lan_nghe_si,SON_8349,Song,Lasting Legacy - COP28 Official Anthem,,1,14,chứa '-'
+ten_bai_lan_nghe_si,SON_8421,Song,Tân Cảng Sài Gòn - Kết nối thịnh vượng,,1,2,chứa '-'
+ten_bai_lan_nghe_si,SON_8469,Song,HỎA CA x TRÁI ĐẤT TRÒN,,1,31,chứa 'x'
+ten_bai_lan_nghe_si,SON_8473,Song,Gót Hồng x Cao Gót,,1,6,chứa 'x'
+ten_bai_lan_nghe_si,SON_8478,Song,Anh Thấy / Màu Đỏ - Mashup,,1,3,chứa '-'
+ten_bai_lan_nghe_si,SON_8487,Song,Ba Kể Con Nghe x Dưới Ánh Đèn Sân Khấu,,1,4,chứa 'x'
+ten_bai_lan_nghe_si,SON_8488,Song,Một Lần Dang Dở x Đi Qua Cầu Vồng,,1,5,chứa 'x'
+ten_bai_lan_nghe_si,SON_8489,Song,Vợ Người Ta x Chuyện Ba Người,,1,6,chứa 'x'
+ten_bai_lan_nghe_si,SON_8490,Song,Lột Xác x Chuyện Nhỏ,,1,4,chứa 'x'
+ten_bai_lan_nghe_si,SON_8493,Song,Mashup Phố Xa x Biết Yêu,,1,5,chứa 'x'
+ten_bai_lan_nghe_si,SON_8494,Song,Mashup Khúc Giao Mùa x Năm Qua Đã Làm Gì,,1,7,chứa 'x'
+ten_bai_lan_nghe_si,SON_8495,Song,Nếu phải Xa Nhau x Cho bạn cho tôi,,1,3,chứa 'x'
+ten_bai_lan_nghe_si,SON_8498,Song,Mashup Thằng Cuội x Chiếc Đèn Ông Sao,,1,4,chứa 'x'
+ten_bai_lan_nghe_si,SON_8500,Song,Hỏa Ca - Call Me By Fire,,1,31,chứa '-'
+ten_bai_lan_nghe_si,SON_8502,Song,Mashup Giã từ dĩ vãng x Bỗng dưng muốn khóc,,1,3,chứa 'x'
+ten_bai_lan_nghe_si,SON_8503,Song,ĐỔI THAY x LẶNG THẦM x ĐÙA ANH ĐAU ĐẤY,,1,2,chứa 'x'
+ten_bai_lan_nghe_si,SON_8504,Song,Mưa Rơi Lặng Thầm x Lặng Thầm,,1,4,chứa 'x'
+ten_bai_lan_nghe_si,SON_8505,Song,[Mashup] Nhớ Mãi Chuyến Đi Này x Miền An Nhiên,,1,4,chứa 'x'
+ten_bai_lan_nghe_si,SON_8538,Song,Cô Gái M52 X Anh Thanh Niên,,1,2,chứa 'X'
+ten_bai_lan_nghe_si,SON_8570,Song,Mashup Chạm Tới Mặt Trời x Say,,1,2,chứa 'x'
+ten_bai_lan_nghe_si,SON_8673,Song,Đừng Khóc Một Mình x Chân Thành,,1,4,chứa 'x'
+ten_bai_lan_nghe_si,SON_8674,Song,Mashup Thuỷ Triều (2.0) x Ánh Mắt Biết Cười,,1,3,chứa 'x'
+ten_bai_lan_nghe_si,SON_8693,Song,Biết Chi Nhiều x DOC,,1,2,chứa 'x'
+ten_bai_lan_nghe_si,SON_8713,Song,Vẫn Lit - Hội Không Nón,,1,10,chứa '-'
+ten_bai_lan_nghe_si,SON_8764,Song,Bước Đều Bước & Thiêu Thân,,1,2,chứa '&'
+ten_bai_lan_nghe_si,SON_8782,Song,Tiến Tới Ước Mơ 2 - Vươn Mình Vượt Trội,,1,4,chứa '-'
+ten_bai_lan_nghe_si,SON_8825,Song,Nguyên Team Đi Vào Hết - Freaky Squad,,1,8,chứa '-'
+ten_chi_so,SON_6593,Song,10/10,,3,5,toàn số/ký hiệu
+ten_chi_so,SON_8124,Song,5050,,3,6,toàn số/ký hiệu
+ten_chi_so,SON_1429,Song,1 2 3 4,,2,2,toàn số/ký hiệu
+ten_chi_so,SON_5238,Song,3107 3,3107-3,2,8,toàn số/ký hiệu
+ten_chi_so,ALB_0046,Album,50/50,,1,0,toàn số/ký hiệu
+ten_chi_so,SON_0148,Song,24/7,,1,1,toàn số/ký hiệu
+ten_chi_so,SON_0416,Song,6.2018,,1,0,toàn số/ký hiệu
+ten_chi_so,SON_0433,Song,6.2016,,1,0,toàn số/ký hiệu
+ten_chi_so,SON_1539,Song,1-0,,1,5,toàn số/ký hiệu
+ten_chi_so,SON_2690,Song,1/2,,1,7,toàn số/ký hiệu
+ten_chi_so,SON_4629,Song,20 25 30,,1,5,toàn số/ký hiệu
+ten_chi_so,SON_5267,Song,3 1 0 7,,1,0,toàn số/ký hiệu
+ten_chi_so,SON_7877,Song,100 < 1,,1,3,toàn số/ký hiệu
+ten_chi_so,SON_7974,Song,213,,1,3,toàn số/ký hiệu
+ten_chi_so,SON_8726,Song,3107 4,,1,5,toàn số/ký hiệu
+ten_chi_so,SON_8848,Song,444,,1,4,toàn số/ký hiệu
+ten_qua_dai,ALB_0180,Album,Hành Trình Trở Thành Quán Quân Hòa Âm Ánh Sáng Của Team Noo Phước Thịnh,,1,16,71 ký tự
+ten_qua_ngan,PER_0204,Person,V#,,8,11,tên ≤1 ký tự chữ-số
+ten_qua_ngan,PER_4028,Person,Статус ноль,,2,3,tên ≤1 ký tự chữ-số
+trung_ban_goc_feat_suffix,SON_7077,Song,Mưa Đá,Mua Da,5,12,SON_6965:MƯA ĐÁ - THUỶ TRIỀU; SON_7077:Mưa Đá
+trung_ban_goc_feat_suffix,SON_1796,Song,BET ON ME,,3,5,SON_1796:BET ON ME; SON_7835:Bet On Me - ASIA RISING FOREVER
+trung_ban_goc_feat_suffix,SON_1875,Song,Thanh Xuân,THANH XUÂN,3,11,SON_1875:Thanh Xuân; SON_7463:Thanh Xuân - Đừng Ngại Ngùng
+trung_ban_goc_feat_suffix,SON_8697,Song,[ NGƯỜI - NGỰA ],,2,3,SON_5776:NGƯỜI; SON_8697:[ NGƯỜI - NGỰA ]
+trung_ban_goc_feat_suffix,SON_7835,Song,Bet On Me - ASIA RISING FOREVER,,1,3,SON_1796:BET ON ME; SON_7835:Bet On Me - ASIA RISING FOREVER
+trung_ban_goc_feat_suffix,SON_0589,Song,HỎA CA,,1,1,SON_0589:HỎA CA; SON_8500:Hỏa Ca - Call Me By Fire
+trung_ban_goc_feat_suffix,SON_8500,Song,Hỏa Ca - Call Me By Fire,,1,31,SON_0589:HỎA CA; SON_8500:Hỏa Ca - Call Me By Fire
+trung_ban_goc_feat_suffix,SON_6965,Song,MƯA ĐÁ - THUỶ TRIỀU,,1,1,SON_6965:MƯA ĐÁ - THUỶ TRIỀU; SON_7077:Mưa Đá
+trung_ban_goc_feat_suffix,SON_5776,Song,NGƯỜI,,1,2,SON_5776:NGƯỜI; SON_8697:[ NGƯỜI - NGỰA ]
+trung_ban_goc_feat_suffix,SON_4986,Song,Phóng Đổ Tim Em,,1,3,SON_4986:Phóng Đổ Tim Em; SON_6950:PHÓNG ĐỔ TIM EM - TÒ TE TÍ
+trung_ban_goc_feat_suffix,SON_6950,Song,PHÓNG ĐỔ TIM EM - TÒ TE TÍ,,1,1,SON_4986:Phóng Đổ Tim Em; SON_6950:PHÓNG ĐỔ TIM EM - TÒ TE TÍ
+trung_ban_goc_feat_suffix,SON_7463,Song,Thanh Xuân - Đừng Ngại Ngùng,,1,4,SON_1875:Thanh Xuân; SON_7463:Thanh Xuân - Đừng Ngại Ngùng
+trung_ban_goc_feat_suffix,SON_4117,Song,Tiến Tới Ước Mơ 2,,1,2,SON_4117:Tiến Tới Ước Mơ 2; SON_8782:Tiến Tới Ước Mơ 2 - Vươn Mình Vượt Trội
+trung_ban_goc_feat_suffix,SON_8782,Song,Tiến Tới Ước Mơ 2 - Vươn Mình Vượt Trội,,1,4,SON_4117:Tiến Tới Ước Mơ 2; SON_8782:Tiến Tới Ước Mơ 2 - Vươn Mình Vượt Trội
+trung_cung_loai,PER_0060,Person,DUY KHÁNH,Duy Khánh,66,96,PER_0060:Person:DUY KHÁNH; PER_3984:Person:Duy Khánh 周周
+trung_cung_loai,PER_3984,Person,Duy Khánh 周周,,19,45,PER_0060:Person:DUY KHÁNH; PER_3984:Person:Duy Khánh 周周
+trung_cung_loai,SON_1252,Song,Thương,THƯƠNG,8,14,SON_1252:Song:Thương; SON_3458:Song:Thường
+trung_cung_loai,SON_3693,Song,Sợ,SỢ,6,5,SON_0586:Song:SỐ; SON_3693:Song:Sợ
+trung_cung_loai,SON_7079,Song,Thuỷ Triều,Thủy Triều,6,12,SON_7076:Song:แค่เรา (Thủy Triều); SON_7079:Song:Thuỷ Triều
+trung_cung_loai,SON_1800,Song,Công,CÔNG,5,14,SON_1800:Song:Công; SON_6781:Song:CỘNG
+trung_cung_loai,SON_0042,Song,Đêm,,5,17,SON_0042:Song:Đêm; SON_1673:Song:ĐẾM
+trung_cung_loai,SON_0894,Song,Nàng,NÀNG,5,8,SON_0322:Song:Nắng; SON_0894:Song:Nàng
+trung_cung_loai,SON_2527,Song,Yêu,YÊU,5,7,SON_2527:Song:Yêu; SON_6636:Song:YEU
+trung_cung_loai,SON_5015,Song,Chân Tình,,4,4,SON_5015:Song:Chân Tình; SON_5676:Song:Chằn Tinh
+trung_cung_loai,SON_3821,Song,Có Người,CÓ NGƯỜI,4,5,SON_0764:Song:CỜ NGƯỜI; SON_3821:Song:Có Người
+trung_cung_loai,SON_2139,Song,DOC,,4,6,SON_2139:Song:DOC; SON_3501:Song:ĐỘC
+trung_cung_loai,SON_0322,Song,Nắng,NẮNG,4,4,SON_0322:Song:Nắng; SON_0894:Song:Nàng
+trung_cung_loai,SON_0853,Song,ĐỢI,,3,5,SON_0853:Song:ĐỢI; SON_1777:Song:Đôi; SON_1802:Song:Đời; SON_2113:Song:DỖI; SON_4240:Song:DỐI
+trung_cung_loai,SON_2426,Song,Lạc,LẠC,3,5,SON_2426:Song:Lạc; SON_4543:Song:Lắc
+trung_cung_loai,SON_6813,Song,Thất Tình,THẤT TÌNH | Thất tình,3,4,SON_6064:Song:thật tình; SON_6813:Song:Thất Tình
+trung_cung_loai,SON_5676,Song,Chằn Tinh,CHẰN TINH,2,14,SON_5015:Song:Chân Tình; SON_5676:Song:Chằn Tinh
+trung_cung_loai,SON_1673,Song,ĐẾM,,2,3,SON_0042:Song:Đêm; SON_1673:Song:ĐẾM
+trung_cung_loai,SON_1792,Song,DIỀU,,2,7,SON_1792:Song:DIỀU; SON_3995:Song:ĐIÊU
+trung_cung_loai,SON_3501,Song,ĐỘC,,2,3,SON_2139:Song:DOC; SON_3501:Song:ĐỘC
+trung_cung_loai,SON_1802,Song,Đời,ĐỜI,2,4,SON_0853:Song:ĐỢI; SON_1777:Song:Đôi; SON_1802:Song:Đời; SON_2113:Song:DỖI; SON_4240:Song:DỐI
+trung_cung_loai,SON_6175,Song,Dừng Yêu,DỪNG YÊU,2,7,SON_6175:Song:Dừng Yêu; SON_6862:Song:Đừng Yêu
+trung_cung_loai,SON_1356,Song,GIÀ,,2,10,SON_1356:Song:GIÀ; SON_4336:Song:Giả
+trung_cung_loai,SON_6107,Song,Lạ,,2,5,SON_2102:Song:Là; SON_6107:Song:Lạ
+trung_cung_loai,SON_4775,Song,Ngày Mưa,NGÀY MƯA,2,2,SON_3717:Song:NGÀY MÙA; SON_4775:Song:Ngày Mưa
+trung_cung_loai,SON_4084,Song,Ngỡ,,2,2,SON_3592:Song:NGỘ; SON_4084:Song:Ngỡ
+trung_cung_loai,SON_6771,Song,NHÂN,,2,1,SON_1705:Song:NHẪN; SON_6771:Song:NHÂN
+trung_cung_loai,SON_3516,Song,Từ Đó,TỪ ĐÓ,2,8,SON_3516:Song:Từ Đó; SON_4333:Song:Tự Do
+trung_cung_loai,SON_0831,Song,CHÓ,,1,6,SON_0831:Song:CHÓ; SON_4342:Song:Chờ; SON_5358:Song:Cho
+trung_cung_loai,SON_4342,Song,Chờ,,1,1,SON_0831:Song:CHÓ; SON_4342:Song:Chờ; SON_5358:Song:Cho
+trung_cung_loai,SON_5358,Song,Cho,,1,3,SON_0831:Song:CHÓ; SON_4342:Song:Chờ; SON_5358:Song:Cho
+trung_cung_loai,SON_6781,Song,CỘNG,,1,1,SON_1800:Song:Công; SON_6781:Song:CỘNG
+trung_cung_loai,SON_0764,Song,CỜ NGƯỜI,,1,1,SON_0764:Song:CỜ NGƯỜI; SON_3821:Song:Có Người
+trung_cung_loai,SON_3995,Song,ĐIÊU,,1,2,SON_1792:Song:DIỀU; SON_3995:Song:ĐIÊU
+trung_cung_loai,SON_1777,Song,Đôi,,1,2,SON_0853:Song:ĐỢI; SON_1777:Song:Đôi; SON_1802:Song:Đời; SON_2113:Song:DỖI; SON_4240:Song:DỐI
+trung_cung_loai,SON_2113,Song,DỖI,,1,2,SON_0853:Song:ĐỢI; SON_1777:Song:Đôi; SON_1802:Song:Đời; SON_2113:Song:DỖI; SON_4240:Song:DỐI
+trung_cung_loai,SON_4240,Song,DỐI,,1,2,SON_0853:Song:ĐỢI; SON_1777:Song:Đôi; SON_1802:Song:Đời; SON_2113:Song:DỖI; SON_4240:Song:DỐI
+trung_cung_loai,SON_6862,Song,Đừng Yêu,,1,2,SON_6175:Song:Dừng Yêu; SON_6862:Song:Đừng Yêu
+trung_cung_loai,SON_1217,Song,"EM ỔN KHÔNG 你, 好不好",,1,2,"SON_1217:Song:EM ỔN KHÔNG 你, 好不好; SON_8577:Song:Em Ổn Không"
+trung_cung_loai,SON_8577,Song,Em Ổn Không,,1,1,"SON_1217:Song:EM ỔN KHÔNG 你, 好不好; SON_8577:Song:Em Ổn Không"
+trung_cung_loai,SON_4336,Song,Giả,,1,1,SON_1356:Song:GIÀ; SON_4336:Song:Giả
+trung_cung_loai,SON_2102,Song,Là,,1,1,SON_2102:Song:Là; SON_6107:Song:Lạ
+trung_cung_loai,SON_4543,Song,Lắc,,1,4,SON_2426:Song:Lạc; SON_4543:Song:Lắc
+trung_cung_loai,SON_1443,Song,LÀM,,1,4,SON_1443:Song:LÀM; SON_3464:Song:Lam
+trung_cung_loai,SON_3464,Song,Lam,,1,2,SON_1443:Song:LÀM; SON_3464:Song:Lam
+trung_cung_loai,SON_1591,Song,LÂU ĐÀI,,1,10,SON_1591:Song:LÂU ĐÀI; SON_5224:Song:LÂU DÀI
+trung_cung_loai,SON_5224,Song,LÂU DÀI,,1,2,SON_1591:Song:LÂU ĐÀI; SON_5224:Song:LÂU DÀI
+trung_cung_loai,SON_4158,Song,LẤY CỚ,,1,6,SON_4158:Song:LẤY CỚ; SON_4173:Song:Lạy Cô
+trung_cung_loai,SON_4173,Song,Lạy Cô,,1,3,SON_4158:Song:LẤY CỚ; SON_4173:Song:Lạy Cô
+trung_cung_loai,SON_4953,Song,Me,,1,2,SON_4953:Song:Me; SON_8280:Song:Mẹ
+trung_cung_loai,SON_8280,Song,Mẹ,,1,1,SON_4953:Song:Me; SON_8280:Song:Mẹ
+trung_cung_loai,SON_4785,Song,Mượn,,1,1,SON_4785:Song:Mượn; SON_7575:Song:Muốn
+trung_cung_loai,SON_7575,Song,Muốn,,1,2,SON_4785:Song:Mượn; SON_7575:Song:Muốn
+trung_cung_loai,SON_3717,Song,NGÀY MÙA,,1,3,SON_3717:Song:NGÀY MÙA; SON_4775:Song:Ngày Mưa
+trung_cung_loai,SON_3592,Song,NGỘ,,1,5,SON_3592:Song:NGỘ; SON_4084:Song:Ngỡ
+trung_cung_loai,SON_1705,Song,NHẪN,,1,1,SON_1705:Song:NHẪN; SON_6771:Song:NHÂN
+trung_cung_loai,SON_0586,Song,SỐ,,1,1,SON_0586:Song:SỐ; SON_3693:Song:Sợ
+trung_cung_loai,SON_0372,Song,TAY TRÁI CHỈ TRĂNG 左手指月,,1,2,SON_0372:Song:TAY TRÁI CHỈ TRĂNG 左手指月; SON_5438:Song:TAY TRÁI CHỈ TRĂNG
+trung_cung_loai,SON_5438,Song,TAY TRÁI CHỈ TRĂNG,,1,2,SON_0372:Song:TAY TRÁI CHỈ TRĂNG 左手指月; SON_5438:Song:TAY TRÁI CHỈ TRĂNG
+trung_cung_loai,SON_6064,Song,thật tình,,1,4,SON_6064:Song:thật tình; SON_6813:Song:Thất Tình
+trung_cung_loai,SON_3458,Song,Thường,,1,3,SON_1252:Song:Thương; SON_3458:Song:Thường
+trung_cung_loai,SON_7076,Song,แค่เรา (Thủy Triều),,1,4,SON_7076:Song:แค่เรา (Thủy Triều); SON_7079:Song:Thuỷ Triều
+trung_cung_loai,SON_4333,Song,Tự Do,,1,1,SON_3516:Song:Từ Đó; SON_4333:Song:Tự Do
+trung_cung_loai,SON_6636,Song,YEU,,1,1,SON_2527:Song:Yêu; SON_6636:Song:YEU
+trung_khac_loai,COM_0138,Company,SUBLIME,,4,4,COM_0138:Company:SUBLIME; SON_1786:Song:SUBLIME
+trung_khac_loai,PER_4262,Person,Du Uyên,,2,5,PER_4262:Person:Du Uyên; SON_0227:Song:DuUyên
+trung_khac_loai,BRA_0006,Brand,7Up,,1,1,BRA_0006:Brand:7Up; SON_3497:Song:7up
+trung_khac_loai,SON_3497,Song,7up,,1,2,BRA_0006:Brand:7Up; SON_3497:Song:7up
+trung_khac_loai,ALB_0020,Album,AZA,,1,0,ALB_0020:Album:AZA; PER_3814:Person:AZA
+trung_khac_loai,PER_3814,Person,AZA,,1,1,ALB_0020:Album:AZA; PER_3814:Person:AZA
+trung_khac_loai,SON_0227,Song,DuUyên,,1,0,PER_4262:Person:Du Uyên; SON_0227:Song:DuUyên
+trung_khac_loai,ALB_0047,Album,KIM,,1,0,ALB_0047:Album:KIM; PER_3021:Person:K.I.M
+trung_khac_loai,PER_3021,Person,K.I.M,,1,3,ALB_0047:Album:KIM; PER_3021:Person:K.I.M
+trung_khac_loai,COM_0228,Company,meChill,,1,1,COM_0228:Company:meChill; SON_0352:Song:meChill
+trung_khac_loai,SON_0352,Song,meChill,,1,1,COM_0228:Company:meChill; SON_0352:Song:meChill
+trung_khac_loai,SON_1786,Song,SUBLIME,,1,3,COM_0138:Company:SUBLIME; SON_1786:Song:SUBLIME
+trung_khac_loai,BRA_0029,Brand,TEA+,,1,1,BRA_0029:Brand:TEA+; PER_3820:Person:TEA
+trung_khac_loai,PER_3820,Person,TEA,,1,0,BRA_0029:Brand:TEA+; PER_3820:Person:TEA
+trung_song_album,ALB_0055,Album,Cam'On,CAM'ON,12,11,ALB_0055:Album:Cam'On; SON_1174:Song:Cảm Ơn; SON_2242:Song:Cám Ơn
+trung_song_album,ALB_0027,Album,Khu Vườn Tình,,11,10,ALB_0027:Album:Khu Vườn Tình; SON_2288:Song:Khu Vườn Tình
+trung_song_album,ALB_0022,Album,MÂY NƠI CHÂN TRỜI,,11,10,ALB_0022:Album:MÂY NƠI CHÂN TRỜI; SON_1968:Song:MÂY NƠI CHÂN TRỜI
+trung_song_album,ALB_0002,Album,Ác Mộng Đẹp,,10,9,ALB_0002:Album:Ác Mộng Đẹp; SON_0331:Song:Ác Mộng Đẹp
+trung_song_album,SON_0593,Song,Người Lạ Trong Mơ,NGƯỜI LẠ TRONG MƠ,9,8,ALB_0181:Album:Người Lạ Trong Mơ; SON_0593:Song:Người Lạ Trong Mơ
+trung_song_album,SON_0875,Song,Viết Tiếp Câu Chuyện Hòa Bình,VIẾT TIẾP CÂU CHUYỆN HÒA BÌNH,9,11,ALB_0169:Album:Viết Tiếp Câu Chuyện Hòa Bình; SON_0875:Song:Viết Tiếp Câu Chuyện Hòa Bình
+trung_song_album,SON_2969,Song,Hương,HƯƠNG | hương,8,12,ALB_0196:Album:hương; SON_2969:Song:Hương
+trung_song_album,SON_1174,Song,Cảm Ơn,CẢM ƠN | cảm ơn?,7,20,ALB_0055:Album:Cam'On; SON_1174:Song:Cảm Ơn; SON_2242:Song:Cám Ơn
+trung_song_album,SON_4064,Song,Người Ấy,NGƯỜI ẤY | Người ấy,7,5,ALB_0089:Album:Người Ấy; SON_4064:Song:Người Ấy
+trung_song_album,SON_4225,Song,Những Ngày Mưa Cô Đơn,NHỮNG NGÀY MƯA CÔ ĐƠN | những ngày mưa cô đơn,7,6,ALB_0065:Album:Những ngày mưa cô đơn; SON_4225:Song:Những Ngày Mưa Cô Đơn
+trung_song_album,SON_0382,Song,Dằm Trong Tim,DẰM TRONG TIM | dằm trong tim,6,7,ALB_0200:Album:Dằm Trong Tim; SON_0382:Song:Dằm Trong Tim
+trung_song_album,SON_0048,Song,Gặp Lại,GẶP LẠI,6,8,ALB_0182:Album:Gặp Lại; SON_0048:Song:Gặp Lại
+trung_song_album,SON_4638,Song,Trái Tim Em Cũng Biết Đau,,6,5,ALB_0071:Album:Trái Tim Em Cũng Biết Đau; SON_4638:Song:Trái Tim Em Cũng Biết Đau
+trung_song_album,ALB_0010,Album,CHIA TAY,,5,3,ALB_0010:Album:CHIA TAY; SON_5853:Song:Chia Tay
+trung_song_album,ALB_0045,Album,MAKE IT TOGETHER,,5,5,ALB_0045:Album:MAKE IT TOGETHER; SON_3078:Song:MAKE IT TOGETHER
+trung_song_album,ALB_0113,Album,NGỌC,,5,4,ALB_0113:Album:NGỌC; SON_0746:Song:Ngốc
+trung_song_album,ALB_0005,Album,Nhà,,5,5,ALB_0005:Album:Nhà; SON_1821:Song:Nhà
+trung_song_album,ALB_0114,Album,Có Những Niềm Riêng,,4,4,ALB_0114:Album:Có Những Niềm Riêng; SON_6276:Song:Có Những Niềm Riêng
+trung_song_album,ALB_0061,Album,Duyệt,,4,4,ALB_0061:Album:Duyệt; SON_4179:Song:Duyệt
+trung_song_album,SON_2990,Song,Lâu Đài Cát,,4,4,ALB_0208:Album:Lâu Đài Cát; SON_2990:Song:Lâu Đài Cát
+trung_song_album,SON_8235,Song,Nếu Như Anh Đến,,4,4,ALB_0209:Album:Nếu Như Anh Đến; SON_8235:Song:Nếu Như Anh Đến
+trung_song_album,ALB_0065,Album,Những ngày mưa cô đơn,,4,4,ALB_0065:Album:Những ngày mưa cô đơn; SON_4225:Song:Những Ngày Mưa Cô Đơn
+trung_song_album,SON_8124,Song,5050,,3,6,ALB_0046:Album:50/50; SON_8124:Song:5050
+trung_song_album,SON_2696,Song,CHẠM,,3,8,ALB_0025:Album:CHẠM; SON_2696:Song:CHẠM
+trung_song_album,SON_5853,Song,Chia Tay,,3,4,ALB_0010:Album:CHIA TAY; SON_5853:Song:Chia Tay
+trung_song_album,SON_2077,Song,Chơi,CHƠI,3,3,ALB_0019:Album:CHÓI; SON_1903:Song:CHÓI; SON_2077:Song:Chơi
+trung_song_album,SON_2750,Song,Điều Em Lo Sợ,,3,5,ALB_0171:Album:Điều Em Lo Sợ; SON_2750:Song:Điều Em Lo Sợ
+trung_song_album,SON_4179,Song,Duyệt,DUYỆT,3,7,ALB_0061:Album:Duyệt; SON_4179:Song:Duyệt
+trung_song_album,ALB_0012,Album,Echoes of the Storm,,3,2,ALB_0012:Album:Echoes of the Storm; SON_1279:Song:Echoes of the Storm
+trung_song_album,SON_1968,Song,MÂY NƠI CHÂN TRỜI,,3,4,ALB_0022:Album:MÂY NƠI CHÂN TRỜI; SON_1968:Song:MÂY NƠI CHÂN TRỜI
+trung_song_album,SON_2329,Song,Purpose,PURPOSE,3,8,ALB_0178:Album:Purpose; SON_2329:Song:Purpose
+trung_song_album,SON_0331,Song,Ác Mộng Đẹp,,2,3,ALB_0002:Album:Ác Mộng Đẹp; SON_0331:Song:Ác Mộng Đẹp
+trung_song_album,SON_2073,Song,Ai Cũng Phải Bắt Đầu Từ Đâu Đó,,2,4,ALB_0202:Album:Ai Cũng Phải Bắt Đầu Từ Đâu Đó; SON_2073:Song:Ai Cũng Phải Bắt Đầu Từ Đâu Đó
+trung_song_album,SON_2242,Song,Cám Ơn,CÁM ƠN,2,8,ALB_0055:Album:Cam'On; SON_1174:Song:Cảm Ơn; SON_2242:Song:Cám Ơn
+trung_song_album,ALB_0019,Album,CHÓI,,2,11,ALB_0019:Album:CHÓI; SON_1903:Song:CHÓI; SON_2077:Song:Chơi
+trung_song_album,SON_4215,Song,Chuyện Mưa,CHUYỆN MƯA,2,3,ALB_0199:Album:Chuyện Mưa; SON_4215:Song:Chuyện Mưa
+trung_song_album,ALB_0074,Album,Colours,COLOURS,2,9,ALB_0074:Album:Colours; SON_4700:Song:colours
+trung_song_album,SON_6308,Song,Cỏ Và Mưa,Covamua,2,6,ALB_0121:Album:Cỏ Và Mưa; SON_6308:Song:Cỏ Và Mưa
+trung_song_album,SON_2789,Song,Cười Và Khóc,CƯỜI VÀ KHÓC,2,5,ALB_0170:Album:Cười Và Khóc; SON_2789:Song:Cười Và Khóc
+trung_song_album,SON_2927,Song,Cuốn Phim,,2,5,ALB_0206:Album:CUỐN PHIM; SON_2927:Song:Cuốn Phim
+trung_song_album,SON_2848,Song,Đánh Đổi,ĐÁNH ĐỔI,2,5,ALB_0038:Album:ĐÁNH ĐỔI; SON_2848:Song:Đánh Đổi
+trung_song_album,SON_1720,Song,Đơn Sơ,,2,3,ALB_0015:Album:Đơn Sơ; SON_1720:Song:Đơn Sơ
+trung_song_album,SON_1279,Song,Echoes of the Storm,,2,3,ALB_0012:Album:Echoes of the Storm; SON_1279:Song:Echoes of the Storm
+trung_song_album,ALB_0054,Album,Hoa Hồng Trên Bê Tông,HOA HỒNG TRÊN BÊ TÔNG,2,11,ALB_0054:Album:Hoa Hồng Trên Bê Tông; SON_3885:Song:Hoa Hồng Trên Bê Tông
+trung_song_album,SON_3885,Song,Hoa Hồng Trên Bê Tông,Hoa hồng trên bê tông,2,8,ALB_0054:Album:Hoa Hồng Trên Bê Tông; SON_3885:Song:Hoa Hồng Trên Bê Tông
+trung_song_album,SON_8244,Song,Ngày Em 18,,2,3,ALB_0210:Album:Ngày Em 18; SON_8244:Song:Ngày Em 18
+trung_song_album,ALB_0032,Album,Người Như Chúng Ta,NGƯỜI NHƯ CHÚNG TA,2,1,ALB_0032:Album:Người Như Chúng Ta; SON_2455:Song:Người Như Chúng Ta
+trung_song_album,SON_2201,Song,Nhật Thực,,2,4,ALB_0102:Album:Nhật Thực; SON_2201:Song:Nhật Thực
+trung_song_album,SON_6032,Song,Những Con Sông Ngón Tay,,2,4,ALB_0101:Album:Những Con Sông Ngón Tay; SON_6032:Song:Những Con Sông Ngón Tay
+trung_song_album,SON_0055,Song,Nợ,,2,4,ALB_0082:Album:NỔ; SON_0055:Song:Nợ
+trung_song_album,ALB_0042,Album,Nơi Gặp Gỡ Tình Yêu,,2,15,ALB_0042:Album:Nơi Gặp Gỡ Tình Yêu; SON_2936:Song:Nơi Gặp Gỡ Tình Yêu
+trung_song_album,SON_2936,Song,Nơi Gặp Gỡ Tình Yêu,,2,3,ALB_0042:Album:Nơi Gặp Gỡ Tình Yêu; SON_2936:Song:Nơi Gặp Gỡ Tình Yêu
+trung_song_album,SON_1733,Song,Ở Trọ,,2,3,ALB_0016:Album:Ở Trọ; SON_1733:Song:Ở Trọ
+trung_song_album,SON_4800,Song,Portrait,,2,1,ALB_0077:Album:Portrait; SON_4800:Song:Portrait
+trung_song_album,ALB_0023,Album,RU KHẼ NỔI ĐAU,,2,2,ALB_0023:Album:RU KHẼ NỔI ĐAU; SON_2044:Song:RU KHẼ NỖI ĐAU
+trung_song_album,SON_0624,Song,THIÊN ĐÀNG,,2,2,ALB_0105:Album:Thiên Đàng; SON_0624:Song:THIÊN ĐÀNG
+trung_song_album,SON_2922,Song,Tình Em,,2,3,ALB_0106:Album:Tình Em; SON_2922:Song:Tình Em
+trung_song_album,ALB_0046,Album,50/50,,1,0,ALB_0046:Album:50/50; SON_8124:Song:5050
+trung_song_album,ALB_0202,Album,Ai Cũng Phải Bắt Đầu Từ Đâu Đó,,1,12,ALB_0202:Album:Ai Cũng Phải Bắt Đầu Từ Đâu Đó; SON_2073:Song:Ai Cũng Phải Bắt Đầu Từ Đâu Đó
+trung_song_album,ALB_0017,Album,An,,1,0,ALB_0017:Album:An; SON_1758:Song:An
+trung_song_album,SON_1758,Song,An,,1,2,ALB_0017:Album:An; SON_1758:Song:An
+trung_song_album,ALB_0216,Album,ÁNH SÁNG • MÀN ĐÊM,,1,13,ALB_0216:Album:ÁNH SÁNG • MÀN ĐÊM; SON_8392:Song:ánh sáng • màn đêm
+trung_song_album,SON_8392,Song,ánh sáng • màn đêm,,1,4,ALB_0216:Album:ÁNH SÁNG • MÀN ĐÊM; SON_8392:Song:ánh sáng • màn đêm
+trung_song_album,ALB_0025,Album,CHẠM,,1,0,ALB_0025:Album:CHẠM; SON_2696:Song:CHẠM
+trung_song_album,SON_1903,Song,CHÓI,,1,4,ALB_0019:Album:CHÓI; SON_1903:Song:CHÓI; SON_2077:Song:Chơi
+trung_song_album,ALB_0199,Album,Chuyện Mưa,,1,3,ALB_0199:Album:Chuyện Mưa; SON_4215:Song:Chuyện Mưa
+trung_song_album,SON_4700,Song,colours,,1,0,ALB_0074:Album:Colours; SON_4700:Song:colours
+trung_song_album,SON_6276,Song,Có Những Niềm Riêng,,1,3,ALB_0114:Album:Có Những Niềm Riêng; SON_6276:Song:Có Những Niềm Riêng
+trung_song_album,ALB_0121,Album,Cỏ Và Mưa,,1,0,ALB_0121:Album:Cỏ Và Mưa; SON_6308:Song:Cỏ Và Mưa
+trung_song_album,ALB_0170,Album,Cười Và Khóc,,1,10,ALB_0170:Album:Cười Và Khóc; SON_2789:Song:Cười Và Khóc
+trung_song_album,ALB_0206,Album,CUỐN PHIM,,1,12,ALB_0206:Album:CUỐN PHIM; SON_2927:Song:Cuốn Phim
+trung_song_album,ALB_0200,Album,Dằm Trong Tim,,1,7,ALB_0200:Album:Dằm Trong Tim; SON_0382:Song:Dằm Trong Tim
+trung_song_album,ALB_0038,Album,ĐÁNH ĐỔI,,1,0,ALB_0038:Album:ĐÁNH ĐỔI; SON_2848:Song:Đánh Đổi
+trung_song_album,ALB_0060,Album,Để Trái Tim Nghỉ Ngơi,,1,0,ALB_0060:Album:Để Trái Tim Nghỉ Ngơi; SON_4114:Song:Để Trái Tim Nghỉ Ngơi
+trung_song_album,SON_4114,Song,Để Trái Tim Nghỉ Ngơi,,1,4,ALB_0060:Album:Để Trái Tim Nghỉ Ngơi; SON_4114:Song:Để Trái Tim Nghỉ Ngơi
+trung_song_album,ALB_0171,Album,Điều Em Lo Sợ,,1,10,ALB_0171:Album:Điều Em Lo Sợ; SON_2750:Song:Điều Em Lo Sợ
+trung_song_album,ALB_0021,Album,ĐÔI CHÂN ĐI,,1,0,ALB_0021:Album:ĐÔI CHÂN ĐI; SON_1943:Song:Đôi Chân Đi
+trung_song_album,SON_1943,Song,Đôi Chân Đi,,1,5,ALB_0021:Album:ĐÔI CHÂN ĐI; SON_1943:Song:Đôi Chân Đi
+trung_song_album,ALB_0015,Album,Đơn Sơ,,1,0,ALB_0015:Album:Đơn Sơ; SON_1720:Song:Đơn Sơ
+trung_song_album,ALB_0119,Album,Em Biết Không Nên Vấn Vương,,1,0,ALB_0119:Album:Em Biết Không Nên Vấn Vương; SON_6299:Song:Em Biết Không Nên Vấn Vương
+trung_song_album,SON_6299,Song,Em Biết Không Nên Vấn Vương,,1,1,ALB_0119:Album:Em Biết Không Nên Vấn Vương; SON_6299:Song:Em Biết Không Nên Vấn Vương
+trung_song_album,ALB_0182,Album,Gặp Lại,,1,9,ALB_0182:Album:Gặp Lại; SON_0048:Song:Gặp Lại
+trung_song_album,ALB_0076,Album,Giấc Mơ Tôi,,1,0,ALB_0076:Album:Giấc Mơ Tôi; SON_4788:Song:Giấc Mơ Tôi
+trung_song_album,SON_4788,Song,Giấc Mơ Tôi,,1,1,ALB_0076:Album:Giấc Mơ Tôi; SON_4788:Song:Giấc Mơ Tôi
+trung_song_album,ALB_0212,Album,Giá Có Thể Ôm Ai Và Khóc,,1,8,ALB_0212:Album:Giá Có Thể Ôm Ai Và Khóc; SON_8267:Song:Giá Có Thể Ôm Ai Và Khóc
+trung_song_album,SON_8267,Song,Giá Có Thể Ôm Ai Và Khóc,,1,3,ALB_0212:Album:Giá Có Thể Ôm Ai Và Khóc; SON_8267:Song:Giá Có Thể Ôm Ai Và Khóc
+trung_song_album,ALB_0092,Album,HÃY NÓI,,1,1,ALB_0092:Album:HÃY NÓI; SON_5972:Song:Hãy Nói
+trung_song_album,SON_5972,Song,Hãy Nói,,1,6,ALB_0092:Album:HÃY NÓI; SON_5972:Song:Hãy Nói
+trung_song_album,ALB_0196,Album,hương,,1,8,ALB_0196:Album:hương; SON_2969:Song:Hương
+trung_song_album,ALB_0162,Album,I'm Not Alone,,1,7,ALB_0162:Album:I'm Not Alone; SON_7491:Song:I'm Not Alone
+trung_song_album,SON_7491,Song,I'm Not Alone,,1,3,ALB_0162:Album:I'm Not Alone; SON_7491:Song:I'm Not Alone
+trung_song_album,ALB_0028,Album,KẺ PHẢN DIỆN,,1,0,ALB_0028:Album:KẺ PHẢN DIỆN; SON_2346:Song:KẺ PHẢN DIỆN
+trung_song_album,SON_2346,Song,KẺ PHẢN DIỆN,,1,5,ALB_0028:Album:KẺ PHẢN DIỆN; SON_2346:Song:KẺ PHẢN DIỆN
+trung_song_album,ALB_0094,Album,Khi Em Hát,,1,0,ALB_0094:Album:Khi Em Hát; SON_5913:Song:KHI EM HÁT
+trung_song_album,SON_5913,Song,KHI EM HÁT,,1,4,ALB_0094:Album:Khi Em Hát; SON_5913:Song:KHI EM HÁT
+trung_song_album,SON_2288,Song,Khu Vườn Tình,,1,6,ALB_0027:Album:Khu Vườn Tình; SON_2288:Song:Khu Vườn Tình
+trung_song_album,ALB_0208,Album,Lâu Đài Cát,,1,10,ALB_0208:Album:Lâu Đài Cát; SON_2990:Song:Lâu Đài Cát
+trung_song_album,ALB_0197,Album,Limbo,,1,9,ALB_0197:Album:Limbo; SON_8019:Song:LIMBO
+trung_song_album,SON_8019,Song,LIMBO,,1,3,ALB_0197:Album:Limbo; SON_8019:Song:LIMBO
+trung_song_album,ALB_0179,Album,Love Check,,1,11,ALB_0179:Album:Love Check; SON_7821:Song:Love Check
+trung_song_album,SON_7821,Song,Love Check,,1,3,ALB_0179:Album:Love Check; SON_7821:Song:Love Check
+trung_song_album,ALB_0122,Album,Mãi Mãi Về Sau,,1,0,ALB_0122:Album:Mãi Mãi Về Sau; SON_6311:Song:Mãi Mãi Về Sau
+trung_song_album,SON_6311,Song,Mãi Mãi Về Sau,,1,1,ALB_0122:Album:Mãi Mãi Về Sau; SON_6311:Song:Mãi Mãi Về Sau
+trung_song_album,SON_3078,Song,MAKE IT TOGETHER,,1,0,ALB_0045:Album:MAKE IT TOGETHER; SON_3078:Song:MAKE IT TOGETHER
+trung_song_album,ALB_0112,Album,MEDICINE,,1,0,ALB_0112:Album:MEDICINE; SON_6183:Song:MEDICINE
+trung_song_album,SON_6183,Song,MEDICINE,,1,2,ALB_0112:Album:MEDICINE; SON_6183:Song:MEDICINE
+trung_song_album,ALB_0040,Album,Nắng Lên,,1,0,ALB_0040:Album:Nắng Lên; SON_2896:Song:Nắng Lên
+trung_song_album,SON_2896,Song,Nắng Lên,,1,1,ALB_0040:Album:Nắng Lên; SON_2896:Song:Nắng Lên
+trung_song_album,ALB_0209,Album,Nếu Như Anh Đến,,1,11,ALB_0209:Album:Nếu Như Anh Đến; SON_8235:Song:Nếu Như Anh Đến
+trung_song_album,ALB_0210,Album,Ngày Em 18,,1,9,ALB_0210:Album:Ngày Em 18; SON_8244:Song:Ngày Em 18
+trung_song_album,SON_0746,Song,Ngốc,,1,1,ALB_0113:Album:NGỌC; SON_0746:Song:Ngốc
+trung_song_album,ALB_0089,Album,Người Ấy,,1,0,ALB_0089:Album:Người Ấy; SON_4064:Song:Người Ấy
+trung_song_album,ALB_0181,Album,Người Lạ Trong Mơ,,1,9,ALB_0181:Album:Người Lạ Trong Mơ; SON_0593:Song:Người Lạ Trong Mơ
+trung_song_album,SON_2455,Song,Người Như Chúng Ta,,1,1,ALB_0032:Album:Người Như Chúng Ta; SON_2455:Song:Người Như Chúng Ta
+trung_song_album,ALB_0088,Album,Người Thứ 3,,1,0,ALB_0088:Album:Người Thứ 3; SON_5626:Song:Người Thứ 3
+trung_song_album,SON_5626,Song,Người Thứ 3,,1,1,ALB_0088:Album:Người Thứ 3; SON_5626:Song:Người Thứ 3
+trung_song_album,SON_1821,Song,Nhà,,1,1,ALB_0005:Album:Nhà; SON_1821:Song:Nhà
+trung_song_album,ALB_0011,Album,NHẤC MÁY,,1,1,ALB_0011:Album:NHẤC MÁY; SON_1111:Song:NHẤC MÁY
+trung_song_album,SON_1111,Song,NHẤC MÁY,,1,5,ALB_0011:Album:NHẤC MÁY; SON_1111:Song:NHẤC MÁY
+trung_song_album,ALB_0102,Album,Nhật Thực,,1,0,ALB_0102:Album:Nhật Thực; SON_2201:Song:Nhật Thực
+trung_song_album,ALB_0101,Album,Những Con Sông Ngón Tay,,1,0,ALB_0101:Album:Những Con Sông Ngón Tay; SON_6032:Song:Những Con Sông Ngón Tay
+trung_song_album,ALB_0082,Album,NỔ,,1,0,ALB_0082:Album:NỔ; SON_0055:Song:Nợ
+trung_song_album,ALB_0016,Album,Ở Trọ,,1,0,ALB_0016:Album:Ở Trọ; SON_1733:Song:Ở Trọ
+trung_song_album,ALB_0077,Album,Portrait,,1,0,ALB_0077:Album:Portrait; SON_4800:Song:Portrait
+trung_song_album,ALB_0178,Album,Purpose,,1,11,ALB_0178:Album:Purpose; SON_2329:Song:Purpose
+trung_song_album,ALB_0049,Album,Qua Khung Cửa Sổ,,1,0,ALB_0049:Album:Qua Khung Cửa Sổ; SON_3220:Song:Qua Khung Cửa Sổ
+trung_song_album,SON_3220,Song,Qua Khung Cửa Sổ,,1,4,ALB_0049:Album:Qua Khung Cửa Sổ; SON_3220:Song:Qua Khung Cửa Sổ
+trung_song_album,SON_2044,Song,RU KHẼ NỖI ĐAU,,1,2,ALB_0023:Album:RU KHẼ NỔI ĐAU; SON_2044:Song:RU KHẼ NỖI ĐAU
+trung_song_album,ALB_0037,Album,SONG SONG,,1,0,ALB_0037:Album:SONG SONG; SON_0880:Song:SONG SONG
+trung_song_album,SON_0880,Song,SONG SONG,,1,4,ALB_0037:Album:SONG SONG; SON_0880:Song:SONG SONG
+trung_song_album,ALB_0066,Album,SUN SONG,,1,0,ALB_0066:Album:SUN SONG; SON_4421:Song:SUN SONG
+trung_song_album,SON_4421,Song,SUN SONG,,1,4,ALB_0066:Album:SUN SONG; SON_4421:Song:SUN SONG
+trung_song_album,ALB_0161,Album,Syntheos,,1,4,ALB_0161:Album:Syntheos; SON_7483:Song:Syntheos
+trung_song_album,SON_7483,Song,Syntheos,,1,3,ALB_0161:Album:Syntheos; SON_7483:Song:Syntheos
+trung_song_album,ALB_0105,Album,Thiên Đàng,,1,0,ALB_0105:Album:Thiên Đàng; SON_0624:Song:THIÊN ĐÀNG
+trung_song_album,ALB_0051,Album,Thinhsuynghi,,1,0,ALB_0051:Album:Thinhsuynghi; SON_3467:Song:Thinhsuynghi
+trung_song_album,SON_3467,Song,Thinhsuynghi,,1,1,ALB_0051:Album:Thinhsuynghi; SON_3467:Song:Thinhsuynghi
+trung_song_album,ALB_0106,Album,Tình Em,,1,0,ALB_0106:Album:Tình Em; SON_2922:Song:Tình Em
+trung_song_album,ALB_0071,Album,Trái Tim Em Cũng Biết Đau,,1,0,ALB_0071:Album:Trái Tim Em Cũng Biết Đau; SON_4638:Song:Trái Tim Em Cũng Biết Đau
+trung_song_album,ALB_0048,Album,Trên Những Đám Mây,,1,0,ALB_0048:Album:Trên Những Đám Mây; SON_3209:Song:TRÊN NHỮNG ĐÁM MÂY
+trung_song_album,SON_3209,Song,TRÊN NHỮNG ĐÁM MÂY,,1,4,ALB_0048:Album:Trên Những Đám Mây; SON_3209:Song:TRÊN NHỮNG ĐÁM MÂY
+trung_song_album,ALB_0194,Album,Twinflame,,1,8,ALB_0194:Album:Twinflame; SON_3927:Song:Twin Flame
+trung_song_album,SON_3927,Song,Twin Flame,,1,5,ALB_0194:Album:Twinflame; SON_3927:Song:Twin Flame
+trung_song_album,ALB_0104,Album,Ước Mơ,,1,0,ALB_0104:Album:Ước Mơ; SON_8330:Song:Ước Mơ
+trung_song_album,SON_8330,Song,Ước Mơ,,1,3,ALB_0104:Album:Ước Mơ; SON_8330:Song:Ước Mơ
+trung_song_album,ALB_0078,Album,Ước Sao Ta Chưa Gặp Nhau,,1,1,ALB_0078:Album:Ước Sao Ta Chưa Gặp Nhau; SON_4801:Song:Ước Sao Ta Chưa Gặp Nhau
+trung_song_album,SON_4801,Song,Ước Sao Ta Chưa Gặp Nhau,,1,1,ALB_0078:Album:Ước Sao Ta Chưa Gặp Nhau; SON_4801:Song:Ước Sao Ta Chưa Gặp Nhau
+trung_song_album,ALB_0169,Album,Viết Tiếp Câu Chuyện Hòa Bình,,1,11,ALB_0169:Album:Viết Tiếp Câu Chuyện Hòa Bình; SON_0875:Song:Viết Tiếp Câu Chuyện Hòa Bình
+trung_song_album,ALB_0127,Album,YÊN,,1,0,ALB_0127:Album:YÊN; SON_6477:Song:YÊN
+trung_song_album,SON_6477,Song,YÊN,,1,2,ALB_0127:Album:YÊN; SON_6477:Song:YÊN
+trung_song_album,ALB_0067,Album,YÊU THẬT,,1,0,ALB_0067:Album:YÊU THẬT; SON_4488:Song:Yêu Thật
+trung_song_album,SON_4488,Song,Yêu Thật,,1,1,ALB_0067:Album:YÊU THẬT; SON_4488:Song:Yêu Thật

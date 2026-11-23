@@ -1,0 +1,60 @@
+entity_type,name,reason,approve
+Person,SAO EM CHƯA CẬP BẾN,PER_3044 – tên bài,x
+Person,A LITTLE DREAM OF ME,PER_3621 – tên bài,x
+Person,WINTER BY VÕ THIỆN THANH,PER_2845 – tên project,x
+Person,no friends no enemies,PER_1877 – tên bài/album,x
+Person,Thu Trong Phòng Ngủ,PER_1287 – tên bài,x
+Person,Giang Trần-Huy Đặng-Nam Seo Duk,PER_1410 – 3 người dính liền,x
+Person,GIN TUẤN KIỆT Bị,PER_4268 – mảnh tiêu đề vlog,x
+Person,E5-LILC-HUYTAN,PER_2209 – 3 người dính liền,x
+Person,An Roy $8386,PER_3948 – CẦN KIỂM TRA,x
+Person,LAB,PER_1244 (22 tài liệu; 0 cạnh) – mảnh tên Da LAB,x
+Group,FAPtv,GRO_0018 – kênh hài,x
+Group,Vjppr0 Band,GRO_0025 – 0 cạnh,x
+Group,BigTeam,GRO_0017 – 0 cạnh,x
+Company,Spotify,COM_0225 – nền tảng phát hành không phải label,x
+Company,Zing MP3,COM_0219 – nền tảng,x
+Company,NhacCuaTui,COM_0184 – nền tảng,x
+Company,TikTok Shop,COM_0172 – thương mại điện tử,x
+Company,Viettel,COM_0242 – nhà tài trợ,x
+Company,TIKI,COM_0232 – nhà tài trợ,x
+Company,SAIGON CO.OP,COM_0249 – nhà tài trợ,x
+Company,AIA,COM_0254 – nhà tài trợ,x
+Company,WeChoice Awards,COM_0171 – giải thưởng,x
+Company,V-MAS,COM_0192 – giải thưởng,x
+Company,Làn Sóng Xanh,COM_0241 – giải thưởng (đã có Event riêng),x
+Company,Gala Nhac Viet,COM_0163 – chương trình,x
+Company,SOXO 1 9 6 7 Slowed,COM_0168 – kênh reup slowed,x
+Song,ĐÀM VĨNH HƯNG,SON_1677 – tên ca sĩ bị tách thành bài,x
+Song,Nhật Phong,SON_0241 – tên ca sĩ,x
+Song,Tiến Pịp,SON_2937 – tên ca sĩ,x
+Song,D'Cee,SON_5208 – tên ca sĩ,x
+Song,ƯNG HOÀNG PHÚC,SON_1667 – tên ca sĩ,x
+Song,st Nguyễn Văn Chung,SON_0178 – credit sáng tác,x
+Song,ĐạtG,SON_5302 – tên ca sĩ Đạt G,x
+Song,NHAT NGUYEN,SON_1465 – tên ca sĩ Nhật Nguyễn,x
+Song,DOUBLE NOIZE,SON_5297 – tên ca sĩ,x
+Song,MRT,SON_6129 – tên ca sĩ Mr. T,x
+Song,Hành Or,SON_6668 – tên ca sĩ,x
+Song,Du Uyên,SON_0227 – tên ca sĩ,x
+Song,dubbie,SON_0126 – tên ca sĩ,x
+Song,Kanx,SON_0576 – tên ca sĩ,x
+Song,Lahi,SON_0986 – tên ca sĩ,x
+Song,PLAINVIEW KIET,SON_1061 – tên ca sĩ,x
+Song,BrT,SON_1215 – tên ca sĩ,x
+Song,Enkey,SON_3010 – tên ca sĩ,x
+Song,Hipz,SON_3011 – tên ca sĩ,x
+Song,TRẦN HUYỀN DIỆP,SON_3577 – tên ca sĩ,x
+Song,Giang Nguyễn,SON_4033 – tên người,x
+Song,TBii,SON_4890 – tên ca sĩ,x
+Song,Yun,SON_5259 – CẦN KIỂM TRA,x
+Song,Losy,SON_5697 – tên ca sĩ,x
+Song,hooligan,SON_5881 – tên ca sĩ,x
+Song,HIDDEN LAB,SON_3940 – tên nhóm/kênh,x
+Song,Sofia bóc Châu Đăng Khoa vì độ khó tính,SON_6145 – tiêu đề clip,x
+Song,NHÌN LẠI 2025,SON_6327 – clip tổng kết,x
+Song,TA,SON_2153 – CẦN KIỂM TRA: tên ca sĩ T.A hay bài “Ta”,x
+Song,GÓC TỐI,SON_6200 – CẦN KIỂM TRA: tên ca sĩ Goctoi hay bài,x
+Song,DA-B,SON_1295 – CẦN KIỂM TRA: tên ca sĩ Dab,x
+Album,TrẦn TiẾn,ALB_0098 – tên ca sĩ viết hoa lỗi,x
+Company,Puppy,COM_0135 – Puppy là nghệ sĩ (duyệt theo dòng Puppy trong entity_overrides_draft),x

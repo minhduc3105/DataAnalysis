@@ -47,7 +47,7 @@ SHOW_WORDS = re.compile(
 
 def _clean(text: str) -> str:
     text = unicodedata.normalize("NFC", text or "")
-    text = "".join(c for c in text if unicodedata.category(c)[0] != "S" or c in "&+/|")
+    text = "".join(c for c in text if unicodedata.category(c)[0] != "S" or c in "&+/|×")
     return re.sub(r"\s+", " ", BRACKETS.sub(" ", text)).strip(" -–|")
 
 

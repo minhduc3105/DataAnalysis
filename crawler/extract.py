@@ -3,7 +3,7 @@ import re
 import unicodedata
 from collections import Counter, defaultdict
 
-from .common import iter_jsonl, normalize_name, now_iso, read_seeds
+from .common import iter_jsonl, normalize_name, now_iso, read_reviewed_csv, read_seeds
 from .config import INTERIM_DIR, RAW_DIR, SEEDS_PATH
 from .layer1 import DASH, NAME_SPLIT, SHOW_WORDS, _clean, _key, _names, _songs, parse_title
 from .layer1_extract import _write_preserving_review, org_mentions
@@ -24,7 +24,8 @@ TAIL_NOISE = re.compile(
     re.IGNORECASE,
 )
 SEG_NOISE = re.compile(
-    r"^(?:official|offical|ost\b.*|prod\b.*|live\b.*|acoustic\b.*|remix|cover|\d{4}|#.*|.*\b(?:music video|m/?v|lyrics?|visualizer|audio)\b.*)$",
+    r"^(?:official|offical|ost\b.*|prod\b.*|live\b.*|acoustic\b.*|remix|cover|\d{4}|#.*|(?:official |new )?(?:video|4k|hd|version)|"
+    r".*\b(?:music video|m/?v|lyrics?|visualizer|audio)\b.*)$",
     re.IGNORECASE,
 )
 # Video gộp nhiều bài: credit trong mô tả không biết thuộc bài nào nên không gán.
@@ -36,7 +37,12 @@ MULTI_SONG_VIDEO = re.compile(
 )
 COVER = re.compile(r"\bcover\b", re.IGNORECASE)
 # "(Andree ft Lee7)" sau tên bài: ghi ca sĩ gốc, không phải khách mời của video.
-ORIGINAL_CREDIT = re.compile(r"\((?!\s*(?:ft|feat|featuring)\b)(?=[^)]*\b(?:ft|feat|featuring)\b)[^)]*\)", re.IGNORECASE)
+ORIGINAL_CREDIT = re.compile(
+    r"\((?!\s*(?:ft|feat|featuring|prod)\b)(?![^)]*\b(?:remix|mix|edit|flip|version|ver)\b)(?=[^)]*(?:\b(?:ft|feat|featuring)\b|\s[xX×]\s))[^)]*\)", re.IGNORECASE
+)
+# "KAI ĐINH 'lưu nỗi nhớ vào film'": nghệ sĩ rồi tên bài trong nháy, không có gạch nối.
+QUOTED_SONG = re.compile(r"^([^'\"“”‘’]{2,80}?)\s+['\"“‘]([^'\"“”‘’]{2,60})['\"”’]\s*(.*)$")
+QUOTED = re.compile(r"^['\"“‘].+['\"”’]$")
 NOT_SONG = re.compile(
     r"vlog|reaction|behind|hậu trường|teaser|trailer|tập \d+|episode|livestream|phỏng vấn|interview|karaoke|beat|uncut|highlight|recap|\bbts\b|^full$",
     re.IGNORECASE,
@@ -127,7 +133,7 @@ def _album_name(raw: str) -> str:
         name = re.sub(r"\s*\b(?:album|ep)$", "", name, flags=re.IGNORECASE).strip(" -–" + QUOTES)
     # `TÌNH" - Nói Với Bản Thân`: phần sau dấu đóng ngoặc là tên bài, không thuộc tên album.
     name = re.split(r"[\"”’]\s*[-–(]", name)[0].strip(" -–" + QUOTES)
-    if not name or len(name.split()) > 8 or NOT_ALBUM.search(name) or FOREIGN_SCRIPT.search(name):
+    if not name or len(name.split()) > 8 or NOT_ALBUM.search(name) or SHOW_ALBUM.search(name) or FOREIGN_SCRIPT.search(name):
         return ""
     return name
 
@@ -161,16 +167,34 @@ NOT_SONG_TOPIC = re.compile(
     r"^(?:intro|outro)$|\b(?:ep|album)$|giảm cân|chuyện tối nay|nhồi thịt|đi chùa|minh họa|lá thư gửi|sắp nổi tiếng",
     re.IGNORECASE,
 )
-SONG_TAIL = re.compile(r"\s*(?:\b(?:feat|ft)\.?|\bdemo|dance practice.*|acoustic show|\bremix(?: by .*)?)$", re.IGNORECASE)
+SONG_TAIL = re.compile(r"\s*(?:\b(?:feat|ft)\.?|\bdemo|dance practice.*|acoustic show|\bremix(?: by .*)?|/?\s*\b(?:ost|official(?: video)?))$", re.IGNORECASE)
+FEAT_IN_TITLE = re.compile(r"\s*[(\[]\s*(?:feat|ft|featuring|with)\b\.?[^)\]]*[)\]]|\s+(?:feat|ft|featuring)\.?\s.+$", re.IGNORECASE)
+NOT_SONG_EVENT = re.compile(
+    r"họp báo|tiệc ra mắt|ra mắt album|fansign|aftermovie|sneak peek|process of making|listening experience|full (?:mini )?(?:album|ep)\b|full track|"
+    r"premium edition|trend tiktok|anniversary|\bcover (?:of|at|by|tiếng)\b|^official(?:\s+(?:video|music|4k|mv|audio))?$|^(?:guitar |piano |vietnamese |acoustic )?cover$|"
+    r"^(?:lofi|piano|acoustic|dance) version$|\bmedley$|^the remix\b|^[a-z]+\d{4}$|^(?:19|20)\d{2}$",
+    re.IGNORECASE,
+)
+SONG_PREFIX = re.compile(r"^(?:demo|cover)\s+(?=\S)", re.IGNORECASE)
 NON_MUSIC_TITLE = re.compile(r"\bhài\b|sitcom|web ?drama|phim ngắn|short film|parody|fan ?meeting|tiểu phẩm", re.IGNORECASE)
 
 
 def clean_song(name: str, known_people: frozenset[str] = frozenset()) -> str:
     # Bản remix/phiên bản gộp về bài gốc để không tách thành nhiều node Song.
-    name = REMIX_PAREN.sub("", re.sub(r"\s*#\S+", "", name))
+    name = FEAT_IN_TITLE.sub("", REMIX_PAREN.sub("", re.sub(r"\s*#[^\s)\]]+", "", name)))
+    # Ngoặc đóng thừa ("Huỳnh Quốc Huy)") là mảnh của cụm credit bị cắt đôi, không phải tên bài.
+    if name.count(")") > name.count("(") or name.count("]") > name.count("["):
+        return ""
+    name = re.sub(r"\s*[(\[][^)\]]*$", "", name)
     name = TRACK_NO.sub("", name.strip()).strip(" -–" + QUOTES)
     name = re.sub(r"\s+[lI]$", "", name)
     name = SONG_TAIL.sub("", name).strip(" -–" + QUOTES)
+    name = " ".join(name.split())
+    if NOT_SONG_EVENT.search(name):
+        return ""
+    name = SONG_PREFIX.sub("", name)
+    if NOT_SONG_EVENT.search(name):
+        return ""
     # Ngoặc kép lệch còn sót giữa tên ("Hít "Drama") được bỏ.
     if name.count('"') % 2 or name.count("“") != name.count("”"):
         name = re.sub(r"[\"“”]", "", name).strip()
@@ -254,6 +278,13 @@ def parse_artist_title(title: str, artist_keys: set[str], known_people: frozense
     segments = [TAIL_NOISE.sub("", s).strip(" -–") for s in _clean(title).split("|")]
     album_segs = [_album_name(m.group(1)) for s in segments if (m := ALBUM.match(s.strip()))]
     segments = [s for s in segments if s and not SEG_NOISE.match(s) and not ALBUM.match(s.strip())]
+    segments = [" - ".join(p.strip() for p in DASH.split(s) if p.strip() and not SEG_NOISE.match(TAIL_NOISE.sub("", p).strip())) for s in segments]
+    segments = [s for s in segments if s]
+    known_all = artist_keys | known_people
+    segments = [
+        QUOTED_SONG.sub(r"\1 - \2 \3", s).strip() if not DASH.search(s) and (m := QUOTED_SONG.match(s)) and _has_name(m.group(1), known_all) else s
+        for s in segments
+    ]
     artist_part = song_part = ""
     for seg in segments:
         parts = [p.strip() for p in DASH.split(seg) if p.strip()]
@@ -271,8 +302,13 @@ def parse_artist_title(title: str, artist_keys: set[str], known_people: frozense
         if side is None and any(_has_name(p, artist_keys) for p in parts[:2]):
             side = next((i for i in (0, 1) if _has_name(main[i], known_people)), None)
             if side is None:
+                # "'TRÔI QUA' - SĨ CHƯƠNG ft. CM1X": vế trong nháy là bài. Không suy theo vị trí "ft." vì "DROPPY - HAI MAT ft X" gắn ft. vào vế bài.
+                quoted = next((i for i in (0, 1) if QUOTED.match(parts[i])), None)
                 remix_side = next((i for i in (0, 1) if REMIX_PAREN.search(parts[i]) and _has_name(parts[i], artist_keys)), None)
-                side = 1 - remix_side if remix_side is not None else 0
+                if quoted is not None:
+                    side = 1 - quoted
+                else:
+                    side = 1 - remix_side if remix_side is not None else 0
         if side is not None:
             artist_part, song_part = parts[side], parts[1 - side]
             break
@@ -364,11 +400,9 @@ def _brands(title: str, desc: str, artist_keys: set[str]) -> list[tuple[str, str
 def load_known_groups(seeds: dict) -> dict[str, str]:
     """{khóa tên: tên hiển thị} của nhóm đã biết: Group trong seeds và trong entity_overrides.csv."""
     groups = {normalize_name(s["name"]): s["name"] for s in seeds.values() if s["entity_type"] == "Group"}
-    if OVERRIDES_PATH.exists():
-        with OVERRIDES_PATH.open(encoding="utf-8-sig", newline="") as f:
-            for r in csv.DictReader(f):
-                if r.get("entity_type", "").strip() == "Group":
-                    groups[normalize_name(r["name"])] = (r.get("canonical_name") or r["name"]).strip()
+    for r in read_reviewed_csv(OVERRIDES_PATH):
+        if r.get("entity_type", "").strip() == "Group":
+            groups[normalize_name(r["name"])] = (r.get("canonical_name") or r["name"]).strip()
     return groups
 
 
@@ -477,6 +511,26 @@ LICENSE = re.compile(
 )
 LEGAL_WORDS = re.compile(r",?\s*\b(?:co\.?\s*,?\s*)?(?:ltd|limited|inc|llc|jsc)\b\.?", re.IGNORECASE)
 PEOPLE_SPLIT = re.compile(r"\s*(?:,|&|\s[xX×]\s|\bfeat\.?|\bft\.?)\s*")
+SPOTIFY_VERSION = re.compile(
+    r"\b(?:remix(?:ed|es)?|mix|edit|flip|version|ver|live|lofi|lo-fi|acoustic|unplugged|short|sped ?up|speed ?up|slowed|reverb|remaster(?:ed)?|"
+    r"soundtrack|ost|theme|house|vinahouse|edm|vmix|piano|demo|radio|extended|session|cover|song ca|reprise|interlude|solo|original|from|"
+    r"\d+(?:st|nd|rd|th)|\d+\.\d+)\b",
+    re.IGNORECASE,
+)
+LABEL_ARTIST = re.compile(r"\b(?:studios?|records?|recordings|entertainment|productions?|media|label)\b", re.IGNORECASE)
+SHOW_ALBUM = re.compile(r"\btập \d|\bvòng \d|live stage|concert|\bgala\b|live at|live from|soundtrack|motion picture|\bshow\b|\bmùa \d|episode", re.IGNORECASE)
+
+
+def _spotify_title(raw: str, artist_keys: set[str]) -> tuple[str, str]:
+    """Spotify ghi phiên bản sau " - " ("Lửng Lơ - Lofi", "2 Phút Hơn - Masew"); trả (tên bài gốc, phần phiên bản đã bỏ)."""
+    title = FEAT_IN_TITLE.sub("", raw).strip()
+    removed = ""
+    head, sep, tail = title.rpartition(" - ")
+    # "[ NGƯỜI - NGỰA ]": gạch nối nằm trong ngoặc là một phần tên bài.
+    if sep and head.strip() and not re.search(r"[(\[][^)\]]*$", head) and (SPOTIFY_VERSION.search(tail) or normalize_name(tail) in artist_keys):
+        title, removed = head.strip(), tail
+    removed += " " + " ".join(m.group(0) for m in REMIX_PAREN.finditer(title))
+    return title, removed
 
 
 def _spotify_albums() -> dict[str, dict]:
@@ -511,30 +565,42 @@ def _spotify_companies(album: dict, people: set[str]) -> list[tuple[str, str, st
 
 def _spotify_mentions(album: dict, add, seed_name_of: dict[str, str], known_people: frozenset[str]) -> None:
     tracks = album.get("tracks") or []
-    album_artists = {a.get("id") for a in album.get("artists") or []}
     track_artists = {normalize_name(a.get("name") or "") for t in tracks for a in t.get("artists") or []}
     companies = _spotify_companies(album, set(known_people) | track_artists)
     # Single/EP và album tuyển tập không thành nút Album: tuyển tập gom bài của nhiều nghệ sĩ không liên quan.
     album_name = (album.get("name") or "").strip() if album.get("album_type") == "album" and len(tracks) > 1 else ""
+    # Tuyển tập theo tập/vòng/concert của show là bản ghi chương trình, không phải album phát hành.
+    if SHOW_ALBUM.search(album_name) or any(SHOW_ARTIST.search(a.get("name") or "") for a in album.get("artists") or []):
+        album_name = ""
     for t in tracks:
         raw = t.get("name") or ""
-        song = "" if NOT_RELEASE_TRACK.search(raw) else clean_song(raw, known_people)
-        if not song:
-            continue
         artists = [
             a for a in t.get("artists") or []
             if a.get("name") and normalize_name(a["name"]) != "various artists" and not SHOW_ARTIST.search(a["name"])
+            and (a.get("id") in seed_name_of or not LABEL_ARTIST.search(a["name"]))
         ]
+        artist_keys = {normalize_name(a["name"]) for a in artists}
+        title, version = _spotify_title(raw, artist_keys)
+        song = "" if NOT_RELEASE_TRACK.search(raw) else clean_song(title, known_people)
+        if not song:
+            continue
         disc = t.get("disc_number") or 1
         location = f"track {t.get('track_number')}" if disc == 1 else f"đĩa {disc} track {t.get('track_number')}"
         quote = f"{album.get('name')} — {t.get('track_number')}. {raw} — {', '.join(a['name'] for a in t.get('artists') or [])}"
-        feat = FEAT.split(raw, maxsplit=1)
-        feat_part = normalize_name(feat[1]) if len(feat) > 1 else ""
+        feat_part = f" {normalize_name(' '.join(m.group(0) for m in FEAT_IN_TITLE.finditer(raw)))} "
+        version_part = f" {normalize_name(version)} "
         add(song, "Song", "song", song, location, quote, SPOTIFY_METHOD)
+        roles = {}
         for a in artists:
             name = seed_name_of.get(a.get("id")) or re.sub(r"\s*\([^()]*\)$", "", a["name"]).strip() or a["name"]
-            featured = a.get("id") not in album_artists and feat_part and normalize_name(a["name"]) in feat_part
-            add(name, "Person", "featured" if featured else "performer", song, location, quote, SPOTIFY_METHOD)
+            key = f" {normalize_name(a['name'])} "
+            # Người đứng tên ở đuôi phiên bản ("- Masew", "(Orinn Remix)") là người làm remix của bài gốc.
+            roles[name] = "producer" if len(artists) > 1 and key in version_part else "featured" if key in feat_part else "performer"
+        # Track của show chỉ ghi khách mời trong "(feat. …)" sau khi bỏ nghệ sĩ tên show: họ chính là người trình bày.
+        if "performer" not in roles.values():
+            roles = {n: "performer" if r == "featured" else r for n, r in roles.items()}
+        for name, role in roles.items():
+            add(name, "Person", role, song, location, quote, SPOTIFY_METHOD)
         if album_name:
             add(album_name, "Album", "album", song, location, quote, SPOTIFY_METHOD)
         for name, role, cquote in companies:

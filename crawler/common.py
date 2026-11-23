@@ -75,6 +75,19 @@ def release_in_period(value: str | None, precision: str | None) -> bool:
     return start >= PERIOD_START and end <= PERIOD_END
 
 
+APPROVE_YES = {"y", "yes", "có", "co", "x", "1", "ok"}
+
+
+def read_reviewed_csv(path: Path) -> list[dict]:
+    """Dòng của `path` cộng dòng có cột approve = x trong bản nháp `<tên>_draft.csv` cạnh nó."""
+    rows: list[dict] = []
+    for p, need_approve in ((path, False), (path.with_name(f"{path.stem}_draft.csv"), True)):
+        if p.exists():
+            with p.open(encoding="utf-8-sig", newline="") as f:
+                rows += [r for r in csv.DictReader(f) if not need_approve or (r.get("approve") or "").strip().lower() in APPROVE_YES]
+    return rows
+
+
 def normalize_name(text: str) -> str:
     text = unicodedata.normalize("NFC", text or "").casefold()
     text = text.replace("đ", "d")

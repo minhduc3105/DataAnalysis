@@ -1,7 +1,7 @@
 import csv
 import shutil
 
-from .common import normalize_name, read_seeds, today_iso, write_seeds
+from .common import normalize_name, read_reviewed_csv, read_seeds, today_iso, write_seeds
 from .config import SEEDS_PATH
 from .layer1 import CANDIDATES_PATH, _key
 from .youtube import blocked_channels
@@ -25,12 +25,9 @@ def _selected(row: dict, include_suggested: bool) -> bool:
 
 def load_aliases() -> dict[str, tuple[str, set[str]]]:
     """Trả {khóa tên bất kỳ: (khóa tên chuẩn, các tên gọi khác)}."""
-    if not ALIASES_PATH.exists():
-        return {}
     groups: dict[str, set[str]] = {}
-    with ALIASES_PATH.open(encoding="utf-8-sig", newline="") as f:
-        for r in csv.DictReader(f):
-            groups.setdefault(r["canonical_name"].strip(), set()).add(r["alias"].strip())
+    for r in read_reviewed_csv(ALIASES_PATH):
+        groups.setdefault(r["canonical_name"].strip(), set()).add(r["alias"].strip())
     out = {}
     for canonical, alias_names in groups.items():
         for name in {canonical} | alias_names:

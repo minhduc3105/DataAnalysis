@@ -1,0 +1,20 @@
+name,entity_type,canonical_name,note,approve
+Star Online,Company,Star Online,PER_4067 – trùng Company COM_0245,x
+V.Music New,Company,V.Music,PER_4124 – tên kênh/label,x
+Nhóm MTV,Group,MTV BAND,PER_4248 – gộp vào GRO_0033,x
+Nhóm Cadillac,Group,Cadillac,PER_3981,x
+HYPERFOCUS,Company,HYPERFOCUS,PER_1265 – CẦN KIỂM TRA: người hay label (COM_0146),x
+Puppy,Person,Puppy,PER_2550 – CẦN KIỂM TRA: nếu là nghệ sĩ thì giữ Person và chặn Company COM_0135 ở blocklist,x
+Ocean M.O.B,Company,OCEAN MOB,PER_1988 – CẦN KIỂM TRA: trùng COM_0230,x
+Gala Nhạc Việt,drop,,PER_4184 – tên chương trình,x
+REDMI NOTE 13 PRO,drop,,PER_0956 – sản phẩm trong tiêu đề quảng cáo,x
+BÁC SĨ S1 VN,drop,,PER_1223,x
+yangg slowed,drop,,PER_3944 – tên kênh slowed/reup,x
+Da LAB Sau 10 Năm,drop,,PER_1436 – mảnh tiêu đề,x
+CHILL WITH LYLY,drop,,PER_1770 – tên series,x
+Dj Mie 1900 Liveset,drop,,PER_2041 – mảnh tiêu đề của DJ MIE,x
+Dj Mie ''náo,drop,,PER_2042 – mảnh tiêu đề của DJ MIE,x
+VMA Mix,drop,,PER_4256,x
+1 9 6 7,drop,,PER_3907 (34 cạnh) – CẦN KIỂM TRA: nghệ danh producer thật hay mảnh tên SOXO 1 9 6 7,x
+Cadillac,Group,Cadillac,PER_2538 – cùng nhóm với dòng Nhóm Cadillac đã duyệt,x
+OCEAN MOB,Company,OCEAN MOB,PER_4342 – cách viết liền của Ocean M.O.B đã duyệt là Company,x
