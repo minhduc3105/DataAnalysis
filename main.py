@@ -182,6 +182,18 @@ def cmd_slm(args) -> None:
     slm.bench(args.models, args.split, args.num_ctx)
 
 
+def cmd_embed(args) -> None:
+    from crawler import embedding
+
+    embedding.check_aliases(args.n)
+
+
+def cmd_prep(args) -> None:
+    from crawler import preprocess
+
+    preprocess.run(None if args.all else args.docs)
+
+
 def cmd_stage2(args) -> None:
     from crawler import stage2
     if args.action == "freeze":
@@ -325,6 +337,15 @@ def main() -> None:
     sl.add_argument("--split", choices=["dev", "test"], help="Chỉ chạy và chấm một tập; chỉnh prompt thì chỉ dùng dev")
     sl.add_argument("--num-ctx", type=int, default=4096)
     sl.set_defaults(func=cmd_slm)
+    em = sub.add_parser("embed", help="Kiểm embedding bge-m3: số chiều, cặp alias xếp trên cặp ngẫu nhiên")
+    em.add_argument("action", choices=["check"])
+    em.add_argument("--n", type=int, default=20, help="Số cặp alias, mỗi thực thể tối đa 1 cặp")
+    em.set_defaults(func=cmd_embed)
+    pp = sub.add_parser("prep", help="Chia câu có vị trí, dò mention từ điển, lọc câu ứng viên gửi SLM")
+    pp.add_argument("action", choices=["run"])
+    pp.add_argument("--docs", type=int, default=20, help="Số bài lấy ngẫu nhiên (seed 42)")
+    pp.add_argument("--all", action="store_true", help="Chạy toàn bộ articles_ready.csv")
+    pp.set_defaults(func=cmd_prep)
 
     st = sub.add_parser("stage2", help="Snapshot dữ liệu, gói bàn giao Huy, kiểm tra và nhập kết quả làm giàu")
     st.add_argument("action", choices=["freeze", "export-huy", "validate", "link", "import", "communities-export", "communities-import"])
