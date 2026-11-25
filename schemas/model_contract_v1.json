@@ -47,7 +47,7 @@
         "type": { "$ref": "#/$defs/relationType" },
         "tail_mention_id": { "type": "string", "minLength": 1 },
         "evidence": { "type": "string", "minLength": 1 },
-        "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1, "description": "Điểm SLM tự đánh giá, chưa hiệu chỉnh; chỉ lưu tham khảo, không dùng làm ngưỡng tự động nhận cạnh" }
       },
       "additionalProperties": false
     },
@@ -148,7 +148,7 @@
     "ORGANIZED_BY": [["Show", "Event"], ["Company"]],
     "AMBASSADOR_OF": [["Person", "Group"], ["Brand"]],
     "COLLABORATED_WITH": [["Person", "Group"], ["Person", "Group"]],
-    "DISPUTED_WITH": [["Person", "Company"], ["Person", "Company"]]
+    "DISPUTED_WITH": [["Person", "Group", "Company"], ["Person", "Group", "Company"]]
   },
   "rules": [
     "Each /extract result has one document_id, one schema_version and one model_version.",

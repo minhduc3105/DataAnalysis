@@ -159,6 +159,19 @@ def cmd_analyze(_args) -> None:
 def cmd_gold(args) -> None:
     if args.action == "sample":
         gold.sample(force=args.force)
+    elif args.action == "check":
+        from crawler import gold_eval
+
+        if gold_eval.check():
+            raise SystemExit(1)
+    elif args.action == "score":
+        from crawler import gold_eval
+
+        gold_eval.score()
+    elif args.action == "split":
+        from crawler import gold_eval
+
+        gold_eval.split(force=args.force)
     else:
         gold.multi_hop_duc(args.count, args.force)
 
@@ -302,7 +315,7 @@ def main() -> None:
     dc.add_argument("--model", action="store_true", help="Gọi API /embed để xác minh hợp đồng mô hình")
     dc.set_defaults(func=cmd_doctor)
     gd = sub.add_parser("gold", help="Lấy mẫu bộ gold (cạnh đồ thị + câu báo chí) để gán nhãn tay vào data/gold/")
-    gd.add_argument("action", choices=["sample", "multi-hop"])
+    gd.add_argument("action", choices=["sample", "check", "score", "split", "multi-hop"])
     gd.add_argument("--force", action="store_true", help="Tạo lại file đã có (xóa nhãn đã gán)")
     gd.add_argument("--count", type=int, default=15, help="Số câu hỏi ứng viên 2–3 bước, tối đa 100")
     gd.set_defaults(func=cmd_gold)

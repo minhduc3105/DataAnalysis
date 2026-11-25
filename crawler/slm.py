@@ -54,7 +54,7 @@ RELEASED_BY Song→Company | TRACK_OF Song→Album | MEMBER_OF Person→Group
 CONTESTANT_ON Person→Show: thí sinh | JUDGE_ON Person→Show: giám khảo, huấn luyện viên
 PERFORMED_AT Person/Group→Show/Event: biểu diễn, khách mời | ORGANIZED_BY Show/Event→Company
 AMBASSADOR_OF Person/Group→Brand | COLLABORATED_WITH Person↔Person: cùng làm một sản phẩm cụ thể
-DISPUTED_WITH Person/Company↔Person/Company: tranh chấp, kiện tụng, cáo buộc công khai (tin đồn không tính)
+DISPUTED_WITH Person/Group/Company↔Person/Group/Company: tranh chấp, kiện tụng, cáo buộc công khai (tin đồn không tính)
 "evidence" là đoạn ngắn chép nguyên văn từ câu. Không có gì thì trả danh sách rỗng."""
 
 FEW_SHOT = [
@@ -154,8 +154,8 @@ def _relations(cell: str) -> set[tuple[str, str, str]]:
 
 
 def _gold(row) -> tuple[str, str] | None:
-    # Dòng gán chung lấy nhãn của Huy làm đáp án; kappa tính riêng từ hai cột.
-    ent, rel = (row.entities_duc, row.relations_duc) if row.annotator == "Đức" else (row.entities_huy, row.relations_huy)
+    # Huy gán toàn bộ 100 câu (quyết định 25/11); cột annotator chỉ còn là dấu vết lúc lấy mẫu.
+    ent, rel = row.entities_huy, row.relations_huy
     return (ent, rel) if ent.strip() else None
 
 
@@ -192,6 +192,14 @@ def bench(models: list[str]) -> None:
             out.add((min(h, t), rt, max(h, t)) if rt in UNDIRECTED else (h, rt, t))
         return out
 
+    from .gold_eval import load_split
+
+    split_of = load_split()
+    parts = {name: {g: v for g, v in gold.items() if split_of.get(g) == name} for name in ("test", "dev")} if split_of else {"all": gold}
+
+    def score_parts(name: str, preds: dict) -> list[dict]:
+        return [{"split": part, **score(name, preds, sub)} for part, sub in parts.items()]
+
     results = []
     for model in models:
         print(f"Chạy {model} trên {len(rows)} câu (kết quả lưu ở {_cache(model).name})")
@@ -205,10 +213,10 @@ def bench(models: list[str]) -> None:
                 ents = {(normalize_name(e.get("text", "")), e.get("type", "")) for e in p.get("entities", []) if e.get("text")}
                 rels = validate(p, sentence_of[o["gold_id"]]) if use_validation else p.get("relations", [])
                 preds[o["gold_id"]] = (ents, {e for e, _ in ents}, rel_set(rels))
-            results.append({**score(model + label, preds, gold), **stats})
+            results += [{**r, **stats} for r in score_parts(model + label, preds)]
     base = {r.gold_id: (e := _entities(r.suggested_entities), {t for t, _ in e}, set()) for r in rows.itertuples()}
-    results.append({**score("baseline từ điển (GĐ1)", base, gold), "json_valid": None, "seconds_per_sentence": None, "tokens_per_second": None})
-    df = pd.DataFrame(results)
+    results += [{**r, "json_valid": None, "seconds_per_sentence": None, "tokens_per_second": None} for r in score_parts("baseline từ điển (GĐ1)", base)]
+    df = pd.DataFrame(results).sort_values("split", ascending=False, kind="stable")
     df.to_csv(GOLD_DIR / "slm_benchmark.csv", index=False, encoding="utf-8-sig")
     if not gold:
         print("Chưa có nhãn gold (cột entities_huy/entities_duc trống): mới lưu dự đoán, F1 sẽ tính khi gán nhãn xong.")

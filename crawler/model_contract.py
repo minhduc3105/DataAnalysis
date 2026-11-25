@@ -28,7 +28,7 @@ RELATION_SIGNATURES = {
     "ORGANIZED_BY": ({"Show", "Event"}, {"Company"}),
     "AMBASSADOR_OF": ({"Person", "Group"}, {"Brand"}),
     "COLLABORATED_WITH": ({"Person", "Group"}, {"Person", "Group"}),
-    "DISPUTED_WITH": ({"Person", "Company"}, {"Person", "Company"}),
+    "DISPUTED_WITH": ({"Person", "Group", "Company"}, {"Person", "Group", "Company"}),
 }
 UNDIRECTED = {"COLLABORATED_WITH", "DISPUTED_WITH"}
 
