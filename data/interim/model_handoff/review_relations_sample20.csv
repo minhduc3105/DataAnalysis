@@ -1,0 +1,51 @@
+﻿document_id,head,head_type,type,tail,tail_type,evidence,confidence,label_huy,correct_type,note
+DOC_WEB_b52455435429ba8d9afe,Khắc Việt,Person,PERFORMED_AT,"Lý Thường Kiệt, Hà Nội",Event,"nam ca sĩ cùng vợ - DJ Thanh Thảo – tổ chức tiệc cưới tại Lý Thường Kiệt, Hà Nội",0.9,sai,NONE,sai_loai_nut: tail là địa danh nơi tổ chức tiệc cưới
+DOC_WEB_d4e7a08891a952cb6647,Hoàng Dũng,Person,PERFORMED_AT,The Making of Yên,Event,Hoàng Dũng trở lại dự án The Making of Yên Concert,0.9,đúng,,
+DOC_WEB_14b81a1b2f99fd573b38,Karik,Person,PRODUCED,Quan trọng là thần thái,Song,bởi Only C và Karik,0.9,sai,PERFORMED,"sai_loai: Karik hát/rap, câu không nói sản xuất"
+DOC_WEB_82df14d4e1e7312c14da,Gieo quẻ,Song,TRACK_OF,LINK,Album,thuộc album “LINK”,0.9,đúng,,
+DOC_WEB_d4e7a08891a952cb6647,Hoàng Dũng,Person,MEMBER_OF,Bạn Nhạc,Group,"tớ cũng nói với anh Dũng là em ở trong group ""Bạn Nhạc""",0.9,sai,NONE,"sai_nguoi: người ở trong group fan 'Bạn Nhạc' là người viết, không phải Hoàng Dũng"
+DOC_WEB_d4e7a08891a952cb6647,Captain,Person,DISPUTED_WITH,Hoàng Dũng,Person,"đối chất trực tiếp với Anh Tú, Captain và hãy ngưng đi việc vu khống, cắt ghép câu chữ làm ảnh hưởng đến Hoàng Dũng",0.9,không rõ,,"khong_xac_minh: tranh cãi công khai quanh phát ngôn của Captain, câu này chỉ nói gián tiếp"
+DOC_WEB_d4e7a08891a952cb6647,Captain,Person,COLLABORATED_WITH,Hoàng Dũng,Person,"trong một cuộc phỏng vấn khác, Captain cho biết Hoàng Dũng",0.9,sai,NONE,"khong_co_quan_he: Captain kể lại yêu cầu của Hoàng Dũng, hai bên đang tranh cãi"
+DOC_WEB_d4e7a08891a952cb6647,Văn Mai Hương,Person,COLLABORATED_WITH,Hoàng Dũng,Person,liên khúc ballad của Văn Mai Hương - Anh Tú - Lâm Bảo Ngọc - Hoàng Dũng tại WeChoice,0.9,đúng,,cùng trình diễn liên khúc
+DOC_WEB_bbdd4bc648cd8eb602c0,Thùy Dung,Person,PERFORMED,Xe đạp,Song,Thùy Dung hát hit “Xe đạp” của Thùy Chi bằng tiếng Nhật tại Miss International 2017,0.9,đúng,,
+DOC_WEB_d4e7a08891a952cb6647,Lâm Bảo Ngọc,Person,CONTESTANT_ON,show Văn Mai Hương,Show,Hoàng Dũng và Lâm Bảo Ngọc bất ngờ thông báo rút khỏi show Văn Mai Hương,0.9,sai,NONE,"rút khỏi show, không biểu diễn; tail là tên rác"
+DOC_WEB_b52455435429ba8d9afe,The Men,Group,PERFORMED,Chính là anh,Song,Một trong những ca khúc nổi tiếng của The Men là Chính là anh,0.9,đúng,,
+DOC_WEB_9f08bc079162e0006c2d,Karik,Person,COLLABORATED_WITH,Emma,Person,có sự tham gia của Karik,0.9,đúng,,Karik tham gia bài Tất cả tại anh (Emma)
+DOC_WEB_14b81a1b2f99fd573b38,Only C,Person,COLLABORATED_WITH,Karik,Person,Only C tiết lộ sẽ kết hợp với Karik trong một vài ca khúc sắp sửa phát hành trong thời gian sớm nhất,0.9,đúng,,"hợp tác dự kiến, đã có sản phẩm chung trước đó"
+DOC_WEB_0ebfdd14f1de250a6def,Thùy Chi,Person,COLLABORATED_WITH,Miu Lê,Person,bởi 2 giọng ca Thùy Chi - Miu Lê,0.9,sai,NONE,khong_co_quan_he: mỗi người hát một bài nhạc phim riêng
+DOC_WEB_f810bdcb214c43753101,Nhà Hoa Lửa,Group,PERFORMED,Let Me Go,Song,ca khúc Let Me Go,0.9,sai,PERFORMED,nhom_tam_trong_show: PERFORMED cho từng thành viên
+DOC_WEB_14b81a1b2f99fd573b38,Only C,Person,COLLABORATED_WITH,Karik,Person,"Only C và Karik hợp tác trong sản phẩm âm nhạc cực chất mang tên ""Quan trọng là thần thái""",0.9,đúng,,
+DOC_WEB_bbdd4bc648cd8eb602c0,Thùy Dung,Person,PERFORMED_AT,Miss International 2017,Event,Thùy Dung hát hit “Xe đạp” của Thùy Chi bằng tiếng Nhật tại Miss International 2017,0.9,đúng,,
+DOC_WEB_71c7bd8d62804973d3be,Chi Dân,Person,COLLABORATED_WITH,Lan Ngọc,Person,"3 cặp đôi chính là Đông Nhi - Ông Cao Thắng, Chi Dân - Lan Ngọc và cuối cùng là Bảo Anh - Hồ Quang Hiếu",0.9,sai,NONE,khong_co_quan_he: cặp đôi tình cảm đi dự cưới
+DOC_WEB_d4e7a08891a952cb6647,Hoàng Dũng,Person,COMPOSED,Người Tình Của Nắng,Song,Hoàng Dũng đã yêu cầu giữ nguyên 60% nguyên bản của bài hát Người Tình Của Nắng,0.9,đúng,,câu kế bên nói rõ Hoàng Dũng là tác giả
+DOC_WEB_d4e7a08891a952cb6647,Captain,Person,DISPUTED_WITH,Người Tình Của Nắng,Group,Thông tin được Captain tiết lộ khiến không ít fan của đội Người Tình Của Nắng bức xúc,0.9,sai,NONE,"tail là đội/bài hát; fan bức xúc, không phải Captain tranh chấp"
+DOC_WEB_9f08bc079162e0006c2d,Only C,Person,COLLABORATED_WITH,Karik,Person,"Rapper Karik và nhà sản xuất âm nhạc Only C trở lại kết hợp trong MV ""Có chơi có chịu""",0.9,đúng,,
+DOC_WEB_b52455435429ba8d9afe,Khắc Việt,Person,PERFORMED_AT,Sao Hồng Quế,Show,"Tuấn Hưng dự tiệc cưới ngọt ngào của Khắc Việt và vợ DJ Chủ nhật, 1/4/2018 17:34 (GMT+7) 17:34 1/4/2018",0.9,sai,NONE,ten_rac: 'Sao Hồng Quế' không phải show; câu nói về tiệc cưới
+DOC_WEB_b52455435429ba8d9afe,Khắc Việt,Person,COMPOSED,Chính là anh,Song,do Khắc Việt sáng tác,0.9,đúng,,
+DOC_WEB_2170e0e1f59ca58850a5,Nam,Person,MEMBER_OF,Sài Gòn Tếu,Group,Sài Gòn Tếu (Nam),0.9,đúng,,Sài Gòn Tếu (Nam)
+DOC_WEB_d4e7a08891a952cb6647,Captain,Person,COLLABORATED_WITH,Vũ Thịnh,Person,Tiết mục sử dụng ca khúc do Hoàng Dũng sáng tác,0.9,đúng,,cùng trình diễn một tiết mục
+DOC_WEB_71c7bd8d62804973d3be,Bảo Anh,Person,COLLABORATED_WITH,Hồ Quang Hiếu,Person,"3 cặp đôi chính là Đông Nhi - Ông Cao Thắng, Chi Dân - Lan Ngọc và cuối cùng là Bảo Anh - Hồ Quang Hiếu",0.9,sai,NONE,khong_co_quan_he: cặp đôi tình cảm đi dự cưới
+DOC_WEB_f810bdcb214c43753101,Cheng,Person,MEMBER_OF,Nhà Hoa Lửa,Group,"Nhà Hoa Lửa gồm Hoàng Dũng, Thơm (Da LAB), Hoàng Rob, Vương Anh Tú và Cheng",0.9,sai,CONTESTANT_ON,nhom_tam_trong_show
+DOC_WEB_82df14d4e1e7312c14da,Hoàng Thùy Linh,Person,PRODUCED,Thầy Dùi,Song,do Hoàng Thùy Linh phát triển nội dung cùng đạo diễn Nhu Đặng và ê-kíp,0.9,sai,NONE,"phát triển nội dung MV, không phải sản xuất âm nhạc"
+DOC_WEB_4354389d6e521057d129,Trung Quân,Person,PERFORMED_AT,Live Concert kỉ niệm 15 năm,Event,Live Concert kỉ niệm 15 năm của Trung Quân,0.9,sai,,"ten_rac: tail là tên mô tả, concert tên là 1589"
+DOC_WEB_d280bb0763f908681f48,Khắc Hưng,Person,COMPOSED,Như lời đồn,Song,Khắc Hưng sáng tác cho Bảo Anh,0.9,đúng,,
+DOC_WEB_14b81a1b2f99fd573b38,Only C,Person,COLLABORATED_WITH,Karik,Person,"""Quan trọng là thần thái"" - câu nói hot nhất đầu năm nay đã được Only C và Karik ""hô biến"" thành giai điệu vui nhộn",0.9,đúng,,
+DOC_WEB_d4e7a08891a952cb6647,Lâm Bảo Ngọc,Person,COLLABORATED_WITH,Hoàng Dũng,Person,liên khúc ballad của Văn Mai Hương - Anh Tú - Lâm Bảo Ngọc - Hoàng Dũng tại WeChoice,0.9,đúng,,cùng trình diễn liên khúc
+DOC_WEB_b52455435429ba8d9afe,DJ Thanh Thảo,Person,PERFORMED_AT,Yên Bái,Event,Lễ cưới của Khắc Việt tại Yên Bái diễn ra trong ba ngày liên tiếp,0.9,sai,NONE,"sai_loai_nut: tail là địa danh, lễ cưới"
+DOC_WEB_f810bdcb214c43753101,Hoàng Tôn,Person,MEMBER_OF,Nhà Soạn Nhạc,Group,"Nhà Soạn Nhạc gồm Hoàng Tôn, Thỏ (Da LAB), OSAD, Hồ Đông Quan và Hà An Huy",0.9,sai,CONTESTANT_ON,nhom_tam_trong_show
+DOC_WEB_2170e0e1f59ca58850a5,Wren Evans,Person,COLLABORATED_WITH,Daisy,Person,"có sự xuất hiện của “hội anh em” đa tài là những người bạn thân thiết của Wren Evans là Sài Gòn Tếu (Nam), Nicky ST.319 và rapper Daisy",0.9,sai,NONE,xuất hiện trong MV ≠ hợp tác
+DOC_WEB_d4e7a08891a952cb6647,Anh Tú,Person,COLLABORATED_WITH,Hoàng Dũng,Person,liên khúc ballad của Văn Mai Hương - Anh Tú - Lâm Bảo Ngọc - Hoàng Dũng tại WeChoice,0.9,đúng,,cùng trình diễn liên khúc
+DOC_WEB_b52455435429ba8d9afe,The Men,Group,COLLABORATED_WITH,Khắc Việt,Person,"Nhiều đồng nghiệp của Khắc Việt như Hồ Hoài Anh, Hoàng Tôn, The Men... đã có mặt tại buổi tiệc để chúc mừng vợ chồng anh.",0.6,sai,NONE,khong_co_quan_he: khách dự tiệc cưới
+DOC_WEB_9f08bc079162e0006c2d,Karik,Person,COLLABORATED_WITH,Vũ Phụng Tiên,Person,có sự tham gia của Karik,0.9,đúng,,Karik tham gia bài Đau vậy đủ rồi (Vũ Phụng Tiên)
+DOC_WEB_82df14d4e1e7312c14da,Hạ phỏm,Song,TRACK_OF,LINK,Album,thuộc album “LINK”,0.9,đúng,,
+DOC_WEB_82df14d4e1e7312c14da,Hoàng Thùy Linh,Person,COLLABORATED_WITH,Khắc Hưng,Person,lần hợp tác tiếp theo giữa Hoàng Thùy Linh và nhạc sĩ Khắc Hưng,0.9,đúng,,
+DOC_WEB_f810bdcb214c43753101,Hà An Huy,Person,COLLABORATED_WITH,Hoàng Tôn,Person,kết hợp với bản demo Hoàng Tôn,0.9,đúng,,cùng tạo ra Nợ Em Cả Bầu Trời
+DOC_WEB_14b81a1b2f99fd573b38,Karik,Person,PERFORMED,Quan trọng là thần thái,Song,"Only C và Karik hợp tác trong sản phẩm âm nhạc cực chất mang tên ""Quan trọng là thần thái""",0.9,đúng,,
+DOC_WEB_d4e7a08891a952cb6647,Anh Tú,Person,COLLABORATED_WITH,Hải Đăng Doo,Person,Tiết mục sử dụng ca khúc do Hoàng Dũng sáng tác,0.9,đúng,,cùng trình diễn một tiết mục
+DOC_WEB_b52455435429ba8d9afe,Khắc Việt,Person,PERFORMED_AT,lễ cưới,Event,lễ cưới tại quê nhà của Khắc Việt là Yên Bái vào 24/3,0.9,sai,NONE,ten_rac: 'lễ cưới' của chính Khắc Việt
+DOC_WEB_4354389d6e521057d129,THÙY CHI,Person,PERFORMED_AT,THE MASKED SINGER,Show,MÀN LỘ DIỆN GÂY TIẾC NUỐI NHẤT THE MASKED SINGER: THÙY CHI VAI TÍ NÂU,0.9,sai,CONTESTANT_ON,sai_loai: thí sinh The Masked Singer
+DOC_WEB_f810bdcb214c43753101,Mew Amazing,Person,MEMBER_OF,Nhà Vinh Quy Bái Tổ,Group,"Nhà Vinh Quy Bái Tổ gồm Jun Phạm, Thanh Duy và Mew Amazing",0.9,sai,CONTESTANT_ON,nhom_tam_trong_show
+DOC_WEB_d4e7a08891a952cb6647,Văn Mai Hương,Person,COLLABORATED_WITH,Lâm Bảo Ngọc,Person,liên khúc ballad của Văn Mai Hương - Anh Tú - Lâm Bảo Ngọc - Hoàng Dũng tại WeChoice,0.9,đúng,,cùng trình diễn liên khúc
+DOC_WEB_f810bdcb214c43753101,Hoàng Rob,Person,MEMBER_OF,Nhà Hoa Lửa,Group,"Nhà Hoa Lửa gồm Hoàng Dũng, Thơm (Da LAB), Hoàng Rob, Vương Anh Tú và Cheng",0.9,sai,CONTESTANT_ON,nhom_tam_trong_show
+DOC_WEB_14b81a1b2f99fd573b38,Only C,Person,PRODUCED,Quan trọng là thần thái,Song,bởi Only C và Karik,0.9,sai,PERFORMED,sai_loai: câu chỉ nói bài hát 'bởi Only C và Karik'
+DOC_WEB_f810bdcb214c43753101,Hồ Đông Quan,Person,MEMBER_OF,Nhà Soạn Nhạc,Group,"Nhà Soạn Nhạc gồm Hoàng Tôn, Thỏ (Da LAB), OSAD, Hồ Đông Quan và Hà An Huy",0.9,sai,CONTESTANT_ON,nhom_tam_trong_show

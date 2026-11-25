@@ -38,6 +38,6 @@ Mỗi người chỉ gán các dòng có `annotator` là tên mình hoặc `Cả
 | ORGANIZED_BY | Show/Event → Company | Đơn vị tổ chức, sản xuất |
 | AMBASSADOR_OF | Person/Group → Brand | Đại sứ, hợp tác quảng cáo |
 | COLLABORATED_WITH | Person ↔ Person | Cùng làm một sản phẩm cụ thể |
-| DISPUTED_WITH | Person/Company ↔ Person/Company | Tranh chấp, kiện tụng, cáo buộc công khai (tin đồn không tính) |
+| DISPUTED_WITH | Person/Group/Company ↔ Person/Group/Company | Tranh chấp, kiện tụng, cáo buộc công khai (tin đồn không tính) |
 
 Ví dụ: “Được biết, ca khúc thuộc album đầu tay Colours … Hứa Kim Tuyền dành tặng AMEE” → thực thể `Colours|Album; Hứa Kim Tuyền|Person; AMEE|Person`, quan hệ `NONE` (câu không nói rõ ai sáng tác hay trình bày bài nào).

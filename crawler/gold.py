@@ -78,21 +78,29 @@ def _dictionary() -> dict[tuple[str, ...], tuple[str, str]]:
     return out
 
 
-def _matches(sentence: str, vocab: dict) -> list[tuple[str, str]]:
-    raw = _tokens(sentence)
+def match_spans(text: str, vocab: dict, reject=None, allow_lower: frozenset = frozenset()) -> list[tuple[int, int, tuple[str, str]]]:
+    spans = [(m.start(), m.end(), unicodedata.normalize("NFC", m.group())) for m in re.finditer(r"\w+", text)]
+    raw = [t for _, _, t in spans]
     toks = [t.casefold() for t in raw]
     found, i = [], 0
     while i < len(toks):
         for n in range(min(MAX_NGRAM, len(toks) - i), 0, -1):
+            key = tuple(toks[i : i + n])
             # Chỉ nhận cụm viết hoa: "anh Dũng" (ông anh) không phải nghệ sĩ Anh Dũng.
-            hit = vocab.get(tuple(toks[i : i + n])) if all(t[0].isupper() or t[0].isdigit() for t in raw[i : i + n]) else None
+            hit = vocab.get(key) if key in allow_lower or all(t[0].isupper() or t[0].isdigit() for t in raw[i : i + n]) else None
+            if hit and reject and reject(text[spans[i][0] : spans[i + n - 1][1]], key):
+                hit = None
             if hit:
-                found.append(hit)
+                found.append((spans[i][0], spans[i + n - 1][1], hit))
                 i += n
                 break
         else:
             i += 1
-    return list(dict.fromkeys(found))
+    return found
+
+
+def _matches(sentence: str, vocab: dict) -> list[tuple[str, str]]:
+    return list(dict.fromkeys(hit for _, _, hit in match_spans(unicodedata.normalize("NFC", sentence), vocab)))
 
 
 def sample_sentences(rng: random.Random) -> pd.DataFrame:

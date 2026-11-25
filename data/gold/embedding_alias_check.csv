@@ -1,0 +1,21 @@
+﻿entity_id,entity_type,canonical_name,alias,random_name,cos_alias,cos_random,alias_above_random,top1_among_sample
+PER_0031,Person,SLIMV,SLIM V,Thái Vũ,0.7888,0.3584,True,True
+COM_0007,Company,M Music Records,MMUSIC Records,Walt Disney Records,0.7883,0.5171,True,True
+PER_0247,Person,SnoopDee,SNOOP DEE,Tùng Hades,0.833,0.4334,True,True
+PER_0216,Person,Liu Grace,LIUGRACE,Changg,0.5865,0.3266,True,True
+SON_8671,Song,Lại Là DG House,LẠI LÀ DGHOUSE,Có Lẽ Đây Là Lúc,0.8367,0.4291,True,True
+COM_0122,Company,Viettel Media,Viettel Media Company,Tran Thanh Town,0.9235,0.3175,True,True
+PER_0951,Person,buitruonglinh,BÙI TRƯỜNG LINH,Ricky Star,0.6612,0.3016,True,True
+COM_0028,Company,Nguyên Hương Entertainment,Nguyên Hương Music,54OG Entertainment,0.8649,0.3844,True,True
+PER_0414,Person,Mcee Blue,MceeBlue,Khang Nguyen,0.8918,0.3715,True,True
+PER_1010,Person,Đỗ Bảo,Dobao,LeWiuy,0.4584,0.3772,True,False
+PER_3116,Person,Duy B,DuyB,Đinh Hoàng Quốc,0.7697,0.2907,True,True
+PER_0245,Person,RichChoi,Rich Choi,Hồ Ngọc Hà,0.854,0.3405,True,True
+COM_0020,Company,Universal Music Pte,Universal Music,DreamS Entertainment,0.824,0.4844,True,True
+PER_0283,Person,Jack - J97,J97,Anh Nguyễn,0.8548,0.2898,True,True
+PER_0198,Person,STRONG TRỌNG HIẾU,TRONG,Chiến Nguyễn,0.6728,0.2644,True,True
+COM_0006,Company,DAO Entertainment,DAO Music Entertainment,KAIZEN Gumi,0.9498,0.3724,True,True
+COM_0026,Company,Yin Yang Media,YIN YANG,ENS Entertainment,0.8023,0.3879,True,True
+PER_0028,Person,JustaTee,JUSTA TEE,Nghi Đình,0.8222,0.3018,True,True
+PER_0033,Person,Hòa Minzy,Hoà,A Mộc,0.5116,0.506,True,True
+PER_0227,Person,RTee,R.Tee,Trần Thị Phương Thảo,0.7077,0.3814,True,True

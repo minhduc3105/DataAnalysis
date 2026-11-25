@@ -159,14 +159,50 @@ def cmd_analyze(_args) -> None:
 def cmd_gold(args) -> None:
     if args.action == "sample":
         gold.sample(force=args.force)
+    elif args.action == "check":
+        from crawler import gold_eval
+
+        if gold_eval.check():
+            raise SystemExit(1)
+    elif args.action == "score":
+        from crawler import gold_eval
+
+        gold_eval.score()
+    elif args.action == "split":
+        from crawler import gold_eval
+
+        gold_eval.split(force=args.force)
     else:
         gold.multi_hop_duc(args.count, args.force)
 
 
 def cmd_slm(args) -> None:
+    if args.action == "extract":
+        from crawler import slm_extract
+
+        slm_extract.run(args.docs, model=(args.models or [slm_extract.MODEL])[0], recent=args.recent)
+        return
     from crawler import slm
 
-    slm.bench(args.models)
+    slm.bench(args.models or ["qwen3:4b", "qwen3:8b"], args.split, args.num_ctx)
+
+
+def cmd_embed(args) -> None:
+    from crawler import embedding
+
+    embedding.check_aliases(args.n)
+
+
+def cmd_prep(args) -> None:
+    from crawler import preprocess
+
+    preprocess.run(None if args.all else args.docs)
+
+
+def cmd_model_api(args) -> None:
+    import uvicorn
+
+    uvicorn.run("crawler.model_api:app", host=args.host, port=args.port)
 
 
 def cmd_stage2(args) -> None:
@@ -302,14 +338,31 @@ def main() -> None:
     dc.add_argument("--model", action="store_true", help="Gọi API /embed để xác minh hợp đồng mô hình")
     dc.set_defaults(func=cmd_doctor)
     gd = sub.add_parser("gold", help="Lấy mẫu bộ gold (cạnh đồ thị + câu báo chí) để gán nhãn tay vào data/gold/")
-    gd.add_argument("action", choices=["sample", "multi-hop"])
+    gd.add_argument("action", choices=["sample", "check", "score", "split", "multi-hop"])
     gd.add_argument("--force", action="store_true", help="Tạo lại file đã có (xóa nhãn đã gán)")
     gd.add_argument("--count", type=int, default=15, help="Số câu hỏi ứng viên 2–3 bước, tối đa 100")
     gd.set_defaults(func=cmd_gold)
-    sl = sub.add_parser("slm", help="Benchmark SLM (Ollama) trích thực thể/quan hệ trên data/gold/gold_sentences.csv")
-    sl.add_argument("action", choices=["bench"])
-    sl.add_argument("--models", nargs="+", default=["qwen3:4b", "qwen3:8b"])
+    sl = sub.add_parser("slm", help="bench: benchmark SLM trên gold_sentences.csv; extract: trích thực thể + quan hệ theo hợp đồng vn-music-radar.v1")
+    sl.add_argument("action", choices=["bench", "extract"])
+    sl.add_argument("--models", nargs="+", help="bench mặc định qwen3:4b qwen3:8b; extract dùng mô hình đầu tiên, mặc định qwen3:8b")
+    sl.add_argument("--docs", type=int, default=20, help="extract: số bài lấy ngẫu nhiên (seed 42, cùng 20 bài với prep run)")
+    sl.add_argument("--recent", type=int, help="extract: lấy N bài có ngày đăng mới nhất thay cho mẫu ngẫu nhiên")
+    sl.add_argument("--split", choices=["dev", "test"], help="Chỉ chạy và chấm một tập; chỉnh prompt thì chỉ dùng dev")
+    sl.add_argument("--num-ctx", type=int, default=4096)
     sl.set_defaults(func=cmd_slm)
+    ma = sub.add_parser("model-api", help="Chạy API mô hình /extract, /embed (hợp đồng vn-music-radar.v1) cho backend của Đức")
+    ma.add_argument("--host", default="127.0.0.1")
+    ma.add_argument("--port", type=int, default=8001)
+    ma.set_defaults(func=cmd_model_api)
+    em = sub.add_parser("embed", help="Kiểm embedding bge-m3: số chiều, cặp alias xếp trên cặp ngẫu nhiên")
+    em.add_argument("action", choices=["check"])
+    em.add_argument("--n", type=int, default=20, help="Số cặp alias, mỗi thực thể tối đa 1 cặp")
+    em.set_defaults(func=cmd_embed)
+    pp = sub.add_parser("prep", help="Chia câu có vị trí, dò mention từ điển, lọc câu ứng viên gửi SLM")
+    pp.add_argument("action", choices=["run"])
+    pp.add_argument("--docs", type=int, default=20, help="Số bài lấy ngẫu nhiên (seed 42)")
+    pp.add_argument("--all", action="store_true", help="Chạy toàn bộ articles_ready.csv")
+    pp.set_defaults(func=cmd_prep)
 
     st = sub.add_parser("stage2", help="Snapshot dữ liệu, gói bàn giao Huy, kiểm tra và nhập kết quả làm giàu")
     st.add_argument("action", choices=["freeze", "export-huy", "validate", "link", "import", "communities-export", "communities-import"])

@@ -1,0 +1,4 @@
+﻿split,method,sentences,entity_p,entity_r,entity_f1,entity_f1_ignore_type,relation_p,relation_r,relation_f1,json_valid,seconds_per_sentence,tokens_per_second,max_ctx_used,ctx_overflow,prompt_version,num_ctx
+test,qwen3:8b,70,0.741,0.914,0.818,0.852,0.264,0.644,0.374,1.0,6.41,19.2,2632.0,0.0,v2,4096.0
+test,qwen3:8b + hậu kiểm,70,0.741,0.914,0.818,0.852,0.446,0.644,0.527,1.0,6.41,19.2,2632.0,0.0,v2,4096.0
+test,baseline từ điển (GĐ1),70,0.663,0.659,0.661,0.683,0.0,0.0,0.0,,,,,,,
