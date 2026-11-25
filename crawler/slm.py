@@ -1,5 +1,6 @@
 import json
 import os
+import re
 import time
 
 import pandas as pd
@@ -64,6 +65,7 @@ PROMPT_VERSION = "v2"
 NUM_CTX = 4096
 # Benchmark dài nhất 1.104 token; vượt mức này là SLM lặp vô tận (đã gặp một câu treo > 300 s).
 NUM_PREDICT = 1536
+ADHOC_BEFORE = re.compile(r"(?:^|\s)(?:team|đội)\s*$", re.IGNORECASE)
 
 FEW_SHOT = [
     (
@@ -144,9 +146,23 @@ def chat(model: str, sentence: str, timeout: int = 300, num_ctx: int = NUM_CTX) 
     }
 
 
+def adhoc_groups(parsed: dict, sentence: str) -> set[str]:
+    """Đội lập tạm trong show ("Nhà Hoa Lửa", "team Nắng", "đội BigDaddy") mà SLM gán Group; không bắt "nhóm X" vì hay là nhóm thật."""
+    out = set()
+    for e in parsed.get("entities", []):
+        text = e.get("text", "").strip()
+        if e.get("type") != "Group" or not text:
+            continue
+        i = sentence.find(text)
+        if text.startswith("Nhà ") or (i >= 0 and ADHOC_BEFORE.search(sentence[:i])):
+            out.add(normalize_name(text))
+    return out
+
+
 def validate(parsed: dict, sentence: str) -> list[dict]:
-    """Hậu kiểm: giữ quan hệ có head/tail là thực thể đã trích, có mặt trong câu và đúng kiểu nút theo SIGNATURE."""
+    """Hậu kiểm: giữ quan hệ có head/tail là thực thể đã trích, có mặt trong câu, đúng kiểu nút theo SIGNATURE và không phải đội tạm trong show."""
     types = {normalize_name(e.get("text", "")): e.get("type") for e in parsed.get("entities", [])}
+    adhoc = adhoc_groups(parsed, sentence)
     flat = normalize_name(sentence)
     kept = []
     for x in parsed.get("relations", []):
@@ -155,7 +171,7 @@ def validate(parsed: dict, sentence: str) -> list[dict]:
         ok_types = types.get(h) in heads and types.get(t) in tails
         if rt in UNDIRECTED:
             ok_types = ok_types or (types.get(t) in heads and types.get(h) in tails)
-        if h and t and h != t and ok_types and h in flat and t in flat:
+        if h and t and h != t and ok_types and h in flat and t in flat and not {h, t} & adhoc:
             # SLM hay rút gọn evidence bằng "..."; hợp đồng đòi chuỗi con nguyên văn nên lùi về cả câu.
             kept.append(x if x.get("evidence", "") and x["evidence"] in sentence else {**x, "evidence": sentence, "evidence_repaired": True})
     return kept

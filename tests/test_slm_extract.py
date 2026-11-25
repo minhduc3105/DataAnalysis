@@ -46,6 +46,20 @@ class ExtractTest(unittest.TestCase):
         self.assertEqual((res["entities"], res["relations"]), ([], []))
         self.assertEqual([(x["kind"], x["reason"]) for x in log], [("sentence", "SLM lặp, chạm giới hạn token đầu ra")])
 
+    def test_adhoc_show_teams_dropped_real_groups_kept(self):
+        from crawler.slm import adhoc_groups, validate
+        sentence = "Nhà Hoa Lửa gồm Hoàng Dũng và Cheng, còn team Nắng có Captain; Touliver thuộc nhóm SpaceSpeakers."
+        parsed = {
+            "entities": [{"text": t, "type": ty} for t, ty in [("Nhà Hoa Lửa", "Group"), ("Hoàng Dũng", "Person"), ("Cheng", "Person"), ("Nắng", "Group"), ("Captain", "Person"), ("Touliver", "Person"), ("SpaceSpeakers", "Group")]],
+            "relations": [
+                {"head": "Cheng", "type": "MEMBER_OF", "tail": "Nhà Hoa Lửa", "evidence": "Nhà Hoa Lửa gồm Hoàng Dũng và Cheng"},
+                {"head": "Captain", "type": "MEMBER_OF", "tail": "Nắng", "evidence": "team Nắng có Captain"},
+                {"head": "Touliver", "type": "MEMBER_OF", "tail": "SpaceSpeakers", "evidence": "Touliver thuộc nhóm SpaceSpeakers"},
+            ],
+        }
+        self.assertEqual(adhoc_groups(parsed, sentence), {"nha hoa lua", "nang"})
+        self.assertEqual([r["tail"] for r in validate(parsed, sentence)], ["SpaceSpeakers"])
+
     def test_case_insensitive_locate(self):
         self.assertEqual(extract.locate("Ca sĩ HOÀNG THÙY LINH hát", "Hoàng Thùy Linh"), (6, 21))
         self.assertIsNone(extract.locate("Ca sĩ hát", "Erik"))

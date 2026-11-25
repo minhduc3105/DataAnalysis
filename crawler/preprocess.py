@@ -118,11 +118,17 @@ def check_offsets(texts: dict[str, str], sentences: pd.DataFrame, mentions: pd.D
     return errors
 
 
-def load_articles(docs: int | None = None, seed: int = SEED) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Trả (bài được chọn, toàn bộ bài); toàn bộ bài cần để đếm từ thường."""
+def load_articles(docs: int | None = None, seed: int = SEED, recent: int | None = None) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Trả (bài được chọn, toàn bộ bài); toàn bộ bài cần để đếm từ thường. recent: N bài có ngày đăng mới nhất."""
     articles = pd.read_csv(ARTICLES, encoding="utf-8-sig", dtype=str).fillna("")
     articles["text"] = articles.body_text.where(articles.body_text != "", articles.content)
-    chosen = articles.loc[sorted(random.Random(seed).sample(list(articles.index), docs))] if docs else articles
+    if recent:
+        dated = articles[articles.published_at_iso != ""]
+        chosen = dated.sort_values(["published_at_iso", "document_id"], ascending=[False, True]).head(recent)
+    elif docs:
+        chosen = articles.loc[sorted(random.Random(seed).sample(list(articles.index), docs))]
+    else:
+        chosen = articles
     return chosen, articles
 
 

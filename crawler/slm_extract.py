@@ -2,6 +2,7 @@ import hashlib
 import json
 import os
 import random
+import threading
 import time
 
 import pandas as pd
@@ -11,13 +12,14 @@ from .common import normalize_name
 from .gold import SEED
 from .model_contract import SCHEMA_VERSION, validate_extraction
 from .preprocess import OUT_DIR as PREP_DIR, load_articles, load_dictionary, preprocess_document
-from .slm import NUM_CTX, PROMPT_VERSION, chat, validate
+from .slm import NUM_CTX, PROMPT_VERSION, adhoc_groups, chat, validate
 
 MODEL = os.getenv("SLM_MODEL", "qwen3:8b")
 OUT_DIR = PREP_DIR.parent
 # SLM không trả điểm tự tin; đây là quy ước, không phải xác suất: bằng chứng nguyên văn 0.9, phải lùi về cả câu 0.6.
 CONFIDENCE_VERBATIM, CONFIDENCE_REPAIRED = 0.9, 0.6
 REVIEW_ENTITY_DOCS, REVIEW_RELATIONS = 5, 50
+RETRIES, RETRY_WAIT = 2, 5
 
 
 def model_version(model: str = MODEL) -> str:
@@ -35,19 +37,26 @@ class SentenceCache:
             # Chạm num_predict là lỗi tất định (temperature 0) nên giữ lại; JSON lỗi vì lý do khác thì lần sau gọi lại.
             self.data = {d["key"]: d for d in map(json.loads, self.path.read_text(encoding="utf-8").splitlines()) if d.get("valid") or d.get("done_reason") == "length"}
         self.calls = 0
+        self.lock = threading.Lock()
 
     def get(self, sentence: str) -> dict:
         key = hashlib.sha1(sentence.encode("utf-8")).hexdigest()
-        if key not in self.data:
-            try:
-                out = {"key": key, "sentence": sentence, **chat(self.model, sentence, num_ctx=NUM_CTX)}
-            except requests.RequestException as exc:
-                return {"parsed": {"entities": [], "relations": []}, "valid": False, "error": f"{type(exc).__name__}: {exc}"[:200]}
+        with self.lock:
+            if key in self.data:
+                return self.data[key]
+            for attempt in range(RETRIES + 1):
+                try:
+                    out = {"key": key, "sentence": sentence, **chat(self.model, sentence, num_ctx=NUM_CTX)}
+                    break
+                except requests.RequestException as exc:
+                    if attempt == RETRIES:
+                        return {"parsed": {"entities": [], "relations": []}, "valid": False, "error": f"{type(exc).__name__}: {exc}"[:200]}
+                    time.sleep(RETRY_WAIT * (attempt + 1))
             self.calls += 1
             with self.path.open("a", encoding="utf-8") as f:
                 f.write(json.dumps(out, ensure_ascii=False) + "\n")
             self.data[key] = out
-        return self.data[key]
+            return out
 
 
 def locate(sentence: str, name: str) -> tuple[int, int] | None:
@@ -68,12 +77,16 @@ def extract_document(document_id: str, text: str, ctx: tuple, cache: SentenceCac
         out = cache.get(s["sentence"])
         if not out["valid"]:
             reason = out.get("error") or ("SLM lặp, chạm giới hạn token đầu ra" if out.get("done_reason") == "length" else "JSON lỗi")
-            log.append({"document_id": document_id, "sentence_id": s["sentence_id"], "kind": "sentence", "item": s["sentence"][:120], "reason": reason})
+            log.append({"document_id": document_id, "sentence_id": s["sentence_id"], "kind": "sentence", "item": s["sentence"][:120], "reason": reason, "retryable": bool(out.get("error"))})
             continue
         parsed = out["parsed"]
         local = {}
+        adhoc = adhoc_groups(parsed, s["sentence"])
         for e in parsed.get("entities", []):
             span = locate(s["sentence"], e.get("text", ""))
+            if normalize_name(e.get("text", "")) in adhoc:
+                log.append({"document_id": document_id, "sentence_id": s["sentence_id"], "kind": "mention", "item": e.get("text", ""), "reason": "đội lập tạm trong show"})
+                continue
             if not span:
                 log.append({"document_id": document_id, "sentence_id": s["sentence_id"], "kind": "mention", "item": e.get("text", ""), "reason": "không tìm thấy trong câu"})
                 continue
@@ -88,7 +101,7 @@ def extract_document(document_id: str, text: str, ctx: tuple, cache: SentenceCac
         kept_keys = {(k["head"], k["type"], k["tail"]) for k in kept}
         for x in parsed.get("relations", []):
             if (x.get("head"), x.get("type"), x.get("tail")) not in kept_keys:
-                log.append({"document_id": document_id, "sentence_id": s["sentence_id"], "kind": "relation", "item": f"{x.get('head')}|{x.get('type')}|{x.get('tail')}", "reason": "hậu kiểm loại (sai kiểu nút, tên không có trong câu hoặc head = tail)"})
+                log.append({"document_id": document_id, "sentence_id": s["sentence_id"], "kind": "relation", "item": f"{x.get('head')}|{x.get('type')}|{x.get('tail')}", "reason": "hậu kiểm loại (sai kiểu nút, tên không có trong câu, head = tail hoặc đội tạm trong show)"})
         for r in kept:
             head, tail = local.get(normalize_name(r["head"])), local.get(normalize_name(r["tail"]))
             if not head or not tail:
@@ -115,15 +128,20 @@ def _review_files(results: list[dict], texts: dict[str, str], tag: str, seed: in
             h, t = by_id[r["head_mention_id"]], by_id[r["tail_mention_id"]]
             rel_rows.append({"document_id": res["document_id"], "head": h["text"], "head_type": h["type"], "type": r["type"], "tail": t["text"], "tail_type": t["type"], "evidence": r["evidence"], "confidence": r["confidence"], "label_huy": "", "correct_type": "", "note": ""})
     rel_rows = rng.sample(rel_rows, min(REVIEW_RELATIONS, len(rel_rows)))
-    pd.DataFrame(ent_rows).to_csv(OUT_DIR / f"review_entities_{tag}.csv", index=False, encoding="utf-8-sig")
-    pd.DataFrame(rel_rows).to_csv(OUT_DIR / f"review_relations_{tag}.csv", index=False, encoding="utf-8-sig")
+    for rows, name in [(ent_rows, f"review_entities_{tag}.csv"), (rel_rows, f"review_relations_{tag}.csv")]:
+        path = OUT_DIR / name
+        # File review đã gán tay thì giữ nguyên; muốn tạo lại phải tự xóa.
+        if path.exists():
+            print(f"Giữ nguyên {path.name} (đã có, có thể đã gán nhãn)")
+            continue
+        pd.DataFrame(rows).to_csv(path, index=False, encoding="utf-8-sig")
 
 
-def run(docs: int | None = 20, seed: int = SEED, model: str = MODEL) -> None:
-    articles, everything = load_articles(docs, seed)
+def run(docs: int | None = 20, seed: int = SEED, model: str = MODEL, recent: int | None = None) -> None:
+    articles, everything = load_articles(docs, seed, recent)
     vocab, reject, allow_lower, _ = load_dictionary(everything.text)
     cache = SentenceCache(model)
-    tag = f"sample{docs}" if docs else "all"
+    tag = f"recent{recent}" if recent else f"sample{docs}" if docs else "all"
     texts = dict(zip(articles.document_id, articles.text))
     results, log, t0 = [], [], time.time()
     for i, a in enumerate(articles.itertuples(), 1):
@@ -141,6 +159,10 @@ def run(docs: int | None = 20, seed: int = SEED, model: str = MODEL) -> None:
     repaired = sum(r["confidence"] == CONFIDENCE_REPAIRED for res in results for r in res["relations"])
     print(f"\n{model_version(model)}: {len(results)} bài → {n_ent} mention, {n_rel} quan hệ ({repaired} quan hệ phải lùi bằng chứng về cả câu)")
     print(f"Bị loại (ghi trong extraction_log_{tag}.csv): {lost}")
+    failed_docs = {x["document_id"] for x in log if x["kind"] == "sentence"}
+    print(f"Bài có câu SLM lỗi (lặp/JSON/mạng): {len(failed_docs)}/{len(results)} ({len(failed_docs) / max(len(results), 1):.1%}); tổng thời gian {time.time() - t0:.0f}s")
+    if recent:
+        print(f"Khoảng ngày đăng: {articles.published_at_iso.min()[:10]} → {articles.published_at_iso.max()[:10]}")
     print(f"Vi phạm hợp đồng (validate_extraction): {len(errors)}")
     for e in errors[:10]:
         print("  LỖI", e)
