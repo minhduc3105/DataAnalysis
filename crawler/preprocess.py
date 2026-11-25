@@ -118,16 +118,25 @@ def check_offsets(texts: dict[str, str], sentences: pd.DataFrame, mentions: pd.D
     return errors
 
 
-def run(docs: int | None = None, seed: int = SEED) -> None:
+def load_articles(docs: int | None = None, seed: int = SEED) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Trả (bài được chọn, toàn bộ bài); toàn bộ bài cần để đếm từ thường."""
     articles = pd.read_csv(ARTICLES, encoding="utf-8-sig", dtype=str).fillna("")
     articles["text"] = articles.body_text.where(articles.body_text != "", articles.content)
+    chosen = articles.loc[sorted(random.Random(seed).sample(list(articles.index), docs))] if docs else articles
+    return chosen, articles
+
+
+def load_dictionary(all_texts) -> tuple[dict, object, frozenset, set[str]]:
     vocab = _dictionary()
     entities = pd.read_csv(GRAPH_DIR / "entities.csv", encoding="utf-8-sig", dtype=str).fillna("")
     allow_lower = stylized_lower(entities, vocab)
-    common = common_words(articles.text, vocab, allow_lower)
-    reject = mention_filter(common)
-    if docs:
-        articles = articles.loc[sorted(random.Random(seed).sample(list(articles.index), docs))]
+    common = common_words(all_texts, vocab, allow_lower)
+    return vocab, mention_filter(common), allow_lower, common
+
+
+def run(docs: int | None = None, seed: int = SEED) -> None:
+    articles, everything = load_articles(docs, seed)
+    vocab, reject, allow_lower, common = load_dictionary(everything.text)
     sentences, mentions = [], []
     for a in articles.itertuples():
         s, m = preprocess_document(a.document_id, a.text, vocab, reject, allow_lower)

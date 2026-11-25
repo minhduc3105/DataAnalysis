@@ -177,9 +177,14 @@ def cmd_gold(args) -> None:
 
 
 def cmd_slm(args) -> None:
+    if args.action == "extract":
+        from crawler import slm_extract
+
+        slm_extract.run(args.docs, model=(args.models or [slm_extract.MODEL])[0])
+        return
     from crawler import slm
 
-    slm.bench(args.models, args.split, args.num_ctx)
+    slm.bench(args.models or ["qwen3:4b", "qwen3:8b"], args.split, args.num_ctx)
 
 
 def cmd_embed(args) -> None:
@@ -331,9 +336,10 @@ def main() -> None:
     gd.add_argument("--force", action="store_true", help="Tạo lại file đã có (xóa nhãn đã gán)")
     gd.add_argument("--count", type=int, default=15, help="Số câu hỏi ứng viên 2–3 bước, tối đa 100")
     gd.set_defaults(func=cmd_gold)
-    sl = sub.add_parser("slm", help="Benchmark SLM (Ollama) trích thực thể/quan hệ trên data/gold/gold_sentences.csv")
-    sl.add_argument("action", choices=["bench"])
-    sl.add_argument("--models", nargs="+", default=["qwen3:4b", "qwen3:8b"])
+    sl = sub.add_parser("slm", help="bench: benchmark SLM trên gold_sentences.csv; extract: trích thực thể + quan hệ theo hợp đồng vn-music-radar.v1")
+    sl.add_argument("action", choices=["bench", "extract"])
+    sl.add_argument("--models", nargs="+", help="bench mặc định qwen3:4b qwen3:8b; extract dùng mô hình đầu tiên, mặc định qwen3:8b")
+    sl.add_argument("--docs", type=int, default=20, help="extract: số bài lấy ngẫu nhiên (seed 42, cùng 20 bài với prep run)")
     sl.add_argument("--split", choices=["dev", "test"], help="Chỉ chạy và chấm một tập; chỉnh prompt thì chỉ dùng dev")
     sl.add_argument("--num-ctx", type=int, default=4096)
     sl.set_defaults(func=cmd_slm)

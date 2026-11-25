@@ -62,6 +62,8 @@ Lưu ý:
 "evidence" là đoạn ngắn chép nguyên văn từ câu. Không có gì thì trả danh sách rỗng."""
 PROMPT_VERSION = "v2"
 NUM_CTX = 4096
+# Benchmark dài nhất 1.104 token; vượt mức này là SLM lặp vô tận (đã gặp một câu treo > 300 s).
+NUM_PREDICT = 1536
 
 FEW_SHOT = [
     (
@@ -122,7 +124,7 @@ def chat(model: str, sentence: str, timeout: int = 300, num_ctx: int = NUM_CTX) 
     for s, out in FEW_SHOT:
         messages += [{"role": "user", "content": s}, {"role": "assistant", "content": json.dumps(out, ensure_ascii=False)}]
     messages.append({"role": "user", "content": sentence})
-    body = {"model": model, "messages": messages, "format": SCHEMA, "stream": False, "think": False, "options": {"temperature": 0, "num_ctx": num_ctx}}
+    body = {"model": model, "messages": messages, "format": SCHEMA, "stream": False, "think": False, "options": {"temperature": 0, "num_ctx": num_ctx, "num_predict": NUM_PREDICT}}
     t0 = time.time()
     r = requests.post(f"{OLLAMA}/api/chat", json=body, timeout=timeout)
     r.raise_for_status()
@@ -134,7 +136,7 @@ def chat(model: str, sentence: str, timeout: int = 300, num_ctx: int = NUM_CTX) 
         parsed, valid = {"entities": [], "relations": []}, False
     prompt_tokens, output_tokens = data.get("prompt_eval_count", 0), data.get("eval_count", 0)
     return {
-        "raw": raw, "parsed": parsed, "valid": valid, "seconds": round(time.time() - t0, 2),
+        "raw": raw, "parsed": parsed, "valid": valid, "done_reason": data.get("done_reason", ""), "seconds": round(time.time() - t0, 2),
         "tokens_per_second": round(output_tokens / max(data.get("eval_duration", 1) / 1e9, 1e-9), 1),
         "prompt_tokens": prompt_tokens, "output_tokens": output_tokens,
         # Ollama cắt bớt prompt khi vượt num_ctx mà không báo lỗi.
@@ -155,7 +157,7 @@ def validate(parsed: dict, sentence: str) -> list[dict]:
             ok_types = ok_types or (types.get(t) in heads and types.get(h) in tails)
         if h and t and h != t and ok_types and h in flat and t in flat:
             # SLM hay rút gọn evidence bằng "..."; hợp đồng đòi chuỗi con nguyên văn nên lùi về cả câu.
-            kept.append(x if x.get("evidence", "") and x["evidence"] in sentence else {**x, "evidence": sentence})
+            kept.append(x if x.get("evidence", "") and x["evidence"] in sentence else {**x, "evidence": sentence, "evidence_repaired": True})
     return kept
 
 
