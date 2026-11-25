@@ -21,6 +21,7 @@ DOCUMENT_COLUMNS = [
     "account_verified",
     "exclude_reason",
     "platform",
+    "research_lane",
     "platform_item_id",
     "seed_ids",
     "content_tag",
@@ -44,7 +45,7 @@ def _youtube_docs(verified_channels: dict[str, str], seed_ids: set[str], show_id
     paths += [p for p in sorted((RAW_DIR / "youtube_search").glob("*.jsonl")) if p.stem in seed_ids]
     paths += [p for p in sorted((RAW_DIR / "youtube_shows").glob("*.jsonl")) if p.stem in show_ids]
     for r in iter_jsonl(paths):
-        if r.get("period_status") != "in" or r.get("crawl_skip_reason"):
+        if r.get("period_status") not in {"in", "after"} or r.get("crawl_skip_reason"):
             continue
         vid = r["video_id"]
         owner = r.get("seed_id") or r.get("show_id")
@@ -58,6 +59,7 @@ def _youtube_docs(verified_channels: dict[str, str], seed_ids: set[str], show_id
         if verified is None and verified_channels.get(r.get("channel_id")) in {"có", "thủ công"}:
             account_verified = "có"
         description = (r.get("description") or "").strip()
+        lane = "live" if r.get("period_status") == "after" else "research"
         docs[vid] = {
             "document_id": f"DOC_YT_{vid}",
             "url": r["url"],
@@ -73,6 +75,7 @@ def _youtube_docs(verified_channels: dict[str, str], seed_ids: set[str], show_id
             "account_verified": account_verified,
             "exclude_reason": "",
             "platform": "youtube",
+            "research_lane": lane,
             "platform_item_id": vid,
             "seed_ids": {owner},
             "entity_ids": "",
@@ -118,6 +121,7 @@ def _spotify_docs() -> dict[str, dict]:
             "account_verified": "",
             "exclude_reason": "",
             "platform": "spotify",
+            "research_lane": "research",
             "platform_item_id": aid,
             "seed_ids": {r["seed_id"]},
             "entity_ids": "",
@@ -129,7 +133,9 @@ def build(seeds: list[dict]) -> int:
     verified_channels = {s["youtube_channel_id"]: s.get("youtube_verified", "") for s in seeds if s.get("youtube_channel_id")}
     scope = Scope(seeds)
     show_ids = {s["show_id"] for s in read_shows()}
-    youtube_docs = list(_youtube_docs(verified_channels, {s["seed_id"] for s in seeds}, show_ids).values())
+    youtube_docs_all = list(_youtube_docs(verified_channels, {s["seed_id"] for s in seeds}, show_ids).values())
+    live_youtube_docs = [d for d in youtube_docs_all if d.get("research_lane") == "live"]
+    youtube_docs = [d for d in youtube_docs_all if d.get("research_lane") != "live"]
     for d in youtube_docs:
         d["content_tag"], d["exclude_reason"] = scope.classify(d["seed_ids"], d["title"], d["content"])
         if d["exclude_reason"]:
@@ -148,13 +154,30 @@ def build(seeds: list[dict]) -> int:
 
     INTERIM_DIR.mkdir(parents=True, exist_ok=True)
     path = INTERIM_DIR / "documents.csv"
-    with path.open("w", encoding="utf-8-sig", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=DOCUMENT_COLUMNS, lineterminator="\n")
-        writer.writeheader()
-        for d in docs:
-            writer.writerow({**d, "seed_ids": "|".join(sorted(d["seed_ids"])) if isinstance(d["seed_ids"], set) else d["seed_ids"]})
-    print(f"Đã ghi {len(docs)} tài liệu → {path} ({now_iso()})")
+    for target, rows in ((path, docs), (INTERIM_DIR / "live_documents.csv", live_youtube_docs)):
+        with target.open("w", encoding="utf-8-sig", newline="") as f:
+            writer = csv.DictWriter(f, fieldnames=DOCUMENT_COLUMNS, lineterminator="\n")
+            writer.writeheader()
+            for d in rows:
+                writer.writerow({**d, "seed_ids": "|".join(sorted(d["seed_ids"])) if isinstance(d["seed_ids"], set) else d["seed_ids"]})
+    print(f"Đã ghi {len(docs)} tài liệu nghiên cứu → {path}; {len(live_youtube_docs)} YouTube mới → data/interim/live_documents.csv ({now_iso()})")
     print("Theo content_tag:", dict(Counter(d["content_tag"] for d in docs)))
     print("Theo trạng thái:", dict(Counter(d["document_status"] for d in docs)))
     print("Lý do loại:", dict(Counter(d["exclude_reason"] for d in docs if d["exclude_reason"])))
     return len(docs)
+
+
+def build_live(seeds: list[dict]) -> int:
+    """Refresh only the post-cutoff YouTube lane without rewriting research documents."""
+    verified_channels = {s["youtube_channel_id"]: s.get("youtube_verified", "") for s in seeds if s.get("youtube_channel_id")}
+    show_ids = {s["show_id"] for s in read_shows()}
+    live = [d for d in _youtube_docs(verified_channels, {s["seed_id"] for s in seeds}, show_ids).values() if d.get("research_lane") == "live"]
+    INTERIM_DIR.mkdir(parents=True, exist_ok=True)
+    target = INTERIM_DIR / "live_documents.csv"
+    with target.open("w", encoding="utf-8-sig", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=DOCUMENT_COLUMNS, lineterminator="\n")
+        writer.writeheader()
+        for row in live:
+            writer.writerow({**row, "seed_ids": "|".join(sorted(row["seed_ids"])) if isinstance(row["seed_ids"], set) else row["seed_ids"]})
+    print(f"Đã cập nhật lane YouTube mới: {len(live)} tài liệu → {target}")
+    return len(live)

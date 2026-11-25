@@ -1,12 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-sans: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
-  --color-brand-50: #eef2ff;
-  --color-brand-100: #e0e7ff;
-  --color-brand-500: #6366f1;
-  --color-brand-600: #4f46e5;
-  --color-brand-700: #4338ca;
+  --color-brand-50: #e8f0fa;
+  --color-brand-100: #d7e5f6;
+  --color-brand-500: #3474c4;
+  --color-brand-600: #1d5fbf;
+  --color-brand-700: #174b92;
 }
 
 html,
@@ -16,5 +17,8 @@ body,
 }
 
 body {
-  @apply bg-slate-50 text-slate-800 antialiased;
+  @apply bg-[#f2f4f7] text-slate-800 antialiased;
 }
+
+button, select, input, textarea { font: inherit; }
+:focus-visible { outline: 2px solid #1d5fbf; outline-offset: 2px; }

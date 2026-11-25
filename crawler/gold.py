@@ -1,10 +1,14 @@
 import random
 import re
 import unicodedata
+import json
+from datetime import datetime, timezone
 
 import pandas as pd
 
 from .config import INTERIM_DIR
+from .model_contract import RELATION_SIGNATURES
+from .graphdb import connect
 
 GOLD_DIR = INTERIM_DIR.parent / "gold"
 GRAPH_DIR = INTERIM_DIR / "graph"
@@ -124,3 +128,91 @@ def sample(force: bool = False) -> None:
         df = build(rng)
         df.to_csv(path, index=False, encoding="utf-8-sig")
         print(f"→ {path} ({len(df)} dòng; {df.annotator.value_counts().to_dict()})")
+
+
+def multi_hop_duc(count: int = 15, force: bool = False) -> Path:
+    """Create evidence-backed, versioned question candidates from the current Neo4j graph."""
+    out = GOLD_DIR / "multihop_duc.jsonl"
+    if out.exists() and not force:
+        raise FileExistsError(f"{out} đã tồn tại; giữ nguyên nhãn tay. Dùng --force để ghi đè.")
+    if count < 1 or count > 100:
+        raise ValueError("count phải từ 1 đến 100")
+    from .analysis import _graph_version
+
+    templates = [
+        "Có những bằng chứng nào nối {start} với {target}? Nêu chuỗi quan hệ ngắn nhất.",
+        "Vì sao {start} có liên quan tới {target} trong đồ thị? Trình bày từng bước có nguồn.",
+        "Tìm đường đi có bằng chứng giữa {start} và {target}; qua những thực thể nào?",
+        "Dựa trên các bài đã lưu, chuỗi quan hệ ngắn nhất giữa {start} và {target} là gì?",
+        "{start} liên hệ với {target} qua những quan hệ và nguồn tin nào?",
+    ]
+    driver = connect()
+    questions = []
+    try:
+        with driver.session() as session:
+            graph_version, _, _ = _graph_version(session)
+            candidates = [r.data() for r in session.run("""
+                MATCH (n:Entity) WHERE n:Person OR n:Group
+                RETURN n.entity_id AS id,n.name AS name
+                ORDER BY coalesce(n.pagerank,0) DESC,n.entity_id LIMIT 600
+            """)]
+            rng = random.Random(42)
+            rng.shuffle(candidates)
+            seen_pairs = set()
+            for start in candidates:
+                paths = [r.data() for r in session.run("""
+                    MATCH (a:Entity {entity_id:$id})
+                    MATCH p=(a)-[*2..3]-(b:Entity)
+                    WHERE a.entity_id < b.entity_id
+                      AND all(r IN relationships(p) WHERE type(r) IN $types AND EXISTS {
+                        MATCH (ev:Evidence {relation_id:r.relation_id})-[:FROM_DOCUMENT]->(:Document)
+                      })
+                    RETURN [n IN nodes(p) | {id:n.entity_id,name:n.name,type:[l IN labels(n) WHERE l<>'Entity'][0]}] AS nodes,
+                           [r IN relationships(p) | {relation_id:r.relation_id,type:type(r),source:startNode(r).entity_id,target:endNode(r).entity_id}] AS edges
+                    ORDER BY length(p),reduce(score=0.0,n IN nodes(p) | score+coalesce(n.pagerank,0.0)) DESC
+                    LIMIT 8
+                """, id=start["id"], types=sorted(RELATION_SIGNATURES))]
+                for path in paths:
+                    nodes, edges = path["nodes"], path["edges"]
+                    pair = (nodes[0]["id"], nodes[-1]["id"])
+                    if len(edges) < 2 or pair in seen_pairs:
+                        continue
+                    evidence = []
+                    for edge in edges:
+                        source_rows = [r.data() for r in session.run("""
+                            MATCH (ev:Evidence {relation_id:$id})-[:FROM_DOCUMENT]->(d:Document)
+                            WHERE ev.review_status='accepted'
+                            RETURN ev.evidence_id AS evidence_id,ev.quote AS quote,d.document_id AS document_id,
+                                   d.title AS title,d.url AS url,d.source_name AS source,d.published_at AS published_at
+                            ORDER BY d.published_at DESC LIMIT 2
+                        """, id=edge["relation_id"])]
+                        if not source_rows:
+                            evidence = []
+                            break
+                        evidence.append({"relation_id": edge["relation_id"], "sources": source_rows})
+                    if len(evidence) != len(edges):
+                        continue
+                    seen_pairs.add(pair)
+                    q = templates[len(questions) % len(templates)].format(start=nodes[0]["name"], target=nodes[-1]["name"])
+                    questions.append({
+                        "question_id": f"DUC_MH_{len(questions) + 1:02d}",
+                        "question": q,
+                        "expected_answer": " → ".join(n["name"] for n in nodes),
+                        "expected_path": {"nodes": nodes, "edges": edges},
+                        "evidence": evidence,
+                        "graph_version": graph_version,
+                        "created_at": datetime.now(timezone.utc).isoformat(),
+                        "review_status": "candidate_needs_duc_review",
+                    })
+                    if len(questions) >= count:
+                        break
+                if len(questions) >= count:
+                    break
+    finally:
+        driver.close()
+    if len(questions) < count:
+        raise RuntimeError(f"Chỉ tìm được {len(questions)}/{count} đường đi 2–3 bước có bằng chứng được duyệt. Tệp chưa được ghi; kiểm tra độ phủ Evidence hoặc thử tăng dữ liệu.")
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text("\n".join(json.dumps(row, ensure_ascii=False) for row in questions) + "\n", encoding="utf-8")
+    print(f"Đã tạo {len(questions)} câu hỏi multi-hop ứng viên: {out}; graph_version={questions[0]['graph_version']}. Đức rà soát nội dung trước khi dùng đánh giá.")
+    return out

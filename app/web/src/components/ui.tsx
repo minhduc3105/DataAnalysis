@@ -15,7 +15,7 @@ export function PageHeader({ title, subtitle, children }: { title: string; subti
 
 export function Card({ title, subtitle, children, className = '', action }: { title?: string; subtitle?: string; children: ReactNode; className?: string; action?: ReactNode }) {
   return (
-    <section className={`rounded-2xl border border-slate-200 bg-white p-5 shadow-sm ${className}`}>
+    <section className={`rounded-lg border border-slate-200 bg-white p-5 ${className}`}>
       {(title || action) && (
         <div className="mb-4 flex items-start justify-between gap-3">
           <div>
@@ -32,9 +32,9 @@ export function Card({ title, subtitle, children, className = '', action }: { ti
 
 export function Stat({ label, value, hint, accent = false }: { label: string; value: ReactNode; hint?: string; accent?: boolean }) {
   return (
-    <div className={`rounded-2xl border p-4 ${accent ? 'border-brand-100 bg-brand-50' : 'border-slate-200 bg-white'} shadow-sm`}>
+    <div className={`border-t border-slate-300 py-3 ${accent ? 'border-brand-600' : ''}`}>
       <div className="text-xs font-medium text-slate-500">{label}</div>
-      <div className={`mt-1 text-2xl font-semibold tabular-nums ${accent ? 'text-brand-700' : 'text-slate-900'}`}>{value}</div>
+      <div className={`mt-1 font-mono text-2xl font-normal tabular-nums ${accent ? 'text-brand-700' : 'text-slate-900'}`}>{value}</div>
       {hint && <div className="mt-1 text-xs text-slate-500">{hint}</div>}
     </div>
   )
@@ -56,7 +56,7 @@ export function Chip({ children, onClick, active = false }: { children: ReactNod
       type="button"
       onClick={onClick}
       className={`rounded-full border px-3 py-1 text-xs font-medium transition ${
-        active ? 'border-brand-600 bg-brand-600 text-white' : 'border-slate-200 bg-white text-slate-600 hover:border-slate-300 hover:bg-slate-50'
+        active ? 'border-slate-900 bg-slate-900 text-white' : 'border-slate-200 bg-white text-slate-600 hover:border-slate-400 hover:bg-slate-50'
       }`}
     >
       {children}

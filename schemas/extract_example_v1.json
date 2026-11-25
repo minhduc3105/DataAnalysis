@@ -1,0 +1,14 @@
+{
+  "document_id": "DOC_EXAMPLE_001",
+  "schema_version": "vn-music-radar.v1",
+  "model_version": "qwen3:4b-example",
+  "is_fixture": true,
+  "fixture_text": "See Tình do Hoàng Thùy Linh trình bày",
+  "entities": [
+    {"mention_id": "m1", "text": "See Tình", "type": "Song"},
+    {"mention_id": "m2", "text": "Hoàng Thùy Linh", "type": "Person"}
+  ],
+  "relations": [
+    {"head_mention_id": "m2", "type": "PERFORMED", "tail_mention_id": "m1", "evidence": "See Tình do Hoàng Thùy Linh trình bày", "confidence": 0.91}
+  ]
+}

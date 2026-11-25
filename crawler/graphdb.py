@@ -117,7 +117,7 @@ def _run_batches(session, query: str, rows: list[dict]) -> int:
     return created
 
 
-def load() -> None:
+def load(reset: bool = False) -> None:
     data = prepare()
     check_tables(data)
     entities, relations, evidence, documents = data["entities"], data["relations"], data["evidence"], data["documents"]
@@ -130,8 +130,13 @@ def load() -> None:
 
     driver = connect()
     with driver.session() as session:
-        print("Xóa dữ liệu cũ trong database…")
-        session.run("MATCH (n) CALL (n) { DETACH DELETE n } IN TRANSACTIONS OF 10000 ROWS").consume()
+        existing = session.run("MATCH (n:Entity) RETURN count(n) AS n").single()["n"]
+        if existing and not reset:
+            driver.close()
+            raise SystemExit("Database đã có Entity. Không nạp đè dữ liệu; nếu chủ động muốn xóa và nạp lại, thêm --reset.")
+        if reset:
+            print("Đang xóa toàn bộ database theo yêu cầu --reset…")
+            session.run("MATCH (n) CALL (n) { DETACH DELETE n } IN TRANSACTIONS OF 10000 ROWS").consume()
         for q in [
             "CREATE CONSTRAINT entity_id IF NOT EXISTS FOR (n:Entity) REQUIRE n.entity_id IS UNIQUE",
             "CREATE CONSTRAINT document_id IF NOT EXISTS FOR (n:Document) REQUIRE n.document_id IS UNIQUE",

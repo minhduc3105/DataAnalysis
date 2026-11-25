@@ -1,4 +1,6 @@
 import math
+import hashlib
+import json
 import random
 from collections import Counter
 
@@ -6,12 +8,12 @@ import networkx as nx
 import numpy as np
 import pandas as pd
 
-from .config import INTERIM_DIR
+from .config import INTERIM_DIR, VN_TZ
 from .graphdb import connect
 
 OUT = INTERIM_DIR / "analysis"
 COLLAB = "collab"
-PERIODS = [(2016, 2018), (2019, 2021), (2022, 2024), (2025, 2026)]
+PERIODS = [(2016, 2020), (2021, 2026)]
 TOP = 30
 METRIC_PROPS = ["community", "pagerank", "betweenness", "collab_degree", "collab_strength", "component", "eigenvector", "core", "leiden"]
 RANDOM_GRAPHS = 20
@@ -19,6 +21,8 @@ RANDOM_SOURCES = 300
 FULL_SOURCES = 500
 LEIDEN_RUNS = 10
 SEED = 42
+RUN_METADATA: dict = {}
+RUN_DIR = None
 ROLE_LABEL = {"PERFORMED": "Ca sĩ/rapper", "COMPOSED": "Nhạc sĩ", "PRODUCED": "Producer"}
 
 COLLAB_EDGES = """
@@ -35,6 +39,17 @@ WHERE (a:Person OR a:Group) AND (b:Person OR b:Group)
   AND ($include_show OR NOT coalesce(r.show_only, false))
   AND r.first_year >= $y0 AND r.first_year <= $y1
 WITH gds.graph.project($name, a, b, {relationshipProperties: r {.weight}}, {undirectedRelationshipTypes: ['*']}) AS g
+RETURN g.nodeCount AS nodes, g.relationshipCount / 2 AS edges
+"""
+
+PROJECT_PERIOD_COLLAB = """
+MATCH (a:Entity)-[r:COLLABORATED_WITH]-(b:Entity)
+WHERE (a:Person OR a:Group) AND (b:Person OR b:Group) AND a.entity_id < b.entity_id
+  AND ($include_show OR NOT coalesce(r.show_only, false))
+MATCH (e:Evidence {relation_id:r.relation_id})-[:FROM_DOCUMENT]->(d:Document)
+WHERE toInteger(substring(d.published_at, 0, 4)) >= $y0 AND toInteger(substring(d.published_at, 0, 4)) <= $y1
+WITH a, b, count(DISTINCT d.document_id) AS weight
+WITH gds.graph.project($name, a, b, {relationshipProperties: {weight: weight}}, {undirectedRelationshipTypes: ['*']}) AS g
 RETURN g.nodeCount AS nodes, g.relationshipCount / 2 AS edges
 """
 
@@ -59,8 +74,80 @@ def _drop(session, name: str) -> None:
 
 
 def _save(df: pd.DataFrame, name: str) -> None:
+    if RUN_METADATA:
+        df = df.copy()
+        df["analysis_run_id"] = RUN_METADATA["analysis_run_id"]
+        df["graph_version"] = RUN_METADATA["graph_version"]
     df.to_csv(OUT / name, index=False, encoding="utf-8-sig")
+    if RUN_DIR is not None:
+        RUN_DIR.mkdir(parents=True, exist_ok=True)
+        df.to_csv(RUN_DIR / name, index=False, encoding="utf-8-sig")
     print(f"  → {name} ({len(df)} dòng)")
+
+
+def _graph_version(session) -> tuple[str, int, int]:
+    def ordered(value) -> list:
+        if isinstance(value, list):
+            return sorted(value)
+        return [value] if value else []
+
+    entities = []
+    for row in session.run("MATCH (n:Entity) RETURN [n.entity_id,labels(n),n.name,coalesce(n.aliases,[])] AS key ORDER BY key[0]"):
+        key = row["key"]
+        key[1] = ordered(key[1])
+        key[3] = ordered(key[3])
+        entities.append(key)
+    relations = []
+    for row in session.run("MATCH (a:Entity)-[r]->(b:Entity) RETURN [r.relation_id,type(r),a.entity_id,b.entity_id,r.first_year,r.weight,r.verification_status,r.confidence,coalesce(r.model_versions,[])] AS key ORDER BY key[0]"):
+        key = row["key"]
+        key[8] = ordered(key[8])
+        relations.append(key)
+    evidence = []
+    for row in session.run("MATCH (e:Evidence)-[:FROM_DOCUMENT]->(d:Document) RETURN [e.evidence_id,e.relation_id,e.quote,d.document_id,d.published_at,d.url,d.source_name,e.review_status,coalesce(e.model_versions,[])] AS key ORDER BY key[0]"):
+        key = row["key"]
+        key[8] = ordered(key[8])
+        evidence.append(key)
+    payload = json.dumps([entities, relations, evidence], ensure_ascii=False, separators=(",", ":"), sort_keys=True)
+    rel_count = session.run("MATCH (:Entity)-[r]->(:Entity) RETURN count(r) AS n").single()["n"]
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()[:16], len(entities), rel_count
+
+
+def _save_enrichment_comparison(metrics: pd.DataFrame, graph_version: str, nodes: int, relations: int) -> None:
+    baseline_dir = OUT / "baseline"
+    baseline_metrics = baseline_dir / "artist_metrics.csv"
+    baseline_manifest = baseline_dir / "manifest.json"
+    delta_rows = [{"metric": "Entity count", "baseline": None, "current": nodes, "change": None, "note": "Chạy lại analyze trước khi nhập model để ghi nhận baseline có phiên bản."},
+                  {"metric": "Relation count", "baseline": None, "current": relations, "change": None, "note": "Baseline phân tích chưa được lưu."}]
+    if baseline_manifest.exists() and baseline_metrics.exists():
+        meta = json.loads(baseline_manifest.read_text(encoding="utf-8"))
+        old_nodes, old_relations = meta.get("nodes", 0), meta.get("relations", 0)
+        delta_rows = [
+            {"metric": "Entity count", "baseline": old_nodes, "current": nodes, "change": nodes - old_nodes, "note": "Neo4j nodes :Entity"},
+            {"metric": "Relation count", "baseline": old_relations, "current": relations, "change": relations - old_relations, "note": "Business relationships"},
+        ]
+        old = pd.read_csv(baseline_metrics, encoding="utf-8-sig")
+        joined = metrics.merge(old[["entity_id", "pagerank", "community"]].rename(columns={"pagerank": "baseline_pagerank", "community": "baseline_community"}), on="entity_id", how="left")
+        joined["pagerank_change"] = joined.pagerank - joined.baseline_pagerank
+        joined["baseline_rank"] = joined.baseline_pagerank.rank(ascending=False, method="min")
+        joined["current_rank"] = joined.pagerank.rank(ascending=False, method="min")
+        joined["rank_change"] = joined.baseline_rank - joined.current_rank
+        _save(joined.sort_values("pagerank_change", ascending=False)[["entity_id", "name", "baseline_pagerank", "pagerank", "pagerank_change", "baseline_rank", "current_rank", "rank_change", "baseline_community", "community"]], "pagerank_change_after_enrichment.csv")
+        overlap = len(set(old.nlargest(20, "pagerank").entity_id) & set(metrics.nlargest(20, "pagerank").entity_id))
+        paired = joined.dropna(subset=["baseline_community", "community"])
+        nmi = _nmi(paired.baseline_community, paired.community) if len(paired) else None
+        delta_rows.extend([
+            {"metric": "Top 20 PageRank overlap", "baseline": 20, "current": overlap, "change": overlap - 20, "note": "Entity IDs xuất hiện ở cả hai danh sách"},
+            {"metric": "New entities in current", "baseline": 0, "current": int((~metrics.entity_id.isin(set(old.entity_id))).sum()), "change": int((~metrics.entity_id.isin(set(old.entity_id))).sum()), "note": "Entity chưa có trong baseline"},
+            {"metric": "NMI community", "baseline": "baseline vs current", "current": round(nmi, 4) if nmi is not None else None, "change": None, "note": "So sánh trên các entity ID chung"},
+        ])
+    else:
+        _save(pd.DataFrame(columns=["entity_id", "name", "baseline_pagerank", "pagerank", "pagerank_change", "baseline_rank", "current_rank", "rank_change", "baseline_community", "community"]), "pagerank_change_after_enrichment.csv")
+    _save(pd.DataFrame(delta_rows), "graph_enrichment_delta.csv")
+    if not baseline_manifest.exists():
+        baseline_dir.mkdir(parents=True, exist_ok=True)
+        baseline_metrics.write_bytes((OUT / "artist_metrics.csv").read_bytes())
+        baseline_manifest.write_text(json.dumps({"graph_version": graph_version, "nodes": nodes, "relations": relations, "created_at": RUN_METADATA.get("generated_at")}, ensure_ascii=False, indent=2), encoding="utf-8")
+        print("Đã lưu baseline phân tích hiện tại; lần chạy sau sẽ xuất so sánh làm giàu.")
 
 
 def _network_stats(session, name: str, nodes: int, edges: int) -> dict:
@@ -81,7 +168,19 @@ def _network_stats(session, name: str, nodes: int, edges: int) -> dict:
 
 def _project_collab(session, name: str, include_show: bool = True, y0: int = 0, y1: int = 9999) -> tuple[int, int]:
     _drop(session, name)
-    r = _one(session, PROJECT_COLLAB, name=name, include_show=include_show, y0=y0, y1=y1)
+    query = PROJECT_PERIOD_COLLAB if y0 >= 2016 else PROJECT_COLLAB
+    if y0 >= 2016:
+        matching = _one(session, """
+            MATCH (a:Entity)-[r:COLLABORATED_WITH]-(b:Entity)
+            WHERE (a:Person OR a:Group) AND (b:Person OR b:Group) AND a.entity_id < b.entity_id
+              AND ($include_show OR NOT coalesce(r.show_only,false))
+            MATCH (e:Evidence {relation_id:r.relation_id})-[:FROM_DOCUMENT]->(d:Document)
+            WHERE toInteger(substring(d.published_at,0,4)) >= $y0 AND toInteger(substring(d.published_at,0,4)) <= $y1
+            RETURN count(DISTINCT r.relation_id) AS edges
+        """, include_show=include_show, y0=y0, y1=y1)["edges"]
+        if not matching:
+            return 0, 0
+    r = _one(session, query, name=name, include_show=include_show, y0=y0, y1=y1)
     return r["nodes"], r["edges"]
 
 
@@ -224,6 +323,8 @@ def communities(session, metrics: pd.DataFrame) -> None:
 
 
 def _lcc(g: nx.Graph) -> nx.Graph:
+    if not g.number_of_nodes():
+        return g.copy()
     return g.subgraph(max(nx.connected_components(g), key=len)).copy()
 
 
@@ -235,7 +336,7 @@ def _distances(g: nx.Graph, sources=None) -> Counter:
 
 
 def _avg(counts: Counter) -> float:
-    return sum(d * c for d, c in counts.items()) / sum(counts.values())
+    return sum(d * c for d, c in counts.items()) / sum(counts.values()) if counts else 0.0
 
 
 def _sample(g: nx.Graph, k: int, rng: random.Random) -> list:
@@ -255,31 +356,54 @@ def _nmi(a: pd.Series, b: pd.Series) -> float:
 def small_world(session, metrics: pd.DataFrame) -> None:
     print("2.1 Thế giới nhỏ (thành phần liên thông lớn nhất của mạng hợp tác)")
     rng = random.Random(SEED)
-    g = _lcc(nx.from_pandas_edgelist(_df(session, COLLAB_EDGES), "a", "b"))
+    edge_rows = _df(session, COLLAB_EDGES)
+    g = _lcc(nx.from_pandas_edgelist(edge_rows, "a", "b") if not edge_rows.empty else nx.Graph())
     n, m = g.number_of_nodes(), g.number_of_edges()
+    if n < 2:
+        _save(pd.DataFrame([{"metric": "status", "value": "không đủ nút có cạnh để tính", "note": "Cần ít nhất hai nút trong thành phần liên thông."}]), "small_world.csv")
+        _save(pd.DataFrame(columns=["model", "run", "seed", "nodes_lcc", "edges_lcc", "average_path_length", "average_clustering", "path_source_count", "path_measure", "error"]), "small_world_reference_runs.csv")
+        _save(pd.DataFrame(columns=["distance", "pairs", "share"]), "distance_distribution.csv")
+        _save(pd.DataFrame(columns=["from", "from_genre", "to", "to_genre", "hops", "path"]), "small_world_paths.csv")
+        return
     k = 2 * m / n
     dist = _distances(g)
     L, C = _avg(dist), nx.average_clustering(g)
 
-    def reference(make) -> tuple[float, float]:
+    reference_runs = []
+
+    def reference(model: str, make) -> tuple[float, float]:
         ls, cs = [], []
-        for _ in range(RANDOM_GRAPHS):
-            r = _lcc(make(rng.randrange(1 << 30)))
-            ls.append(_avg(_distances(r, _sample(r, RANDOM_SOURCES, rng))))
-            cs.append(nx.average_clustering(r))
-        return float(np.mean(ls)), float(np.mean(cs))
+        for run in range(RANDOM_GRAPHS):
+            seed = rng.randrange(1 << 30)
+            try:
+                r = _lcc(make(seed))
+                sources = _sample(r, RANDOM_SOURCES, rng)
+                length = _avg(_distances(r, sources))
+                clustering = nx.average_clustering(r) if r.number_of_nodes() else 0.0
+            except Exception as exc:
+                reference_runs.append({"model": model, "run": run + 1, "seed": seed, "nodes_lcc": None, "edges_lcc": None, "average_path_length": None, "average_clustering": None, "path_source_count": 0, "path_measure": "unavailable", "error": str(exc)[:300]})
+                continue
+            ls.append(length)
+            cs.append(clustering)
+            reference_runs.append({"model": model, "run": run + 1, "seed": seed, "nodes_lcc": r.number_of_nodes(), "edges_lcc": r.number_of_edges(), "average_path_length": round(length, 5), "average_clustering": round(clustering, 6), "path_source_count": len(sources), "path_measure": "exact" if len(sources) == r.number_of_nodes() else "sampled_sources", "error": ""})
+        return (float(np.mean(ls)), float(np.mean(cs))) if ls else (float("nan"), float("nan"))
 
     def rewired(seed: int) -> nx.Graph:
         r = g.copy()
-        nx.double_edge_swap(r, nswap=2 * m, max_tries=40 * m, seed=seed)
+        if m > 1 and r.number_of_nodes() > 3:
+            nx.double_edge_swap(r, nswap=2 * m, max_tries=40 * m, seed=seed)
         return r
 
-    l_er, c_er = reference(lambda s: nx.gnm_random_graph(n, m, seed=s))
-    l_cf, c_cf = reference(rewired)
-    # Lưới vòng cùng n và bậc trung bình: C ≈ 3(k−2)/(4(k−1)), mốc trên của gom cụm khi tính ω.
-    c_lattice = 3 * (k - 2) / (4 * (k - 1)) if k > 2 else float("nan")
+    l_er, c_er = reference("erdos_renyi_gnm", lambda s: nx.gnm_random_graph(n, m, seed=s))
+    l_cf, c_cf = reference("degree_preserving_swap", rewired)
+    lattice_degree = min(max(2, int(round(k / 2) * 2)), n - 1)
+    if lattice_degree % 2 and lattice_degree > 2:
+        lattice_degree -= 1
+    lattice = nx.watts_strogatz_graph(n, lattice_degree, 0, seed=SEED) if n >= 3 and lattice_degree >= 2 and n > lattice_degree else nx.complete_graph(n)
+    c_lattice = nx.average_clustering(lattice) if n > 2 else 0
 
-    full = _lcc(nx.from_pandas_edgelist(_df(session, FULL_EDGES), "a", "b"))
+    full_edges = _df(session, FULL_EDGES)
+    full = _lcc(nx.from_pandas_edgelist(full_edges, "a", "b") if not full_edges.empty else nx.Graph())
     l_full = _avg(_distances(full, _sample(full, FULL_SOURCES, rng)))
 
     rows = [
@@ -292,17 +416,33 @@ def small_world(session, metrics: pd.DataFrame) -> None:
         ("Transitivity", round(nx.transitivity(g), 4), ""),
         ("L ngẫu nhiên Erdős–Rényi", round(l_er, 3), f"trung bình {RANDOM_GRAPHS} đồ thị cùng n, m"),
         ("C ngẫu nhiên Erdős–Rényi", round(c_er, 4), ""),
-        ("L lý thuyết ln n / ln k", round(math.log(n) / math.log(k), 3), ""),
+        ("L lý thuyết ln n / ln k", round(math.log(n) / math.log(k), 3) if k > 1 else None, ""),
         ("L ngẫu nhiên giữ phân phối bậc", round(l_cf, 3), f"{RANDOM_GRAPHS} đồ thị hoán đổi cạnh"),
         ("C ngẫu nhiên giữ phân phối bậc", round(c_cf, 4), ""),
-        ("σ so với Erdős–Rényi", round((C / c_er) / (L / l_er), 2), "> 1 là thế giới nhỏ"),
-        ("σ so với đồ thị giữ bậc", round((C / c_cf) / (L / l_cf), 2), "> 1 là thế giới nhỏ"),
-        ("ω", round(l_er / L - C / c_lattice, 3), "trong [−0.5, 0.5] là thế giới nhỏ (Telesford 2011); âm: gần lưới, dương: gần ngẫu nhiên; C lưới theo công thức lưới vòng"),
+        ("σ so với Erdős–Rényi", round((C / c_er) / (L / l_er), 2) if all(math.isfinite(v) and v > 0 for v in (c_er, L, l_er)) else None, "> 1 là thế giới nhỏ"),
+        ("σ so với đồ thị giữ bậc", round((C / c_cf) / (L / l_cf), 2) if all(math.isfinite(v) and v > 0 for v in (c_cf, L, l_cf)) else None, "> 1 là thế giới nhỏ"),
+        ("Hệ số gom cụm lưới tham chiếu", round(c_lattice, 4), f"Watts–Strogatz vòng; n={n}, degree={lattice_degree}, m={lattice.number_of_edges()}"),
+        ("ω", round(l_er / L - C / c_lattice, 3) if math.isfinite(l_er) and c_lattice and L else None, "Telesford 2011; dùng L trung bình Erdős–Rényi lấy mẫu và C của lưới Watts–Strogatz hữu hạn"),
         ("L đồ thị tri thức đầy đủ", round(l_full, 3), f"{full.number_of_nodes()} nút, ước lượng từ {FULL_SOURCES} nút nguồn"),
     ]
     _save(pd.DataFrame(rows, columns=["metric", "value", "note"]), "small_world.csv")
+    _save(pd.DataFrame(reference_runs), "small_world_reference_runs.csv")
     total = sum(dist.values())
     _save(pd.DataFrame([(d, c, round(c / total, 4)) for d, c in sorted(dist.items())], columns=["distance", "pairs", "share"]), "distance_distribution.csv")
+    try:
+        import matplotlib.pyplot as plt
+        fig, ax = plt.subplots(figsize=(7, 4))
+        ax.bar(sorted(dist), [dist[d] / total for d in sorted(dist)], color="#1d5fbf", width=0.78)
+        ax.set(xlabel="Khoảng cách ngắn nhất (bước)", ylabel="Tỷ lệ cặp có thứ tự", title="Phân phối khoảng cách trên thành phần liên thông lớn nhất")
+        ax.grid(axis="y", color="#e8ebef", linewidth=0.8)
+        ax.spines[["top", "right"]].set_visible(False)
+        fig.tight_layout()
+        fig.savefig(OUT / "small_world_distance.png", dpi=180)
+        if RUN_DIR is not None:
+            fig.savefig(RUN_DIR / "small_world_distance.png", dpi=180)
+        plt.close(fig)
+    except ImportError:
+        print("matplotlib chưa cài; bỏ qua ảnh small_world_distance.png")
 
     names = dict(zip(metrics.entity_id, metrics.name))
     in_g = metrics[metrics.entity_id.isin(g.nodes) & metrics.genre_group.fillna("").ne("")]
@@ -381,6 +521,29 @@ def community_structure(session, metrics: pd.DataFrame) -> None:
         )
     _save(pd.DataFrame(rows).sort_values("size", ascending=False), "community_cores.csv")
 
+    bridge_rows = _df(session, """
+        MATCH (a:Entity)-[r:COLLABORATED_WITH]-(b:Entity)
+        WHERE a.entity_id < b.entity_id AND a.community IS NOT NULL AND b.community IS NOT NULL
+        RETURN a.entity_id AS a,a.name AS a_name,a.community AS community_a,
+               b.entity_id AS b,b.name AS b_name,b.community AS community_b,
+               r.relation_id AS relation_id,r.weight AS weight,r.first_year AS first_year,r.n_documents AS n_documents
+    """)
+    if len(bridge_rows):
+        g = nx.from_pandas_edgelist(bridge_rows, "a", "b", edge_attr=["weight"])
+        for _a, _b, data in g.edges(data=True):
+            data["distance"] = 1 / max(float(data.get("weight") or 1), 1)
+        score = nx.edge_betweenness_centrality(g, weight="distance")
+        by_pair = {frozenset((r.a, r.b)): r._asdict() for r in bridge_rows.itertuples(index=False)}
+        bridges = []
+        for (a, b), value in score.items():
+            if comm.get(a) == comm.get(b):
+                continue
+            row = by_pair[frozenset((a, b))]
+            bridges.append({**row, "edge_betweenness": value})
+        _save(pd.DataFrame(bridges).sort_values("edge_betweenness", ascending=False).head(100), "community_bridges.csv")
+    else:
+        _save(pd.DataFrame(columns=["a", "a_name", "community_a", "b", "b_name", "community_b", "relation_id", "weight", "first_year", "n_documents", "edge_betweenness"]), "community_bridges.csv")
+
 
 def temporal(session) -> None:
     print("RQ3: thay đổi theo thời gian (năm đăng tài liệu bằng chứng sớm nhất)")
@@ -394,7 +557,8 @@ def temporal(session) -> None:
             ranks.append(top.assign(period=f"{y0}–{y1}", rank=range(1, len(top) + 1)))
         _drop(session, name)
     _save(pd.DataFrame(rows), "collab_by_period.csv")
-    _save(pd.concat(ranks)[["period", "rank", "name", "score"]], "pagerank_by_period.csv")
+    rank_columns = ["period", "rank", "name", "score"]
+    _save(pd.concat(ranks, ignore_index=True)[rank_columns] if ranks else pd.DataFrame(columns=rank_columns), "pagerank_by_period.csv")
     yearly = _df(
         session,
         """
@@ -418,6 +582,11 @@ def companies_stats(session) -> None:
         """,
     )
     _save(df, "companies.csv")
+    _drop(session, "full_rank")
+    _one(session, PROJECT_FULL, name="full_rank")
+    ranked = _df(session, "CALL gds.pageRank.stream('full_rank') YIELD nodeId,score WITH gds.util.asNode(nodeId) AS n,score RETURN n.entity_id AS entity_id,n.name AS name,[l IN labels(n) WHERE l<>'Entity'][0] AS entity_type,score AS pagerank ORDER BY pagerank DESC")
+    _drop(session, "full_rank")
+    _save(ranked[ranked.entity_type.isin(["Company", "Song"])].groupby("entity_type", group_keys=False).head(TOP), "pagerank_song_company.csv")
 
 
 def gephi(session) -> None:
@@ -429,6 +598,7 @@ def gephi(session) -> None:
 
 
 def run() -> None:
+    global RUN_METADATA, RUN_DIR
     OUT.mkdir(parents=True, exist_ok=True)
     driver = connect()
     with driver.session() as session:
@@ -438,7 +608,11 @@ def run() -> None:
             raise SystemExit("Database chưa cài plugin Graph Data Science (GDS). Trong Neo4j Desktop: chọn database → Plugins → Graph Data Science → Install, rồi Restart.")
         if not session.run("MATCH (n:Entity) RETURN count(n) > 0 AS ok").single()["ok"]:
             raise SystemExit("Neo4j chưa có dữ liệu; chạy `uv run python main.py neo4j load` trước.")
-        print(f"Neo4j GDS {version}; kết quả ghi vào {OUT}")
+        graph_version, nodes, relations = _graph_version(session)
+        generated_at = pd.Timestamp.now(tz="Asia/Ho_Chi_Minh").isoformat()
+        RUN_METADATA = {"analysis_run_id": f"analysis-{graph_version}-{pd.Timestamp.now(tz='Asia/Ho_Chi_Minh').strftime('%Y%m%d%H%M%S')}", "graph_version": graph_version, "generated_at": generated_at, "gds_version": version}
+        RUN_DIR = OUT / "snapshots" / f"graph-{graph_version}"
+        print(f"Neo4j GDS {version}; graph={graph_version} ({nodes} nút, {relations} cạnh); kết quả ghi vào {OUT} và {RUN_DIR}")
         overview(session)
         metrics = collaboration(session)
         communities(session, metrics)
@@ -448,4 +622,9 @@ def run() -> None:
         temporal(session)
         companies_stats(session)
         gephi(session)
+        _save_enrichment_comparison(metrics, graph_version, nodes, relations)
+        manifest = {**RUN_METADATA, "periods": [list(p) for p in PERIODS], "seed": SEED, "random_graphs": RANDOM_GRAPHS, "random_path_sources": RANDOM_SOURCES, "full_graph_path_sources": FULL_SOURCES, "leiden_runs": LEIDEN_RUNS, "small_world_main_lcc_path_measure": "exact", "graph_nodes": nodes, "graph_relations": relations}
+        (OUT / "analysis_manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
+        RUN_DIR.mkdir(parents=True, exist_ok=True)
+        (RUN_DIR / "analysis_manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     driver.close()

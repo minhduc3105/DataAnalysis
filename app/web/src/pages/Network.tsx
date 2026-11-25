@@ -17,11 +17,14 @@ const ROLES = ['', 'Ca sĩ/rapper', 'Nhạc sĩ', 'Producer']
 const metric = (rows: Row[] | undefined, prefix: string) => rows?.find((r) => String(r.metric).startsWith(prefix))?.value as number | undefined
 
 export function NetworkPage() {
-  const net = useAsync(api.network, [])
-  const comms = useAsync(api.communities, [])
+  const snapshots = useAsync(api.snapshots, [])
+  const [graphVersion, setGraphVersion] = useState('')
+  const selectedVersion = graphVersion || undefined
+  const net = useAsync(() => api.network(selectedVersion), [selectedVersion])
+  const comms = useAsync(() => api.communities(selectedVersion), [selectedVersion])
   const [measure, setMeasure] = useState('pagerank')
   const [role, setRole] = useState('')
-  const ranks = useAsync(() => api.rankings(measure, role || undefined, 20), [measure, role])
+  const ranks = useAsync(() => api.rankings(measure, role || undefined, 20, selectedVersion), [measure, role, selectedVersion])
 
   const sw = net.data?.small_world
   const overview = net.data?.overview
@@ -71,10 +74,21 @@ export function NetworkPage() {
   ]
   const kmax = net.data.kcore_distribution?.at(-1)
   const periods = [...new Set(net.data.pagerank_by_period.map((r) => String(r.period)))]
+  const fullRanks = net.data.pagerank_song_company ?? []
 
   return (
     <div className="space-y-6">
       <PageHeader title="Chân dung mạng" subtitle="Cấu trúc mạng hợp tác ca sĩ, nhạc sĩ, producer Việt Nam: thế giới nhỏ, xếp hạng nút, cộng đồng và hạt nhân. Số liệu từ đồ thị tri thức trên Neo4j." />
+
+      <div className="flex flex-wrap items-center gap-3 text-xs text-slate-500">
+        <label>Snapshot đồ thị
+          <select value={graphVersion} onChange={(e) => setGraphVersion(e.target.value)} className="ml-2 h-9 rounded-lg border border-slate-300 bg-white px-2 text-sm text-slate-800">
+            <option value="">Mới nhất</option>
+            {(snapshots.data ?? []).map((snapshot) => <option key={snapshot.graph_version} value={snapshot.graph_version}>{snapshot.graph_version} · {snapshot.generated_at?.slice(0, 10)}</option>)}
+          </select>
+        </label>
+        {net.data?.overview?.length ? <span>{String(net.data.overview.find((row) => row.metric === 'Nút thực thể')?.value ?? '')} nút · graph {graphVersion || snapshots.data?.[0]?.graph_version || 'latest'}</span> : null}
+      </div>
 
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 xl:grid-cols-6">
         <Stat label="Nút thực thể" value={fmt(metric(overview, 'Nút thực thể'))} hint="toàn đồ thị tri thức" />
@@ -121,6 +135,13 @@ export function NetworkPage() {
             ))}
           </div>
         </Card>
+      </div>
+
+      <div className="grid gap-6 xl:grid-cols-2">
+        {(['Company', 'Song'] as const).map((kind) => <Card key={kind} title={kind === 'Company' ? 'Công ty theo PageRank' : 'Bài hát theo PageRank'} subtitle="Xếp hạng trên đồ thị tri thức đầy đủ, không chỉ mạng cộng tác nghệ sĩ.">
+          <ol className="divide-y divide-slate-100">{fullRanks.filter((row) => row.entity_type === kind).slice(0, 10).map((row, index) => <li key={String(row.entity_id)} className="flex items-center justify-between gap-3 py-2 text-sm"><span className="truncate"><span className="mr-3 font-mono text-xs text-slate-400">{index + 1}</span><Link to={`/entity/${row.entity_id}`} className="font-medium text-slate-800 hover:text-brand-600">{row.name}</Link></span><span className="font-mono text-xs tabular-nums text-slate-500">{fmt(row.pagerank, 4)}</span></li>)}</ol>
+          {!fullRanks.some((row) => row.entity_type === kind) && <p className="text-sm text-slate-500">Chưa có dữ liệu cho loại nút này.</p>}
+        </Card>)}
       </div>
 
       <div className="grid gap-6 xl:grid-cols-5">
@@ -230,10 +251,16 @@ export function NetworkPage() {
                       ))}
                   </div>
                   {c.top_companies && <div className="mt-3 truncate text-xs text-slate-500">Công ty: {String(c.top_companies).split('; ').slice(0, 3).join(', ')}</div>}
+                  {c.summary && <p className="mt-3 border-t border-slate-100 pt-3 text-sm leading-5 text-slate-700">{String(c.summary)}</p>}
+                  {Array.isArray(c.summary_sources) && c.summary_sources.length > 0 && <div className="mt-2 flex flex-wrap gap-x-3 gap-y-1">{(c.summary_sources as { source_id: string; title?: string; url?: string }[]).map((source) => source.url ? <a key={source.source_id} href={source.url} target="_blank" rel="noreferrer" className="max-w-48 truncate text-xs text-blue-700 underline underline-offset-2">{source.title || source.source_id}</a> : null)}</div>}
                 </div>
               ))}
           </div>
         )}
+      </Card>
+
+      <Card title="Cầu nối giữa cộng đồng" subtitle="Cạnh liên cộng đồng xếp theo betweenness có trọng số nghịch đảo của trọng số hợp tác.">
+        {!(net.data.community_bridges ?? []).length ? <p className="text-sm text-slate-500">Không có cạnh cầu nối trong snapshot này.</p> : <ol className="grid gap-x-8 md:grid-cols-2">{(net.data.community_bridges ?? []).slice(0, 20).map((row, index) => <li key={String(row.relation_id)} className="flex items-center justify-between gap-3 border-t border-slate-100 py-2 text-sm"><span className="min-w-0 truncate"><span className="mr-2 font-mono text-xs text-slate-400">{index + 1}</span><Link to={`/entity/${row.a}`} className="text-slate-800 hover:text-brand-600">{row.a_name}</Link><span className="px-1 text-slate-400">↔</span><Link to={`/entity/${row.b}`} className="text-slate-800 hover:text-brand-600">{row.b_name}</Link><span className="ml-2 text-xs text-slate-400">{row.community_a}–{row.community_b}</span></span><span className="shrink-0 font-mono text-xs text-slate-500">{fmt(row.edge_betweenness, 4)}</span></li>)}</ol>}
       </Card>
 
       <Card title="Đường nối giữa các dòng nhạc" subtitle="Đường đi ngắn nhất giữa nghệ sĩ có PageRank cao nhất của mỗi dòng nhạc">

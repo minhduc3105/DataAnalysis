@@ -1,5 +1,10 @@
-import * as echarts from 'echarts'
+import * as echarts from 'echarts/core'
+import { BarChart, LineChart } from 'echarts/charts'
+import { GridComponent, LegendComponent, TooltipComponent } from 'echarts/components'
+import { SVGRenderer } from 'echarts/renderers'
 import { useEffect, useRef } from 'react'
+
+echarts.use([BarChart, LineChart, GridComponent, LegendComponent, TooltipComponent, SVGRenderer])
 
 export function EChart({ option, height = 280 }: { option: echarts.EChartsCoreOption; height?: number }) {
   const el = useRef<HTMLDivElement>(null)

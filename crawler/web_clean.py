@@ -4,12 +4,13 @@ import json
 import re
 import urllib.parse
 import unicodedata
+from datetime import date, datetime
 
 import pandas as pd
 
 from . import web
 from .common import normalize_name
-from .config import INTERIM_DIR, PERIOD_END, PERIOD_START
+from .config import INTERIM_DIR, PERIOD_END, PERIOD_START, VN_TZ
 
 OUT_PATH = INTERIM_DIR / "web_documents.csv"
 LINK_PATH = INTERIM_DIR / "document_entities.csv"
@@ -26,14 +27,24 @@ def _clean_text(value):
     return value.strip()
 
 
-def clean():
+def clean(lane: str = "research"):
     docs = pd.DataFrame(web._read_docs()).fillna("")
+    if not docs.empty:
+        if "research_lane" not in docs:
+            docs["research_lane"] = "research"
+        docs["research_lane"] = docs.research_lane.fillna("").replace("", "research")
+        docs = docs[docs.research_lane.eq(lane)].copy()
+    out_path = OUT_PATH if lane == "research" else INTERIM_DIR / "web_live_documents.csv"
+    review_path = REVIEW_PATH if lane == "research" else INTERIM_DIR / "web_live_review.csv"
+    rejected_path = REJECTED_PATH if lane == "research" else INTERIM_DIR / "web_live_rejected.csv"
+    link_path = LINK_PATH if lane == "research" else INTERIM_DIR / "web_live_document_entities.csv"
+    report_path = REPORT_PATH if lane == "research" else INTERIM_DIR / "web_live_quality_report.json"
     if docs.empty:
-        for path, columns in ((OUT_PATH, web.DOC_COLUMNS), (REVIEW_PATH, web.DOC_COLUMNS), (REJECTED_PATH, web.DOC_COLUMNS), (LINK_PATH, ["document_id", "entity_id", "entity_name", "match_method"])):
+        for path, columns in ((out_path, web.DOC_COLUMNS), (review_path, web.DOC_COLUMNS), (rejected_path, web.DOC_COLUMNS), (link_path, ["document_id", "entity_id", "entity_name", "match_method"])):
             pd.DataFrame(columns=columns).to_csv(path, index=False, encoding="utf-8-sig")
         INTERIM_DIR.mkdir(parents=True, exist_ok=True)
-        REPORT_PATH.write_text(json.dumps({"total_raw": 0, "clean": 0, "review": 0, "rejected": 0}, ensure_ascii=False, indent=2), encoding="utf-8")
-        print("Chưa có tài liệu web thô.")
+        report_path.write_text(json.dumps({"total_raw": 0, "clean": 0, "review": 0, "rejected": 0, "research_lane": lane}, ensure_ascii=False, indent=2), encoding="utf-8")
+        print(f"Chưa có tài liệu web thô cho lane {lane}.")
         return
 
     entities = web._entities()
@@ -63,7 +74,9 @@ def clean():
         raw_path = row.get("raw_html_path", "")
         source_present = bool(row.get("published_at_source")) and not str(row.get("published_at_source", "")).startswith("Google News RSS")
         conflict = row.get("published_at_conflict", "")
-        in_period = bool(published and PERIOD_START.isoformat() <= published <= PERIOD_END.isoformat())
+        day = date.fromisoformat(published) if published else None
+        today = datetime.now(VN_TZ).date()
+        in_period = bool(day and (PERIOD_START <= day <= PERIOD_END if lane == "research" else date(2026, 10, 22) <= day <= today))
         should_verify_html = not published or (in_period and (not source_present or bool(conflict)))
         if should_verify_html and raw_path:
             try:
@@ -107,15 +120,15 @@ def clean():
             why.append("thiếu ngày đăng xác minh từ bài gốc")
         elif conflict:
             why.append("metadata ngày đăng mâu thuẫn")
-        elif not (PERIOD_START.isoformat() <= published <= PERIOD_END.isoformat()):
-            why.append("ngoài phạm vi thời gian")
+        elif not in_period:
+            why.append("ngoài luồng tin mới" if lane == "live" else "ngoài phạm vi thời gian")
         if not matches:
             why.append("không tìm thấy tên thực thể trong tiêu đề/nội dung; kiểm tra kết quả truy vấn")
         row["published_at"] = published
         row["review_reason"] = "|".join(why)
         for reason in why:
             reason_counts[reason] = reason_counts.get(reason, 0) + 1
-        if why and "ngoài phạm vi thời gian" in why:
+        if why and ("ngoài phạm vi thời gian" in why or "ngoài luồng tin mới" in why):
             row["document_status"] = "loại bỏ"
             row["exclude_reason"] = "|".join(why)
             rejected.append(row)
@@ -131,10 +144,10 @@ def clean():
             by_year[year] = by_year.get(year, 0) + 1
             by_source[row.get("source_name", "")] = by_source.get(row.get("source_name", ""), 0) + 1
 
-    for path, rows in ((OUT_PATH, accepted), (REVIEW_PATH, reviews), (REJECTED_PATH, rejected)):
+    for path, rows in ((out_path, accepted), (review_path, reviews), (rejected_path, rejected)):
         frame = pd.DataFrame(rows)
         frame.to_csv(path, index=False, encoding="utf-8-sig")
-    pd.DataFrame(links, columns=["document_id", "entity_id", "entity_name", "match_method"]).drop_duplicates().to_csv(LINK_PATH, index=False, encoding="utf-8-sig")
-    report = {"total_raw": len(web._read_docs()), "raw_documents": len(docs), "clean": len(accepted), "review": len(reviews), "rejected": len(rejected), "clean_by_year": dict(sorted(by_year.items())), "clean_by_source": by_source, "rejected_by_reason": reason_counts, "period": [PERIOD_START.isoformat(), PERIOD_END.isoformat()]}
-    REPORT_PATH.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Làm sạch xong: {len(accepted)} hợp lệ, {len(reviews)} chờ duyệt, {len(rejected)} loại; xem web_quality_report.json")
+    pd.DataFrame(links, columns=["document_id", "entity_id", "entity_name", "match_method"]).drop_duplicates().to_csv(link_path, index=False, encoding="utf-8-sig")
+    report = {"total_raw": len(web._read_docs()), "raw_documents": len(docs), "clean": len(accepted), "review": len(reviews), "rejected": len(rejected), "clean_by_year": dict(sorted(by_year.items())), "clean_by_source": by_source, "rejected_by_reason": reason_counts, "period": [PERIOD_START.isoformat(), PERIOD_END.isoformat()] if lane == "research" else ["2026-10-22", datetime.now(VN_TZ).date().isoformat()], "research_lane": lane}
+    report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"Làm sạch lane {lane}: {len(accepted)} hợp lệ, {len(reviews)} chờ duyệt, {len(rejected)} loại; xem {report_path.name}")

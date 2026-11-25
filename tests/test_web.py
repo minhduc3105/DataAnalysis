@@ -134,6 +134,19 @@ class WebTests(unittest.TestCase):
             finally:
                 db.close()
 
+    def test_live_discovery_promotes_old_queue_record_to_live_lane(self):
+        with tempfile.TemporaryDirectory() as tmp, patch.object(web, 'WEB_DIR', Path(tmp)), patch.object(web, 'DB_PATH', Path(tmp) / 'crawl.sqlite3'):
+            db = web._db()
+            try:
+                url = 'https://example.com/music-news'
+                web._add_url(db, url, 'Google News RSS', published_at='2026-10-20', research_lane='research')
+                db.execute("UPDATE urls SET state='crawled' WHERE url=?", (url,))
+                web._add_url(db, url, 'Google News RSS', published_at='2026-10-23', research_lane='live')
+                lane, state = db.execute('SELECT research_lane,state FROM urls WHERE url=?', (url,)).fetchone()
+                self.assertEqual((lane, state), ('live', 'discovered'))
+            finally:
+                db.close()
+
     def test_google_news_rss_url_is_queued_and_invalid_inputs_are_recorded(self):
         with tempfile.TemporaryDirectory() as tmp, patch.object(web, 'WEB_DIR', Path(tmp)), patch.object(web, 'DB_PATH', Path(tmp) / 'crawl.sqlite3'):
             db = web._db()

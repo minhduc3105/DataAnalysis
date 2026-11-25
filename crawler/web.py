@@ -30,7 +30,7 @@ DB_PATH = WEB_DIR / "crawl.sqlite3"
 SOURCES_PATH = ROOT / "seeds" / "web_sources.csv"
 DOCS_PATH = INTERIM_DIR / "web_raw_documents.csv"
 DISCOVERY_REJECTS_PATH = INTERIM_DIR / "web_discovery_rejected.csv"
-DOC_COLUMNS = ["document_id", "url", "resolved_url", "final_url", "source_name", "source_type", "title", "title_source", "abstract", "abstract_source", "rss_abstract", "article_lead", "lead_source", "published_at", "published_at_iso", "published_at_raw", "published_at_source", "published_at_conflict", "collected_at", "content", "raw_html_path", "collection_method", "document_status", "author", "content_hash", "duplicate_content_of", "crawl_relevance_status", "review_reason", "query_entity_ids", "seed_ids"]
+DOC_COLUMNS = ["document_id", "url", "resolved_url", "final_url", "source_name", "source_type", "title", "title_source", "abstract", "abstract_source", "rss_abstract", "article_lead", "lead_source", "published_at", "published_at_iso", "published_at_raw", "published_at_source", "published_at_conflict", "collected_at", "content", "raw_html_path", "collection_method", "document_status", "author", "content_hash", "duplicate_content_of", "crawl_relevance_status", "review_reason", "query_entity_ids", "seed_ids", "research_lane"]
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; VnMusicResearchBot/1.0; +https://example.org/research)"}
 TIMEOUT = 25
 URL_FILTER_VERSION = "exact-source-url-v2"
@@ -68,7 +68,7 @@ def _db():
     existed = DB_PATH.exists()
     db = sqlite3.connect(DB_PATH, timeout=30)
     db.execute("PRAGMA journal_mode=WAL")
-    db.execute("CREATE TABLE IF NOT EXISTS urls (url TEXT COLLATE BINARY PRIMARY KEY, state TEXT NOT NULL DEFAULT 'discovered', source_kind TEXT NOT NULL DEFAULT '', discovered_at TEXT NOT NULL DEFAULT '', updated_at TEXT NOT NULL DEFAULT '', error TEXT NOT NULL DEFAULT '', subject_ids TEXT NOT NULL DEFAULT '', source_name TEXT NOT NULL DEFAULT '', query TEXT NOT NULL DEFAULT '', resolved_url TEXT NOT NULL DEFAULT '', final_url TEXT NOT NULL DEFAULT '', resolution_state TEXT NOT NULL DEFAULT 'pending', exclusion_reason TEXT NOT NULL DEFAULT '', attempts INTEGER NOT NULL DEFAULT 0, rss_title TEXT NOT NULL DEFAULT '', rss_abstract TEXT NOT NULL DEFAULT '', rss_published_at TEXT NOT NULL DEFAULT '', rss_source TEXT NOT NULL DEFAULT '')")
+    db.execute("CREATE TABLE IF NOT EXISTS urls (url TEXT COLLATE BINARY PRIMARY KEY, state TEXT NOT NULL DEFAULT 'discovered', source_kind TEXT NOT NULL DEFAULT '', discovered_at TEXT NOT NULL DEFAULT '', updated_at TEXT NOT NULL DEFAULT '', error TEXT NOT NULL DEFAULT '', subject_ids TEXT NOT NULL DEFAULT '', source_name TEXT NOT NULL DEFAULT '', query TEXT NOT NULL DEFAULT '', resolved_url TEXT NOT NULL DEFAULT '', final_url TEXT NOT NULL DEFAULT '', resolution_state TEXT NOT NULL DEFAULT 'pending', exclusion_reason TEXT NOT NULL DEFAULT '', attempts INTEGER NOT NULL DEFAULT 0, rss_title TEXT NOT NULL DEFAULT '', rss_abstract TEXT NOT NULL DEFAULT '', rss_published_at TEXT NOT NULL DEFAULT '', rss_source TEXT NOT NULL DEFAULT '', research_lane TEXT NOT NULL DEFAULT 'research')")
     db.execute("CREATE TABLE IF NOT EXISTS url_provenance (url TEXT NOT NULL, source_kind TEXT NOT NULL, subject_ids TEXT NOT NULL DEFAULT '', source_name TEXT NOT NULL DEFAULT '', query TEXT NOT NULL DEFAULT '', discovered_at TEXT NOT NULL DEFAULT '', rss_title TEXT NOT NULL DEFAULT '', rss_abstract TEXT NOT NULL DEFAULT '', rss_published_at TEXT NOT NULL DEFAULT '', rss_source TEXT NOT NULL DEFAULT '', UNIQUE(url,source_kind,subject_ids,query))")
     db.execute("CREATE TABLE IF NOT EXISTS discovery_rejections (url TEXT NOT NULL, query TEXT NOT NULL, reason TEXT NOT NULL, discovered_at TEXT NOT NULL, PRIMARY KEY(url,query))")
     db.execute("CREATE TABLE IF NOT EXISTS discovery_events (event_id INTEGER PRIMARY KEY, url TEXT NOT NULL DEFAULT '', source_kind TEXT NOT NULL, query TEXT NOT NULL DEFAULT '', subject_ids TEXT NOT NULL DEFAULT '', published_at TEXT NOT NULL DEFAULT '', period_status TEXT NOT NULL DEFAULT 'unknown', outcome TEXT NOT NULL, discovered_at TEXT NOT NULL)")
@@ -81,7 +81,7 @@ def _db():
         db.execute("ALTER TABLE discovery_events ADD COLUMN period_status TEXT NOT NULL DEFAULT 'unknown'")
     # Existing databases predate the provenance columns.
     columns = {row[1] for row in db.execute("PRAGMA table_info(urls)")}
-    additions = (("subject_ids", "TEXT NOT NULL DEFAULT ''"), ("source_name", "TEXT NOT NULL DEFAULT ''"), ("query", "TEXT NOT NULL DEFAULT ''"), ("source_kind", "TEXT NOT NULL DEFAULT ''"), ("resolved_url", "TEXT NOT NULL DEFAULT ''"), ("final_url", "TEXT NOT NULL DEFAULT ''"), ("resolution_state", "TEXT NOT NULL DEFAULT 'pending'"), ("exclusion_reason", "TEXT NOT NULL DEFAULT ''"), ("attempts", "INTEGER NOT NULL DEFAULT 0"), ("rss_title", "TEXT NOT NULL DEFAULT ''"), ("rss_abstract", "TEXT NOT NULL DEFAULT ''"), ("rss_published_at", "TEXT NOT NULL DEFAULT ''"), ("rss_source", "TEXT NOT NULL DEFAULT ''"))
+    additions = (("subject_ids", "TEXT NOT NULL DEFAULT ''"), ("source_name", "TEXT NOT NULL DEFAULT ''"), ("query", "TEXT NOT NULL DEFAULT ''"), ("source_kind", "TEXT NOT NULL DEFAULT ''"), ("resolved_url", "TEXT NOT NULL DEFAULT ''"), ("final_url", "TEXT NOT NULL DEFAULT ''"), ("resolution_state", "TEXT NOT NULL DEFAULT 'pending'"), ("exclusion_reason", "TEXT NOT NULL DEFAULT ''"), ("attempts", "INTEGER NOT NULL DEFAULT 0"), ("rss_title", "TEXT NOT NULL DEFAULT ''"), ("rss_abstract", "TEXT NOT NULL DEFAULT ''"), ("rss_published_at", "TEXT NOT NULL DEFAULT ''"), ("rss_source", "TEXT NOT NULL DEFAULT ''"), ("research_lane", "TEXT NOT NULL DEFAULT 'research'"))
     missing = [(name, kind) for name, kind in additions if name not in columns]
     if missing:
         # Back up the live SQLite database before changing an existing schema.
@@ -358,7 +358,7 @@ def _save_docs(rows):
         writer.writerows(rows)
 
 
-def _add_url(db, url, source_kind, subject_ids="", source_name="", query="", published_at="", period_status="unknown", rss_title="", rss_abstract="", rss_source="", rss_published_at=""):
+def _add_url(db, url, source_kind, subject_ids="", source_name="", query="", published_at="", period_status="unknown", rss_title="", rss_abstract="", rss_source="", rss_published_at="", research_lane="research"):
     # Preserve the exact URL string supplied by RSS/XML or the user.
     url = "" if url is None else str(url)
     now = now_iso()
@@ -375,7 +375,7 @@ def _add_url(db, url, source_kind, subject_ids="", source_name="", query="", pub
     reason = "out_of_scope_source" if out_of_scope else ("invalid_http_url" if not valid_http else "")
     state = "out_of_scope" if out_of_scope else ("invalid_url" if not valid_http else "discovered")
     rss_published_at = rss_published_at or published_at
-    values = {"url": url, "state": state, "source_kind": source_kind, "source_name": source_name or _source_for_url(url).get("source_name", ""), "discovered_at": now, "updated_at": now, "subject_ids": subject_ids, "query": query, "error": "", "attempts": 0, "entity_ids": subject_ids, "resolution_state": "pending", "exclusion_reason": reason, "rss_title": rss_title, "rss_abstract": rss_abstract, "rss_published_at": rss_published_at, "rss_source": rss_source}
+    values = {"url": url, "state": state, "source_kind": source_kind, "source_name": source_name or _source_for_url(url).get("source_name", ""), "discovered_at": now, "updated_at": now, "subject_ids": subject_ids, "query": query, "error": "", "attempts": 0, "entity_ids": subject_ids, "resolution_state": "pending", "exclusion_reason": reason, "rss_title": rss_title, "rss_abstract": rss_abstract, "rss_published_at": rss_published_at, "rss_source": rss_source, "research_lane": research_lane}
     columns = {row[1] for row in db.execute("PRAGMA table_info(urls)")}
     selected = {key: value for key, value in values.items() if key in columns}
     names = list(selected)
@@ -387,6 +387,11 @@ def _add_url(db, url, source_kind, subject_ids="", source_name="", query="", pub
     db.execute(f"INSERT INTO url_provenance({','.join(pnames)}) VALUES({','.join('?' for _ in pnames)}) ON CONFLICT(url,source_kind,subject_ids,query) DO UPDATE SET rss_title=CASE WHEN excluded.rss_title<>'' THEN excluded.rss_title ELSE url_provenance.rss_title END,rss_abstract=CASE WHEN excluded.rss_abstract<>'' THEN excluded.rss_abstract ELSE url_provenance.rss_abstract END,rss_published_at=CASE WHEN excluded.rss_published_at<>'' THEN excluded.rss_published_at ELSE url_provenance.rss_published_at END,rss_source=CASE WHEN excluded.rss_source<>'' THEN excluded.rss_source ELSE url_provenance.rss_source END", tuple(pselected.values()))
     db.execute("UPDATE urls SET rss_title=CASE WHEN rss_title='' THEN ? ELSE rss_title END,rss_abstract=CASE WHEN rss_abstract='' THEN ? ELSE rss_abstract END,rss_published_at=CASE WHEN rss_published_at='' THEN ? ELSE rss_published_at END,rss_source=CASE WHEN rss_source='' THEN ? ELSE rss_source END WHERE url=?", (rss_title, rss_abstract, rss_published_at, rss_source, url))
     outcome = "inserted" if result.rowcount == 1 else "exact_duplicate"
+    if research_lane == "live":
+        # A URL may first have been seen by the fixed-period crawler with a
+        # misleading RSS date. When the live query later finds it, move it to
+        # the live queue so the publisher page can re-verify the date.
+        db.execute("UPDATE urls SET research_lane='live',state=CASE WHEN state='crawled' OR state='out_of_period' OR state='needs_review' THEN 'discovered' ELSE state END,updated_at=? WHERE url=? AND research_lane<>'live'", (now, url))
     db.execute("INSERT INTO discovery_events(url,source_kind,query,subject_ids,published_at,period_status,outcome,discovered_at) VALUES(?,?,?,?,?,?,?,?)", (url, source_kind, query, subject_ids, published_at, period_status, outcome, now))
     if subject_ids:
         existing = db.execute("SELECT subject_ids FROM urls WHERE url=?", (url,)).fetchone()[0]
@@ -549,10 +554,10 @@ def _query_jobs(entity_ids=None, date_from=None, date_to=None):
     return jobs
 
 
-def discover(entity_ids=None, limit_per_source=1000, search_limit=50, dry_run=False, date_from=None, date_to=None, force=False):
-    start = date.fromisoformat(date_from) if date_from else PERIOD_START
-    end = date.fromisoformat(date_to) if date_to else PERIOD_END
-    if start < PERIOD_START or end > PERIOD_END or start > end:
+def discover(entity_ids=None, limit_per_source=1000, search_limit=50, dry_run=False, date_from=None, date_to=None, force=False, stream=False):
+    start = date.fromisoformat(date_from) if date_from else (PERIOD_END + timedelta(days=1) if stream else PERIOD_START)
+    end = date.fromisoformat(date_to) if date_to else (datetime.now(VN_TZ).date() if stream else PERIOD_END)
+    if (stream and start <= PERIOD_END) or (not stream and (start < PERIOD_START or end > PERIOD_END)) or start > end:
         raise ValueError(f"Khoảng ngày phải nằm trong {PERIOD_START}–{PERIOD_END}")
     jobs = _query_jobs(entity_ids, start.isoformat(), end.isoformat())
     all_jobs = jobs
@@ -594,7 +599,7 @@ def discover(entity_ids=None, limit_per_source=1000, search_limit=50, dry_run=Fa
                         d = _date(published)
                         if d and not start.isoformat() <= d <= end.isoformat():
                             rss_out_of_range += 1
-                        outcome = _add_url(db, url, "RSS", "", source.get("source_name", ""), feed, d, _period_status(d, start, end))
+                        outcome = _add_url(db, url, "RSS", "", source.get("source_name", ""), feed, d, _period_status(d, start, end), research_lane="live" if stream else "research")
                         rss_added += outcome == "inserted"
                         rss_duplicates += outcome == "exact_duplicate"
                         rss_missing += outcome == "missing_url"
@@ -604,7 +609,7 @@ def discover(entity_ids=None, limit_per_source=1000, search_limit=50, dry_run=Fa
                     rss_errors += 1
                     print(f"RSS lỗi {source.get('source_name')}: {exc}")
             # Sitemap lastmod is only a discovery hint; publication date is verified from article HTML.
-            if not date_from and not date_to:
+            if not stream and not date_from and not date_to:
                 try:
                     for url, _modified in _sitemap_urls(source, limit_per_source, sitemap_error_log):
                         sitemap_results += 1
@@ -626,7 +631,7 @@ def discover(entity_ids=None, limit_per_source=1000, search_limit=50, dry_run=Fa
                     d = _date(published)
                     if d and not start.isoformat() <= d <= end.isoformat():
                         out_of_range += 1
-                    outcome = _add_url(db, article_url, "Google News RSS", eid, "Google News", query, d, _period_status(d, start, end), rss_title, rss_abstract, rss_source, published)
+                    outcome = _add_url(db, article_url, "Google News RSS", eid, "Google News", query, d, _period_status(d, start, end), rss_title, rss_abstract, rss_source, published, "live" if stream else "research")
                     query_new += outcome == "inserted"
                     query_duplicates += outcome == "exact_duplicate"
                     query_missing += outcome == "missing_url"
@@ -653,7 +658,8 @@ def discover(entity_ids=None, limit_per_source=1000, search_limit=50, dry_run=Fa
         db.commit()
         report = {"planned": len(jobs), "rss_results": rss_results, "rss_new_urls": rss_added, "rss_duplicates": rss_duplicates, "rss_missing_urls": rss_missing, "rss_out_of_period": rss_out_of_range, "rss_errors": rss_errors, "sitemap_results": sitemap_results, "sitemap_new_urls": sitemap_added, "sitemap_duplicates": sitemap_duplicates, "sitemap_missing_urls": sitemap_missing, "sitemap_errors": len(sitemap_error_log), "google_news_results": query_results, "google_news_new_urls": google_added, "google_news_duplicates": duplicate_results, "google_news_missing_urls": invalid_results, "google_news_out_of_period": out_of_range, "google_news_errors": google_errors, "errors": errors + len(sitemap_error_log), "period": [start.isoformat(), end.isoformat()], "checked_at": now_iso()}
         INTERIM_DIR.mkdir(parents=True, exist_ok=True)
-        (INTERIM_DIR / "web_search_report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+        report_path = INTERIM_DIR / ("web_live_search_report.json" if stream else "web_search_report.json")
+        report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
         rejects = db.execute("SELECT url,query,reason,discovered_at FROM discovery_rejections ORDER BY discovered_at").fetchall()
         with DISCOVERY_REJECTS_PATH.open("w", encoding="utf-8-sig", newline="") as f:
             writer = csv.writer(f)
@@ -1076,19 +1082,21 @@ def _filter_queue_rows(rows, entity_ids=None, limit=None):
     return selected, eligible, eligible - len(selected)
 
 
-def crawl(limit=None, entity_ids=None, resolve_limit=50, workers=8, browser_fallback=False):
+def crawl(limit=None, entity_ids=None, resolve_limit=50, workers=8, browser_fallback=False, stream=False):
     db = _db()
     accepted = review = out_period = errors = downloaded = resolved = complete_fields = 0
     error_counts, error_samples = {}, []
     error_steps, missing_field_counts = {}, {}
     browser = None
     try:
-        rows = db.execute("SELECT url,resolved_url,subject_ids,source_name,source_kind,attempts,rss_abstract FROM urls WHERE state IN ('discovered','error') ORDER BY CASE WHEN attempts=0 THEN 0 ELSE 1 END,discovered_at").fetchall()
+        lane = "live" if stream else "research"
+        rows = db.execute("SELECT url,resolved_url,subject_ids,source_name,source_kind,attempts,rss_abstract,research_lane FROM urls WHERE state IN ('discovered','error') AND research_lane=? ORDER BY CASE WHEN attempts=0 THEN 0 ELSE 1 END,discovered_at", (lane,)).fetchall()
+        live_urls = {row[0] for row in rows if row[7] == "live"}
         selected_entities = set(entity_ids or [])
         rows, eligible_count, deferred_limit = _filter_queue_rows(rows, entity_ids, limit)
         tasks, deferred = [], 0
         resolve_budget = max(0, resolve_limit)
-        for original, previously_resolved, subjects, source_name, source_kind, attempts, rss_abstract in rows:
+        for original, previously_resolved, subjects, source_name, source_kind, attempts, rss_abstract, _research_lane in rows:
             tasks.append((original, previously_resolved, subjects, source_name, source_kind, rss_abstract))
         selected = tasks
         # Apply resolve budget after limit so a small crawl does not reserve resolution slots for deferred URLs.
@@ -1136,7 +1144,14 @@ def crawl(limit=None, entity_ids=None, resolve_limit=50, workers=8, browser_fall
                     for field in missing: missing_field_counts[field] = missing_field_counts.get(field, 0) + 1
                     published = result["published"]
                     d = date.fromisoformat(published) if published else None
-                    if d and not (PERIOD_START <= d <= PERIOD_END): state, status = "out_of_period", "loại bỏ"; out_period += 1
+                    if original in live_urls:
+                        if not d or d <= PERIOD_END or d > datetime.now(VN_TZ).date() or result["conflict"]:
+                            state, status = "needs_review", "cần kiểm tra"; review += 1
+                        elif missing or result["relevance"] != "liên quan":
+                            state, status = "needs_review", "cần kiểm tra"; review += 1
+                        else:
+                            state, status = "crawled", "hợp lệ"; accepted += 1
+                    elif d and not (PERIOD_START <= d <= PERIOD_END): state, status = "out_of_period", "loại bỏ"; out_period += 1
                     elif missing or result["conflict"] or result["relevance"] != "liên quan": state, status = "needs_review", "cần kiểm tra"; review += 1
                     else: state, status = "crawled", "hợp lệ"; accepted += 1
                     html = result.get("html", "")
@@ -1152,7 +1167,7 @@ def crawl(limit=None, entity_ids=None, resolve_limit=50, workers=8, browser_fall
                     if content_hash: content_owner.setdefault(content_hash, docid)
                     reason = "; ".join([*(f"thiếu {x}" for x in missing), result["conflict"], *( ["ngoài kỳ"] if state == "out_of_period" else [] )]).strip("; ")
                     if result["relevance"] != "liên quan": reason = "; ".join(filter(None, (reason, "chưa khớp tên thực thể trong tiêu đề/nội dung")))
-                    records.append({"document_id": docid, "url": original, "resolved_url": result["resolved_url"], "final_url": result["final"], "source_name": result["source"].get("source_name") or result["source_name"], "source_type": result["source"].get("source_type", "website chưa xác minh"), "title": result["title"], "title_source": result["title_source"], "abstract": result["abstract"], "abstract_source": result["abstract_source"], "rss_abstract": result["rss_abstract"], "article_lead": result["article_lead"], "lead_source": result["lead_source"], "published_at": published, "published_at_iso": result["published_iso"], "published_at_raw": result["raw"], "published_at_source": result["date_source"], "published_at_conflict": result["conflict"], "collected_at": now_iso(), "content": content, "raw_html_path": raw_path, "collection_method": result["source_kind"] or "web", "document_status": status, "author": result["author"], "content_hash": content_hash, "duplicate_content_of": duplicate_of, "crawl_relevance_status": result["relevance"], "review_reason": reason, "query_entity_ids": ",".join(result["ids"]), "seed_ids": ",".join(sorted(set(result["matched"])))})
+                    records.append({"document_id": docid, "url": original, "resolved_url": result["resolved_url"], "final_url": result["final"], "source_name": result["source"].get("source_name") or result["source_name"], "source_type": result["source"].get("source_type", "website chưa xác minh"), "title": result["title"], "title_source": result["title_source"], "abstract": result["abstract"], "abstract_source": result["abstract_source"], "rss_abstract": result["rss_abstract"], "article_lead": result["article_lead"], "lead_source": result["lead_source"], "published_at": published, "published_at_iso": result["published_iso"], "published_at_raw": result["raw"], "published_at_source": result["date_source"], "published_at_conflict": result["conflict"], "collected_at": now_iso(), "content": content, "raw_html_path": raw_path, "collection_method": result["source_kind"] or "web", "document_status": status, "author": result["author"], "content_hash": content_hash, "duplicate_content_of": duplicate_of, "crawl_relevance_status": result["relevance"], "review_reason": reason, "query_entity_ids": ",".join(result["ids"]), "seed_ids": ",".join(sorted(set(result["matched"]))), "research_lane": "live" if original in live_urls else "research"})
                     db.execute("UPDATE urls SET state=?,resolved_url=?,final_url=?,updated_at=?,error='',resolution_state='resolved',exclusion_reason=? WHERE url=?", (state, result["resolved_url"], result["final"], now_iso(), reason, original))
                 if processed % 10 == 0 or processed == len(selected_tasks):
                     print(f"Tiến độ crawl: {processed}/{len(selected_tasks)}; trang bài báo {downloaded}, đủ trường {accepted}, thiếu trường/chờ duyệt {review}, giải được URL {resolved}, lỗi {errors}.", flush=True)
@@ -1161,7 +1176,8 @@ def crawl(limit=None, entity_ids=None, resolve_limit=50, workers=8, browser_fall
                     db.commit()
         report = {"selected": len(selected_tasks), "eligible_before_limit": eligible_count, "deferred_by_limit": deferred_limit, "deferred_by_resolve_limit": deferred, "processed_this_run": processed, "publisher_pages_fetched": downloaded, "complete_fields": complete_fields, "accepted_for_analysis": accepted, "missing_fields_or_review": review, "missing_field_counts": missing_field_counts, "out_of_period": out_period, "resolved_links": resolved, "errors": errors, "error_steps": error_steps, "error_counts": error_counts, "error_samples": error_samples[:100], "workers": max(1, workers), "browser_fallback": browser_fallback}
         INTERIM_DIR.mkdir(parents=True, exist_ok=True)
-        (INTERIM_DIR / "web_crawl_report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+        report_path = INTERIM_DIR / ("web_live_crawl_report.json" if stream else "web_crawl_report.json")
+        report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
         print(f"Tải xong: {downloaded} trang bài báo; đủ trường {accepted}, thiếu trường/chờ duyệt {review}, ngoài kỳ {out_period}, lỗi {errors}.")
     finally:
         if browser: browser.close()

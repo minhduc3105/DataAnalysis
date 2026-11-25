@@ -208,7 +208,7 @@ def crawl_ytdlp(seed: dict, max_videos: int, scope: Scope, stop_after_old: int =
     print(f"  {seed['name']}: +{new} video, lọc {filtered}, bỏ qua {skipped}, lỗi {errors}")
 
 
-def crawl_api(seed: dict, api_key: str, max_videos: int, session: requests.Session, scope: Scope) -> None:
+def crawl_api(seed: dict, api_key: str, max_videos: int, session: requests.Session, scope: Scope, after_only: bool = False) -> None:
     cid = seed["youtube_channel_id"]
     store = JsonlStore(RAW_YT / f"{cid}.jsonl", "video_id")
     pending: list[str] = []
@@ -227,7 +227,7 @@ def crawl_api(seed: dict, api_key: str, max_videos: int, session: requests.Sessi
             if d and d < PERIOD_START:
                 reached_old = True
                 break
-            if vid not in store and (d is None or in_period(d)):
+            if vid not in store and (d is None or d >= PERIOD_START) and (not after_only or _period_status(d) == "after"):
                 pending.append(vid)
         page_token = data.get("nextPageToken")
         if not page_token:
@@ -240,6 +240,8 @@ def crawl_api(seed: dict, api_key: str, max_videos: int, session: requests.Sessi
         for v in data.get("items", []):
             sn = v["snippet"]
             d = parse_date(sn.get("publishedAt"))
+            if after_only and _period_status(d) != "after":
+                continue
             reason = scope.crawl_skip_reason(seed["seed_id"], sn.get("title"), v.get("contentDetails", {}).get("duration"), sn.get("categoryId"))
             if reason:
                 store.append(_skip_record(seed["seed_id"], v["id"], sn.get("title"), d, reason))
@@ -270,7 +272,7 @@ def crawl_api(seed: dict, api_key: str, max_videos: int, session: requests.Sessi
                 }
             )
             new += 1
-    log_run("youtube", seed["seed_id"], cid, "ok", new, seen - len(pending), f"backend=api; filtered={filtered}")
+    log_run("youtube", seed["seed_id"], cid, "ok", new, seen - len(pending), f"backend=api; filtered={filtered}; after_only={after_only}")
     print(f"  {seed['name']}: +{new} video, lọc {filtered} (quét {seen})")
 
 
