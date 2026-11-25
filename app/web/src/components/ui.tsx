@@ -43,7 +43,7 @@ export function Stat({ label, value, hint, accent = false }: { label: string; va
 export function TypeBadge({ type }: { type: string }) {
   const color = TYPE_COLOR[type] ?? '#64748b'
   return (
-    <span className="inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs font-medium" style={{ backgroundColor: `${color}1a`, color }}>
+    <span className="inline-flex items-center gap-1 rounded-full border border-slate-200 px-2 py-0.5 text-xs font-medium text-slate-800" style={{ backgroundColor: `color-mix(in srgb, ${color} 13%, var(--surface))` }}>
       <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: color }} />
       {TYPE_LABEL[type] ?? type}
     </span>
@@ -65,9 +65,9 @@ export function Chip({ children, onClick, active = false }: { children: ReactNod
 }
 
 export function Loading({ label = 'Đang tải…' }: { label?: string }) {
-  return <div className="flex h-40 items-center justify-center text-sm text-slate-400">{label}</div>
+  return <div role="status" className="flex h-40 items-center justify-center text-sm text-slate-600">{label}</div>
 }
 
-export function ErrorBox({ error }: { error: unknown }) {
-  return <div className="rounded-xl border border-rose-200 bg-rose-50 p-4 text-sm text-rose-700">{error instanceof Error ? error.message : String(error)}</div>
+export function ErrorBox({ error, onRetry }: { error: unknown; onRetry?: () => void }) {
+  return <div role="alert" className="rounded-xl border border-rose-200 bg-rose-50 p-4 text-sm text-rose-700"><span>{error instanceof Error ? error.message : String(error)}</span>{onRetry && <button type="button" className="ml-3 underline underline-offset-2" onClick={onRetry}>Thử lại</button>}</div>
 }

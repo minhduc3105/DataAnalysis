@@ -1,20 +1,25 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export function useAsync<T>(fn: () => Promise<T>, deps: unknown[]) {
-  const [state, setState] = useState<{ data?: T; error?: unknown; loading: boolean }>({ loading: true })
+  const depsKey = JSON.stringify(deps)
+  const fnRef = useRef(fn)
+  const [state, setState] = useState<{ key: string; data?: T; error?: unknown; loading: boolean }>({ key: depsKey, loading: true })
+
+  useEffect(() => {
+    fnRef.current = fn
+  }, [fn])
+
   useEffect(() => {
     let alive = true
-    setState((s) => ({ ...s, loading: true, error: undefined }))
-    fn().then(
-      (data) => alive && setState({ data, loading: false }),
-      (error) => alive && setState({ error, loading: false }),
+    fnRef.current().then(
+      (data) => alive && setState({ key: depsKey, data, loading: false }),
+      (error) => alive && setState({ key: depsKey, error, loading: false }),
     )
     return () => {
       alive = false
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, deps)
-  return state
+  }, [depsKey])
+  return state.key === depsKey ? state : { ...state, key: depsKey, loading: true, error: undefined }
 }
 
 export function useDebounced<T>(value: T, ms = 250) {

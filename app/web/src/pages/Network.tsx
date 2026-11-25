@@ -33,8 +33,10 @@ export function NetworkPage() {
 
   const distOption = useMemo(() => {
     const rows = net.data?.distance_distribution ?? []
-    let acc = 0
-    const cum = rows.map((r) => (acc += Number(r.share)) * 100)
+    const cum = rows.reduce<[number, number[]]>(([total, values], row) => {
+      const next = total + Number(row.share)
+      return [next, [...values, next * 100]]
+    }, [0, []])[1]
     return {
       tooltip: { trigger: 'axis', valueFormatter: (v: number) => `${v.toFixed(1)}%` },
       legend: { bottom: 0, itemWidth: 12, textStyle: { fontSize: 11 } },

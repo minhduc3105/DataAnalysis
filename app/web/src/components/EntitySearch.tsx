@@ -4,23 +4,22 @@ import { api, type SearchHit } from '../api'
 import { useDebounced } from '../hooks'
 import { TypeBadge } from './ui'
 
-export function EntitySearch({ onSelect, placeholder = 'Tìm nghệ sĩ, bài hát, công ty…', value }: { onSelect: (hit: SearchHit) => void; placeholder?: string; value?: string }) {
-  const [q, setQ] = useState(value ?? '')
+export function EntitySearch({ onSelect, placeholder = 'Tìm nghệ sĩ, bài hát, công ty…', initialValue = '' }: { onSelect: (hit: SearchHit) => void; placeholder?: string; initialValue?: string }) {
+  const [q, setQ] = useState(initialValue)
   const [hits, setHits] = useState<SearchHit[]>([])
   const [open, setOpen] = useState(false)
   const debounced = useDebounced(q)
+  const visibleHits = debounced.trim() && debounced !== initialValue ? hits : []
   const box = useRef<HTMLDivElement>(null)
 
-  useEffect(() => setQ(value ?? ''), [value])
-
   useEffect(() => {
-    if (!debounced.trim() || debounced === value) return setHits([])
+    if (!debounced.trim() || debounced === initialValue) return
     let alive = true
     api.search(debounced).then((h) => alive && setHits(h), () => alive && setHits([]))
     return () => {
       alive = false
     }
-  }, [debounced, value])
+  }, [debounced, initialValue])
 
   useEffect(() => {
     const close = (e: MouseEvent) => box.current && !box.current.contains(e.target as Node) && setOpen(false)
@@ -41,9 +40,9 @@ export function EntitySearch({ onSelect, placeholder = 'Tìm nghệ sĩ, bài h�
         placeholder={placeholder}
         className="w-full rounded-xl border border-slate-200 bg-white py-2 pl-9 pr-3 text-sm outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-100"
       />
-      {open && hits.length > 0 && (
+      {open && visibleHits.length > 0 && (
         <ul className="absolute z-30 mt-1 max-h-80 w-full overflow-auto rounded-xl border border-slate-200 bg-white py-1 shadow-lg">
-          {hits.map((h) => (
+          {visibleHits.map((h) => (
             <li key={h.id}>
               <button
                 type="button"

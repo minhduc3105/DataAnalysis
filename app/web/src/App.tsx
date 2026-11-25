@@ -5,6 +5,7 @@ import { Layout } from './components/Layout'
 const EntityPage = lazy(() => import('./pages/Entity').then((module) => ({ default: module.EntityPage })))
 const ExplainPage = lazy(() => import('./pages/Explain').then((module) => ({ default: module.ExplainPage })))
 const NetworkPage = lazy(() => import('./pages/Network').then((module) => ({ default: module.NetworkPage })))
+const DashboardPage = lazy(() => import('./pages/Dashboard').then((module) => ({ default: module.DashboardPage })))
 const FeedPage = lazy(() => import('./pages/Feed').then((module) => ({ default: module.FeedPage })))
 const WatchPage = lazy(() => import('./pages/Watch').then((module) => ({ default: module.WatchPage })))
 const TrendsPage = lazy(() => import('./pages/Trends').then((module) => ({ default: module.TrendsPage })))
@@ -15,7 +16,8 @@ export default function App() {
     <Suspense fallback={<div className="p-8 text-sm text-slate-500">Đang tải màn hình…</div>}>
       <Routes>
         <Route element={<Layout />}>
-          <Route index element={<FeedPage />} />
+          <Route index element={<DashboardPage />} />
+          <Route path="feed" element={<FeedPage />} />
           <Route path="watch" element={<WatchPage />} />
           <Route path="trends" element={<TrendsPage />} />
           <Route path="ask" element={<AskPage />} />

@@ -1,59 +1,58 @@
-import { Bell, Bot, Newspaper, Route, Share2, TrendingUp, Waves } from 'lucide-react'
-import { NavLink, Outlet, useNavigate } from 'react-router-dom'
+import { Bell, Bot, Menu, Moon, Newspaper, Route, Share2, Sun, TrendingUp, X, Monitor } from 'lucide-react'
+import { useEffect, useState } from 'react'
+import { Link, NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom'
 import { EntitySearch } from './EntitySearch'
 
 const NAV = [
-  { to: '/', label: 'Bảng tin', icon: Newspaper },
+  { to: '/', label: 'Tổng quan hôm nay', icon: Newspaper, group: 'Khám phá' },
   { to: '/watch', label: 'Theo dõi & cảnh báo', icon: Bell },
   { to: '/trends', label: 'Xu hướng', icon: TrendingUp },
-  { to: '/explain', label: 'Vì sao liên quan?', icon: Route },
-  { to: '/ask', label: 'Hỏi đáp', icon: Bot },
+  { to: '/explain', label: 'Vì sao liên quan?', icon: Route, group: 'Đi sâu vào dữ liệu' },
+  { to: '/ask', label: 'Hỏi đáp có nguồn', icon: Bot },
   { to: '/network', label: 'Chân dung mạng', icon: Share2 },
 ]
 
+function RadarMark() {
+  return <svg viewBox="0 0 40 40" fill="none" aria-hidden="true" className="radar-mark"><circle cx="20" cy="20" r="16" stroke="currentColor" strokeWidth="1.5" /><circle cx="20" cy="20" r="9" stroke="currentColor" strokeWidth="1.5" /><path d="M20 4v16l11 11" stroke="currentColor" strokeWidth="1.5" /><circle cx="20" cy="20" r="3" fill="currentColor" /><circle cx="9" cy="10" r="3" fill="currentColor" /></svg>
+}
+
 export function Layout() {
   const navigate = useNavigate()
+  const location = useLocation()
+  const [menuOpen, setMenuOpen] = useState(false)
+  const [theme, setTheme] = useState<'system' | 'light' | 'dark'>(() => (localStorage.getItem('vnmr-theme') as 'system' | 'light' | 'dark') || 'system')
+  useEffect(() => {
+    const media = window.matchMedia('(prefers-color-scheme: dark)')
+    const apply = () => { document.documentElement.dataset.theme = theme === 'system' ? (media.matches ? 'dark' : 'light') : theme }
+    apply()
+    media.addEventListener('change', apply)
+    return () => media.removeEventListener('change', apply)
+  }, [theme])
+  const setPreference = (value: 'system' | 'light' | 'dark') => { setTheme(value); localStorage.setItem('vnmr-theme', value) }
+  const current = NAV.find((item) => item.to === location.pathname)?.label ?? (location.pathname === '/feed' ? 'Bảng tin âm nhạc' : location.pathname.startsWith('/entity/') ? 'Hồ sơ thực thể' : 'VN Music Radar')
   return (
-    <div className="flex h-full bg-[#f2f4f7]">
-      <aside className="hidden w-60 shrink-0 flex-col bg-[#f2f4f7] md:flex">
-        <div className="flex items-center gap-2 px-5 py-6">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-slate-900 text-white">
-            <Waves className="h-5 w-5" strokeWidth={1.6} />
-          </div>
-          <div>
-            <div className="text-sm font-semibold text-slate-900">VN Music Radar</div>
-            <div className="text-xs text-slate-500">Lắng nghe mạng âm nhạc Việt</div>
-          </div>
-        </div>
-        <nav className="flex flex-col gap-1 px-3">
-          {NAV.map(({ to, label, icon: Icon }) => (
-            <NavLink
-              key={to}
-              to={to}
-              end={to === '/'}
-              className={({ isActive }) =>
-                `flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition ${isActive ? 'bg-[#e6e8eb] text-slate-900' : 'text-slate-600 hover:bg-white/70 hover:text-slate-900'}`
-              }
-            >
-              <Icon className="h-4 w-4" />
-              {label}
-            </NavLink>
-          ))}
+    <div className="app-shell">
+      <a href="#main-content" className="skip-link">Đến nội dung chính</a>
+      <aside className="app-sidebar">
+        <Link to="/" className="brand"><RadarMark /><span><strong>VN Music Radar</strong><small>Lắng nghe qua bằng chứng</small></span></Link>
+        <nav aria-label="Điều hướng chính" className="side-nav">
+          {NAV.map(({ to, label, icon: Icon, group }) => <div key={to}>{group && <p className="nav-group">{group}</p>}<NavLink to={to} end={to === '/'} className={({ isActive }) => `nav-item ${isActive ? 'is-active' : ''}`}><Icon size={17} strokeWidth={1.7} />{label}</NavLink></div>)}
         </nav>
-        <div className="mt-auto px-5 py-4 text-xs text-slate-400">Đề tài 23 · Phân tích mạng xã hội</div>
+        <div className="sidebar-note"><span className="scope-symbol" aria-hidden="true">VN</span><div><strong>Mạng âm nhạc Việt</strong><p>Đề tài 23 · Phân tích mạng xã hội</p></div></div>
       </aside>
-      <div className="flex min-w-0 flex-1 flex-col">
-        <header className="flex items-center gap-4 border-b border-slate-200 bg-[#f2f4f7] px-4 py-3 md:px-6">
-          <div className="w-full max-w-xl">
-            <EntitySearch onSelect={(h) => navigate(`/entity/${h.id}`)} />
+      <div className="app-workspace">
+        <header className="app-topbar">
+          <button className="mobile-menu" aria-label={menuOpen ? 'Đóng điều hướng' : 'Mở điều hướng'} aria-expanded={menuOpen} aria-controls="mobile-navigation" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X size={20} /> : <Menu size={20} />}</button>
+          <span className="workspace-location">Không gian nghiên cứu <span>/</span> <strong>{current}</strong></span>
+          <div className="global-search"><EntitySearch onSelect={(h) => { navigate(`/entity/${h.id}`); setMenuOpen(false) }} /></div>
+          <div className="theme-control" role="group" aria-label="Giao diện">
+            <button aria-label="Theo giao diện hệ thống" title="Theo giao diện hệ thống" aria-pressed={theme === 'system'} onClick={() => setPreference('system')}><Monitor size={15} /></button>
+            <button aria-label="Giao diện sáng" title="Giao diện sáng" aria-pressed={theme === 'light'} onClick={() => setPreference('light')}><Sun size={15} /></button>
+            <button aria-label="Giao diện tối" title="Giao diện tối" aria-pressed={theme === 'dark'} onClick={() => setPreference('dark')}><Moon size={15} /></button>
           </div>
         </header>
-        <nav aria-label="Điều hướng" className="flex gap-1 overflow-x-auto border-b border-slate-200 bg-[#f2f4f7] px-3 py-2 md:hidden">
-          {NAV.map(({ to, label }) => <NavLink key={to} to={to} end={to === '/'} className={({ isActive }) => `shrink-0 rounded-md px-3 py-2 text-xs ${isActive ? 'bg-[#e6e8eb] font-medium text-slate-900' : 'text-slate-600'}`}>{label}</NavLink>)}
-        </nav>
-        <main className="min-w-0 flex-1 overflow-auto px-4 py-6 md:px-7">
-          <Outlet />
-        </main>
+        {menuOpen && <nav id="mobile-navigation" aria-label="Điều hướng trên điện thoại" className="mobile-nav"><Link to="/" onClick={() => setMenuOpen(false)} className="mobile-brand">VN Music Radar</Link>{NAV.map(({ to, label, icon: Icon }) => <NavLink key={to} to={to} end={to === '/'} onClick={() => setMenuOpen(false)} className={({ isActive }) => `nav-item ${isActive ? 'is-active' : ''}`}><Icon size={17} />{label}</NavLink>)}</nav>}
+        <main id="main-content" tabIndex={-1} className="app-main"><div className="page-content"><Outlet /></div></main>
       </div>
     </div>
   )

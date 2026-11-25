@@ -56,6 +56,7 @@ export interface FeedItem {
   url: string
   source: string
   published_at: string
+  collected_at?: string | null
   platform: string
   relations: { relation: string; relation_id: string; source: string; target: string; evidence: string }[]
 }
@@ -71,19 +72,68 @@ export interface AlertItem {
   entity_id: string
   name: string
   kind: string
+  scope_steps?: number
   count_7d: number
   baseline_daily_mean: number
   z_score: number | null
   anomaly: boolean
   requires_more_history: boolean
-  sources?: { evidence_id: string; title: string; url: string; source: string; relation: string; related_name: string }[]
+  sources?: { evidence_id: string; title: string; url: string; source: string; published_at?: string; relation: string; related_name: string; distance?: number; path?: string[]; quote?: string }[]
 }
 
 export interface TrendBundle {
   days: number
   daily: { date: string; documents: number }[]
-  top_entities: { name: string; documents: number }[]
+  top_entities: { id: string; name: string; documents: number }[]
   total_documents: number
+  comparison?: { current: number; previous: number; delta: number; change_percent: number | null; comparison: string }
+  previous_daily?: { date: string; documents: number }[]
+  coverage?: { status: string; current_days: number; previous_days: number }
+  period?: { from: string; previous_from: string; to: string }
+  top_communities?: { id: string; name: string; size: number; documents: number }[]
+  topics?: { topic: string; documents: number }[]
+  sentiment?: { sentiment: string; documents: number }[]
+  classification_status?: { status?: string; model_version?: string | null }
+}
+
+export interface OverviewBundle {
+  period: { days: number; from: string; to: string; previous_from: string; previous_to: string }
+  generated_at: string
+  latest_collected_at: string | null
+  latest_published_at: string | null
+  coverage: { status: string; note: string }
+  metrics: Record<string, { current: number; previous: number; delta: number; change_percent: number | null; comparison: string }>
+  daily: { date: string; documents: number }[]
+  top_entities: { id: string; name: string; documents: number; previous_documents: number; delta: number }[]
+  top_communities: { id: string; name: string; size: number; documents: number }[]
+  analysis_snapshot: { graph_version: string | null; generated_at: string | null } | null
+  recent_documents: FeedItem[]
+  platforms: { platform: string; documents: number }[]
+  topics: { status: string; items: { topic: string; documents: number }[] }
+  sentiment: { status: string; interpretation: string; items: { sentiment: string; documents: number }[] }
+  new_relations: { event_id: string; reviewed_at: string; relation: string; source: string; target: string; published_at: string; quote: string; url: string; title: string; source_name: string }[]
+  source_document_limit: number | null
+}
+
+export interface ClassificationBundle {
+  status: { status?: string; model_version?: string | null; classified?: number; failed?: number; remaining?: number }
+  items: { document_id: string; title?: string; url?: string; source?: string; published_at?: string; classified_at?: string; model_version: string; status: string; topics: string[]; sentiment?: string; quote?: string; error?: string }[]
+  offset: number
+  limit: number
+}
+
+export interface UpdateStatus {
+  timezone: string
+  schedule: Record<string, string>
+  checkpoints: Record<string, Record<string, unknown> | null>
+  sources?: Record<string, { status: string; updated_at?: string; detail?: string }>
+  reports: Record<string, Record<string, unknown> | null>
+  pipeline?: { status?: string; updated_at?: string; steps?: Record<string, { status?: string; ready?: number; pending_review?: number; rejected?: number; error?: string }> } | null
+  scheduler: { status: string; heartbeat_at?: string; next_runs?: Record<string, string | null>; age_seconds?: number }
+  sentiment: string
+  topics: string
+  content_classification?: { status?: string; model_version?: string | null; classified?: number; failed?: number; remaining?: number; pending?: number }
+  checked_at: string
 }
 
 export interface AnalysisSnapshot {
@@ -105,8 +155,13 @@ export interface AnswerResult {
 
 export type NetworkBundle = Record<string, Row[]>
 
-async function get<T>(path: string, params: Record<string, string | number | undefined> = {}): Promise<T> {
-  const qs = new URLSearchParams(Object.entries(params).filter(([, v]) => v !== undefined && v !== '').map(([k, v]) => [k, String(v)]))
+async function get<T>(path: string, params: Record<string, string | number | string[] | undefined> = {}): Promise<T> {
+  const qs = new URLSearchParams()
+  Object.entries(params).forEach(([key, value]) => {
+    if (value === undefined || value === '') return
+    if (Array.isArray(value)) value.forEach((item) => qs.append(key, item))
+    else qs.set(key, String(value))
+  })
   const res = await fetch(`/api${path}${qs.size ? `?${qs}` : ''}`)
   if (!res.ok) throw new Error((await res.json().catch(() => null))?.detail ?? res.statusText)
   return res.json()
@@ -121,9 +176,9 @@ export const api = {
   entity: (id: string, limit = 60) => get<EntityDetail>(`/entity/${encodeURIComponent(id)}`, { limit }),
   evidence: (relationId: string) => get<Evidence[]>(`/evidence/${encodeURIComponent(relationId)}`),
   path: (source: string, target: string, maxHops = 3) => get<PathResult>('/path', { source, target, max_hops: maxHops }),
-  feed: (params: { entity_id?: string; source?: string; date_from?: string; date_to?: string; limit?: number }) => get<FeedItem[]>('/feed', params),
+  feed: (params: { entity_id?: string; source?: string; date_from?: string; date_to?: string; limit?: number; offset?: number }) => get<FeedItem[]>('/feed', params),
   watchlists: () => get<WatchedEntity[]>('/watchlists'),
-  alerts: () => get<AlertItem[]>('/alerts'),
+  alerts: (scopeSteps = 1, eventTypes?: string[]) => get<AlertItem[]>('/alerts', { scope_steps: scopeSteps, event_types: eventTypes }),
   addWatch: async (entity_id: string) => {
     const res = await fetch('/api/watchlists', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ entity_id }) })
     if (!res.ok) throw new Error((await res.json().catch(() => null))?.detail ?? res.statusText)
@@ -133,7 +188,10 @@ export const api = {
     const res = await fetch(`/api/watchlists/${encodeURIComponent(entity_id)}`, { method: 'DELETE' })
     if (!res.ok) throw new Error((await res.json().catch(() => null))?.detail ?? res.statusText)
   },
-  trends: (days = 30, entity_id?: string, source?: string) => get<TrendBundle>('/trends', { days, entity_id, source }),
+  trends: (days = 30, entity_id?: string, source?: string, community_id?: string, topic?: string, sentiment?: string) => get<TrendBundle>('/trends', { days, entity_id, source, community_id, topic, sentiment }),
+  overview: (days = 7, source?: string) => get<OverviewBundle>('/overview', { days, source }),
+  classifications: (limit = 10, offset = 0) => get<ClassificationBundle>('/classifications', { limit, offset }),
+  updateStatus: () => get<UpdateStatus>('/update-status'),
   explain: (body: { source: string; target: string; max_hops: number; relation_types?: string[]; date_from?: string; date_to?: string }) =>
     fetch('/api/explain', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }).then(async (res) => {
       if (!res.ok) throw new Error((await res.json().catch(() => null))?.detail ?? res.statusText)
