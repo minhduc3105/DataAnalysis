@@ -1,0 +1,4 @@
+﻿split,method,sentences,entity_p,entity_r,entity_f1,entity_f1_ignore_type,relation_p,relation_r,relation_f1,json_valid,seconds_per_sentence,tokens_per_second,max_ctx_used,ctx_overflow,prompt_version,num_ctx
+dev,qwen3:4b,30,0.804,0.876,0.839,0.882,0.306,0.396,0.345,1.0,2.92,53.9,2773.0,0.0,v2,4096.0
+dev,qwen3:4b + hậu kiểm,30,0.804,0.876,0.839,0.882,0.45,0.375,0.409,1.0,2.92,53.9,2773.0,0.0,v2,4096.0
+dev,baseline từ điển (GĐ1),30,0.707,0.652,0.678,0.713,0.0,0.0,0.0,,,,,,,

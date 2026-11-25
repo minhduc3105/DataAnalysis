@@ -179,7 +179,7 @@ def cmd_gold(args) -> None:
 def cmd_slm(args) -> None:
     from crawler import slm
 
-    slm.bench(args.models)
+    slm.bench(args.models, args.split, args.num_ctx)
 
 
 def cmd_stage2(args) -> None:
@@ -322,6 +322,8 @@ def main() -> None:
     sl = sub.add_parser("slm", help="Benchmark SLM (Ollama) trích thực thể/quan hệ trên data/gold/gold_sentences.csv")
     sl.add_argument("action", choices=["bench"])
     sl.add_argument("--models", nargs="+", default=["qwen3:4b", "qwen3:8b"])
+    sl.add_argument("--split", choices=["dev", "test"], help="Chỉ chạy và chấm một tập; chỉnh prompt thì chỉ dùng dev")
+    sl.add_argument("--num-ctx", type=int, default=4096)
     sl.set_defaults(func=cmd_slm)
 
     st = sub.add_parser("stage2", help="Snapshot dữ liệu, gói bàn giao Huy, kiểm tra và nhập kết quả làm giàu")
