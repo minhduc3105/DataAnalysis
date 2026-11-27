@@ -6,13 +6,14 @@ import { useEffect, useRef } from 'react'
 
 echarts.use([BarChart, LineChart, GridComponent, LegendComponent, TooltipComponent, SVGRenderer])
 
-export function EChart({ option, height = 280 }: { option: echarts.EChartsCoreOption; height?: number }) {
+export function EChart({ option, height = 280, onClick }: { option: echarts.EChartsCoreOption; height?: number; onClick?: (params: { name?: string }) => void }) {
   const el = useRef<HTMLDivElement>(null)
   const chart = useRef<echarts.ECharts | null>(null)
 
   useEffect(() => {
     if (!el.current) return
     chart.current = echarts.init(el.current, undefined, { renderer: 'svg' })
+    if (onClick) chart.current.on('click', onClick)
     const ro = new ResizeObserver(() => chart.current?.resize())
     ro.observe(el.current)
     const mo = new MutationObserver(() => apply())
@@ -42,7 +43,7 @@ export function EChart({ option, height = 280 }: { option: echarts.EChartsCoreOp
       mo.disconnect()
       chart.current?.dispose()
     }
-  }, [option])
+  }, [option, onClick])
 
   return <div ref={el} style={{ height }} className="w-full" />
 }

@@ -1,0 +1,18 @@
+﻿metric,value,note,analysis_run_id,graph_version
+Số nút (thành phần lớn nhất),1674.0,,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+Số cạnh,5530.0,,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+Bậc trung bình k,6.607,,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+Khoảng cách ngắn nhất trung bình L,3.865,tính trên mọi cặp nút,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+Đường kính,8.0,,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+Hệ số gom cụm trung bình C,0.3794,,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+Transitivity,0.1499,,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+L ngẫu nhiên Erdős–Rényi,4.145,"trung bình 20 đồ thị cùng n, m",analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+C ngẫu nhiên Erdős–Rényi,0.0037,,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+L lý thuyết ln n / ln k,3.931,,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+L ngẫu nhiên giữ phân phối bậc,3.65,20 đồ thị hoán đổi cạnh,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+C ngẫu nhiên giữ phân phối bậc,0.0345,,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+σ so với Erdős–Rényi,109.57,> 1 là thế giới nhỏ,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+σ so với đồ thị giữ bậc,10.37,> 1 là thế giới nhỏ,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+Hệ số gom cụm lưới tham chiếu,0.6,"Watts–Strogatz vòng; n=1674, degree=6, m=5022",analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+ω,0.44,Telesford 2011; dùng L trung bình Erdős–Rényi lấy mẫu và C của lưới Watts–Strogatz hữu hạn,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+L đồ thị tri thức đầy đủ,4.284,"11648 nút, ước lượng từ 500 nút nguồn",analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731

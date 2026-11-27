@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vn Music Radar UI"
+  short_description: "Thiết kế giao diện VN Music Radar"
+  default_prompt: "Dùng $vn-music-radar-ui để chỉnh sửa giao diện VN Music Radar theo đúng dữ liệu, bằng chứng và hệ thiết kế của dự án."

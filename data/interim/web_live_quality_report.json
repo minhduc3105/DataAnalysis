@@ -1,0 +1,27 @@
+{
+  "total_raw": 7940,
+  "raw_documents": 186,
+  "clean": 146,
+  "review": 38,
+  "rejected": 2,
+  "clean_by_year": {
+    "2026": 146
+  },
+  "clean_by_source": {
+    "VnExpress": 38,
+    "Tuổi Trẻ Online": 37,
+    "Thanh Niên": 49,
+    "VTV": 22
+  },
+  "rejected_by_reason": {
+    "metadata ngày đăng mâu thuẫn": 1,
+    "ngoài luồng tin mới": 2,
+    "không tìm thấy tên thực thể trong tiêu đề/nội dung; kiểm tra kết quả truy vấn": 22,
+    "chưa đủ nội dung bài viết": 18
+  },
+  "period": [
+    "2026-10-22",
+    "2026-11-27"
+  ],
+  "research_lane": "live"
+}

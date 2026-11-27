@@ -71,21 +71,33 @@ uv run python main.py analyze
 
 ## Task 4 — Crawl tin mới và bật lịch tùy chọn
 
-**`news once` chạy khi cần; `news schedule` là tiến trình định kỳ, chỉ chạy khi Đức để terminal/máy hoạt động.** Lượt đầu đọc từ checkpoint hoặc 22/10/2026.
+**`news once` chạy khi cần; `news schedule` là tiến trình định kỳ riêng với web server.** Lượt đầu đọc từ checkpoint hoặc 22/10/2026. Lịch dùng `Asia/Ho_Chi_Minh`: báo và YouTube lúc 07:00 mỗi ngày, Spotify lúc 07:00 thứ Hai.
 
 ```bash
 uv run python main.py news once
 ```
 
-**Đầu ra:** `data/interim/web_live_search_report.json`, `web_live_crawl_report.json`, `web_live_quality_report.json`, bài hợp lệ/chờ duyệt riêng và checkpoint `data/raw/web/live_checkpoint.json`. Ngày thiếu/mâu thuẫn được giữ ở review; lỗi crawl/search giữ checkpoint để lượt sau thử lại.
+**Đầu ra:** `data/interim/web_live_search_report.json`, `web_live_crawl_report.json`, `web_live_quality_report.json`, tài liệu luồng mới, trạng thái bền vững `data/raw/live_update_status.json`, nhật ký độ phủ `data/raw/collection_coverage.jsonl`, và checkpoint riêng theo nguồn. Ngày thiếu/mâu thuẫn được giữ ở review; lỗi crawl/search giữ checkpoint để lượt sau thử lại. Snapshot nghiên cứu không bị ghi đè.
 
-Để chạy tự động mỗi ngày lúc 07:00 giờ Việt Nam, để lệnh sau chạy trong terminal riêng:
+Để chạy thủ công trong terminal riêng:
 
 ```bash
 uv run python main.py news schedule
 ```
 
-Dừng lịch bằng `Ctrl+C`. Nếu `YOUTUBE_API_KEY` có trong `.env`, lịch quét tối đa 75 kênh YouTube đã xác minh mỗi lượt và luân phiên offset để khống chế quota; nếu khóa vắng, phần YouTube báo `skipped_no_api_key`. Chạy `uv run python main.py news once` khi cần kiểm tra ngay, không cần đợi 07:00.
+Dừng tiến trình thủ công bằng `Ctrl+C`. Để tự khởi động cùng phiên đăng nhập và tự chạy lại khi lỗi trên Linux có systemd user service, cài dependency trước rồi chạy:
+
+```bash
+scripts/install_news_scheduler_service.sh
+systemctl --user status vn-music-radar-scheduler.service
+journalctl --user -u vn-music-radar-scheduler.service -f
+```
+
+Service dùng `Restart=on-failure`; lệnh cài đặt chỉ ghi unit vào `~/.config/systemd/user`, không chép khóa truy cập. Muốn service hoạt động cả khi chưa đăng nhập, có thể bật linger cho tài khoản bằng `loginctl enable-linger "$USER"` nếu chính sách máy cho phép. Dừng và gỡ tự khởi động bằng `systemctl --user disable --now vn-music-radar-scheduler.service`.
+
+Nếu `YOUTUBE_API_KEY` có trong `.env`, lịch quét tối đa 75 kênh YouTube đã xác minh mỗi lượt và luân phiên offset; nếu khóa vắng, nguồn được đánh dấu thiếu cấu hình và không tính là ngày đủ độ phủ. Spotify cần `SPOTIFY_CLIENT_ID` và `SPOTIFY_CLIENT_SECRET`; giới hạn ngân sách tuần cấu hình bằng `SPOTIFY_WEEKLY_MAX_CALLS` (mặc định 40). Chạy `uv run python main.py news once` khi cần kiểm tra ngay, không cần đợi 07:00.
+
+Lượt lịch thử phân loại chủ đề và sắc thái cho tài liệu luồng mới nếu đã cấu hình `OPENROUTER_API_KEY` (hoặc `OPENAI_API_KEY`) cùng `OPENROUTER_MODEL` (hoặc `WEB_RELATION_REVIEW_MODEL`). Có thể chạy riêng bằng `uv run python main.py classify --limit 25`; giới hạn mặc định là `CONTENT_CLASSIFICATION_DAILY_LIMIT=25`. Kết quả có content hash, phiên bản mô hình, trạng thái, nhãn và trích dẫn trong `data/interim/document_classifications.csv`; trạng thái tác vụ ở `data/raw/content_classification_status.json`. Thiếu khóa/mô hình hoặc lỗi API không sinh nhãn trung tính giả. Trích xuất quan hệ vẫn đi qua model handoff và bước duyệt thủ công bên dưới.
 
 ## Task 5 — Nhận kết quả Huy, kiểm tra và nhập tăng dần
 

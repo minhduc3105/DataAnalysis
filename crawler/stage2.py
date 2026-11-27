@@ -529,8 +529,9 @@ def apply_approved(dry_run: bool = False) -> dict[str, int]:
                 doc = row["document"]
                 session.run("""
                     MERGE (d:Document {document_id:$docid})
-                    ON CREATE SET d.url=$url, d.title=$title, d.source_name=$source, d.published_at=$published, d.platform=$platform, d.content_tag=$tag
-                """, docid=doc["document_id"], url=doc.get("final_url") or doc.get("url", ""), title=doc.get("title", ""), source=doc.get("source_name", ""), published=doc.get("published_at", ""), platform=doc.get("platform", "web"), tag=doc.get("content_tag", "press")).consume()
+                    ON CREATE SET d.url=$url, d.title=$title, d.source_name=$source, d.published_at=$published, d.platform=$platform, d.content_tag=$tag, d.collected_at=$collected
+                    SET d.collected_at=coalesce(d.collected_at,$collected)
+                """, docid=doc["document_id"], url=doc.get("final_url") or doc.get("url", ""), title=doc.get("title", ""), source=doc.get("source_name", ""), published=doc.get("published_at", ""), platform=doc.get("platform", "web"), tag=doc.get("content_tag", "press"), collected=doc.get("collected_at") or now_iso()).consume()
                 rtype = row["relation_type"]
                 session.run(f"""
                     MATCH (a:Entity {{entity_id:$source}}), (b:Entity {{entity_id:$target}})

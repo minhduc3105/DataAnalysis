@@ -1,0 +1,26 @@
+{
+  "planned": 50,
+  "rss_results": 240,
+  "rss_new_urls": 240,
+  "rss_duplicates": 0,
+  "rss_missing_urls": 0,
+  "rss_out_of_period": 0,
+  "rss_errors": 0,
+  "sitemap_results": 0,
+  "sitemap_new_urls": 0,
+  "sitemap_duplicates": 0,
+  "sitemap_missing_urls": 0,
+  "sitemap_errors": 0,
+  "google_news_results": 1260,
+  "google_news_new_urls": 1120,
+  "google_news_duplicates": 140,
+  "google_news_missing_urls": 0,
+  "google_news_out_of_period": 22,
+  "google_news_errors": 2,
+  "errors": 2,
+  "period": [
+    "2026-10-22",
+    "2026-11-27"
+  ],
+  "checked_at": "2026-11-27T08:37:32+07:00"
+}

@@ -1,6 +1,6 @@
-﻿measure,degree,strength,pagerank,betweenness,eigenvector
-degree,1.0,0.952,0.852,0.826,0.884
-strength,0.952,1.0,0.892,0.801,0.931
-pagerank,0.852,0.892,1.0,0.751,0.972
-betweenness,0.826,0.801,0.751,1.0,0.758
-eigenvector,0.884,0.931,0.972,0.758,1.0
+﻿measure,degree,strength,pagerank,betweenness,eigenvector,analysis_run_id,graph_version
+degree,1.0,0.952,0.852,0.826,0.884,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+strength,0.952,1.0,0.892,0.801,0.931,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+pagerank,0.852,0.892,1.0,0.751,0.972,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+betweenness,0.826,0.801,0.751,1.0,0.758,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+eigenvector,0.884,0.931,0.972,0.758,1.0,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731

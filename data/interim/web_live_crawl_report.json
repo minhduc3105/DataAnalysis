@@ -1,0 +1,139 @@
+{
+  "selected": 200,
+  "eligible_before_limit": 1378,
+  "deferred_by_limit": 1178,
+  "deferred_by_resolve_limit": 0,
+  "processed_this_run": 200,
+  "publisher_pages_fetched": 186,
+  "complete_fields": 185,
+  "accepted_for_analysis": 161,
+  "missing_fields_or_review": 25,
+  "missing_field_counts": {
+    "published_at": 1
+  },
+  "out_of_period": 0,
+  "resolved_links": 0,
+  "errors": 14,
+  "error_steps": {
+    "resolve_http": 14
+  },
+  "error_counts": {
+    "Google News trả trang trung gian; bật --browser-fallback để thử Chromium": 14
+  },
+  "error_samples": [
+    {
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBXWUtPSmc0eExzejVac3NNRHREYUZuMEJLVXpweW04WGwteWpOeDRNNk84MDVtblRmLVlvMWdzcG9VbEpDZkF5WEVuS1Q5LUw4Mlp3dDJVZjFfSHFqaGQ2TEtsQmhNNm5FRWdhdFV6ME0xb1RuZkxwU1VB?oc=5",
+      "error": "Google News trả trang trung gian; bật --browser-fallback để thử Chromium",
+      "step": "resolve_http",
+      "http_status": 200,
+      "final_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBXWUtPSmc0eExzejVac3NNRHREYUZuMEJLVXpweW04WGwteWpOeDRNNk84MDVtblRmLVlvMWdzcG9VbEpDZkF5WEVuS1Q5LUw4Mlp3dDJVZjFfSHFqaGQ2TEtsQmhNNm5FRWdhdFV6ME0xb1RuZkxwU1VB?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "response_snippet": "window.WIZ_global_data = {\"AfY8Hf\":false,\"Dftppe\":\"%.@.]\",\"DpimGf\":false,\"EP1ykd\":[\"/_/*\",\"/_/SubscribewithgoogleClientUi\",\"/_/SubscribewithgoogleClientUi/*\",\"/_nm\",\"/_nm/\",\"/_nm/*\",\"/accounts/*\",\"/debug\",\"/debug/\",\"/debug/*\",\"/eval\",\"/eval/*\",\"/swg\",\"/swg/\",\"/swg/*\"],\"FL1an\":false,\"FdrFJe\":\"-181566844165554439\",\"Fwhl2e\":\"%.@.[\\\"en-US\\\",\\\"US\\\",[\\\"FINANCE_TOP_INDICES\\\",\\\"GENESIS_PUBLISHER_SECTION\\\",\\\"WEB_TEST_1_0_0\\\"],null,null,1,1,\\\"US:en\\\",null,null,null,null,null,null,null,false,5],\\\"en-US\\\",\\\"US\\\",true,[3,5,9,17],1,true,\\\"1025301528\\\",null,null,null,false]\",\"GASP4\":1333,\"Guyvcf\":\"/home\",\"HiPsbb\":1,\"Im6cmf\":\"/_/DotsSplashUi\",\"JgLEj\":0,\"LVIXXb\":1,\"LoQv7e\":false,\"MT7f9b\":[],\"MUE6Ne\":\"dots-splash\",\"MZbqOb\":\"//www.google.com/setprefs?cs\\u003d2\\u0026sig\\u003d0_qP6z7G6tLALoc655nQ8s0Qf_FKE%3D\\u"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5tSjBEbHpjU2xjSldqclp4M0ttNlk0aDFxQzJBOFFGR083bkZUSTJ0eUppNWhvTjlLYWZrb3doMUFybTlra0hjekJyem8tQ2duclI1NENGMnhoZm5KanVITnlXSG1Mb3BzUHdBUEMxNEswZmdQ?oc=5",
+      "error": "Google News trả trang trung gian; bật --browser-fallback để thử Chromium",
+      "step": "resolve_http",
+      "http_status": 200,
+      "final_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5tSjBEbHpjU2xjSldqclp4M0ttNlk0aDFxQzJBOFFGR083bkZUSTJ0eUppNWhvTjlLYWZrb3doMUFybTlra0hjekJyem8tQ2duclI1NENGMnhoZm5KanVITnlXSG1Mb3BzUHdBUEMxNEswZmdQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "response_snippet": "window.WIZ_global_data = {\"AfY8Hf\":false,\"Dftppe\":\"%.@.]\",\"DpimGf\":false,\"EP1ykd\":[\"/_/*\",\"/_/SubscribewithgoogleClientUi\",\"/_/SubscribewithgoogleClientUi/*\",\"/_nm\",\"/_nm/\",\"/_nm/*\",\"/accounts/*\",\"/debug\",\"/debug/\",\"/debug/*\",\"/eval\",\"/eval/*\",\"/swg\",\"/swg/\",\"/swg/*\"],\"FL1an\":false,\"FdrFJe\":\"4373436012913534279\",\"Fwhl2e\":\"%.@.[\\\"en-US\\\",\\\"US\\\",[\\\"FINANCE_TOP_INDICES\\\",\\\"GENESIS_PUBLISHER_SECTION\\\",\\\"WEB_TEST_1_0_0\\\"],null,null,1,1,\\\"US:en\\\",null,null,null,null,null,null,null,false,5],\\\"en-US\\\",\\\"US\\\",true,[3,5,9,17],1,true,\\\"1025301528\\\",null,null,null,false]\",\"GASP4\":1333,\"Guyvcf\":\"/home\",\"HiPsbb\":1,\"Im6cmf\":\"/_/DotsSplashUi\",\"JgLEj\":0,\"LVIXXb\":1,\"LoQv7e\":false,\"MT7f9b\":[],\"MUE6Ne\":\"dots-splash\",\"MZbqOb\":\"//www.google.com/setprefs?cs\\u003d2\\u0026sig\\u003d0_1BsflGK8YSzyOFcv6zn1NHZBGHs%3D\\u"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQcHRaTTBjYURBYjl1dU5tVG9ueTFzdzVnalp1c2ttQ0M2b0tkRWRETGdxalBmRThXdWdRdXNWRGY5dFBrYkxhWWRhdlFjeEs3X0hCR195UlJiTWttOVBuSFBZUmlKNWJ1SGpQOU5CY0pCSXRZVDJSTXh0TGI2b3ItRG1sdWxVb2lVeExlRlkwT01wdnJVRTcwdlJac3c3bl9SdWE5YkdMNzJLb09uOFhGVlQwRkxTTWwya29EZXRB?oc=5",
+      "error": "Google News trả trang trung gian; bật --browser-fallback để thử Chromium",
+      "step": "resolve_http",
+      "http_status": 200,
+      "final_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQcHRaTTBjYURBYjl1dU5tVG9ueTFzdzVnalp1c2ttQ0M2b0tkRWRETGdxalBmRThXdWdRdXNWRGY5dFBrYkxhWWRhdlFjeEs3X0hCR195UlJiTWttOVBuSFBZUmlKNWJ1SGpQOU5CY0pCSXRZVDJSTXh0TGI2b3ItRG1sdWxVb2lVeExlRlkwT01wdnJVRTcwdlJac3c3bl9SdWE5YkdMNzJLb09uOFhGVlQwRkxTTWwya29EZXRB?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "response_snippet": "window.WIZ_global_data = {\"AfY8Hf\":false,\"Dftppe\":\"%.@.]\",\"DpimGf\":false,\"EP1ykd\":[\"/_/*\",\"/_/SubscribewithgoogleClientUi\",\"/_/SubscribewithgoogleClientUi/*\",\"/_nm\",\"/_nm/\",\"/_nm/*\",\"/accounts/*\",\"/debug\",\"/debug/\",\"/debug/*\",\"/eval\",\"/eval/*\",\"/swg\",\"/swg/\",\"/swg/*\"],\"FL1an\":false,\"FdrFJe\":\"8290888363724817758\",\"Fwhl2e\":\"%.@.[\\\"en-US\\\",\\\"US\\\",[\\\"FINANCE_TOP_INDICES\\\",\\\"GENESIS_PUBLISHER_SECTION\\\",\\\"WEB_TEST_1_0_0\\\"],null,null,1,1,\\\"US:en\\\",null,null,null,null,null,null,null,false,5],\\\"en-US\\\",\\\"US\\\",true,[3,5,9,17],1,true,\\\"1025301528\\\",null,null,null,false]\",\"GASP4\":1333,\"Guyvcf\":\"/home\",\"HiPsbb\":1,\"Im6cmf\":\"/_/DotsSplashUi\",\"JgLEj\":0,\"LVIXXb\":1,\"LoQv7e\":false,\"MT7f9b\":[],\"MUE6Ne\":\"dots-splash\",\"MZbqOb\":\"//www.google.com/setprefs?cs\\u003d2\\u0026sig\\u003d0_liRdXc2ff_bQmoRDrYBxggRYOXw%3D\\u"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPc1JxdU40TnY5OHpIM0VPYjA1eUdpTVd6N2ZRcXpjcWJkRTlRcFp3SzhuQXlUTjhvWEZEazlTenRGUGpITG1Vc0xsVUNvSzRueTFDbGdyVFJGdk4tTC1oY3RHOGpxdDJCYU1DTVM0N0xtS29CYWpnTzF6dXVjakp1TDRibkJqU2pWdk1uWU5pRFYxU2VuU0lscGNrUFNpdDBFdnU4dHllaw?oc=5",
+      "error": "Google News trả trang trung gian; bật --browser-fallback để thử Chromium",
+      "step": "resolve_http",
+      "http_status": 200,
+      "final_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPc1JxdU40TnY5OHpIM0VPYjA1eUdpTVd6N2ZRcXpjcWJkRTlRcFp3SzhuQXlUTjhvWEZEazlTenRGUGpITG1Vc0xsVUNvSzRueTFDbGdyVFJGdk4tTC1oY3RHOGpxdDJCYU1DTVM0N0xtS29CYWpnTzF6dXVjakp1TDRibkJqU2pWdk1uWU5pRFYxU2VuU0lscGNrUFNpdDBFdnU4dHllaw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "response_snippet": "window.WIZ_global_data = {\"AfY8Hf\":false,\"Dftppe\":\"%.@.]\",\"DpimGf\":false,\"EP1ykd\":[\"/_/*\",\"/_/SubscribewithgoogleClientUi\",\"/_/SubscribewithgoogleClientUi/*\",\"/_nm\",\"/_nm/\",\"/_nm/*\",\"/accounts/*\",\"/debug\",\"/debug/\",\"/debug/*\",\"/eval\",\"/eval/*\",\"/swg\",\"/swg/\",\"/swg/*\"],\"FL1an\":false,\"FdrFJe\":\"6980065105104128685\",\"Fwhl2e\":\"%.@.[\\\"en-US\\\",\\\"US\\\",[\\\"FINANCE_TOP_INDICES\\\",\\\"GENESIS_PUBLISHER_SECTION\\\",\\\"WEB_TEST_1_0_0\\\"],null,null,1,1,\\\"US:en\\\",null,null,null,null,null,null,null,false,5],\\\"en-US\\\",\\\"US\\\",true,[3,5,9,17],1,true,\\\"1025301528\\\",null,null,null,false]\",\"GASP4\":1333,\"Guyvcf\":\"/home\",\"HiPsbb\":1,\"Im6cmf\":\"/_/DotsSplashUi\",\"JgLEj\":0,\"LVIXXb\":1,\"LoQv7e\":false,\"MT7f9b\":[],\"MUE6Ne\":\"dots-splash\",\"MZbqOb\":\"//www.google.com/setprefs?cs\\u003d2\\u0026sig\\u003d0_ky-257IzwYB7yRqapc3mujKfHC8%3D\\u"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWGdaNkJBdllCWVdxOFRrYkZYVmd4Y0QxdFp0eXhYVExURUp4ZTljQUdxazJlc0M4cDRHU3UyTm10bEQwUHpBZlpDeFRjcDdqSWdEMmdwRGphNHdPZkx5aklEQUl3LUpVWU0yRmIwVm14SW5GSEVJNFhZUXlyam1abVN4TlI2ZndidUpONjczOU9TUENXRXE0WTQzRWxUbkMyQXhvTFA0RjNGNDNiZUdyOVQ0elluaEZKc21hTC1B?oc=5",
+      "error": "Google News trả trang trung gian; bật --browser-fallback để thử Chromium",
+      "step": "resolve_http",
+      "http_status": 200,
+      "final_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWGdaNkJBdllCWVdxOFRrYkZYVmd4Y0QxdFp0eXhYVExURUp4ZTljQUdxazJlc0M4cDRHU3UyTm10bEQwUHpBZlpDeFRjcDdqSWdEMmdwRGphNHdPZkx5aklEQUl3LUpVWU0yRmIwVm14SW5GSEVJNFhZUXlyam1abVN4TlI2ZndidUpONjczOU9TUENXRXE0WTQzRWxUbkMyQXhvTFA0RjNGNDNiZUdyOVQ0elluaEZKc21hTC1B?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "response_snippet": "window.WIZ_global_data = {\"AfY8Hf\":false,\"Dftppe\":\"%.@.]\",\"DpimGf\":false,\"EP1ykd\":[\"/_/*\",\"/_/SubscribewithgoogleClientUi\",\"/_/SubscribewithgoogleClientUi/*\",\"/_nm\",\"/_nm/\",\"/_nm/*\",\"/accounts/*\",\"/debug\",\"/debug/\",\"/debug/*\",\"/eval\",\"/eval/*\",\"/swg\",\"/swg/\",\"/swg/*\"],\"FL1an\":false,\"FdrFJe\":\"5078370882335952240\",\"Fwhl2e\":\"%.@.[\\\"en-US\\\",\\\"US\\\",[\\\"FINANCE_TOP_INDICES\\\",\\\"GENESIS_PUBLISHER_SECTION\\\",\\\"WEB_TEST_1_0_0\\\"],null,null,1,1,\\\"US:en\\\",null,null,null,null,null,null,null,false,5],\\\"en-US\\\",\\\"US\\\",true,[3,5,9,17],1,true,\\\"1025301528\\\",null,null,null,false]\",\"GASP4\":1333,\"Guyvcf\":\"/home\",\"HiPsbb\":1,\"Im6cmf\":\"/_/DotsSplashUi\",\"JgLEj\":0,\"LVIXXb\":1,\"LoQv7e\":false,\"MT7f9b\":[],\"MUE6Ne\":\"dots-splash\",\"MZbqOb\":\"//www.google.com/setprefs?cs\\u003d2\\u0026sig\\u003d0_QHoitXgDLWjaTd-kyfYQ2SSF-H8%3D\\u"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFBUNVNCX29ua2xOSkU2SnFHRW5OVkMwbU45enFEcGk4V2JnMWZKOUFBSEFqbF9HZVZERnNGRUhUNlc?oc=5",
+      "error": "Google News trả trang trung gian; bật --browser-fallback để thử Chromium",
+      "step": "resolve_http",
+      "http_status": 200,
+      "final_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFBUNVNCX29ua2xOSkU2SnFHRW5OVkMwbU45enFEcGk4V2JnMWZKOUFBSEFqbF9HZVZERnNGRUhUNlc?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "response_snippet": "window.WIZ_global_data = {\"AfY8Hf\":false,\"Dftppe\":\"%.@.]\",\"DpimGf\":false,\"EP1ykd\":[\"/_/*\",\"/_/SubscribewithgoogleClientUi\",\"/_/SubscribewithgoogleClientUi/*\",\"/_nm\",\"/_nm/\",\"/_nm/*\",\"/accounts/*\",\"/debug\",\"/debug/\",\"/debug/*\",\"/eval\",\"/eval/*\",\"/swg\",\"/swg/\",\"/swg/*\"],\"FL1an\":false,\"FdrFJe\":\"-40362403203154737\",\"Fwhl2e\":\"%.@.[\\\"en-US\\\",\\\"US\\\",[\\\"FINANCE_TOP_INDICES\\\",\\\"GENESIS_PUBLISHER_SECTION\\\",\\\"WEB_TEST_1_0_0\\\"],null,null,1,1,\\\"US:en\\\",null,null,null,null,null,null,null,false,5],\\\"en-US\\\",\\\"US\\\",true,[3,5,9,17],1,true,\\\"1025301528\\\",null,null,null,false]\",\"GASP4\":1333,\"Guyvcf\":\"/home\",\"HiPsbb\":1,\"Im6cmf\":\"/_/DotsSplashUi\",\"JgLEj\":0,\"LVIXXb\":1,\"LoQv7e\":false,\"MT7f9b\":[],\"MUE6Ne\":\"dots-splash\",\"MZbqOb\":\"//www.google.com/setprefs?cs\\u003d2\\u0026sig\\u003d0_rD-gVeZNQebuxyDnhINfeCQw91g%3D\\u0"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPM0tzRGJnc2FLUGVJN2l2ZGpYVEVXUm10TDVod3A4dk51c0lxd0tLaG9xUEZOVWdEQ3VZeHFsanJzMWdnSDNLdWptTHVXLTVwbFI2eUhzTDk1c3pGYm1iaWlVTHV6cFpLWnVsLVh3Mzhpd3JuMHh2RzAyTlFkMGlmR3NLZ2dtY1JSTU5lVldxUW1qeWJJOEZOb0dHWlZFTEpYTkVpT0h2SHVHa3lmV1VKaTdidWM3M1hvdUNLSHpIY1ZoTWc?oc=5",
+      "error": "Google News trả trang trung gian; bật --browser-fallback để thử Chromium",
+      "step": "resolve_http",
+      "http_status": 200,
+      "final_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPM0tzRGJnc2FLUGVJN2l2ZGpYVEVXUm10TDVod3A4dk51c0lxd0tLaG9xUEZOVWdEQ3VZeHFsanJzMWdnSDNLdWptTHVXLTVwbFI2eUhzTDk1c3pGYm1iaWlVTHV6cFpLWnVsLVh3Mzhpd3JuMHh2RzAyTlFkMGlmR3NLZ2dtY1JSTU5lVldxUW1qeWJJOEZOb0dHWlZFTEpYTkVpT0h2SHVHa3lmV1VKaTdidWM3M1hvdUNLSHpIY1ZoTWc?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "response_snippet": "window.WIZ_global_data = {\"AfY8Hf\":false,\"Dftppe\":\"%.@.]\",\"DpimGf\":false,\"EP1ykd\":[\"/_/*\",\"/_/SubscribewithgoogleClientUi\",\"/_/SubscribewithgoogleClientUi/*\",\"/_nm\",\"/_nm/\",\"/_nm/*\",\"/accounts/*\",\"/debug\",\"/debug/\",\"/debug/*\",\"/eval\",\"/eval/*\",\"/swg\",\"/swg/\",\"/swg/*\"],\"FL1an\":false,\"FdrFJe\":\"2782985488141512518\",\"Fwhl2e\":\"%.@.[\\\"en-US\\\",\\\"US\\\",[\\\"FINANCE_TOP_INDICES\\\",\\\"GENESIS_PUBLISHER_SECTION\\\",\\\"WEB_TEST_1_0_0\\\"],null,null,1,1,\\\"US:en\\\",null,null,null,null,null,null,null,false,5],\\\"en-US\\\",\\\"US\\\",true,[3,5,9,17],1,true,\\\"1025301528\\\",null,null,null,false]\",\"GASP4\":1333,\"Guyvcf\":\"/home\",\"HiPsbb\":1,\"Im6cmf\":\"/_/DotsSplashUi\",\"JgLEj\":0,\"LVIXXb\":1,\"LoQv7e\":false,\"MT7f9b\":[],\"MUE6Ne\":\"dots-splash\",\"MZbqOb\":\"//www.google.com/setprefs?cs\\u003d2\\u0026sig\\u003d0_5eCyvrReA-eujaBSS3gRt9mW0KE%3D\\u"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9TUTB2NWhYTVpuOU4xX0c3cmUtZ2ZBeXhfRnZ1Z091dUdtNFhiNVJweUo5WUJkeGljYm5TLTllMGF2SW9VbGFKemNqRGVobmJrTHBmZTEtV3VaWFlySW9JYmp0OEN2d0RESEhkLS1R?oc=5",
+      "error": "Google News trả trang trung gian; bật --browser-fallback để thử Chromium",
+      "step": "resolve_http",
+      "http_status": 200,
+      "final_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9TUTB2NWhYTVpuOU4xX0c3cmUtZ2ZBeXhfRnZ1Z091dUdtNFhiNVJweUo5WUJkeGljYm5TLTllMGF2SW9VbGFKemNqRGVobmJrTHBmZTEtV3VaWFlySW9JYmp0OEN2d0RESEhkLS1R?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "response_snippet": "window.WIZ_global_data = {\"AfY8Hf\":false,\"Dftppe\":\"%.@.]\",\"DpimGf\":false,\"EP1ykd\":[\"/_/*\",\"/_/SubscribewithgoogleClientUi\",\"/_/SubscribewithgoogleClientUi/*\",\"/_nm\",\"/_nm/\",\"/_nm/*\",\"/accounts/*\",\"/debug\",\"/debug/\",\"/debug/*\",\"/eval\",\"/eval/*\",\"/swg\",\"/swg/\",\"/swg/*\"],\"FL1an\":false,\"FdrFJe\":\"8644989467243271322\",\"Fwhl2e\":\"%.@.[\\\"en-US\\\",\\\"US\\\",[\\\"FINANCE_TOP_INDICES\\\",\\\"GENESIS_PUBLISHER_SECTION\\\",\\\"WEB_TEST_1_0_0\\\"],null,null,1,1,\\\"US:en\\\",null,null,null,null,null,null,null,false,5],\\\"en-US\\\",\\\"US\\\",true,[3,5,9,17],1,true,\\\"1025301528\\\",null,null,null,false]\",\"GASP4\":1333,\"Guyvcf\":\"/home\",\"HiPsbb\":1,\"Im6cmf\":\"/_/DotsSplashUi\",\"JgLEj\":0,\"LVIXXb\":1,\"LoQv7e\":false,\"MT7f9b\":[],\"MUE6Ne\":\"dots-splash\",\"MZbqOb\":\"//www.google.com/setprefs?cs\\u003d2\\u0026sig\\u003d0_NGTJf_niCP9m1TjifoUaewj-vJ4%3D\\u"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE9DN0Y0MkhBNnRLWUw2cVpxbmg5NTJrZmQ1eWZFLVBFbWgtX3JPdXVIdDJ0UldkNDhFcEdtdUlLRmE?oc=5",
+      "error": "Google News trả trang trung gian; bật --browser-fallback để thử Chromium",
+      "step": "resolve_http",
+      "http_status": 200,
+      "final_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE9DN0Y0MkhBNnRLWUw2cVpxbmg5NTJrZmQ1eWZFLVBFbWgtX3JPdXVIdDJ0UldkNDhFcEdtdUlLRmE?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "response_snippet": "window.WIZ_global_data = {\"AfY8Hf\":false,\"Dftppe\":\"%.@.]\",\"DpimGf\":false,\"EP1ykd\":[\"/_/*\",\"/_/SubscribewithgoogleClientUi\",\"/_/SubscribewithgoogleClientUi/*\",\"/_nm\",\"/_nm/\",\"/_nm/*\",\"/accounts/*\",\"/debug\",\"/debug/\",\"/debug/*\",\"/eval\",\"/eval/*\",\"/swg\",\"/swg/\",\"/swg/*\"],\"FL1an\":false,\"FdrFJe\":\"8917484269428693942\",\"Fwhl2e\":\"%.@.[\\\"en-US\\\",\\\"US\\\",[\\\"FINANCE_TOP_INDICES\\\",\\\"GENESIS_PUBLISHER_SECTION\\\",\\\"WEB_TEST_1_0_0\\\"],null,null,1,1,\\\"US:en\\\",null,null,null,null,null,null,null,false,5],\\\"en-US\\\",\\\"US\\\",true,[3,5,9,17],1,true,\\\"1025301528\\\",null,null,null,false]\",\"GASP4\":1333,\"Guyvcf\":\"/home\",\"HiPsbb\":1,\"Im6cmf\":\"/_/DotsSplashUi\",\"JgLEj\":0,\"LVIXXb\":1,\"LoQv7e\":false,\"MT7f9b\":[],\"MUE6Ne\":\"dots-splash\",\"MZbqOb\":\"//www.google.com/setprefs?cs\\u003d2\\u0026sig\\u003d0_P6aJzOLWjWXR8G5DJlg0gMyvZAk%3D\\u"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOa3ZNV3h4Zi1BbzJScWZ6dk05bzhNNHNYdHNLVFFnMXJjODBXYVctSUtjTFZ5b2txVkdpdElZSHhvWFVxb3hMcUgxZ0puQnMxVjZVd0M3azlLVTliZzhuOU5SLWlIVDNjUnI3MTFLT19Ja3EwQngzbE12QkR1bDhvSHNpQkp3SGJDOTJfbHVZVnNiYzhDQldpUFFaako4ejB0VUVMdUE3RU5oZEk2cXU2SERVQXBlaFNEaUZPQV9R?oc=5",
+      "error": "Google News trả trang trung gian; bật --browser-fallback để thử Chromium",
+      "step": "resolve_http",
+      "http_status": 200,
+      "final_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOa3ZNV3h4Zi1BbzJScWZ6dk05bzhNNHNYdHNLVFFnMXJjODBXYVctSUtjTFZ5b2txVkdpdElZSHhvWFVxb3hMcUgxZ0puQnMxVjZVd0M3azlLVTliZzhuOU5SLWlIVDNjUnI3MTFLT19Ja3EwQngzbE12QkR1bDhvSHNpQkp3SGJDOTJfbHVZVnNiYzhDQldpUFFaako4ejB0VUVMdUE3RU5oZEk2cXU2SERVQXBlaFNEaUZPQV9R?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "response_snippet": "window.WIZ_global_data = {\"AfY8Hf\":false,\"Dftppe\":\"%.@.]\",\"DpimGf\":false,\"EP1ykd\":[\"/_/*\",\"/_/SubscribewithgoogleClientUi\",\"/_/SubscribewithgoogleClientUi/*\",\"/_nm\",\"/_nm/\",\"/_nm/*\",\"/accounts/*\",\"/debug\",\"/debug/\",\"/debug/*\",\"/eval\",\"/eval/*\",\"/swg\",\"/swg/\",\"/swg/*\"],\"FL1an\":false,\"FdrFJe\":\"3659586783102075978\",\"Fwhl2e\":\"%.@.[\\\"en-US\\\",\\\"US\\\",[\\\"FINANCE_TOP_INDICES\\\",\\\"GENESIS_PUBLISHER_SECTION\\\",\\\"WEB_TEST_1_0_0\\\"],null,null,1,1,\\\"US:en\\\",null,null,null,null,null,null,null,false,5],\\\"en-US\\\",\\\"US\\\",true,[3,5,9,17],1,true,\\\"1025301528\\\",null,null,null,false]\",\"GASP4\":1333,\"Guyvcf\":\"/home\",\"HiPsbb\":1,\"Im6cmf\":\"/_/DotsSplashUi\",\"JgLEj\":0,\"LVIXXb\":1,\"LoQv7e\":false,\"MT7f9b\":[],\"MUE6Ne\":\"dots-splash\",\"MZbqOb\":\"//www.google.com/setprefs?cs\\u003d2\\u0026sig\\u003d0_3Ur-YaMFoJRwhdQ88VJc1L6cvK0%3D\\u"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNT0hsTFpfUmdEUHgwRkM5VWRPajBIUUU4UFZMdFVHT0Naa2R3aHYwdmF5MVo5OU1wejc1LTBnQmFvVm1aMllidG42MUM3T2lFWjlwNVEtSTZFM0pfQkF5WTVjLVNsenJBTnRRaVI5M29TQ1pxT2NuSXhPdTJYU0dBUEVrd2ZGdHQwZGtMSkxqZE5sMGtOVDk5MmJkaENzeEl5ZFdpak9oTUkxR2ZmN0x5aFByVTBwUQ?oc=5",
+      "error": "Google News trả trang trung gian; bật --browser-fallback để thử Chromium",
+      "step": "resolve_http",
+      "http_status": 200,
+      "final_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNT0hsTFpfUmdEUHgwRkM5VWRPajBIUUU4UFZMdFVHT0Naa2R3aHYwdmF5MVo5OU1wejc1LTBnQmFvVm1aMllidG42MUM3T2lFWjlwNVEtSTZFM0pfQkF5WTVjLVNsenJBTnRRaVI5M29TQ1pxT2NuSXhPdTJYU0dBUEVrd2ZGdHQwZGtMSkxqZE5sMGtOVDk5MmJkaENzeEl5ZFdpak9oTUkxR2ZmN0x5aFByVTBwUQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "response_snippet": "window.WIZ_global_data = {\"AfY8Hf\":false,\"Dftppe\":\"%.@.]\",\"DpimGf\":false,\"EP1ykd\":[\"/_/*\",\"/_/SubscribewithgoogleClientUi\",\"/_/SubscribewithgoogleClientUi/*\",\"/_nm\",\"/_nm/\",\"/_nm/*\",\"/accounts/*\",\"/debug\",\"/debug/\",\"/debug/*\",\"/eval\",\"/eval/*\",\"/swg\",\"/swg/\",\"/swg/*\"],\"FL1an\":false,\"FdrFJe\":\"-2531296728938606833\",\"Fwhl2e\":\"%.@.[\\\"en-US\\\",\\\"US\\\",[\\\"FINANCE_TOP_INDICES\\\",\\\"GENESIS_PUBLISHER_SECTION\\\",\\\"WEB_TEST_1_0_0\\\"],null,null,1,1,\\\"US:en\\\",null,null,null,null,null,null,null,false,5],\\\"en-US\\\",\\\"US\\\",true,[3,5,9,17],1,true,\\\"1025301528\\\",null,null,null,false]\",\"GASP4\":1333,\"Guyvcf\":\"/home\",\"HiPsbb\":1,\"Im6cmf\":\"/_/DotsSplashUi\",\"JgLEj\":0,\"LVIXXb\":1,\"LoQv7e\":false,\"MT7f9b\":[],\"MUE6Ne\":\"dots-splash\",\"MZbqOb\":\"//www.google.com/setprefs?cs\\u003d2\\u0026sig\\u003d0_0G2ouYpJ8Qo5up2fHICjoDWQZJE%3D\\"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE45R2lwV1hOSlFhQjFPR2s1QXpXQmtrVUFlQWRnRUlxcnBRcXlnX2FyMWxHMWVWUWJrTDVOSGZySzBmVTNyTHB0aw?oc=5",
+      "error": "Google News trả trang trung gian; bật --browser-fallback để thử Chromium",
+      "step": "resolve_http",
+      "http_status": 200,
+      "final_url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE45R2lwV1hOSlFhQjFPR2s1QXpXQmtrVUFlQWRnRUlxcnBRcXlnX2FyMWxHMWVWUWJrTDVOSGZySzBmVTNyTHB0aw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "response_snippet": "window.WIZ_global_data = {\"AfY8Hf\":false,\"Dftppe\":\"%.@.]\",\"DpimGf\":false,\"EP1ykd\":[\"/_/*\",\"/_/SubscribewithgoogleClientUi\",\"/_/SubscribewithgoogleClientUi/*\",\"/_nm\",\"/_nm/\",\"/_nm/*\",\"/accounts/*\",\"/debug\",\"/debug/\",\"/debug/*\",\"/eval\",\"/eval/*\",\"/swg\",\"/swg/\",\"/swg/*\"],\"FL1an\":false,\"FdrFJe\":\"2098672267483309977\",\"Fwhl2e\":\"%.@.[\\\"en-US\\\",\\\"US\\\",[\\\"FINANCE_TOP_INDICES\\\",\\\"GENESIS_PUBLISHER_SECTION\\\",\\\"WEB_TEST_1_0_0\\\"],null,null,1,1,\\\"US:en\\\",null,null,null,null,null,null,null,false,5],\\\"en-US\\\",\\\"US\\\",true,[3,5,9,17],1,true,\\\"1025301528\\\",null,null,null,false]\",\"GASP4\":1333,\"Guyvcf\":\"/home\",\"HiPsbb\":1,\"Im6cmf\":\"/_/DotsSplashUi\",\"JgLEj\":0,\"LVIXXb\":1,\"LoQv7e\":false,\"MT7f9b\":[],\"MUE6Ne\":\"dots-splash\",\"MZbqOb\":\"//www.google.com/setprefs?cs\\u003d2\\u0026sig\\u003d0_EuXSoK6SA2AmdkXW23e_60htEpw%3D\\u"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE5wZXBxSGtXRVlOTDdFRW1Sd1BKRTRtVVJwRnpuTnRiNl9xTldxMEtQdmpFTlZlZVdWOGRscF96YS0?oc=5",
+      "error": "Google News trả trang trung gian; bật --browser-fallback để thử Chromium",
+      "step": "resolve_http",
+      "http_status": 200,
+      "final_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE5wZXBxSGtXRVlOTDdFRW1Sd1BKRTRtVVJwRnpuTnRiNl9xTldxMEtQdmpFTlZlZVdWOGRscF96YS0?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "response_snippet": "window.WIZ_global_data = {\"AfY8Hf\":false,\"Dftppe\":\"%.@.]\",\"DpimGf\":false,\"EP1ykd\":[\"/_/*\",\"/_/SubscribewithgoogleClientUi\",\"/_/SubscribewithgoogleClientUi/*\",\"/_nm\",\"/_nm/\",\"/_nm/*\",\"/accounts/*\",\"/debug\",\"/debug/\",\"/debug/*\",\"/eval\",\"/eval/*\",\"/swg\",\"/swg/\",\"/swg/*\"],\"FL1an\":false,\"FdrFJe\":\"-2370274782351624010\",\"Fwhl2e\":\"%.@.[\\\"en-US\\\",\\\"US\\\",[\\\"FINANCE_TOP_INDICES\\\",\\\"GENESIS_PUBLISHER_SECTION\\\",\\\"WEB_TEST_1_0_0\\\"],null,null,1,1,\\\"US:en\\\",null,null,null,null,null,null,null,false,5],\\\"en-US\\\",\\\"US\\\",true,[3,5,9,17],1,true,\\\"1025301528\\\",null,null,null,false]\",\"GASP4\":1333,\"Guyvcf\":\"/home\",\"HiPsbb\":1,\"Im6cmf\":\"/_/DotsSplashUi\",\"JgLEj\":0,\"LVIXXb\":1,\"LoQv7e\":false,\"MT7f9b\":[],\"MUE6Ne\":\"dots-splash\",\"MZbqOb\":\"//www.google.com/setprefs?cs\\u003d2\\u0026sig\\u003d0_C4tUYwL10EJxQuRY5bOj2v1nz4Y%3D\\"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9hSHdwQkJ6eFpsMnA2bm9QZkdrX3NKRHhkUEwtYWhoSnh6M1NGcHUwS3FmTzZNSkJKdjBxM1pCMS1DSHN0VEdZRg?oc=5",
+      "error": "Google News trả trang trung gian; bật --browser-fallback để thử Chromium",
+      "step": "resolve_http",
+      "http_status": 200,
+      "final_url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9hSHdwQkJ6eFpsMnA2bm9QZkdrX3NKRHhkUEwtYWhoSnh6M1NGcHUwS3FmTzZNSkJKdjBxM1pCMS1DSHN0VEdZRg?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "response_snippet": "window.WIZ_global_data = {\"AfY8Hf\":false,\"Dftppe\":\"%.@.]\",\"DpimGf\":false,\"EP1ykd\":[\"/_/*\",\"/_/SubscribewithgoogleClientUi\",\"/_/SubscribewithgoogleClientUi/*\",\"/_nm\",\"/_nm/\",\"/_nm/*\",\"/accounts/*\",\"/debug\",\"/debug/\",\"/debug/*\",\"/eval\",\"/eval/*\",\"/swg\",\"/swg/\",\"/swg/*\"],\"FL1an\":false,\"FdrFJe\":\"-2124430418680437810\",\"Fwhl2e\":\"%.@.[\\\"en-US\\\",\\\"US\\\",[\\\"FINANCE_TOP_INDICES\\\",\\\"GENESIS_PUBLISHER_SECTION\\\",\\\"WEB_TEST_1_0_0\\\"],null,null,1,1,\\\"US:en\\\",null,null,null,null,null,null,null,false,5],\\\"en-US\\\",\\\"US\\\",true,[3,5,9,17],1,true,\\\"1025301528\\\",null,null,null,false]\",\"GASP4\":1333,\"Guyvcf\":\"/home\",\"HiPsbb\":1,\"Im6cmf\":\"/_/DotsSplashUi\",\"JgLEj\":0,\"LVIXXb\":1,\"LoQv7e\":false,\"MT7f9b\":[],\"MUE6Ne\":\"dots-splash\",\"MZbqOb\":\"//www.google.com/setprefs?cs\\u003d2\\u0026sig\\u003d0_UTEKycYSUUytvtIRvmeOtYQMOlo%3D\\"
+    }
+  ],
+  "workers": 4,
+  "browser_fallback": false
+}

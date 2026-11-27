@@ -2,7 +2,7 @@ import csv
 from collections import Counter
 
 from .common import iter_jsonl, now_iso
-from .config import INTERIM_DIR, RAW_DIR
+from .config import INTERIM_DIR, RAW_DIR, PERIOD_END
 from .scope import Scope
 from .shows import read_shows
 
@@ -101,7 +101,8 @@ def spotify_content(r: dict) -> str:
 
 def _spotify_docs() -> dict[str, dict]:
     docs: dict[str, dict] = {}
-    for r in iter_jsonl(sorted((RAW_DIR / "spotify" / "albums").glob("*.jsonl"))):
+    album_paths = sorted((RAW_DIR / "spotify" / "albums").glob("*.jsonl")) + sorted((RAW_DIR / "spotify" / "live" / "albums").glob("*.jsonl"))
+    for r in iter_jsonl(album_paths):
         aid = r["album_id"]
         if aid in docs:
             docs[aid]["seed_ids"].add(r["seed_id"])
@@ -121,7 +122,7 @@ def _spotify_docs() -> dict[str, dict]:
             "account_verified": "",
             "exclude_reason": "",
             "platform": "spotify",
-            "research_lane": "research",
+            "research_lane": "live" if (r.get("release_date") or "")[:10] > PERIOD_END.isoformat() else "research",
             "platform_item_id": aid,
             "seed_ids": {r["seed_id"]},
             "entity_ids": "",
@@ -168,10 +169,16 @@ def build(seeds: list[dict]) -> int:
 
 
 def build_live(seeds: list[dict]) -> int:
-    """Refresh only the post-cutoff YouTube lane without rewriting research documents."""
+    """Refresh post-cutoff YouTube and Spotify documents without rewriting research documents."""
     verified_channels = {s["youtube_channel_id"]: s.get("youtube_verified", "") for s in seeds if s.get("youtube_channel_id")}
     show_ids = {s["show_id"] for s in read_shows()}
     live = [d for d in _youtube_docs(verified_channels, {s["seed_id"] for s in seeds}, show_ids).values() if d.get("research_lane") == "live"]
+    for row in _spotify_docs().values():
+        if (row.get("published_at") or "")[:10] > PERIOD_END.isoformat():
+            row["research_lane"] = "live"
+            row["content_tag"] = "release"
+            row["document_status"] = PENDING
+            live.append(row)
     INTERIM_DIR.mkdir(parents=True, exist_ok=True)
     target = INTERIM_DIR / "live_documents.csv"
     with target.open("w", encoding="utf-8-sig", newline="") as f:

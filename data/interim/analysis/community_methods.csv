@@ -1,4 +1,4 @@
-﻿method,communities,modularity,modularity_std,nmi
-Louvain,43,0.6031,,
-Leiden,43,0.6001,0.0001,0.992
-NMI Louvain–Leiden,,,,0.784
+﻿method,communities,modularity,modularity_std,nmi,analysis_run_id,graph_version
+Louvain,42,0.5988,,,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+Leiden,42,0.5815,0.0003,0.936,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+NMI Louvain–Leiden,,,,0.701,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731

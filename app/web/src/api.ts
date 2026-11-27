@@ -61,6 +61,22 @@ export interface FeedItem {
   relations: { relation: string; relation_id: string; source: string; target: string; evidence: string }[]
 }
 
+export interface MagazineShow { id: string; name: string; year: string; source_status: string; artist_count: number; verified_artist_count: number }
+export interface MagazineArtist { id: string; name: string; shows: string[]; verified_shows: string[] }
+export interface MagazineArticle {
+  document_id: string; title: string | null; url: string | null; source: string | null; platform: string | null
+  published_at: string | null; collected_at: string | null; summary: string | null; excerpt: string | null
+  image_url: string | null; image_credit: string | null; image_source_url: string | null; image_license: string | null
+  artists: { id: string; name: string; shows: string[] }[]
+  relations: { relation_id: string; relation: string; artist_id: string; artist_name: string; related_name: string; quote: string | null }[]
+  activity: string[]
+}
+export interface MagazineBundle {
+  shows: MagazineShow[]; items: MagazineArticle[]; total: number; period: { from: string; to: string; days: number }
+  daily: { date: string; documents: number }[]; top_artists: { id: string; name: string; documents: number }[]
+  activity: { name: string; documents: number }[]; roster_status: 'confirmed' | 'needs_review'
+}
+
 export interface WatchedEntity {
   entity_id: string
   name: string
@@ -168,6 +184,10 @@ async function get<T>(path: string, params: Record<string, string | number | str
 }
 
 export const api = {
+  magazineShows: () => get<MagazineShow[]>('/magazine/shows'),
+  magazineArtists: (show_id?: string) => get<MagazineArtist[]>('/magazine/artists', { show_id }),
+  magazineArticles: (params: { days?: number; show_id?: string; artist_id?: string; source?: string; activity?: string; date_from?: string; date_to?: string; limit?: number; offset?: number } = {}) => get<MagazineBundle>('/magazine/articles', params),
+  magazineArticle: (documentId: string) => get<MagazineArticle>(`/magazine/articles/${encodeURIComponent(documentId)}`),
   network: (graph_version?: string) => get<NetworkBundle>('/network', { graph_version }),
   snapshots: () => get<AnalysisSnapshot[]>('/analysis/snapshots'),
   rankings: (measure: string, role?: string, limit = 30, graph_version?: string) => get<Row[]>('/rankings', { measure, role, limit, graph_version }),

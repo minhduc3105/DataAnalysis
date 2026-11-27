@@ -1,0 +1,3 @@
+﻿period,nodes,edges,avg_degree,density,components,largest_component,largest_component_share,louvain_communities,modularity,analysis_run_id,graph_version
+2016–2020,711,1166,3.28,0.00462,34,615,0.865,52,0.7633,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+2021–2026,1391,4617,6.638,0.004776,24,1325,0.953,39,0.576,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731

@@ -1,0 +1,3 @@
+﻿metric,baseline,current,change,note,analysis_run_id,graph_version
+Entity count,,12436,,Chạy lại analyze trước khi nhập model để ghi nhận baseline có phiên bản.,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+Relation count,,35096,,Baseline phân tích chưa được lưu.,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731

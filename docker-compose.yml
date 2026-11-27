@@ -7,7 +7,6 @@ services:
       - "127.0.0.1:7687:7687"
     environment:
       NEO4J_AUTH: "${NEO4J_USER:-neo4j}/${NEO4J_PASSWORD:?Set NEO4J_PASSWORD in .env}"
-      NEO4J_PASSWORD: "${NEO4J_PASSWORD:?Set NEO4J_PASSWORD in .env}"
       NEO4J_PLUGINS: '["graph-data-science"]'
       NEO4J_dbms_security_procedures_unrestricted: "gds.*"
       NEO4J_dbms_security_procedures_allowlist: "gds.*"
@@ -15,7 +14,7 @@ services:
       - neo4j-data:/data
       - neo4j-logs:/logs
     healthcheck:
-      test: ["CMD-SHELL", "cypher-shell -a bolt://localhost:7687 -u ${NEO4J_USER:-neo4j} -p \"$$NEO4J_PASSWORD\" 'RETURN 1' >/dev/null 2>&1"]
+      test: ["CMD-SHELL", "cypher-shell -a bolt://localhost:7687 -u \"$${NEO4J_AUTH%%/*}\" -p \"$${NEO4J_AUTH#*/}\" 'RETURN 1' >/dev/null 2>&1"]
       interval: 10s
       timeout: 5s
       retries: 20

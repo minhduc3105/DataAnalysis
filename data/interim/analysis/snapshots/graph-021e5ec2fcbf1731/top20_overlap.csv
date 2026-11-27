@@ -1,0 +1,6 @@
+﻿measure,top20_overlap_with_pagerank,analysis_run_id,graph_version
+degree,15,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+strength,14,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+pagerank,20,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+betweenness,13,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+eigenvector,14,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731

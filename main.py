@@ -1,4 +1,5 @@
 import argparse
+import json
 import sys
 from collections import Counter
 
@@ -236,6 +237,11 @@ def cmd_news(args) -> None:
         web_clean.clean(lane="live")
 
 
+def cmd_classify(args) -> None:
+    from crawler import content_classification
+    print(json.dumps(content_classification.classify_pending(args.limit), ensure_ascii=False, indent=2))
+
+
 def cmd_stats(_args) -> None:
     yt = list(iter_jsonl((RAW_DIR / "youtube").glob("*.jsonl")))
     print(f"Giai đoạn: {PERIOD_START} → {PERIOD_END}")
@@ -378,6 +384,10 @@ def main() -> None:
     nw.add_argument("--limit", type=int, default=200)
     nw.add_argument("--search-limit", type=int, default=50)
     nw.set_defaults(func=cmd_news)
+
+    cl = sub.add_parser("classify", help="Phân loại có giới hạn chủ đề và sắc thái tài liệu luồng mới")
+    cl.add_argument("--limit", type=int, help="Giới hạn số tài liệu gọi mô hình; mặc định CONTENT_CLASSIFICATION_DAILY_LIMIT hoặc 25")
+    cl.set_defaults(func=cmd_classify)
 
     args = p.parse_args()
     args.func(args)

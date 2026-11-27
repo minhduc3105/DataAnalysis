@@ -1,0 +1,24 @@
+{
+  "analysis_run_id": "analysis-021e5ec2fcbf1731-20261125114225",
+  "graph_version": "021e5ec2fcbf1731",
+  "generated_at": "2026-11-25T11:42:25.420699+07:00",
+  "gds_version": "2026.10.2",
+  "periods": [
+    [
+      2016,
+      2020
+    ],
+    [
+      2021,
+      2026
+    ]
+  ],
+  "seed": 42,
+  "random_graphs": 20,
+  "random_path_sources": 300,
+  "full_graph_path_sources": 500,
+  "leiden_runs": 10,
+  "small_world_main_lcc_path_measure": "exact",
+  "graph_nodes": 12436,
+  "graph_relations": 35096
+}

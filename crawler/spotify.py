@@ -2,11 +2,11 @@ import base64
 import os
 import re
 import time
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta
 
 import requests
 
-from .common import JsonlStore, iter_jsonl, log_run, merge_candidates, normalize_name, now_iso, polite_sleep, release_in_period, today_iso
+from .common import JsonlStore, iter_jsonl, log_run, merge_candidates, normalize_name, now_iso, parse_date, polite_sleep, release_in_period, today_iso
 from .config import INTERIM_DIR, RAW_DIR, VN_TZ
 from .net import QuotaExceeded, RateLimited, get_json
 
@@ -27,6 +27,7 @@ class SpotifyClient:
         self._token = None
         self._expires = 0.0
         self.calls = 0
+        self.max_calls: int | None = None
         self.top_tracks_ok = True
 
     @classmethod
@@ -53,9 +54,11 @@ class SpotifyClient:
         return {"Authorization": f"Bearer {self._token}"}
 
     def get(self, path_or_url: str, params: dict | None = None) -> dict:
+        if self.max_calls is not None and self.calls >= self.max_calls:
+            raise RuntimeError("Đã đạt ngân sách lượt gọi Spotify của lượt chạy")
         url = path_or_url if path_or_url.startswith("http") else f"{API}{path_or_url}"
-        data = get_json(self.session, url, params=params, headers=self._auth())
         self.calls += 1
+        data = get_json(self.session, url, params=params, headers=self._auth())
         # Gọi dồn ~4 lần/giây từng làm app Development bị khóa 24 giờ.
         polite_sleep(0.9, 1.5)
         return data
@@ -323,3 +326,53 @@ def crawl(client: SpotifyClient, seeds: list[dict], top: int = 5, max_calls: int
             log_run("spotify", seed["seed_id"], seed["spotify_artist_id"], "error", message=str(ex))
             print(f"  {seed['name']}: lỗi {ex}")
     print(f"Xong: {client.calls} lượt gọi API")
+
+
+def crawl_live(client: SpotifyClient, seeds: list[dict], max_calls: int = 40) -> dict:
+    """Collect only releases after the frozen research cutoff into a separate live lane."""
+    client.max_calls = max_calls
+    cutoff = date(2026, 10, 22)
+    release_store = JsonlStore(RAW_SP / "live" / "releases.jsonl", "album_id")
+    album_store = JsonlStore(RAW_SP / "live" / "albums.jsonl", "album_id")
+    errors = []
+    new_albums = 0
+    listed_artists = 0
+    for seed in (item for item in seeds if item.get("spotify_artist_id")):
+        if client.calls >= max_calls:
+            break
+        try:
+            page = client.get(f"/artists/{seed['spotify_artist_id']}/albums", {"include_groups": INCLUDE_GROUPS, "market": client.market, "limit": 20})
+            releases = []
+            while page:
+                for album in page.get("items", []):
+                    release_date = parse_date(album.get("release_date"))
+                    precision = album.get("release_date_precision")
+                    # Partial dates that overlap the cutoff month are not precise enough to call new.
+                    if release_date and precision == "day" and release_date >= cutoff:
+                        releases.append({"album_id": album["id"], "platform": "spotify", "seed_id": seed["seed_id"], "seed_artist_id": seed["spotify_artist_id"], "album_group": album.get("album_group") or album.get("album_type"), "album_type": album.get("album_type"), "name": album.get("name"), "release_date": album.get("release_date"), "release_date_precision": precision, "artists": _artists(album.get("artists")), "total_tracks": album.get("total_tracks"), "url": album.get("external_urls", {}).get("spotify"), "collected_at": now_iso()})
+                nxt = page.get("next")
+                if not nxt or client.calls >= max_calls:
+                    break
+                page = client.get(nxt)
+            listed_artists += 1
+            for release in releases:
+                if release["album_id"] not in release_store:
+                    release_store.append(release)
+            for release in sorted(releases, key=lambda item: item.get("release_date") or "", reverse=True):
+                if release["album_id"] in album_store:
+                    continue
+                if client.calls >= max_calls:
+                    break
+                try:
+                    album_store.append(_fetch_album(client, seed, seed["spotify_artist_id"], release["album_id"], release.get("album_group")))
+                    new_albums += 1
+                except RuntimeError as exc:
+                    if "ngân sách" in str(exc):
+                        break
+                    raise
+            log_run("spotify", seed["seed_id"], seed["spotify_artist_id"], "ok", new_items=len(releases), message=f"live_release_details={new_albums}; calls={client.calls}")
+        except Exception as exc:
+            errors.append({"seed_id": seed.get("seed_id"), "error": f"{type(exc).__name__}: {str(exc)[:250]}"})
+            log_run("spotify", seed.get("seed_id", ""), seed.get("spotify_artist_id", ""), "error", message=str(exc))
+    result = {"status": "partial" if errors else "ok", "artists_checked": listed_artists, "new_releases": new_albums, "calls": client.calls, "budget": max_calls, "errors": errors, "checkpoint_advanced": not errors and listed_artists > 0}
+    return result

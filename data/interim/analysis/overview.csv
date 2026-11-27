@@ -1,10 +1,10 @@
-﻿metric,value
-Nút thực thể,12436
-Cạnh nghiệp vụ,35096
-Cạnh trích trực tiếp,29796
-Cạnh suy ra (is_derived),5300
-Loại quan hệ có dữ liệu,14
-Nút cô lập,738
-Thành phần liên thông yếu,762
-Nút trong thành phần lớn nhất,11648
-Tài liệu làm bằng chứng,11586
+﻿metric,value,analysis_run_id,graph_version
+Nút thực thể,12436,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+Cạnh nghiệp vụ,35096,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+Cạnh trích trực tiếp,29796,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+Cạnh suy ra (is_derived),5300,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+Loại quan hệ có dữ liệu,14,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+Nút cô lập,738,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+Thành phần liên thông yếu,762,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+Nút trong thành phần lớn nhất,11648,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731
+Tài liệu làm bằng chứng,11586,analysis-021e5ec2fcbf1731-20261125114225,021e5ec2fcbf1731

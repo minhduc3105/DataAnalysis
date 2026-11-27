@@ -13,3 +13,4 @@ logs/
 # Local crawl snapshots and generated article corpus
 /backups/
 /data/processed/web/articles.csv
+note.md
